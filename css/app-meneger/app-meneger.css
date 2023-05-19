@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+/* Import Font Family */
+@import url('../main.css');
 
-* {
-    font-family: 'Plus Jakarta Sans';
-}
 
 .app-meneger-container {
     max-width: 1440px;
@@ -110,15 +108,16 @@ nav.app-meneger-content-nav>ul>li {
     padding: 0 35px;
     border-right: 1px solid #C9CBCC;
 }
+
 nav.app-meneger-content-nav>ul>li:last-child {
     border-right: none;
 }
 
-nav.app-meneger-content-nav li>a{
+nav.app-meneger-content-nav li>a {
     color: black;
     transition: all ease-in-out 0.3s;
 }
 
-nav.app-meneger-content-nav li>a:hover{
+nav.app-meneger-content-nav li>a:hover {
     color: #8ADCFD;
 }

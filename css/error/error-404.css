@@ -1,12 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;700;800&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-
-}
+/* Import Font Family */
+@import url('../main.css');
 
 .error-404-container {
     min-height: 100vh;
@@ -19,7 +12,6 @@
 main.error-404-main {
     margin-top: 45px;
     text-align: center;
-    /* position: relative; */
 }
 
 main.error-404-main>h1,
@@ -27,9 +19,9 @@ main.error-404-main>h1,
     font-weight: 700;
     font-size: 60px;
     line-height: 76px;
-
 }
-.error-404-container>header>h1{
+
+.error-404-container>header>h1 {
     margin-bottom: 160px;
 }
 
@@ -39,14 +31,15 @@ main.error-404-main>p {
     letter-spacing: 0.1px;
     max-width: 600px;
     line-height: 25px;
-    
 }
-main.error-404-main>img{
+
+main.error-404-main>img {
     width: 85%;
     position: absolute;
     top: 46%;
     left: 0;
 }
+
 .btn-error-404 {
     font-weight: 800;
     font-size: 16px;
@@ -59,7 +52,7 @@ main.error-404-main>img{
     transition: 0.3s;
 }
 
-.btn-error-404:hover{
+.btn-error-404:hover {
     background-color: #A5FFFF;
     box-shadow: 0px 4px 20px #6CF6FF;
     color: #000;
@@ -72,6 +65,6 @@ main.error-404-main>img{
     letter-spacing: 0.1px;
 }
 
-.error-404-container>header{
+.error-404-container>header {
     text-align: center;
 }
