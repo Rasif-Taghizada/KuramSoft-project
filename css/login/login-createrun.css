@@ -1,0 +1,141 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500&display=swap');
+/* Import Font Family */
+@import url('../main.css');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* login-container */
+.login-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.login-left-section,
+.login-right-section {
+    width: 50%;
+}
+
+.login-left-section {
+    background: #EAEAEA;
+}
+
+header.login-left-section-head {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #DADADA;
+}
+
+header.login-left-section-head img {
+    width: 45px;
+    height: 47px;
+    margin-right: 20px;
+}
+
+header.login-left-section-head p {
+    font-weight: 800;
+    font-size: 18px;
+    color: #2F2F2F;
+    text-transform: uppercase;
+}
+
+/* main content */
+main.login-left-section-main {
+    height: calc(100vh - 70px);
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+main.login-left-section-main h1 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+}
+
+main.login-left-section-main {
+    color: #8F8F8F;
+    font-weight: 500;
+}
+
+
+/* login-right-section */
+.login-right-section {
+    background-color: #CEDCE6;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.login-right-img img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+
+/* Login success page */
+.login-success {
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+.login-success-checked {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background: #CECECE;
+    border: 2px solid #C0C0C0;
+    border-radius: 40px;
+    display: grid;
+    place-items: center;
+    font-family: 'IBM Plex Sans';
+}
+
+.login-success-checked i.fa-check {
+    color: #1F8B24;
+    font-size: 52px;
+}
+
+.login-success>h2 {
+    font-weight: 600;
+    font-size: 30px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #414141;
+    margin-bottom: 8px;
+    margin-top: 25px;
+}
+
+.login-success>.login-success-message {
+    font-weight: 600;
+    font-size: 16px;
+    color: #818181;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Login error page */
+
+.login-success-checked i.fa-xmark {
+    color: #E1125E;
+    font-size: 56px;
+}
+
+.login-error-xmark {
+    background: #000000;
+}

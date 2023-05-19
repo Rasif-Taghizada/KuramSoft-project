@@ -1,0 +1,115 @@
+
+/* Form gorup-> input,label */
+.form-group {
+    position: relative;
+}
+
+.form-group>input {
+    width: 315px;
+    height: 50px;
+    background: #EAEAEA;
+    border: 1px solid #BEBEBE;
+    border-radius: 100px;
+    padding: 13px 20px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.form-group>label {
+    position: absolute;
+    z-index: 10;
+    font-weight: 500;
+    font-size: 12px;
+    top: -8px;
+    left: 20px;
+    background: #EAEAEA;
+}
+
+/* form-actions */
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-actions>input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+.form-actions>a {
+    color: #5FA5D8;
+}
+
+.form-actions>a:nth-child(2) {
+    margin-right: 30px;
+}
+
+/* Buttons */
+.login-form-social-media {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.btn-login {
+    background: #5FA5D8;
+    box-shadow: 0px 4px 20px #5FA5D8;
+    border-radius: 100px;
+    padding: 20px 130px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.btn-goggle,
+.btn-facebook {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+}
+
+.btn-goggle {
+    color: #000000;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px 56px;
+    background: #F5F5F5;
+    border: 0.87px solid #C6C6C6;
+}
+
+.btn-facebook {
+    padding: 10px 50px;
+    background: #1877F2;
+    color: #FFFFFF;
+}
+
+/* form-create-account */
+.form-create-account>p {
+    color: #9FA8BC;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+.form-create-account>p>a {
+    color: #246BFD !important;
+}
+
+/* Additional css */
+.login-content-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn-purple {
+    background: #441E61;
+    box-shadow: 0px 4px 20px rgba(68, 30, 97, 0.54);
+}
