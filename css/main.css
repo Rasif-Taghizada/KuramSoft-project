@@ -8,6 +8,11 @@
     font-family: 'Plus Jakarta Sans';
 }
 
+a {
+    color: black;
+}
+
+
 @font-face {
     font-family: IBM Plex Sans;
     font-weight: 400;

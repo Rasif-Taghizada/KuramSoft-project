@@ -6,43 +6,174 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Ionic icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Pure CSS -->
     <link rel="stylesheet" href="./css/dashboard-header.css">
 </head>
 
 <body>
-    <header>
-        <div class="dashboard-header-left">
-            <img src="./assets/Images/C-logo.svg" alt="Creativerun logo">
-            <span><a href="#">sigorta.square.com</a> <img src="./assets/icons/chevron-down.svg" alt=""></span>
+    <section class="kuramsoft-dashboard">
+        <div class="kuramsoft-dashboard-left-side sidebar-close">
+            <div class="sidebar-top">
+                <img src="./assets/Images/C-logo.svg" alt="Logo">
+                <h2>CREATERUN</h2>
+            </div>
+            <ul class="sidebar-lists">    
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">HOME PAGE</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li class="sidebar-list-active">
+                    <i class="fa-solid fa-align-left"></i>
+                    <a href="#">FORMLAR</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-calendar"></i>
+                    <a href="#">TAKVİM</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <a href="#">LİSTELER</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                    <ion-icon name="grid" class="fa-grid"></ion-icon>
+                    <a href="#">TODO LIST</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <a href="#">GRAFİK</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">SEARCH</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </li>
+            </ul>
         </div>
-        <div class="dashboard-header-right">
-
+        <div class="kuramsoft-dashboard-right-side">
+            <header>
+                <div class="dashboard-header-left">
+                    <i class="fa-solid fa-bars"></i>
+                    <span class="dashboard-dropdown">
+                        <a href="#">sigorta.square.com</a>
+                        <img src="./assets/icons/chevron-down.svg" alt="">
+                    </span>
+                </div>
+                <div class="dashboard-header-right">
+                    <div class="dashboard-header-input">
+                        <div class="dashboard-dropdown dashboard-innput-select">
+                            <span>Document</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="dashboard-header-search">
+                            <input type="text" placeholder="Ara">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="dashboard-dropdown dashboard-lang">
+                        <span>ENG</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dashboard-user-dropdown dashboard-dropdown">
+                        <div class="dashboard-user-grid">
+                            <div class="user-img">
+                                <img src="./assets/Images/user-image.svg" alt="User image">
+                            </div>
+                            <div class="user-content">
+                                <p class="user-name">Ferit Arif Çiçek</p>
+                                <span class="user-prefer">Yazılımcı</span>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </header>
+            <section class="dashboard-nav-bottom">
+                <div class="dashboard-nav-bottom-content">
+                    <div>
+                        <img src="./assets/icons/home-2.svg" alt="home-2">
+                        <span>Home</span>
+                    </div>
+                    <span>-</span>
+                    <div>
+                        <span>SQUARE</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <span>-</span>
+                    <div>
+                        <p>OverduePaymentsReports.aspx</p>
+                    </div>
+                </div>
+            </section>
+            <nav class="dashboard-navbar dashboard-nav-sidebar">
+                <ul class="dashboard-navbar-lists sidebar-nav-lists">
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="#">Security</a>
+                        <i class="fa-solid fa-chevron-down chevron-down  chevron-down-rotate"></i>
+                    </li>
+                    <li class="list-active">
+                        <i class="fa-solid fa-align-left"></i>
+                        <a href="#">Gallery</a>
+                        <i class="fa-solid fa-chevron-down chevron-down"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-calendar"></i>
+                        <a href="#">Files</a>
+                        <i class="fa-solid fa-chevron-down chevron-down"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <a href="#">Treeview</a>
+                        <i class="fa-solid fa-chevron-down chevron-down"></i>
+                    </li>
+                    <li class="dashboard-navbar-list">
+                        <ion-icon name="grid"></ion-icon>
+                        <a href="#">Auto Model</a>
+                        <i class="fa-solid fa-chevron-down chevron-down"></i>
+                    </li>
+                    <li class="dashboard-navbar-list">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <a href="#">Data Model</a>
+                        <i class="fa-solid fa-chevron-down chevron-down"></i>
+                    </li>
+                    <li>
+                        <a href="#">Setting</a> <i class="fa-solid fa-chevron-down chevron-down"></i>
+                    </li>
+                    <li>
+                        <a href="#">Dashboard</a> <i class="fa-solid fa-chevron-down chevron-down"></i>
+                    </li>
+                    <li>
+                        <a href="#">Textbox</a> <i class="fa-solid fa-chevron-down chevron-down"></i>
+                    </li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <img src="./assets/icons/right.svg" alt="right">
+                </ul>
+                <div class="dashboard-navbar-right sidebar-nav-input">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search by menu">
+                </div>
+            </nav>
         </div>
-    </header>
-    <nav>
-        <ul>
-            <li><img src="./assets/icons/home.svg" alt=""><a href="#">Security</a> <img
-                    src="./assets/icons/chevron-down.svg" alt="" class="chevron-down chevron-down-rotate"></li>
-            <li class="list-active"><img src="./assets/icons/AlignLeft.svg" alt=""><a href="#">Gallery</a> <img
-                    src="./assets/icons/chevron-down.svg" alt="" class="chevron-down"></li>
-            <li><img src="./assets/icons/CalendarBlank.svg" alt=""><a href="#">Files</a> <img
-                    src="./assets/icons/chevron-down.svg" alt="" class="chevron-down"></li>
-            <li><img src="./assets/icons/Vector.svg" alt=""><a href="#">Treeview</a> <img
-                    src="./assets/icons/chevron-down.svg" alt="" class="chevron-down"></li>
-            <li><img src="./assets/icons/SquaresFour.svg" alt=""><a href="#">Auto Model</a> <img
-                    src="./assets/icons/chevron-down.svg" alt="" class="chevron-down"></li>
-            <li><img src="./assets/icons/Form 9.svg" alt=""><a href="#">Data Model</a> <img
-                    src="./assets/icons/chevron-down.svg" alt="" class="chevron-down"></li>
-            <li><a href="#">Setting</a> <img src="./assets/icons/chevron-down.svg" alt="" class="chevron-down"></li>
-            <li><a href="#">Dashboard</a> <img src="./assets/icons/chevron-down.svg" alt="" class="chevron-down"></li>
-            <li><a href="#">Textbox</a> <img src="./assets/icons/chevron-down.svg" alt="" class="chevron-down"></li>
-            <li><a href="#"></a>Security<img src="./assets/icons/chevron-down.svg" alt="" class="chevron-down"></li>
-            <li><a href="#"></a>Gallery<img src="./assets/icons/chevron-down.svg" alt="" class="chevron-down"></li>
-        </ul>
-    </nav>
-    <section class="dashboard-nav-bottom">
-
     </section>
+
+
+
+    <!-- JavaScript -->
+    <script src="./js/dashboard.js"></script>
 </body>
 
 </html>
