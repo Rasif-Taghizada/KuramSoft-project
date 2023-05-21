@@ -1,0 +1,145 @@
+@import url(../main.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;700;800&display=swap');
+
+
+.container-app-detals {
+    width: 100%;
+    padding: 100px 230px;
+}
+
+/* App Detals Nav Map */
+.app-detals-nav-map{
+    position: absolute;
+    right: -176px;
+    top: 504px;
+}
+.nav-map-list>li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+.nav-map-list .circlue{
+    height: 16px;
+    width: 16px;
+    background-color: #D7F4FF;
+    margin-right: 12px;
+    border-radius: 100%;
+    border: 3px solid #5DC9F1;
+}
+/* App Detals Nav */
+.container-app-detals>nav {
+    margin-bottom: 50px;
+}
+
+.container-app-detals>nav>* {
+    color: black;
+    opacity: 0.5;
+    margin-right: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+}
+
+.app-detals-name {
+    margin-bottom: 30px;
+}
+
+.app-detals-name>span {
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+
+.app-detals-name>span>img {
+    margin-right: 18px;
+}
+
+.apps-box-left>img {
+    border-radius: 20px;
+    padding: 22px;
+    background-color: #F0EFEF;
+    margin-right: 10px;
+}
+/* app-detals-main */
+
+.app-detals-main{
+    height: 200vh;
+   border: 1px solid #C9F0FF;
+   position: relative;
+}
+/* App Detals Header */
+
+.app-detals-header {
+    padding: 20px 55px;
+    background-color: #F4FCFF;
+    border: 1px solid #8ADCFD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detals-header-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 33px;
+}
+
+.apps-box-right>.apps-data {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1px;
+    color: #707070;
+}
+
+.apps-box-right>h1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.1px;
+    color: #000000;
+}
+
+.apps-users-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    margin-bottom: 14px;
+    color: #A5A5A5;
+}
+
+.apps-box-right>span:not(.apps-data) {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: #00B2BD;
+}
+.detals-header-rigth{
+    margin-right: 160px;
+}
+
+.detals-header-rigth>p,
+.detals-header-rigth>ul>li {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 110%;
+    letter-spacing: 0.1px;
+    margin-bottom: 10px;
+}
+
+.detals-header-rigth>p{
+    color: #A5A5A5;
+}
+
+.detals-header-rigth>ul>li {
+    color: #5B5B5B;
+    margin-bottom: 0;
+}
