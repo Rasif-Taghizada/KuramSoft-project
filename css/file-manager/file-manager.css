@@ -1,0 +1,239 @@
+@import url("../dashboard-header.css");
+@import url("../form.css");
+@import url("../main.css");
+
+.file-manager {
+    width: 100%;
+    padding: 20px;
+}
+
+.file-manager-grid3 {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 10px;
+}
+
+.folder-sidebar {
+    background: var(--app-overview-third-bg-color);
+    border-radius: 10px;
+
+    padding-bottom: 30px;
+}
+
+.folder-sidebar>header {
+    padding-left: 24px;
+    padding-right: 15px;
+    background: #EDFCFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
+    border-bottom: 2px solid var(--folder-border-tenth-color);
+
+}
+
+.folder-sidebar>header>div {
+    display: flex;
+    align-items: center;
+}
+
+.folder-sidebar>header>div>h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: start;
+    margin-left: 10px;
+}
+
+.folder-sidebar>header i {
+    font-size: 23px;
+}
+
+/* ! folder-explorer-list */
+.folder-explorer-list {
+    padding-top: 30px;
+    padding-left: 45px;
+}
+
+.folder-explorer-list>li>div,
+.folder-explore-list-optionals>li {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.folder-explorer-list>li>div>i,
+.folder-explore-list-optionals>li>i {
+    font-size: 24px;
+    margin-right: 20px;
+
+}
+
+.folder-explorer-list>li>div:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.folder-sidebar>footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 30px 0px 70px;
+    border-top: 1px solid #DCDCDC;
+}
+
+.folder-sidebar>footer i {
+    font-size: 24px;
+    margin-right: 13px;
+    color: black;
+}
+
+.folder-sidebar>footer>div {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 15px;
+    color: #676767;
+}
+
+.folder-sidebar>footer>i {
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.folder-explore-list-optionals {
+    display: none;
+    width: 70%;
+    margin-left: auto;
+
+}
+
+.folder-explore-list-optionals.list-active {
+    display: block;
+}
+
+.folder-explore-list-optionals>li:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+
+}
+
+/* ! Folder Content */
+
+/* ? Folder Nav */
+.folder-nav {
+    padding: 10px 0;
+}
+
+.folder-nav>ul {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.folder-nav>ul>li>i {
+    font-size: 14px;
+    margin-right: 14px;
+    margin-left: 20px;
+}
+
+
+/* ? Drop Down Box */
+.drop-down-box {
+    width: 100%;
+    background-color: rgba(47, 128, 237, 0.04);
+    border: 1.5px dashed var(--folder-border-eleventh-color);
+    border-radius: 8px;
+    padding: 48px 269px 48px 269px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+/* ? Folder Input Box */
+.folder-input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.folder-input-box>div {
+    display: flex;
+}
+
+.folder-input-box>div>button {
+    padding: 12px 17px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F2F2F2;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.folder-input-box>div>button i:first-child {
+    margin-right: 15px;
+}
+
+.folder-input-box>div>button i:last-child {
+    margin-left: 10px;
+}
+
+.folder-input-box>div>button:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.folder-input-box>div>button {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+}
+
+.folder-input-box>div:last-child {
+    position: relative;
+}
+
+.folder-input-box input[type=search] {
+
+    background: #FDFDFD;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+    width: 250px;
+    height: 46px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 3.5rem;
+    outline: none;
+    transition: .3s ease;
+}
+
+.folder-input-box input[type=search]:focus {
+    outline: none;
+    border: 1px solid #2F80ED;
+}
+
+.folder-input-box input[type=search]::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: #BDBDBD;
+    opacity: 0.5;
+    margin-left: 30px;
+}
+
+.folder-input-box>div:last-child>i {
+    position: absolute;
+    top: 32%;
+    left: 1.8rem;
+    font-size: 18px;
+    color: #BDBDBD;
+    /* fill: #9e9ea7;
+ width: 1rem;
+ height: 1rem; */
+}

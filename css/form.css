@@ -298,17 +298,48 @@
     background: rgba(106, 112, 126, 0.0001);
     border: 1px solid #DDDFE1;
 }
-.count-btn > :where(span,i){
+
+.count-btn> :where(span, i) {
     display: grid;
     place-items: center;
 }
-.count-btn span{
+
+.count-btn span {
     width: 55px;
     height: 100%;
     /* padding: ; */
 }
-.count-btn i{
+
+.count-btn i {
     background: #DDDFE1;
     width: 35px;
     height: 100%;
 }
+
+/* ! Dashboard Table permission buttons */
+.table-btn {
+    font-weight: 600;
+    font-size: 12px;
+    padding: 6px 17px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+}
+
+.table-admin-btn {
+    background: #55CCFF;
+}
+.table-contributor-btn {
+    background: #FF9C55;
+}
+.table-viewer-btn {
+    background: #FF5555;
+}
+.table-moderator-btn {
+    background: #5855FF;
+}
+.table-superAdmin-btn {
+    background: #110F6F;
+}
+

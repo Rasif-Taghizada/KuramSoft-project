@@ -1,5 +1,4 @@
 const lists = document.querySelectorAll(".sidebar-nav-lists > li");
-console.log(lists)
 lists.forEach(elem => {
     const li = elem;
     // const icon = elem.documentquerySelector(".chevron-down")
@@ -21,4 +20,24 @@ menu.addEventListener("click", () => {
         menu.className = "fa-solid fa-xmark"
     }
 })
+
+
+// Toggle 
+// const toggles = document.querySelectorAll('.checkbox-apple');
+// toggles.forEach(toggle => {
+//     const toggleInput = toggle.querySelector("#check-apple");
+//     toggle.addEventListener("click", () => {
+//         console.log(toggleInput)
+//     })
+// })
+
+// Table heade content sort
+const sortIcons = document.querySelectorAll(".thead-asc");
+console.log(sortIcons)
+sortIcons.forEach(icon => {
+    icon.addEventListener("click", () => {
+        icon.classList.toggle("thead-desc");
+    })
+})
+
 

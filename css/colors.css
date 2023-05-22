@@ -1,38 +1,162 @@
-:root{
+:root {
     /* ! Background Colors */
-    --primary-bg-color: #ffffff;        /* var(--primary-bg-color) */
-    --dshb-first-bg-color: #f9f9f9;     /* var(--dshb-first-bg-color) */
-    --dshb-second-bg-color: #f6f8fc;    /* var(--dshb-second-bg-color) */
-    --dshb-third-bg-color: #d6edfe;     /* var(--dshb-third-bg-color) */
-    --dshb-fourth-bg-color: #add6f3;    /* var(--dshb-fourth-bg-color) */
-    --dshb-fiveth-bg-color: #EAEAEA;    /* var(--dshb-fiveth-bg-color) */
-    --dshb-six-bg-color: #E6E6E6;       /* var(--dshb-six-bg-color) */
-    --disabled-input-bg-color: #DFE2E7; /* var(--disabled-input-bg-color) */
+    --primary-bg-color: #ffffff;
+    /* var(--primary-bg-color) */
+    --dshb-first-bg-color: #f9f9f9;
+    /* var(--dshb-first-bg-color) */
+    --dshb-second-bg-color: #f6f8fc;
+    /* var(--dshb-second-bg-color) */
+    --dshb-third-bg-color: #d6edfe;
+    /* var(--dshb-third-bg-color) */
+    --dshb-fourth-bg-color: #add6f3;
+    /* var(--dshb-fourth-bg-color) */
+    --dshb-fiveth-bg-color: #EAEAEA;
+    /* var(--dshb-fiveth-bg-color) */
+    --dshb-six-bg-color: #E6E6E6;
+    /* var(--dshb-six-bg-color) */
+    --disabled-input-bg-color: #DFE2E7;
+    /* var(--disabled-input-bg-color) */
+    --app-cyan-bg-color: #d6faff;
+    /* var(--app-cyan-bg-color) */
+    --app-azure-bg-color: #a2f4ff;
+    /* var(--app-azure-bg-color) */
+    --app-lime-bg-color: #afffa2;
+    /* var(--app-lime-bg-color) */
+    --app-light-blue-bg-color: #f4fcff;
+    /* var(--app-light-blue-bg-color) */
+    --app-light-second-bg-color: #b1e9f4;
+    /* var(--app-light-second-bg-color) */
+    --app-button-hover-bg-color: #ffd6d6;
+    /* var(--app-button-hover-bg-color) */
+    --app-error-bg-color: #ffefef;
+    /* var(--app-error-bg-color) */
+    --app-success-bg-color: #eefeff;
+    /* var(--app-success-bg-color) */
+    --app-light-bg-color: #edfdff;
+    /* var(--app-light-bg-color) */
+    --app-light-five-bg-color: #f3fbfc;
+    /* var(--app-light-five-bg-color) */
+    --app-green-bg-color: #afffa1;
+    /* var(--app-green-bg-color) */
+    --app-light-third-bg-color: #f5f5f5;
+    /* var(--app-light-third-bg-color) */
+    --app-light-fourth-bg-color: #f0efef;
+    /* var(--app-light-fourth-bg-color) */
+    --app-overview-bg-color: #D7F4FF;
+    /* var(--app-overview-bg-color) */
+    --app-overview-second-bg-color: #F5FCFF;
+    /* var(--app-overview-second-bg-color) */
+    --app-overview-third-bg-color: #EDFCFF;
+    /* var(--app-overview-third-bg-color) */
+    --app-overview-fourth-bg-color: #00FEFE;
+    /* var(--app-overview-fourth-bg-color) */
 
-
-    /* ! Text Colors */         
-    --primary-text-color: #000000;      /* var(--primary-text-color) */
-    --dshb-first-text-color: #a0a0a0;   /* var(--dshb-first-text-color) */
+    /* ! Text Colors */
+    --app-red-text-color: #ff0000;
+    /* var(--app-red-text-color) */
+    --primary-text-color: #000000;
+    /* var(--primary-text-color) */
+    --dshb-first-text-color: #a0a0a0;
+    /* var(--dshb-first-text-color) */
+    --app-text-color: #008496;
+    /* var(--app-text-color) */
+    --app-second-text-color: #00a0aa;
+    /* var(--app-second-text-color) */
+    --app-error-text-color: #b50000;
+    /* var(--app-error-text-color) */
+    --app-dark-text-color: #181818;
+    /* var(--app-dark-text-color) */
+    --app-cyan-text-color: #39e7ff;
+    /* var(--app-cyan-text-color) */
+    --app-gray-text-color: #abafb3;
+    /* var(--app-gray-text-color) */
+    --app-gray-second-text-color: #707070;
+    /* var(--app-gray-second-text-color) */
+    --app-overview-text-color: #343434;
+    /* var(--app-overview-text-color) */
+    --app-overview-second-text-color: #60D3FF;
+    /* var(--app-overview-second-text-color) */
+    --app-overview-third-text-color: #A5A5A5;
+    /* var(--app-overview-third-text-color) */
 
     /* ! Border Colors */
-    --dshb-first-border-color: #D1D1D1;  /* var(--dshb-first-border-color) */
-    --dshb-second-border-color: #f1f4fa; /* var(--dshb-second-border-color) */
-    --dshb-third-border-color: #cccccc;  /* var(--dshb-third-border-color) */
-    --dshb-fourth-border-color: #009DBA; /* var(--dshb-fourth-border-color) */
-    --input-border-color: #D3DBE3;       /* var(--input-border-color) */
-    --input-border-second-color: #BEBEBE;/* var(--input-border-second-color) */
-    --error-input-border-color: #EB4B4B; /* var(--error-input-border-color) */
-    --error-input-border-second-color: #FC6868; /* var(--error-input-border-second-color) */
-    --success-input-border-color: #19A04B; /* var(--success-input-border-color) */
-    
+    --app-red-border-color: #ff0000;
+    /* var(--app-error-red-border-color) */
+    /* var(--app-success-border-color) */
+    --primary-border-color: #000000;
+    /* var(--primary-border-color) */
+    --dshb-first-border-color: #d1d1d1;
+    /* var(--dshb-first-border-color) */
+    --dshb-second-border-color: #f1f4fa;
+    /* var(--dshb-second-border-color) */
+    --dshb-third-border-color: #cccccc;
+    /* var(--dshb-third-border-color) */
+    --dshb-fourth-border-color: #009dba;
+    /* var(--dshb-fourth-border-color) */
+    --input-border-color: #d3dbe3;
+    /* var(--input-border-color) */
+    --input-border-second-color: #bebebe;
+    /* var(--input-border-second-color) */
+    --error-input-border-color: #eb4b4b;
+    /* var(--error-input-border-color) */
+    --error-input-border-second-color: #fc6868;
+    /* var(--error-input-border-second-color) */
+    --success-input-border-color: #19a04b;
+    /* var(--success-input-border-color) */
+    --app-content-border-color: #8adcfd;
+    /* var(--app-content-border-color) */
+    --app-li-border-color: #c9f0ff;
+    /* var(--app-li-border-color) */
+    --app-li-border-second-color: #c9cbcc;
+    /* var(--app-li-border-second-color) */
+    --app-price-border-color: #3fe9ff;
+    /* var(--app-price-border-color) */
+    --app-border-second-color: #bbf7ff;
+    /* var(--app-border-second-color) */
+    --app-border-third-color: #dddfe1;
+    /* var(--app-border-third-color) */
+    --app-error-border-color: #e2abab;
+    /* var(--app-error-border-color) */
+    --app-border-color: #8af8ff;
+    /* var(--app-border-color) */
+    --app-border-fourth-color: #d6d6d6;
+    /* var(--app-border-fourth-color) */
+    --app-border-fifth-color: #00FEFE;
+    /* var(--app-border-fifth-color) */
+    --app-border-sixth-color: #8adcfd;
+    /* var(--app-border-sixth-color) */
+    --app-boder-color: #8ED1D6;
+    /* var(--app-border-color) */
+    --overview-border-seventh-color: #88D5F5;
+    /* var(--overview-border-seventh-color) */
+    --overview-border-eighth-color: #6CF6FF;
+    /* var(--overview-border-eighth-color) */
+    --overview-border-ninth-color: #5DC9F1;
+    --folder-border-tenth-color: #C3F5FF;
+    /* var(--folder-border-tenth-color) */
+    --folder-border-eleventh-color: #B5F3FF;
+    /* var(--folder-border-eleventh-color) */
+
     /* ! Icon Colors */
-    --dshb-first-icon-color: #757575;    /* var(--dshb-first-icon-color) */
-    
+    --dshb-first-icon-color: #757575;
+    /* var(--dshb-first-icon-color) */
+
     /* ! Buttons Colors */
-    --login-purple-button: #441E61;      /* var(--login-purple-button) */
-    --dshb-btn-bg-color: #DCDCDC;        /* var(--dshb-btn-bg-color) */
-    
+    --login-purple-button: #441E61;
+    /* var(--login-purple-button) */
+    --dshb-btn-bg-color: #DCDCDC;
+    /* var(--dshb-btn-bg-color) */
+
     /* ! Other Colors */
-    --dshb-cadetblue-color: #5FA5D8;     /* var(--dshb-cadetblue-color) */
-    --dshb-dot-bg-color: #D9D9D9;        /* var(--dshb-dot-bg-color) */
+    --dshb-cadetblue-color: #5fa5d8;
+    /* var(--dshb-cadetblue-color) */
+    --dshb-dot-bg-color: #d9d9d9;
+    /* var(--dshb-dot-bg-color) */
+    /* box shadow color 2CD8FB */
+    --app-box-shadow-color: #2cd8fb;
+    /* var(--dshb-box-shadow-color) */
+    --app-azure-hover-bg-color: #00a0aa;
+    /* var(--app-azure-hover-bg-color) */
+    --carusel-icon-color: #6DD7FF;
+    /* var(--carusel-icon-color) */
 }
