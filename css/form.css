@@ -1,3 +1,6 @@
+/* Import colors */
+@import url('./colors.css');
+
 /* Form gorup-> input,label */
 .form-group {
     position: relative;
@@ -6,8 +9,8 @@
 .form-group>input {
     width: 315px;
     height: 50px;
-    background: #EAEAEA;
-    border: 1px solid #BEBEBE;
+    background: var(--dshb-fiveth-bg-color);
+    border: 1px solid var(--input-border-second-color);
     border-radius: 100px;
     padding: 13px 20px;
     outline: none;
@@ -21,7 +24,7 @@
     font-size: 12px;
     top: -8px;
     left: 20px;
-    background: #EAEAEA;
+    background: var(--dshb-fiveth-bg-color);
 }
 
 /* form-actions */
@@ -37,7 +40,7 @@
 }
 
 .form-actions>a {
-    color: #5FA5D8;
+    color: var(--dshb-cadetblue-color);
 }
 
 .form-actions>a:nth-child(2) {
@@ -52,8 +55,8 @@
 }
 
 .btn-login {
-    background: #5FA5D8;
-    box-shadow: 0px 4px 20px #5FA5D8;
+    background: var(--dshb-cadetblue-color);
+    box-shadow: 0px 4px 20px var(--dshb-cadetblue-color);
     border-radius: 100px;
     padding: 20px 130px;
     outline: none;
@@ -109,7 +112,7 @@
 }
 
 .btn-purple {
-    background: #441E61;
+    background: var(--login-purple-button);
     box-shadow: 0px 4px 20px rgba(68, 30, 97, 0.54);
 }
 
@@ -133,24 +136,24 @@
     padding: 6px 20px;
     border: none;
     outline: none;
-    border: 1px solid #D3DBE3;
+    border: 1px solid var(--input-border-color);
     border-radius: 5px;
     font-weight: 400;
     font-size: 14px;
 }
 
 .kuramsoft-form-default-input-focus:focus {
-    background: #FFFFFF;
-    border: 1px solid #D3DBE3;
+    background: var(--primary-bg-color);
+    border: 1px solid var(--input-border-color);
     box-shadow: 0px 0px 20px rgba(0, 157, 186, 0.19);
 }
 
 .kuramsoft-form-default-input-hover:hover {
-    border: 1px solid #009DBA;
+    border: 1px solid var(--dshb-fourth-border-color);
 }
 
 .kuramsoft-form-default-input-disabled {
-    background: #DFE2E7;
+    background: var(--disabled-input-bg-color);
 }
 
 
@@ -165,7 +168,7 @@
     padding: 6px 35px 6px 20px;
     border: none;
     outline: none;
-    border: 1px solid #FC6868;
+    border: 1px solid var(--error-input-border-second-color);
     border-radius: 5px;
     font-weight: 400;
     font-size: 14px;
@@ -178,16 +181,16 @@
     left: 160px;
 } */
 .kuramsoft-form-error-input-focus:focus {
-    border: 1px solid #EB4B4B;
+    border: 1px solid var(--error-input-border-color);
     box-shadow: 0px 0px 20px rgba(235, 75, 75, 0.26);
 }
 
 .kuramsoft-form-error-input-hover:hover {
-    border: 1px solid #EB4B4B;
+    border: 1px solid var(--error-input-border-color);
 }
 
 .kuramsoft-form-error-input-disabled {
-    background: #DFE2E7;
+    background: var(--disabled-input-bg-color);
 }
 
 /* form success input */
@@ -197,7 +200,7 @@
     padding: 6px 35px 6px 20px;
     border: none;
     outline: none;
-    border: 1px solid #19A04B;
+    border: 1px solid var(--success-input-border-color);
     border-radius: 5px;
     font-weight: 400;
     font-size: 14px;
@@ -209,21 +212,103 @@
 }
 
 .kuramsoft-form-success-input-focus:focus {
-    border: 1px solid #19A04B;
+    border: 1px solid var(--success-input-border-color);
     box-shadow: 0px 0px 20px rgba(25, 160, 75, 0.17);
 }
 
 .kuramsoft-form-success-input-hover:hover {
-    border: 1px solid #19A04B;
+    border: 1px solid var(--success-input-border-color);
 }
 
 .kuramsoft-form-success-input-disabled {
-    background: #DFE2E7;
+    background: var(--disabled-input-bg-color);
 }
 
 
 /* Form input checkbox */
-.kuramsoft-form-default-checkbox, .kuramsoft-form-default-radio {
+.kuramsoft-form-default-checkbox,
+.kuramsoft-form-default-radio {
     width: 15px;
     height: 15px;
+}
+
+
+/* ! Dashboard List Form Codes */
+.filtr-btn {
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 11px;
+    padding: 7px 7px 7px 17px;
+    background: var(--dshb-btn-bg-color);
+    border-radius: 100px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.filtr-btn i {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* * Combobox button */
+.combobox-btn {
+    background: #F2F2F2;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+    padding: 13px 14px 13px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    gap: 20px;
+}
+
+/* ! add , upload and export buttons */
+.add-btn,
+.export-btn,
+.upload-btn {
+    padding: 11px 17px;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+:where(.add-btn, .export-btn, .upload-btn) img {
+    width: 20px;
+    height: 20px;
+}
+
+.add-btn {
+    background: #D0EBFF;
+}
+
+.upload-btn {
+    background: #D6E6FF;
+}
+
+.export-btn {
+    background: #FFE1F8;
+}
+
+/* ! Dashboard SubHeader count button */
+.count-btn {
+    width: 90px;
+    height: 40px;
+    background: rgba(106, 112, 126, 0.0001);
+    border: 1px solid #DDDFE1;
+}
+.count-btn > :where(span,i){
+    display: grid;
+    place-items: center;
+}
+.count-btn span{
+    width: 55px;
+    height: 100%;
+    /* padding: ; */
+}
+.count-btn i{
+    background: #DDDFE1;
+    width: 35px;
+    height: 100%;
 }

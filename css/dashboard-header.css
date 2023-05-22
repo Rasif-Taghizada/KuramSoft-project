@@ -1,38 +1,41 @@
-/* Import reset and font-face */
+/* ! Import reset and font-face */
 @import url('./main.css');
+/* ! Import colors */
+@import url('./colors.css');
 
-/* Dashboard Header container */
+/* ! Dashboard Header container */
 header {
     width: 100%;
     height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(180deg, #F6F8FC 0%, #EDF1F8 100%);
+    background: linear-gradient(180deg, var(--dshb-second-bg-color) 0%, #EDF1F8 100%);
     padding: 0 30px;
 }
 
-/* Dashboard Dropdown menu */
+/* ! Dashboard Dropdown menu */
 .dashboard-dropdown {
     display: flex;
     align-items: center;
 }
 
-/* Kuramsoft Dashboard Sidebar*/
+/* ! Kuramsoft Dashboard Sidebar*/
 .kuramsoft-dashboard {
     width: 100%;
     display: flex;
 }
 
-/* Sidebar left side and it's top */
+/* ! Sidebar left side and it's top */
 .kuramsoft-dashboard-left-side {
     background: #E8F5FF;
     width: 15%;
     display: flex;
     flex-direction: column;
+    transition: all 0.5s ease-in-out;
 }
 
-/* Left sidebar close */
+/* ! Left sidebar close */
 .sidebar-close {
     width: 5%;
     background: white;
@@ -45,14 +48,16 @@ header {
 .sidebar-close>.sidebar-lists a {
     display: none;
 }
-.sidebar-close>.sidebar-lists li.sidebar-list-active i:nth-child(1){
-    color: black !important;
+
+.sidebar-close>.sidebar-lists li.sidebar-list-active i:nth-child(1) {
+    color: var(--primary-text-color) !important;
 }
+
 .sidebar-close>.sidebar-lists i.fa-arrow-right {
     display: none !important;
 }
 
-/* Sidebar top content */
+/* ! Sidebar top content */
 .sidebar-top {
     display: flex;
     align-items: center;
@@ -66,7 +71,7 @@ header {
     font-size: 18px;
 }
 
-/* sidebar lists content*/
+/* ! sidebar lists content*/
 .sidebar-lists {
     width: 100%;
 }
@@ -79,14 +84,14 @@ header {
     position: relative;
 }
 
-/* List hover */
+/* ! List hover */
 .sidebar-lists>li:hover {
-    background: #F6F8FC;
+    background: var(--dshb-second-bg-color);
     color: #E8F5FF;
 }
 
 .sidebar-lists>li:hover>i {
-    color: black;
+    color: var(--primary-text-color);
 }
 
 .sidebar-lists>li>a {
@@ -95,20 +100,20 @@ header {
 
 .sidebar-lists>li> :where(i, ion-icon):nth-child(1) {
     font-size: 24px;
-    color: #A0A0A0;
+    color: var(--dshb-first-text-color);
 }
 
 .sidebar-lists>li>i.fa-arrow-right {
     position: absolute;
     top: 10px;
     right: 10px;
-    color: #757575;
+    color: var(--dshb-first-icon-color);
     display: none;
 }
 
-/* sidebar list active oldukda */
+/* ! ! sidebar list active oldukda */
 .sidebar-list-active {
-    background-color: #F6F8FC;
+    background-color: var(--dshb-second-bg-color);
 }
 
 .sidebar-list-active>i.fa-arrow-right {
@@ -116,7 +121,7 @@ header {
 }
 
 
-/* Sidebar right side and it's content */
+/* ! Sidebar right side and it's content */
 .kuramsoft-dashboard-right-side {
     width: 85%;
 }
@@ -125,7 +130,7 @@ header {
     width: 95%;
 }
 
-/* Dashboard header right content */
+/* ! Dashboard header right content */
 .dashboard-header-left>i {
     font-size: 24px;
     cursor: pointer;
@@ -145,14 +150,14 @@ header {
     gap: 30px;
 }
 
-/* Dashboard header search input */
+/* ! Dashboard header search input */
 .dashboard-header-input {
     width: 400px;
     display: flex;
     align-items: center;
     gap: 20px;
-    background: #F9F9F9;
-    border: 1px solid #F1F4FA;
+    background: var(--dshb-first-bg-color);
+    border: 1px solid var(--dshb-second-border-color);
     border-radius: 12px;
     padding: 10px 15px;
 }
@@ -170,14 +175,14 @@ header {
 
 .dashboard-innput-select {
     padding-right: 30px;
-    border-right: 2px solid #D1D1D1;
+    border-right: 2px solid var(--dshb-first-border-color);
 }
 
 .dashboard-innput-select span {
     margin-right: 40px;
 }
 
-/* Dashboard user grid content */
+/* ! Dashboard user grid content */
 .dashboard-user-grid {
     display: grid;
     grid-template-areas: "IMG NAME"
@@ -185,11 +190,11 @@ header {
 
 }
 
-/* .dashboard navbar container */
+/* ! .dashboard navbar container */
 .dashboard-navbar {
     width: 100%;
     height: 70px;
-    background: #D6EDFE;
+    background: var(--dshb-third-bg-color);
     box-shadow: 0px 4px 40px rgba(141, 199, 241, 0.49);
     display: flex;
     align-items: center;
@@ -216,19 +221,19 @@ header {
     min-width: 160px;
 }
 
-/* list active oldukda */
+/* ! list active oldukda */
 .dashboard-navbar-lists li.list-active {
-    background: #ADD6F3;
+    background: var(--dshb-fourth-bg-color);
 }
 
 .dashboard-navbar-lists li.list-active :where(i, ion-icon) {
-    color: black;
+    color: var(--primary-text-color);
 }
 
-/* :hover oldukda */
+/* ! :hover oldukda */
 .dashboard-navbar-lists li:hover {
-    background: #ADD6F3;
-    color: black;
+    background: var(--dshb-fourth-bg-color);
+    color: var(--primary-text-color);
 }
 
 .dashboard-navbar-lists li a {
@@ -236,7 +241,7 @@ header {
 }
 
 .dashboard-navbar-lists li :where(i, ion-icon) {
-    color: #A0A0A0;
+    color: var(--dshb-first-text-color);
 }
 
 .dashboard-navbar-lists li i:nth-child(1) {
@@ -247,9 +252,9 @@ header {
     transform: rotate(270deg);
 }
 
-/* dashboard navbar right */
+/* ! dashboard navbar right */
 .dashboard-navbar-right {
-    color: #A0A0A0;
+    color: var(--dshb-first-text-color);
     display: flex;
     align-items: center;
     gap: 20px;
@@ -263,10 +268,10 @@ header {
     background: transparent;
 }
 
-/* .dashboard navbarbar bottom */
+/* ! .dashboard navbarbar bottom */
 .dashboard-nav-bottom {
     height: 45px;
-    background: #D6EDFE;
+    background: var(--dshb-third-bg-color);
     padding-left: 50px;
 }
 
@@ -278,7 +283,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
-    color: #A0A0A0;
+    color: var(--dshb-first-text-color);
 }
 
 .dashboard-nav-bottom>div>div {
@@ -292,6 +297,11 @@ header {
     opacity: 0.4;
 }
 
+/*!  dashboard main container */
+.dashboard-main {
+    display: flex;
+    width: 100%;
+}
 
 
 
@@ -301,7 +311,10 @@ header {
 
 
 
-/* Dashboard navbar - sidebar oldukda*/
+/* ! 
+    TODO Dashboard navbar - sidebar oldukda
+    ! dashboard-nav-sidebar , sidebar-nav-lists, sidebar-nav-input class-lari atanmali
+*/
 .dashboard-nav-sidebar {
     height: 100vh;
     flex-direction: column;
@@ -337,15 +350,11 @@ header {
     transition: all 0.4s linear;
 }
 
-.dashboard-navbar-lists li i.chevron-down-rotate {
-    /* transform: rotate(); */
-}
-
 .sidebar-nav-lists li.list-active i {
     transform: rotate(0);
 }
 
-/* Sidebar input */
+/* ! Sidebar input */
 .sidebar-nav-input {
     padding: 10px;
 }
@@ -358,7 +367,7 @@ header {
     margin-left: 20px;
 }
 
-/* scroll design */
+/* ! scroll design */
 nav ul::-webkit-scrollbar {
     width: 1em;
     height: 10px;

@@ -1,0 +1,136 @@
+/* Import Font face and reset css */
+@import url('../main.css');
+/* Import Colors */
+@import url("../colors.css");
+/* Import form elements */
+@import url("../form.css");
+
+/*!  dashboard list container */
+.dashboard-list {
+    background: #F6F8FC;
+    width: calc(100% - 236px);
+    padding: 20px 40px;
+}
+
+.dashboard-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* * Dashboard list Head Left Container */
+.dashboard-list-head-left,
+.dashboard-list-head-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dashboard-list-head-left>span {
+    width: 35px;
+    height: 20px;
+    border: 1.5px solid #000000;
+    border-radius: 100px;
+    font-weight: 800;
+    /* padding: px; */
+}
+
+.dashboard-list-head-left>p {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.add-upload-export-btns {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+/* ! Dashboard List  SubHeader Container */
+.dashboard-list-sub-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.dashboard-list-sub-header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dashboard-list-sub-header-left>span {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.dashboard-list-sub-header-left>hr {
+    width: 2px;
+    height: 15px;
+}
+
+/* subheader searc content */
+.subheader-search {
+    padding: 10px 15px;
+    color: #CECECE;
+    background: #F5FBFF;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+}
+
+.subheader-search input {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #C5C5C5;
+    margin-left: 15px;
+    width: 130px;
+}
+
+
+/* ! Dashboard Table Container */
+table {
+    width: 100%;
+    margin-top: 40px;
+}
+table input[type="checkbox"]{
+    width: 29px;
+    height: 29px;
+}
+
+/* * Dashboard Table Head Content */
+.table-head-container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    background: #EDFCFF;
+    border-top: 1px solid #C8C8C8;
+    border-bottom: 3px solid #C4F5FF;
+}
+
+.table-head-container>th {
+    height: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-right: 1px solid #000000;
+}
+
+.table-head-container>th>span {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* ! Table Body Container */
+tbody > tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+

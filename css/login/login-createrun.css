@@ -15,7 +15,7 @@
 }
 
 .login-left-section {
-    background: #EAEAEA;
+    background: var(--dshb-fiveth-bg-color);
 }
 
 header.login-left-section-head {

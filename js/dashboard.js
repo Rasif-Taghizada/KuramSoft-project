@@ -15,5 +15,10 @@ const menu = document.querySelector(".fa-bars")
 menu.addEventListener("click", () => {
     const leftSidebar = document.querySelector('.kuramsoft-dashboard-left-side');
     leftSidebar.classList.toggle("sidebar-close");
-    menu.classList.replace("fa-bars" , "fa-xmark")
+    if (menu.className === "fa-solid fa-xmark") {
+        menu.className = "fa-solid fa-bars"
+    } else {
+        menu.className = "fa-solid fa-xmark"
+    }
 })
+

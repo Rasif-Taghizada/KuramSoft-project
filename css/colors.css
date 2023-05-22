@@ -1,0 +1,38 @@
+:root{
+    /* ! Background Colors */
+    --primary-bg-color: #ffffff;        /* var(--primary-bg-color) */
+    --dshb-first-bg-color: #f9f9f9;     /* var(--dshb-first-bg-color) */
+    --dshb-second-bg-color: #f6f8fc;    /* var(--dshb-second-bg-color) */
+    --dshb-third-bg-color: #d6edfe;     /* var(--dshb-third-bg-color) */
+    --dshb-fourth-bg-color: #add6f3;    /* var(--dshb-fourth-bg-color) */
+    --dshb-fiveth-bg-color: #EAEAEA;    /* var(--dshb-fiveth-bg-color) */
+    --dshb-six-bg-color: #E6E6E6;       /* var(--dshb-six-bg-color) */
+    --disabled-input-bg-color: #DFE2E7; /* var(--disabled-input-bg-color) */
+
+
+    /* ! Text Colors */         
+    --primary-text-color: #000000;      /* var(--primary-text-color) */
+    --dshb-first-text-color: #a0a0a0;   /* var(--dshb-first-text-color) */
+
+    /* ! Border Colors */
+    --dshb-first-border-color: #D1D1D1;  /* var(--dshb-first-border-color) */
+    --dshb-second-border-color: #f1f4fa; /* var(--dshb-second-border-color) */
+    --dshb-third-border-color: #cccccc;  /* var(--dshb-third-border-color) */
+    --dshb-fourth-border-color: #009DBA; /* var(--dshb-fourth-border-color) */
+    --input-border-color: #D3DBE3;       /* var(--input-border-color) */
+    --input-border-second-color: #BEBEBE;/* var(--input-border-second-color) */
+    --error-input-border-color: #EB4B4B; /* var(--error-input-border-color) */
+    --error-input-border-second-color: #FC6868; /* var(--error-input-border-second-color) */
+    --success-input-border-color: #19A04B; /* var(--success-input-border-color) */
+    
+    /* ! Icon Colors */
+    --dshb-first-icon-color: #757575;    /* var(--dshb-first-icon-color) */
+    
+    /* ! Buttons Colors */
+    --login-purple-button: #441E61;      /* var(--login-purple-button) */
+    --dshb-btn-bg-color: #DCDCDC;        /* var(--dshb-btn-bg-color) */
+    
+    /* ! Other Colors */
+    --dshb-cadetblue-color: #5FA5D8;     /* var(--dshb-cadetblue-color) */
+    --dshb-dot-bg-color: #D9D9D9;        /* var(--dshb-dot-bg-color) */
+}
