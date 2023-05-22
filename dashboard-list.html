@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard List</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Ionic icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Pure CSS -->
+    <link rel="stylesheet" href="./css/dashboard-header.css">
+    <link rel="stylesheet" href="./css/dashboard/dashboard-list.css">
+    <link rel="stylesheet" href="./css/app-meneger/app-manager.css" />
+</head>
+
+<body>
+    <section class="kuramsoft-dashboard">
+        <div class="kuramsoft-dashboard-left-side sidebar-close">
+            <div class="sidebar-top">
+                <img src="./assets/Images/C-logo.svg" alt="Logo">
+                <h2>CREATERUN</h2>
+            </div>
+            <ul class="sidebar-lists">
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">HOME PAGE</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li class="sidebar-list-active">
+                    <i class="fa-solid fa-align-left"></i>
+                    <a href="#">FORMLAR</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-calendar"></i>
+                    <a href="#">TAKVİM</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <a href="#">LİSTELER</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                    <ion-icon name="grid" class="fa-grid"></ion-icon>
+                    <a href="#">TODO LIST</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <a href="#">GRAFİK</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">SEARCH</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="kuramsoft-dashboard-right-side">
+            <header>
+                <div class="dashboard-header-left">
+                    <i class="fa-solid fa-bars"></i>
+                    <span class="dashboard-dropdown">
+                        <a href="#">sigorta.square.com</a>
+                        <img src="./assets/icons/chevron-down.svg" alt="">
+                    </span>
+                </div>
+                <div class="dashboard-header-right">
+                    <div class="dashboard-header-input">
+                        <div class="dashboard-dropdown dashboard-innput-select">
+                            <span>Document</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="dashboard-header-search">
+                            <input type="text" placeholder="Ara">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="dashboard-dropdown dashboard-lang">
+                        <span>ENG</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dashboard-user-dropdown dashboard-dropdown">
+                        <div class="dashboard-user-grid">
+                            <div class="user-img">
+                                <img src="./assets/Images/user-image.svg" alt="User image">
+                            </div>
+                            <div class="user-content">
+                                <p class="user-name">Ferit Arif Çiçek</p>
+                                <span class="user-prefer">Yazılımcı</span>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </header>
+            <section class="dashboard-nav-bottom">
+                <div class="dashboard-nav-bottom-content">
+                    <div>
+                        <img src="./assets/icons/home-2.svg" alt="home-2">
+                        <span>Home</span>
+                    </div>
+                    <span>-</span>
+                    <div>
+                        <span>SQUARE</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <span>-</span>
+                    <div>
+                        <p>OverduePaymentsReports.aspx</p>
+                    </div>
+                </div>
+            </section>
+            <main class="dashboard-main">
+                <nav class="dashboard-navbar dashboard-nav-sidebar">
+                    <ul class="dashboard-navbar-lists sidebar-nav-lists">
+                        <li>
+                            <i class="fa-solid fa-house"></i>
+                            <a href="#">Security</a>
+                            <i class="fa-solid fa-chevron-down chevron-down  chevron-down-rotate"></i>
+                        </li>
+                        <li class="list-active">
+                            <i class="fa-solid fa-align-left"></i>
+                            <a href="#">Gallery</a>
+                            <i class="fa-solid fa-chevron-down chevron-down"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-calendar"></i>
+                            <a href="#">Files</a>
+                            <i class="fa-solid fa-chevron-down chevron-down"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <a href="#">Treeview</a>
+                            <i class="fa-solid fa-chevron-down chevron-down"></i>
+                        </li>
+                        <li class="dashboard-navbar-list">
+                            <ion-icon name="grid"></ion-icon>
+                            <a href="#">Auto Model</a>
+                            <i class="fa-solid fa-chevron-down chevron-down"></i>
+                        </li>
+                        <li class="dashboard-navbar-list">
+                            <i class="fa-solid fa-chart-pie"></i>
+                            <a href="#">Data Model</a>
+                            <i class="fa-solid fa-chevron-down chevron-down"></i>
+                        </li>
+                        <li>
+                            <a href="#">Setting</a> <i class="fa-solid fa-chevron-down chevron-down"></i>
+                        </li>
+                        <li>
+                            <a href="#">Dashboard</a> <i class="fa-solid fa-chevron-down chevron-down"></i>
+                        </li>
+                        <li>
+                            <a href="#">Textbox</a> <i class="fa-solid fa-chevron-down chevron-down"></i>
+                        </li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <img src="./assets/icons/right.svg" alt="right">
+                    </ul>
+                    <div class="dashboard-navbar-right sidebar-nav-input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search by menu">
+                    </div>
+                </nav>
+                <div class="dashboard-list">
+                    <div class="dashboard-list-header">
+                        <div class="dashboard-list-head-left">
+                            <span>+</span>
+                            <p>Filtre</p>
+                            <button class="filtr-btn"><span>North American</span> <i
+                                    class="fa-solid fa-circle-xmark"></i></button>
+                            <button class="filtr-btn"><span>Canada</span> <i
+                                    class="fa-solid fa-circle-xmark"></i></button>
+                            <button class="filtr-btn"><span>Agency</span> <i
+                                    class="fa-solid fa-circle-xmark"></i></button>
+                        </div>
+                        <div class="dashboard-list-head-right">
+                            <div class="dashboard-dropdown combobox-btn">
+                                <span>Combobox</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="add-upload-export-btns">
+                                <button class="add-btn"><span>Add</span><img src="./assets/icons/insert-after-r.svg"
+                                        alt="insert-after-r"></button>
+                                <button class="upload-btn"><span>Upload</span><img
+                                        src="./assets/icons/insert-before.svg" alt="insert-before"></button>
+                                <button class="export-btn"><span>Export</span><img src="./assets/icons/export-btn.svg"
+                                        alt="export-btn"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-list-sub-header">
+                        <div class="dashboard-list-sub-header-left">
+                            <span>Show</span>
+                            <div class="dashboard-dropdown count-btn">
+                                <span>10</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <span>Entries</span>
+                            <p>20 recods found</p>
+                            <hr>
+                            <div class="subheader-search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" placeholder="Search">
+                            </div>
+                        </div>
+                        <div class="pagination-box dashboard-list-sub-header-right">
+                            <a href="#" class="pagination-active">Prev</a>
+                            <a href="#" class="pagination-active">01</a>
+                            <a href="#">02</a>
+                            <a href="#">...</a>
+                            <a href="#">05</a>
+                            <a href="#" class="pagination-active">Next</a>
+                        </div>
+                    </div>
+                    <div class="dashboard-table">
+                        <table>
+                            <thead>
+                                <tr class="table-head-container">
+                                    <th><input type="checkbox" name="checkbox" class="table-checkbox"></th>
+                                    <th><span>User</span><i class="fa-solid fa-sort-down"></i></th>
+                                    <th><span>Ad / Soyad</span><i class="fa-solid fa-sort-down"></i></th>
+                                    <th><span>Filtreler</span><i class="fa-solid fa-sort-down"></i></th>
+                                    <th><span>Yıldızlar</span><i class="fa-solid fa-sort-down"></i></th>
+                                    <th><span>Permission</span><i class="fa-solid fa-sort-down"></i></th>
+                                    <th><span>Yüzde</span><i class="fa-solid fa-sort-down"></i></th>
+                                    <th><span>Boş Text</span><i class="fa-solid fa-sort-down"></i></th>
+                                    <th><span>Text Link</span><i class="fa-solid fa-sort-down"></i></th>
+                                    <th><span>Checkbox</span><i class="fa-solid fa-sort-down"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><img src="./assets/Images/Ozan Alatlı.jpg" alt="Ozan Alatlı"></td>
+                                    <td><span>Ozan Alatlı</span></td>
+                                    <td>
+                                        <button class="filtr-btn"><span>North American</span>
+                                            <i class="fa-solid fa-circle-xmark"></i></button>
+                                        <button class="filtr-btn"><span>Canada</span> <i
+                                                class="fa-solid fa-circle-xmark"></i></button>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </td>
+                                    <td><button class="table-admin-btn">Admin</button></td>
+                                    <td><span>40%</span></td>
+                                    <td><span>Low</span></td>
+                                    <td><a href="#">VIEW</a></td>
+                                    <td>Checkbox</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><img src="./assets/Images/Eda Taştan.jpg" alt="Eda Taştan"></td>
+                                    <td><span>Eda Taştan</span></td>
+                                    <td>
+                                        <button class="filtr-btn"><span>Agency</span>
+                                            <i class="fa-solid fa-circle-xmark"></i></button>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </td>
+                                    <td><button class="table-contributor-btn">Contributor</button></td>
+                                    <td><span>20%</span></td>
+                                    <td><span>Medium</span></td>
+                                    <td><a href="#">VIEW</a></td>
+                                    <td>Checkbox</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><img src="./assets/Images/Osman Dağ.jpg" alt="Osman Dağ"></td>
+                                    <td><span>Osman Dağ</span></td>
+                                    <td>
+                                        <button class="filtr-btn"><span>North American</span>
+                                            <i class="fa-solid fa-circle-xmark"></i></button>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </td>
+                                    <td><button class="table-viewer-btn">Viewer</button></td>
+                                    <td><span>60%</span></td>
+                                    <td><span>Medium</span></td>
+                                    <td><a href="#">VIEW</a></td>
+                                    <td>Checkbox</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><img src="./assets/Images/Arif Bulut..jpg" alt="Arif Bulut"></td>
+                                    <td><span>Arif Bulut</span></td>
+                                    <td>
+                                        <button class="filtr-btn"><span>Agency</span>
+                                            <i class="fa-solid fa-circle-xmark"></i></button>
+                                        <button class="filtr-btn"><span>Filtrele</span>
+                                            <i class="fa-solid fa-circle-xmark"></i></button>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </td>
+                                    <td><button class="table-moderator-btn">Moderator</button></td>
+                                    <td><span>90%</span></td>
+                                    <td><span>High</span></td>
+                                    <td><a href="#">VIEW</a></td>
+                                    <td>Checkbox</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><img src="./assets/Images/Kadir Taş.jpg" alt="Kadir Taş"></td>
+                                    <td><span>Kadir Taş</span></td>
+                                    <td>
+                                        <button class="filtr-btn"><span>North American</span>
+                                            <i class="fa-solid fa-circle-xmark"></i></button>
+                                        <button class="filtr-btn"><span>Canada</span>
+                                            <i class="fa-solid fa-circle-xmark"></i></button>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </td>
+                                    <td><button class="table-admin-btn">Admin</button></td>
+                                    <td><span>40%</span></td>
+                                    <td><span>High</span></td>
+                                    <td><a href="#">VIEW</a></td>
+                                    <td>Checkbox</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><img src="./assets/Images/Yücel Kabil.jpg" alt="Yücel Kabil"></td>
+                                    <td><span>Yücel Kabil</span></td>
+                                    <td>
+                                        <button class="filtr-btn"><span>Agency</span>
+                                            <i class="fa-solid fa-circle-xmark"></i></button>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </td>
+                                    <td><button class="table-contributor-btn">Contributor</button></td>
+                                    <td><span>20%</span></td>
+                                    <td><span>Low</span></td>
+                                    <td><a href="#">VIEW</a></td>
+                                    <td>Checkbox</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><img src="./assets/Images/İpek Seçil.jpg" alt="İpek Seçil"></td>
+                                    <td><span>İpek Seçil</span></td>
+                                    <td>
+                                        <button class="filtr-btn"><span>North American</span>
+                                            <i class="fa-solid fa-circle-xmark"></i></button>
+                                        </td>
+                                    <td>
+                                        <i class="fa-solid fa-star"></i>
+                                    </td>
+                                    <td><button class="table-viewer-btn">Viewer</button></td>
+                                    <td><span>60%</span></td>
+                                    <td><span>Medium</span></td>
+                                    <td><a href="#">VIEW</a></td>
+                                    <td>Checkbox</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><img src="./assets/Images/Onur Barış.jpg" alt="Onur Barış"></td>
+                                    <td><span>Onur Barış</span></td>
+                                    <td>
+                                        <button class="filtr-btn"><span>Agency</span>
+                                            <i class="fa-solid fa-circle-xmark"></i></button>
+                                        <button class="filtr-btn"><span>Filtrele</span>
+                                            <i class="fa-solid fa-circle-xmark"></i></button>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </td>
+                                    <td><button class="table-superAdmin-btn">Super Admin</button></td>
+                                    <td><span>90%</span></td>
+                                    <td><span>Super High</span></td>
+                                    <td><a href="#">VIEW</a></td>
+                                    <td>Checkbox</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><img src="./assets/Images/Evren Yüce.jpg" alt="Evren Yüce"></td>
+                                    <td><span>Evren Yüce</span></td>
+                                    <td>
+                                        <button class="filtr-btn"><span>North American</span>
+                                            <i class="fa-solid fa-circle-xmark"></i></button>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </td>
+                                    <td><button class="table-viewer-btn">Viewer</button></td>
+                                    <td><span>100%</span></td>
+                                    <td><span>Low</span></td>
+                                    <td><a href="#">VIEW</a></td>
+                                    <td>Checkbox</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><img src="./assets/Images/Coşkun Kaya.jpg" alt="Coşkun Kaya"></td>
+                                    <td><span>Coşkun Kaya</span></td>
+                                    <td>
+                                        <button class="filtr-btn"><span>Agency</span>
+                                            <i class="fa-solid fa-circle-xmark"></i></button>
+                                        <button class="filtr-btn"><span>Filtrele</span>
+                                            <i class="fa-solid fa-circle-xmark"></i></button>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </td>
+                                    <td><button class="table-moderator-btn">Moderator</button></td>
+                                    <td><span>90%</span></td>
+                                    <td><span>Medium</span></td>
+                                    <td><a href="#">VIEW</a></td>
+                                    <td>Checkbox</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="./js/dashboard.js"></script>
+</body>
+
+</html>

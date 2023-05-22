@@ -1,0 +1,383 @@
+/* ! Import reset and font-face */
+@import url('./main.css');
+/* ! Import colors */
+@import url('./colors.css');
+
+/* ! Dashboard Header container */
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, var(--dshb-second-bg-color) 0%, #EDF1F8 100%);
+    padding: 0 30px;
+}
+
+/* ! Dashboard Dropdown menu */
+.dashboard-dropdown {
+    display: flex;
+    align-items: center;
+}
+
+/* ! Kuramsoft Dashboard Sidebar*/
+.kuramsoft-dashboard {
+    width: 100%;
+    display: flex;
+}
+
+/* ! Sidebar left side and it's top */
+.kuramsoft-dashboard-left-side {
+    background: #E8F5FF;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+}
+
+/* ! Left sidebar close */
+.sidebar-close {
+    width: 5%;
+    background: white;
+}
+
+.sidebar-close>.sidebar-top>h2 {
+    display: none;
+}
+
+.sidebar-close>.sidebar-lists a {
+    display: none;
+}
+
+.sidebar-close>.sidebar-lists li.sidebar-list-active i:nth-child(1) {
+    color: var(--primary-text-color) !important;
+}
+
+.sidebar-close>.sidebar-lists i.fa-arrow-right {
+    display: none !important;
+}
+
+/* ! Sidebar top content */
+.sidebar-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 90px;
+    padding: 20px;
+}
+
+.sidebar-top>h2 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* ! sidebar lists content*/
+.sidebar-lists {
+    width: 100%;
+}
+
+.sidebar-lists>li {
+    cursor: pointer;
+    padding: 8px 20px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+/* ! List hover */
+.sidebar-lists>li:hover {
+    background: var(--dshb-second-bg-color);
+    color: #E8F5FF;
+}
+
+.sidebar-lists>li:hover>i {
+    color: var(--primary-text-color);
+}
+
+.sidebar-lists>li>a {
+    font-weight: 800;
+}
+
+.sidebar-lists>li> :where(i, ion-icon):nth-child(1) {
+    font-size: 24px;
+    color: var(--dshb-first-text-color);
+}
+
+.sidebar-lists>li>i.fa-arrow-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--dshb-first-icon-color);
+    display: none;
+}
+
+/* ! ! sidebar list active oldukda */
+.sidebar-list-active {
+    background-color: var(--dshb-second-bg-color);
+}
+
+.sidebar-list-active>i.fa-arrow-right {
+    display: inline !important;
+}
+
+
+/* ! Sidebar right side and it's content */
+.kuramsoft-dashboard-right-side {
+    width: 85%;
+}
+
+.sidebar-close+.kuramsoft-dashboard-right-side {
+    width: 95%;
+}
+
+/* ! Dashboard header right content */
+.dashboard-header-left>i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dashboard-header-left span a {
+    font-weight: 500;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.dashboard-header-right,
+.dashboard-header-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+/* ! Dashboard header search input */
+.dashboard-header-input {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--dshb-first-bg-color);
+    border: 1px solid var(--dshb-second-border-color);
+    border-radius: 12px;
+    padding: 10px 15px;
+}
+
+.dashboard-header-search input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: 500;
+}
+
+.dashboard-header-search i {
+    transform: rotate(90deg);
+}
+
+.dashboard-innput-select {
+    padding-right: 30px;
+    border-right: 2px solid var(--dshb-first-border-color);
+}
+
+.dashboard-innput-select span {
+    margin-right: 40px;
+}
+
+/* ! Dashboard user grid content */
+.dashboard-user-grid {
+    display: grid;
+    grid-template-areas: "IMG NAME"
+        "IMG PREFER";
+
+}
+
+/* ! .dashboard navbar container */
+.dashboard-navbar {
+    width: 100%;
+    height: 70px;
+    background: var(--dshb-third-bg-color);
+    box-shadow: 0px 4px 40px rgba(141, 199, 241, 0.49);
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.dashboard-navbar-lists {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.dashboard-navbar-lists li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+}
+
+.dashboard-navbar-list {
+    min-width: 160px;
+}
+
+/* ! list active oldukda */
+.dashboard-navbar-lists li.list-active {
+    background: var(--dshb-fourth-bg-color);
+}
+
+.dashboard-navbar-lists li.list-active :where(i, ion-icon) {
+    color: var(--primary-text-color);
+}
+
+/* ! :hover oldukda */
+.dashboard-navbar-lists li:hover {
+    background: var(--dshb-fourth-bg-color);
+    color: var(--primary-text-color);
+}
+
+.dashboard-navbar-lists li a {
+    font-size: 14px;
+}
+
+.dashboard-navbar-lists li :where(i, ion-icon) {
+    color: var(--dshb-first-text-color);
+}
+
+.dashboard-navbar-lists li i:nth-child(1) {
+    font-size: 22px;
+}
+
+.dashboard-navbar-lists li i.chevron-down-rotate {
+    transform: rotate(270deg);
+}
+
+/* ! dashboard navbar right */
+.dashboard-navbar-right {
+    color: var(--dshb-first-text-color);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dashboard-navbar-right input {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    background: transparent;
+}
+
+/* ! .dashboard navbarbar bottom */
+.dashboard-nav-bottom {
+    height: 45px;
+    background: var(--dshb-third-bg-color);
+    padding-left: 50px;
+}
+
+.dashboard-nav-bottom>.dashboard-nav-bottom-content {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    color: var(--dshb-first-text-color);
+}
+
+.dashboard-nav-bottom>div>div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboard-nav-bottom>div>div>img {
+    opacity: 0.4;
+}
+
+/*!  dashboard main container */
+.dashboard-main {
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* ! 
+    TODO Dashboard navbar - sidebar oldukda
+    ! dashboard-nav-sidebar , sidebar-nav-lists, sidebar-nav-input class-lari atanmali
+*/
+.dashboard-nav-sidebar {
+    height: 100vh;
+    flex-direction: column;
+    width: max-content;
+    padding: 0;
+}
+
+.sidebar-nav-lists {
+    min-width: 100%;
+    order: 2;
+    flex-direction: column;
+    align-items: flex-start !important;
+    overflow-x: auto !important;
+}
+
+.sidebar-nav-lists img:last-child {
+    display: none;
+}
+
+.sidebar-nav-lists li {
+    border: 1px solid #ccc;
+    padding: 10px 20px 10px 40px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.sidebar-nav-lists li> :where(i, ion-icon):first-child {
+    display: none;
+}
+
+.sidebar-nav-lists i {
+    transform: rotate(-90deg);
+    transition: all 0.4s linear;
+}
+
+.sidebar-nav-lists li.list-active i {
+    transform: rotate(0);
+}
+
+/* ! Sidebar input */
+.sidebar-nav-input {
+    padding: 10px;
+}
+
+.sidebar-nav-input input {
+    width: 160px;
+}
+
+.sidebar-nav-input i {
+    margin-left: 20px;
+}
+
+/* ! scroll design */
+nav ul::-webkit-scrollbar {
+    width: 1em;
+    height: 10px;
+}
+
+nav ul::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(29, 2, 50, 0.3);
+}
+
+nav ul::-webkit-scrollbar-thumb {
+    background-color: rgb(116, 20, 225);
+    outline: 1px solid rgb(114, 3, 177);
+}
