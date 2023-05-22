@@ -225,219 +225,250 @@
                         <table>
                             <thead>
                                 <tr class="table-head-container">
-                                    <th><input type="checkbox" name="checkbox" class="table-checkbox"></th>
-                                    <th><span>User</span><i class="fa-solid fa-sort-down"></i></th>
-                                    <th><span>Ad / Soyad</span><i class="fa-solid fa-sort-down"></i></th>
-                                    <th><span>Filtreler</span><i class="fa-solid fa-sort-down"></i></th>
-                                    <th><span>Yıldızlar</span><i class="fa-solid fa-sort-down"></i></th>
-                                    <th><span>Permission</span><i class="fa-solid fa-sort-down"></i></th>
-                                    <th><span>Yüzde</span><i class="fa-solid fa-sort-down"></i></th>
-                                    <th><span>Boş Text</span><i class="fa-solid fa-sort-down"></i></th>
-                                    <th><span>Text Link</span><i class="fa-solid fa-sort-down"></i></th>
-                                    <th><span>Checkbox</span><i class="fa-solid fa-sort-down"></i></th>
+                                    <th class="table-checked"><input type="checkbox" name="checkbox" class="table-checkbox"></th>
+                                    <th class="table-user-img thead-asc"><span>User</span><i class="fa-solid fa-sort-down"></i></th>
+                                    <th class="table-user-name thead-asc"><span>Ad / Soyad</span><i class="fa-solid fa-sort-down"></i></th>
+                                    <th class="table-filtr thead-asc"><span>Filtreler</span><i class="fa-solid fa-sort-down"></i>
+                                    </th>
+                                    <th class="table-stars thead-asc"><span>Yıldızlar</span><i class="fa-solid fa-sort-down"></i></th>
+                                    <th class="table-permission thead-asc"><span>Permission</span><i class="fa-solid fa-sort-down"></i></th>
+                                    <th class="table-percentage thead-asc"><span>Yüzde</span><i class="fa-solid fa-sort-down"></i></th>
+                                    <th class="table-status thead-asc"><span>Boş Text</span><i class="fa-solid fa-sort-down"></i></th>
+                                    <th class="table-link thead-asc"><span>Text Link</span><i class="fa-solid fa-sort-down"></i></th>
+                                    <th class="checkbox-apple thead-asc"><span>Checkbox</span><i class="fa-solid fa-sort-down"></i></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td><img src="./assets/Images/Ozan Alatlı.jpg" alt="Ozan Alatlı"></td>
-                                    <td><span>Ozan Alatlı</span></td>
-                                    <td>
+                                    <td class="table-checked"><input type="checkbox" checked="true"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/Ozan Alatlı.jpg" alt="Ozan Alatlı"></td>
+                                    <td class="table-user-name"><span>Ozan Alatlı</span></td>
+                                    <td class="table-filtr">
                                         <button class="filtr-btn"><span>North American</span>
                                             <i class="fa-solid fa-circle-xmark"></i></button>
                                         <button class="filtr-btn"><span>Canada</span> <i
                                                 class="fa-solid fa-circle-xmark"></i></button>
                                     </td>
-                                    <td>
+                                    <td class="table-stars">
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td><button class="table-admin-btn">Admin</button></td>
-                                    <td><span>40%</span></td>
-                                    <td><span>Low</span></td>
-                                    <td><a href="#">VIEW</a></td>
-                                    <td>Checkbox</td>
+                                    <td class="table-permission"><button class="table-admin-btn table-btn">Admin</button></td>
+                                    <td class="table-percentage bg-40"><span>40%</span></td>
+                                    <td class="table-status"><span>Low</span></td>
+                                    <td class="table-link"><a href="#">VIEW</a></td>
+                                    <td class="checkbox-apple">
+                                        <input class="yep" id="check-apple" type="checkbox" checked="true">
+                                        <label for="check-apple"></label>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td><img src="./assets/Images/Eda Taştan.jpg" alt="Eda Taştan"></td>
-                                    <td><span>Eda Taştan</span></td>
-                                    <td>
+                                    <td class="table-checked"><input type="checkbox"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/Eda Taştan.jpg" alt="Eda Taştan"></td>
+                                    <td class="table-user-name"><span>Eda Taştan</span></td>
+                                    <td class="table-filtr">
                                         <button class="filtr-btn"><span>Agency</span>
                                             <i class="fa-solid fa-circle-xmark"></i></button>
                                     </td>
-                                    <td>
+                                    <td class="table-stars">
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td><button class="table-contributor-btn">Contributor</button></td>
-                                    <td><span>20%</span></td>
-                                    <td><span>Medium</span></td>
-                                    <td><a href="#">VIEW</a></td>
-                                    <td>Checkbox</td>
+                                    <td class="table-permission"><button class="table-contributor-btn table-btn">Contributor</button></td>
+                                    <td class="table-percentage bg-20"><span>20%</span></td>
+                                    <td class="table-status"><span>Medium</span></td>
+                                    <td class="table-link"><a href="#">VIEW</a></td>
+                                    <td class="checkbox-apple">
+                                        <input class="yep" id="check-apple" type="checkbox">
+                                        <label for="check-apple"></label>
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td><img src="./assets/Images/Osman Dağ.jpg" alt="Osman Dağ"></td>
-                                    <td><span>Osman Dağ</span></td>
-                                    <td>
+                                <tr class="table-row-lightblue">
+                                    <td class="table-checked"><input type="checkbox" checked="true"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/Osman Dağ.jpg" alt="Osman Dağ"></td>
+                                    <td class="table-user-name"><span>Osman Dağ</span></td>
+                                    <td class="table-filtr">
                                         <button class="filtr-btn"><span>North American</span>
                                             <i class="fa-solid fa-circle-xmark"></i></button>
                                     </td>
-                                    <td>
+                                    <td class="table-stars">
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td><button class="table-viewer-btn">Viewer</button></td>
-                                    <td><span>60%</span></td>
-                                    <td><span>Medium</span></td>
-                                    <td><a href="#">VIEW</a></td>
-                                    <td>Checkbox</td>
+                                    <td class="table-permission"><button class="table-viewer-btn table-btn">Viewer</button></td>
+                                    <td class="table-percentage bg-60"><span>60%</span></td>
+                                    <td class="table-status"><span>Medium</span></td>
+                                    <td class="table-link"><a href="#">VIEW</a></td>
+                                    <td class="checkbox-apple">
+                                        <input class="yep" id="check-apple" type="checkbox" checked="true">
+                                        <label for="check-apple"></label>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td><img src="./assets/Images/Arif Bulut..jpg" alt="Arif Bulut"></td>
-                                    <td><span>Arif Bulut</span></td>
-                                    <td>
+                                    <td class="table-checked"><input type="checkbox"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/Arif Bulut..jpg" alt="Arif Bulut"></td>
+                                    <td class="table-user-name"><span>Arif Bulut</span></td>
+                                    <td class="table-filtr">
                                         <button class="filtr-btn"><span>Agency</span>
                                             <i class="fa-solid fa-circle-xmark"></i></button>
                                         <button class="filtr-btn"><span>Filtrele</span>
                                             <i class="fa-solid fa-circle-xmark"></i></button>
                                     </td>
-                                    <td>
+                                    <td class="table-stars">
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td><button class="table-moderator-btn">Moderator</button></td>
-                                    <td><span>90%</span></td>
-                                    <td><span>High</span></td>
-                                    <td><a href="#">VIEW</a></td>
-                                    <td>Checkbox</td>
+                                    <td class="table-permission"><button class="table-moderator-btn table-btn">Moderator</button></td>
+                                    <td class="table-percentage bg-90"><span>90%</span></td>
+                                    <td class="table-status"><span>High</span></td>
+                                    <td class="table-link"><a href="#">VIEW</a></td>
+                                    <td class="checkbox-apple">
+                                        <input class="yep" id="check-apple" type="checkbox">
+                                        <label for="check-apple"></label>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td><img src="./assets/Images/Kadir Taş.jpg" alt="Kadir Taş"></td>
-                                    <td><span>Kadir Taş</span></td>
-                                    <td>
+                                    <td class="table-checked"><input type="checkbox" checked="true"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/Kadir Taş.jpg" alt="Kadir Taş"></td>
+                                    <td class="table-user-name"><span>Kadir Taş</span></td>
+                                    <td class="table-filtr">
                                         <button class="filtr-btn"><span>North American</span>
                                             <i class="fa-solid fa-circle-xmark"></i></button>
                                         <button class="filtr-btn"><span>Canada</span>
                                             <i class="fa-solid fa-circle-xmark"></i></button>
                                     </td>
-                                    <td>
+                                    <td class="table-stars">
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td><button class="table-admin-btn">Admin</button></td>
-                                    <td><span>40%</span></td>
-                                    <td><span>High</span></td>
-                                    <td><a href="#">VIEW</a></td>
-                                    <td>Checkbox</td>
+                                    <td class="table-permission"><button class="table-admin-btn table-btn">Admin</button></td>
+                                    <td class="table-percentage bg-40"><span>40%</span></td>
+                                    <td class="table-status"><span>High</span></td>
+                                    <td class="table-link"><a href="#">VIEW</a></td>
+                                    <td class="checkbox-apple">
+                                        <input class="yep" id="check-apple" type="checkbox" checked="true">
+                                        <label for="check-apple"></label>
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td><img src="./assets/Images/Yücel Kabil.jpg" alt="Yücel Kabil"></td>
-                                    <td><span>Yücel Kabil</span></td>
-                                    <td>
+                                <tr class="table-row-orange">
+                                    <td class="table-checked"><input type="checkbox"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/Yücel Kabil.jpg" alt="Yücel Kabil"></td>
+                                    <td class="table-user-name"><span>Yücel Kabil</span></td>
+                                    <td class="table-filtr">
                                         <button class="filtr-btn"><span>Agency</span>
                                             <i class="fa-solid fa-circle-xmark"></i></button>
                                     </td>
-                                    <td>
+                                    <td class="table-stars">
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td><button class="table-contributor-btn">Contributor</button></td>
-                                    <td><span>20%</span></td>
-                                    <td><span>Low</span></td>
-                                    <td><a href="#">VIEW</a></td>
-                                    <td>Checkbox</td>
+                                    <td class="table-permission"><button class="table-contributor-btn table-btn">Contributor</button></td>
+                                    <td class="table-percentage bg-20"><span>20%</span></td>
+                                    <td class="table-status"><span>Low</span></td>
+                                    <td class="table-link"><a href="#">VIEW</a></td>
+                                    <td class="checkbox-apple">
+                                        <input class="yep" id="check-apple" type="checkbox">
+                                        <label for="check-apple"></label>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td><img src="./assets/Images/İpek Seçil.jpg" alt="İpek Seçil"></td>
-                                    <td><span>İpek Seçil</span></td>
-                                    <td>
+                                    <td class="table-checked"><input type="checkbox" checked="true"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/İpek Seçil.jpg" alt="İpek Seçil"></td>
+                                    <td class="table-user-name"><span>İpek Seçil</span></td>
+                                    <td class="table-filtr">
                                         <button class="filtr-btn"><span>North American</span>
                                             <i class="fa-solid fa-circle-xmark"></i></button>
-                                        </td>
-                                    <td>
+                                    </td>
+                                    <td class="table-stars">
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td><button class="table-viewer-btn">Viewer</button></td>
-                                    <td><span>60%</span></td>
-                                    <td><span>Medium</span></td>
-                                    <td><a href="#">VIEW</a></td>
-                                    <td>Checkbox</td>
+                                    <td class="table-permission"><button class="table-viewer-btn table-btn">Viewer</button></td>
+                                    <td class="table-percentage bg-60"><span>60%</span></td>
+                                    <td class="table-status"><span>Medium</span></td>
+                                    <td class="table-link"><a href="#">VIEW</a></td>
+                                    <td class="checkbox-apple">
+                                        <input class="yep" id="check-apple" type="checkbox" checked="true">
+                                        <label for="check-apple"></label>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td><img src="./assets/Images/Onur Barış.jpg" alt="Onur Barış"></td>
-                                    <td><span>Onur Barış</span></td>
-                                    <td>
+                                    <td class="table-checked"><input type="checkbox"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/Onur Barış.jpg" alt="Onur Barış"></td>
+                                    <td class="table-user-name"><span>Onur Barış</span></td>
+                                    <td class="table-filtr">
                                         <button class="filtr-btn"><span>Agency</span>
                                             <i class="fa-solid fa-circle-xmark"></i></button>
                                         <button class="filtr-btn"><span>Filtrele</span>
                                             <i class="fa-solid fa-circle-xmark"></i></button>
                                     </td>
-                                    <td>
+                                    <td class="table-stars">
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td><button class="table-superAdmin-btn">Super Admin</button></td>
-                                    <td><span>90%</span></td>
-                                    <td><span>Super High</span></td>
-                                    <td><a href="#">VIEW</a></td>
-                                    <td>Checkbox</td>
+                                    <td class="table-permission"><button class="table-superAdmin-btn table-btn">Super Admin</button></td>
+                                    <td class="table-percentage bg-90"><span>90%</span></td>
+                                    <td class="table-status"><span>Super High</span></td>
+                                    <td class="table-link"><a href="#">VIEW</a></td>
+                                    <td class="checkbox-apple">
+                                        <input class="yep" id="check-apple" type="checkbox">
+                                        <label for="check-apple"></label>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td><img src="./assets/Images/Evren Yüce.jpg" alt="Evren Yüce"></td>
-                                    <td><span>Evren Yüce</span></td>
-                                    <td>
+                                    <td class="table-checked"><input type="checkbox"  checked="true"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/Evren Yüce.jpg" alt="Evren Yüce"></td>
+                                    <td class="table-user-name"><span>Evren Yüce</span></td>
+                                    <td class="table-filtr">
                                         <button class="filtr-btn"><span>North American</span>
                                             <i class="fa-solid fa-circle-xmark"></i></button>
                                     </td>
-                                    <td>
+                                    <td class="table-stars">
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td><button class="table-viewer-btn">Viewer</button></td>
-                                    <td><span>100%</span></td>
-                                    <td><span>Low</span></td>
-                                    <td><a href="#">VIEW</a></td>
-                                    <td>Checkbox</td>
+                                    <td class="table-permission"><button class="table-viewer-btn table-btn">Viewer</button></td>
+                                    <td class="table-percentage bg-100"><span>100%</span></td>
+                                    <td class="table-status"><span>Low</span></td>
+                                    <td class="table-link"><a href="#">VIEW</a></td>
+                                    <td class="checkbox-apple">
+                                        <input class="yep" id="check-apple" type="checkbox" checked="true">
+                                        <label for="check-apple"></label>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td><img src="./assets/Images/Coşkun Kaya.jpg" alt="Coşkun Kaya"></td>
-                                    <td><span>Coşkun Kaya</span></td>
-                                    <td>
+                                    <td class="table-checked"><input type="checkbox"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/Coşkun Kaya.jpg" alt="Coşkun Kaya"></td>
+                                    <td class="table-user-name"><span>Coşkun Kaya</span></td>
+                                    <td class="table-filtr">
                                         <button class="filtr-btn"><span>Agency</span>
                                             <i class="fa-solid fa-circle-xmark"></i></button>
                                         <button class="filtr-btn"><span>Filtrele</span>
                                             <i class="fa-solid fa-circle-xmark"></i></button>
                                     </td>
-                                    <td>
+                                    <td class="table-stars">
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td><button class="table-moderator-btn">Moderator</button></td>
-                                    <td><span>90%</span></td>
-                                    <td><span>Medium</span></td>
-                                    <td><a href="#">VIEW</a></td>
-                                    <td>Checkbox</td>
+                                    <td class="table-permission"><button class="table-moderator-btn table-btn">Moderator</button></td>
+                                    <td class="table-percentage bg-90"><span>90%</span></td>
+                                    <td class="table-status"><span>Medium</span></td>
+                                    <td class="table-link"><a href="#">VIEW</a></td>
+                                    <td class="checkbox-apple">
+                                        <input class="yep" id="check-apple" type="checkbox">
+                                        <label for="check-apple"></label>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>

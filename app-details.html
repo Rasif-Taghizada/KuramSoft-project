@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App Detals</title>
-    <!-- Pure CSS -->
+    <title>App Details</title>
     <link rel="stylesheet" href="./css/app-meneger/app-details.css" />
-    <!-- Font Awesome -->
+    <!-- Font Awesom -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -17,7 +16,7 @@
     />
   </head>
   <body>
-    <div class="container-app-detals"> 
+    <div class="container-app-details">
       <nav>
         <i class="fa-solid fa-house"></i>
         <i class="fa-solid fa-angle-right"></i>
@@ -25,15 +24,16 @@
         <i class="fa-solid fa-angle-right"></i>
         <a href="#">Aplications</a>
       </nav>
-      <div class="app-detals-name">
+      <div class="app-details-name">
         <span>
           <img src="./assets/Icons/ericsson.svg" alt="Ericsson" />
           APP MANAGER
         </span>
       </div>
-      <!-- App detals nav map -->
-      <main class="app-detals-main">
-        <div class="app-detals-nav-map">
+
+      <main class="app-details-main">
+        <!-- App details nav map -->
+        <div class="app-details-nav-map app-details-nav-map-top">
           <ul class="nav-map-list">
             <li>
               <div class="circlue"></div>
@@ -41,6 +41,7 @@
             </li>
             <li>
               <div class="circlue"></div>
+
               Updates
             </li>
             <li>
@@ -64,9 +65,26 @@
               Needed Apllications
             </li>
           </ul>
+          <!-- ! App details User -->
+          <div class="app-details-user">
+            <p class="details-user-name">Ümit Ahmet Şahin</p>
+            <p class="details-user-date">Setup date: 01.05.2013</p>
+            <div class="details-star-box">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <!-- ? App details Send Message -->
+          <div class="details-send-mesasage">
+            <i class="fa-solid fa-message"></i>
+            <p>Send Message</p>
+          </div>
         </div>
-        <div class="app-detals-header">
-          <div class="detals-header-left">
+        <!-- !App details Header -->
+        <div class="app-details-header">
+          <div class="details-header-left">
             <div class="apps-box-left">
               <img src="./assets/Icons/Icons-1.svg" alt="Icon" />
             </div>
@@ -77,7 +95,7 @@
               <span>Menu Template / Sidebar / Header</span>
             </div>
           </div>
-          <div class="detals-header-rigth">
+          <div class="details-header-rigth">
             <p>
               Compatible Browsers: IE9, IE10, IE11, Firefox, Safari, Opera,
               Chrome, <br />
@@ -89,6 +107,334 @@
               <li>License : Portal</li>
               <li>License period : 1 year</li>
             </ul>
+          </div>
+        </div>
+        <!--! APP Details State -->
+        <div class="app-details-state">
+          <div class="state-button-box">
+            <button class="app-tested-button">Aplication Tested</button>
+            <button class="app-install-button">Install</button>
+          </div>
+          <div class="state-requared">
+            <i class="fa-solid fa-xmark close-button"></i>
+            <span>No software required</span>
+          </div>
+        </div>
+        <!-- ! App Detals Overview -->
+        <div class="app-details-overview">
+          <h3>Overview</h3>
+          <!-- ? Overview Carusel -->
+          <div class="app-overview-carusel">
+            <div class="app-carusel-content"></div>
+            <div class="app-carusel-circle">
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+            </div>
+          </div>
+          <!-- ? Overview Content -->
+          <div class="app-overview-content">
+            <img src="./assets/icons/notifications.svg" alt="notifications" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Excepturi facere earum quis ipsa vitae qui minima esse ducimus
+              dolorum iste nisi laborum repellat dolores dolore debitis adipisci
+              nemo quia autem pariatur a voluptatem dignissimos maiores
+              accusantium nobis tempora consequatur cumque quas ea doloribus
+              deleniti. Quibusdam commodi laboriosam error temporibus iste ipsa
+              soluta distinctio maiores ad totam beatae incidunt veritatis enim?
+              Reiciendis voluptate cupiditate asperiores ratione laboriosam
+              alias mollitia eaque labore aperiam similique reprehenderit
+              assumenda quidem eos explicabo rerum. Porro at ex magni aliquam
+              laborum delectus voluptate officia modi nam et cupiditate culpa
+              asperiores eaque fuga quae. Dolorum commodi labore neque fuga
+              totam voluptate vitae ea laudantium iure quos placeat accusamus.
+            </p>
+          </div>
+          <!-- ? Updates Box -->
+          <div class="app-overiew-updates">
+            <img src="./assets/icons/drop-opacity.svg" alt="Drop Opacity" />
+            <h4 class="overiew-header-text">Updates</h4>
+            <span class="overiew-additional-text">New in 2.4.3</span>
+            <!-- *TODO Overview List -->
+            <ul class="overiew-updates-list">
+              <li>
+                <i class="fa-solid fa-list-check"></i>
+                In-app previews of Word, PowerPoint and PDF files
+              </li>
+              <li>
+                <i class="fa-solid fa-list-check"></i>
+                New search experience that tracks recent queries and shows
+                typeahead suggestions
+              </li>
+              <li>
+                <i class="fa-solid fa-list-check"></i>
+                View-only permissions for shared folders for Dropbox for
+                Business users
+              </li>
+              <li>
+                <i class="fa-solid fa-list-check"></i>
+                Cache performance enhancements
+              </li>
+              <li>
+                <i class="fa-solid fa-list-check"></i>
+                Lots of bug fixes and improvements New in 2.4.2:
+              </li>
+              <li>
+                <i class="fa-solid fa-list-check"></i>
+                Support for additional languages
+              </li>
+              <li>
+                <i class="fa-solid fa-list-check"></i>
+                Danish, Dutch, Swedish and Thai - Bug fixes and improvements New
+                in 2.4.1
+              </li>
+              <li>
+                <i class="fa-solid fa-list-check"></i>
+                Bug fixes and performance improvements
+              </li>
+            </ul>
+          </div>
+          <!-- ? Additional Container -->
+          <div class="app-additiona-container">
+            <!-- *TODO Forms -->
+            <div class="app-additiona-box">
+              <img src="./assets/icons/view-split.svg" alt="View Slit" />
+              <h4>Forms</h4>
+              <div class="list-box-main">
+                <div class="list-box-left">
+                  <ul class="app-additional-list">
+                    <li>
+                      <i class="fa-solid fa-square"></i>
+                      Ut enim ad minim veniam Unt in culpa qui officia
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-square"></i>
+                      Oluptate velit esse cillum dolore eu fugiat
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-square"></i>
+                      Ut enim ad minim veniam
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-square"></i>
+                      Cache performance enhancements
+                    </li>
+                  </ul>
+                </div>
+                <div class="list-box-right">
+                  <ul class="app-additional-list">
+                    <li>
+                      <i class="fa-solid fa-square square-blue"></i>
+                      Lots of bug fixes and improvements
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-square square-blue"></i>
+                      Support for additional languages
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-square square-blue"></i>
+                      Danish, Dutch, Swedish and Thai
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-square square-blue"></i>
+                      Bug fixes and improvements New in 2.4.1
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- *TODO Pages -->
+            <div class="app-additiona-box additional-box-active">
+              <img src="./assets/icons/album.svg" alt="Albom" />
+              <h4>Pages</h4>
+              <div class="list-box-main">
+                <div class="list-box-left">
+                  <ul class="app-additional-list">
+                    <li>
+                      <i class="fa-solid fa-square"></i>
+                      Ut enim ad minim veniam Unt in culpa qui officia
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-square"></i>
+                      Oluptate velit esse cillum dolore eu fugiat
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-square"></i>
+                      Ut enim ad minim veniam
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-square"></i>
+                      Cache performance enhancements
+                    </li>
+                  </ul>
+                </div>
+                <div class="list-box-right">
+                  <ul class="app-additional-list">
+                    <li>
+                      <i class="fa-solid fa-square square-blue"></i>
+                      Lots of bug fixes and improvements
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-square square-blue"></i>
+                      Support for additional languages
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- *TODO Reports -->
+            <div class="app-additiona-box">
+              <img
+                src="./assets/icons/play-list-search.svg"
+                alt="Search List"
+              />
+              <h4>Reports</h4>
+              <div class="list-box-main">
+                <div class="list-box-left">
+                  <ul class="app-additional-list">
+                    <li>
+                      <i class="fa-solid fa-square"></i>
+                      Ut enim ad minim veniam Unt in culpa qui officia
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-square"></i>
+                      Oluptate velit esse cillum dolore eu fugiat
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-square"></i>
+                      Ut enim ad minim veniam
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-square"></i>
+                      Cache performance enhancements
+                    </li>
+                  </ul>
+                </div>
+                <div class="list-box-right">
+                  <ul class="app-additional-list">
+                    <li>
+                      <i class="fa-solid fa-square square-blue"></i>
+                      Lots of bug fixes and improvements
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-square square-blue"></i>
+                      Support for additional languages
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ? Table -->
+          <div class="overview-table-box">
+            <table class="overiew-table">
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Type</th>
+              </tr>
+
+              <tr>
+                <td>Lorem ipsum</td>
+                <td>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut
+                </td>
+                <td>Workflow</td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum</td>
+                <td>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut
+                </td>
+                <td>Workflow</td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum</td>
+                <td>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut
+                </td>
+                <td>Workflow</td>
+              </tr>
+            </table>
+          </div>
+          <!-- ? Needed Applications -->
+          <div class="overview-needed-applications">
+            <img
+              src="./assets/icons/play-list-search-black.svg"
+              alt="overview-needed-applications"
+            />
+            <h4>Needed Applications</h4>
+            <div class="overiew-application-container">
+              <div class="overiew-application-box">
+                <img src="./assets/icons/Icons-1.svg" alt="icon" />
+                <h5>INSTAGRAM BOT</h5>
+                <button class="application-detal-button">Details</button>
+              </div>
+              <div class="overiew-application-box">
+                <img src="./assets/icons/Icons-1.svg" alt="icon" />
+                <h5>INSTAGRAM BOT</h5>
+                <button class="application-detal-button">Details</button>
+              </div>
+              <div class="overiew-application-box">
+                <img src="./assets/icons/Icons-1.svg" alt="icon" />
+                <h5>INSTAGRAM BOT</h5>
+                <button class="application-detal-button">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--! App Details Nav Map Bottom  -->
+        <div class="app-details-nav-map app-details-nav-map-bottom">
+          <ul class="nav-map-list">
+            <li>
+              <div class="circlue"></div>
+              Overiew
+            </li>
+            <li>
+              <div class="circlue"></div>
+
+              Updates
+            </li>
+            <li>
+              <div class="circlue"></div>
+              Forms
+            </li>
+            <li>
+              <div class="circlue"></div>
+              Pages
+            </li>
+            <li>
+              <div class="circlue"></div>
+              Report
+            </li>
+            <li>
+              <div class="circlue"></div>
+              Special Component
+            </li>
+            <li>
+              <div class="circlue"></div>
+              Needed Apllications
+            </li>
+          </ul>
+          <!-- ! App details User -->
+          <div class="app-details-user">
+            <p class="details-user-name">Ümit Ahmet Şahin</p>
+            <p class="details-user-date">Setup date: 01.05.2013</p>
+            <div class="details-star-box">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <!-- ? App details Send Message -->
+          <div class="details-send-mesasage">
+            <i class="fa-solid fa-message"></i>
+            <p>Send Message</p>
           </div>
         </div>
       </main>
