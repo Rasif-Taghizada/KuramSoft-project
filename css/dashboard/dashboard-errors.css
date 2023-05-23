@@ -1,0 +1,33 @@
+/* Import Font face and reset css */
+@import url('../main.css');
+/* Import Colors */
+@import url("../colors.css");
+/* Import form elements */
+@import url("../form.css");
+/* Inport Dashboard main styles */
+@import url("../dashboard-header.css");
+
+/* ! Dashboard Errors Container */
+.dashboard-errors{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    column-gap: 25px;
+    padding: 25px 50px;
+}
+.dashboard-errors-left{
+    grid-column: 1/2;
+    grid-row: 1/-1;
+}
+.dashboard-errors-right{
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+}
+.dashboard-errors-left , .dashboard-errors-right{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    gap: 25px;
+}
+
+

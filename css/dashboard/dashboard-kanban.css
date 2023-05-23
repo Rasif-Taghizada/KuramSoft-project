@@ -1,0 +1,48 @@
+/* Import Font face and reset css */
+@import url('../main.css');
+/* Import Colors */
+@import url("../colors.css");
+/* Import form elements */
+@import url("../form.css");
+/* Import Dashboard Main */
+@import url('../dashboard-header.css');
+
+@import url('./dashboard-list.css');
+
+/* ! Dashboard Kanban Container */
+.dashboard-kanban-container {
+    width: 100%;
+    padding: 30px;
+    overflow-x: scroll;
+}
+.dashboard-main-content{
+    flex-direction: column;
+}
+
+.dashboard-kanban-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard-kanban-header-right{
+    min-width: 180px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.dashboard-kanban-header-right > img{
+    width: 30px;
+    height: 30px;
+}
+
+/* * Kanban subheader container */
+.dashboard-kanban-subheader-right button{
+    padding: 8px 12px;
+}
+.dashboard-kanban-subheader-left{
+    order: 2;
+}
+.dashboard-kanban-subheader-left > .filtr-btn{
+    font-size: 11px;
+}

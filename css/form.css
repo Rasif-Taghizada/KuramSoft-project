@@ -330,16 +330,194 @@
 .table-admin-btn {
     background: #55CCFF;
 }
+
 .table-contributor-btn {
     background: #FF9C55;
 }
+
 .table-viewer-btn {
     background: #FF5555;
 }
+
 .table-moderator-btn {
     background: #5855FF;
 }
+
 .table-superAdmin-btn {
     background: #110F6F;
 }
 
+/*!! Dashboard Error Page  */
+.error-container {
+    display: flex;
+    flex-direction: column;
+    background: #F5F5F5;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.error-header-area {
+    height: 16px;
+    width: 100%;
+}
+
+.error-main-content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 25px 35px;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+/* * Error Main Content Left */
+.error-icon,
+.info-icon,
+.success-icon,
+.warning-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:where(.error-icon, .warning-icon, .success-icon, .info-icon) i {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.error-icon {
+    border: 3px solid #FF0000;
+    color: #FF0000;
+}
+
+.warning-icon {
+    background: #FF9900;
+    color: white;
+}
+
+.info-icon {
+    border: 3px solid #0168FF;
+    color: #0168FF;
+}
+
+.success-icon {
+    background: #83FF06;
+    color: white;
+}
+
+/* * Error Main Content Right */
+.error-main-content-right>h1 {
+    font-size: 20px;
+}
+
+.error-main-content-right>p {
+    font-size: 12px;
+}
+
+
+
+/* ? Container header colors  */
+.error-header {
+    background-color: #FFE2E2;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
+    border-bottom: 3px solid #FFC3C3;
+}
+
+.info-header {
+    background-color: #0168FF;
+    border-bottom: 3px solid #9DC5FF;
+}
+
+.success-header {
+    background-color: #83FF06;
+    border-bottom: 3px solid #D8FFB1;
+}
+
+.warning-header {
+    background-color: #FF9900;
+    border-bottom: 3px solid #FFBE5C;
+}
+
+/* Error Container Footer buttons */
+.error-footer-btns {
+    text-align: right;
+    padding: 6px 33px;
+}
+
+.error-footer-btns button {
+    outline: none;
+    border: 1px solid #AACCFE;
+    padding: 9px 15px;
+    font-weight: 700;
+    font-size: 10px;
+    color: #000000;
+}
+
+.error-footer-btns button:nth-child(1) {
+    background: #FFFFFF;
+}
+
+.error-footer-btns button:nth-child(2) {
+    background: #21D1F8;
+    margin-left: 10px;
+}
+
+/*! Dashboard Kanban Page */
+/*? Kanban Header Buttons design */
+.dashboard-kanban-header button,
+.dashboard-kanban-subheader button {
+    font-weight: 700;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+}
+.dashboard-kanban-header button > img,
+.dashboard-kanban-subheader button > img{
+    width: 23px;
+    height: 23px;
+}
+
+.kanban-new-btn {
+    background: #BBFFB5;
+    border: 1px solid #44FF34;
+    border-radius: 4px;
+    padding: 10px 15px;
+}
+
+.kanban-settings-btn {
+    background: #0066FF;
+    border: 1px solid #0054D1;
+    border-radius: 4px;
+    padding: 11px 20px;
+    color: #FFFFFF;
+}
+
+/*! Dashboard Kanban subheader buttons design code */
+.view-import-sort-group-btns{
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+.view-btn{
+    background: #D0EBFF;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+}
+.import-btn{
+    background: #D6E6FF;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+}
+.sort-btn{
+    background: #FFE1F8;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+}
+.group-btn{
+    background: #E1FDFF;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+}

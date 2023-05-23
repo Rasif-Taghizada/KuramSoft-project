@@ -332,7 +332,7 @@
               </footer>
             </div>
             <!-- ! Folder Content -->
-            <div class="folder-content">
+            <div class="folder-container">
               <!-- ? Folder Nav -->
               <nav class="folder-nav">
                 <ul>
@@ -368,16 +368,307 @@
                     </button>
                   </div>
                   <div>
-                    <input type="search" name="file-search" id="file-search" placeholder="search" />
-                  <i class="fa-solid fa-magnifying-glass"></i>
+                    <input
+                      type="search"
+                      name="file-search"
+                      id="file-search"
+                      placeholder="search"
+                    />
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                </div>
+                <!-- ? Button Box -->
+                <div class="folder-button-box">
+                  <div>
+                    <button class="uplade-button">
+                      Upload
+                      <img
+                        src="./assets/icons/insert-before.svg"
+                        alt="Insert Before"
+                      />
+                    </button>
+                    <button class="create-folder-button">
+                      Creat Folder
+                      <img
+                        src="./assets/icons/calendar-due.svg"
+                        alt="calendar-due"
+                      />
+                    </button>
+                    <button class="export-button">
+                      Export
+                      <img
+                        src="./assets/icons/calendar-next.svg"
+                        alt="Calendar"
+                      />
+                    </button>
+                    <button class="inactive-files-button">
+                      Inactive Files
+                      <img src="./assets/icons/file.svg" alt="" />
+                    </button>
+                    <button class="reload-button">
+                      Reload
+                      <img src="./assets/icons/open-collective.svg" alt="" />
+                    </button>
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/icons/display-fullwidth.svg"
+                      alt="Display Fullwidth"
+                    />
+                    <img
+                      src="./assets/icons/display-grid.svg"
+                      alt="Display Grid"
+                    />
+                  </div>
+                </div>
+                <!-- ? Folder Box-->
+                <div class="folder-box-container">
+                  <!-- TODO Search Panel -->
+                  <div class="search-panel">
+                    <div class="search-panel-left">
+                      <input type="checkbox" name="" id="" />
+                      <div class="name-select-box">
+                        <span>Name</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </div>
+                    </div>
+                    <div class="search-panel-right">
+                      <div class="size-select-box">
+                        <span>Size</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </div>
+                      <div class="type-select-box">
+                        <span>Type</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </div>
+                      <div class="version-select-box">
+                        <span>Version</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </div>
+                      <div class="date-change-select-box">
+                        <span>Date of Change</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- TODO Folder Box -->
+                  <div class="folder-content">
+                    <div class="folder-box">
+                      <div class="folder-box-header">
+                        <input type="checkbox" name="" id="" />
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                      </div>
+                      <div class="folder-box-main">
+                        <img src="./assets/icons/folder-one.svg" alt="Folder" />
+                        <span>Document</span>
+                      </div>
+                      <div class="folder-box-footer">
+                        <span class="folder-size">178 kb</span>
+                        <span class="folder-date">03.10.2023</span>
+                      </div>
+                    </div>
+                    <div class="folder-box">
+                      <div class="folder-box-header">
+                        <input type="checkbox" name="" id="" />
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                      </div>
+                      <div class="folder-box-main">
+                        <img src="./assets/icons/folder-one.svg" alt="Folder" />
+                        <span>Document</span>
+                      </div>
+                      <div class="folder-box-footer">
+                        <span class="folder-size">178 kb</span>
+                        <span class="folder-date">03.10.2023</span>
+                      </div>
+                    </div>
+                    <div class="folder-box">
+                      <div class="folder-box-header">
+                        <input type="checkbox" name="" id="" />
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                      </div>
+                      <div class="folder-box-main">
+                        <img src="./assets/icons/folder-one.svg" alt="Folder" />
+                        <span>Document</span>
+                      </div>
+                      <div class="folder-box-footer">
+                        <span class="folder-size">178 kb</span>
+                        <span class="folder-date">03.10.2023</span>
+                      </div>
+                    </div>
+                    <div class="folder-box">
+                      <div class="folder-box-header">
+                        <input type="checkbox" name="" id="" />
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                      </div>
+                      <div class="folder-box-main">
+                        <img src="./assets/icons/folder-one.svg" alt="Folder" />
+                        <span>Document</span>
+                      </div>
+                      <div class="folder-box-footer">
+                        <span class="folder-size">178 kb</span>
+                        <span class="folder-date">03.10.2023</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- TODO File Box -->
+                  <div class="file-content">
+                    <div class="file-box">
+                      <div class="file-box-header">
+                        <input type="checkbox" name="" id="" />
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                      </div>
+                      <div class="file-box-main">
+                        <img src="./assets/icons/doc-icon.svg" alt="Folder" />
+                        <span>Document</span>
+                      </div>
+                      <div class="file-box-footer">
+                        <span class="file-size">178 kb</span>
+                        <span class="file-date">03.10.2023</span>
+                      </div>
+                    </div>
+                    <div class="file-box">
+                      <div class="file-box-header">
+                        <input type="checkbox" name="" id="" />
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                      </div>
+                      <div class="file-box-main">
+                        <img src="./assets/icons/doc-icon.svg" alt="Folder" />
+                        <span>Document</span>
+                      </div>
+                      <div class="file-box-footer">
+                        <span class="file-size">178 kb</span>
+                        <span class="file-date">03.10.2023</span>
+                      </div>
+                    </div>
+                    <div class="file-box">
+                      <div class="file-box-header">
+                        <input type="checkbox" name="" id="" />
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                      </div>
+                      <div class="file-box-main">
+                        <img src="./assets/icons/doc-icon.svg" alt="Folder" />
+                        <span>Document</span>
+                      </div>
+                      <div class="file-box-footer">
+                        <span class="file-size">178 kb</span>
+                        <span class="file-date">03.10.2023</span>
+                      </div>
+                    </div>
+                    <div class="file-box">
+                      <div class="file-box-header">
+                        <input type="checkbox" name="" id="" />
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                      </div>
+                      <div class="file-box-main">
+                        <img src="./assets/icons/doc-icon.svg" alt="Folder" />
+                        <span>Document</span>
+                      </div>
+                      <div class="file-box-footer">
+                        <span class="file-size">178 kb</span>
+                        <span class="file-date">03.10.2023</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </main>
             </div>
             <!-- ! Folder Preview -->
-            <div class="folder-preview">aaa</div>
+            <div class="folder-preview">
+              <header>
+                <div>
+                  <i class="fa-solid fa-file-lines"></i>
+                  <h5>File Preview</h5>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </header>
+              <main class="folder-preview-main">
+                <div class="folder-preview-icon">
+                  <img src="./assets/icons/pdf-icon.svg" alt="Pdf Icon" />
+                </div>
+                <div class="folder-preview-content">
+                  <div class="folder-preview-header-box">
+                    <h4>Kuramsoft KVKK verileri.pdf</h4>
+                    <span>2.5 GB, 01H:30M:45S</span>
+                  </div>
+                  <div class="folder-preview-footer-box">
+                    <h5>File Description</h5>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since
+                    </p>
+                  </div>
+                </div>
+                <div class="folder-preview-user">
+                  <h5>File Shared With:</h5>
+                  <div>
+                    <img src="./assets/Images/user-image.svg" alt="User Img" />
+                    <span class="file-preview-user-name">Ozan Alatlı</span>
+                  </div>
+                </div>
+                <div class="folder-preview-tool-box">
+                  <div>
+                    <img src="./assets/icons/share-icon.svg" alt="Share icon" />
+                    Share
+                  </div>
+                  <div>
+                    <img src="./assets/icons/Edit-icon.svg" alt="Edit icon" />
+                    Edit
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/icons/delete-icon.svg"
+                      alt="Delete icon"
+                    />
+                    Delete
+                  </div>
+                </div>
+              </main>
+            </div>
           </section>
         </main>
+      </div>
+      <div class="upload-file-modal">
+        <h4>Upload File</h4>
+        <i class="fa-solid fa-times"></i>
+        <!-- ? Drop Down Box -->
+        <div class="drop-down-box"></div>
+        <!-- ? Uplod File Container -->
+        <div class="upload-file-container">
+          <div class="upload-flie-box">
+            <img src="./assets/icons/file-icon.svg" alt="File icon" />
+            <div>
+              <span>Uploading file.. 15%</span>
+              <input type="range" name="" id="" />
+            </div>
+            <i class="fa-solid fa-times"></i>
+          </div>
+          <div class="upload-flie-box">
+            <img src="./assets/icons/file-icon.svg" alt="File icon" />
+            <div>
+              <span>03 Project.pdf</span>
+              <span>4 MB</span>
+            </div>
+            <i class="fa-solid fa-trash-can"></i>
+          </div>
+          <div class="upload-flie-box">
+            <img src="./assets/icons/file-icon.svg" alt="File icon" />
+            <div>
+              <span>03 Project.pdf</span>
+              <span>4 MB</span>
+            </div>
+            <i class="fa-solid fa-trash-can"></i>
+          </div>
+          <div class="uplade-button-box">
+            <button class="uplade-button">
+              Upload
+              <img
+                src="./assets/icons/insert-before.svg"
+                alt="Insert Before"
+              />
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 
