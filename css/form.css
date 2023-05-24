@@ -1,7 +1,7 @@
 /* Import colors */
 @import url('./colors.css');
 
-/* Form gorup-> input,label */
+/*! Form gorup-> input,label */
 .form-group {
     position: relative;
 }
@@ -27,7 +27,7 @@
     background: var(--dshb-fiveth-bg-color);
 }
 
-/* form-actions */
+/*! form-actions */
 .form-actions {
     display: flex;
     align-items: center;
@@ -39,15 +39,16 @@
     height: 16px;
 }
 
-.form-actions>a {
+.form-actions > :where(a,label) {
     color: var(--dshb-cadetblue-color);
+    cursor: pointer;
 }
 
 .form-actions>a:nth-child(2) {
     margin-right: 30px;
 }
 
-/* Buttons */
+/*! Buttons */
 .login-form-social-media {
     display: flex;
     gap: 20px;
@@ -70,6 +71,10 @@
 
 .btn-goggle,
 .btn-facebook {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
     width: 150px;
     height: 40px;
     border-radius: 50px;
@@ -81,18 +86,16 @@
     color: #000000;
     font-weight: 600;
     font-size: 13px;
-    padding: 10px 56px;
     background: #F5F5F5;
     border: 0.87px solid #C6C6C6;
 }
 
 .btn-facebook {
-    padding: 10px 50px;
     background: #1877F2;
     color: #FFFFFF;
 }
 
-/* form-create-account */
+/*! form-create-account */
 .form-create-account>p {
     color: #9FA8BC;
     font-weight: 700;
@@ -104,7 +107,7 @@
     color: #246BFD !important;
 }
 
-/* Additional css */
+/*! Additional css */
 .login-content-form {
     display: flex;
     flex-direction: column;
@@ -117,7 +120,7 @@
 }
 
 
-/* Additional form elements */
+/*! Additional form elements */
 /* form label */
 .kuramsoft-form-label {
     font-weight: 600;
@@ -157,7 +160,7 @@
 }
 
 
-/* form error input */
+/*! form error input */
 
 /* .input-field{
     position: relative;
