@@ -6,10 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Pure CSS -->
     <link rel="stylesheet" href="./css/login/login-createrun.css">
     <link rel="stylesheet" href="./css/form.css">
@@ -38,13 +34,19 @@
                     </div>
                     <div class="form-actions">
                         <input type="checkbox" name="checkbox" id="checkbox">
-                        <a href="#">Remember me</a>
+                        <label for="checkbox">Remember me</label>
                         <a href="#">Forgot Password</a>
                     </div>
                     <button class="btn-login">Login</button>
                     <div class="login-form-social-media">
-                        <button class="btn-goggle">Google</button>
-                        <button class="btn-facebook">Facebook</button>
+                        <button class="btn-goggle">
+                            <img src="./assets/icons/google.svg" alt="google">
+                            <span>Google</span>
+                        </button>
+                        <button class="btn-facebook">
+                            <img src="./assets/icons/facebook.svg" alt="facebook">
+                            <span>Facebook</span>
+                        </button>
                     </div>
                     <div class="form-create-account">
                         <p>Join with us, <a href="#">Create Account</a></p>

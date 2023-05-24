@@ -18,10 +18,12 @@ header {
 .dashboard-dropdown {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 /* ! Kuramsoft Dashboard Sidebar*/
 .kuramsoft-dashboard {
+    min-height: 100vh;
     width: 100%;
     display: flex;
 }
@@ -31,6 +33,7 @@ header {
     background: #E8F5FF;
     width: 15%;
     display: flex;
+    align-items: center;
     flex-direction: column;
     transition: all 0.5s ease-in-out;
 }
@@ -45,15 +48,15 @@ header {
     display: none;
 }
 
-.sidebar-close>.sidebar-lists a {
+.sidebar-close>.sidebar-lists>li a {
     display: none;
 }
 
-.sidebar-close>.sidebar-lists li.sidebar-list-active i:nth-child(1) {
+.sidebar-lists li.sidebar-list-active span:nth-child(1) {
     color: var(--primary-text-color) !important;
 }
 
-.sidebar-close>.sidebar-lists i.fa-arrow-right {
+.sidebar-close>.sidebar-lists span.arrow-right {
     display: none !important;
 }
 
@@ -80,30 +83,21 @@ header {
     cursor: pointer;
     padding: 8px 20px;
     display: flex;
+    align-items: center;
     gap: 20px;
     position: relative;
-}
-
-/* ! List hover */
-.sidebar-lists>li:hover {
-    background: var(--dshb-second-bg-color);
-    color: #E8F5FF;
-}
-
-.sidebar-lists>li:hover>i {
-    color: var(--primary-text-color);
 }
 
 .sidebar-lists>li>a {
     font-weight: 800;
 }
 
-.sidebar-lists>li> :where(i, ion-icon):nth-child(1) {
-    font-size: 24px;
+.sidebar-lists>li>span:nth-child(1) {
+    font-size: 32px;
     color: var(--dshb-first-text-color);
 }
 
-.sidebar-lists>li>i.fa-arrow-right {
+.sidebar-lists>li>span.arrow-right {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -111,12 +105,27 @@ header {
     display: none;
 }
 
-/* ! ! sidebar list active oldukda */
-.sidebar-list-active {
-    background-color: var(--dshb-second-bg-color);
+/* ! List hover */
+.sidebar-lists>li:hover {
+    background: var(--dshb-fourth-bg-color);
+    color: #E8F5FF;
 }
 
-.sidebar-list-active>i.fa-arrow-right {
+.sidebar-lists>li:hover>span {
+    color: var(--primary-text-color);
+}
+
+/* ! ! sidebar list active oldukda */
+.sidebar-list-active {
+    background-color: var(--dshb-third-bg-color);
+}
+
+.sidebar-list-active>span:nth-child(1) {
+    color: var(--primary-text-color);
+
+}
+
+.sidebar-list-active>span.arrow-right {
     display: inline !important;
 }
 
@@ -131,15 +140,19 @@ header {
 }
 
 /* ! Dashboard header right content */
-.dashboard-header-left>i {
-    font-size: 24px;
+.dashboard-header-left {
+    min-width: 230px;
+}
+
+.dashboard-header-left>span.icon-menu,
+.dashboard-header-left>span.icon-arrow-back {
+    font-size: 32px;
+    font-weight: 700;
     cursor: pointer;
 }
 
 .dashboard-header-left span a {
     font-weight: 500;
-    margin-right: 20px;
-    padding-right: 20px;
 }
 
 .dashboard-header-right,
@@ -150,9 +163,13 @@ header {
     gap: 30px;
 }
 
+.dashboard-header-right {
+    max-width: 730px;
+}
+
 /* ! Dashboard header search input */
 .dashboard-header-input {
-    width: 400px;
+    max-width: 400px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -162,14 +179,21 @@ header {
     padding: 10px 15px;
 }
 
+/*TODO Dashboard Header search content */
+.dashboard-header-search {
+    display: flex;
+    gap: 10px;
+}
+
 .dashboard-header-search input {
+    max-width: 120px;
     background: transparent;
     border: none;
     outline: none;
     font-weight: 500;
 }
 
-.dashboard-header-search i {
+.dashboard-header-search span.icon-search {
     transform: rotate(90deg);
 }
 
@@ -178,8 +202,13 @@ header {
     border-right: 2px solid var(--dshb-first-border-color);
 }
 
-.dashboard-innput-select span {
+.dashboard-input-select label {
     margin-right: 40px;
+}
+
+/* TODO Dashboard  Language content */
+.dashboard-lang {
+    min-width: 70px;
 }
 
 /* ! Dashboard user grid content */
@@ -187,7 +216,33 @@ header {
     display: grid;
     grid-template-areas: "IMG NAME"
         "IMG PREFER";
+    column-gap: 10px;
+    width: 150px;
+}
 
+.user-img {
+    grid-area: IMG;
+}
+
+.user-img img {
+    width: 100%;
+}
+
+.user-name {
+    grid-area: NAME;
+}
+
+.dashboard-user-grid .user-name {
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.user-prefer {
+    grid-area: PREFER;
+}
+
+.dashboard-user-grid .user-prefer {
+    font-size: 12px;
 }
 
 /* ! .dashboard navbar container */
@@ -226,7 +281,7 @@ header {
     background: var(--dshb-fourth-bg-color);
 }
 
-.dashboard-navbar-lists li.list-active :where(i, ion-icon) {
+.dashboard-navbar-lists li.list-active span {
     color: var(--primary-text-color);
 }
 
@@ -248,8 +303,8 @@ header {
     font-size: 22px;
 }
 
-.dashboard-navbar-lists li i.chevron-down-rotate {
-    transform: rotate(270deg);
+.dashboard-navbar-lists li span.chevron-down-rotate {
+    transform: rotate(90deg);
 }
 
 /* ! dashboard navbar right */
@@ -322,6 +377,20 @@ header {
     padding: 0;
 }
 
+.form-text {
+    display: none;
+}
+
+.dashboard-nav-sidebar .form-text {
+    height: 45px;
+    display: block;
+    width: 100%;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
 .sidebar-nav-lists {
     min-width: 100%;
     order: 2;
@@ -330,7 +399,7 @@ header {
     overflow-x: auto !important;
 }
 
-.sidebar-nav-lists img:last-child {
+.sidebar-nav-lists li~span:last-child {
     display: none;
 }
 
@@ -341,17 +410,41 @@ header {
     justify-content: space-between;
 }
 
-.sidebar-nav-lists li> :where(i, ion-icon):first-child {
+.sidebar-nav-lists li>span:first-child {
     display: none;
 }
 
-.sidebar-nav-lists i {
-    transform: rotate(-90deg);
+.sidebar-nav-lists span {
+    transform: rotate(0);
     transition: all 0.4s linear;
 }
 
-.sidebar-nav-lists li.list-active i {
-    transform: rotate(0);
+.sidebar-nav-lists li.list-active span {
+    transform: rotate(90deg);
+}
+
+/*! Dashboard Nav Bottom SubMenu */
+.dashboard-nav-bottom-submenu {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    background-color: #deeefb;
+    padding: 0 20px;
+}
+
+.dashboard-nav-bottom-submenu div {
+    padding: 15px 0;
+}
+
+.dashboard-nav-bottom-submenu div.submenu-active {
+    border-bottom: 3px solid #43AFFB;
+}
+
+.dashboard-nav-bottom-submenu div a {
+    color: #8C8C8C;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 /* ! Sidebar input */
@@ -363,14 +456,14 @@ header {
     width: 160px;
 }
 
-.sidebar-nav-input i {
+.sidebar-nav-input span {
     margin-left: 20px;
 }
 
 /* ! scroll design */
 nav ul::-webkit-scrollbar {
-    width: 1em;
-    height: 10px;
+    width: 8px;
+    height: 6px;
 }
 
 nav ul::-webkit-scrollbar-track {

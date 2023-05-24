@@ -9,15 +9,17 @@ lists.forEach(elem => {
 })
 
 // Burger menu
-const menu = document.querySelector(".fa-bars")
+const menu = document.querySelector(".icon-menu")
 
 menu.addEventListener("click", () => {
     const leftSidebar = document.querySelector('.kuramsoft-dashboard-left-side');
     leftSidebar.classList.toggle("sidebar-close");
-    if (menu.className === "fa-solid fa-xmark") {
-        menu.className = "fa-solid fa-bars"
+    if (menu.className === "material-icons-round icon-menu") {
+        menu.className = "material-icons-round icon-arrow-back";
+        menu.textContent = "arrow_back"
     } else {
-        menu.className = "fa-solid fa-xmark"
+        menu.className = "material-icons-round icon-menu"
+        menu.textContent = "menu"
     }
 })
 

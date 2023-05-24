@@ -1,5 +1,7 @@
 /* Import Font Family */
 @import url('../main.css');
+/* Import Form CSS */
+@import url('../form.css');
 
 /* login-container */
 .login-container {
@@ -73,8 +75,11 @@ main.login-left-section-main {
 }
 
 .login-right-img img {
-    max-width: 500px;
-    max-height: 500px;
+    object-fit: cover;
+    max-width: 80%;
+    max-height: 80%;
+    margin: 0 auto;
+    display: block;
 }
 
 
@@ -96,7 +101,7 @@ main.login-left-section-main {
     font-family: 'IBM Plex Sans';
 }
 
-.login-success-checked i.fa-check {
+.login-success-checked span.icon-done {
     color: #1F8B24;
     font-size: 52px;
 }
@@ -119,7 +124,7 @@ main.login-left-section-main {
 
 /* Login error page */
 
-.login-success-checked i.fa-xmark {
+.login-success-checked span.icon-error {
     color: #E1125E;
     font-size: 56px;
 }
