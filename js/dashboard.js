@@ -1,19 +1,8 @@
-const lists = document.querySelectorAll(".sidebar-nav-lists > li");
-lists.forEach(elem => {
-    const li = elem;
-    // const icon = elem.documentquerySelector(".chevron-down")
-    elem.addEventListener("click", () => {
-        li.classList.toggle("list-active");
-        // icon.classList.toggle("chevron-down-rotate")
-    })
-})
-
-// Burger menu
+//* Burger Menu
 const menu = document.querySelector(".icon-menu")
-
+const sideBar = document.querySelector(".dashboard-sidebar");
 menu.addEventListener("click", () => {
-    const leftSidebar = document.querySelector('.kuramsoft-dashboard-left-side');
-    leftSidebar.classList.toggle("sidebar-close");
+    sideBar.classList.toggle("sidebar-close");
     if (menu.className === "material-icons-round icon-menu") {
         menu.className = "material-icons-round icon-arrow-back";
         menu.textContent = "arrow_back"
@@ -23,23 +12,29 @@ menu.addEventListener("click", () => {
     }
 })
 
+//! Navbar Side Menu 
+const navSideLists = document.querySelectorAll(".list-select");
+console.log(navSideLists);
+navSideLists.forEach(navList => {
+    navList.addEventListener("click", () => {
+        navList.classList.toggle("navList-open")
+    })
+})
 
-// Toggle 
-// const toggles = document.querySelectorAll('.checkbox-apple');
-// toggles.forEach(toggle => {
-//     const toggleInput = toggle.querySelector("#check-apple");
-//     toggle.addEventListener("click", () => {
-//         console.log(toggleInput)
-//     })
-// })
+//! Toggle Menu Button for Sidebar Menu
+const navbarBtn = document.querySelector(".nav-sidebar-toggle-menu > button");
+const navbarContainer = document.querySelector(".navbar-container");
+console.log(navbarBtn);
+navbarBtn.addEventListener("click", () => {
+    navbarContainer.classList.toggle("navbar-container-close");
+})
 
-// Table heade content sort
+//! Table heade content sort
 const sortIcons = document.querySelectorAll(".thead-asc");
 console.log(sortIcons)
 sortIcons.forEach(icon => {
     icon.addEventListener("click", () => {
         icon.classList.toggle("thead-desc");
+
     })
 })
-
-

@@ -373,10 +373,10 @@
 }
 
 /* * Error Main Content Left */
-.error-icon,
-.info-icon,
-.success-icon,
-.warning-icon {
+.icon-error,
+.icon-info,
+.icon-success,
+.icon-warning {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -385,27 +385,28 @@
     align-items: center;
 }
 
-:where(.error-icon, .warning-icon, .success-icon, .info-icon) i {
-    font-size: 24px;
+:where(.icon-error, .icon-warning, .icon-success, .icon-info) span {
+    font-size: 32px !important;
     font-weight: 900;
 }
 
-.error-icon {
+.icon-error {
     border: 3px solid #FF0000;
     color: #FF0000;
 }
 
-.warning-icon {
+.icon-warning {
     background: #FF9900;
     color: white;
 }
 
-.info-icon {
+.icon-info {
     border: 3px solid #0168FF;
     color: #0168FF;
+    font-size: 44px;
 }
 
-.success-icon {
+.icon-success {
     background: #83FF06;
     color: white;
 }
