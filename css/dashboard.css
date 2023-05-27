@@ -127,6 +127,45 @@
     display: inline;
 }
 
+/*! Sidebar User Status Container  */
+.sidebar-user-container {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    width: 40px;
+    height: 60px;
+}
+
+.sidebar-user-container span {
+    margin-left: 9px;
+}
+
+.sidebar-user-container .user-content {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #3A3A3C;
+    border-radius: 10px;
+}
+
+.sidebar-user-container .user-image {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+}
+
+.user-status.user-online {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #05E200;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+}
+
 /*! Dashboard Main Container  */
 .dashboard-main-container {
     width: 100%;
@@ -152,8 +191,13 @@
     gap: 20px;
 }
 
+/* .header-left-menu{
+    min-width: 170px;
+} */
+
 /*! Burger Menu Icon and Arrow Back Icon */
-.icon-menu , .icon-arrow-back{
+.icon-menu,
+.icon-arrow-back {
     font-size: 32px !important;
     cursor: pointer;
 }
@@ -280,6 +324,10 @@
 
 
 /*%=============Dashboard Main Container Navbar Lists===================  */
+.main-lists-container {
+    display: flex;
+}
+
 /*! Navbar Container  */
 .navbar-container {
     min-height: calc(100vh - 168px);
@@ -293,7 +341,7 @@
     overflow: hidden;
 }
 
-.navbar-container-close{
+.navbar-container-close {
     width: 0;
     visibility: hidden;
     opacity: 0;
@@ -324,7 +372,8 @@
     cursor: pointer;
     padding: 0 20px 0 40px;
 }
-.list-select a{
+
+.list-select a {
     height: 20px;
     overflow: hidden;
 }
@@ -359,26 +408,29 @@
 
 
 /*===================Navbar Sidebar Open-Close Button Style=====================  */
-.nav-sidebar-toggle-menu{
+.nav-sidebar-toggle-menu {
     min-height: calc(100vh - 168px);
     width: 20px;
 }
-.nav-sidebar-toggle-menu button{
+
+.nav-sidebar-toggle-menu button {
     height: 100%;
     width: 100%;
     outline: none;
     border: 1px solid #5FA5D8;
 }
-.nav-sidebar-toggle-menu button span.icon-right{
+
+.nav-sidebar-toggle-menu button span.icon-right {
     font-size: 20px;
     color: #5FA5D8;
     transition: all 0.2s ease-in-out;
     transform: rotate(180deg);
 }
 
-.navbar-container-close ~ .nav-sidebar-toggle-menu span.icon-right{
+.navbar-container-close~.nav-sidebar-toggle-menu span.icon-right {
     transform: rotate(0deg);
 }
+
 /*! =======================Navbar List Sidebar oldukda===========================*/
 .navbar-list-sidebar {
     flex-direction: column;
@@ -427,30 +479,59 @@
 }
 
 
+/*! ================Dashboard Responsive Design Style===============*/
+@media (max-width: 1200px) {
+    .header-left-content {
+        gap: 10px;
+    }
+
+    .header-right-content {
+        gap: 10px;
+    }
+
+    .search-content input {
+        width: 140px;
+    }
+}
 
 
+@media (max-width: 992px) {
+    .dashboard-main-header {
+        padding: 0 5px;
+    }
 
+    .header-right-content {
+        padding: 13px 0;
+    }
 
+    .search-content input {
+        display: none;
+    }
 
+    .dshb-dropdown-menu>.menu-select>p {
+        font-size: 14px;
+    }
+}
 
+@media (max-width: 768px) {
+    .dropdown-document {
+        display: none;
+    }
 
+    .header-dropdown-search .search-content {
+        border: none;
+        padding: 0;
+    }
 
+    .dashboard-header-menu {
+        padding: 10px;
+        font-size: 14px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .dropdown-lang {
+        display: none;
+    }
+}
 
 /* ! scroll design */
 /* nav ul::-webkit-scrollbar {
@@ -467,11 +548,50 @@ nav ul::-webkit-scrollbar-thumb {
     outline: 1px solid rgb(114, 3, 177);
 } */
 
-
 /*!  Custom Dropdown Menu Style */
+.dshb-dropdown-menu {
+    position: relative;
+}
+
 .dshb-dropdown-menu>.menu-select {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+}
+
+.dshb-dropdown-menu .menu-options {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    background-color: white;
+    border-radius: 10px;   /* Bug */
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-options .menu-option-content {
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.menu-options .menu-option-content:hover {
+    background-color: #E2E2E2;
+    color: white;
+}
+
+.menu-options .menu-option-content:not(:last-child) {
+    border-bottom: 1px solid #E2E2E2;
+}
+
+/*! Menu Options Visible  */
+.dropdown-menu-open~.menu-options {
+    visibility: visible;
+    opacity: 1;
 }

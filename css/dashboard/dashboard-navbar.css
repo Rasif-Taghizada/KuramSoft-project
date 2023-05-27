@@ -1,0 +1,38 @@
+/* Import Dashboard Styles */
+@import url('../dashboard.css');
+/* Dashboard Navbar */
+header.dashboard-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 69px;
+    padding: 0 20px;
+    background: linear-gradient(180deg, #F6F8FC 0%, #EDF1F8 100%);
+}
+
+
+/*=============Dashboard Navbar Logo Content================  */
+.dashboard-navbar-logo{
+    display: flex;
+    gap: 30px;
+    padding-right: 20px;
+    border-right: 1px solid #D2D2D2;
+}
+/*! ========== Dashboard Navbar Lists Container ============== */
+.dashboard-dropdown-lists{
+    display: flex;
+}
+.dashboard-dropdown-lists .dropdown-list-item{
+    /* padding: 20px 10px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
+
+/*! Dropdown hidden lists  */
+.dropdown-hidden-lists{
+    visibility: hidden;
+    opacity: 0;
+}
+
+

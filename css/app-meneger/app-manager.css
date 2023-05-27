@@ -1,6 +1,7 @@
 @import url(./../main.css);
 @import url(../form.css);
 @import url(../colors.css);
+
 .cyan {
     background-color: var(--app-cyan-bg-color);
 }
@@ -161,8 +162,8 @@ nav.content-nav li>a:hover {
 }
 
 .app-btn-red {
-    background:  var(--app-error-bg-color);
-    border: 1px solid var(--app-error-border-color) ;
+    background: var(--app-error-bg-color);
+    border: 1px solid var(--app-error-border-color);
     padding: 15px 30px;
     margin-right: 7px;
 }
@@ -281,27 +282,24 @@ nav.content-nav li>a:hover {
 /* app-price-container */
 
 .app-price-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
-    margin-bottom: 30px;
 }
 
 .app-price-box {
+    width: 400px;
+    min-width: 400px;
     display: flex;
-    align-items: center;
     border-radius: 20px;
-    border: 1px solid var(--app-border-second-color) ;
-    margin: 3px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
+    border: 3px solid var(--app-border-second-color);
+    padding: 10px;
     transition: all ease-in-out 0.3s;
-    padding-left: 23px;
-    padding-top: 17px;
-    padding-right: 13px;
 }
 
 .app-price-box:hover {
-    margin: 0;
+    cursor: pointer;
     border: 3px solid var(--app-price-border-color);
 }
 
@@ -498,13 +496,13 @@ nav.content-nav li>a:hover {
     margin-top: 11px;
     padding: 13px 0;
     padding-right: 172px;
-    background-color: var(--app-success-bg-color) ;
+    background-color: var(--app-success-bg-color);
     text-align: end;
 }
 
 .app-update-button {
-    background-color:  var(--app-error-bg-color);
-    border: 1px solid var(--app-error-border-color) ;
+    background-color: var(--app-error-bg-color);
+    border: 1px solid var(--app-error-border-color);
     border-radius: 4px;
     padding: 15px 35px;
     transition: all ease-in-out 0.3s;
@@ -642,6 +640,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     background: var(--app-light-second-bg-color);
     border-radius: 100px;
 }
+
 input[type="range"]::-webkit-slider-thumb {
     /* box-shadow: -407px 0 0 400px ; */
     -webkit-appearance: none;

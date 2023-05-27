@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <!-- Pure CSS -->
     <link rel="stylesheet" href="./css/dashboard.css">
     <!-- Google Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
@@ -71,6 +72,17 @@
                     <img src="./assets/icons/arrow-right.svg" alt="arrow-right" class="arrow-right-icon">
                 </li>
             </ul>
+            <div class="sidebar-user-container">
+                <span class="material-icons-round icon-chevron-down">
+                    expand_more
+                </span>
+                <div class="user-content">
+                    <div class="user-image">
+                        <img src="./assets/icons/sidebar-user-image.svg" alt="sidebar user image">
+                    </div>
+                    <div class="user-status user-online"></div>
+                </div>
+            </div>
         </aside>
         <!-- Sidebar Main Container -->
         <main class="dashboard-main-container">
@@ -86,7 +98,17 @@
                                 expand_more
                             </span>
                         </div>
-                        <div class="menu-options"></div>
+                        <div class="menu-options">
+                            <div class="menu-option-content">
+                                <p>square 1</p>
+                            </div>
+                            <div class="menu-option-content">
+                                <p>square.com 2</p>
+                            </div>
+                            <div class="menu-option-content">
+                                <p>sigorta.square 3</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="header-right-content">
@@ -114,7 +136,17 @@
                                 expand_more
                             </span>
                         </div>
-                        <div class="menu-options"></div>
+                        <div class="menu-options">
+                            <div class="menu-option-content">
+                                <p>AZE</p>
+                            </div>
+                            <div class="menu-option-content">
+                                <p>RUS</p>
+                            </div>
+                            <div class="menu-option-content">
+                                <p>TUR</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="dshb-dropdown-menu dshb-user-content">
                         <div class="menu-select">
@@ -164,7 +196,7 @@
                 <a href="#">Workflow</a>
                 <a href="#">General</a>
             </div>
-            <article class="dashboard-container">
+            <article class="main-lists-container">
                 <section class="navbar-container navbar-container-close">
                     <div class="navbar-header-content">
                         <p>FORMLAR</p>
@@ -381,13 +413,15 @@
                         </span>
                     </button>
                 </div>
+                <div>
+                    <h1>Salam</h1>
+                </div>
             </article>
         </main>
     </section>
 
-
-
     <!-- JavaScript -->
+    <script src="./js/dropdown.js"></script>
     <script src="./js/dashboard.js"></script>
 </body>
 
