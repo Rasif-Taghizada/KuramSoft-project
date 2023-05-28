@@ -17,7 +17,7 @@ burgerMenu.addEventListener("click", () => {
 const sidebarUl = document.querySelector(".sidebar-lists");
 const sidebarLists = document.querySelectorAll(".sidebar-list-group");
 sidebarLists.forEach(list => {
-    console.log(list)
+    // console.log(list)
     list.addEventListener("click", () => {
         sidebarLists.forEach(listItem => {
             if (listItem.classList.contains("list-group-active")) {

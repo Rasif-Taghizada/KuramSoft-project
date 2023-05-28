@@ -1,9 +1,18 @@
 @import url(../main.css);
 @import url(../form.css);
 
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'48
+}
+
 .container-app-details {
     width: 100%;
-    padding: 100px 230px;
+    padding: 50px 220px 50px 50px;
 }
 
 /* App details Nav Map */
@@ -118,19 +127,23 @@
 /* App details Header */
 
 .app-details-header {
-    padding: 20px 55px;
+    padding: 20px 40px;
     background-color: var(--app-light-blue-bg-color);
     border: 1px solid var(--app-border-sixth-color);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .details-header-left {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 33px;
+    gap: 23px;
+}
+
+.apps-box-right {
+    margin-right: 15px;
 }
 
 .apps-box-right>.apps-data {
@@ -143,7 +156,7 @@
 
 .apps-box-right>h1 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 25px;
     letter-spacing: 0.1px;
     color: #000000;
@@ -151,7 +164,7 @@
 
 .apps-users-name {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.1px;
     margin-bottom: 14px;
@@ -239,7 +252,7 @@
     align-items: center;
 }
 
-.state-requared>i {
+.state-requared>span:first-child {
     color: var(--app-red-text-color);
     border: 1px solid var(--app-red-border-color);
     border-radius: 100%;
@@ -283,9 +296,15 @@
     padding: 18px;
 }
 
-.app-carusel-circle>i {
-    font-size: 15px;
-    color: var(--carusel-icon-color);
+.app-carusel-circle {
+    display: flex;
+}
+
+.app-carusel-circle>div {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: var(--carusel-icon-color);
     margin-right: 12px;
 }
 
@@ -342,9 +361,11 @@
     line-height: 27px;
     letter-spacing: 0.6px;
     margin-bottom: 7px;
+    display: flex;
+    align-items: center;
 }
 
-.overiew-updates-list>li>i {
+.overiew-updates-list>li>img {
     margin-right: 14px;
 }
 
@@ -380,14 +401,20 @@
     line-height: 27px;
     letter-spacing: 0.6px;
     color: var(--app-overview-text-color);
+    display: flex;
+    align-items: center;
 }
 
-.app-additional-list>li>i {
+.app-additional-list>li>.square {
     margin-right: 14px;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    opacity: 0.4;
 }
 
 .square-blue {
-    color: var(--dshb-cadetblue-color);
+    background-color: var(--dshb-cadetblue-color) !important;
 }
 
 .additional-box-active {
@@ -454,7 +481,7 @@
 .overiew-application-container {
     display: flex;
     flex-wrap: wrap;
-
+    gap: 30px;
 }
 
 .overiew-application-box {
@@ -488,8 +515,8 @@
 .application-detal-button {
     position: absolute;
     bottom: -25px;
-    background: var(--app-cyan-bg-color)    ;
-    border: 1px solid var(--app-border-fifth-color) ;
+    background: var(--app-cyan-bg-color);
+    border: 1px solid var(--app-border-fifth-color);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
     padding: 4px 25px;
     cursor: pointer;
@@ -499,7 +526,225 @@
     letter-spacing: 0.1px;
 }
 
-.application-detal-button:hover{
+.application-detal-button:hover {
     background: var(--app-overview-fourth-bg-color);
     color: #fff;
+}
+
+/*! ================App Details Responsive Design Style===============*/
+
+@media only screen and (max-width: 1200px) {
+    .container-app-details {
+        padding: 30px 175px 30px 30px;
+    }
+
+    .container-app-details>nav {
+        margin-bottom: 30px;
+    }
+
+    .app-details-name>span {
+        font-size: 18px;
+    }
+
+    .nav-map-list>li,
+    .details-send-mesasage>p {
+        font-size: 12px;
+    }
+
+    .nav-map-list .circlue {
+        height: 14px;
+        width: 14px;
+        margin-right: 8px;
+    }
+
+    .app-details-user>p {
+        font-size: 11px;
+    }
+
+    .app-details-nav-map {
+        right: -133px;
+    }
+
+    .state-button-box>button {
+        padding: 15px 25px 7px 25px;
+        font-size: 12px;
+    }
+
+    .state-requared {
+        margin-top: 7px;
+        margin-left: 22px;
+    }
+
+    .state-requared>span:first-child {
+        height: 18px;
+        width: 18px;
+    }
+
+    .app-details-overview>h3 {
+        font-size: 18px;
+    }
+
+    .app-carusel-circle>div {
+        width: 12px;
+        height: 12px;
+        margin-right: 10px;
+    }
+    .overview-table-box{
+        padding: 0;
+    }
+
+    .app-overview-content,
+    .app-overiew-updates,
+    .app-additiona-container,
+    .overview-needed-applications {
+        padding: 0;
+    }
+
+    .app-overiew-updates {
+        margin-bottom: 30px;
+    }
+
+    .app-overview-content>img {
+        width: 42px;
+    }
+
+    .app-overiew-updates>h4 {
+        font-size: 25px;
+    }
+
+    .overiew-updates-list>li {
+        font-size: 14px;
+    }
+
+    .app-additiona-box {
+        padding: 20px 25px;
+    }
+
+    .app-additiona-box>h4,
+    .overview-needed-applications>h4 {
+        font-size: 25px;
+    }
+
+    .list-box-main {
+        gap: 50px;
+    }
+
+    .app-additional-list>li {
+        font-size: 12px;
+        letter-spacing: 0.4;
+        line-height: 23px;
+    }
+
+    .overiew-table th,
+    .overiew-table td {
+        padding: 8px 35px;
+        font-size: 17px;
+    }
+    .overview-needed-applications{
+        margin: 0;
+    }
+    .overiew-application-box{
+        margin-right: -5px;
+    }
+    .overiew-application-box>img{
+        height: 55px;
+        width: 55px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    
+    .container-app-details {
+        padding: 30px 150px 30px 30px;
+    }
+    .app-details-nav-map{
+        right: -132px;
+    }
+    .app-details-user {
+        right: -19px;
+    }
+    .app-details-header{
+        padding: 20px;
+    }
+    .app-details-header{
+        gap: 20px;
+    }
+    .details-header-left{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .apps-box-right{
+        margin-right: 0;
+    }
+    .apps-box-left>img{
+        width: 70px;
+        height: 70px;
+        padding: 11px;
+    }
+    .apps-box-right>.apps-data{
+        font-size: 10px;
+    }
+    .apps-box-right>h1{
+        font-size: 16px;
+    }
+    .apps-users-name,
+    .apps-box-right>span:not(.apps-data),
+    .details-header-rigth>p,
+    .details-header-rigth>ul>li,
+    .app-overiew-updates>span,
+    .overiew-updates-list>li{
+        font-size: 12px;
+    }
+    
+    .details-header-rigth{
+        margin-right: 0px;
+    }
+    .app-details-state{
+        padding-right: 20px;
+        justify-content: flex-start;
+    }
+    .app-carusel-circle>div{
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+    .app-details-overview>h3,
+    .app-overiew-updates>h4{
+        font-size: 16px;
+    }
+    .app-overview-content>img,
+    .app-overiew-updates>img{
+        width: 35px;
+    }
+    .app-overview-content>p{
+        font-size: 14px;
+    }
+    .app-additional-list>li {
+        font-size: 10px;
+        line-height: 23px;
+        gap: 5px;
+    }
+    .app-additional-list>li>.square{
+        width: 8px !important;
+        height: 8px !important;
+        margin-right: 0;
+    }
+    .overview-table-box{
+        padding: 0;
+    }
+    .overiew-table th, .overiew-table td{
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .app-details-nav-map{
+        display: none;
+    }
+    .container-app-details{
+        padding: 30px;
+    }
+    
 }

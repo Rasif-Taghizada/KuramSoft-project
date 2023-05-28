@@ -1,0 +1,50 @@
+/* Import Font face and reset css */
+@import url("../main.css");
+/* Import Colors */
+@import url("../colors.css");
+/* Import form elements */
+@import url("../form.css");
+/* Import Dashboard Navbar */
+@import url("./dashboard-navbar.css");
+
+/*! ================ Dashboard Table container ================ */
+.dashboard-table-container {
+    min-height: 100vh;
+    width: 80%;
+    margin: 30px auto 0 auto;
+    padding: 30px 0;
+}
+
+.dashboard-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* *************** Dashboard Table Head Left Container ********************* */
+.dashboard-table-head-left,
+.dashboard-table-head-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dashboard-table-head-left>span {
+    width: 35px;
+    height: 20px;
+    border: 1.5px solid #000000;
+    border-radius: 100px;
+    font-weight: 800;
+    /* padding: px; */
+}
+
+.dashboard-table-head-left>p {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.add-upload-export-btns {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}

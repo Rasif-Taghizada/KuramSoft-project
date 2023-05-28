@@ -1,6 +1,6 @@
 //* Dropdown menu
 const dropdowns = document.querySelectorAll(".dshb-dropdown-menu");
-console.log(dropdowns);
+// console.log(dropdowns);
 dropdowns.forEach(menu => {
     menu.addEventListener("click", () => {
         const selectMenu = menu.querySelector(".menu-select"),
