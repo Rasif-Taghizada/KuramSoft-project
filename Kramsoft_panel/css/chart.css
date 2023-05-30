@@ -1,0 +1,62 @@
+﻿
+
+.page-main-head{border-bottom:1px solid #e2e2e2;margin:10px 0;}
+.page-main-head h4{margin:0;padding:15px 10px;color:#323232;font-size:18px;}
+
+.main-head-date{float:right;padding:5px 10px;margin: 10px 0;background:#e2e2e2;}
+
+.page-information-box-wrapper{}
+
+
+.page-information-box{background:#fff;border:1px solid #e2e2e2;height:80px;width:100%;margin-bottom: 10px;}
+.page-information-box .pib-icon{height:78px;width:50px;float: left;}
+.page-information-box .pib-icon span{
+    min-width: 50px;
+    height: 50px;
+    padding: 11px 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: 3px solid;
+    border-radius: 50%;
+    background: #fff;
+    margin-top: 15px;
+    display: inline-block;
+    margin-left: 25px;}
+.page-information-box .pib-body{margin-left: 50px;padding: 12px 5px 5px 35px;}
+.page-information-box .pib-body h4{margin:0;font-size:18px;color:#323232;font-weight:300;margin-bottom:5px;}
+.page-information-box .pib-body p{color:#828282;font-size:11px;}
+
+.page-information-box.blue .pib-icon{background:#00bcf3;}
+.page-information-box.blue .pib-icon span{border-color:#00bcf3;}
+
+.page-information-box.green .pib-icon{background:#27ae60;}
+.page-information-box.green .pib-icon span{border-color:#27ae60;}
+
+.page-information-box.red .pib-icon{background:#c0392b;}
+.page-information-box.red .pib-icon span{border-color:#c0392b;}
+
+.page-information-box.amethyst .pib-icon{background:#8e44ad;}
+.page-information-box.amethyst .pib-icon span{border-color:#8e44ad;}
+
+.page-chart{width:100%;padding:20px;}
+.page-chart canvas{}
+
+.page-chart-info{padding:0 15px;}
+.page-chart-info h4{font-size:14px;font-weight:600;color:#323232;}
+.page-chart-info p{font-size:12px;color:#828282;}
+
+.chart-pie-info{padding: 20px 10px ;}
+.chart-pie-info .info-item{padding:5px 0;}
+
+.chart-pie-info .info-item span{width:15px;height:15px;display:inline-block;vertical-align:middle;}
+.chart-pie-info .info-item .red{background:#F7464A;}
+.chart-pie-info .info-item .yellow{background:#FDB45C;}
+.chart-pie-info .info-item .grey{background:#949FB1;}
+
+
+@media only screen and (max-width: 520px) {
+    
+    .main-head-date{float:inherit;}
+    
+    }

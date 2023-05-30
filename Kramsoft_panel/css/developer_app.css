@@ -1,0 +1,29 @@
+﻿
+
+.developer-applist-wrapper{}
+
+.developer-app-header{background:#ecf0f1;padding:5px;border-bottom:1px solid #e2e2e2;}
+.developer-app-header h4{margin:0;padding:10px;font-size:18px;color:#555;}
+
+.dev-app-action{float:right;}
+.dev-app-action .btn.btn-default{border:0;background:#7f8c8d;color:#fff;}
+.dev-app-action .btn.btn-success{border:0;background:#b3c833;color:#fff;}
+
+
+.developer-app-table{margin:0;}
+
+.developer-app-table thead tr th{font-weight:bold;color:#323232;padding: 10px 15px;border-right:1px solid #e2e2e2;}
+
+.developer-app-table tbody tr td{vertical-align:middle;color:#828282;border-right:1px dashed #e2e2e2;border-bottom:1px solid #e2e2e2;padding:15px;}
+
+.dev-app-media{margin-top: 0;}
+.dev-app-media .media-left{display: table-cell;vertical-align: top;padding-right: 10px;}
+.dev-app-media .media-body{display: table-cell;vertical-align: top;}
+.dev-app-media .media-body .media-heading{font-size:14px;font-weight:600;color:#3498db;}
+.dev-app-media .media-body p{font-size:11px;color:#828282;}
+
+.dev-app-icon{text-align:center;}
+.dev-app-icon i{color:#f1c40f;display:block;font-size:30px;}
+.dev-app-icon span{display:inline-block;}
+
+.dev-app-compression{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 300px;display: block;}

@@ -1,0 +1,10 @@
+﻿
+.page-popup{}
+.page-popup .modal-content .modal-header{position: absolute;z-index: 9999;right: 5px;top: 5px;padding: 0;border: none;}
+
+.page-popup.modal-2{cursor: pointer;}
+
+.modal.left.fade:not(.in) .modal-dialog {-webkit-transform: translate3d(-25%, 0, 0);transform: translate3d(-25%, 0, 0);}
+.modal.bottom.fade:not(.in) .modal-dialog {-webkit-transform: translate3d(0, 125%, 0);transform: translate3d(0, 125%, 0);}
+.modal.right.fade:not(.in) .modal-dialog {-webkit-transform: translate3d(125%, 0, 0);transform: translate3d(125%, 0, 0);}
+.modal.top.fade:not(.in) .modal-dialog {-webkit-transform: translate3d(0, -25%, 0);transform: translate3d(0, -25%, 0);}

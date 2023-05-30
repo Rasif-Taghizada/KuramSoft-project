@@ -1,0 +1,8 @@
+﻿
+.permissions-table{width:100%;}
+.permissions-table thead tr td{background:#f8f9fa;font-weight:bold;color:#444;}
+.permissions-table tr td{padding:10px;border-right:1px solid #e5e5e5;border-top:1px solid #e5e5e5;text-align:center; }
+.permissions-table tbody tr:nth-child(even) td{background:#fcfcfc;}
+.permissions-table tbody tr td:first-child{background:#f8f9fa;font-weight:600;color:#444;text-align:left;}
+.permissions-table tr td:last-child{border-right:0;}
+
