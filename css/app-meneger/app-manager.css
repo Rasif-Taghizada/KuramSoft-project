@@ -1,208 +1,210 @@
 @import url(./../main.css);
 @import url(../form.css);
 @import url(../colors.css);
-.cyan {
-    background-color: var(--app-cyan-bg-color);
+
+
+
+/* ! App Manager */
+
+.app-manager {
+    width: 100%;
+    padding: 50px 10px;
 }
 
-.azure {
-    background-color: var(--app-azure-bg-color);
-}
-
-.lime {
-    background-color: var(--app-lime-bg-color);
-}
-
-.app-manager-container {
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.app-manager-header {
-    display: flex;
-    align-items: center;
-    padding: 30px 10px;
+/* ! App Manager Header */
+.app-manager>h1 {
     font-weight: 800;
     font-size: 20px;
     line-height: 132.5%;
     letter-spacing: -0.4px;
-    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-.app-manager-header>img {
-    margin-right: 18px;
+.app-manager>h1>img {
+    margin-right: 15px;
 }
 
-main.app-manager-content>.content-top-section {
-    padding: 30px 60px;
-    background-color: var(--app-light-blue-bg-color);
-    border: 1px solid var(--app-content-border-color);
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06)
+
+/* ! App Manager Main => Manager Main Header*/
+.manager-main-header {
+    background: #F4FCFF;
+    border: 1px solid #8ADCFD;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+    padding: 30px 50px;
 }
 
-.content-top-section>h2 {
+.manager-main-header>h2 {
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
+    margin-bottom: 10px;
 }
 
-.content-top-section>p {
+.manager-main-header>p {
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
+    max-width: 630px;
 }
 
-.content-search {
+/* ! Manager Main Search */
+.manager-main-search {
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: 1px solid var(--app-content-border-color);
-    margin-top: -20px;
+    margin-right: 150px;
+    padding-top: 15px;
 }
 
-.content-search>div {
-    margin-top: 20px;
-}
-
-.content-search>div>span {
+.manager-main-search>p {
     font-weight: 700;
     font-size: 15px;
     line-height: 19px;
     letter-spacing: 0.1px;
-
+    display: flex;
+    align-items: center;
 }
 
-.content-search>div>i {
-    font-size: 12px;
-    border: 2px solid var(--primary-border-color);
-    border-radius: 5px;
-    padding: 2px;
-    margin-left: 5px;
+.manager-main-search>p>img {
+    margin-left: 10px;
 }
 
-.content-search>#search {
-    margin-top: 10px;
-    margin-left: -20px;
+/* ? Manager Main Search => Search Input */
+.manager-main-search>input {
     border: none;
-    padding: 20px 10px;
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
     letter-spacing: 0.1px;
-    text-align: end;
-}
-
-.content-search>#search:focus {
+    text-align: right;
+    color: #D3D3D3;
+    padding: 5px 10px;
+    margin-left: 35px;
+    background-color: transparent;
     outline: none;
-
 }
 
-.content-search>#search::placeholder {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
-    letter-spacing: 0.1px;
+
+
+/* ! Manager Main Nav */
+.manager-main-nav {
+    margin-top: 25px;
+    padding: 20px 10px;
+    background: #FBFEFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
+    border-bottom: 3px solid #C9F0FF;
 }
 
-nav.content-nav>ul {
+/* ! Manager Main Nav => List */
+.manager-main-nav>ul {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-nav.content-nav>ul>li {
+.manager-main-nav>ul>li {
+    margin: 0 38px;
+
+}
+
+.manager-main-nav>ul>li:last-child {
+    margin-right: 0;
+}
+
+.manager-main-nav>ul>li>a {
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
-    margin: 25px 0;
-    padding: 0 35px;
-    border-right: 1px solid var(--app-li-border-second-color);
+    letter-spacing: 0.1px;
+    color: #000000;
+    padding: 10px 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
 }
 
-nav.content-nav>ul>li:last-child {
-    border-right: none;
+.manager-main-nav>ul>li>a:hover {
+    border-bottom: 2px solid #000000;
 }
 
-nav.content-nav li>a {
-    color: var(--primary-text-color);
-    transition: all ease-in-out 0.3s;
-}
-
-nav.content-nav li>a:hover {
-    color: var(--app-content-border-color);
-}
-
-/* content-bottom-section */
-
-.content-bottom-section {
-    border: 1px solid var(--app-li-border-color);
-    border-top-width: 3px;
-    margin-top: -20px;
-    padding: 0 50px;
+/* ! Manager Content Header */
+.manager-content-header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 50px;
     overflow: hidden;
 }
 
-.app-btn {
+/* ! Manager Content Header => Header Button Box */
+.header-button-box {
+    margin-top: -5px;
+}
+
+/* header-red-btn */
+.header-red-btn {
+    background-color: #FFEFEF;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    color: var(--primary-text-color);
+    padding: 20px 25px;
+    border: 2px solid #E2ABAB;
     border-radius: 4px;
 }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-content-left {
-    margin-top: -7px;
-}
-
-.app-btn-red {
-    background:  var(--app-error-bg-color);
-    border: 1px solid var(--app-error-border-color) ;
-    padding: 15px 30px;
-    margin-right: 7px;
-}
-
-.app-btn-red:last-child {
+.red-bold-btn {
     font-weight: bold;
+    margin-left: 5px;
 }
 
-.header-content-right {
+/*? Manager User Box */
+.manager-user-box {
     display: flex;
     align-items: center;
 }
 
-.header-content-right>.header-user {
+.manager-user-box>.manager-user-name {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color: var(--app-dark-text-color);
-    margin-bottom: 0;
-    margin-right: 30px;
-
+    color: #181818;
 }
 
-.header-content-right>.header-user>span {
-    color: var(--app-error-text-color);
+.manager-user-budge {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    color: #B50000;
+    margin-left: 10px;
 }
 
-.green-border {
-    border: 1px solid var(--app-success-border-color);
-    padding: 15px 20px;
+.manager-user-box>button {
+    background: #BFE8FF;
+    border: 1px solid #23F41F;
+    border-radius: 4px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
     font-weight: 700;
-    margin-top: -7px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: -5px;
 }
 
+.manager-user-box>button>img {
+    margin-left: 15px;
+}
 
+/* ! Pagination Content */
+/* ? Pagination Box */
 .pagination-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 35px;
+    padding: 0 55px;
     cursor: pointer;
 }
 
@@ -222,205 +224,155 @@ nav.content-nav li>a:hover {
     color: var(--dshb-cadetblue-color);
 }
 
-
-
-.pagination-select-sort>a {
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 54px;
-    margin-right: 8px;
-    padding: 8px 32px;
-    background-color: rgba(106, 112, 126, 0.0001);
-    border: 1px solid var(--app-border-third-color);
-    position: relative;
-}
-
-.pagination-select-sort>a::after {
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: 30px;
-
-}
-
-.pagination-select-sort>a>i {
-    background-color: rgba(106, 112, 126, 0.1);
-    border-left: 1px solid var(--app-border-third-color);
+/* ? Pagination sort */
+.pagination-sort-box {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
     font-size: 13px;
-    padding: 11px;
-    position: absolute;
-    right: 0px;
-    top: 0;
+    line-height: 16px;
+    padding: 10px 30px;
+    min-width: 170px;
+    background: rgba(106, 112, 126, 0.0001);
+    border: 1px solid #DDDFE1;
+    transition: all 0.3s ease-in-out;
 }
 
-.select-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: -10px;
-    margin-left: -9px;
-    display: none;
+.pagination-sort-box>div {
     position: relative;
-}
-
-.select-box>a {
-    width: calc(100% - 18px);
-    height: 100%;
-    text-align: center;
-    background-color: rgba(106, 112, 126, 0.0001);
-    border: 1px solid var(--app-border-third-color);
-
-}
-
-.pagination-select-sort:hover>.select-box {
+    right: -30px;
+    background: rgba(106, 112, 126, 0.1);
+    border: 1px solid #DDDFE1;
+    height: 37px;
+    padding: 0px 10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
     display: flex;
+    align-items: center;
 }
 
-/* app-price-container */
+.pagination-sort-box:hover {
+    background: rgba(106, 112, 126, 0.1);
 
+}
+
+/* ! App Price Container */
 .app-price-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-bottom: 30px;
-}
-
-.app-price-box {
+    margin-top: 20px;
+    padding: 0 50px;
     display: flex;
-    align-items: center;
-    border-radius: 20px;
-    border: 1px solid var(--app-border-second-color) ;
-    margin: 3px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
-    transition: all ease-in-out 0.3s;
-    padding-left: 23px;
-    padding-top: 17px;
-    padding-right: 13px;
-}
-
-.app-price-box:hover {
-    margin: 0;
-    border: 3px solid var(--app-price-border-color);
-}
-
-.app-update-container .price-box-left {
-    /* margin-right: 15px;
-    margin-left: 23px; */
-
-    display: flex;
-    align-items: center;
     justify-content: center;
-    height: max-content;
-
+    flex-wrap: wrap;
+    gap: 50px 15px;
 }
 
-.price-box-left>img {
+/* ! App Price Container => App Price Box*/
+.app-price-box {
+    background: #EDFDFF;
+    border: 3px solid #3FE9FF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
     border-radius: 20px;
-    padding: 22px;
-    background-color: var(--app-light-fourth-bg-color);
-    margin-right: 10px;
+    width: 421px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    position: relative;
+
 }
 
-/* .price-box-right {
-    margin-top: 17px;
-    margin-right: 13px;
-} */
+.customaze-app-price-box .app-price-box {
+    height: 236px;
+}
+
+/* ? App Price Box => Left */
+.price-box-left>img {
+    padding: 20px;
+    background: #F0EFEF;
+    border-radius: 20px;
+    width: 126px;
+}
+
+/* ? App Price Box => Right */
 
 .price-box-right>h2 {
     font-weight: 800;
     font-size: 15px;
     line-height: 19px;
     letter-spacing: 0.1px;
-    color: var(--primary-text-color);
+    margin-bottom: 5px;
 }
 
 .price-box-right>p {
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
+    margin-bottom: 20px;
 }
 
+/* ? App Price Box => Price Button Box */
 .price-button-box {
     display: flex;
-    position: relative;
-    bottom: -5px;
+    align-items: center;
+    position: absolute;
+    bottom: -10px;
 }
 
-/* Buttun Box */
-.button-box-left,
-.button-box-right {
+.button-box-left>span,
+.button-box-right>button {
+    padding: 13px;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.button-box-right>button>img {
+    width: 14px;
+    height: 14px;
+}
+
+.button-box-left>span {
+    letter-spacing: 0.1px;
+    background: #A2F4FF;
+    border: 1px solid #00FEFE;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
     margin-right: 3px;
-    border: 1px solid var(--app-border-fifth-color);
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.button-box-left>span.price-free {
+    background: #AFFFA2;
+    border: 1px solid #99FF80;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
 }
 
 .button-box-right {
-    width: 70%;
-    /* background-color: var(--app-azure-bg-color); */
-    background-color: var(--app-cyan-bg-color);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.button-box-left {
-    width: 25%;
-    padding: 9px 15px;
-    text-transform: uppercase;
-
-}
-
-.button-box-left>span {
-    font-weight: 800;
-    font-size: 13px;
-    /* line-height: 16px; */
-    letter-spacing: 0.1px;
 }
 
 .button-box-right>button {
-    height: calc(100% - 2px);
-    width: calc(50% - 2px);
-    font-weight: 800;
-    font-size: 13px;
-    background-color: transparent;
-    border: none;
-    line-height: 16px;
     display: flex;
     align-items: center;
-    padding: 9px 15px;
-    transition: all ease-in-out 0.3s;
-    cursor: pointer;
-}
-
-.button-box-right>button>img {
-    margin-right: 5px;
-}
-
-.button-box-right>button:hover {
-    background-color: var(--app-azure-bg-color);
+    background: #D6FAFF;
+    border: 1px solid #00FEFE;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease-in-out;
 }
 
 .button-box-right>button:first-child {
-    padding-right: 0;
+    border-right: none;
 }
 
-.free-button {
-    background-color: var(--app-green-bg-color);
+.button-box-right>button:last-child {
+    border-left: none;
 }
 
-/* App Update  */
-.app-update-container {
-    border-top: 1px solid var(--app-border-fourth-color);
-    border-bottom: 1px solid var(--app-border-fourth-color);
-    padding-top: 27px;
-    padding-bottom: 50px;
-    margin-left: -50px;
-    margin-right: -50px;
-    margin-top: 25px;
+.button-box-right>button:hover {
+    background: #A2F4FF;
 }
+
+/* ! App Update Container */
 
 .app-update-container> :where(header, main, footer) {
     border: 1px solid var(--app-border-color);
@@ -430,6 +382,7 @@ nav.content-nav li>a:hover {
 
 }
 
+/* ! App Update Header */
 .app-update-header {
     padding: 16px 81px;
     background-color: var(--app-light-five-bg-color);
@@ -473,24 +426,95 @@ nav.content-nav li>a:hover {
     color: var(--primary-text-color);
 }
 
-/* App Update */
+/* ! App Update Main */
 .app-update-main {
-    padding: 35px 75px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 53px 24px;
-    background-color: var(--app-light-five-bg-color);
+
+    padding: 35px;
+
 }
 
-.app-update-main>.app-price-box {
-    background-color: var(--app-light-bg-color);
-    padding-right: 50px;
-    /* padding-left: 0; */
+.app-main-content {
+    overflow-y: scroll;
+    max-height: 503px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 20px;
 }
 
-.app-update-main>.app-price-box img {
-    margin-right: 20px;
-    margin-bottom: 15px;
+/* ! Scroll */
+.app-main-content::-webkit-scrollbar-track {
+
+    border-radius: 10px;
+    background-color: #B1E9F4;
+}
+
+.app-main-content::-webkit-scrollbar {
+    width: 5px;
+    background-color: #B1E9F4;
+}
+
+.app-main-content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #2CD8FB;
+}
+
+/* ! Price Box  Big */
+.price-box-big {
+    width: 590px !important;
+}
+
+.price-box-big>.price-box-right p {
+    width: 260px;
+}
+
+.price-box-big .button-box-right>button {
+    padding: 11px 20px;
+    border: none;
+}
+
+.price-box-big .button-box-right>button:first-child {
+    padding-right: 37px;
+}
+
+.price-box-big .button-box-right>button:last-child {
+    padding-left: 37px;
+}
+
+
+
+.button-line {
+    border: 1px solid #1BDFFA;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    height: 20px;
+}
+
+.button-box-right>button:nth-child(2) {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.button-box-right>button:nth-child(3) {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: #008496;
+}
+
+/* ! Price Box Left */
+.price-box-left {
+    display: flex;
+    align-items: center;
+}
+
+.price-box-left>input {
+    margin-right: 22px;
+    height: 26px;
+    width: 26px;
 }
 
 /* ! App update Footer */
@@ -498,91 +522,98 @@ nav.content-nav li>a:hover {
     margin-top: 11px;
     padding: 13px 0;
     padding-right: 172px;
-    background-color: var(--app-success-bg-color) ;
+    background-color: var(--app-success-bg-color);
     text-align: end;
 }
 
 .app-update-button {
-    background-color:  var(--app-error-bg-color);
-    border: 1px solid var(--app-error-border-color) ;
+    background-color: var(--app-error-bg-color);
+    border: 1px solid var(--app-error-border-color);
     border-radius: 4px;
     padding: 15px 35px;
     transition: all ease-in-out 0.3s;
 }
 
-.app-update-main>.app-price-box {
-    border: 3px solid var(--app-price-border-color);
-    margin: 0;
+/* ! Customaze App Price Box */
+.customaze-app-price-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 52px;
 }
 
-.app-update-button:hover {
-    background-color: var(--app-button-hover-bg-color);
-
-}
-
-.price-box-left>input[type=checkbox] {
-    width: 24px;
-    height: 24px;
-    margin-right: 22px;
-    accent-color: var(--dshb-fourth-border-color);
-    cursor: pointer;
-}
-
-
-
-.app-update-main .button-box-right>button:last-child {
-    color: var(--app-text-color);
-}
-
-.app-update-main .button-box-right {
-    width: 80%;
-}
-
-/* Customaze App Price Box */
-.customaze-app-box {
-    margin-top: 50px;
-}
-
-.price-static-container {
-    width: 100%;
-    text-align: center;
+.customaze-app-price-box .price-box-left {
+    flex-direction: column;
     position: relative;
+}
+
+.customaze-app-price-box .button-box-left {
+    position: absolute;
+}
+
+.customaze-app-price-box .price-box-left>img {
+    margin-bottom: 40px;
+}
+
+.app-first-box .button-box-left {
+    bottom: -40px;
+    left: 5px;
+}
+
+.big-mount {
+    width: 100px;
+}
+
+.app-second-box .button-box-left {
+    bottom: -50px;
+    left: 5px;
+}
+
+.app-second-box .big-mount>span {
+    width: 80px;
+    text-align: center
+}
+
+.app-third-box .button-box-left {
+    top: -20px;
+    right: 5px;
+}
+
+.app-third-box .price-box-left {
+    position: static;
+}
+
+.app-fourth-box .button-box-left {
+    bottom: -40px;
+    left: 30px;
+}
+
+.bottom-box {
     bottom: -20px;
-
+    left: 0px;
 }
 
-.price-box-right {
-    height: 100%;
-    margin-left: 10px;
+.top-box {
+    top: -20px;
 }
 
-.price-box-aditional i {
-    font-size: 13px;
-    margin-right: 4px;
-    color: var(--dshb-cadetblue-color);
+.bottom-box>span,
+.top-box>span {
+    width: 114px;
+    text-align: center;
 }
 
-.price-box-aditional i:nth-child(4) {
-    margin-right: 15px;
+.bottom-box>span {
+    border-radius: 5px 5px 0px 0px;
 }
 
-.price-box-aditional a {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 13px;
-    line-height: 16px;
-    color: var(--dshb-cadetblue-color);
-    border-left: 1px solid var(--dshb-cadetblue-color);
-    padding-left: 15px;
+.top-box>span {
+    border-radius: 0px 0px 5px 5px;
 }
 
-.price-box-aditional span {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 16px;
-    margin-top: 13px;
-    color: var(--primary-text-color);
+.app-fiveth-box .price-box-left>img {
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 /* ! Deploying Box */
@@ -599,11 +630,6 @@ nav.content-nav li>a:hover {
     right: 20px;
     top: 20px;
     position: absolute;
-    border: 1px solid var(--primary-border-color);
-    border-radius: 100%;
-    width: 17px;
-    height: 17px;
-    text-align: center;
 }
 
 .deploying-box>h3 {
@@ -642,6 +668,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     background: var(--app-light-second-bg-color);
     border-radius: 100px;
 }
+
 input[type="range"]::-webkit-slider-thumb {
     /* box-shadow: -407px 0 0 400px ; */
     -webkit-appearance: none;
@@ -651,12 +678,40 @@ input[type="range"]::-webkit-slider-thumb {
     box-shadow: -400px 0 0 400px var(--app-box-shadow-color);
 }
 
+.price-box-aditional img {
+    margin-right: 4px;
+}
+
+.price-box-aditional img:nth-child(4) {
+    margin-right: 15px;
+}
+
+.price-box-aditional a {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--dshb-cadetblue-color);
+    border-left: 1px solid var(--dshb-cadetblue-color);
+    padding-left: 15px;
+}
+
+.price-box-aditional span {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 13px;
+    color: var(--primary-text-color);
+}
 
 /* !!!!!!!!!!!!!!! */
 
 .deploying-box>span {
     margin-bottom: 27px;
     display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 .deploying-box>span,
@@ -676,11 +731,440 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 0;
 }
 
-.deploying-box-list i,
-.deploying-box i {
+.deploying-box-list img,
+.deploying-box img {
     margin-right: 15px;
 }
 
-.deploying-box>span i {
-    color: var(--app-second-text-color);
+
+
+/*! ================App Manager Responsive Design Style===============*/
+@media only screen and (max-width: 1200px) {
+
+    /* ! Manager Main Nav => List */
+    .manager-main-nav>ul>li {
+        margin: 0 25px;
+    }
+
+    .manager-main-nav>ul>li>a {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    /* ! Manager Content Header => Header Button Box */
+    .header-red-btn {
+        font-size: 12px;
+        padding: 15px 20px;
+    }
+
+    /*? Manager User Box */
+    .manager-user-box>.manager-user-name {
+        font-size: 14px;
+    }
+
+    .manager-user-budge {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .manager-user-box>button {
+        font-size: 12px;
+        padding: 10px;
+        margin-left: 30px;
+    }
+
+    /* ! Pagination Content */
+    /* ? Pagination Box */
+    .pagination-content {
+        padding: 0 25px;
+    }
+
+    .pagination-box>a {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .pagination-sort-box {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 10px 20px;
+        min-width: 150px;
+    }
+
+    .pagination-sort-box>div {
+        right: -35px;
+        height: 34px;
+        padding: 0px 5px;
+    }
+
+    .app-price-container {
+        padding: 0;
+    }
+
+    /* !  App Price Box */
+    .app-price-box {
+        width: 340px;
+        gap: 10px;
+        padding: 15px;
+        position: relative;
+    }
+
+    .customaze-app-price-box .app-price-box {
+        max-height: 200px !important;
+    }
+
+    .price-box-left>img {
+        padding: 15px;
+        height: 80px;
+        width: 80px;
+    }
+
+    .price-box-right>h2 {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .price-box-right>p {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .button-box-left>span,
+    .button-box-right>button {
+        padding: 10px;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .bottom-box>span,
+    .top-box>span {
+        width: 85px;
+    }
+
+    .bottom-box {
+        bottom: -25px;
+    }
+
+    .top-box {
+        top: -25px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .manager-content-header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* ! Manager Main Nav => List */
+    .manager-main-nav>ul>li {
+        margin: 0 20px;
+    }
+
+    .manager-main-nav>ul>li>a {
+
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    /* ! Manager Content Header => Header Button Box */
+    .header-red-btn {
+        font-size: 10px;
+        padding: 10px 15px;
+    }
+
+    /*? Manager User Box */
+    .manager-user-box>.manager-user-name {
+        font-size: 12px;
+    }
+
+    .manager-user-budge {
+        font-size: 12px;
+        margin-left: 8px;
+    }
+
+    .manager-user-box>button {
+        font-size: 10px;
+        padding: 8px;
+        margin-left: 20px;
+    }
+
+    /* ! Pagination Content */
+    /* ? Pagination Box */
+    .pagination-content {
+        padding: 0 15px;
+    }
+
+    .pagination-box>a {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .pagination-sort-box {
+        font-size: 10px;
+        line-height: 12px;
+        padding: 8px 15px;
+        min-width: 120px;
+    }
+
+    .pagination-sort-box>div {
+        right: -22px;
+        height: 30px;
+        padding: 0px 5px;
+    }
+
+    .bottom-box>span,
+    .top-box>span {
+        width: 80px;
+    }
+
+    .app-fourth-box .button-box-left {
+        left: 10px;
+        bottom: -50px;
+    }
+
+    .customaze-app-price-box .price-box-left>img {
+        margin-bottom: 25px;
+    }
+
+    .button-box-left>span,
+    .button-box-right>button {
+        font-size: 9px;
+        text-align: center;
+    }
+
+    .top-box {
+        top: -30px;
+    }
+
+    .bottom-box {
+        bottom: -30px;
+    }
+
+    .app-second-box .button-box-left {
+        left: -10px;
+        bottom: -50px;
+    }
+
+    .big-mount>span {
+        padding: 10px 5px;
+        width: 70px;
+    }
+
+    .app-first-box .button-box-left {
+        bottom: -55px;
+    }
+
+    /*! Deploying Box*/
+    .deploying-box {
+        width: 600px;
+    }
+
+    .deploying-box>h3 {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* ! App Manager Header */
+    .app-manager>h1 {
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    /* ! App Manager Main => Manager Main Header*/
+    .manager-main-header {
+        padding: 15px;
+    }
+
+    .manager-main-header>h2 {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .manager-main-header>p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    /* ! Manager Main Search */
+    .manager-main-search {
+        margin-right: 0px;
+        align-items: flex-start;
+    }
+
+    .manager-main-search>input {
+        text-align: start;
+        margin-left: -10px;
+        line-height: 30px;
+        font-size: 30px;
+
+    }
+
+    .manager-content-header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* ! Manager Main Nav => List */
+    .manager-main-nav>ul>li {
+        margin: 0 10px;
+    }
+
+    .manager-main-nav>ul>li>a {
+
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    /* ! Manager Content Header => Header Button Box */
+
+    .header-red-btn {
+        font-size: 8px;
+        padding: 8px 10px;
+        margin-left: 0;
+    }
+
+    /*? Manager User Box */
+    .manager-user-box>.manager-user-name {
+        font-size: 10px;
+    }
+
+    .manager-user-budge {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    .manager-user-box>button {
+        font-size: 10px;
+        padding: 4px;
+        margin-left: 10px;
+    }
+
+    /* ! Pagination Content */
+    /* ? Pagination Box */
+    .pagination-content {
+        padding: 0 10px;
+    }
+
+    .pagination-box>a {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .pagination-sort-box {
+        font-size: 8px;
+        line-height: 10px;
+        padding: 4px 10px;
+        min-width: 100px;
+    }
+
+    .pagination-sort-box>div {
+        right: -22px;
+        height: 20px;
+        padding: 0px 3px;
+    }
+
+    /* .app-update-main  */
+    .app-update-header {
+        padding: 10px 30px;
+    }
+
+    .app-update-header>p,
+    .app-update-header>p>span.app-number,
+    .app-update-header>p>span.bold {
+        font-size: 12px;
+    }
+
+    .app-update-header>p>img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .app-update-main {
+        padding: 10px 20px;
+        gap: 20px;
+    }
+
+
+
+    /* ! Price Box Big */
+    .price-box-big {
+        width: 400px !important;
+        padding: 5px;
+    }
+
+    .price-box-left>input {
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .price-box-left>img {
+        height: 60px;
+        width: 60px;
+        border-radius: 10px;
+    }
+
+    .big-mount>span {
+        padding: 10px 5px;
+        width: 70px !important;
+    }
+
+    .bottom-box>span,
+    .top-box>span {
+        width: 60px;
+    }
+
+    .top-box {
+        top: -40px;
+    }
+
+    .bottom-box {
+        bottom: -40px;
+    }
+
+    .app-fourth-box .button-box-left {
+        left: 0px;
+    }
+
+    .app-second-box .button-box-left,
+    .app-fourth-box .button-box-left,
+    .app-first-box .button-box-left {
+        bottom: -60px;
+    }
+
+    .price-box-big .button-box-right>button {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .button-line {
+        display: none;
+    }
+
+    .price-box-big .button-box-right>button:last-child {
+        padding-left: 10px;
+    }
+
+    /* .app-update-button */
+    .app-update-button {
+        padding: 5px 20px;
+    }
+
+    /*! Deploying Box*/
+    .deploying-box {
+        width: 400px;
+        padding: 10px 20px;
+    }
+
+    .deploying-box>h3 {
+        margin-bottom: 15px;
+    }
 }

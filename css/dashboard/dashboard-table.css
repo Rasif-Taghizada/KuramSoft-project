@@ -1,0 +1,244 @@
+/* Import Font face and reset css */
+@import url("../main.css");
+/* Import Colors */
+@import url("../colors.css");
+/* Import form elements */
+@import url("../form.css");
+/* Import Dashboard Navbar */
+@import url("./dashboard-navbar.css");
+/* Import App Manager Styles */
+@import url("../app-meneger/app-manager.css");
+
+/*! ================ Dashboard Table container ================ */
+.dashboard-table-container {
+    min-height: 100vh;
+    width: 90%;
+    margin: 30px auto 0 auto;
+    padding: 30px 0;
+}
+
+.dashboard-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* *************** Dashboard Table Head Left Container ********************* */
+.dashboard-table-head-left,
+.dashboard-table-head-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dashboard-table-head-left>span {
+    width: 35px;
+    height: 20px;
+    border: 1.5px solid #000000;
+    border-radius: 100px;
+    font-weight: 800;
+    /* padding: px; */
+}
+
+.dashboard-table-head-left>p {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.add-upload-export-btns {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+/* ! Dashboard table  SubHeader Container */
+.dashboard-table-sub-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.dashboard-table-sub-header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboard-table-sub-header-left>span {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.dashboard-table-sub-header-left>p {
+    padding-right: 40px;
+    margin-right: 30px;
+    border-right: 1px solid #ccc;
+}
+
+/* subheader searc content */
+.subheader-search {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    color: #CECECE;
+    background: #F5FBFF;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+}
+
+.subheader-search input {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #C5C5C5;
+    margin-left: 15px;
+    width: 130px;
+    font-size: 16px;
+}
+
+.subheader-search span.icon-search {
+    font-size: 28px;
+}
+
+/*! ============== Dashboard Table ================ */
+.dashboard-table {}
+
+/* Table Header Content Style */
+.table-head {
+    background: #EDFCFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
+    border-bottom: 3px solid #C4F5FF;
+    border-top: 1px solid #C8C8C8;
+    margin-top: 40px;
+}
+
+.table-head div {
+    cursor: pointer;
+}
+
+.table-head>div:not(:first-child, :last-child) {
+    border-right: 1px solid #BECACC;
+}
+
+
+/** Common Table Row Style */
+.table-row {
+    min-height: 80px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-row>div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    height: 100%;
+}
+
+.table-checkbox>input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+}
+
+/*TODO Table Head Container Row Styles */
+.table-row>div:hover img.icon-filter-down {
+    transform: rotate(180deg);
+}
+
+/*TODO Table Row Div Elements */
+.table-user-image {
+    min-width: 80px;
+}
+
+.table-username {
+    min-width: 140px;
+}
+
+.table-filter {
+    min-width: 250px;
+}
+
+.table-permission {
+    min-width: 120px;
+}
+
+.table-percentage {
+    min-width: 110px;
+}
+
+.table-body .table-percentage {
+    height: 80px !important;
+    justify-content: center !important;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.table-status {
+    min-width: 110px;
+}
+
+.table-body .table-status {
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+}
+
+.table-link {
+    min-width: 90px;
+    justify-content: center !important;
+}
+
+.table-link a {
+    font-weight: 700;
+    font-size: 14px;
+    color: #5894BF;
+    text-transform: uppercase;
+}
+
+.table-stars {
+    gap: 0 !important;
+    width: 90px;
+}
+
+.table-stars span.icon-star {
+    color: #5FA5D8;
+    font-size: 20px;
+}
+
+/* Table Body Rows */
+.table-body.table-row {
+    border-bottom: 1px solid #C8C8C8;
+}
+
+/* * Table parcentage column backgrodun colors */
+.bg-20 {
+    background: #DBF6E2;
+}
+
+.bg-40 {
+    background: #EBEBEB;
+}
+
+.bg-60 {
+    background: #CDDEFF;
+}
+
+.bg-90 {
+    background: #F7D4FF;
+}
+
+.bg-100 {
+    background: #FFDFDF;
+}
+/* Additional Table Background Colors */
+.table-row-orange {
+    background: #FEFFC1;
+}
+
+.table-row-lightblue {
+    background: #E6F3FF;
+}

@@ -1,86 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>App Manager</title>
-  <link rel="stylesheet" href="./css/app-meneger/app-manager.css" />
-  <!-- Bootstrap css -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-  <section class="app-manager-container">
-    <header class="app-manager-header">
-      <img src="./assets/Images/app-meneger-icon.svg" alt="app-manager" />
-      <h1>App manager</h1>
-    </header>
-    <main class="app-manager-content">
-      <div class="content-top-section">
-        <h2>Public Name</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-      </div>
-      <div class="content-search">
-        <div>
-          <span>Search</span>
-          <!-- fa down  -->
-          <i class="fas fa-chevron-down"></i>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Manager</title>
+    <link rel="stylesheet" href="./css/app-meneger/app-manager.css" />
+  </head>
+  <body>
+    <!-- App Manager -->
+    <section class="app-manager">
+      <h1>
+        <img src="./assets/icons/ericsson.svg" alt="Ericsonn" />
+        APP MANAGER
+      </h1>
+      <!-- ! App Manager Main -->
+      <main class="app-manager-main">
+        <!-- ? Manager Main Header -->
+        <div class="manager-main-header">
+          <h2>Public Name</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
         </div>
-        <input type="text" name="search" id="search" placeholder="Bir app arayın." />
-      </div>
-      <nav class="content-nav">
-        <ul>
-          <li>
-            <a href="#">ALL</a>
-          </li>
-          <li>
-            <a href="#">GENERAL</a>
-          </li>
-          <li>
-            <a href="#">COMMERCE</a>
-          </li>
-          <li>
-            <a href="#">PORTAL</a>
-          </li>
-          <li>
-            <a href="#">ENTERPRISE</a>
-          </li>
-          <li>
-            <a href="#">ENTERPRISE</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="content-bottom-section">
-        <div class="header-content">
-          <div class="header-content-left">
-            <button class="app-btn app-btn-red">Check for Update</button>
-            <button class="app-btn app-btn-red">Load New Applications</button>
+        <!-- ? Manager Main Search -->
+        <div class="manager-main-search">
+          <p>
+            Search
+            <img src="./assets/icons/chevron-left-r.svg" alt="Bottom Icon" />
+          </p>
+          <input
+            type="text"
+            name="manager-search"
+            id="manager-search"
+            placeholder="Bir app arayın."
+          />
+        </div>
+        <!-- ? Manager Main Nav -->
+        <nav class="manager-main-nav">
+          <ul>
+            <li>
+              <a href="#">ALL</a>
+            </li>
+            <li>
+              <a href="#">GENERAL</a>
+            </li>
+            <li>
+              <a href="#">COMMERCE</a>
+            </li>
+            <li>
+              <a href="#">PORTAL</a>
+            </li>
+            <li>
+              <a href="#">ENTERPRISE</a>
+            </li>
+            <li>
+              <a href="#">ENTERPRISE</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- ? Manager Content Header -->
+        <div class="manager-content-header">
+          <div class="header-button-box">
+            <button class="header-red-btn">Check for Update</button>
+            <button class="header-red-btn red-bold-btn">
+              Load New Applications
+            </button>
           </div>
-          <div class="header-content-right">
-            <p class="header-user">
-              Ozan Alatlı
-              <span class="price"> 40TL </span>
-            </p>
-            <button class="app-btn green-border">
-              Kredit al
-              <i class="fa-solid fa-bag-shopping"></i>
+          <div class="manager-user-box">
+            <span class="manager-user-name">Ozan Alatlı </span>
+            <span class="manager-user-budge">40 TL</span>
+            <button>
+              Kredi Al
+              <img src="./assets/icons/work-alt.svg" alt="Work All" />
             </button>
           </div>
         </div>
-        <!-- Pagination Box -->
+        <!-- ? Pagination Content -->
         <div class="pagination-content">
           <div class="pagination-box">
             <a href="#" class="pagination-active">Prev</a>
@@ -90,33 +89,37 @@
             <a href="#">05</a>
             <a href="#" class="pagination-active">Next</a>
           </div>
-          <div class="pagination-select-sort">
-            <a href="#">
-              Fiyat görə
-              <i class="fas fa-chevron-down"></i>
-            </a>
-            <div class="select-box">
-              <a href="#">10</a>
-              <a href="#">20</a>
-              <a href="#">30</a>
-              <a href="#">40</a>
+          <div class="dshb-dropdown-menu pagination-select-sort">
+            <div class="menu-select pagination-sort-box">
+              <p>Fiyata göre</p>
+              <div>
+                <img
+                  src="./assets/icons/chevron-right.svg"
+                  alt="Chevron Right"
+                />
+              </div>
             </div>
+            <div class="menu-options"></div>
           </div>
         </div>
-        <!-- App Price box -->
+        <!-- ? App Price Container -->
         <div class="app-price-container">
-          <div class="app-price-box cyan">
+          <!-- TODO App Price Box 1-->
+          <div class="app-price-box">
+            <!-- App Price Box Left -->
             <div class="price-box-left">
               <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
             </div>
+            <!-- * App Price Box Right -->
             <div class="price-box-right">
               <h2>INSTAGRAM BOT</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
               </p>
+              <!-- * App Price Button Box -->
               <div class="price-button-box">
-                <div class="button-box-left azure">
+                <div class="button-box-left">
                   <span>12 TL</span>
                 </div>
                 <div class="button-box-right">
@@ -132,19 +135,23 @@
               </div>
             </div>
           </div>
-          <div class="app-price-box cyan">
+          <!-- TODO App Price Box 2-->
+          <div class="app-price-box">
+            <!-- App Price Box Left -->
             <div class="price-box-left">
-              <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+              <img src="./assets/Icons/Icons-2.svg" alt="Icon 1" />
             </div>
+            <!-- * App Price Box Right -->
             <div class="price-box-right">
               <h2>INSTAGRAM BOT</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
               </p>
+              <!-- * App Price Button Box -->
               <div class="price-button-box">
-                <div class="button-box-left free-button azure">
-                  <span>Free</span>
+                <div class="button-box-left">
+                  <span class="price-free">Free</span>
                 </div>
                 <div class="button-box-right">
                   <button>
@@ -159,18 +166,22 @@
               </div>
             </div>
           </div>
-          <div class="app-price-box cyan">
+          <!-- TODO App Price Box 3 -->
+          <div class="app-price-box">
+            <!-- App Price Box Left -->
             <div class="price-box-left">
-              <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+              <img src="./assets/Icons/Icons-3.svg" alt="Icon 1" />
             </div>
+            <!-- * App Price Box Right -->
             <div class="price-box-right">
               <h2>INSTAGRAM BOT</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
               </p>
+              <!-- * App Price Button Box -->
               <div class="price-button-box">
-                <div class="button-box-left azure">
+                <div class="button-box-left">
                   <span>12 TL</span>
                 </div>
                 <div class="button-box-right">
@@ -186,19 +197,23 @@
               </div>
             </div>
           </div>
-          <div class="app-price-box cyan">
+          <!-- TODO App Price Box 4-->
+          <div class="app-price-box">
+            <!-- App Price Box Left -->
             <div class="price-box-left">
-              <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+              <img src="./assets/Icons/Icons-4.svg" alt="Icon 1" />
             </div>
+            <!-- * App Price Box Right -->
             <div class="price-box-right">
               <h2>INSTAGRAM BOT</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
               </p>
+              <!-- * App Price Button Box -->
               <div class="price-button-box">
-                <div class="button-box-left free-button azure">
-                  <span>Free</span>
+                <div class="button-box-left">
+                  <span class="price-free">Free</span>
                 </div>
                 <div class="button-box-right">
                   <button>
@@ -213,18 +228,22 @@
               </div>
             </div>
           </div>
-          <div class="app-price-box cyan">
+          <!-- TODO App Price Box 5-->
+          <div class="app-price-box">
+            <!-- App Price Box Left -->
             <div class="price-box-left">
-              <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+              <img src="./assets/Icons/Icons-5.svg" alt="Icon 1" />
             </div>
+            <!-- * App Price Box Right -->
             <div class="price-box-right">
               <h2>INSTAGRAM BOT</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
               </p>
+              <!-- * App Price Button Box -->
               <div class="price-button-box">
-                <div class="button-box-left azure">
+                <div class="button-box-left">
                   <span>12 TL</span>
                 </div>
                 <div class="button-box-right">
@@ -240,19 +259,23 @@
               </div>
             </div>
           </div>
-          <div class="app-price-box cyan">
+          <!-- TODO App Price Box 6-->
+          <div class="app-price-box">
+            <!-- App Price Box Left -->
             <div class="price-box-left">
               <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
             </div>
+            <!-- * App Price Box Right -->
             <div class="price-box-right">
               <h2>INSTAGRAM BOT</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
               </p>
+              <!-- * App Price Button Box -->
               <div class="price-button-box">
-                <div class="button-box-left free-button azure">
-                  <span>Free</span>
+                <div class="button-box-left">
+                  <span class="price-free">Free</span>
                 </div>
                 <div class="button-box-right">
                   <button>
@@ -267,18 +290,22 @@
               </div>
             </div>
           </div>
-          <div class="app-price-box cyan">
+          <!-- TODO App Price Box 7-->
+          <div class="app-price-box">
+            <!-- App Price Box Left -->
             <div class="price-box-left">
-              <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+              <img src="./assets/Icons/Icons-6.svg" alt="Icon 1" />
             </div>
+            <!-- * App Price Box Right -->
             <div class="price-box-right">
               <h2>INSTAGRAM BOT</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
               </p>
+              <!-- * App Price Button Box -->
               <div class="price-button-box">
-                <div class="button-box-left azure">
+                <div class="button-box-left">
                   <span>12 TL</span>
                 </div>
                 <div class="button-box-right">
@@ -294,18 +321,22 @@
               </div>
             </div>
           </div>
-          <div class="app-price-box cyan">
+          <!-- TODO App Price Box 8-->
+          <div class="app-price-box">
+            <!-- App Price Box Left -->
             <div class="price-box-left">
-              <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+              <img src="./assets/Icons/Icons-2.svg" alt="Icon 1" />
             </div>
+            <!-- * App Price Box Right -->
             <div class="price-box-right">
               <h2>INSTAGRAM BOT</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
               </p>
+              <!-- * App Price Button Box -->
               <div class="price-button-box">
-                <div class="button-box-left azure">
+                <div class="button-box-left">
                   <span>12 TL</span>
                 </div>
                 <div class="button-box-right">
@@ -321,18 +352,22 @@
               </div>
             </div>
           </div>
-          <div class="app-price-box cyan">
+          <!-- TODO App Price Box 9-->
+          <div class="app-price-box">
+            <!-- App Price Box Left -->
             <div class="price-box-left">
-              <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+              <img src="./assets/Icons/Icons-4.svg" alt="Icon 1" />
             </div>
+            <!-- * App Price Box Right -->
             <div class="price-box-right">
               <h2>INSTAGRAM BOT</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
               </p>
+              <!-- * App Price Button Box -->
               <div class="price-button-box">
-                <div class="button-box-left azure">
+                <div class="button-box-left">
                   <span>12 TL</span>
                 </div>
                 <div class="button-box-right">
@@ -348,18 +383,22 @@
               </div>
             </div>
           </div>
-          <div class="app-price-box cyan">
+          <!-- TODO App Price Box  10-->
+          <div class="app-price-box">
+            <!-- App Price Box Left -->
             <div class="price-box-left">
-              <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+              <img src="./assets/Icons/Icons-7.svg" alt="Icon 1" />
             </div>
+            <!-- * App Price Box Right -->
             <div class="price-box-right">
               <h2>INSTAGRAM BOT</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
               </p>
+              <!-- * App Price Button Box -->
               <div class="price-button-box">
-                <div class="button-box-left azure">
+                <div class="button-box-left">
                   <span>12 TL</span>
                 </div>
                 <div class="button-box-right">
@@ -375,19 +414,23 @@
               </div>
             </div>
           </div>
-          <div class="app-price-box cyan">
+          <!-- TODO App Price Box 11-->
+          <div class="app-price-box">
+            <!-- App Price Box Left -->
             <div class="price-box-left">
               <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
             </div>
+            <!-- * App Price Box Right -->
             <div class="price-box-right">
               <h2>INSTAGRAM BOT</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
               </p>
+              <!-- * App Price Button Box -->
               <div class="price-button-box">
-                <div class="button-box-left free-button azure">
-                  <span>free</span>
+                <div class="button-box-left">
+                  <span class="price-free">Free</span>
                 </div>
                 <div class="button-box-right">
                   <button>
@@ -402,21 +445,25 @@
               </div>
             </div>
           </div>
-          <div class="app-price-box cyan">
+          <!-- TODO App Price Box 12-->
+          <div class="app-price-box">
+            <!-- App Price Box Left -->
             <div class="price-box-left">
-              <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+              <img src="./assets/Icons/Icons-3.svg" alt="Icon 1" />
             </div>
+            <!-- * App Price Box Right -->
             <div class="price-box-right">
               <h2>INSTAGRAM BOT</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
               </p>
+              <!-- * App Price Button Box -->
               <div class="price-button-box">
-                <div class="button-box-left free-button azure">
-                  <span>free</span>
+                <div class="button-box-left">
+                  <span class="price-free">Free</span>
                 </div>
-                <div class="button-box-right cyan">
+                <div class="button-box-right">
                   <button>
                     <img src="./assets/Icons/unsplash.svg" alt="Unsplash" />
                     Satın Al
@@ -430,7 +477,7 @@
             </div>
           </div>
         </div>
-        <!-- Pagination Box -->
+        <!-- ? Pagination Content -->
         <div class="pagination-content">
           <div class="pagination-box">
             <a href="#" class="pagination-active">Prev</a>
@@ -441,7 +488,7 @@
             <a href="#" class="pagination-active">Next</a>
           </div>
         </div>
-        <!-- Update Box -->
+        <!-- ? App Update Container -->
         <div class="app-update-container">
           <header class="app-update-header">
             <p>
@@ -452,78 +499,144 @@
             </p>
           </header>
           <main class="app-update-main">
-            <div class="app-price-box">
-              <div class="price-box-left">
-                <input type="checkbox" name="update" id="update" />
-                <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-              </div>
-              <div class="price-box-right">
-                <h2>INSTAGRAM BOT</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore
-                </p>
-                <div class="price-button-box">
-                  <div class="button-box-right">
-                    <button>Version 1.1 to 1.2</button>
-                    <button>Version Logs</button>
+            <div class="app-main-content">
+              <div class="app-price-box price-box-big">
+                <div class="price-box-left">
+                  <input type="checkbox" name="update" id="update" />
+                  <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                </div>
+                <div class="price-box-right">
+                  <h2>INSTAGRAM BOT</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <div class="price-button-box">
+                    <div class="button-box-right">
+                      <div class="button-line"></div>
+                      <button>Version 1.1 to 1.2</button>
+                      <button>Version Logs</button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="app-price-box">
-              <div class="price-box-left">
-                <input type="checkbox" name="update" id="update" />
-                <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-              </div>
-              <div class="price-box-right">
-                <h2>INSTAGRAM BOT</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore
-                </p>
-                <div class="price-button-box">
-                  <div class="button-box-right">
-                    <button>Version 1.1 to 1.2</button>
-                    <button>Version Logs</button>
+              <div class="app-price-box price-box-big">
+                <div class="price-box-left">
+                  <input type="checkbox" name="update" id="update" />
+                  <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                </div>
+                <div class="price-box-right">
+                  <h2>INSTAGRAM BOT</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <div class="price-button-box">
+                    <div class="button-box-right">
+                      <div class="button-line"></div>
+                      <button>Version 1.1 to 1.2</button>
+                      <button>Version Logs</button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="app-price-box">
-              <div class="price-box-left">
-                <input type="checkbox" name="update" id="update" />
-                <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-              </div>
-              <div class="price-box-right">
-                <h2>INSTAGRAM BOT</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore
-                </p>
-                <div class="price-button-box">
-                  <div class="button-box-right">
-                    <button>Version 1.1 to 1.2</button>
-                    <button>Version Logs</button>
+              <div class="app-price-box price-box-big">
+                <div class="price-box-left">
+                  <input type="checkbox" name="update" id="update" />
+                  <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                </div>
+                <div class="price-box-right">
+                  <h2>INSTAGRAM BOT</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <div class="price-button-box">
+                    <div class="button-box-right">
+                      <div class="button-line"></div>
+                      <button>Version 1.1 to 1.2</button>
+                      <button>Version Logs</button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="app-price-box">
-              <div class="price-box-left">
-                <input type="checkbox" name="update" id="update" />
-                <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+              <div class="app-price-box price-box-big">
+                <div class="price-box-left">
+                  <input type="checkbox" name="update" id="update" />
+                  <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                </div>
+                <div class="price-box-right">
+                  <h2>INSTAGRAM BOT</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <div class="price-button-box">
+                    <div class="button-box-right">
+                      <div class="button-line"></div>
+                      <button>Version 1.1 to 1.2</button>
+                      <button>Version Logs</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="price-box-right">
-                <h2>INSTAGRAM BOT</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore
-                </p>
-                <div class="price-button-box">
-                  <div class="button-box-right">
-                    <button>Version 1.1 to 1.2</button>
-                    <button>Version Logs</button>
+              <div class="app-price-box price-box-big">
+                <div class="price-box-left">
+                  <input type="checkbox" name="update" id="update" />
+                  <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                </div>
+                <div class="price-box-right">
+                  <h2>INSTAGRAM BOT</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <div class="price-button-box">
+                    <div class="button-box-right">
+                      <div class="button-line"></div>
+                      <button>Version 1.1 to 1.2</button>
+                      <button>Version Logs</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="app-price-box price-box-big">
+                <div class="price-box-left">
+                  <input type="checkbox" name="update" id="update" />
+                  <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                </div>
+                <div class="price-box-right">
+                  <h2>INSTAGRAM BOT</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <div class="price-button-box">
+                    <div class="button-box-right">
+                      <div class="button-line"></div>
+                      <button>Version 1.1 to 1.2</button>
+                      <button>Version Logs</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="app-price-box price-box-big">
+                <div class="price-box-left">
+                  <input type="checkbox" name="update" id="update" />
+                  <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                </div>
+                <div class="price-box-right">
+                  <h2>INSTAGRAM BOT</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <div class="price-button-box">
+                    <div class="button-box-right">
+                      <div class="button-line"></div>
+                      <button>Version 1.1 to 1.2</button>
+                      <button>Version Logs</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -533,31 +646,35 @@
             <button class="app-update-button">Update Selected</button>
           </footer>
         </div>
-        <!-- Customaze App Price Box -->
-        <div class="app-price-container customaze-app-box">
-          <div class="app-price-box box-img-price cyan">
+        <!-- ? Customaze App Price Box -->
+        <div class="customaze-app-price-box">
+          <!-- TODO App Price Box 1-->
+          <div class="app-price-box app-first-box">
+            <!-- App Price Box Left -->
             <div class="price-box-left">
               <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-              <div class="button-box-left price-static-container azure">
-                <span>12 TL</span>
+              <div class="button-box-left">
+                <span>AYLIK 12 TL</span>
               </div>
             </div>
+            <!-- * App Price Box Right -->
             <div class="price-box-right">
               <h2>INSTAGRAM BOT</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
               </p>
               <div class="price-box-aditional">
                 <div>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
                   <a href="#">Comments</a>
                 </div>
                 <span>Kuramsoft Yazılım</span>
               </div>
+              <!-- * App Price Button Box -->
               <div class="price-button-box">
                 <div class="button-box-right">
                   <button>
@@ -572,29 +689,33 @@
               </div>
             </div>
           </div>
-          <div class="app-price-box box-img-price cyan">
+          <!-- TODO App Price Box 2-->
+          <div class="app-price-box app-second-box">
+            <!-- App Price Box Left -->
             <div class="price-box-left">
               <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-              <div class="button-box-left price-static-container azure">
-                <span>12 TL</span>
+              <div class="button-box-left big-mount">
+                <span>AYLIK 12 TL</span>
               </div>
             </div>
+            <!-- * App Price Box Right -->
             <div class="price-box-right">
               <h2>INSTAGRAM BOT</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
               </p>
               <div class="price-box-aditional">
                 <div>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
                   <a href="#">Comments</a>
                 </div>
                 <span>Kuramsoft Yazılım</span>
               </div>
+              <!-- * App Price Button Box -->
               <div class="price-button-box">
                 <div class="button-box-right">
                   <button>
@@ -609,30 +730,33 @@
               </div>
             </div>
           </div>
-          <div class="app-price-box box-img-price cyan">
+          <!-- TODO App Price Box 3-->
+          <div class="app-price-box app-third-box">
+            <!-- App Price Box Left -->
             <div class="price-box-left">
               <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-              <div class="button-box-left price-static-container azure">
-                <span>12 TL</span>
+              <div class="button-box-left">
+                <span class="price-free">Free</span>
               </div>
             </div>
+            <!-- * App Price Box Right -->
             <div class="price-box-right">
               <h2>INSTAGRAM BOT</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
               </p>
-
               <div class="price-box-aditional">
                 <div>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
                   <a href="#">Comments</a>
                 </div>
                 <span>Kuramsoft Yazılım</span>
               </div>
+              <!-- * App Price Button Box -->
               <div class="price-button-box">
                 <div class="button-box-right">
                   <button>
@@ -647,29 +771,33 @@
               </div>
             </div>
           </div>
-          <div class="app-price-box box-img-price cyan">
+          <!-- TODO App Price Box 4-->
+          <div class="app-price-box app-fourth-box">
+            <!-- App Price Box Left -->
             <div class="price-box-left">
               <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-              <div class="button-box-left price-static-container azure">
-                <span>12 TL</span>
+              <div class="button-box-left">
+                <span class="price-free">Free</span>
               </div>
             </div>
+            <!-- * App Price Box Right -->
             <div class="price-box-right">
               <h2>INSTAGRAM BOT</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
               </p>
               <div class="price-box-aditional">
                 <div>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
                   <a href="#">Comments</a>
                 </div>
                 <span>Kuramsoft Yazılım</span>
               </div>
+              <!-- * App Price Button Box -->
               <div class="price-button-box">
                 <div class="button-box-right">
                   <button>
@@ -684,29 +812,36 @@
               </div>
             </div>
           </div>
-          <div class="app-price-box box-img-price cyan">
+          <!-- TODO App Price Box 5-->
+          <div class="app-price-box app-fiveth-box">
+            <!-- App Price Box Left -->
             <div class="price-box-left">
+              <div class="button-box-left top-box">
+                <span>Aylık</span>
+              </div>
               <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-              <div class="button-box-left price-static-container azure">
-                <span>12 TL</span>
+              <div class="button-box-left bottom-box">
+                <span>112 tl</span>
               </div>
             </div>
+            <!-- * App Price Box Right -->
             <div class="price-box-right">
               <h2>INSTAGRAM BOT</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore
-              </p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
+              </p>  
               <div class="price-box-aditional">
                 <div>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                  <img src="./assets/icons/icon-star.svg" alt="star icon" />
                   <a href="#">Comments</a>
                 </div>
                 <span>Kuramsoft Yazılım</span>
               </div>
+              <!-- * App Price Button Box -->
               <div class="price-button-box">
                 <div class="button-box-right">
                   <button>
@@ -722,43 +857,46 @@
             </div>
           </div>
         </div>
-      </div>
+      </main>
+
       <div class="deploying-box">
-        <i class="fa-solid fa-xmark close-button"></i>
+        <img
+          src="./assets/icons/close.svg"
+          alt="close button"
+          class="close-button"
+        />
         <h3 class="deploying-box-header">Deploying your store</h3>
         <div class="loading-box">
-          <i class="fa-solid fa-mobile"></i>
+          <img src="./assets/icons/today.svg" alt="icon" />
           <input type="range" name="" id="" />
         </div>
         <span>
-          <i class="fa-solid fa-rotate-right"></i>
+          <img src="./assets/icons/reload.svg" alt="icon" />
           Clearing data cache & creating fresh codebase cache
         </span>
         <ul class="deploying-box-list">
           <li>
-            <i class="fa-solid fa-check"></i>
+            <img src="./assets/icons/check.svg" alt="check" />
             Clearing data cache & creating fresh codebase cache
           </li>
           <li>
-            <i class="fa-solid fa-check"></i>
+            <img src="./assets/icons/check.svg" alt="check" />
             Clearing data cache & creating fresh codebase cache
           </li>
           <li>
-            <i class="fa-solid fa-check"></i>
+            <img src="./assets/icons/check.svg" alt="check" />
             Clearing data cache & creating fresh codebase cache
           </li>
           <li>
-            <i class="fa-solid fa-check"></i>
+            <img src="./assets/icons/check.svg" alt="check" />
             Clearing data cache & creating fresh codebase cache
           </li>
           <li>
-            <i class="fa-solid fa-check"></i>
+            <img src="./assets/icons/check.svg" alt="check" />
             Clearing data cache & creating fresh codebase cache
           </li>
         </ul>
       </div>
-    </main>
-  </section>
-</body>
-
+    </section>
+  </body>
 </html>

@@ -1,0 +1,607 @@
+@import './form.css';
+@import './colors.css';
+@import './main.css';
+
+/*! Dashboard Container */
+.dashboard-container {
+    display: flex;
+}
+
+/*! Dashboard Sidebar  */
+.dashboard-sidebar {
+    min-height: 100vh;
+    background-color: #E8F5FF;
+}
+
+/*----Sidebar Open------*/
+.dashboard-sidebar.sidebar-open {
+    width: 266px;
+    transition: all 0.5s ease-in-out;
+}
+
+/*----Sidebar Close------*/
+.dashboard-sidebar.sidebar-close {
+    width: 73px;
+}
+
+/*! Sidebar Top Content  */
+.sidebar-top {
+    width: 100%;
+    padding: 19px 22px;
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.sidebar-top img {
+    opacity: 0.4;
+}
+
+.sidebar-top span {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+/*! Sidebar Lists Container */
+/* ul */
+.sidebar-lists {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ul li */
+.sidebar-lists .sidebar-list-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    padding: 5px 8px 5px 20px;
+    cursor: pointer;
+}
+
+.sidebar-lists .sidebar-list-group:hover {
+    background: #F6F8FC;
+}
+
+/*! List group aktif oldukda  */
+.sidebar-list-group.list-group-active {
+    background: #F6F8FC;
+}
+
+.sidebar-list-group.list-group-active div img {
+    opacity: 1;
+}
+
+/* ul li .altgroup */
+.sidebar-list-group .sidebar-list-altgroup {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.sidebar-list-group .sidebar-list-altgroup img {
+    opacity: 0.4;
+    transition: all 0.2s ease-in-out;
+}
+
+.sidebar-list-group:hover .sidebar-list-altgroup img {
+    opacity: 1;
+}
+
+/* ul li .list-altgroup img-birinci*/
+.sidebar-list-altgroup img:nth-of-type(1) {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    object-fit: none;
+}
+
+.sidebar-list-altgroup a {
+    height: 20px;
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.sidebar-close .sidebar-list-altgroup a {
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+/*? Arrow Right Icon , list-active olursa görünür   */
+.sidebar-lists img.arrow-right-icon {
+    display: none;
+}
+
+.sidebar-list-group.list-group-active img.arrow-right-icon {
+    display: inline;
+}
+
+/*! Sidebar User Status Container  */
+.sidebar-user-container {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    width: 40px;
+    height: 60px;
+}
+
+.sidebar-user-container span {
+    margin-left: 9px;
+}
+
+.sidebar-user-container .user-content {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #3A3A3C;
+    border-radius: 10px;
+}
+
+.sidebar-user-container .user-image {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+}
+
+.user-status.user-online {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #05E200;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+}
+
+/*! Dashboard Main Container  */
+.dashboard-main-container {
+    width: 100%;
+    background: linear-gradient(180deg, #F6F8FC 0%, #EDF1F8 100%);
+    /* display: flex;
+    flex-direction: column; */
+}
+
+/*! Dashboard Main Container Header section  */
+.dashboard-main-header {
+    width: 100%;
+    padding: 0 20px;
+    background: linear-gradient(180deg, #F6F8FC 0%, #EDF1F8 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*? ------Header Left Content----------  */
+.header-left-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* .header-left-menu{
+    min-width: 170px;
+} */
+
+/*! Burger Menu Icon and Arrow Back Icon */
+.icon-menu,
+.icon-arrow-back {
+    font-size: 32px !important;
+    cursor: pointer;
+}
+
+/*? ------Header Right Content----------  */
+.header-right-content {
+    display: flex;
+    align-items: center;
+    padding: 13px 20px;
+    gap: 30px;
+}
+
+
+/*TODO Document Dropdown and search area */
+.header-dropdown-search {
+    display: flex;
+    align-items: center;
+    background: #F9F9F9;
+    border: 1px solid #F1F4FA;
+    border-radius: 12px;
+    padding: 10px 15px;
+}
+
+.dropdown-document .menu-select {
+    padding-right: 15px;
+    border-right: 1px solid #D1D1D1;
+}
+
+.dropdown-document>.menu-select>p {
+    margin-right: 20px;
+}
+
+.dropdown-document span.icon-chevron-down {
+    color: #6A983C;
+}
+
+/*---------------Search Area-------------*/
+.search-content {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border-left: 1px solid #D1D1D1;
+}
+
+.search-content input {
+    color: #A9A9A9;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 10px 0 0;
+}
+
+.search-content span.icon-search {
+    transform: rotate(90deg);
+}
+
+/*! Dashboard Header, User About Content  */
+.user-about-img {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.user-about .user-name {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.user-about .user-prefer {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+
+/*% ===================Dashboard Header Menu =======================  */
+.dashboard-header-menu {
+    background: #D6EDFE;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 40px;
+    color: #A0A0A0;
+}
+
+.dashboard-header-menu div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboard-header-menu .menu-dot {
+    width: 10px;
+    height: 1px;
+    background-color: #D2D2D2;
+}
+
+/*% -----------------Dashboard Header Submenu---------------------------  */
+.dashboard-header-submenu {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+    color: #8C8C8C;
+    background: #D6EDFE;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-header-submenu a {
+    color: #8C8C8C;
+    padding: 15px 5px;
+}
+
+.dashboard-header-submenu a:hover {
+    border-bottom: 3px solid #43AFFB;
+}
+
+.dashboard-header-submenu a.submenu-active {
+    border-bottom: 3px solid #43AFFB;
+}
+
+
+/*%=============Dashboard Main Container Navbar Lists===================  */
+.main-lists-container {
+    display: flex;
+}
+
+/*! Navbar Container  */
+.navbar-container {
+    min-height: calc(100vh - 168px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    background: #E8F5FF;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.14);
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+.navbar-container-close {
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Navbar lists --> ul */
+.navbar-lists {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Navbar list group --> li */
+.navbar-lists .navbar-list-group {
+    border: 1px solid #E2E2E2;
+}
+
+.navbar-lists .navbar-list-group .list-select:hover {
+    background: #E2E2E2;
+}
+
+.navbar-lists .navbar-list-group .list-select {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0 20px 0 40px;
+}
+
+.list-select a {
+    height: 20px;
+    overflow: hidden;
+}
+
+.navbar-list-group .list-options {
+    transition: all 0.3s ease-in-out;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navbar-list-group .icon-plus {
+    color: #A4A4A4;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/*! Navbar list options acik oldukda */
+.navList-open~.list-options {
+    height: 80px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.list-options li {
+    padding: 5px 5px 5px 50px;
+}
+
+.navList-open span.icon-plus {
+    transform: rotate(135deg);
+}
+
+
+/*===================Navbar Sidebar Open-Close Button Style=====================  */
+.nav-sidebar-toggle-menu {
+    min-height: calc(100vh - 168px);
+    width: 20px;
+}
+
+.nav-sidebar-toggle-menu button {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid #E8F5FF;
+    background-color: #D6EDFE;;
+}
+
+.nav-sidebar-toggle-menu button span.icon-right {
+    font-size: 20px;
+    color: #5FA5D8;
+    transition: all 0.2s ease-in-out;
+    transform: rotate(180deg);
+}
+
+.navbar-container-close~.nav-sidebar-toggle-menu span.icon-right {
+    transform: rotate(0deg);
+}
+
+/*! =======================Navbar List Sidebar oldukda===========================*/
+.navbar-list-sidebar {
+    flex-direction: column;
+}
+
+
+/*===============Navbar Search bar=================  */
+.navbar-search-bar {
+    width: 100%;
+    order: 2;
+    padding: 0 20px;
+    height: 40px;
+    border: 1px solid #E2E2E2;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-search-bar img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    opacity: 0.4;
+}
+
+.navbar-search-bar input {
+    font-weight: 600;
+    font-size: 12px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+/*! Navbar Header Content --> Formlar  */
+.navbar-header-content {
+    padding: 8px 21px;
+    order: 1;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #E2E2E2;
+}
+
+.navbar-header-content p {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+/*! ================Dashboard Responsive Design Style===============*/
+@media (max-width: 1200px) {
+    .header-left-content {
+        gap: 10px;
+    }
+
+    .header-right-content {
+        gap: 10px;
+    }
+
+    .search-content input {
+        width: 140px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .dashboard-main-header {
+        padding: 0 5px;
+    }
+
+    .header-right-content {
+        padding: 13px 0;
+    }
+
+    .search-content input {
+        display: none;
+    }
+
+    .dshb-dropdown-menu>.menu-select>p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dropdown-document {
+        display: none;
+    }
+
+    .header-dropdown-search .search-content {
+        border: none;
+        padding: 0;
+    }
+
+    .dashboard-header-menu {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .dropdown-lang {
+        display: none;
+    }
+}
+
+/* ! scroll design */
+/* nav ul::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+}
+
+nav ul::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(29, 2, 50, 0.3);
+}
+
+nav ul::-webkit-scrollbar-thumb {
+    background-color: rgb(116, 20, 225);
+    outline: 1px solid rgb(114, 3, 177);
+} */
+
+/*!  Custom Dropdown Menu Style */
+.dshb-dropdown-menu {
+    position: relative;
+}
+
+.dshb-dropdown-menu>.menu-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+}
+
+.dshb-dropdown-menu .menu-options {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #C6FFB0;
+    border-radius: 10px;   /* Bug */
+    transition: all 0.2s ease-in-out;
+}
+.dshb-dropdown-menu span.icon-chevron-down{
+    transform: rotate(0);
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-options .menu-option-content {
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.menu-options .menu-option-content:hover {
+    background-color: white;
+    color: black;
+}
+
+.menu-options .menu-option-content:not(:last-child) {
+    border-bottom: 1px solid #E2E2E2;
+}
+
+/*! Menu Options Visible  */
+.dropdown-menu-open~.menu-options {
+    visibility: visible;
+    opacity: 1;
+}
+.dropdown-menu-open span.icon-chevron-down{
+    transform: rotate(180deg);
+}

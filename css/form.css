@@ -39,7 +39,7 @@
     height: 16px;
 }
 
-.form-actions > :where(a,label) {
+.form-actions> :where(a, label) {
     color: var(--dshb-cadetblue-color);
     cursor: pointer;
 }
@@ -249,9 +249,9 @@
     align-items: center;
 }
 
-.filtr-btn i {
-    margin-left: 20px;
-    font-size: 18px;
+.filtr-btn img {
+    margin-left: 10px;
+    font-size: 16px;
 }
 
 /* * Combobox button */
@@ -263,6 +263,13 @@
     font-weight: 700;
     font-size: 14px;
     gap: 20px;
+}
+.combobox-btn .menu-options{
+    top: 51px;
+    /* padding: 0 10px; */
+}
+.combobox-btn .menu-option-content{
+    padding: 5px 10px;
 }
 
 /* ! add , upload and export buttons */
@@ -296,27 +303,24 @@
 
 /* ! Dashboard SubHeader count button */
 .count-btn {
-    width: 90px;
+    width: 80px;
     height: 40px;
     background: rgba(106, 112, 126, 0.0001);
     border: 1px solid #DDDFE1;
 }
 
-.count-btn> :where(span, i) {
-    display: grid;
-    place-items: center;
+.count-btn .menu-options {
+    top: 38px;
 }
 
-.count-btn span {
-    width: 55px;
-    height: 100%;
-    /* padding: ; */
-}
-
-.count-btn i {
+.count-btn .menu-select div {
     background: #DDDFE1;
     width: 35px;
-    height: 100%;
+    padding: 6px;
+}
+
+.count-btn p{
+    margin-left: 15px;
 }
 
 /* ! Dashboard Table permission buttons */
@@ -373,10 +377,10 @@
 }
 
 /* * Error Main Content Left */
-.error-icon,
-.info-icon,
-.success-icon,
-.warning-icon {
+.icon-error,
+.icon-info,
+.icon-success,
+.icon-warning {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -385,27 +389,28 @@
     align-items: center;
 }
 
-:where(.error-icon, .warning-icon, .success-icon, .info-icon) i {
-    font-size: 24px;
+:where(.icon-error, .icon-warning, .icon-success, .icon-info) span {
+    font-size: 32px !important;
     font-weight: 900;
 }
 
-.error-icon {
+.icon-error {
     border: 3px solid #FF0000;
     color: #FF0000;
 }
 
-.warning-icon {
+.icon-warning {
     background: #FF9900;
     color: white;
 }
 
-.info-icon {
+.icon-info {
     border: 3px solid #0168FF;
     color: #0168FF;
+    font-size: 44px;
 }
 
-.success-icon {
+.icon-success {
     background: #83FF06;
     color: white;
 }
@@ -477,8 +482,9 @@
     align-items: center;
     gap: 20px;
 }
-.dashboard-kanban-header button > img,
-.dashboard-kanban-subheader button > img{
+
+.dashboard-kanban-header button>img,
+.dashboard-kanban-subheader button>img {
     width: 23px;
     height: 23px;
 }
@@ -499,27 +505,31 @@
 }
 
 /*! Dashboard Kanban subheader buttons design code */
-.view-import-sort-group-btns{
+.view-import-sort-group-btns {
     display: flex;
     gap: 10px;
     margin-left: 20px;
 }
-.view-btn{
+
+.view-btn {
     background: #D0EBFF;
     border: 1px solid #D8D8D8;
     border-radius: 4px;
 }
-.import-btn{
+
+.import-btn {
     background: #D6E6FF;
     border: 1px solid #D8D8D8;
     border-radius: 4px;
 }
-.sort-btn{
+
+.sort-btn {
     background: #FFE1F8;
     border: 1px solid #D8D8D8;
     border-radius: 4px;
 }
-.group-btn{
+
+.group-btn {
     background: #E1FDFF;
     border: 1px solid #D8D8D8;
     border-radius: 4px;

@@ -6,13 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard List</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Ionic icon -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <!-- Pure CSS -->
     <link rel="stylesheet" href="./css/dashboard-header.css">
     <link rel="stylesheet" href="./css/dashboard/dashboard-list.css">
@@ -28,90 +24,132 @@
             </div>
             <ul class="sidebar-lists">
                 <li>
-                    <i class="fa-solid fa-house"></i>
+                    <span class="material-icons-round icon-home">
+                        home
+                    </span>
                     <a href="#">HOME PAGE</a>
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <span class="material-icons-round arrow-right">
+                        east
+                    </span>
                 </li>
                 <li class="sidebar-list-active">
-                    <i class="fa-solid fa-align-left"></i>
+                    <span class="material-icons-round icon-align-left">
+                        align_horizontal_left
+                    </span>
                     <a href="#">FORMLAR</a>
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <span class="material-icons-round arrow-right">
+                        east
+                    </span>
                 </li>
                 <li>
-                    <i class="fa-solid fa-calendar"></i>
+                    <span class="material-icons-round icon-calendar">
+                        calendar_today
+                    </span>
                     <a href="#">TAKVİM</a>
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <span class="material-icons-round arrow-right">
+                        east
+                    </span>
                 </li>
                 <li>
-                    <i class="fa-solid fa-chart-simple"></i>
+                    <span class="material-icons-round icon-chart">
+                        assessment
+                    </span>
                     <a href="#">LİSTELER</a>
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <span class="material-icons-round arrow-right">
+                        east
+                    </span>
                 </li>
                 <li>
-                    <ion-icon name="grid" class="fa-grid"></ion-icon>
+                    <span class="material-icons-round icon-grid">
+                        grid_view
+                    </span>
                     <a href="#">TODO LIST</a>
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <span class="material-icons-round arrow-right">
+                        east
+                    </span>
                 </li>
                 <li>
-                    <i class="fa-solid fa-chart-pie"></i>
+                    <span class="material-icons-round icon-chart-pie">
+                        pie_chart
+                    </span>
                     <a href="#">GRAFİK</a>
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <span class="material-icons-round arrow-right">
+                        east
+                    </span>
                 </li>
                 <li>
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span class="material-icons-round icon-search">
+                        search
+                    </span>
                     <a href="#">SEARCH</a>
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <span class="material-icons-round arrow-right">
+                        east
+                    </span>
                 </li>
             </ul>
         </div>
         <div class="kuramsoft-dashboard-right-side">
             <header>
                 <div class="dashboard-header-left">
-                    <i class="fa-solid fa-bars"></i>
+                    <span class="material-icons-round icon-menu">
+                        menu
+                    </span>
                     <span class="dashboard-dropdown">
                         <a href="#">sigorta.square.com</a>
-                        <img src="./assets/icons/chevron-down.svg" alt="">
+                        <span class="material-icons-round icon-chevron-down">
+                            expand_more
+                        </span>
                     </span>
                 </div>
                 <div class="dashboard-header-right">
                     <div class="dashboard-header-input">
-                        <div class="dashboard-dropdown dashboard-innput-select">
-                            <span>Document</span>
-                            <i class="fa-solid fa-chevron-down"></i>
+                        <div class="dashboard-dropdown dashboard-input-select">
+                            <label>Document</label>
+                            <span class="material-icons-round icon-chevron-down">
+                                expand_more
+                            </span>
                         </div>
                         <div class="dashboard-header-search">
                             <input type="text" placeholder="Ara">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="material-icons-round icon-search">
+                                search
+                            </span>
                         </div>
                     </div>
                     <div class="dashboard-dropdown dashboard-lang">
                         <span>ENG</span>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <span class="material-icons-round icon-chevron-down">
+                            expand_more
+                        </span>
                     </div>
                     <div class="dashboard-user-dropdown dashboard-dropdown">
                         <div class="dashboard-user-grid">
                             <div class="user-img">
                                 <img src="./assets/Images/user-image.svg" alt="User image">
                             </div>
-                            <div class="user-content">
-                                <p class="user-name">Ferit Arif Çiçek</p>
-                                <span class="user-prefer">Yazılımcı</span>
-                            </div>
+                            <p class="user-name">Ferit Arif Çiçek</p>
+                            <span class="user-prefer">Yazılımcı</span>
                         </div>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <span class="material-icons-round icon-chevron-down">
+                            expand_more
+                        </span>
                     </div>
                 </div>
             </header>
             <section class="dashboard-nav-bottom">
                 <div class="dashboard-nav-bottom-content">
                     <div>
-                        <img src="./assets/icons/home-2.svg" alt="home-2">
+                        <span class="material-icons-outlined">
+                            other_houses
+                        </span>
                         <span>Home</span>
                     </div>
                     <span>-</span>
                     <div>
                         <span>SQUARE</span>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <span class="material-icons-round icon-chevron-down">
+                            expand_more
+                        </span>
                     </div>
                     <span>-</span>
                     <div>
@@ -119,54 +157,105 @@
                     </div>
                 </div>
             </section>
+            <section class="dashboard-nav-bottom-submenu">
+                <div class="submenu-active">
+                    <a href="#">Main Menu</a>
+                </div>
+                <div>
+                    <a href="#">Workflow</a>
+                </div>
+                <div>
+                    <a href="#">General</a>
+                </div>
+            </section>
             <main class="dashboard-main">
                 <nav class="dashboard-navbar dashboard-nav-sidebar">
+                    <div class="form-text">
+                        <h3>Formlar</h3>
+                    </div>
                     <ul class="dashboard-navbar-lists sidebar-nav-lists">
                         <li>
-                            <i class="fa-solid fa-house"></i>
+                            <span class="material-icons-round icon-home">
+                                home
+                            </span>
                             <a href="#">Security</a>
-                            <i class="fa-solid fa-chevron-down chevron-down  chevron-down-rotate"></i>
+                            <span class="material-icons-outlined icon-chevron-right">
+                                chevron_right
+                            </span>
                         </li>
                         <li class="list-active">
-                            <i class="fa-solid fa-align-left"></i>
+                            <span class="material-icons-round icon-align-left">
+                                align_horizontal_left
+                            </span>
                             <a href="#">Gallery</a>
-                            <i class="fa-solid fa-chevron-down chevron-down"></i>
+                            <span class="material-icons-outlined icon-chevron-right chevron-down-rotate">
+                                chevron_right
+                            </span>
                         </li>
                         <li>
-                            <i class="fa-solid fa-calendar"></i>
+                            <span class="material-icons-round icon-calendar">
+                                calendar_today
+                            </span>
                             <a href="#">Files</a>
-                            <i class="fa-solid fa-chevron-down chevron-down"></i>
+                            <span class="material-icons-outlined icon-chevron-right">
+                                chevron_right
+                            </span>
                         </li>
                         <li>
-                            <i class="fa-solid fa-chart-simple"></i>
+                            <span class="material-icons-round icon-chart">
+                                assessment
+                            </span>
                             <a href="#">Treeview</a>
-                            <i class="fa-solid fa-chevron-down chevron-down"></i>
+                            <span class="material-icons-outlined icon-chevron-right">
+                                chevron_right
+                            </span>
                         </li>
                         <li class="dashboard-navbar-list">
-                            <ion-icon name="grid"></ion-icon>
+                            <span class="material-icons-round icon-grid">
+                                grid_view
+                            </span>
                             <a href="#">Auto Model</a>
-                            <i class="fa-solid fa-chevron-down chevron-down"></i>
+                            <span class="material-icons-outlined icon-chevron-right">
+                                chevron_right
+                            </span>
                         </li>
                         <li class="dashboard-navbar-list">
-                            <i class="fa-solid fa-chart-pie"></i>
+                            <span class="material-icons-round icon-chart-pie">
+                                pie_chart
+                            </span>
                             <a href="#">Data Model</a>
-                            <i class="fa-solid fa-chevron-down chevron-down"></i>
+                            <span class="material-icons-outlined icon-chevron-right">
+                                chevron_right
+                            </span>
                         </li>
                         <li>
-                            <a href="#">Setting</a> <i class="fa-solid fa-chevron-down chevron-down"></i>
+                            <a href="#">Setting</a>
+                            <span class="material-icons-outlined icon-chevron-right">
+                                chevron_right
+                            </span>
                         </li>
                         <li>
-                            <a href="#">Dashboard</a> <i class="fa-solid fa-chevron-down chevron-down"></i>
+                            <a href="#">Dashboard</a>
+                            <span class="material-icons-outlined icon-chevron-right">
+                                chevron_right
+                            </span>
                         </li>
                         <li>
-                            <a href="#">Textbox</a> <i class="fa-solid fa-chevron-down chevron-down"></i>
+                            <a href="#">Textbox</a>
+                            <span class="material-icons-outlined icon-chevron-right">
+                                chevron_right
+                            </span>
                         </li>
                         <li><a href="#">Security</a></li>
                         <li><a href="#">Gallery</a></li>
-                        <img src="./assets/icons/right.svg" alt="right">
+                        <span class="material-icons-round">
+                            arrow_right_alt
+                        </span>
                     </ul>
                     <div class="dashboard-navbar-right sidebar-nav-input">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span class="material-icons-round icon-search">
+                            search
+                        </span>
                         <input type="text" placeholder="Search by menu">
                     </div>
                 </nav>
@@ -225,23 +314,34 @@
                         <table>
                             <thead>
                                 <tr class="table-head-container">
-                                    <th class="table-checked"><input type="checkbox" name="checkbox" class="table-checkbox"></th>
-                                    <th class="table-user-img thead-asc"><span>User</span><i class="fa-solid fa-sort-down"></i></th>
-                                    <th class="table-user-name thead-asc"><span>Ad / Soyad</span><i class="fa-solid fa-sort-down"></i></th>
-                                    <th class="table-filtr thead-asc"><span>Filtreler</span><i class="fa-solid fa-sort-down"></i>
+                                    <th class="table-checked"><input type="checkbox" name="checkbox"
+                                            class="table-checkbox"></th>
+                                    <th class="table-user-img thead-asc"><span>User</span><i
+                                            class="fa-solid fa-sort-down"></i></th>
+                                    <th class="table-user-name thead-asc"><span>Ad / Soyad</span><i
+                                            class="fa-solid fa-sort-down"></i></th>
+                                    <th class="table-filtr thead-asc"><span>Filtreler</span><i
+                                            class="fa-solid fa-sort-down"></i>
                                     </th>
-                                    <th class="table-stars thead-asc"><span>Yıldızlar</span><i class="fa-solid fa-sort-down"></i></th>
-                                    <th class="table-permission thead-asc"><span>Permission</span><i class="fa-solid fa-sort-down"></i></th>
-                                    <th class="table-percentage thead-asc"><span>Yüzde</span><i class="fa-solid fa-sort-down"></i></th>
-                                    <th class="table-status thead-asc"><span>Boş Text</span><i class="fa-solid fa-sort-down"></i></th>
-                                    <th class="table-link thead-asc"><span>Text Link</span><i class="fa-solid fa-sort-down"></i></th>
-                                    <th class="checkbox-apple thead-asc"><span>Checkbox</span><i class="fa-solid fa-sort-down"></i></th>
+                                    <th class="table-stars thead-asc"><span>Yıldızlar</span><i
+                                            class="fa-solid fa-sort-down"></i></th>
+                                    <th class="table-permission thead-asc"><span>Permission</span><i
+                                            class="fa-solid fa-sort-down"></i></th>
+                                    <th class="table-percentage thead-asc"><span>Yüzde</span><i
+                                            class="fa-solid fa-sort-down"></i></th>
+                                    <th class="table-status thead-asc"><span>Boş Text</span><i
+                                            class="fa-solid fa-sort-down"></i></th>
+                                    <th class="table-link thead-asc"><span>Text Link</span><i
+                                            class="fa-solid fa-sort-down"></i></th>
+                                    <th class="checkbox-apple thead-asc"><span>Checkbox</span><i
+                                            class="fa-solid fa-sort-down"></i></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td class="table-checked"><input type="checkbox" checked="true"></td>
-                                    <td class="table-user-img"><img src="./assets/Images/Ozan Alatlı.jpg" alt="Ozan Alatlı"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/Ozan Alatlı.jpg"
+                                            alt="Ozan Alatlı"></td>
                                     <td class="table-user-name"><span>Ozan Alatlı</span></td>
                                     <td class="table-filtr">
                                         <button class="filtr-btn"><span>North American</span>
@@ -255,7 +355,8 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td class="table-permission"><button class="table-admin-btn table-btn">Admin</button></td>
+                                    <td class="table-permission"><button
+                                            class="table-admin-btn table-btn">Admin</button></td>
                                     <td class="table-percentage bg-40"><span>40%</span></td>
                                     <td class="table-status"><span>Low</span></td>
                                     <td class="table-link"><a href="#">VIEW</a></td>
@@ -266,7 +367,8 @@
                                 </tr>
                                 <tr>
                                     <td class="table-checked"><input type="checkbox"></td>
-                                    <td class="table-user-img"><img src="./assets/Images/Eda Taştan.jpg" alt="Eda Taştan"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/Eda Taştan.jpg"
+                                            alt="Eda Taştan"></td>
                                     <td class="table-user-name"><span>Eda Taştan</span></td>
                                     <td class="table-filtr">
                                         <button class="filtr-btn"><span>Agency</span>
@@ -277,7 +379,8 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td class="table-permission"><button class="table-contributor-btn table-btn">Contributor</button></td>
+                                    <td class="table-permission"><button
+                                            class="table-contributor-btn table-btn">Contributor</button></td>
                                     <td class="table-percentage bg-20"><span>20%</span></td>
                                     <td class="table-status"><span>Medium</span></td>
                                     <td class="table-link"><a href="#">VIEW</a></td>
@@ -288,7 +391,8 @@
                                 </tr>
                                 <tr class="table-row-lightblue">
                                     <td class="table-checked"><input type="checkbox" checked="true"></td>
-                                    <td class="table-user-img"><img src="./assets/Images/Osman Dağ.jpg" alt="Osman Dağ"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/Osman Dağ.jpg" alt="Osman Dağ">
+                                    </td>
                                     <td class="table-user-name"><span>Osman Dağ</span></td>
                                     <td class="table-filtr">
                                         <button class="filtr-btn"><span>North American</span>
@@ -301,7 +405,8 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td class="table-permission"><button class="table-viewer-btn table-btn">Viewer</button></td>
+                                    <td class="table-permission"><button
+                                            class="table-viewer-btn table-btn">Viewer</button></td>
                                     <td class="table-percentage bg-60"><span>60%</span></td>
                                     <td class="table-status"><span>Medium</span></td>
                                     <td class="table-link"><a href="#">VIEW</a></td>
@@ -312,7 +417,8 @@
                                 </tr>
                                 <tr>
                                     <td class="table-checked"><input type="checkbox"></td>
-                                    <td class="table-user-img"><img src="./assets/Images/Arif Bulut..jpg" alt="Arif Bulut"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/Arif Bulut..jpg"
+                                            alt="Arif Bulut"></td>
                                     <td class="table-user-name"><span>Arif Bulut</span></td>
                                     <td class="table-filtr">
                                         <button class="filtr-btn"><span>Agency</span>
@@ -325,7 +431,8 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td class="table-permission"><button class="table-moderator-btn table-btn">Moderator</button></td>
+                                    <td class="table-permission"><button
+                                            class="table-moderator-btn table-btn">Moderator</button></td>
                                     <td class="table-percentage bg-90"><span>90%</span></td>
                                     <td class="table-status"><span>High</span></td>
                                     <td class="table-link"><a href="#">VIEW</a></td>
@@ -336,7 +443,8 @@
                                 </tr>
                                 <tr>
                                     <td class="table-checked"><input type="checkbox" checked="true"></td>
-                                    <td class="table-user-img"><img src="./assets/Images/Kadir Taş.jpg" alt="Kadir Taş"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/Kadir Taş.jpg" alt="Kadir Taş">
+                                    </td>
                                     <td class="table-user-name"><span>Kadir Taş</span></td>
                                     <td class="table-filtr">
                                         <button class="filtr-btn"><span>North American</span>
@@ -350,7 +458,8 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td class="table-permission"><button class="table-admin-btn table-btn">Admin</button></td>
+                                    <td class="table-permission"><button
+                                            class="table-admin-btn table-btn">Admin</button></td>
                                     <td class="table-percentage bg-40"><span>40%</span></td>
                                     <td class="table-status"><span>High</span></td>
                                     <td class="table-link"><a href="#">VIEW</a></td>
@@ -361,7 +470,8 @@
                                 </tr>
                                 <tr class="table-row-orange">
                                     <td class="table-checked"><input type="checkbox"></td>
-                                    <td class="table-user-img"><img src="./assets/Images/Yücel Kabil.jpg" alt="Yücel Kabil"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/Yücel Kabil.jpg"
+                                            alt="Yücel Kabil"></td>
                                     <td class="table-user-name"><span>Yücel Kabil</span></td>
                                     <td class="table-filtr">
                                         <button class="filtr-btn"><span>Agency</span>
@@ -372,7 +482,8 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td class="table-permission"><button class="table-contributor-btn table-btn">Contributor</button></td>
+                                    <td class="table-permission"><button
+                                            class="table-contributor-btn table-btn">Contributor</button></td>
                                     <td class="table-percentage bg-20"><span>20%</span></td>
                                     <td class="table-status"><span>Low</span></td>
                                     <td class="table-link"><a href="#">VIEW</a></td>
@@ -383,7 +494,8 @@
                                 </tr>
                                 <tr>
                                     <td class="table-checked"><input type="checkbox" checked="true"></td>
-                                    <td class="table-user-img"><img src="./assets/Images/İpek Seçil.jpg" alt="İpek Seçil"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/İpek Seçil.jpg"
+                                            alt="İpek Seçil"></td>
                                     <td class="table-user-name"><span>İpek Seçil</span></td>
                                     <td class="table-filtr">
                                         <button class="filtr-btn"><span>North American</span>
@@ -392,7 +504,8 @@
                                     <td class="table-stars">
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td class="table-permission"><button class="table-viewer-btn table-btn">Viewer</button></td>
+                                    <td class="table-permission"><button
+                                            class="table-viewer-btn table-btn">Viewer</button></td>
                                     <td class="table-percentage bg-60"><span>60%</span></td>
                                     <td class="table-status"><span>Medium</span></td>
                                     <td class="table-link"><a href="#">VIEW</a></td>
@@ -403,7 +516,8 @@
                                 </tr>
                                 <tr>
                                     <td class="table-checked"><input type="checkbox"></td>
-                                    <td class="table-user-img"><img src="./assets/Images/Onur Barış.jpg" alt="Onur Barış"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/Onur Barış.jpg"
+                                            alt="Onur Barış"></td>
                                     <td class="table-user-name"><span>Onur Barış</span></td>
                                     <td class="table-filtr">
                                         <button class="filtr-btn"><span>Agency</span>
@@ -416,7 +530,8 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td class="table-permission"><button class="table-superAdmin-btn table-btn">Super Admin</button></td>
+                                    <td class="table-permission"><button class="table-superAdmin-btn table-btn">Super
+                                            Admin</button></td>
                                     <td class="table-percentage bg-90"><span>90%</span></td>
                                     <td class="table-status"><span>Super High</span></td>
                                     <td class="table-link"><a href="#">VIEW</a></td>
@@ -426,8 +541,9 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="table-checked"><input type="checkbox"  checked="true"></td>
-                                    <td class="table-user-img"><img src="./assets/Images/Evren Yüce.jpg" alt="Evren Yüce"></td>
+                                    <td class="table-checked"><input type="checkbox" checked="true"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/Evren Yüce.jpg"
+                                            alt="Evren Yüce"></td>
                                     <td class="table-user-name"><span>Evren Yüce</span></td>
                                     <td class="table-filtr">
                                         <button class="filtr-btn"><span>North American</span>
@@ -437,7 +553,8 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td class="table-permission"><button class="table-viewer-btn table-btn">Viewer</button></td>
+                                    <td class="table-permission"><button
+                                            class="table-viewer-btn table-btn">Viewer</button></td>
                                     <td class="table-percentage bg-100"><span>100%</span></td>
                                     <td class="table-status"><span>Low</span></td>
                                     <td class="table-link"><a href="#">VIEW</a></td>
@@ -448,7 +565,8 @@
                                 </tr>
                                 <tr>
                                     <td class="table-checked"><input type="checkbox"></td>
-                                    <td class="table-user-img"><img src="./assets/Images/Coşkun Kaya.jpg" alt="Coşkun Kaya"></td>
+                                    <td class="table-user-img"><img src="./assets/Images/Coşkun Kaya.jpg"
+                                            alt="Coşkun Kaya"></td>
                                     <td class="table-user-name"><span>Coşkun Kaya</span></td>
                                     <td class="table-filtr">
                                         <button class="filtr-btn"><span>Agency</span>
@@ -461,7 +579,8 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </td>
-                                    <td class="table-permission"><button class="table-moderator-btn table-btn">Moderator</button></td>
+                                    <td class="table-permission"><button
+                                            class="table-moderator-btn table-btn">Moderator</button></td>
                                     <td class="table-percentage bg-90"><span>90%</span></td>
                                     <td class="table-status"><span>Medium</span></td>
                                     <td class="table-link"><a href="#">VIEW</a></td>
@@ -477,7 +596,7 @@
             </main>
         </div>
     </section>
-
+    
     <!-- JavaScript -->
     <script src="./js/dashboard.js"></script>
 </body>
