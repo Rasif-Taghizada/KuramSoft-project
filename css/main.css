@@ -1,3 +1,8 @@
+/* Import Colors */
+@import url("./colors.css");
+/* Import Form Elements Styles */
+@import url("./form.css");
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +11,6 @@
     text-decoration: none !important;
     font-weight: 600;
     font-family: 'Plus Jakarta Sans';
-    user-select: none;  
 }
 
 a {
@@ -16,6 +20,7 @@ a {
 button{
     cursor: pointer;
 }
+
 
 @font-face {
     font-family: IBM Plex Sans;

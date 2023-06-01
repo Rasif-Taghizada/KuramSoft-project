@@ -1,9 +1,5 @@
 /* Import Font face and reset css */
 @import url("../main.css");
-/* Import Colors */
-@import url("../colors.css");
-/* Import form elements */
-@import url("../form.css");
 /* Import Dashboard Navbar */
 @import url("./dashboard-navbar.css");
 /* Import App Manager Styles */
