@@ -573,7 +573,7 @@ nav ul::-webkit-scrollbar-thumb {
     border-bottom-right-radius: 10px;   /* Bug */
     transition: all 0.2s ease-in-out;
 }
-.dshb-dropdown-menu span.icon-chevron-down{
+.dshb-dropdown-menu img.icon-chevron-down{
     transform: rotate(0);
     transition: all 0.4s ease-in-out;
 }
@@ -601,6 +601,6 @@ nav ul::-webkit-scrollbar-thumb {
     visibility: visible;
     opacity: 1;
 }
-.dropdown-menu-open span.icon-chevron-down{
+.dropdown-menu-open img.icon-chevron-down{
     transform: rotate(180deg);
 }
