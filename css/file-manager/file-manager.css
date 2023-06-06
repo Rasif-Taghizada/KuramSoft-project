@@ -1,5 +1,4 @@
-@import url("../dashboard-header.css");
-@import url("../form.css");
+@import url("../dashboard.css");
 @import url("../main.css");
 
 .file-manager {
@@ -7,10 +6,12 @@
     padding: 20px;
 }
 
+
 .file-manager-grid3 {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     gap: 10px;
+    
 }
 
 .folder-sidebar,

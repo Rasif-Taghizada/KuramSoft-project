@@ -1,0 +1,403 @@
+/* Import Form , Colors and Reset CSS */
+@import url("../main.css");
+/* Import Table CSS styles */
+@import url("../dashboard/dashboard-table.css");
+
+/*! ==========  Dashboard Kanban Container ========== */
+.kanban-container {
+    width: 80%;
+    margin: 70px auto;
+}
+
+/*? Kanban Head Content */
+.dashboard-kanban-head,
+.kanban-head-submenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.kanban-head-right-side {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.kanban-head-right-side>img {
+    width: 29px;
+    height: 31px;
+}
+
+.kanban-head-right-side>p {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/*! Kanban Submenu Left Side */
+.head-submenu-left {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/*! Kanban List Container */
+.kanban-content-section {
+    display: flex;
+    border: 1px solid #DEDEDE;
+    overflow-x: auto;
+    transform: rotateX(180deg);
+    scroll-padding-bottom: 20px;
+}
+
+.kanban-list {
+    max-width: 260px;
+    border-right: 1px solid #EBEBEB;
+    transform: rotateX(180deg);
+}
+
+.kanban-list-header {
+    width: 253px;
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px 0 18px;
+    border-bottom: 3px solid #C4F5FF;
+    border-right: 3px solid #E2E2E2;
+}
+
+.kanban-list-header.accent-teal {
+    background-color: #EDFCFF;
+}
+
+.kanban-list-header.accent-purple {
+    background-color: #C3C9FF;
+}
+
+.kanban-list-header.accent-magenta-bolder {
+    background-color: #FFEDF3;
+}
+
+.kanban-list-header.accent-orange {
+    background-color: #FFFCED;
+}
+
+.kanban-list-header.accent-green {
+    background-color: #F2FFED;
+}
+/*! ======== List Header Badge Text =========== */
+.kanban-list-header .badge-text {
+    min-width: 27px;
+    height: 28px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 0;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.badge-text.text-success {
+    background-color: #4FE2FF;
+}
+
+.badge-text.text-subtlest {
+    background-color: #949EFF;
+}
+
+.badge-text.text-magenta {
+    background-color: #FFAAC6;
+}
+
+.badge-text.text-orange {
+    background-color: #FFE978;
+}
+
+.badge-text.text-green {
+    background-color: #C6FFB0;
+}
+
+.list-card-content {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.list-card-content>p {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.list-open-card img {
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+
+/* kanban-list-cards */
+.kanban-list-cards {
+    overflow-y: scroll;
+    padding: 14px 9px;
+    height: 500px;
+}
+
+/*! List Item  */
+.list-card {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
+    margin-bottom: 12px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/*TODO List Card Different Colors */
+.list-card.list-card-cyan {
+    background: #EDFCFF;
+    border: 1px solid #C3F5FF;
+}
+.list-card.list-card-cyan:hover {
+    background: #C3F5FF;
+    border: 1px solid #C3F5FF;
+}
+
+.list-card.list-card-gray {
+    background: #EDEDFF;
+    border: 1px solid #C3C9FF;
+}
+
+.list-card.list-card-gray:hover {
+    background: #C3C9FF;
+    border: 1px solid #C3C9FF;
+}
+
+.list-card.list-card-magenta {
+    background: #FFEDF3;
+    border: 1px solid #FFC3EE;
+}
+.list-card.list-card-magenta:hover {
+    background: #FFC3EE;
+    border: 1px solid #FFC3EE;
+}
+
+.list-card.list-card-orange {
+    background: #FFFCED;
+    border: 1px solid #ECFFC3;
+}
+.list-card.list-card-orange:hover {
+    background: #feed96;
+    border: 1px solid #ECFFC3;
+}
+
+.list-card.list-card-green {
+    background: #F2FFED;
+    border: 1px solid #C2FFAB;
+}
+.list-card.list-card-green:hover {
+    background: #C2FFAB;
+    border: 1px solid #C2FFAB;
+}
+
+/*! List Card Header Content */
+.list-card-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 20px 9px 25px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.list-card-header h2 {
+    font-weight: 800;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.list-card-header .list-header-dots {
+    margin-left: 10px;
+}
+/*! Card Status  */
+.list-card-status {
+    position: absolute;
+    top: 41px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    min-width: 58px;
+    height: 21px;
+    font-weight: 800;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.list-card-status.card-status-cold {
+    background: #62B4FF;
+    width: 67px;
+}
+
+.list-card-status.card-status-warm {
+    background: #DE3F3F;
+    width: 64px;
+}
+
+.list-card-status.card-status-frozen {
+    background: #3F62DE;
+    width: 75px;
+}
+
+.list-card-status.card-status-hot {
+    background: #760404;
+    width: 58px;
+}
+
+/*! List Card Wrapper Content Styles */
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 17px 10px 25px;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.card-wrapper p,
+.card-wrapper h3 {
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+}
+
+.card-wrapper>div {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.card-wrapper>div:nth-child(1) {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Card Wrapper Tag Buttons Styles */
+.card-wrapper-tags button {
+    padding: 5px 10px;
+}
+
+.card-wrapper-tags button.tag-btn-cyan {
+    background: #8DFFFF;
+}
+
+.card-wrapper-tags button.tag-btn-green {
+    background: #65E99A;
+}
+
+.card-wrapper-users {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.card-wrapper-users img {
+    width: 20px;
+    height: 20px;
+}
+
+.card-wrapper-users span {
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 11px;
+}
+
+/*! List Card Footer Content  */
+.list-card-footer {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px 10px 25px;
+    gap: 10px;
+}
+
+.list-card-footer div {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.list-card-footer div.list-card-footer-comments {
+    flex-grow: 1;
+}
+
+.list-card-footer-check img {
+    width: 22px;
+    height: 20px;
+}
+
+.list-card-footer-comments img {
+    width: 20px;
+    height: 19px;
+}
+
+.list-card-footer-time img {
+    width: 19px;
+    height: 19px;
+}
+
+.list-card-footer span {
+    font-weight: 800;
+    color: #006F85;
+    font-size: 14px;
+}
+
+/*! Responsive Design */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ! Scroll */
+.kanban-list-cards::-webkit-scrollbar-track {
+    border-radius: 15px;
+    background-color: #B1E9F4;
+}
+
+.kanban-list-cards::-webkit-scrollbar {
+    width: 5px;
+    background-color: #2CD8FB;
+}
+
+.kanban-list-cards::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #2CD8FB;
+}
+/*! Kanban Content Section == Container , Scrollbar Style */
+.kanban-content-section::-webkit-scrollbar-track {
+    background-color: #B1E9F4;
+}
+
+.kanban-content-section::-webkit-scrollbar {
+    height: 8px;
+    background-color: #2CD8FB;
+}
+
+.kanban-content-section::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #2CD8FB;
+}
+

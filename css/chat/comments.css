@@ -1,0 +1,355 @@
+/* Import Main Css */
+@import url("../main.css");
+@import url("../dashboard.css");
+
+.comments-container {
+    width: 80%;
+    margin: 90px auto 0 auto;
+    border: 1px solid #D6D6D6;
+}
+
+.comment-area {
+    height: 300px;
+}
+
+.comment-form textarea {
+    height: 213px;
+    width: 100%;
+    padding: 30px 50px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: #A2A2A2;
+}
+
+.comment-send {
+    height: 87px;
+    background: #E4FDFF;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px 0 70px;
+}
+
+.comment-send .add-document {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.add-document img {
+    cursor: pointer;
+    opacity: 0.3;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-document img:hover {
+    opacity: 1;
+}
+
+.add-document img:nth-child(1) {
+    width: 35px;
+    height: 32px;
+}
+
+.add-document img:nth-child(2) {
+    width: 36px;
+    height: 29px;
+}
+
+/* Send Butons Styles */
+.send-buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.send-buttons .send-btn {
+    background: #9FF8FF;
+    border: 1px solid #1FEEFF;
+    border-radius: 20px;
+    height: 60px;
+    width: 146px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.send-btn:hover {
+    background: #1FEEFF;
+    border: 1px solid #1FEEFF;
+    color: #fff;
+}
+
+/* Sent Option or Dropdown menu */
+.sent-option .menu-select {
+    background: #F2F2F2;
+    border: 1px solid #D8D8D8;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 4px;
+    width: 191px;
+    height: 60px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sent-option .menu-options {
+    top: 60px;
+    background-color: #F2F2F2;
+}
+
+.sent-option .menu-options .menu-option-content {
+    padding: 15px 20px;
+    justify-content: center;
+}
+
+
+/*! Users Comments Area  */
+.user-comment {
+    display: flex;
+    gap: 32px;
+    position: relative;
+    padding-top: 25px;
+    padding-left: 80px;
+    min-width: 160px;
+    border-bottom: 1px solid #D5D5D5;
+    transition: all 0.3s ease-in-out;
+}
+
+.user-comment .icon-chevron-down {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+    padding: 9px;
+}
+
+/* User Image */
+.user-img {
+    position: relative;
+}
+
+.user-img img {
+    width: 62px;
+    height: 63px;
+}
+
+.user-img .user-status {
+    position: absolute;
+    background: #6CFF72;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    top: 50px;
+    left: 40px;
+}
+
+.user-comment-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+
+/* User Comment Header Content */
+.user-comment-header .user-comment-name p {
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+
+.user-comment-header .user-comment-date p {
+    color: #3C3C3C;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.user-comment-text {
+    font-weight: 500;
+    font-size: 15px;
+    color: #000000;
+}
+
+/* User Comment Options */
+.user-comment-options {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin-bottom: 20px;
+}
+
+.user-comment-options>div {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.user-comment-options>div img {
+    cursor: pointer;
+}
+
+/* comment data => document or image */
+.comment-docs {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    width: 217px;
+    height: 45px;
+    background: #E9E9E9;
+    border-radius: 10px;
+    padding: 5px 25px;
+    cursor: pointer;
+}
+
+.document-img img {
+    width: 24px;
+    height: 28px;
+}
+
+.document-about p {
+    color: #009DA7;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.document-about span {
+    color: #898989;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/*! User Comment Data ==> Image */
+.user-comment-data-image div {
+    width: 291px;
+    height: 98px;
+    background: url("../../assets/Images/comment-data-image.jpg") no-repeat center;
+    border-radius: 20px 20px 0px 20px;
+}
+
+.user-comment-data-image p {
+    font-weight: 500;
+    font-size: 12px;
+    color: #898989;
+    padding-left: 35px;
+}
+
+.users-reply-comments {
+    background: #F1F1F1;
+    padding: 30px 70px 30px 170px;
+    position: relative;
+}
+
+.users-reply-comments>img {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.users-reply-comments .user-comment {
+    padding: 0;
+    margin-bottom: 35px;
+    border: none;
+}
+
+.users-reply-comments .other-comments {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 7px;
+}
+
+.users-reply-comments .other-comments {
+    font-weight: 500;
+    font-size: 15px;
+    color: #000000;
+}
+
+/* More Comments or Footer area: */
+.more-comments {
+    width: 80%;
+    margin: 0 auto 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 90px;
+    background: #EFFEFF;
+}
+
+.more-comments a {
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .comments-container {
+        margin: 50px auto 0 auto;
+        width: 90%;
+    }
+
+    .comment-form textarea {
+        padding: 25px;
+    }
+
+    .comment-send {
+        padding: 0 15px 0 40px;
+    }
+
+    .send-buttons .send-btn {
+        height: 50px;
+        width: 120px;
+    }
+    .sent-option .menu-select{
+        width: 150px;
+        height: 50px;
+        gap: 10px;
+    }
+    .user-comment{
+        padding-left: 50px
+    }
+    .users-reply-comments{
+        padding: 20px 50px 20px 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .comments-container {
+        margin: 50px auto 0 auto;
+        width: 100%;
+    }
+    .users-reply-comments{
+        padding: 20px 30px 20px 100px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .comment-send > div {
+        gap: 15px !important;
+    }
+    .user-comment-options{
+        gap: 7px;
+    }
+    .user-comment{
+        padding: 10px;
+    }
+    .user-comment-options div p{
+        font-size: 12px;
+    }
+    .users-reply-comments{
+        
+    }
+}

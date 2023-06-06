@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <!-- Import Pure CSS -->
+    <link rel="stylesheet" href="./css/kanban/dashboard-kanban.css">
+</head>
+
+<body>
+    <!--! Dashboard Kanban Container  -->
+    <div class="kanban-container">
+        <!-- Kanabn Head Content -->
+        <header class="dashboard-kanban-head">
+            <div class="kanban-head-left-side">
+                <button class="kanban-new-btn">
+                    <span>New</span>
+                    <img src="./assets/icons/rhombus.svg" alt="rhomb">
+                </button>
+                <button class="kanban-settings-btn">
+                    <span>Settings</span>
+                    <img src="./assets/icons/oculus.svg" alt="oculus">
+                </button>
+            </div>
+            <div class="kanban-head-right-side">
+                <p>‘ Total 90 Save</p>
+                <img src="./assets/icons/terminal.svg" alt="terminal">
+            </div>
+        </header>
+        <!-- Kanban Header Sub Menu -->
+        <article class="kanban-head-submenu">
+            <div class="head-submenu-left">
+                <div class="dshb-dropdown-menu sub-menu-combobox">
+                    <div class="menu-select">
+                        <p>Combobox</p>
+                        <img src="./assets/icons/chevron-right-white.svg" alt="down">
+                    </div>
+                    <div class="menu-options">
+                        <div class="menu-option-content">
+                            <p>Combobox</p>
+                        </div>
+                        <div class="menu-option-content">
+                            <p>Combobox 1</p>
+                        </div>
+                        <div class="menu-option-content">
+                            <p>Combobox 2</p>
+                        </div>
+                        <div class="menu-option-content">
+                            <p>Combobox 3</p>
+                        </div>
+                        <div class="menu-option-content">
+                            <p>Combobox 4</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="view-btn">
+                    <span>View</span>
+                    <img src="./assets/icons/shortcut.svg" alt="shortcut">
+                </button>
+                <button class="import-btn">
+                    <span>Import</span>
+                    <img src="./assets/icons/software-download.svg" alt="software-download">
+                </button>
+                <button class="sort-btn">
+                    <span>Sort</span>
+                    <img src="./assets/icons/sort.svg" alt="sort">
+                </button>
+                <button class="group-btn">
+                    <span>Grouping</span>
+                    <img src="./assets/icons/grouping.svg" alt="grouping">
+                </button>
+            </div>
+            <div class="head-submenu-right dashboard-table-head-left">
+                <div>
+                    <img src="./assets/icons/math-plus.svg" alt="">
+                </div>
+                <p>Filtre</p>
+                <button class="filtr-btn">
+                    <span>North American</span>
+                    <img src="./assets/icons/icon-close.svg" alt="close icon">
+                </button>
+                <button class="filtr-btn">
+                    <span>Canada</span>
+                    <img src="./assets/icons/icon-close.svg" alt="close icon">
+                </button>
+                <button class="filtr-btn">
+                    <span>Agency</span>
+                    <img src="./assets/icons/icon-close.svg" alt="close icon">
+                </button>
+            </div>
+        </article>
+        <section class="kanban-content-section">
+            <div class="kanban-list">
+                <div class="kanban-list-header accent-teal">
+                    <div class="list-card-content">
+                        <img src="./assets/icons/icon-filter-down.svg" alt="">
+                        <p>Pending</p>
+                    </div>
+                    <span class="badge-text text-success">5</span>
+                    <div class="list-open-card">
+                        <img src="./assets/icons/math-plus.svg" alt="math plus">
+                        <img src="./assets/icons/tikcode.svg" alt="tikcode">
+                    </div>
+                </div>
+                <div class="kanban-list-cards">
+                    <div class="list-card list-card-cyan">
+                        <div class="list-card-header">
+                            <h2>Invoice 1</h2>
+                            <div>
+                                <img src="./assets/icons/select.svg" alt="select">
+                                <img src="./assets/icons/3-dots.svg" alt="dots" class="list-header-dots">
+                            </div>
+                        </div>
+                        <div class="list-card-status card-status-cold">
+                            <img src="./assets/icons/cold.svg" alt="cold">
+                            <span class="card-status-text">Cold</span>
+                        </div>
+                        <div class="card-wrapper">
+                            <p>$ 33,000.90</p>
+                            <h3>San Francisco, California</h3>
+                            <div>
+                                <div class="card-wrapper-stars">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                </div>
+                                <div class="card-wrapper-users">
+                                    <img src="./assets/Images/Coşkun Kaya.svg" alt="">
+                                    <img src="./assets/Images/Osman Dağ.png" alt="">
+                                    <img src="./assets/Images/Eda Taştan.svg" alt="">
+                                    <span>Idil Taşcı</span>
+                                </div>
+                                <div class="card-wrapper-tags">
+                                    <button class="filtr-btn tag-btn-cyan">
+                                        <span>Canada</span>
+                                        <img src="./assets/icons/icon-close.svg" alt="close icon">
+                                    </button>
+                                    <button class="filtr-btn tag-btn-green">
+                                        <span>Agency</span>
+                                        <img src="./assets/icons/icon-close.svg" alt="close icon">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-card-footer">
+                            <div class="list-card-footer-check">
+                                <img src="./assets/icons/check-r.svg" alt="check">
+                                <span class="check-count">13</span>
+                            </div>
+                            <div class="list-card-footer-comments">
+                                <img src="./assets/icons/comment.svg" alt="comment">
+                                <span class="comment-count">5</span>
+                            </div>
+                            <div class="list-card-footer-time">
+                                <img src="./assets/icons/stopwatch.svg" alt="stopwatch">
+                                <span class="time-count">5h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kanban-list">
+                <div class="kanban-list-header accent-purple">
+                    <div class="list-card-content">
+                        <img src="./assets/icons/icon-filter-down.svg" alt="">
+                        <p>Unscheduled</p>
+                    </div>
+                    <span class="badge-text text-subtlest">2</span>
+                    <div class="list-open-card">
+                        <img src="./assets/icons/math-plus.svg" alt="math plus">
+                        <img src="./assets/icons/tikcode.svg" alt="tikcode">
+                    </div>
+                </div>
+                <div class="kanban-list-cards">
+                    <div class="list-card list-card-gray">
+                        <div class="list-card-header">
+                            <h2>Invoice 1</h2>
+                            <div>
+                                <img src="./assets/icons/select.svg" alt="select">
+                                <img src="./assets/icons/3-dots.svg" alt="dots" class="list-header-dots">
+                            </div>
+                        </div>
+                        <div class="list-card-status card-status-warm">
+                            <img src="./assets/icons/warm.svg" alt="warm">
+                            <span class="card-status-text">Warm</span>
+                        </div>
+                        <div class="card-wrapper">
+                            <p>$ 33,000.90</p>
+                            <h3>San Francisco, California</h3>
+                            <div>
+                                <div class="card-wrapper-stars">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-card-footer">
+                            <div class="list-card-footer-check">
+                                <img src="./assets/icons/check-r.svg" alt="check">
+                                <span class="check-count">13</span>
+                            </div>
+                            <div class="list-card-footer-comments">
+                                <img src="./assets/icons/comment.svg" alt="comment">
+                                <span class="comment-count">5</span>
+                            </div>
+                            <div class="list-card-footer-time">
+                                <img src="./assets/icons/stopwatch.svg" alt="stopwatch">
+                                <span class="time-count">5h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-card list-card-gray">
+                        <div class="list-card-header">
+                            <h2>Invoice 1</h2>
+                            <div>
+                                <img src="./assets/icons/select.svg" alt="select">
+                                <img src="./assets/icons/3-dots.svg" alt="dots" class="list-header-dots">
+                            </div>
+                        </div>
+                        <div class="list-card-status card-status-frozen">
+                            <img src="./assets/icons/frozen.svg" alt="frozen">
+                            <span class="card-status-text">Frozen</span>
+                        </div>
+                        <div class="card-wrapper">
+                            <p>$ 33,000.90</p>
+                            <h3>San Francisco, California</h3>
+                            <div>
+                                <div class="card-wrapper-stars">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-card-footer">
+                            <div class="list-card-footer-check">
+                                <img src="./assets/icons/check-r.svg" alt="check">
+                                <span class="check-count">13</span>
+                            </div>
+                            <div class="list-card-footer-comments">
+                                <img src="./assets/icons/comment.svg" alt="comment">
+                                <span class="comment-count">5</span>
+                            </div>
+                            <div class="list-card-footer-time">
+                                <img src="./assets/icons/stopwatch.svg" alt="stopwatch">
+                                <span class="time-count">5h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-card list-card-gray">
+                        <div class="list-card-header">
+                            <h2>Invoice 1</h2>
+                            <div>
+                                <img src="./assets/icons/select.svg" alt="select">
+                                <img src="./assets/icons/3-dots.svg" alt="dots" class="list-header-dots">
+                            </div>
+                        </div>
+                        <div class="list-card-status card-status-frozen">
+                            <img src="./assets/icons/frozen.svg" alt="frozen">
+                            <span class="card-status-text">Frozen</span>
+                        </div>
+                        <div class="card-wrapper">
+                            <p>$ 33,000.90</p>
+                            <h3>San Francisco, California</h3>
+                            <div>
+                                <div class="card-wrapper-stars">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-card-footer">
+                            <div class="list-card-footer-check">
+                                <img src="./assets/icons/check-r.svg" alt="check">
+                                <span class="check-count">13</span>
+                            </div>
+                            <div class="list-card-footer-comments">
+                                <img src="./assets/icons/comment.svg" alt="comment">
+                                <span class="comment-count">5</span>
+                            </div>
+                            <div class="list-card-footer-time">
+                                <img src="./assets/icons/stopwatch.svg" alt="stopwatch">
+                                <span class="time-count">5h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-card list-card-gray">
+                        <div class="list-card-header">
+                            <h2>Invoice 1</h2>
+                            <div>
+                                <img src="./assets/icons/select.svg" alt="select">
+                                <img src="./assets/icons/3-dots.svg" alt="dots" class="list-header-dots">
+                            </div>
+                        </div>
+                        <div class="list-card-status card-status-frozen">
+                            <img src="./assets/icons/frozen.svg" alt="frozen">
+                            <span class="card-status-text">Frozen</span>
+                        </div>
+                        <div class="card-wrapper">
+                            <p>$ 33,000.90</p>
+                            <h3>San Francisco, California</h3>
+                            <div>
+                                <div class="card-wrapper-stars">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-card-footer">
+                            <div class="list-card-footer-check">
+                                <img src="./assets/icons/check-r.svg" alt="check">
+                                <span class="check-count">13</span>
+                            </div>
+                            <div class="list-card-footer-comments">
+                                <img src="./assets/icons/comment.svg" alt="comment">
+                                <span class="comment-count">5</span>
+                            </div>
+                            <div class="list-card-footer-time">
+                                <img src="./assets/icons/stopwatch.svg" alt="stopwatch">
+                                <span class="time-count">5h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kanban-list">
+                <div class="kanban-list-header accent-magenta-bolder">
+                    <div class="list-card-content">
+                        <img src="./assets/icons/icon-filter-down.svg" alt="">
+                        <p>SCHEDULED</p>
+                    </div>
+                    <span class="badge-text text-magenta">7</span>
+                    <div class="list-open-card">
+                        <img src="./assets/icons/math-plus.svg" alt="math plus">
+                        <img src="./assets/icons/tikcode.svg" alt="tikcode">
+                    </div>
+                </div>
+                <div class="kanban-list-cards">
+                    <div class="list-card list-card-magenta">
+                        <div class="list-card-header">
+                            <h2>Invoice 1</h2>
+                            <div>
+                                <img src="./assets/icons/select.svg" alt="select">
+                                <img src="./assets/icons/3-dots.svg" alt="dots" class="list-header-dots">
+                            </div>
+                        </div>
+                        <div class="list-card-status card-status-hot">
+                            <img src="./assets/icons/hot.svg" alt="hot">
+                            <span class="card-status-text">Hot</span>
+                        </div>
+                        <div class="card-wrapper">
+                            <p>$ 33,000.90</p>
+                            <h3>San Francisco, California</h3>
+                            <div>
+                                <div class="card-wrapper-stars">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-card-footer">
+                            <div class="list-card-footer-check">
+                                <img src="./assets/icons/check-r.svg" alt="check">
+                                <span class="check-count">13</span>
+                            </div>
+                            <div class="list-card-footer-comments">
+                                <img src="./assets/icons/comment.svg" alt="comment">
+                                <span class="comment-count">5</span>
+                            </div>
+                            <div class="list-card-footer-time">
+                                <img src="./assets/icons/stopwatch.svg" alt="stopwatch">
+                                <span class="time-count">5h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kanban-list">
+                <div class="kanban-list-header accent-orange">
+                    <div class="list-card-content">
+                        <img src="./assets/icons/icon-filter-down.svg" alt="">
+                        <p>IN PROGRESS</p>
+                    </div>
+                    <span class="badge-text text-orange">1</span>
+                    <div class="list-open-card">
+                        <img src="./assets/icons/math-plus.svg" alt="math plus">
+                        <img src="./assets/icons/tikcode.svg" alt="tikcode">
+                    </div>
+                </div>
+                <div class="kanban-list-cards">
+                    <div class="list-card list-card-orange">
+                        <div class="list-card-header">
+                            <h2>Invoice 1</h2>
+                            <div>
+                                <img src="./assets/icons/select.svg" alt="select">
+                                <img src="./assets/icons/3-dots.svg" alt="dots" class="list-header-dots">
+                            </div>
+                        </div>
+                        <div class="card-wrapper">
+                            <p>$ 33,000.90</p>
+                            <h3>San Francisco, California</h3>
+                            <div>
+                                <div class="card-wrapper-stars">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-card-footer">
+                            <div class="list-card-footer-check">
+                                <img src="./assets/icons/check-r.svg" alt="check">
+                                <span class="check-count">13</span>
+                            </div>
+                            <div class="list-card-footer-comments">
+                                <img src="./assets/icons/comment.svg" alt="comment">
+                                <span class="comment-count">5</span>
+                            </div>
+                            <div class="list-card-footer-time">
+                                <img src="./assets/icons/stopwatch.svg" alt="stopwatch">
+                                <span class="time-count">5h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-card list-card-orange">
+                        <div class="list-card-header">
+                            <h2>Invoice 1</h2>
+                            <div>
+                                <img src="./assets/icons/select.svg" alt="select">
+                                <img src="./assets/icons/3-dots.svg" alt="dots" class="list-header-dots">
+                            </div>
+                        </div>
+                        <div class="card-wrapper">
+                            <div>
+                                <p>$ 33,000.90</p>
+                                <img src="./assets/icons/danger.svg" alt="danger">
+                            </div>
+                            <h3>San Francisco, California</h3>
+                            <div>
+                                <div class="card-wrapper-stars">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-card-footer">
+                            <div class="list-card-footer-check">
+                                <img src="./assets/icons/check-r.svg" alt="check">
+                                <span class="check-count">13</span>
+                            </div>
+                            <div class="list-card-footer-comments">
+                                <img src="./assets/icons/comment.svg" alt="comment">
+                                <span class="comment-count">5</span>
+                            </div>
+                            <div class="list-card-footer-time">
+                                <img src="./assets/icons/stopwatch.svg" alt="stopwatch">
+                                <span class="time-count">5h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kanban-list">
+                <div class="kanban-list-header accent-green">
+                    <div class="list-card-content">
+                        <img src="./assets/icons/icon-filter-down.svg" alt="">
+                        <p>UNDER REVIEW</p>
+                    </div>
+                    <span class="badge-text text-green">6</span>
+                    <div class="list-open-card">
+                        <img src="./assets/icons/math-plus.svg" alt="math plus">
+                        <img src="./assets/icons/tikcode.svg" alt="tikcode">
+                    </div>
+                </div>
+                <div class="kanban-list-cards">
+                    <div class="list-card list-card-green">
+                        <div class="list-card-header">
+                            <h2>Invoice 1</h2>
+                            <div>
+                                <img src="./assets/icons/select.svg" alt="select">
+                                <img src="./assets/icons/3-dots.svg" alt="dots" class="list-header-dots">
+                            </div>
+                        </div>
+                        <div class="card-wrapper">
+                            <p>$ 33,000.90</p>
+                            <h3>San Francisco, California</h3>
+                            <div>
+                                <div class="card-wrapper-stars">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-card-footer">
+                            <div class="list-card-footer-check">
+                                <img src="./assets/icons/check-r.svg" alt="check">
+                                <span class="check-count">13</span>
+                            </div>
+                            <div class="list-card-footer-comments">
+                                <img src="./assets/icons/comment.svg" alt="comment">
+                                <span class="comment-count">5</span>
+                            </div>
+                            <div class="list-card-footer-time">
+                                <img src="./assets/icons/stopwatch.svg" alt="stopwatch">
+                                <span class="time-count">5h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-card list-card-green">
+                        <div class="list-card-header">
+                            <h2>Invoice 1</h2>
+                            <div>
+                                <img src="./assets/icons/select.svg" alt="select">
+                                <img src="./assets/icons/3-dots.svg" alt="dots" class="list-header-dots">
+                            </div>
+                        </div>
+                        <div class="card-wrapper">
+                            <p>$ 33,000.90</p>
+                            <h3>San Francisco, California</h3>
+                            <div>
+                                <div class="card-wrapper-stars">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-card-footer">
+                            <div class="list-card-footer-check">
+                                <img src="./assets/icons/check-r.svg" alt="check">
+                                <span class="check-count">13</span>
+                            </div>
+                            <div class="list-card-footer-comments">
+                                <img src="./assets/icons/comment.svg" alt="comment">
+                                <span class="comment-count">5</span>
+                            </div>
+                            <div class="list-card-footer-time">
+                                <img src="./assets/icons/stopwatch.svg" alt="stopwatch">
+                                <span class="time-count">5h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-card list-card-green">
+                        <div class="list-card-header">
+                            <h2>Invoice 1</h2>
+                            <div>
+                                <img src="./assets/icons/select.svg" alt="select">
+                                <img src="./assets/icons/3-dots.svg" alt="dots" class="list-header-dots">
+                            </div>
+                        </div>
+                        <div class="card-wrapper">
+                            <div>
+                                <p>$ 33,000.90</p>
+                                <img src="./assets/icons/danger.svg" alt="danger">
+                            </div>
+                            <h3>San Francisco, California</h3>
+                            <div>
+                                <div class="card-wrapper-stars">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-card-footer">
+                            <div class="list-card-footer-check">
+                                <img src="./assets/icons/check-r.svg" alt="check">
+                                <span class="check-count">13</span>
+                            </div>
+                            <div class="list-card-footer-comments">
+                                <img src="./assets/icons/comment.svg" alt="comment">
+                                <span class="comment-count">5</span>
+                            </div>
+                            <div class="list-card-footer-time">
+                                <img src="./assets/icons/stopwatch.svg" alt="stopwatch">
+                                <span class="time-count">5h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kanban-list">
+                <div class="kanban-list-header accent-magenta-bolder">
+                    <div class="list-card-content">
+                        <img src="./assets/icons/icon-filter-down.svg" alt="">
+                        <p>SCHEDULED</p>
+                    </div>
+                    <span class="badge-text text-magenta">7</span>
+                    <div class="list-open-card">
+                        <img src="./assets/icons/math-plus.svg" alt="math plus">
+                        <img src="./assets/icons/tikcode.svg" alt="tikcode">
+                    </div>
+                </div>
+                <div class="kanban-list-cards">
+                    <div class="list-card list-card-magenta">
+                        <div class="list-card-header">
+                            <h2>Invoice 1</h2>
+                            <div>
+                                <img src="./assets/icons/select.svg" alt="select">
+                                <img src="./assets/icons/3-dots.svg" alt="dots" class="list-header-dots">
+                            </div>
+                        </div>
+                        <div class="list-card-status card-status-hot">
+                            <img src="./assets/icons/hot.svg" alt="hot">
+                            <span class="card-status-text">Hot</span>
+                        </div>
+                        <div class="card-wrapper">
+                            <p>$ 33,000.90</p>
+                            <h3>San Francisco, California</h3>
+                            <div>
+                                <div class="card-wrapper-stars">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-card-footer">
+                            <div class="list-card-footer-check">
+                                <img src="./assets/icons/check-r.svg" alt="check">
+                                <span class="check-count">13</span>
+                            </div>
+                            <div class="list-card-footer-comments">
+                                <img src="./assets/icons/comment.svg" alt="comment">
+                                <span class="comment-count">5</span>
+                            </div>
+                            <div class="list-card-footer-time">
+                                <img src="./assets/icons/stopwatch.svg" alt="stopwatch">
+                                <span class="time-count">5h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kanban-list">
+                <div class="kanban-list-header accent-teal">
+                    <div class="list-card-content">
+                        <img src="./assets/icons/icon-filter-down.svg" alt="">
+                        <p>Pending</p>
+                    </div>
+                    <span class="badge-text text-success">5</span>
+                    <div class="list-open-card">
+                        <img src="./assets/icons/math-plus.svg" alt="math plus">
+                        <img src="./assets/icons/tikcode.svg" alt="tikcode">
+                    </div>
+                </div>
+                <div class="kanban-list-cards">
+                    <div class="list-card list-card-cyan">
+                        <div class="list-card-header">
+                            <h2>Invoice 1</h2>
+                            <div>
+                                <img src="./assets/icons/select.svg" alt="select">
+                                <img src="./assets/icons/3-dots.svg" alt="dots" class="list-header-dots">
+                            </div>
+                        </div>
+                        <div class="list-card-status card-status-cold">
+                            <img src="./assets/icons/cold.svg" alt="cold">
+                            <span class="card-status-text">Cold</span>
+                        </div>
+                        <div class="card-wrapper">
+                            <p>$ 33,000.90</p>
+                            <h3>San Francisco, California</h3>
+                            <div>
+                                <div class="card-wrapper-stars">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                    <img src="./assets/icons/icon-star.svg" alt="star">
+                                </div>
+                                <div class="card-wrapper-users">
+                                    <img src="./assets/Images/Coşkun Kaya.svg" alt="">
+                                    <img src="./assets/Images/Osman Dağ.png" alt="">
+                                    <img src="./assets/Images/Eda Taştan.svg" alt="">
+                                    <span>Idil Taşcı</span>
+                                </div>
+                                <div class="card-wrapper-tags">
+                                    <button class="filtr-btn tag-btn-cyan">
+                                        <span>Canada</span>
+                                        <img src="./assets/icons/icon-close.svg" alt="close icon">
+                                    </button>
+                                    <button class="filtr-btn tag-btn-green">
+                                        <span>Agency</span>
+                                        <img src="./assets/icons/icon-close.svg" alt="close icon">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-card-footer">
+                            <div class="list-card-footer-check">
+                                <img src="./assets/icons/check-r.svg" alt="check">
+                                <span class="check-count">13</span>
+                            </div>
+                            <div class="list-card-footer-comments">
+                                <img src="./assets/icons/comment.svg" alt="comment">
+                                <span class="comment-count">5</span>
+                            </div>
+                            <div class="list-card-footer-time">
+                                <img src="./assets/icons/stopwatch.svg" alt="stopwatch">
+                                <span class="time-count">5h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/kanban.js"></script>
+</body>
+
+</html>

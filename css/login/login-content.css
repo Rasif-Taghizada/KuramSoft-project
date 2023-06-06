@@ -1,9 +1,6 @@
-/* Import colors */
-@import url('../colors.css');
 /* Import Font Family */
 @import url('../main.css');
-/* Import Form CSS Code */
-@import url('../form.css');
+
 
 header {
     background-color: #F6F6F6;
