@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inbox</title>
+    <!-- Pure CSS -->
+    <link rel="stylesheet" href="./css/inbox/inbox.css" />
+  </head>
+  <body>
+    <section class="inbox-container">
+      <aside class="inbox-sidebar">
+        <header class="inbox-sidebar-top">
+          <h1>Inbox</h1>
+          <div class="add-user">
+            <img src="./assets/icons/math-plus.svg" alt="plus" />
+          </div>
+        </header>
+        <div class="inbox-sidebar-submenu">
+          <input type="checkbox" name="" id="onlineUser" />
+          <label for="onlineUser">Show only online users</label>
+          <img src="./assets/icons/3-dots.svg" alt="three dots" />
+        </div>
+        <div class="inbox-sidebar-filter-btns">
+          <button class="btn-active" onclick="leftClick()">General</button>
+          <button onclick="rightClick()">Total</button>
+          <div class="filter-btn-active"></div>
+        </div>
+        <div class="inbox-sidebar-users">
+          <div class="inbox-sidebar-user user-online">
+            <div class="inbox-sidebar-user-img">
+              <img src="./assets/images/Ozan Alatlı.svg" alt="user" />
+              <span class="user-status"></span>
+            </div>
+            <div class="inbox-sidebar-user-info">
+              <h3>Ozan Alatlı</h3>
+              <span>Product Manager</span>
+              <p>Hey, how are you?</p>
+            </div>
+            <div class="inbox-sidebar-user-count">
+              <p>2</p>
+            </div>
+          </div>
+          <div class="inbox-sidebar-user user-active user-online">
+            <div class="inbox-sidebar-user-img">
+              <img src="./assets/images/Ozan Alatlı.svg" alt="user" />
+              <span class="user-status"></span>
+            </div>
+            <div class="inbox-sidebar-user-info">
+              <h3>Ozan Alatlı</h3>
+              <span>Product Manager</span>
+              <p>Hey, how are you?</p>
+            </div>
+            <div class="inbox-sidebar-user-count">
+              <p>2</p>
+            </div>
+          </div>
+          <div class="inbox-sidebar-user">
+            <div class="inbox-sidebar-user-img">
+              <img src="./assets/images/Ozan Alatlı.svg" alt="user" />
+            </div>
+            <div class="inbox-sidebar-user-info">
+              <h3>Ozan Alatlı</h3>
+              <span>Product Manager</span>
+              <p>Hey, how are you?</p>
+            </div>
+            <div class="inbox-sidebar-user-count">
+              <p>2</p>
+            </div>
+          </div>
+          <div class="inbox-sidebar-user user-online">
+            <div class="inbox-sidebar-user-img">
+              <img src="./assets/images/Ozan Alatlı.svg" alt="user" />
+              <span class="user-status"></span>
+            </div>
+            <div class="inbox-sidebar-user-info">
+              <h3>Ozan Alatlı</h3>
+              <span>Product Manager</span>
+              <p>Hey, how are you?</p>
+            </div>
+            <div class="inbox-sidebar-user-count">
+              <p>2</p>
+            </div>
+          </div>
+          <div class="inbox-sidebar-user">
+            <div class="inbox-sidebar-user-img">
+              <img src="./assets/images/Ozan Alatlı.svg" alt="user" />
+            </div>
+            <div class="inbox-sidebar-user-info">
+              <h3>Ozan Alatlı</h3>
+              <span>Product Manager</span>
+              <p>Hey, how are you?</p>
+            </div>
+            <div class="inbox-sidebar-user-count">
+              <p>2</p>
+            </div>
+          </div>
+          <div class="inbox-sidebar-user">
+            <div class="inbox-sidebar-user-img">
+              <img src="./assets/images/Ozan Alatlı.svg" alt="user" />
+            </div>
+            <div class="inbox-sidebar-user-info">
+              <h3>Ozan Alatlı</h3>
+              <span>Product Manager</span>
+              <p>Hey, how are you?</p>
+            </div>
+            <div class="inbox-sidebar-user-count">
+              <p>2</p>
+            </div>
+          </div>
+        </div>
+        <div class="user-search-bar">
+          <img src="./assets/icons/search.svg" alt="search" />
+          <input type="text" class="user-search" placeholder="Search" />
+        </div>
+      </aside>
+      <article class="inbox-chat-form">
+        <header class="inbox-sidebar-user inbox-header-user-info">
+          <div class="inbox-sidebar-user-img">
+            <img src="./assets/images/Ozan Alatlı.svg" alt="user" />
+          </div>
+          <div class="inbox-sidebar-user-info">
+            <h3>Ozan Alatlı</h3>
+            <span>Product Manager</span>
+          </div>
+        </header>
+        <main class="inbox-chat-container">
+            
+        </main>
+      </article>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="./js/inbox.js"></script>
+    <script src="./js/dropdown.js"></script>
+  </body>
+</html>

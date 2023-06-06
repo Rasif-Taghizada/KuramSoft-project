@@ -1,0 +1,245 @@
+/* Add reset css */
+@import url("../main.css");
+
+/*! ============= Inbox Container =========== */
+.inbox-container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*! Inbox Sidebar Content  */
+.inbox-sidebar {
+    border-right: 1px solid #E4E4E4;
+    padding: 40px 37px 0 0;
+    width: 400px;
+}
+
+.inbox-sidebar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 38px;
+}
+
+.inbox-sidebar-top h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #000000;
+}
+
+.add-user {
+    width: 33px;
+    height: 33px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+    border-radius: 5px;
+    border: 1px solid #BABABA;
+    padding: 7px;
+}
+
+/* Sidebar SubMenu */
+.inbox-sidebar-submenu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.inbox-sidebar-submenu input {
+    width: 15px;
+    height: 15px;
+    border: none;
+    outline: none;
+    border: 1px solid #1FDAFF;
+    cursor: pointer;
+}
+
+.inbox-sidebar-submenu label {
+    font-weight: 700;
+    font-size: 17px;
+    flex: 1 1 auto;
+    cursor: pointer;
+}
+
+.inbox-sidebar-submenu img {
+    transform: rotate(90deg);
+    margin-right: 7px;
+}
+
+/*TODO Sidebar Filter Buttons  */
+.inbox-sidebar-filter-btns {
+    width: 355px;
+    height: 62px;
+    background: #E4FDFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+    margin-bottom: 22px;
+}
+
+.inbox-sidebar-filter-btns button {
+    z-index: 2;
+    cursor: pointer;
+    color: #929292;
+    font-weight: 700;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 15px 50px;
+}
+
+.inbox-sidebar-filter-btns button.btn-active {
+    color: #000000;
+}
+
+.inbox-sidebar-filter-btns div.filter-btn-active {
+    background: #A6FAFF;
+    border-radius: 10px;
+    width: 167px;
+    height: 52px;
+    position: absolute;
+    z-index: 1;
+    left: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/*! Sidebar Users Container  */
+.inbox-sidebar-users {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+/*TODO her bir user  */
+.inbox-sidebar-user {
+    display: flex;
+    align-items: center;
+    padding: 30px 30px 30px 20px;
+    border: none;
+    background: #E4FDFF;
+    border-radius: 10px;
+    height: 100px;
+    transition: background 0.4s ease-in-out;
+}
+
+.inbox-sidebar-user:hover {
+    cursor: pointer;
+    background: #A6FAFF;
+}
+
+.inbox-sidebar-user.user-active {
+    border: 3px solid #6CF6FF;
+}
+
+.inbox-sidebar-user-img {
+    margin-right: 30px;
+    position: relative;
+}
+
+.inbox-sidebar-user-img .user-status {
+    position: absolute;
+    background: #6CFF72;
+    width: 13px;
+    height: 13px;
+    left: 44px;
+    top: 50px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.inbox-sidebar-user-info {
+    flex: 1 1 auto;
+}
+
+.inbox-sidebar-user-info h3 {
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+
+.inbox-sidebar-user-info span {
+    font-weight: 500;
+    font-size: 13px;
+    color: #9C9C9C;
+}
+
+.inbox-sidebar-user-info p {
+    font-weight: 500;
+    font-size: 15px;
+    color: #000000;
+}
+
+/*? User message count style */
+.inbox-sidebar-user-count {
+    width: 28px;
+    height: 28px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.inbox-sidebar-user-count p {
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+}
+
+/*! ============= User Search bar =========== */
+.user-search-bar {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background: #F3FEFF;
+    border: 1px solid #6CF6FF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 8px 12px;
+    gap: 15px;
+}
+
+.user-search-bar:hover {
+    border: 1px solid #09e8f8;
+    box-shadow: 0px 0px 5px 0px #6CF6FF;
+}
+
+.user-search-bar input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: #C5C5C5;
+    width: 100%;
+}
+
+.user-search-bar img {
+    width: 19px;
+    height: 19px;
+    opacity: 0.3;
+}
+
+/* Inbox Chat Form */
+.inbox-chat-form {
+    width: 100%;
+
+}
+
+.inbox-header-user-info {
+    background: white;
+}
+
+/*! ============== Inbox Chat Container =============  */
+.inbox-chat-container {
+    background: #F4F4F4;
+    border: 1px solid #DEDEDE;
+    width: 100%;
+    height: 100%;
+    
+}

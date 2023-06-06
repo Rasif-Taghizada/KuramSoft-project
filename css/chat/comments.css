@@ -103,6 +103,11 @@
     background-color: #F2F2F2;
 }
 
+.sent-option .menu-options .menu-option-content {
+    padding: 15px 20px;
+    justify-content: center;
+}
+
 
 /*! Users Comments Area  */
 .user-comment {
@@ -114,7 +119,6 @@
     min-width: 160px;
     border-bottom: 1px solid #D5D5D5;
     transition: all 0.3s ease-in-out;
-    cursor: pointer;
 }
 
 .user-comment .icon-chevron-down {
@@ -241,7 +245,8 @@
     padding: 30px 70px 30px 170px;
     position: relative;
 }
-.users-reply-comments > img {
+
+.users-reply-comments>img {
     position: absolute;
     top: 30px;
     right: 40px;
@@ -283,4 +288,68 @@
     font-weight: 700;
     font-size: 17px;
     color: #000000;
+}
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .comments-container {
+        margin: 50px auto 0 auto;
+        width: 90%;
+    }
+
+    .comment-form textarea {
+        padding: 25px;
+    }
+
+    .comment-send {
+        padding: 0 15px 0 40px;
+    }
+
+    .send-buttons .send-btn {
+        height: 50px;
+        width: 120px;
+    }
+    .sent-option .menu-select{
+        width: 150px;
+        height: 50px;
+        gap: 10px;
+    }
+    .user-comment{
+        padding-left: 50px
+    }
+    .users-reply-comments{
+        padding: 20px 50px 20px 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .comments-container {
+        margin: 50px auto 0 auto;
+        width: 100%;
+    }
+    .users-reply-comments{
+        padding: 20px 30px 20px 100px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .comment-send > div {
+        gap: 15px !important;
+    }
+    .user-comment-options{
+        gap: 7px;
+    }
+    .user-comment{
+        padding: 10px;
+    }
+    .user-comment-options div p{
+        font-size: 12px;
+    }
+    .users-reply-comments{
+        
+    }
 }
