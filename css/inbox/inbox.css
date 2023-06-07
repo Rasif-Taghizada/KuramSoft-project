@@ -228,11 +228,16 @@
 /* Inbox Chat Form */
 .inbox-chat-form {
     width: 100%;
-
+    position: relative;
 }
 
 .inbox-header-user-info {
     background: white;
+}
+
+.inbox-header-user-info:hover {
+    cursor: pointer;
+    background: white
 }
 
 /*! ============== Inbox Chat Container =============  */
@@ -240,6 +245,357 @@
     background: #F4F4F4;
     border: 1px solid #DEDEDE;
     width: 100%;
-    height: 100%;
-    
+}
+
+/*TODO Message Content Styles */
+.message-content {
+    height: 700px;
+    overflow-y: scroll;
+    padding: 45px 80px 45px 30px;
+}
+
+.chat-date p {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.1px;
+    color: #939393;
+    margin-bottom: 60px;
+}
+
+/* Host messages styles */
+.host-msg>p,
+.msg-document {
+    width: max-content;
+    max-width: 450px;
+    min-height: 67px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    background: #E9E9E9;
+    border-radius: 20px 20px 20px 0px;
+    padding: 20px 20px 22px 33px;
+}
+
+.host-msg>span {
+    display: inline-block;
+    margin-top: 11px;
+    margin-bottom: 22px;
+    margin-left: 30px;
+}
+
+.host-msg .msg-document {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.msg-document .document-content h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.1px;
+    color: #009DA7;
+}
+
+.msg-document .document-content p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1px;
+    color: #898989;
+}
+
+.document-img {
+    width: 32px;
+    height: 38px;
+    object-fit: cover;
+}
+
+
+/* User messages style: */
+.user-msg {
+    margin-left: auto;
+    width: 348px;
+    margin-bottom: 22px;
+}
+
+.user-msg>p {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    background: #FFFFFF;
+    border-radius: 20px 20px 0px 20px;
+    padding-top: 20px;
+    padding-bottom: 22px;
+    padding-left: 25px;
+}
+
+.user-msg>span {
+    text-align: left;
+    display: block;
+    margin-top: 11px;
+    margin-left: 30px;
+}
+
+.user-msg-image {
+    background: #FFFFFF;
+    border-radius: 20px 20px 0px 20px;
+    padding-bottom: 10px;
+}
+
+.user-msg-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.user-msg-image p {
+    margin-top: 8px;
+    margin-left: 48px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1px;
+    color: #898989;
+}
+
+/*! Message write content style */
+.message-write {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #C6C6C6;
+    margin: 0 37px;
+    padding-top: 18px;
+    padding-bottom: 15px;
+}
+
+.message-write .message-input {
+    flex: 1 1 auto;
+}
+
+.message-input input {
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    color: #A2A2A2;
+    letter-spacing: 0.1px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.message-send {
+    display: flex;
+    gap: 10px;
+}
+
+.message-send div {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* Message send into first div: */
+.message-send div.select-image {
+    background: #E9E9E9;
+    padding: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.message-send div.select-image:hover {
+    background: #C4C4C4;
+}
+
+.message-send div.select-image img {
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+
+.message-send div.select-image:hover img {
+    opacity: 1;
+}
+
+/* Message send into second div: */
+.message-send div.select-document {
+    background: #E9E9E9;
+    padding: 24px 22px;
+    transition: all 0.3s ease-in-out;
+}
+
+.message-send div.select-document:hover {
+    background: #C4C4C4;
+}
+
+.message-send div.select-document img {
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+
+.message-send div.select-document:hover img {
+    opacity: 1;
+}
+
+/* Message send into third div: */
+.message-send div.send-message {
+    background: #45E8F2;
+    padding: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.message-send div.send-message:hover {
+    background: #2AC7D9;
+}
+
+/*TODO SOHBET  */
+.contact-message {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    z-index: 3;
+    height: 46px;
+    transition: height 0.3s ease-in-out;
+    background: #F9FEFF;
+}
+
+.contact-message-select {
+    width: 332px;
+    height: 46px;
+    background: #E2E8E9;
+    /* ?? */
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 17px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-message-select p {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    text-transform: uppercase;
+    flex: 1 1 auto;
+}
+
+.contact-message-select img:nth-child(3) {
+    margin-right: 15px;
+    transform: rotate(90deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-message-options {
+    display: none;
+    /* opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    pointer-events: none;
+    height: 0; */
+}
+
+/*! Contact Message Select active oldukda:  */
+.contact-message.contact-active {
+    height: 392px;
+}
+
+.contact-message-select.active img:nth-child(3) {
+    transform: rotate(0deg);
+}
+
+.contact-message.contact-active .contact-message-options {
+    /* opacity: 1;
+    overflow: visible;
+    visibility: visible;
+    pointer-events: all; */
+    display: block;
+    height: calc(100% - 46px);
+}
+
+/* .message-option-online-users */
+.contact-message-options {
+    overflow-y: auto;
+}
+
+.status-online {
+    background: #6CFF72;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status-offline {
+    background: #9B9B9B;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.message-option-online-users div,
+.message-option-offline-users div {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    height: 46px;
+    padding: 13px 20px;
+}
+
+.online-user-title .status-online,
+.offline-user-title .status-offline {
+    width: 13px;
+    height: 13px;
+}
+
+.online-user .status-online,
+.offline-user .status-offline {
+    width: 10px;
+    height: 10px;
+}
+
+.offline-user-title,
+.online-user-title {
+    background: #E3FAFF;
+}
+
+.online-user-title :where(h3, p),
+.offline-user-title :where(h3, p) {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+/*! Inbox Message Section == Container , Scrollbar Style */
+.message-content::-webkit-scrollbar-track,
+.contact-message-options::-webkit-scrollbar-track {
+    background-color: #B1E9F4;
+}
+
+.message-content::-webkit-scrollbar,
+.contact-message-options::-webkit-scrollbar {
+    width: 8px;
+    background-color: #2CD8FB;
+}
+
+.message-content::-webkit-scrollbar-thumb,
+.contact-message-options::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #2CD8FB;
 }
