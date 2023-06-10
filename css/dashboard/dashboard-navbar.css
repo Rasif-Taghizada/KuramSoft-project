@@ -1,6 +1,3 @@
-/* Import Dashboard Styles */
-@import url('../dashboard.css');
-
 /* Dashboard Navbar */
 header.dashboard-navbar {
     display: flex;

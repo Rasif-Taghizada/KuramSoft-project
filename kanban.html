@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanban</title>
     <!-- Import Pure CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/dashboard/dashboard-table.css">
+    <link rel="stylesheet" href="./css/app-manager/app-manager.css">
     <link rel="stylesheet" href="./css/kanban/dashboard-kanban.css">
 </head>
 
@@ -36,7 +42,7 @@
                 <div class="dshb-dropdown-menu sub-menu-combobox">
                     <div class="menu-select">
                         <p>Combobox</p>
-                        <img src="./assets/icons/chevron-right-white.svg" alt="down">
+                        <img src="./assets/icons/chevron-down-white.svg" alt="down">
                     </div>
                     <div class="menu-options">
                         <div class="menu-option-content">
@@ -74,9 +80,9 @@
                 </button>
             </div>
             <div class="head-submenu-right dashboard-table-head-left">
-                <div>
+                <button class="add-filter">
                     <img src="./assets/icons/math-plus.svg" alt="">
-                </div>
+                </button>
                 <p>Filtre</p>
                 <button class="filtr-btn">
                     <span>North American</span>
@@ -725,7 +731,6 @@
             </div>
         </section>
     </div>
-
 
     <script src="./js/dropdown.js"></script>
     <script src="./js/kanban.js"></script>

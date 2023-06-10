@@ -2,14 +2,14 @@
 //* Burger Menu
 const burgerMenu = document.querySelector(".icon-menu")
 const sideBar = document.querySelector(".dashboard-sidebar");
-burgerMenu.addEventListener("click", () => {
+burgerMenu?.addEventListener("click", () => {
     sideBar.classList.toggle("sidebar-close");
-    if (burgerMenu.className === "material-icons-round icon-menu") {
-        burgerMenu.className = "material-icons-round icon-arrow-back";
-        burgerMenu.textContent = "arrow_back"
+    if (burgerMenu.className === "icon-menu") {
+        burgerMenu.className = "icon-arrow-back";
+        burgerMenu.src = "./assets/icons/arrow-back-black.svg"
     } else {
-        burgerMenu.className = "material-icons-round icon-menu"
-        burgerMenu.textContent = "menu"
+        burgerMenu.className = "icon-menu"
+        burgerMenu.src = "./assets/icons/menu-icon.svg"
     }
 })
 
@@ -42,7 +42,7 @@ navSideLists.forEach(navList => {
 const navbarBtn = document.querySelector(".nav-sidebar-toggle-menu > button");
 const navbarContainer = document.querySelector(".navbar-container");
 // console.log(navbarBtn);
-navbarBtn.addEventListener("click", () => {
+navbarBtn?.addEventListener("click", () => {
     navbarContainer.classList.toggle("navbar-container-close");
 })
 
@@ -54,6 +54,5 @@ const sortIcons = document.querySelectorAll(".thead-asc");
 sortIcons.forEach(icon => {
     icon.addEventListener("click", () => {
         icon.classList.toggle("thead-desc");
-
     })
 })

@@ -1,1306 +1,1587 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard App Manager</title>
     <!-- Pure CSS -->
-    <link rel="stylesheet" href="./css/dashboard.css">
-    <link rel="stylesheet" href="./css/app-meneger/app-manager.css" />
-    <!-- Google Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <link rel="stylesheet" href="./css/app-manager/app-manager.css" />
+  </head>
 
-<body>
+  <body>
     <section class="dashboard-container">
-        <!-- Sidebar Content -->
-        <aside class="dashboard-sidebar sidebar-open sidebar-close">
-            <div class="sidebar-top">
-                <img src="./assets/Images/C-logo.svg" alt="Logo">
-                <span>Createrun</span>
+      <!-- Sidebar Content -->
+      <aside class="dashboard-sidebar sidebar-open sidebar-close">
+        <div class="sidebar-top">
+          <img src="./assets/Images/C-logo.svg" alt="Logo" />
+          <span>Createrun</span>
+        </div>
+        <!-- Sidebar List -->
+        <ul class="sidebar-lists">
+          <li class="sidebar-list-group">
+            <div class="sidebar-list-altgroup">
+              <img src="./assets/icons/sidebar-home.svg" alt="sidebar-home" />
+              <a href="#" class="sidebar-list-text">Home Page</a>
             </div>
-            <!-- Sidebar List -->
-            <ul class="sidebar-lists">
-                <li class="sidebar-list-group">
-                    <div class="sidebar-list-altgroup">
-                        <img src="./assets/icons/sidebar-home.svg" alt="sidebar-home">
-                        <a href="#" class="sidebar-list-text">Home Page</a>
-                    </div>
-                    <img src="./assets/icons/arrow-right.svg" alt="arrow-right" class="arrow-right-icon">
-                </li>
-                <li class="sidebar-list-group list-group-active">
-                    <div class="sidebar-list-altgroup">
-                        <img src="./assets/icons/align-left.svg" alt="align-left">
-                        <a href="#" class="sidebar-list-text">Formlar</a>
-                    </div>
-                    <img src="./assets/icons/arrow-right.svg" alt="arrow-right" class="arrow-right-icon">
-                </li>
-                <li class="sidebar-list-group">
-                    <div class="sidebar-list-altgroup">
-                        <img src="./assets/icons/sidebar-calendar.svg" alt="sidebar-calendar">
-                        <a href="#" class="sidebar-list-text">Takvim</a>
-                    </div>
-                    <img src="./assets/icons/arrow-right.svg" alt="arrow-right" class="arrow-right-icon">
-                </li>
-                <li class="sidebar-list-group">
-                    <div class="sidebar-list-altgroup">
-                        <img src="./assets/icons/sidebar-list.svg" alt="sidebar-list">
-                        <a href="#" class="sidebar-list-text">Listeler</a>
-                    </div>
-                    <img src="./assets/icons/arrow-right.svg" alt="arrow-right" class="arrow-right-icon">
-                </li>
-                <li class="sidebar-list-group">
-                    <div class="sidebar-list-altgroup">
-                        <img src="./assets/icons/sidebar-list-grid.svg" alt="sidebar-grid">
-                        <a href="#" class="sidebar-list-text">Todo List</a>
-                    </div>
-                    <img src="./assets/icons/arrow-right.svg" alt="arrow-right" class="arrow-right-icon">
-                </li>
-                <li class="sidebar-list-group">
-                    <div class="sidebar-list-altgroup">
-                        <img src="./assets/icons/sidebar-grafik.svg" alt="sidebar-grafik">
-                        <a href="#" class="sidebar-list-text">Grafik</a>
-                    </div>
-                    <img src="./assets/icons/arrow-right.svg" alt="arrow-right" class="arrow-right-icon">
-                </li>
-                <li class="sidebar-list-group">
-                    <div class="sidebar-list-altgroup">
-                        <img src="./assets/icons/search.svg" alt="search">
-                        <a href="#" class="sidebar-list-text">Search</a>
-                    </div>
-                    <img src="./assets/icons/arrow-right.svg" alt="arrow-right" class="arrow-right-icon">
-                </li>
-            </ul>
-            <div class="sidebar-user-container">
-                <span class="material-icons-round icon-chevron-down">
-                    expand_more
-                </span>
-                <div class="user-content">
-                    <div class="user-image">
-                        <img src="./assets/icons/sidebar-user-image.svg" alt="sidebar user image">
-                    </div>
-                    <div class="user-status user-online"></div>
-                </div>
+            <img
+              src="./assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+          <li class="sidebar-list-group list-group-active">
+            <div class="sidebar-list-altgroup">
+              <img src="./assets/icons/align-left.svg" alt="align-left" />
+              <a href="#" class="sidebar-list-text">Formlar</a>
             </div>
-        </aside>
-        <!-- Sidebar Main Container -->
-        <main class="dashboard-main-container">
-            <header class="dashboard-main-header">
-                <div class="header-left-content">
-                    <span class="material-icons-round icon-menu">
-                        menu
-                    </span>
-                    <div class="dshb-dropdown-menu header-left-menu">
-                        <div class="menu-select">
-                            <p>sigorta.square.com</p>
-                            <span class="material-icons-round icon-chevron-down">
-                                expand_more
-                            </span>
-                        </div>
-                        <div class="menu-options">
-                            <div class="menu-option-content">
-                                <p>square 1</p>
-                            </div>
-                            <div class="menu-option-content">
-                                <p>square.com 2</p>
-                            </div>
-                            <div class="menu-option-content">
-                                <p>sigorta.square 3</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-right-content">
-                    <div class="header-dropdown-search">
-                        <div class="dshb-dropdown-menu dropdown-document">
-                            <div class="menu-select">
-                                <p>Document</p>
-                                <span class="material-icons-round icon-chevron-down">
-                                    expand_more
-                                </span>
-                            </div>
-                            <div class="menu-options"></div>
-                        </div>
-                        <div class="search-content">
-                            <input type="text" name="text" class="" placeholder="Ara">
-                            <span class="material-icons-round icon-search">
-                                search
-                            </span>
-                        </div>
-                    </div>
-                    <div class="dshb-dropdown-menu dropdown-lang">
-                        <div class="menu-select">
-                            <p>ENG</p>
-                            <span class="material-icons-round icon-chevron-down">
-                                expand_more
-                            </span>
-                        </div>
-                        <div class="menu-options">
-                            <div class="menu-option-content">
-                                <p>AZE</p>
-                            </div>
-                            <div class="menu-option-content">
-                                <p>RUS</p>
-                            </div>
-                            <div class="menu-option-content">
-                                <p>TUR</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dshb-dropdown-menu dshb-user-content">
-                        <div class="menu-select">
-                            <div class="user-about-img">
-                                <div class="user-img">
-                                    <img src="./assets/icons/user-ozan-alatli.svg" alt="ozan-alatli">
-                                </div>
-                                <div class="user-about">
-                                    <p class="user-name">
-                                        Ozan Alatlı
-                                    </p>
-                                    <span class="user-prefer">
-                                        Proje Yöneticisi
-                                    </span>
-                                </div>
-                            </div>
-                            <span class="material-icons-round icon-chevron-down">
-                                expand_more
-                            </span>
-                        </div>
-                        <div class="menu-options"></div>
-                    </div>
-                </div>
-            </header>
-            <div class="dashboard-header-menu">
-                <div class="menu-left">
-                    <img src="./assets/icons/header-menu-home.svg" alt="menu-home">
-                    <p>Home</p>
-                </div>
-                <span class="menu-dot"></span>
-                <div class="dshb-dropdown-menu">
-                    <div class="menu-select">
-                        <p>SQUARE</p>
-                        <span class="material-icons-round icon-chevron-down">
-                            expand_more
-                        </span>
-                    </div>
-                    <div class="menu-options"></div>
-                </div>
-                <span class="menu-dot"></span>
-                <div>
-                    <span>OverduePaymentsReports.aspx</span>
-                </div>
+            <img
+              src="./assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+          <li class="sidebar-list-group">
+            <div class="sidebar-list-altgroup">
+              <img
+                src="./assets/icons/sidebar-calendar.svg"
+                alt="sidebar-calendar"
+              />
+              <a href="#" class="sidebar-list-text">Takvim</a>
             </div>
-            <div class="dashboard-header-submenu">
-                <a href="#" class="submenu-active">Main Menu</a>
-                <a href="#">Workflow</a>
-                <a href="#">General</a>
+            <img
+              src="./assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+          <li class="sidebar-list-group">
+            <div class="sidebar-list-altgroup">
+              <img src="./assets/icons/sidebar-list.svg" alt="sidebar-list" />
+              <a href="#" class="sidebar-list-text">Listeler</a>
             </div>
-            <article class="main-lists-container">
-                <div>
-                    <section class="navbar-container navbar-container-close">
-                        <div class="navbar-header-content">
-                            <p>FORMLAR</p>
-                        </div>
-                        <ul class="navbar-lists">
-                            <li class="navbar-list-group">
-                                <div class="list-select">
-                                    <a href="#" class="list-text">Dashboard</a>
-                                    <span class="material-icons-round icon-plus">
-                                        add
-                                    </span>
-                                </div>
-                                <ul class="list-options">
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Dashboard 1</a>
-                                    </li>
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Dashboard 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar-list-group">
-                                <div class="list-select">
-                                    <a href="#" class="list-text">Text Box</a>
-                                    <span class="material-icons-round icon-plus">
-                                        add
-                                    </span>
-                                </div>
-                                <ul class="list-options">
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Text Box 1</a>
-                                    </li>
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Text Box 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar-list-group">
-                                <div class="list-select">
-                                    <a href="#" class="list-text">Security</a>
-                                    <span class="material-icons-round icon-plus">
-                                        add
-                                    </span>
-                                </div>
-                                <ul class="list-options">
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Security 1</a>
-                                    </li>
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Security 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar-list-group">
-                                <div class="list-select">
-                                    <a href="#" class="list-text">Gallery</a>
-                                    <span class="material-icons-round icon-plus">
-                                        add
-                                    </span>
-                                </div>
-                                <ul class="list-options">
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Gallery 1</a>
-                                    </li>
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Gallery 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar-list-group">
-                                <div class="list-select">
-                                    <a href="#" class="list-text">Files</a>
-                                    <span class="material-icons-round icon-plus">
-                                        add
-                                    </span>
-                                </div>
-                                <ul class="list-options">
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Files 1</a>
-                                    </li>
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Files 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar-list-group">
-                                <div class="list-select">
-                                    <a href="#" class="list-text">Treeview</a>
-                                    <span class="material-icons-round icon-plus">
-                                        add
-                                    </span>
-                                </div>
-                                <ul class="list-options">
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Treeview 1</a>
-                                    </li>
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Treeview 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar-list-group">
-                                <div class="list-select">
-                                    <a href="#" class="list-text">Auto</a>
-                                    <span class="material-icons-round icon-plus">
-                                        add
-                                    </span>
-                                </div>
-                                <ul class="list-options">
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Auto 1</a>
-                                    </li>
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Auto 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar-list-group">
-                                <div class="list-select">
-                                    <a href="#" class="list-text">Data Model</a>
-                                    <span class="material-icons-round icon-plus">
-                                        add
-                                    </span>
-                                </div>
-                                <ul class="list-options">
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Data Model 1</a>
-                                    </li>
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Data Model 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar-list-group">
-                                <div class="list-select">
-                                    <a href="#" class="list-text">Setting</a>
-                                    <span class="material-icons-round icon-plus">
-                                        add
-                                    </span>
-                                </div>
-                                <ul class="list-options">
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Setting 1</a>
-                                    </li>
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Setting 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="navbar-search-bar">
-                            <img src="./assets/icons/search.svg" alt="search">
-                            <input type="text" placeholder="Search by menu">
-                        </div>
-                    </section>
-                    <div class="nav-sidebar-toggle-menu">
+            <img
+              src="./assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+          <li class="sidebar-list-group">
+            <div class="sidebar-list-altgroup">
+              <img
+                src="./assets/icons/sidebar-list-grid.svg"
+                alt="sidebar-grid"
+              />
+              <a href="#" class="sidebar-list-text">Todo List</a>
+            </div>
+            <img
+              src="./assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+          <li class="sidebar-list-group">
+            <div class="sidebar-list-altgroup">
+              <img
+                src="./assets/icons/sidebar-grafik.svg"
+                alt="sidebar-grafik"
+              />
+              <a href="#" class="sidebar-list-text">Grafik</a>
+            </div>
+            <img
+              src="./assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+          <li class="sidebar-list-group">
+            <div class="sidebar-list-altgroup">
+              <img src="./assets/icons/search.svg" alt="search" />
+              <a href="#" class="sidebar-list-text">Search</a>
+            </div>
+            <img
+              src="./assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+        </ul>
+        <div class="sidebar-user-container">
+          <img src="./assets/icons/chevron-down.svg" alt="" />
+          <div class="user-content">
+            <div class="user-image">
+              <img
+                src="./assets/icons/sidebar-user-image.svg"
+                alt="sidebar user image"
+              />
+            </div>
+            <div class="user-status user-online"></div>
+          </div>
+        </div>
+      </aside>
+      <!-- Sidebar Main Container -->
+      <main class="dashboard-main-container">
+        <header class="dashboard-main-header">
+          <div class="header-left-content">
+            <img
+              src="./assets/icons/menu-icon.svg"
+              alt="menu"
+              class="icon-menu"
+            />
+            <div class="dshb-dropdown-menu header-left-menu">
+              <div class="menu-select">
+                <p>sigorta.square.com</p>
+                <img src="./assets/icons/chevron-down.svg" alt="down icon" />
+              </div>
+              <div class="menu-options">
+                <div class="menu-option-content">
+                  <p>square 1</p>
+                </div>
+                <div class="menu-option-content">
+                  <p>square.com 2</p>
+                </div>
+                <div class="menu-option-content">
+                  <p>sigorta.square 3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-right-content">
+            <div class="header-dropdown-search">
+              <div class="dshb-dropdown-menu dropdown-document">
+                <div class="menu-select">
+                  <p>Document</p>
+                  <img src="./assets/icons/chevron-down.svg" alt="down icon" />
+                </div>
+                <div class="menu-options"></div>
+              </div>
+              <div class="search-content">
+                <input type="text" name="text" class="" placeholder="Ara" />
+                <img src="./assets/icons/chevron-down.svg" alt="down icon" />
+              </div>
+            </div>
+            <div class="dshb-dropdown-menu dropdown-lang">
+              <div class="menu-select">
+                <p>ENG</p>
+                <img src="./assets/icons/chevron-down.svg" alt="down icon" />
+              </div>
+              <div class="menu-options">
+                <div class="menu-option-content">
+                  <p>AZE</p>
+                </div>
+                <div class="menu-option-content">
+                  <p>RUS</p>
+                </div>
+                <div class="menu-option-content">
+                  <p>TUR</p>
+                </div>
+              </div>
+            </div>
+            <div class="dshb-dropdown-menu dshb-user-content">
+              <div class="menu-select">
+                <div class="user-about-img">
+                  <div class="user-img">
+                    <img
+                      src="./assets/icons/user-ozan-alatli.svg"
+                      alt="ozan-alatli"
+                    />
+                  </div>
+                  <div class="user-about">
+                    <p class="user-name">Ozan Alatlı</p>
+                    <span class="user-prefer"> Proje Yöneticisi </span>
+                  </div>
+                </div>
+                <img src="./assets/icons/chevron-down.svg" alt="down icon" />
+              </div>
+              <div class="menu-options"></div>
+            </div>
+          </div>
+        </header>
+        <div class="dashboard-header-menu">
+          <div class="menu-left">
+            <img src="./assets/icons/header-menu-home.svg" alt="menu-home" />
+            <p>Home</p>
+          </div>
+          <span class="menu-dot"></span>
+          <div class="dshb-dropdown-menu">
+            <div class="menu-select page-link">
+              <p>SQUARE</p>
+              <img src="./assets/icons/chevron-down.svg" alt="down icon" />
+            </div>
+            <div class="menu-options page-link-data">
+              <div class="menu-option-content">
+                <p>Setting</p>
+              </div>
+              <div class="menu-option-content">
+                <p>End User</p>
+              </div>
+              <div class="menu-option-content">
+                <p>Account Settings</p>
+              </div>
+              <div class="menu-option-content">
+                <p>Sign Out</p>
+              </div>
+            </div>
+          </div>
+          <span class="menu-dot"></span>
+          <div>
+            <span>OverduePaymentsReports.aspx</span>
+          </div>
+        </div>
+        <div class="dashboard-header-submenu">
+          <a href="#" class="submenu-active">Main Menu</a>
+          <a href="#">Workflow</a>
+          <a href="#">General</a>
+        </div>
+        <article class="main-lists-container">
+          <div>
+            <section class="navbar-container navbar-container-close">
+              <div class="navbar-header-content">
+                <p>FORMLAR</p>
+              </div>
+              <ul class="navbar-lists">
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Dashboard</a>
+                    <img
+                      src="./assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Dashboard 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Dashboard 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Text Box</a>
+                    <img
+                      src="./assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Text Box 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Text Box 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Security</a>
+                    <img
+                      src="./assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Security 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Security 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Gallery</a>
+                    <img
+                      src="./assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Gallery 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Gallery 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Files</a>
+                    <img
+                      src="./assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Files 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Files 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Treeview</a>
+                    <img
+                      src="./assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Treeview 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Treeview 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Auto</a>
+                    <img
+                      src="./assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Auto 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Auto 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Data Model</a>
+                    <img
+                      src="./assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Data Model 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Data Model 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Setting</a>
+                    <img
+                      src="./assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Setting 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Setting 2</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="navbar-search-bar">
+                <img src="./assets/icons/search.svg" alt="search" />
+                <input type="text" placeholder="Search by menu" />
+              </div>
+            </section>
+            <div class="nav-sidebar-toggle-menu">
+              <button>
+                <img
+                  src="./assets/icons/chevron-down.svg"
+                  alt=""
+                  class="icon-right"
+                />
+              </button>
+            </div>
+          </div>
+          <section class="app-manager">
+            <h1>
+              <img src="./assets/icons/ericsson.svg" alt="Ericsonn" />
+              APP MANAGER
+            </h1>
+            <!-- ! App Manager Main -->
+            <main class="app-manager-main">
+              <!-- ? Manager Main Header -->
+              <div class="manager-main-header">
+                <h2>Public Name</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <!-- ? Manager Main Search -->
+              <div class="manager-main-search">
+                <p>
+                  Search
+                  <img
+                    src="./assets/icons/chevron-left-r.svg"
+                    alt="Bottom Icon"
+                  />
+                </p>
+                <input
+                  type="text"
+                  name="manager-search"
+                  id="manager-search"
+                  placeholder="Bir app arayın."
+                />
+              </div>
+              <!-- ? Manager Main Nav -->
+              <nav class="manager-main-nav">
+                <ul>
+                  <li>
+                    <a href="#">ALL</a>
+                  </li>
+                  <li>
+                    <a href="#">GENERAL</a>
+                  </li>
+                  <li>
+                    <a href="#">COMMERCE</a>
+                  </li>
+                  <li>
+                    <a href="#">PORTAL</a>
+                  </li>
+                  <li>
+                    <a href="#">ENTERPRISE</a>
+                  </li>
+                  <li>
+                    <a href="#">ENTERPRISE</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- ? Manager Content Header -->
+              <div class="manager-content-header">
+                <div class="header-button-box">
+                  <button class="header-red-btn">Check for Update</button>
+                  <button class="header-red-btn red-bold-btn">
+                    Load New Applications
+                  </button>
+                </div>
+                <div class="manager-user-box">
+                  <span class="manager-user-name">Ozan Alatlı </span>
+                  <span class="manager-user-budge">40 TL</span>
+                  <button>
+                    Kredi Al
+                    <img src="./assets/icons/work-alt.svg" alt="Work All" />
+                  </button>
+                </div>
+              </div>
+              <!-- ? Pagination Content -->
+              <div class="pagination-content">
+                <div class="pagination-box">
+                  <a href="#" class="pagination-active">Prev</a>
+                  <a href="#" class="pagination-active">01</a>
+                  <a href="#">02</a>
+                  <a href="#">...</a>
+                  <a href="#">05</a>
+                  <a href="#" class="pagination-active">Next</a>
+                </div>
+                <div class="dshb-dropdown-menu pagination-select-sort">
+                  <div class="menu-select pagination-sort-box">
+                    <p>Fiyata göre</p>
+                    <div>
+                      <img
+                        src="./assets/icons/chevron-right.svg"
+                        alt="Chevron Right"
+                      />
+                    </div>
+                  </div>
+                  <div class="menu-options"></div>
+                </div>
+              </div>
+              <!-- ? App Price Container -->
+              <div class="app-price-container">
+                <!-- TODO App Price Box 1-->
+                <div class="app-price-box">
+                  <!-- App Price Box Left -->
+                  <div class="price-box-left">
+                    <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                  </div>
+                  <!-- * App Price Box Right -->
+                  <div class="price-box-right">
+                    <h2>INSTAGRAM BOT</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                    <!-- * App Price Button Box -->
+                    <div class="price-button-box">
+                      <div class="button-box-left">
+                        <span>12 TL</span>
+                      </div>
+                      <div class="button-box-right">
                         <button>
-                            <span class="material-icons-round icon-right">
-                                arrow_forward_ios
-                            </span>
+                          <img
+                            src="./assets/Icons/unsplash.svg"
+                            alt="Unsplash"
+                          />
+                          Satın Al
                         </button>
+                        <button>
+                          <img
+                            src="./assets/Icons/terminal.svg"
+                            alt="terminal"
+                          />
+                          Detay
+                        </button>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <section class="app-manager">
-                    <h1>
-                        <img src="./assets/icons/ericsson.svg" alt="Ericsonn" />
-                        APP MANAGER
-                    </h1>
-                    <!-- ! App Manager Main -->
-                    <main class="app-manager-main">
-                        <!-- ? Manager Main Header -->
-                        <div class="manager-main-header">
-                            <h2>Public Name</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat.
-                            </p>
-                        </div>
-                        <!-- ? Manager Main Search -->
-                        <div class="manager-main-search">
-                            <p>
-                                Search
-                                <img src="./assets/icons/chevron-left-r.svg" alt="Bottom Icon" />
-                            </p>
-                            <input type="text" name="manager-search" id="manager-search"
-                                placeholder="Bir app arayın." />
-                        </div>
-                        <!-- ? Manager Main Nav -->
-                        <nav class="manager-main-nav">
-                            <ul>
-                                <li>
-                                    <a href="#">ALL</a>
-                                </li>
-                                <li>
-                                    <a href="#">GENERAL</a>
-                                </li>
-                                <li>
-                                    <a href="#">COMMERCE</a>
-                                </li>
-                                <li>
-                                    <a href="#">PORTAL</a>
-                                </li>
-                                <li>
-                                    <a href="#">ENTERPRISE</a>
-                                </li>
-                                <li>
-                                    <a href="#">ENTERPRISE</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <!-- ? Manager Content Header -->
-                        <div class="manager-content-header">
-                            <div class="header-button-box">
-                                <button class="header-red-btn">Check for Update</button>
-                                <button class="header-red-btn red-bold-btn">
-                                    Load New Applications
-                                </button>
-                            </div>
-                            <div class="manager-user-box">
-                                <span class="manager-user-name">Ozan Alatlı </span>
-                                <span class="manager-user-budge">40 TL</span>
-                                <button>
-                                    Kredi Al
-                                    <img src="./assets/icons/work-alt.svg" alt="Work All" />
-                                </button>
-                            </div>
-                        </div>
-                        <!-- ? Pagination Content -->
-                        <div class="pagination-content">
-                            <div class="pagination-box">
-                                <a href="#" class="pagination-active">Prev</a>
-                                <a href="#" class="pagination-active">01</a>
-                                <a href="#">02</a>
-                                <a href="#">...</a>
-                                <a href="#">05</a>
-                                <a href="#" class="pagination-active">Next</a>
-                            </div>
-                            <div class="dshb-dropdown-menu pagination-select-sort">
-                                <div class="menu-select pagination-sort-box">
-                                    <p>Fiyata göre</p>
-                                    <div>
-                                        <img src="./assets/icons/chevron-right.svg" alt="Chevron Right" />
-                                    </div>
-                                </div>
-                                <div class="menu-options"></div>
-                            </div>
-                        </div>
-                        <!-- ? App Price Container -->
-                        <div class="app-price-container">
-                            <!-- TODO App Price Box 1-->
-                            <div class="app-price-box">
-                                <!-- App Price Box Left -->
-                                <div class="price-box-left">
-                                    <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-                                </div>
-                                <!-- * App Price Box Right -->
-                                <div class="price-box-right">
-                                    <h2>INSTAGRAM BOT</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore
-                                    </p>
-                                    <!-- * App Price Button Box -->
-                                    <div class="price-button-box">
-                                        <div class="button-box-left">
-                                            <span>12 TL</span>
-                                        </div>
-                                        <div class="button-box-right">
-                                            <button>
-                                                <img src="./assets/Icons/unsplash.svg" alt="Unsplash" />
-                                                Satın Al
-                                            </button>
-                                            <button>
-                                                <img src="./assets/Icons/terminal.svg" alt="terminal" />
-                                                Detay
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- TODO App Price Box 2-->
-                            <div class="app-price-box">
-                                <!-- App Price Box Left -->
-                                <div class="price-box-left">
-                                    <img src="./assets/Icons/Icons-2.svg" alt="Icon 1" />
-                                </div>
-                                <!-- * App Price Box Right -->
-                                <div class="price-box-right">
-                                    <h2>INSTAGRAM BOT</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore
-                                    </p>
-                                    <!-- * App Price Button Box -->
-                                    <div class="price-button-box">
-                                        <div class="button-box-left">
-                                            <span class="price-free">Free</span>
-                                        </div>
-                                        <div class="button-box-right">
-                                            <button>
-                                                <img src="./assets/Icons/unsplash.svg" alt="Unsplash" />
-                                                Satın Al
-                                            </button>
-                                            <button>
-                                                <img src="./assets/Icons/terminal.svg" alt="terminal" />
-                                                Detay
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- TODO App Price Box 3 -->
-                            <div class="app-price-box">
-                                <!-- App Price Box Left -->
-                                <div class="price-box-left">
-                                    <img src="./assets/Icons/Icons-3.svg" alt="Icon 1" />
-                                </div>
-                                <!-- * App Price Box Right -->
-                                <div class="price-box-right">
-                                    <h2>INSTAGRAM BOT</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore
-                                    </p>
-                                    <!-- * App Price Button Box -->
-                                    <div class="price-button-box">
-                                        <div class="button-box-left">
-                                            <span>12 TL</span>
-                                        </div>
-                                        <div class="button-box-right">
-                                            <button>
-                                                <img src="./assets/Icons/unsplash.svg" alt="Unsplash" />
-                                                Satın Al
-                                            </button>
-                                            <button>
-                                                <img src="./assets/Icons/terminal.svg" alt="terminal" />
-                                                Detay
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- TODO App Price Box 4-->
-                            <div class="app-price-box">
-                                <!-- App Price Box Left -->
-                                <div class="price-box-left">
-                                    <img src="./assets/Icons/Icons-4.svg" alt="Icon 1" />
-                                </div>
-                                <!-- * App Price Box Right -->
-                                <div class="price-box-right">
-                                    <h2>INSTAGRAM BOT</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore
-                                    </p>
-                                    <!-- * App Price Button Box -->
-                                    <div class="price-button-box">
-                                        <div class="button-box-left">
-                                            <span class="price-free">Free</span>
-                                        </div>
-                                        <div class="button-box-right">
-                                            <button>
-                                                <img src="./assets/Icons/unsplash.svg" alt="Unsplash" />
-                                                Satın Al
-                                            </button>
-                                            <button>
-                                                <img src="./assets/Icons/terminal.svg" alt="terminal" />
-                                                Detay
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- TODO App Price Box 5-->
-                            <div class="app-price-box">
-                                <!-- App Price Box Left -->
-                                <div class="price-box-left">
-                                    <img src="./assets/Icons/Icons-5.svg" alt="Icon 1" />
-                                </div>
-                                <!-- * App Price Box Right -->
-                                <div class="price-box-right">
-                                    <h2>INSTAGRAM BOT</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore
-                                    </p>
-                                    <!-- * App Price Button Box -->
-                                    <div class="price-button-box">
-                                        <div class="button-box-left">
-                                            <span>12 TL</span>
-                                        </div>
-                                        <div class="button-box-right">
-                                            <button>
-                                                <img src="./assets/Icons/unsplash.svg" alt="Unsplash" />
-                                                Satın Al
-                                            </button>
-                                            <button>
-                                                <img src="./assets/Icons/terminal.svg" alt="terminal" />
-                                                Detay
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- TODO App Price Box 6-->
-                            <div class="app-price-box">
-                                <!-- App Price Box Left -->
-                                <div class="price-box-left">
-                                    <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-                                </div>
-                                <!-- * App Price Box Right -->
-                                <div class="price-box-right">
-                                    <h2>INSTAGRAM BOT</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore
-                                    </p>
-                                    <!-- * App Price Button Box -->
-                                    <div class="price-button-box">
-                                        <div class="button-box-left">
-                                            <span class="price-free">Free</span>
-                                        </div>
-                                        <div class="button-box-right">
-                                            <button>
-                                                <img src="./assets/Icons/unsplash.svg" alt="Unsplash" />
-                                                Satın Al
-                                            </button>
-                                            <button>
-                                                <img src="./assets/Icons/terminal.svg" alt="terminal" />
-                                                Detay
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- TODO App Price Box 7-->
-                            <div class="app-price-box">
-                                <!-- App Price Box Left -->
-                                <div class="price-box-left">
-                                    <img src="./assets/Icons/Icons-6.svg" alt="Icon 1" />
-                                </div>
-                                <!-- * App Price Box Right -->
-                                <div class="price-box-right">
-                                    <h2>INSTAGRAM BOT</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore
-                                    </p>
-                                    <!-- * App Price Button Box -->
-                                    <div class="price-button-box">
-                                        <div class="button-box-left">
-                                            <span>12 TL</span>
-                                        </div>
-                                        <div class="button-box-right">
-                                            <button>
-                                                <img src="./assets/Icons/unsplash.svg" alt="Unsplash" />
-                                                Satın Al
-                                            </button>
-                                            <button>
-                                                <img src="./assets/Icons/terminal.svg" alt="terminal" />
-                                                Detay
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- TODO App Price Box 8-->
-                            <div class="app-price-box">
-                                <!-- App Price Box Left -->
-                                <div class="price-box-left">
-                                    <img src="./assets/Icons/Icons-2.svg" alt="Icon 1" />
-                                </div>
-                                <!-- * App Price Box Right -->
-                                <div class="price-box-right">
-                                    <h2>INSTAGRAM BOT</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore
-                                    </p>
-                                    <!-- * App Price Button Box -->
-                                    <div class="price-button-box">
-                                        <div class="button-box-left">
-                                            <span>12 TL</span>
-                                        </div>
-                                        <div class="button-box-right">
-                                            <button>
-                                                <img src="./assets/Icons/unsplash.svg" alt="Unsplash" />
-                                                Satın Al
-                                            </button>
-                                            <button>
-                                                <img src="./assets/Icons/terminal.svg" alt="terminal" />
-                                                Detay
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- TODO App Price Box 9-->
-                            <div class="app-price-box">
-                                <!-- App Price Box Left -->
-                                <div class="price-box-left">
-                                    <img src="./assets/Icons/Icons-4.svg" alt="Icon 1" />
-                                </div>
-                                <!-- * App Price Box Right -->
-                                <div class="price-box-right">
-                                    <h2>INSTAGRAM BOT</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore
-                                    </p>
-                                    <!-- * App Price Button Box -->
-                                    <div class="price-button-box">
-                                        <div class="button-box-left">
-                                            <span>12 TL</span>
-                                        </div>
-                                        <div class="button-box-right">
-                                            <button>
-                                                <img src="./assets/Icons/unsplash.svg" alt="Unsplash" />
-                                                Satın Al
-                                            </button>
-                                            <button>
-                                                <img src="./assets/Icons/terminal.svg" alt="terminal" />
-                                                Detay
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- TODO App Price Box  10-->
-                            <div class="app-price-box">
-                                <!-- App Price Box Left -->
-                                <div class="price-box-left">
-                                    <img src="./assets/Icons/Icons-7.svg" alt="Icon 1" />
-                                </div>
-                                <!-- * App Price Box Right -->
-                                <div class="price-box-right">
-                                    <h2>INSTAGRAM BOT</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore
-                                    </p>
-                                    <!-- * App Price Button Box -->
-                                    <div class="price-button-box">
-                                        <div class="button-box-left">
-                                            <span>12 TL</span>
-                                        </div>
-                                        <div class="button-box-right">
-                                            <button>
-                                                <img src="./assets/Icons/unsplash.svg" alt="Unsplash" />
-                                                Satın Al
-                                            </button>
-                                            <button>
-                                                <img src="./assets/Icons/terminal.svg" alt="terminal" />
-                                                Detay
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- TODO App Price Box 11-->
-                            <div class="app-price-box">
-                                <!-- App Price Box Left -->
-                                <div class="price-box-left">
-                                    <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-                                </div>
-                                <!-- * App Price Box Right -->
-                                <div class="price-box-right">
-                                    <h2>INSTAGRAM BOT</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore
-                                    </p>
-                                    <!-- * App Price Button Box -->
-                                    <div class="price-button-box">
-                                        <div class="button-box-left">
-                                            <span class="price-free">Free</span>
-                                        </div>
-                                        <div class="button-box-right">
-                                            <button>
-                                                <img src="./assets/Icons/unsplash.svg" alt="Unsplash" />
-                                                Satın Al
-                                            </button>
-                                            <button>
-                                                <img src="./assets/Icons/terminal.svg" alt="terminal" />
-                                                Detay
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- TODO App Price Box 12-->
-                            <div class="app-price-box">
-                                <!-- App Price Box Left -->
-                                <div class="price-box-left">
-                                    <img src="./assets/Icons/Icons-3.svg" alt="Icon 1" />
-                                </div>
-                                <!-- * App Price Box Right -->
-                                <div class="price-box-right">
-                                    <h2>INSTAGRAM BOT</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore
-                                    </p>
-                                    <!-- * App Price Button Box -->
-                                    <div class="price-button-box">
-                                        <div class="button-box-left">
-                                            <span class="price-free">Free</span>
-                                        </div>
-                                        <div class="button-box-right">
-                                            <button>
-                                                <img src="./assets/Icons/unsplash.svg" alt="Unsplash" />
-                                                Satın Al
-                                            </button>
-                                            <button>
-                                                <img src="./assets/Icons/terminal.svg" alt="terminal" />
-                                                Detay
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ? Pagination Content -->
-                        <div class="pagination-content">
-                            <div class="pagination-box">
-                                <a href="#" class="pagination-active">Prev</a>
-                                <a href="#" class="pagination-active">01</a>
-                                <a href="#">02</a>
-                                <a href="#">...</a>
-                                <a href="#">05</a>
-                                <a href="#" class="pagination-active">Next</a>
-                            </div>
-                        </div>
-                        <!-- ? App Update Container -->
-                        <div class="app-update-container">
-                            <header class="app-update-header">
-                                <p>
-                                    Updates
-                                    <img src="./assets/Icons/glasses-ready.svg" alt="glasses icon" />
-                                    <span class="app-number"> 3 app </span>
-                                    <span class="bold"> Updates found</span>
-                                </p>
-                            </header>
-                            <main class="app-update-main">
-                                <div class="app-main-content">
-                                    <div class="app-price-box price-box-big">
-                                        <div class="price-box-left">
-                                            <input type="checkbox" name="update" id="update" />
-                                            <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-                                        </div>
-                                        <div class="price-box-right">
-                                            <h2>INSTAGRAM BOT</h2>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                                sed do eiusmod tempor incididunt ut labore et dolore
-                                            </p>
-                                            <div class="price-button-box">
-                                                <div class="button-box-right">
-                                                    <div class="button-line"></div>
-                                                    <button>Version 1.1 to 1.2</button>
-                                                    <button>Version Logs</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="app-price-box price-box-big">
-                                        <div class="price-box-left">
-                                            <input type="checkbox" name="update" id="update" />
-                                            <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-                                        </div>
-                                        <div class="price-box-right">
-                                            <h2>INSTAGRAM BOT</h2>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                                sed do eiusmod tempor incididunt ut labore et dolore
-                                            </p>
-                                            <div class="price-button-box">
-                                                <div class="button-box-right">
-                                                    <div class="button-line"></div>
-                                                    <button>Version 1.1 to 1.2</button>
-                                                    <button>Version Logs</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="app-price-box price-box-big">
-                                        <div class="price-box-left">
-                                            <input type="checkbox" name="update" id="update" />
-                                            <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-                                        </div>
-                                        <div class="price-box-right">
-                                            <h2>INSTAGRAM BOT</h2>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                                sed do eiusmod tempor incididunt ut labore et dolore
-                                            </p>
-                                            <div class="price-button-box">
-                                                <div class="button-box-right">
-                                                    <div class="button-line"></div>
-                                                    <button>Version 1.1 to 1.2</button>
-                                                    <button>Version Logs</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="app-price-box price-box-big">
-                                        <div class="price-box-left">
-                                            <input type="checkbox" name="update" id="update" />
-                                            <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-                                        </div>
-                                        <div class="price-box-right">
-                                            <h2>INSTAGRAM BOT</h2>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                                sed do eiusmod tempor incididunt ut labore et dolore
-                                            </p>
-                                            <div class="price-button-box">
-                                                <div class="button-box-right">
-                                                    <div class="button-line"></div>
-                                                    <button>Version 1.1 to 1.2</button>
-                                                    <button>Version Logs</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="app-price-box price-box-big">
-                                        <div class="price-box-left">
-                                            <input type="checkbox" name="update" id="update" />
-                                            <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-                                        </div>
-                                        <div class="price-box-right">
-                                            <h2>INSTAGRAM BOT</h2>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                                sed do eiusmod tempor incididunt ut labore et dolore
-                                            </p>
-                                            <div class="price-button-box">
-                                                <div class="button-box-right">
-                                                    <div class="button-line"></div>
-                                                    <button>Version 1.1 to 1.2</button>
-                                                    <button>Version Logs</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="app-price-box price-box-big">
-                                        <div class="price-box-left">
-                                            <input type="checkbox" name="update" id="update" />
-                                            <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-                                        </div>
-                                        <div class="price-box-right">
-                                            <h2>INSTAGRAM BOT</h2>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                                sed do eiusmod tempor incididunt ut labore et dolore
-                                            </p>
-                                            <div class="price-button-box">
-                                                <div class="button-box-right">
-                                                    <div class="button-line"></div>
-                                                    <button>Version 1.1 to 1.2</button>
-                                                    <button>Version Logs</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="app-price-box price-box-big">
-                                        <div class="price-box-left">
-                                            <input type="checkbox" name="update" id="update" />
-                                            <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-                                        </div>
-                                        <div class="price-box-right">
-                                            <h2>INSTAGRAM BOT</h2>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                                sed do eiusmod tempor incididunt ut labore et dolore
-                                            </p>
-                                            <div class="price-button-box">
-                                                <div class="button-box-right">
-                                                    <div class="button-line"></div>
-                                                    <button>Version 1.1 to 1.2</button>
-                                                    <button>Version Logs</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </main>
-                            <footer class="app-update-footer">
-                                <button class="app-update-button">Update Selected</button>
-                            </footer>
-                        </div>
-                        <!-- ? Customaze App Price Box -->
-                        <div class="customaze-app-price-box">
-                            <!-- TODO App Price Box 1-->
-                            <div class="app-price-box app-first-box">
-                                <!-- App Price Box Left -->
-                                <div class="price-box-left">
-                                    <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-                                    <div class="button-box-left">
-                                        <span>AYLIK 12 TL</span>
-                                    </div>
-                                </div>
-                                <!-- * App Price Box Right -->
-                                <div class="price-box-right">
-                                    <h2>INSTAGRAM BOT</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore
-                                    </p>
-                                    <div class="price-box-aditional">
-                                        <div>
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <a href="#">Comments</a>
-                                        </div>
-                                        <span>Kuramsoft Yazılım</span>
-                                    </div>
-                                    <!-- * App Price Button Box -->
-                                    <div class="price-button-box">
-                                        <div class="button-box-right">
-                                            <button>
-                                                <img src="./assets/Icons/unsplash.svg" alt="Unsplash" />
-                                                Satın Al
-                                            </button>
-                                            <button>
-                                                <img src="./assets/Icons/terminal.svg" alt="terminal" />
-                                                Detay
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- TODO App Price Box 2-->
-                            <div class="app-price-box app-second-box">
-                                <!-- App Price Box Left -->
-                                <div class="price-box-left">
-                                    <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-                                    <div class="button-box-left big-mount">
-                                        <span>AYLIK 12 TL</span>
-                                    </div>
-                                </div>
-                                <!-- * App Price Box Right -->
-                                <div class="price-box-right">
-                                    <h2>INSTAGRAM BOT</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore
-                                    </p>
-                                    <div class="price-box-aditional">
-                                        <div>
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <a href="#">Comments</a>
-                                        </div>
-                                        <span>Kuramsoft Yazılım</span>
-                                    </div>
-                                    <!-- * App Price Button Box -->
-                                    <div class="price-button-box">
-                                        <div class="button-box-right">
-                                            <button>
-                                                <img src="./assets/Icons/unsplash.svg" alt="Unsplash" />
-                                                Satın Al
-                                            </button>
-                                            <button>
-                                                <img src="./assets/Icons/terminal.svg" alt="terminal" />
-                                                Detay
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- TODO App Price Box 3-->
-                            <div class="app-price-box app-third-box">
-                                <!-- App Price Box Left -->
-                                <div class="price-box-left">
-                                    <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-                                    <div class="button-box-left">
-                                        <span class="price-free">Free</span>
-                                    </div>
-                                </div>
-                                <!-- * App Price Box Right -->
-                                <div class="price-box-right">
-                                    <h2>INSTAGRAM BOT</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore
-                                    </p>
-                                    <div class="price-box-aditional">
-                                        <div>
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <a href="#">Comments</a>
-                                        </div>
-                                        <span>Kuramsoft Yazılım</span>
-                                    </div>
-                                    <!-- * App Price Button Box -->
-                                    <div class="price-button-box">
-                                        <div class="button-box-right">
-                                            <button>
-                                                <img src="./assets/Icons/unsplash.svg" alt="Unsplash" />
-                                                Satın Al
-                                            </button>
-                                            <button>
-                                                <img src="./assets/Icons/terminal.svg" alt="terminal" />
-                                                Detay
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- TODO App Price Box 4-->
-                            <div class="app-price-box app-fourth-box">
-                                <!-- App Price Box Left -->
-                                <div class="price-box-left">
-                                    <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-                                    <div class="button-box-left">
-                                        <span class="price-free">Free</span>
-                                    </div>
-                                </div>
-                                <!-- * App Price Box Right -->
-                                <div class="price-box-right">
-                                    <h2>INSTAGRAM BOT</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore
-                                    </p>
-                                    <div class="price-box-aditional">
-                                        <div>
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <a href="#">Comments</a>
-                                        </div>
-                                        <span>Kuramsoft Yazılım</span>
-                                    </div>
-                                    <!-- * App Price Button Box -->
-                                    <div class="price-button-box">
-                                        <div class="button-box-right">
-                                            <button>
-                                                <img src="./assets/Icons/unsplash.svg" alt="Unsplash" />
-                                                Satın Al
-                                            </button>
-                                            <button>
-                                                <img src="./assets/Icons/terminal.svg" alt="terminal" />
-                                                Detay
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- TODO App Price Box 5-->
-                            <div class="app-price-box app-fiveth-box">
-                                <!-- App Price Box Left -->
-                                <div class="price-box-left">
-                                    <div class="button-box-left top-box">
-                                        <span>Aylık</span>
-                                    </div>
-                                    <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
-                                    <div class="button-box-left bottom-box">
-                                        <span>112 tl</span>
-                                    </div>
-                                </div>
-                                <!-- * App Price Box Right -->
-                                <div class="price-box-right">
-                                    <h2>INSTAGRAM BOT</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore
-                                    </p>
-                                    <div class="price-box-aditional">
-                                        <div>
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                            <a href="#">Comments</a>
-                                        </div>
-                                        <span>Kuramsoft Yazılım</span>
-                                    </div>
-                                    <!-- * App Price Button Box -->
-                                    <div class="price-button-box">
-                                        <div class="button-box-right">
-                                            <button>
-                                                <img src="./assets/Icons/unsplash.svg" alt="Unsplash" />
-                                                Satın Al
-                                            </button>
-                                            <button>
-                                                <img src="./assets/Icons/terminal.svg" alt="terminal" />
-                                                Detay
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </main>
-
-                    <div class="deploying-box">
-                        <img src="./assets/icons/close.svg" alt="close button" class="close-button" />
-                        <h3 class="deploying-box-header">Deploying your store</h3>
-                        <div class="loading-box">
-                            <img src="./assets/icons/today.svg" alt="icon" />
-                            <input type="range" name="" id="" />
-                        </div>
-                        <span>
-                            <img src="./assets/icons/reload.svg" alt="icon" />
-                            Clearing data cache & creating fresh codebase cache
-                        </span>
-                        <ul class="deploying-box-list">
-                            <li>
-                                <img src="./assets/icons/check.svg" alt="check" />
-                                Clearing data cache & creating fresh codebase cache
-                            </li>
-                            <li>
-                                <img src="./assets/icons/check.svg" alt="check" />
-                                Clearing data cache & creating fresh codebase cache
-                            </li>
-                            <li>
-                                <img src="./assets/icons/check.svg" alt="check" />
-                                Clearing data cache & creating fresh codebase cache
-                            </li>
-                            <li>
-                                <img src="./assets/icons/check.svg" alt="check" />
-                                Clearing data cache & creating fresh codebase cache
-                            </li>
-                            <li>
-                                <img src="./assets/icons/check.svg" alt="check" />
-                                Clearing data cache & creating fresh codebase cache
-                            </li>
-                        </ul>
+                <!-- TODO App Price Box 2-->
+                <div class="app-price-box">
+                  <!-- App Price Box Left -->
+                  <div class="price-box-left">
+                    <img src="./assets/Icons/Icons-2.svg" alt="Icon 1" />
+                  </div>
+                  <!-- * App Price Box Right -->
+                  <div class="price-box-right">
+                    <h2>INSTAGRAM BOT</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                    <!-- * App Price Button Box -->
+                    <div class="price-button-box">
+                      <div class="button-box-left">
+                        <span class="price-free">Free</span>
+                      </div>
+                      <div class="button-box-right">
+                        <button>
+                          <img
+                            src="./assets/Icons/unsplash.svg"
+                            alt="Unsplash"
+                          />
+                          Satın Al
+                        </button>
+                        <button>
+                          <img
+                            src="./assets/Icons/terminal.svg"
+                            alt="terminal"
+                          />
+                          Detay
+                        </button>
+                      </div>
                     </div>
-                </section>
-            </article>
-        </main>
+                  </div>
+                </div>
+                <!-- TODO App Price Box 3 -->
+                <div class="app-price-box">
+                  <!-- App Price Box Left -->
+                  <div class="price-box-left">
+                    <img src="./assets/Icons/Icons-3.svg" alt="Icon 1" />
+                  </div>
+                  <!-- * App Price Box Right -->
+                  <div class="price-box-right">
+                    <h2>INSTAGRAM BOT</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                    <!-- * App Price Button Box -->
+                    <div class="price-button-box">
+                      <div class="button-box-left">
+                        <span>12 TL</span>
+                      </div>
+                      <div class="button-box-right">
+                        <button>
+                          <img
+                            src="./assets/Icons/unsplash.svg"
+                            alt="Unsplash"
+                          />
+                          Satın Al
+                        </button>
+                        <button>
+                          <img
+                            src="./assets/Icons/terminal.svg"
+                            alt="terminal"
+                          />
+                          Detay
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- TODO App Price Box 4-->
+                <div class="app-price-box">
+                  <!-- App Price Box Left -->
+                  <div class="price-box-left">
+                    <img src="./assets/Icons/Icons-4.svg" alt="Icon 1" />
+                  </div>
+                  <!-- * App Price Box Right -->
+                  <div class="price-box-right">
+                    <h2>INSTAGRAM BOT</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                    <!-- * App Price Button Box -->
+                    <div class="price-button-box">
+                      <div class="button-box-left">
+                        <span class="price-free">Free</span>
+                      </div>
+                      <div class="button-box-right">
+                        <button>
+                          <img
+                            src="./assets/Icons/unsplash.svg"
+                            alt="Unsplash"
+                          />
+                          Satın Al
+                        </button>
+                        <button>
+                          <img
+                            src="./assets/Icons/terminal.svg"
+                            alt="terminal"
+                          />
+                          Detay
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- TODO App Price Box 5-->
+                <div class="app-price-box">
+                  <!-- App Price Box Left -->
+                  <div class="price-box-left">
+                    <img src="./assets/Icons/Icons-5.svg" alt="Icon 1" />
+                  </div>
+                  <!-- * App Price Box Right -->
+                  <div class="price-box-right">
+                    <h2>INSTAGRAM BOT</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                    <!-- * App Price Button Box -->
+                    <div class="price-button-box">
+                      <div class="button-box-left">
+                        <span>12 TL</span>
+                      </div>
+                      <div class="button-box-right">
+                        <button>
+                          <img
+                            src="./assets/Icons/unsplash.svg"
+                            alt="Unsplash"
+                          />
+                          Satın Al
+                        </button>
+                        <button>
+                          <img
+                            src="./assets/Icons/terminal.svg"
+                            alt="terminal"
+                          />
+                          Detay
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- TODO App Price Box 6-->
+                <div class="app-price-box">
+                  <!-- App Price Box Left -->
+                  <div class="price-box-left">
+                    <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                  </div>
+                  <!-- * App Price Box Right -->
+                  <div class="price-box-right">
+                    <h2>INSTAGRAM BOT</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                    <!-- * App Price Button Box -->
+                    <div class="price-button-box">
+                      <div class="button-box-left">
+                        <span class="price-free">Free</span>
+                      </div>
+                      <div class="button-box-right">
+                        <button>
+                          <img
+                            src="./assets/Icons/unsplash.svg"
+                            alt="Unsplash"
+                          />
+                          Satın Al
+                        </button>
+                        <button>
+                          <img
+                            src="./assets/Icons/terminal.svg"
+                            alt="terminal"
+                          />
+                          Detay
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- TODO App Price Box 7-->
+                <div class="app-price-box">
+                  <!-- App Price Box Left -->
+                  <div class="price-box-left">
+                    <img src="./assets/Icons/Icons-6.svg" alt="Icon 1" />
+                  </div>
+                  <!-- * App Price Box Right -->
+                  <div class="price-box-right">
+                    <h2>INSTAGRAM BOT</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                    <!-- * App Price Button Box -->
+                    <div class="price-button-box">
+                      <div class="button-box-left">
+                        <span>12 TL</span>
+                      </div>
+                      <div class="button-box-right">
+                        <button>
+                          <img
+                            src="./assets/Icons/unsplash.svg"
+                            alt="Unsplash"
+                          />
+                          Satın Al
+                        </button>
+                        <button>
+                          <img
+                            src="./assets/Icons/terminal.svg"
+                            alt="terminal"
+                          />
+                          Detay
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- TODO App Price Box 8-->
+                <div class="app-price-box">
+                  <!-- App Price Box Left -->
+                  <div class="price-box-left">
+                    <img src="./assets/Icons/Icons-2.svg" alt="Icon 1" />
+                  </div>
+                  <!-- * App Price Box Right -->
+                  <div class="price-box-right">
+                    <h2>INSTAGRAM BOT</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                    <!-- * App Price Button Box -->
+                    <div class="price-button-box">
+                      <div class="button-box-left">
+                        <span>12 TL</span>
+                      </div>
+                      <div class="button-box-right">
+                        <button>
+                          <img
+                            src="./assets/Icons/unsplash.svg"
+                            alt="Unsplash"
+                          />
+                          Satın Al
+                        </button>
+                        <button>
+                          <img
+                            src="./assets/Icons/terminal.svg"
+                            alt="terminal"
+                          />
+                          Detay
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- TODO App Price Box 9-->
+                <div class="app-price-box">
+                  <!-- App Price Box Left -->
+                  <div class="price-box-left">
+                    <img src="./assets/Icons/Icons-4.svg" alt="Icon 1" />
+                  </div>
+                  <!-- * App Price Box Right -->
+                  <div class="price-box-right">
+                    <h2>INSTAGRAM BOT</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                    <!-- * App Price Button Box -->
+                    <div class="price-button-box">
+                      <div class="button-box-left">
+                        <span>12 TL</span>
+                      </div>
+                      <div class="button-box-right">
+                        <button>
+                          <img
+                            src="./assets/Icons/unsplash.svg"
+                            alt="Unsplash"
+                          />
+                          Satın Al
+                        </button>
+                        <button>
+                          <img
+                            src="./assets/Icons/terminal.svg"
+                            alt="terminal"
+                          />
+                          Detay
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- TODO App Price Box  10-->
+                <div class="app-price-box">
+                  <!-- App Price Box Left -->
+                  <div class="price-box-left">
+                    <img src="./assets/Icons/Icons-7.svg" alt="Icon 1" />
+                  </div>
+                  <!-- * App Price Box Right -->
+                  <div class="price-box-right">
+                    <h2>INSTAGRAM BOT</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                    <!-- * App Price Button Box -->
+                    <div class="price-button-box">
+                      <div class="button-box-left">
+                        <span>12 TL</span>
+                      </div>
+                      <div class="button-box-right">
+                        <button>
+                          <img
+                            src="./assets/Icons/unsplash.svg"
+                            alt="Unsplash"
+                          />
+                          Satın Al
+                        </button>
+                        <button>
+                          <img
+                            src="./assets/Icons/terminal.svg"
+                            alt="terminal"
+                          />
+                          Detay
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- TODO App Price Box 11-->
+                <div class="app-price-box">
+                  <!-- App Price Box Left -->
+                  <div class="price-box-left">
+                    <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                  </div>
+                  <!-- * App Price Box Right -->
+                  <div class="price-box-right">
+                    <h2>INSTAGRAM BOT</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                    <!-- * App Price Button Box -->
+                    <div class="price-button-box">
+                      <div class="button-box-left">
+                        <span class="price-free">Free</span>
+                      </div>
+                      <div class="button-box-right">
+                        <button>
+                          <img
+                            src="./assets/Icons/unsplash.svg"
+                            alt="Unsplash"
+                          />
+                          Satın Al
+                        </button>
+                        <button>
+                          <img
+                            src="./assets/Icons/terminal.svg"
+                            alt="terminal"
+                          />
+                          Detay
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- TODO App Price Box 12-->
+                <div class="app-price-box">
+                  <!-- App Price Box Left -->
+                  <div class="price-box-left">
+                    <img src="./assets/Icons/Icons-3.svg" alt="Icon 1" />
+                  </div>
+                  <!-- * App Price Box Right -->
+                  <div class="price-box-right">
+                    <h2>INSTAGRAM BOT</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                    <!-- * App Price Button Box -->
+                    <div class="price-button-box">
+                      <div class="button-box-left">
+                        <span class="price-free">Free</span>
+                      </div>
+                      <div class="button-box-right">
+                        <button>
+                          <img
+                            src="./assets/Icons/unsplash.svg"
+                            alt="Unsplash"
+                          />
+                          Satın Al
+                        </button>
+                        <button>
+                          <img
+                            src="./assets/Icons/terminal.svg"
+                            alt="terminal"
+                          />
+                          Detay
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ? Pagination Content -->
+              <div class="pagination-content">
+                <div class="pagination-box">
+                  <a href="#" class="pagination-active">Prev</a>
+                  <a href="#" class="pagination-active">01</a>
+                  <a href="#">02</a>
+                  <a href="#">...</a>
+                  <a href="#">05</a>
+                  <a href="#" class="pagination-active">Next</a>
+                </div>
+              </div>
+              <!-- ? App Update Container -->
+              <div class="app-update-container">
+                <header class="app-update-header">
+                  <p>
+                    Updates
+                    <img
+                      src="./assets/Icons/glasses-ready.svg"
+                      alt="glasses icon"
+                    />
+                    <span class="app-number"> 3 app </span>
+                    <span class="bold"> Updates found</span>
+                  </p>
+                </header>
+                <main class="app-update-main">
+                  <div class="app-main-content">
+                    <div class="app-price-box price-box-big">
+                      <div class="price-box-left">
+                        <input type="checkbox" name="update" id="update" />
+                        <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                      </div>
+                      <div class="price-box-right">
+                        <h2>INSTAGRAM BOT</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore
+                        </p>
+                        <div class="price-button-box">
+                          <div class="button-box-right">
+                            <div class="button-line"></div>
+                            <button>Version 1.1 to 1.2</button>
+                            <button>Version Logs</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="app-price-box price-box-big">
+                      <div class="price-box-left">
+                        <input type="checkbox" name="update" id="update" />
+                        <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                      </div>
+                      <div class="price-box-right">
+                        <h2>INSTAGRAM BOT</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore
+                        </p>
+                        <div class="price-button-box">
+                          <div class="button-box-right">
+                            <div class="button-line"></div>
+                            <button>Version 1.1 to 1.2</button>
+                            <button>Version Logs</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="app-price-box price-box-big">
+                      <div class="price-box-left">
+                        <input type="checkbox" name="update" id="update" />
+                        <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                      </div>
+                      <div class="price-box-right">
+                        <h2>INSTAGRAM BOT</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore
+                        </p>
+                        <div class="price-button-box">
+                          <div class="button-box-right">
+                            <div class="button-line"></div>
+                            <button>Version 1.1 to 1.2</button>
+                            <button>Version Logs</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="app-price-box price-box-big">
+                      <div class="price-box-left">
+                        <input type="checkbox" name="update" id="update" />
+                        <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                      </div>
+                      <div class="price-box-right">
+                        <h2>INSTAGRAM BOT</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore
+                        </p>
+                        <div class="price-button-box">
+                          <div class="button-box-right">
+                            <div class="button-line"></div>
+                            <button>Version 1.1 to 1.2</button>
+                            <button>Version Logs</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="app-price-box price-box-big">
+                      <div class="price-box-left">
+                        <input type="checkbox" name="update" id="update" />
+                        <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                      </div>
+                      <div class="price-box-right">
+                        <h2>INSTAGRAM BOT</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore
+                        </p>
+                        <div class="price-button-box">
+                          <div class="button-box-right">
+                            <div class="button-line"></div>
+                            <button>Version 1.1 to 1.2</button>
+                            <button>Version Logs</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="app-price-box price-box-big">
+                      <div class="price-box-left">
+                        <input type="checkbox" name="update" id="update" />
+                        <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                      </div>
+                      <div class="price-box-right">
+                        <h2>INSTAGRAM BOT</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore
+                        </p>
+                        <div class="price-button-box">
+                          <div class="button-box-right">
+                            <div class="button-line"></div>
+                            <button>Version 1.1 to 1.2</button>
+                            <button>Version Logs</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="app-price-box price-box-big">
+                      <div class="price-box-left">
+                        <input type="checkbox" name="update" id="update" />
+                        <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                      </div>
+                      <div class="price-box-right">
+                        <h2>INSTAGRAM BOT</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore
+                        </p>
+                        <div class="price-button-box">
+                          <div class="button-box-right">
+                            <div class="button-line"></div>
+                            <button>Version 1.1 to 1.2</button>
+                            <button>Version Logs</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </main>
+                <footer class="app-update-footer">
+                  <button class="app-update-button">Update Selected</button>
+                </footer>
+              </div>
+              <!-- ? Customaze App Price Box -->
+              <div class="customaze-app-price-box">
+                <!-- TODO App Price Box 1-->
+                <div class="app-price-box app-first-box">
+                  <!-- App Price Box Left -->
+                  <div class="price-box-left">
+                    <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                    <div class="button-box-left">
+                      <span>AYLIK 12 TL</span>
+                    </div>
+                  </div>
+                  <!-- * App Price Box Right -->
+                  <div class="price-box-right">
+                    <h2>INSTAGRAM BOT</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                    <div class="price-box-aditional">
+                      <div>
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <a href="#">Comments</a>
+                      </div>
+                      <span>Kuramsoft Yazılım</span>
+                    </div>
+                    <!-- * App Price Button Box -->
+                    <div class="price-button-box">
+                      <div class="button-box-right">
+                        <button>
+                          <img
+                            src="./assets/Icons/unsplash.svg"
+                            alt="Unsplash"
+                          />
+                          Satın Al
+                        </button>
+                        <button>
+                          <img
+                            src="./assets/Icons/terminal.svg"
+                            alt="terminal"
+                          />
+                          Detay
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- TODO App Price Box 2-->
+                <div class="app-price-box app-second-box">
+                  <!-- App Price Box Left -->
+                  <div class="price-box-left">
+                    <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                    <div class="button-box-left big-mount">
+                      <span>AYLIK 12 TL</span>
+                    </div>
+                  </div>
+                  <!-- * App Price Box Right -->
+                  <div class="price-box-right">
+                    <h2>INSTAGRAM BOT</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                    <div class="price-box-aditional">
+                      <div>
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <a href="#">Comments</a>
+                      </div>
+                      <span>Kuramsoft Yazılım</span>
+                    </div>
+                    <!-- * App Price Button Box -->
+                    <div class="price-button-box">
+                      <div class="button-box-right">
+                        <button>
+                          <img
+                            src="./assets/Icons/unsplash.svg"
+                            alt="Unsplash"
+                          />
+                          Satın Al
+                        </button>
+                        <button>
+                          <img
+                            src="./assets/Icons/terminal.svg"
+                            alt="terminal"
+                          />
+                          Detay
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- TODO App Price Box 3-->
+                <div class="app-price-box app-third-box">
+                  <!-- App Price Box Left -->
+                  <div class="price-box-left">
+                    <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                    <div class="button-box-left">
+                      <span class="price-free">Free</span>
+                    </div>
+                  </div>
+                  <!-- * App Price Box Right -->
+                  <div class="price-box-right">
+                    <h2>INSTAGRAM BOT</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                    <div class="price-box-aditional">
+                      <div>
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <a href="#">Comments</a>
+                      </div>
+                      <span>Kuramsoft Yazılım</span>
+                    </div>
+                    <!-- * App Price Button Box -->
+                    <div class="price-button-box">
+                      <div class="button-box-right">
+                        <button>
+                          <img
+                            src="./assets/Icons/unsplash.svg"
+                            alt="Unsplash"
+                          />
+                          Satın Al
+                        </button>
+                        <button>
+                          <img
+                            src="./assets/Icons/terminal.svg"
+                            alt="terminal"
+                          />
+                          Detay
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- TODO App Price Box 4-->
+                <div class="app-price-box app-fourth-box">
+                  <!-- App Price Box Left -->
+                  <div class="price-box-left">
+                    <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                    <div class="button-box-left">
+                      <span class="price-free">Free</span>
+                    </div>
+                  </div>
+                  <!-- * App Price Box Right -->
+                  <div class="price-box-right">
+                    <h2>INSTAGRAM BOT</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                    <div class="price-box-aditional">
+                      <div>
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <a href="#">Comments</a>
+                      </div>
+                      <span>Kuramsoft Yazılım</span>
+                    </div>
+                    <!-- * App Price Button Box -->
+                    <div class="price-button-box">
+                      <div class="button-box-right">
+                        <button>
+                          <img
+                            src="./assets/Icons/unsplash.svg"
+                            alt="Unsplash"
+                          />
+                          Satın Al
+                        </button>
+                        <button>
+                          <img
+                            src="./assets/Icons/terminal.svg"
+                            alt="terminal"
+                          />
+                          Detay
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- TODO App Price Box 5-->
+                <div class="app-price-box app-fiveth-box">
+                  <!-- App Price Box Left -->
+                  <div class="price-box-left">
+                    <div class="button-box-left top-box">
+                      <span>Aylık</span>
+                    </div>
+                    <img src="./assets/Icons/Icons-1.svg" alt="Icon 1" />
+                    <div class="button-box-left bottom-box">
+                      <span>112 tl</span>
+                    </div>
+                  </div>
+                  <!-- * App Price Box Right -->
+                  <div class="price-box-right">
+                    <h2>INSTAGRAM BOT</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                    <div class="price-box-aditional">
+                      <div>
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <img
+                          src="./assets/icons/icon-star.svg"
+                          alt="star icon"
+                        />
+                        <a href="#">Comments</a>
+                      </div>
+                      <span>Kuramsoft Yazılım</span>
+                    </div>
+                    <!-- * App Price Button Box -->
+                    <div class="price-button-box">
+                      <div class="button-box-right">
+                        <button>
+                          <img
+                            src="./assets/Icons/unsplash.svg"
+                            alt="Unsplash"
+                          />
+                          Satın Al
+                        </button>
+                        <button>
+                          <img
+                            src="./assets/Icons/terminal.svg"
+                            alt="terminal"
+                          />
+                          Detay
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+
+            <div class="deploying-box">
+              <img
+                src="./assets/icons/close.svg"
+                alt="close button"
+                class="close-button"
+              />
+              <h3 class="deploying-box-header">Deploying your store</h3>
+              <div class="loading-box">
+                <img src="./assets/icons/today.svg" alt="icon" />
+                <input type="range" name="" id="" />
+              </div>
+              <span>
+                <img src="./assets/icons/reload.svg" alt="icon" />
+                Clearing data cache & creating fresh codebase cache
+              </span>
+              <ul class="deploying-box-list">
+                <li>
+                  <img src="./assets/icons/check.svg" alt="check" />
+                  Clearing data cache & creating fresh codebase cache
+                </li>
+                <li>
+                  <img src="./assets/icons/check.svg" alt="check" />
+                  Clearing data cache & creating fresh codebase cache
+                </li>
+                <li>
+                  <img src="./assets/icons/check.svg" alt="check" />
+                  Clearing data cache & creating fresh codebase cache
+                </li>
+                <li>
+                  <img src="./assets/icons/check.svg" alt="check" />
+                  Clearing data cache & creating fresh codebase cache
+                </li>
+                <li>
+                  <img src="./assets/icons/check.svg" alt="check" />
+                  Clearing data cache & creating fresh codebase cache
+                </li>
+              </ul>
+            </div>
+          </section>
+        </article>
+      </main>
     </section>
 
     <!-- JavaScript -->
     <script src="./js/dropdown.js"></script>
     <script src="./js/dashboard.js"></script>
-</body>
-
+  </body>
 </html>

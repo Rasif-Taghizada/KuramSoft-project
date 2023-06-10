@@ -1,496 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard Table</title>
     <!-- Pure CSS -->
-    <link rel="stylesheet" href="./css/dashboard/dashboard-table.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <link rel="stylesheet" href="./css/colors.css" />
+    <link rel="stylesheet" href="./css/dashboard/dashboard-navbar.css" />
+    <link rel="stylesheet" href="./css/app-manager/app-manager.css" />
+    <link rel="stylesheet" href="./css/dashboard/dashboard-table.css" />
     <!-- Google Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Dashboard Header -->
     <header class="dashboard-navbar">
-        <div class="dashboard-navbar-logo">
-            <!-- Navbar Image -->
-            <div class="navbar-logo-image">
-                <img src="./assets/Images/C-logo.svg" alt="C logo">
-            </div>
-            <div class="dshb-dropdown-menu header-left-menu">
-                <div class="menu-select">
-                    <p>sigorta.square.com</p>
-                    <span class="material-icons-round icon-chevron-down">
-                        expand_more
-                    </span>
-                </div>
-                <div class="menu-options">
-                    <div class="menu-option-content">
-                        <p>square 1</p>
-                    </div>
-                    <div class="menu-option-content">
-                        <p>square.com 2</p>
-                    </div>
-                    <div class="menu-option-content">
-                        <p>sigorta.square 3</p>
-                    </div>
-                </div>
-            </div>
+      <div class="dashboard-navbar-logo">
+        <!-- Navbar Image -->
+        <div class="navbar-logo-image">
+          <img src="./assets/Images/C-logo.svg" alt="C logo" />
         </div>
-        <!-- Navbar Right Content -->
-        <div class="header-right-content">
-            <div class="header-dropdown-search">
-                <div class="dshb-dropdown-menu dropdown-document">
-                    <div class="menu-select">
-                        <p>Document</p>
-                        <span class="material-icons-round icon-chevron-down">
-                            expand_more
-                        </span>
-                    </div>
-                    <div class="menu-options"></div>
-                </div>
-                <div class="search-content">
-                    <input type="text" name="text" class="" placeholder="Ara">
-                    <span class="material-icons-round icon-search">
-                        search
-                    </span>
-                </div>
+        <div class="dshb-dropdown-menu header-left-menu">
+          <div class="menu-select">
+            <p>sigorta.square.com</p>
+            <span class="material-icons-round icon-chevron-down">
+              expand_more
+            </span>
+          </div>
+          <div class="menu-options">
+            <div class="menu-option-content">
+              <p>square 1</p>
             </div>
-            <div class="dshb-dropdown-menu dropdown-lang">
-                <div class="menu-select">
-                    <p>ENG</p>
-                    <span class="material-icons-round icon-chevron-down">
-                        expand_more
-                    </span>
-                </div>
-                <div class="menu-options">
-                    <div class="menu-option-content">
-                        <p>AZE</p>
-                    </div>
-                    <div class="menu-option-content">
-                        <p>RUS</p>
-                    </div>
-                    <div class="menu-option-content">
-                        <p>TUR</p>
-                    </div>
-                </div>
+            <div class="menu-option-content">
+              <p>square.com 2</p>
             </div>
-            <div class="dshb-dropdown-menu dshb-user-content">
-                <div class="menu-select">
-                    <div class="user-about-img">
-                        <div class="user-img">
-                            <img src="./assets/icons/user-ozan-alatli.svg" alt="ozan-alatli">
-                        </div>
-                        <div class="user-about">
-                            <p class="user-name">
-                                Ozan Alatlı
-                            </p>
-                            <span class="user-prefer">
-                                Proje Yöneticisi
-                            </span>
-                        </div>
-                    </div>
-                    <span class="material-icons-round icon-chevron-down">
-                        expand_more
-                    </span>
-                </div>
-                <div class="menu-options"></div>
+            <div class="menu-option-content">
+              <p>sigorta.square 3</p>
             </div>
+          </div>
         </div>
+      </div>
+      <!-- Navbar Right Content -->
+      <div class="header-right-content">
+        <div class="header-dropdown-search">
+          <div class="dshb-dropdown-menu dropdown-document">
+            <div class="menu-select">
+              <p>Document</p>
+              <span class="material-icons-round icon-chevron-down">
+                expand_more
+              </span>
+            </div>
+            <div class="menu-options"></div>
+          </div>
+          <div class="search-content">
+            <input type="text" name="text" class="" placeholder="Ara" />
+            <span class="material-icons-round icon-search"> search </span>
+          </div>
+        </div>
+        <div class="dshb-dropdown-menu dropdown-lang">
+          <div class="menu-select">
+            <p>ENG</p>
+            <span class="material-icons-round icon-chevron-down">
+              expand_more
+            </span>
+          </div>
+          <div class="menu-options">
+            <div class="menu-option-content">
+              <p>AZE</p>
+            </div>
+            <div class="menu-option-content">
+              <p>RUS</p>
+            </div>
+            <div class="menu-option-content">
+              <p>TUR</p>
+            </div>
+          </div>
+        </div>
+        <div class="dshb-dropdown-menu dshb-user-content">
+          <div class="menu-select">
+            <div class="user-about-img">
+              <div class="user-img">
+                <img
+                  src="./assets/icons/user-ozan-alatli.svg"
+                  alt="ozan-alatli"
+                />
+              </div>
+              <div class="user-about">
+                <p class="user-name">Ozan Alatlı</p>
+                <span class="user-prefer"> Proje Yöneticisi </span>
+              </div>
+            </div>
+            <span class="material-icons-round icon-chevron-down">
+              expand_more
+            </span>
+          </div>
+          <div class="menu-options"></div>
+        </div>
+      </div>
     </header>
     <!-- Dashboard Navbar Lists Container -->
     <nav class="dashboard-navbar-lists">
-        <ul class="dashboard-dropdown-lists">
-            <li class="dropdown-list-item">
-                <div class="list-content">
-                    <span class="list-item-text">Security</span>
-                    <span class="material-icons-round icon-chevron-down">
-                        expand_more
-                    </span>
-                </div>
-                <ul class="dropdown-hidden-lists">
-                    <li class="hidden-list-item">
-                        <div>
-                            <span>Gallery</span>
-                            <span class="material-icons-round icon-plus">
-                                add
-                            </span>
-                        </div>
-                    </li>
-                    <li class="hidden-list-item">
-                        <div>
-                            <span>Treeview</span>
-                            <span class="material-icons-round icon-plus">
-                                add
-                            </span>
-                        </div>
-                    </li>
-                    <li class="hidden-list-item">
-                        <div>
-                            <span>Text Box</span>
-                            <span class="material-icons-round icon-plus">
-                                add
-                            </span>
-                        </div>
-                    </li>
-                    <li class="hidden-list-item">
-                        <div>
-                            <span>Security</span>
-                            <span class="material-icons-round icon-plus">
-                                add
-                            </span>
-                        </div>
-                        <ul class="dropdown-nested-hidden-list">
-                            <li class="nested-hidden-list-item">
-                                <img src="./assets/icons/corner-down-right.svg" alt="corner-down-right">
-                                <span>Textbox</span>
-                            </li>
-                            <li class="nested-hidden-list-item">
-                                <img src="./assets/icons/corner-down-right.svg" alt="corner-down-right">
-                                <span>Gallery</span>
-                            </li>
-                            <li class="nested-hidden-list-item">
-                                <img src="./assets/icons/corner-down-right.svg" alt="corner-down-right">
-                                <span>Gallery</span>
-                            </li>
-                            <li class="nested-hidden-list-item">
-                                <img src="./assets/icons/corner-down-right.svg" alt="corner-down-right">
-                                <span>Gallery</span>
-                            </li>
-                            <li class="nested-hidden-list-item">
-                                <img src="./assets/icons/corner-down-right.svg" alt="corner-down-right">
-                                <span>Gallery</span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="hidden-list-item">
-                        <div>
-                            <span>Gallery</span>
-                            <span class="material-icons-round icon-plus">
-                                add
-                            </span>
-                        </div>
-                    </li>
-                    <li class="hidden-list-item">
-                        <div>
-                            <span>Files</span>
-                            <span class="material-icons-round icon-plus">
-                                add
-                            </span>
-                        </div>
-                    </li>
-                    <li class="hidden-list-item">
-                        <div>
-                            <span>Treeview</span>
-                            <span class="material-icons-round icon-plus">
-                                add
-                            </span>
-                        </div>
-                    </li>
-                </ul>
+      <ul class="dashboard-dropdown-lists">
+        <li class="dropdown-list-item">
+          <div class="list-content">
+            <span class="list-item-text">Security</span>
+            <span class="material-icons-round icon-chevron-down">
+              expand_more
+            </span>
+          </div>
+          <ul class="dropdown-hidden-lists">
+            <li class="hidden-list-item">
+              <div>
+                <span>Gallery</span>
+                <span class="material-icons-round icon-plus"> add </span>
+              </div>
             </li>
-            <li class="dropdown-list-item">
-                <div class="list-content">
-                    <span class="list-item-text">Gallery</span>
-                    <span class="material-icons-round icon-chevron-down">
-                        expand_more
-                    </span>
-                </div>
+            <li class="hidden-list-item">
+              <div>
+                <span>Treeview</span>
+                <span class="material-icons-round icon-plus"> add </span>
+              </div>
             </li>
-            <li class="dropdown-list-item">
-                <div class="list-content">
-                    <span class="list-item-text">Files</span>
-                    <span class="material-icons-round icon-chevron-down">
-                        expand_more
-                    </span>
-                </div>
+            <li class="hidden-list-item">
+              <div>
+                <span>Text Box</span>
+                <span class="material-icons-round icon-plus"> add </span>
+              </div>
             </li>
-            <li class="dropdown-list-item">
-                <div class="list-content">
-                    <span class="list-item-text">Treeview</span>
-                    <span class="material-icons-round icon-chevron-down">
-                        expand_more
-                    </span>
-                </div>
+            <li class="hidden-list-item">
+              <div>
+                <span>Security</span>
+                <span class="material-icons-round icon-plus"> add </span>
+              </div>
+              <ul class="dropdown-nested-hidden-list">
+                <li class="nested-hidden-list-item">
+                  <img
+                    src="./assets/icons/corner-down-right.svg"
+                    alt="corner-down-right"
+                  />
+                  <span>Textbox</span>
+                </li>
+                <li class="nested-hidden-list-item">
+                  <img
+                    src="./assets/icons/corner-down-right.svg"
+                    alt="corner-down-right"
+                  />
+                  <span>Gallery</span>
+                </li>
+                <li class="nested-hidden-list-item">
+                  <img
+                    src="./assets/icons/corner-down-right.svg"
+                    alt="corner-down-right"
+                  />
+                  <span>Gallery</span>
+                </li>
+                <li class="nested-hidden-list-item">
+                  <img
+                    src="./assets/icons/corner-down-right.svg"
+                    alt="corner-down-right"
+                  />
+                  <span>Gallery</span>
+                </li>
+                <li class="nested-hidden-list-item">
+                  <img
+                    src="./assets/icons/corner-down-right.svg"
+                    alt="corner-down-right"
+                  />
+                  <span>Gallery</span>
+                </li>
+              </ul>
             </li>
-            <li class="dropdown-list-item">
-                <div class="list-content">
-                    <span class="list-item-text">Auto Model</span>
-                    <span class="material-icons-round icon-chevron-down">
-                        expand_more
-                    </span>
-                </div>
+            <li class="hidden-list-item">
+              <div>
+                <span>Gallery</span>
+                <span class="material-icons-round icon-plus"> add </span>
+              </div>
             </li>
-            <li class="dropdown-list-item">
-                <div class="list-content">
-                    <span class="list-item-text">Data Model</span>
-                    <span class="material-icons-round icon-chevron-down">
-                        expand_more
-                    </span>
-                </div>
+            <li class="hidden-list-item">
+              <div>
+                <span>Files</span>
+                <span class="material-icons-round icon-plus"> add </span>
+              </div>
             </li>
-            <li class="dropdown-list-item">
-                <div class="list-content">
-                    <span class="list-item-text">Setting</span>
-                    <span class="material-icons-round icon-chevron-down">
-                        expand_more
-                    </span>
-                </div>
+            <li class="hidden-list-item">
+              <div>
+                <span>Treeview</span>
+                <span class="material-icons-round icon-plus"> add </span>
+              </div>
             </li>
-            <li class="dropdown-list-item">
-                <div class="list-content">
-                    <span class="list-item-text">Dashboard</span>
-                    <span class="material-icons-round icon-chevron-down">
-                        expand_more
-                    </span>
-                </div>
-            </li>
-            <li class="dropdown-list-item">
-                <div class="list-content">
-                    <span class="list-item-text">Textbox</span>
-                    <span class="material-icons-round icon-chevron-down">
-                        expand_more
-                    </span>
-                </div>
-            </li>
-            <li class="dropdown-list-item">
-                <div class="list-content">
-                    <span class="list-item-text">Security</span>
-                    <span class="material-icons-round icon-chevron-down">
-                        expand_more
-                    </span>
-                </div>
-            </li>
-            <li class="dropdown-list-item">
-                <div class="list-content">
-                    <span class="list-item-text">Gallery</span>
-                    <span class="material-icons-round icon-chevron-down">
-                        expand_more
-                    </span>
-                </div>
-            </li>
-            <li class="dropdown-list-item">
-                <div class="list-content">
-                    <span class="list-item-text">Files</span>
-                    <span class="material-icons-round icon-chevron-down">
-                        expand_more
-                    </span>
-                </div>
-            </li>
-            <li class="dropdown-list-item">
-                <div class="list-content">
-                    <span class="list-item-text">Treeview</span>
-                    <span class="material-icons-round icon-chevron-down">
-                        expand_more
-                    </span>
-                </div>
-            </li>
-            <li class="dropdown-list-item">
-                <div class="list-content">
-                    <span class="list-item-text">Gallery</span>
-                    <span class="material-icons-round icon-chevron-down">
-                        expand_more
-                    </span>
-                </div>
-            </li>
-            <li class="dropdown-list-item">
-                <div class="list-content">
-                    <span class="list-item-text">Files</span>
-                    <span class="material-icons-round icon-chevron-down">
-                        expand_more
-                    </span>
-                </div>
-            </li>
-        </ul>
+          </ul>
+        </li>
+        <li class="dropdown-list-item">
+          <div class="list-content">
+            <span class="list-item-text">Gallery</span>
+            <span class="material-icons-round icon-chevron-down">
+              expand_more
+            </span>
+          </div>
+        </li>
+        <li class="dropdown-list-item">
+          <div class="list-content">
+            <span class="list-item-text">Files</span>
+            <span class="material-icons-round icon-chevron-down">
+              expand_more
+            </span>
+          </div>
+        </li>
+        <li class="dropdown-list-item">
+          <div class="list-content">
+            <span class="list-item-text">Treeview</span>
+            <span class="material-icons-round icon-chevron-down">
+              expand_more
+            </span>
+          </div>
+        </li>
+        <li class="dropdown-list-item">
+          <div class="list-content">
+            <span class="list-item-text">Auto Model</span>
+            <span class="material-icons-round icon-chevron-down">
+              expand_more
+            </span>
+          </div>
+        </li>
+        <li class="dropdown-list-item">
+          <div class="list-content">
+            <span class="list-item-text">Data Model</span>
+            <span class="material-icons-round icon-chevron-down">
+              expand_more
+            </span>
+          </div>
+        </li>
+        <li class="dropdown-list-item">
+          <div class="list-content">
+            <span class="list-item-text">Setting</span>
+            <span class="material-icons-round icon-chevron-down">
+              expand_more
+            </span>
+          </div>
+        </li>
+        <li class="dropdown-list-item">
+          <div class="list-content">
+            <span class="list-item-text">Dashboard</span>
+            <span class="material-icons-round icon-chevron-down">
+              expand_more
+            </span>
+          </div>
+        </li>
+        <li class="dropdown-list-item">
+          <div class="list-content">
+            <span class="list-item-text">Textbox</span>
+            <span class="material-icons-round icon-chevron-down">
+              expand_more
+            </span>
+          </div>
+        </li>
+        <li class="dropdown-list-item">
+          <div class="list-content">
+            <span class="list-item-text">Security</span>
+            <span class="material-icons-round icon-chevron-down">
+              expand_more
+            </span>
+          </div>
+        </li>
+        <li class="dropdown-list-item">
+          <div class="list-content">
+            <span class="list-item-text">Gallery</span>
+            <span class="material-icons-round icon-chevron-down">
+              expand_more
+            </span>
+          </div>
+        </li>
+        <li class="dropdown-list-item">
+          <div class="list-content">
+            <span class="list-item-text">Files</span>
+            <span class="material-icons-round icon-chevron-down">
+              expand_more
+            </span>
+          </div>
+        </li>
+        <li class="dropdown-list-item">
+          <div class="list-content">
+            <span class="list-item-text">Treeview</span>
+            <span class="material-icons-round icon-chevron-down">
+              expand_more
+            </span>
+          </div>
+        </li>
+        <li class="dropdown-list-item">
+          <div class="list-content">
+            <span class="list-item-text">Gallery</span>
+            <span class="material-icons-round icon-chevron-down">
+              expand_more
+            </span>
+          </div>
+        </li>
+        <li class="dropdown-list-item">
+          <div class="list-content">
+            <span class="list-item-text">Files</span>
+            <span class="material-icons-round icon-chevron-down">
+              expand_more
+            </span>
+          </div>
+        </li>
+      </ul>
     </nav>
     <!-- Dashboard Header Menu -->
     <div class="dashboard-header-menu">
-        <div class="menu-left">
-            <img src="./assets/icons/header-menu-home.svg" alt="menu-home">
-            <p>Home</p>
+      <div class="menu-left">
+        <img src="./assets/icons/header-menu-home.svg" alt="menu-home" />
+        <p>Home</p>
+      </div>
+      <span class="menu-dot"></span>
+      <div class="dshb-dropdown-menu">
+        <div class="menu-select">
+          <p>SQUARE</p>
+          <span class="material-icons-round icon-chevron-down">
+            expand_more
+          </span>
         </div>
-        <span class="menu-dot"></span>
-        <div class="dshb-dropdown-menu">
-            <div class="menu-select">
-                <p>SQUARE</p>
-                <span class="material-icons-round icon-chevron-down">
-                    expand_more
-                </span>
-            </div>
-            <div class="menu-options"></div>
-        </div>
-        <span class="menu-dot"></span>
-        <div>
-            <span>OverduePaymentsReports.aspx</span>
-        </div>
+        <div class="menu-options"></div>
+      </div>
+      <span class="menu-dot"></span>
+      <div>
+        <span>OverduePaymentsReports.aspx</span>
+      </div>
     </div>
 
     <section class="dashboard-table-container">
-        <!-- Container Header -->
-        <div class="dashboard-table-header">
-            <!-- Header Content Left Section -->
-            <div class="dashboard-table-head-left">
-                <div>
-                    <img src="./assets/icons/math-plus.svg" alt="">
-                </div>
-                <p>Filtre</p>
-                <button class="filtr-btn">
-                    <span>North American</span>
-                    <img src="./assets/icons/icon-close.svg" alt="close icon">
-                </button>
-                <button class="filtr-btn">
-                    <span>Canada</span>
-                    <img src="./assets/icons/icon-close.svg" alt="close icon">
-                </button>
-                <button class="filtr-btn">
-                    <span>Agency</span>
-                    <img src="./assets/icons/icon-close.svg" alt="close icon">
-                </button>
-            </div>
-            <!-- Header Section Right Content -->
-            <div class="dashboard-table-head-right">
-                <!-- Right Content Combobox Menu -->
-                <div class="dshb-dropdown-menu combobox-btn">
-                    <div class="menu-select">
-                        <p>Combobox</p>
-                        <span class="material-icons-round icon-chevron-down">
-                            expand_more
-                        </span>
-                    </div>
-                    <div class="menu-options">
-                        <div class="menu-option-content">
-                            <p>Combobox 1</p>
-                        </div>
-                        <div class="menu-option-content">
-                            <p>Combobox 2</p>
-                        </div>
-                        <div class="menu-option-content">
-                            <p>Combobox 3</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="add-upload-export-btns">
-                    <button class="add-btn">
-                        <span>Add</span>
-                        <img src="./assets/icons/insert-after-r.svg" alt="insert-after-r">
-                    </button>
-                    <button class="upload-btn">
-                        <span>Upload</span>
-                        <img src="./assets/icons/insert-before.svg" alt="insert-before">
-                    </button>
-                    <button class="export-btn">
-                        <span>Export</span>
-                        <img src="./assets/icons/export-btn.svg" alt="export-btn">
-                    </button>
-                </div>
-            </div>
+      <!-- Container Header -->
+      <div class="dashboard-table-header">
+        <!-- Header Content Left Section -->
+        <div class="dashboard-table-head-left">
+          <div>
+            <img src="./assets/icons/math-plus.svg" alt="" />
+          </div>
+          <p>Filtre</p>
+          <button class="filtr-btn">
+            <span>North American</span>
+            <img src="./assets/icons/icon-close.svg" alt="close icon" />
+          </button>
+          <button class="filtr-btn">
+            <span>Canada</span>
+            <img src="./assets/icons/icon-close.svg" alt="close icon" />
+          </button>
+          <button class="filtr-btn">
+            <span>Agency</span>
+            <img src="./assets/icons/icon-close.svg" alt="close icon" />
+          </button>
         </div>
-        <div class="dashboard-table-sub-header">
-            <div class="dashboard-table-sub-header-left">
-                <span>Show</span>
-                <div class="dshb-dropdown-menu count-btn">
-                    <div class="menu-select">
-                        <p>10</p>
-                        <div>
-                            <span class="material-icons-round icon-chevron-down">
-                                expand_more
-                            </span>
-                        </div>
-                    </div>
-                    <div class="menu-options">
-                        <div class="menu-option-content">
-                            <p>11</p>
-                        </div>
-                        <div class="menu-option-content">
-                            <p>12</p>
-                        </div>
-                        <div class="menu-option-content">
-                            <p>13</p>
-                        </div>
-                        <div class="menu-option-content">
-                            <p>14</p>
-                        </div>
-                    </div>
-                </div>
-                <span>Entries</span>
-                <p>20 recods found</p>
-                <div class="subheader-search">
-                    <span class="material-icons-round icon-search">
-                        search
-                    </span>
-                    <input type="text" placeholder="Search">
-                </div>
+        <!-- Header Section Right Content -->
+        <div class="dashboard-table-head-right">
+          <!-- Right Content Combobox Menu -->
+          <div class="dshb-dropdown-menu combobox-btn">
+            <div class="menu-select">
+              <p>Combobox</p>
+              <span class="material-icons-round icon-chevron-down">
+                expand_more
+              </span>
             </div>
-            <div class="pagination-box dashboard-table-sub-header-right">
-                <a href="#" class="pagination-active">Prev</a>
-                <a href="#" class="pagination-active">01</a>
-                <a href="#">02</a>
-                <a href="#">...</a>
-                <a href="#">05</a>
-                <a href="#" class="pagination-active">Next</a>
+            <div class="menu-options">
+              <div class="menu-option-content">
+                <p>Combobox 1</p>
+              </div>
+              <div class="menu-option-content">
+                <p>Combobox 2</p>
+              </div>
+              <div class="menu-option-content">
+                <p>Combobox 3</p>
+              </div>
             </div>
+          </div>
+          <div class="add-upload-export-btns">
+            <button class="add-btn">
+              <span>Add</span>
+              <img
+                src="./assets/icons/insert-after-r.svg"
+                alt="insert-after-r"
+              />
+            </button>
+            <button class="upload-btn">
+              <span>Upload</span>
+              <img src="./assets/icons/insert-before.svg" alt="insert-before" />
+            </button>
+            <button class="export-btn">
+              <span>Export</span>
+              <img src="./assets/icons/export-btn.svg" alt="export-btn" />
+            </button>
+          </div>
         </div>
-        <div class="dashboard-table">
-            <div class="table-row table-head">
-                <div class="table-checkbox-col">
-                    <input type="checkbox" name="" id="">
-                </div>
-                <div>
-                    <p>User</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-                <div>
-                    <p>Ad / Soyad</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-                <div>
-                    <p>Filtreler</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-                <div>
-                    <p>Yıldızlar</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-                <div>
-                    <p>Permission</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-                <div>
-                    <p>Yüzde</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-                <div>
-                    <p>Boş Text</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-                <div>
-                    <p>Text Link</p>
-                </div>
-                <div>
-                    <p>Checkbox</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
+      </div>
+      <div class="dashboard-table-sub-header">
+        <div class="dashboard-table-sub-header-left">
+          <span>Show</span>
+          <div class="dshb-dropdown-menu count-btn">
+            <div class="menu-select">
+              <p>10</p>
+              <div>
+                <span class="material-icons-round icon-chevron-down">
+                  expand_more
+                </span>
+              </div>
             </div>
-            <div class="table-row table-body">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="menu-options">
+              <div class="menu-option-content">
+                <p>11</p>
+              </div>
+              <div class="menu-option-content">
+                <p>12</p>
+              </div>
+              <div class="menu-option-content">
+                <p>13</p>
+              </div>
+              <div class="menu-option-content">
+                <p>14</p>
+              </div>
             </div>
+          </div>
+          <span>Entries</span>
+          <p>20 recods found</p>
+          <div class="subheader-search">
+            <span class="material-icons-round icon-search"> search </span>
+            <input type="text" placeholder="Search" />
+          </div>
         </div>
-
-
-
-        <!-- <div class="dashboard-table">
+        <div class="pagination-box dashboard-table-sub-header-right">
+          <a href="#" class="pagination-active">Prev</a>
+          <a href="#" class="pagination-active">01</a>
+          <a href="#">02</a>
+          <a href="#">...</a>
+          <a href="#">05</a>
+          <a href="#" class="pagination-active">Next</a>
+        </div>
+      </div>
+      <div class="dashboard-table">
+        <div class="table-row table-head">
+          <div class="table-checkbox-col">
+            <input type="checkbox" name="" id="" />
+          </div>
+          <div>
+            <p>User</p>
+            <img
+              src="./assets/icons/icon-filter-down.svg"
+              alt="icon filter down"
+              class="icon-filter-down"
+            />
+          </div>
+          <div>
+            <p>Ad / Soyad</p>
+            <img
+              src="./assets/icons/icon-filter-down.svg"
+              alt="icon filter down"
+              class="icon-filter-down"
+            />
+          </div>
+          <div>
+            <p>Filtreler</p>
+            <img
+              src="./assets/icons/icon-filter-down.svg"
+              alt="icon filter down"
+              class="icon-filter-down"
+            />
+          </div>
+          <div>
+            <p>Yıldızlar</p>
+            <img
+              src="./assets/icons/icon-filter-down.svg"
+              alt="icon filter down"
+              class="icon-filter-down"
+            />
+          </div>
+          <div>
+            <p>Permission</p>
+            <img
+              src="./assets/icons/icon-filter-down.svg"
+              alt="icon filter down"
+              class="icon-filter-down"
+            />
+          </div>
+          <div>
+            <p>Yüzde</p>
+            <img
+              src="./assets/icons/icon-filter-down.svg"
+              alt="icon filter down"
+              class="icon-filter-down"
+            />
+          </div>
+          <div>
+            <p>Boş Text</p>
+            <img
+              src="./assets/icons/icon-filter-down.svg"
+              alt="icon filter down"
+              class="icon-filter-down"
+            />
+          </div>
+          <div>
+            <p>Text Link</p>
+          </div>
+          <div>
+            <p>Checkbox</p>
+            <img
+              src="./assets/icons/icon-filter-down.svg"
+              alt="icon filter down"
+              class="icon-filter-down"
+            />
+          </div>
+        </div>
+        <div class="table-row table-body">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <!-- <div class="dashboard-table">
             <div class="table-head table-row">
                 <div class="table-checkbox">
                     <input type="checkbox">
@@ -993,14 +1028,12 @@
                     <p>Checkbox</p>
                     <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
                 </div>
-            </div> -->
-        </div>
+            </div> 
+        </div> -->
     </section>
-
 
     <!-- JavaScript -->
     <script src="./js/dropdown.js"></script>
     <script src="./js/dashboard-navbar.js"></script>
-</body>
-
+  </body>
 </html>

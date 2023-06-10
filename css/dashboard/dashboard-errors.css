@@ -1,8 +1,3 @@
-/* Import Font face and reset css */
-@import url('../main.css');
-/* Inport Dashboard main styles */
-@import url("../dashboard.css");
-
 /* ! Dashboard Errors Container */
 .dashboard-errors{
     width: 100%;

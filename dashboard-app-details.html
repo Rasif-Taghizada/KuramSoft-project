@@ -1,851 +1,982 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard App Details</title>
     <!-- Pure CSS -->
-    <link rel="stylesheet" href="./css/dashboard.css">
-    <link rel="stylesheet" href="./css/app-meneger/app-details.css" />
-    <!-- Google Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <link rel="stylesheet" href="./css/app-manager/app-details.css" />
+  </head>
 
-<body>
+  <body>
     <section class="dashboard-container">
-        <!-- Sidebar Content -->
-        <aside class="dashboard-sidebar sidebar-open sidebar-close">
-            <div class="sidebar-top">
-                <img src="./assets/Images/C-logo.svg" alt="Logo">
-                <span>Createrun</span>
+      <!-- Sidebar Content -->
+      <aside class="dashboard-sidebar sidebar-open sidebar-close">
+        <div class="sidebar-top">
+          <img src="./assets/Images/C-logo.svg" alt="Logo" />
+          <span>Createrun</span>
+        </div>
+        <!-- Sidebar List -->
+        <ul class="sidebar-lists">
+          <li class="sidebar-list-group">
+            <div class="sidebar-list-altgroup">
+              <img src="./assets/icons/sidebar-home.svg" alt="sidebar-home" />
+              <a href="#" class="sidebar-list-text">Home Page</a>
             </div>
-            <!-- Sidebar List -->
-            <ul class="sidebar-lists">
-                <li class="sidebar-list-group">
-                    <div class="sidebar-list-altgroup">
-                        <img src="./assets/icons/sidebar-home.svg" alt="sidebar-home">
-                        <a href="#" class="sidebar-list-text">Home Page</a>
-                    </div>
-                    <img src="./assets/icons/arrow-right.svg" alt="arrow-right" class="arrow-right-icon">
-                </li>
-                <li class="sidebar-list-group list-group-active">
-                    <div class="sidebar-list-altgroup">
-                        <img src="./assets/icons/align-left.svg" alt="align-left">
-                        <a href="#" class="sidebar-list-text">Formlar</a>
-                    </div>
-                    <img src="./assets/icons/arrow-right.svg" alt="arrow-right" class="arrow-right-icon">
-                </li>
-                <li class="sidebar-list-group">
-                    <div class="sidebar-list-altgroup">
-                        <img src="./assets/icons/sidebar-calendar.svg" alt="sidebar-calendar">
-                        <a href="#" class="sidebar-list-text">Takvim</a>
-                    </div>
-                    <img src="./assets/icons/arrow-right.svg" alt="arrow-right" class="arrow-right-icon">
-                </li>
-                <li class="sidebar-list-group">
-                    <div class="sidebar-list-altgroup">
-                        <img src="./assets/icons/sidebar-list.svg" alt="sidebar-list">
-                        <a href="#" class="sidebar-list-text">Listeler</a>
-                    </div>
-                    <img src="./assets/icons/arrow-right.svg" alt="arrow-right" class="arrow-right-icon">
-                </li>
-                <li class="sidebar-list-group">
-                    <div class="sidebar-list-altgroup">
-                        <img src="./assets/icons/sidebar-list-grid.svg" alt="sidebar-grid">
-                        <a href="#" class="sidebar-list-text">Todo List</a>
-                    </div>
-                    <img src="./assets/icons/arrow-right.svg" alt="arrow-right" class="arrow-right-icon">
-                </li>
-                <li class="sidebar-list-group">
-                    <div class="sidebar-list-altgroup">
-                        <img src="./assets/icons/sidebar-grafik.svg" alt="sidebar-grafik">
-                        <a href="#" class="sidebar-list-text">Grafik</a>
-                    </div>
-                    <img src="./assets/icons/arrow-right.svg" alt="arrow-right" class="arrow-right-icon">
-                </li>
-                <li class="sidebar-list-group">
-                    <div class="sidebar-list-altgroup">
-                        <img src="./assets/icons/search.svg" alt="search">
-                        <a href="#" class="sidebar-list-text">Search</a>
-                    </div>
-                    <img src="./assets/icons/arrow-right.svg" alt="arrow-right" class="arrow-right-icon">
-                </li>
-            </ul>
-            <div class="sidebar-user-container">
-                <span class="material-icons-round icon-chevron-down">
-                    expand_more
-                </span>
-                <div class="user-content">
-                    <div class="user-image">
-                        <img src="./assets/icons/sidebar-user-image.svg" alt="sidebar user image">
-                    </div>
-                    <div class="user-status user-online"></div>
-                </div>
+            <img
+              src="./assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+          <li class="sidebar-list-group list-group-active">
+            <div class="sidebar-list-altgroup">
+              <img src="./assets/icons/align-left.svg" alt="align-left" />
+              <a href="#" class="sidebar-list-text">Formlar</a>
             </div>
-        </aside>
-        <!-- Sidebar Main Container -->
-        <main class="dashboard-main-container">
-            <header class="dashboard-main-header">
-                <div class="header-left-content">
-                    <span class="material-icons-round icon-menu">
-                        menu
-                    </span>
-                    <div class="dshb-dropdown-menu header-left-menu">
-                        <div class="menu-select">
-                            <p>sigorta.square.com</p>
-                            <span class="material-icons-round icon-chevron-down">
-                                expand_more
-                            </span>
-                        </div>
-                        <div class="menu-options">
-                            <div class="menu-option-content">
-                                <p>square 1</p>
-                            </div>
-                            <div class="menu-option-content">
-                                <p>square.com 2</p>
-                            </div>
-                            <div class="menu-option-content">
-                                <p>sigorta.square 3</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-right-content">
-                    <div class="header-dropdown-search">
-                        <div class="dshb-dropdown-menu dropdown-document">
-                            <div class="menu-select">
-                                <p>Document</p>
-                                <span class="material-icons-round icon-chevron-down">
-                                    expand_more
-                                </span>
-                            </div>
-                            <div class="menu-options"></div>
-                        </div>
-                        <div class="search-content">
-                            <input type="text" name="text" class="" placeholder="Ara">
-                            <span class="material-icons-round icon-search">
-                                search
-                            </span>
-                        </div>
-                    </div>
-                    <div class="dshb-dropdown-menu dropdown-lang">
-                        <div class="menu-select">
-                            <p>ENG</p>
-                            <span class="material-icons-round icon-chevron-down">
-                                expand_more
-                            </span>
-                        </div>
-                        <div class="menu-options">
-                            <div class="menu-option-content">
-                                <p>AZE</p>
-                            </div>
-                            <div class="menu-option-content">
-                                <p>RUS</p>
-                            </div>
-                            <div class="menu-option-content">
-                                <p>TUR</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dshb-dropdown-menu dshb-user-content">
-                        <div class="menu-select">
-                            <div class="user-about-img">
-                                <div class="user-img">
-                                    <img src="./assets/icons/user-ozan-alatli.svg" alt="ozan-alatli">
-                                </div>
-                                <div class="user-about">
-                                    <p class="user-name">
-                                        Ozan Alatlı
-                                    </p>
-                                    <span class="user-prefer">
-                                        Proje Yöneticisi
-                                    </span>
-                                </div>
-                            </div>
-                            <span class="material-icons-round icon-chevron-down">
-                                expand_more
-                            </span>
-                        </div>
-                        <div class="menu-options"></div>
-                    </div>
-                </div>
-            </header>
-            <div class="dashboard-header-menu">
-                <div class="menu-left">
-                    <img src="./assets/icons/header-menu-home.svg" alt="menu-home">
-                    <p>Home</p>
-                </div>
-                <span class="menu-dot"></span>
-                <div class="dshb-dropdown-menu">
-                    <div class="menu-select">
-                        <p>SQUARE</p>
-                        <span class="material-icons-round icon-chevron-down">
-                            expand_more
-                        </span>
-                    </div>
-                    <div class="menu-options"></div>
-                </div>
-                <span class="menu-dot"></span>
-                <div>
-                    <span>OverduePaymentsReports.aspx</span>
-                </div>
+            <img
+              src="./assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+          <li class="sidebar-list-group">
+            <div class="sidebar-list-altgroup">
+              <img
+                src="./assets/icons/sidebar-calendar.svg"
+                alt="sidebar-calendar"
+              />
+              <a href="#" class="sidebar-list-text">Takvim</a>
             </div>
-            <div class="dashboard-header-submenu">
-                <a href="#" class="submenu-active">Main Menu</a>
-                <a href="#">Workflow</a>
-                <a href="#">General</a>
+            <img
+              src="./assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+          <li class="sidebar-list-group">
+            <div class="sidebar-list-altgroup">
+              <img src="./assets/icons/sidebar-list.svg" alt="sidebar-list" />
+              <a href="#" class="sidebar-list-text">Listeler</a>
             </div>
-            <article class="main-lists-container">
-                <div>
-                    <section class="navbar-container navbar-container-close">
-                        <div class="navbar-header-content">
-                            <p>FORMLAR</p>
-                        </div>
-                        <ul class="navbar-lists">
-                            <li class="navbar-list-group">
-                                <div class="list-select">
-                                    <a href="#" class="list-text">Dashboard</a>
-                                    <span class="material-icons-round icon-plus">
-                                        add
-                                    </span>
-                                </div>
-                                <ul class="list-options">
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Dashboard 1</a>
-                                    </li>
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Dashboard 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar-list-group">
-                                <div class="list-select">
-                                    <a href="#" class="list-text">Text Box</a>
-                                    <span class="material-icons-round icon-plus">
-                                        add
-                                    </span>
-                                </div>
-                                <ul class="list-options">
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Text Box 1</a>
-                                    </li>
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Text Box 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar-list-group">
-                                <div class="list-select">
-                                    <a href="#" class="list-text">Security</a>
-                                    <span class="material-icons-round icon-plus">
-                                        add
-                                    </span>
-                                </div>
-                                <ul class="list-options">
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Security 1</a>
-                                    </li>
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Security 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar-list-group">
-                                <div class="list-select">
-                                    <a href="#" class="list-text">Gallery</a>
-                                    <span class="material-icons-round icon-plus">
-                                        add
-                                    </span>
-                                </div>
-                                <ul class="list-options">
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Gallery 1</a>
-                                    </li>
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Gallery 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar-list-group">
-                                <div class="list-select">
-                                    <a href="#" class="list-text">Files</a>
-                                    <span class="material-icons-round icon-plus">
-                                        add
-                                    </span>
-                                </div>
-                                <ul class="list-options">
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Files 1</a>
-                                    </li>
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Files 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar-list-group">
-                                <div class="list-select">
-                                    <a href="#" class="list-text">Treeview</a>
-                                    <span class="material-icons-round icon-plus">
-                                        add
-                                    </span>
-                                </div>
-                                <ul class="list-options">
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Treeview 1</a>
-                                    </li>
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Treeview 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar-list-group">
-                                <div class="list-select">
-                                    <a href="#" class="list-text">Auto</a>
-                                    <span class="material-icons-round icon-plus">
-                                        add
-                                    </span>
-                                </div>
-                                <ul class="list-options">
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Auto 1</a>
-                                    </li>
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Auto 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar-list-group">
-                                <div class="list-select">
-                                    <a href="#" class="list-text">Data Model</a>
-                                    <span class="material-icons-round icon-plus">
-                                        add
-                                    </span>
-                                </div>
-                                <ul class="list-options">
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Data Model 1</a>
-                                    </li>
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Data Model 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar-list-group">
-                                <div class="list-select">
-                                    <a href="#" class="list-text">Setting</a>
-                                    <span class="material-icons-round icon-plus">
-                                        add
-                                    </span>
-                                </div>
-                                <ul class="list-options">
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Setting 1</a>
-                                    </li>
-                                    <li>
-                                        <span class="material-icons-round">
-                                            subdirectory_arrow_right
-                                        </span>
-                                        <a href="#">Setting 2</a>
-                                    </li>
-                                </ul>
-                            </li>
+            <img
+              src="./assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+          <li class="sidebar-list-group">
+            <div class="sidebar-list-altgroup">
+              <img
+                src="./assets/icons/sidebar-list-grid.svg"
+                alt="sidebar-grid"
+              />
+              <a href="#" class="sidebar-list-text">Todo List</a>
+            </div>
+            <img
+              src="./assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+          <li class="sidebar-list-group">
+            <div class="sidebar-list-altgroup">
+              <img
+                src="./assets/icons/sidebar-grafik.svg"
+                alt="sidebar-grafik"
+              />
+              <a href="#" class="sidebar-list-text">Grafik</a>
+            </div>
+            <img
+              src="./assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+          <li class="sidebar-list-group">
+            <div class="sidebar-list-altgroup">
+              <img src="./assets/icons/search.svg" alt="search" />
+              <a href="#" class="sidebar-list-text">Search</a>
+            </div>
+            <img
+              src="./assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+        </ul>
+        <div class="sidebar-user-container">
+          <img src="./assets/icons/chevron-down.svg" alt="" />
+          <div class="user-content">
+            <div class="user-image">
+              <img
+                src="./assets/icons/sidebar-user-image.svg"
+                alt="sidebar user image"
+              />
+            </div>
+            <div class="user-status user-online"></div>
+          </div>
+        </div>
+      </aside>
+      <!-- Sidebar Main Container -->
+      <main class="dashboard-main-container">
+        <header class="dashboard-main-header">
+          <div class="header-left-content">
+            <img
+              src="./assets/icons/menu-icon.svg"
+              alt="menu"
+              class="icon-menu"
+            />
+            <div class="dshb-dropdown-menu header-left-menu">
+              <div class="menu-select">
+                <p>sigorta.square.com</p>
+                <img src="./assets/icons/chevron-down.svg" alt="down icon" />
+              </div>
+              <div class="menu-options">
+                <div class="menu-option-content">
+                  <p>square 1</p>
+                </div>
+                <div class="menu-option-content">
+                  <p>square.com 2</p>
+                </div>
+                <div class="menu-option-content">
+                  <p>sigorta.square 3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-right-content">
+            <div class="header-dropdown-search">
+              <div class="dshb-dropdown-menu dropdown-document">
+                <div class="menu-select">
+                  <p>Document</p>
+                  <img src="./assets/icons/chevron-down.svg" alt="down icon" />
+                </div>
+                <div class="menu-options"></div>
+              </div>
+              <div class="search-content">
+                <input type="text" name="text" class="" placeholder="Ara" />
+                <img src="./assets/icons/chevron-down.svg" alt="down icon" />
+              </div>
+            </div>
+            <div class="dshb-dropdown-menu dropdown-lang">
+              <div class="menu-select">
+                <p>ENG</p>
+                <img src="./assets/icons/chevron-down.svg" alt="down icon" />
+              </div>
+              <div class="menu-options">
+                <div class="menu-option-content">
+                  <p>AZE</p>
+                </div>
+                <div class="menu-option-content">
+                  <p>RUS</p>
+                </div>
+                <div class="menu-option-content">
+                  <p>TUR</p>
+                </div>
+              </div>
+            </div>
+            <div class="dshb-dropdown-menu dshb-user-content">
+              <div class="menu-select">
+                <div class="user-about-img">
+                  <div class="user-img">
+                    <img
+                      src="./assets/icons/user-ozan-alatli.svg"
+                      alt="ozan-alatli"
+                    />
+                  </div>
+                  <div class="user-about">
+                    <p class="user-name">Ozan Alatlı</p>
+                    <span class="user-prefer"> Proje Yöneticisi </span>
+                  </div>
+                </div>
+                <img src="./assets/icons/chevron-down.svg" alt="down icon" />
+              </div>
+              <div class="menu-options"></div>
+            </div>
+          </div>
+        </header>
+        <div class="dashboard-header-menu">
+          <div class="menu-left">
+            <img src="./assets/icons/header-menu-home.svg" alt="menu-home" />
+            <p>Home</p>
+          </div>
+          <span class="menu-dot"></span>
+          <div class="dshb-dropdown-menu">
+            <div class="menu-select page-link">
+              <p>SQUARE</p>
+              <img src="./assets/icons/chevron-down.svg" alt="down icon" />
+            </div>
+            <div class="menu-options page-link-data">
+              <div class="menu-option-content">
+                <p>Setting</p>
+              </div>
+              <div class="menu-option-content">
+                <p>End User</p>
+              </div>
+              <div class="menu-option-content">
+                <p>Account Settings</p>
+              </div>
+              <div class="menu-option-content">
+                <p>Sign Out</p>
+              </div>
+            </div>
+          </div>
+          <span class="menu-dot"></span>
+          <div>
+            <span>OverduePaymentsReports.aspx</span>
+          </div>
+        </div>
+        <div class="dashboard-header-submenu">
+          <a href="#" class="submenu-active">Main Menu</a>
+          <a href="#">Workflow</a>
+          <a href="#">General</a>
+        </div>
+        <article class="main-lists-container">
+          <div>
+            <section class="navbar-container navbar-container-close">
+              <div class="navbar-header-content">
+                <p>FORMLAR</p>
+              </div>
+              <ul class="navbar-lists">
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Dashboard</a>
+                    <img
+                      src="./assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Dashboard 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Dashboard 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Text Box</a>
+                    <img
+                      src="./assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Text Box 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Text Box 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Security</a>
+                    <img
+                      src="./assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Security 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Security 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Gallery</a>
+                    <img
+                      src="./assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Gallery 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Gallery 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Files</a>
+                    <img
+                      src="./assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Files 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Files 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Treeview</a>
+                    <img
+                      src="./assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Treeview 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Treeview 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Auto</a>
+                    <img
+                      src="./assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Auto 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Auto 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Data Model</a>
+                    <img
+                      src="./assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Data Model 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Data Model 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Setting</a>
+                    <img
+                      src="./assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Setting 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Setting 2</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="navbar-search-bar">
+                <img src="./assets/icons/search.svg" alt="search" />
+                <input type="text" placeholder="Search by menu" />
+              </div>
+            </section>
+            <div class="nav-sidebar-toggle-menu">
+              <button>
+                <img
+                  src="./assets/icons/chevron-down.svg"
+                  alt=""
+                  class="icon-right"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="container-app-details">
+            <nav>
+              <img src="./assets/icons/header-menu-home.svg" alt="Home" />
+              <img src="./assets/icons/chevron-right1.svg" alt="Right" />
+              <a href="#">Home</a>
+              <img src="./assets/icons/chevron-right1.svg" alt="Right" />
+              <a href="#">Aplications</a>
+            </nav>
+            <div class="app-details-name">
+              <span>
+                <img src="./assets/Icons/ericsson.svg" alt="Ericsson" />
+                APP MANAGER
+              </span>
+            </div>
+            <main class="app-details-main">
+              <!-- App details nav map -->
+              <div class="app-details-nav-map app-details-nav-map-top">
+                <ul class="nav-map-list">
+                  <li>
+                    <div class="circlue"></div>
+                    Overiew
+                  </li>
+                  <li>
+                    <div class="circlue"></div>
+
+                    Updates
+                  </li>
+                  <li>
+                    <div class="circlue"></div>
+                    Forms
+                  </li>
+                  <li>
+                    <div class="circlue"></div>
+                    Pages
+                  </li>
+                  <li>
+                    <div class="circlue"></div>
+                    Report
+                  </li>
+                  <li>
+                    <div class="circlue"></div>
+                    Special Component
+                  </li>
+                  <li>
+                    <div class="circlue"></div>
+                    Needed Apllications
+                  </li>
+                </ul>
+                <!-- ! App details User -->
+                <div class="app-details-user">
+                  <p class="details-user-name">Ümit Ahmet Şahin</p>
+                  <p class="details-user-date">Setup date: 01.05.2013</p>
+                  <div class="details-star-box">
+                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                  </div>
+                </div>
+                <!-- ? App details Send Message -->
+                <div class="details-send-mesasage">
+                  <img src="./assets/icons/comment1.svg" alt="" />
+                  <p>Send Message</p>
+                </div>
+              </div>
+              <!-- !App details Header -->
+              <div class="app-details-header">
+                <div class="details-header-left">
+                  <div class="apps-box-left">
+                    <img src="./assets/Icons/Icons-1.svg" alt="Icon" />
+                  </div>
+                  <div class="apps-box-right">
+                    <span class="apps-data"> 12 Ağustos 2014 </span>
+                    <h1>INSTAGRAM BOT</h1>
+                    <p class="apps-users-name">by Ümit Ahmet ŞAHİN</p>
+                    <span>Menu Template / Sidebar / Header</span>
+                  </div>
+                </div>
+                <div class="details-header-rigth">
+                  <p>
+                    Compatible Browsers: IE9, IE10, IE11, Firefox, Safari,
+                    Opera, Chrome,
+                  </p>
+                  <p>High Resolution:Yes</p>
+                  <p>Compatible With: Bootstrap 3.x,</p>
+                  <ul>
+                    <li>License : Portal</li>
+                    <li>License period : 1 year</li>
+                  </ul>
+                </div>
+              </div>
+              <!--! APP Details State -->
+              <div class="app-details-state">
+                <div class="state-button-box">
+                  <button class="app-tested-button">Aplication Tested</button>
+                  <button class="app-install-button">Install</button>
+                </div>
+                <div class="state-requared">
+                  <span class="material-symbols-outlined"> close </span>
+                  <span>No software required</span>
+                </div>
+              </div>
+              <!-- ! App Detals Overview -->
+              <div class="app-details-overview">
+                <h3>Overview</h3>
+                <!-- ? Overview Carusel -->
+                <div class="app-overview-carusel">
+                  <div class="app-carusel-content"></div>
+                  <div class="app-carusel-circle">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                </div>
+                <!-- ? Overview Content -->
+                <div class="app-overview-content">
+                  <img
+                    src="./assets/icons/notifications.svg"
+                    alt="notifications"
+                  />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Excepturi facere earum quis ipsa vitae qui minima esse
+                    ducimus dolorum iste nisi laborum repellat dolores dolore
+                    debitis adipisci nemo quia autem pariatur a voluptatem
+                    dignissimos maiores accusantium nobis tempora consequatur
+                    cumque quas ea doloribus deleniti. Quibusdam commodi
+                    laboriosam error temporibus iste ipsa soluta distinctio
+                    maiores ad totam beatae incidunt veritatis enim? Reiciendis
+                    voluptate cupiditate asperiores ratione laboriosam alias
+                    mollitia eaque labore aperiam similique reprehenderit
+                    assumenda quidem eos explicabo rerum. Porro at ex magni
+                    aliquam laborum delectus voluptate officia modi nam et
+                    cupiditate culpa asperiores eaque fuga quae. Dolorum commodi
+                    labore neque fuga totam voluptate vitae ea laudantium iure
+                    quos placeat accusamus.
+                  </p>
+                </div>
+                <!-- ? Updates Box -->
+                <div class="app-overiew-updates">
+                  <img
+                    src="./assets/icons/drop-opacity.svg"
+                    alt="Drop Opacity"
+                  />
+                  <h4 class="overiew-header-text">Updates</h4>
+                  <span class="overiew-additional-text">New in 2.4.3</span>
+                  <!-- *TODO Overview List -->
+                  <ul class="overiew-updates-list">
+                    <li>
+                      <img
+                        src="./assets/icons/play-list-check.svg"
+                        alt="check"
+                      />
+                      In-app previews of Word, PowerPoint and PDF files
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/play-list-check.svg"
+                        alt="check"
+                      />
+                      New search experience that tracks recent queries and shows
+                      typeahead suggestions
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/play-list-check.svg"
+                        alt="check"
+                      />
+                      View-only permissions for shared folders for Dropbox for
+                      Business users
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/play-list-check.svg"
+                        alt="check"
+                      />
+                      Cache performance enhancements
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/play-list-check.svg"
+                        alt="check"
+                      />
+                      Lots of bug fixes and improvements New in 2.4.2:
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/play-list-check.svg"
+                        alt="check"
+                      />
+                      Support for additional languages
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/play-list-check.svg"
+                        alt="check"
+                      />
+                      Danish, Dutch, Swedish and Thai - Bug fixes and
+                      improvements New in 2.4.1
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icons/play-list-check.svg"
+                        alt="check"
+                      />
+                      Bug fixes and performance improvements
+                    </li>
+                  </ul>
+                </div>
+                <!-- ? Additional Container -->
+                <div class="app-additiona-container">
+                  <!-- *TODO Forms -->
+                  <div class="app-additiona-box">
+                    <img src="./assets/icons/view-split.svg" alt="View Slit" />
+                    <h4>Forms</h4>
+                    <div class="list-box-main">
+                      <div class="list-box-left">
+                        <ul class="app-additional-list">
+                          <li>
+                            <div class="square"></div>
+                            Ut enim ad minim veniam Unt in culpa qui officia
+                          </li>
+                          <li>
+                            <div class="square"></div>
+                            Oluptate velit esse cillum dolore eu fugiat
+                          </li>
+                          <li>
+                            <div class="square"></div>
+                            Ut enim ad minim veniam
+                          </li>
+                          <li>
+                            <div class="square"></div>
+                            Cache performance enhancements
+                          </li>
                         </ul>
-                        <div class="navbar-search-bar">
-                            <img src="./assets/icons/search.svg" alt="search">
-                            <input type="text" placeholder="Search by menu">
-                        </div>
-                    </section>
-                    <div class="nav-sidebar-toggle-menu">
-                        <button>
-                            <span class="material-icons-round icon-right">
-                                arrow_forward_ios
-                            </span>
-                        </button>
+                      </div>
+                      <div class="list-box-right">
+                        <ul class="app-additional-list">
+                          <li>
+                            <div class="square square-blue"></div>
+
+                            Lots of bug fixes and improvements
+                          </li>
+                          <li>
+                            <div class="square square-blue"></div>
+
+                            Support for additional languages
+                          </li>
+                          <li>
+                            <div class="square square-blue"></div>
+
+                            Danish, Dutch, Swedish and Thai
+                          </li>
+                          <li>
+                            <div class="square square-blue"></div>
+
+                            Bug fixes and improvements New in 2.4.1
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                </div>
-                <div class="container-app-details">
-                    <nav>
-                        <img src="./assets/icons/header-menu-home.svg" alt="Home" />
-                        <img src="./assets/icons/chevron-right1.svg" alt="Right" />
-                        <a href="#">Home</a>
-                        <img src="./assets/icons/chevron-right1.svg" alt="Right" />
-                        <a href="#">Aplications</a>
-                    </nav>
-                    <div class="app-details-name">
-                        <span>
-                            <img src="./assets/Icons/ericsson.svg" alt="Ericsson" />
-                            APP MANAGER
-                        </span>
+                  </div>
+                  <!-- *TODO Pages -->
+                  <div class="app-additiona-box additional-box-active">
+                    <img src="./assets/icons/album.svg" alt="Albom" />
+                    <h4>Pages</h4>
+                    <div class="list-box-main">
+                      <div class="list-box-left">
+                        <ul class="app-additional-list">
+                          <li>
+                            <div class="square"></div>
+                            Ut enim ad minim veniam Unt in culpa qui officia
+                          </li>
+                          <li>
+                            <div class="square"></div>
+                            Oluptate velit esse cillum dolore eu fugiat
+                          </li>
+                          <li>
+                            <div class="square"></div>
+                            Ut enim ad minim veniam
+                          </li>
+                          <li>
+                            <div class="square"></div>
+                            Cache performance enhancements
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="list-box-right">
+                        <ul class="app-additional-list">
+                          <li>
+                            <div class="square square-blue"></div>
+                            Lots of bug fixes and improvements
+                          </li>
+                          <li>
+                            <div class="square square-blue"></div>
+                            Support for additional languages
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                  </div>
+                  <!-- *TODO Reports -->
+                  <div class="app-additiona-box">
+                    <img
+                      src="./assets/icons/play-list-search.svg"
+                      alt="Search List"
+                    />
+                    <h4>Reports</h4>
+                    <div class="list-box-main">
+                      <div class="list-box-left">
+                        <ul class="app-additional-list">
+                          <li>
+                            <div class="square"></div>
+                            Ut enim ad minim veniam Unt in culpa qui officia
+                          </li>
+                          <li>
+                            <div class="square"></div>
+                            Oluptate velit esse cillum dolore eu fugiat
+                          </li>
+                          <li>
+                            <div class="square"></div>
+                            Ut enim ad minim veniam
+                          </li>
+                          <li>
+                            <div class="square"></div>
+                            Cache performance enhancements
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="list-box-right">
+                        <ul class="app-additional-list">
+                          <li>
+                            <div class="square square-blue"></div>
 
-                    <main class="app-details-main">
-                        <!-- App details nav map -->
-                        <div class="app-details-nav-map app-details-nav-map-top">
-                            <ul class="nav-map-list">
-                                <li>
-                                    <div class="circlue"></div>
-                                    Overiew
-                                </li>
-                                <li>
-                                    <div class="circlue"></div>
+                            Lots of bug fixes and improvements
+                          </li>
+                          <li>
+                            <div class="square square-blue"></div>
 
-                                    Updates
-                                </li>
-                                <li>
-                                    <div class="circlue"></div>
-                                    Forms
-                                </li>
-                                <li>
-                                    <div class="circlue"></div>
-                                    Pages
-                                </li>
-                                <li>
-                                    <div class="circlue"></div>
-                                    Report
-                                </li>
-                                <li>
-                                    <div class="circlue"></div>
-                                    Special Component
-                                </li>
-                                <li>
-                                    <div class="circlue"></div>
-                                    Needed Apllications
-                                </li>
-                            </ul>
-                            <!-- ! App details User -->
-                            <div class="app-details-user">
-                                <p class="details-user-name">Ümit Ahmet Şahin</p>
-                                <p class="details-user-date">Setup date: 01.05.2013</p>
-                                <div class="details-star-box">
-                                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                </div>
-                            </div>
-                            <!-- ? App details Send Message -->
-                            <div class="details-send-mesasage">
-                                <img src="./assets/icons/comment1.svg" alt="" />
-                                <p>Send Message</p>
-                            </div>
-                        </div>
-                        <!-- !App details Header -->
-                        <div class="app-details-header">
-                            <div class="details-header-left">
-                                <div class="apps-box-left">
-                                    <img src="./assets/Icons/Icons-1.svg" alt="Icon" />
-                                </div>
-                                <div class="apps-box-right">
-                                    <span class="apps-data"> 12 Ağustos 2014 </span>
-                                    <h1>INSTAGRAM BOT</h1>
-                                    <p class="apps-users-name">by Ümit Ahmet ŞAHİN</p>
-                                    <span>Menu Template / Sidebar / Header</span>
-                                </div>
-                            </div>
-                            <div class="details-header-rigth">
-                                <p>
-                                    Compatible Browsers: IE9, IE10, IE11, Firefox, Safari, Opera,
-                                    Chrome,
-                                </p>
-                                <p>High Resolution:Yes</p>
-                                <p>Compatible With: Bootstrap 3.x,</p>
-                                <ul>
-                                    <li>License : Portal</li>
-                                    <li>License period : 1 year</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!--! APP Details State -->
-                        <div class="app-details-state">
-                            <div class="state-button-box">
-                                <button class="app-tested-button">Aplication Tested</button>
-                                <button class="app-install-button">Install</button>
-                            </div>
-                            <div class="state-requared">
-                                <span class="material-symbols-outlined"> close </span>
-                                <span>No software required</span>
-                            </div>
-                        </div>
-                        <!-- ! App Detals Overview -->
-                        <div class="app-details-overview">
-                            <h3>Overview</h3>
-                            <!-- ? Overview Carusel -->
-                            <div class="app-overview-carusel">
-                                <div class="app-carusel-content"></div>
-                                <div class="app-carusel-circle">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <!-- ? Overview Content -->
-                            <div class="app-overview-content">
-                                <img src="./assets/icons/notifications.svg" alt="notifications" />
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Excepturi facere earum quis ipsa vitae qui minima esse ducimus
-                                    dolorum iste nisi laborum repellat dolores dolore debitis adipisci
-                                    nemo quia autem pariatur a voluptatem dignissimos maiores
-                                    accusantium nobis tempora consequatur cumque quas ea doloribus
-                                    deleniti. Quibusdam commodi laboriosam error temporibus iste ipsa
-                                    soluta distinctio maiores ad totam beatae incidunt veritatis enim?
-                                    Reiciendis voluptate cupiditate asperiores ratione laboriosam
-                                    alias mollitia eaque labore aperiam similique reprehenderit
-                                    assumenda quidem eos explicabo rerum. Porro at ex magni aliquam
-                                    laborum delectus voluptate officia modi nam et cupiditate culpa
-                                    asperiores eaque fuga quae. Dolorum commodi labore neque fuga
-                                    totam voluptate vitae ea laudantium iure quos placeat accusamus.
-                                </p>
-                            </div>
-                            <!-- ? Updates Box -->
-                            <div class="app-overiew-updates">
-                                <img src="./assets/icons/drop-opacity.svg" alt="Drop Opacity" />
-                                <h4 class="overiew-header-text">Updates</h4>
-                                <span class="overiew-additional-text">New in 2.4.3</span>
-                                <!-- *TODO Overview List -->
-                                <ul class="overiew-updates-list">
-                                    <li>
-                                        <img src="./assets/icons/play-list-check.svg" alt="check" />
-                                        In-app previews of Word, PowerPoint and PDF files
-                                    </li>
-                                    <li>
-                                        <img src="./assets/icons/play-list-check.svg" alt="check" />
-                                        New search experience that tracks recent queries and shows
-                                        typeahead suggestions
-                                    </li>
-                                    <li>
-                                        <img src="./assets/icons/play-list-check.svg" alt="check" />
-                                        View-only permissions for shared folders for Dropbox for
-                                        Business users
-                                    </li>
-                                    <li>
-                                        <img src="./assets/icons/play-list-check.svg" alt="check" />
-                                        Cache performance enhancements
-                                    </li>
-                                    <li>
-                                        <img src="./assets/icons/play-list-check.svg" alt="check" />
-                                        Lots of bug fixes and improvements New in 2.4.2:
-                                    </li>
-                                    <li>
-                                        <img src="./assets/icons/play-list-check.svg" alt="check" />
-                                        Support for additional languages
-                                    </li>
-                                    <li>
-                                        <img src="./assets/icons/play-list-check.svg" alt="check" />
-                                        Danish, Dutch, Swedish and Thai - Bug fixes and improvements New
-                                        in 2.4.1
-                                    </li>
-                                    <li>
-                                        <img src="./assets/icons/play-list-check.svg" alt="check" />
-                                        Bug fixes and performance improvements
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- ? Additional Container -->
-                            <div class="app-additiona-container">
-                                <!-- *TODO Forms -->
-                                <div class="app-additiona-box">
-                                    <img src="./assets/icons/view-split.svg" alt="View Slit" />
-                                    <h4>Forms</h4>
-                                    <div class="list-box-main">
-                                        <div class="list-box-left">
-                                            <ul class="app-additional-list">
-                                                <li>
-                                                    <div class="square"></div>
-                                                    Ut enim ad minim veniam Unt in culpa qui officia
-                                                </li>
-                                                <li>
-                                                    <div class="square"></div>
-                                                    Oluptate velit esse cillum dolore eu fugiat
-                                                </li>
-                                                <li>
-                                                    <div class="square"></div>
-                                                    Ut enim ad minim veniam
-                                                </li>
-                                                <li>
-                                                    <div class="square"></div>
-                                                    Cache performance enhancements
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="list-box-right">
-                                            <ul class="app-additional-list">
-                                                <li>
-                                                    <div class="square square-blue"></div>
-
-                                                    Lots of bug fixes and improvements
-                                                </li>
-                                                <li>
-                                                    <div class="square square-blue"></div>
-
-                                                    Support for additional languages
-                                                </li>
-                                                <li>
-                                                    <div class="square square-blue"></div>
-
-                                                    Danish, Dutch, Swedish and Thai
-                                                </li>
-                                                <li>
-                                                    <div class="square square-blue"></div>
-
-                                                    Bug fixes and improvements New in 2.4.1
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- *TODO Pages -->
-                                <div class="app-additiona-box additional-box-active">
-                                    <img src="./assets/icons/album.svg" alt="Albom" />
-                                    <h4>Pages</h4>
-                                    <div class="list-box-main">
-                                        <div class="list-box-left">
-                                            <ul class="app-additional-list">
-                                                <li>
-                                                    <div class="square"></div>
-                                                    Ut enim ad minim veniam Unt in culpa qui officia
-                                                </li>
-                                                <li>
-                                                    <div class="square"></div>
-                                                    Oluptate velit esse cillum dolore eu fugiat
-                                                </li>
-                                                <li>
-                                                    <div class="square"></div>
-                                                    Ut enim ad minim veniam
-                                                </li>
-                                                <li>
-                                                    <div class="square"></div>
-                                                    Cache performance enhancements
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="list-box-right">
-                                            <ul class="app-additional-list">
-                                                <li>
-                                                    <div class="square square-blue"></div>
-                                                    Lots of bug fixes and improvements
-                                                </li>
-                                                <li>
-                                                    <div class="square square-blue"></div>
-                                                    Support for additional languages
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- *TODO Reports -->
-                                <div class="app-additiona-box">
-                                    <img src="./assets/icons/play-list-search.svg" alt="Search List" />
-                                    <h4>Reports</h4>
-                                    <div class="list-box-main">
-                                        <div class="list-box-left">
-                                            <ul class="app-additional-list">
-                                                <li>
-                                                    <div class="square"></div>
-                                                    Ut enim ad minim veniam Unt in culpa qui officia
-                                                </li>
-                                                <li>
-                                                    <div class="square"></div>
-                                                    Oluptate velit esse cillum dolore eu fugiat
-                                                </li>
-                                                <li>
-                                                    <div class="square"></div>
-                                                    Ut enim ad minim veniam
-                                                </li>
-                                                <li>
-                                                    <div class="square"></div>
-                                                    Cache performance enhancements
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="list-box-right">
-                                            <ul class="app-additional-list">
-                                                <li>
-                                                    <div class="square square-blue"></div>
-
-                                                    Lots of bug fixes and improvements
-                                                </li>
-                                                <li>
-                                                    <div class="square square-blue"></div>
-
-                                                    Support for additional languages
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ? Table -->
-                            <div class="overview-table-box">
-                                <table class="overiew-table">
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Description</th>
-                                        <th>Type</th>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Lorem ipsum</td>
-                                        <td>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                                            do eiusmod tempor incididunt ut
-                                        </td>
-                                        <td>Workflow</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum</td>
-                                        <td>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                                            do eiusmod tempor incididunt ut
-                                        </td>
-                                        <td>Workflow</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lorem ipsum</td>
-                                        <td>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                                            do eiusmod tempor incididunt ut
-                                        </td>
-                                        <td>Workflow</td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <!-- ? Needed Applications -->
-                            <div class="overview-needed-applications">
-                                <img src="./assets/icons/play-list-search-black.svg"
-                                    alt="overview-needed-applications" />
-                                <h4>Needed Applications</h4>
-                                <div class="overiew-application-container">
-                                    <div class="overiew-application-box">
-                                        <img src="./assets/icons/Icons-1.svg" alt="icon" />
-                                        <h5>INSTAGRAM BOT</h5>
-                                        <button class="application-detal-button">Details</button>
-                                    </div>
-                                    <div class="overiew-application-box">
-                                        <img src="./assets/icons/Icons-1.svg" alt="icon" />
-                                        <h5>INSTAGRAM BOT</h5>
-                                        <button class="application-detal-button">Details</button>
-                                    </div>
-                                    <div class="overiew-application-box">
-                                        <img src="./assets/icons/Icons-1.svg" alt="icon" />
-                                        <h5>INSTAGRAM BOT</h5>
-                                        <button class="application-detal-button">Details</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--! App Details Nav Map Bottom  -->
-                        <div class="app-details-nav-map app-details-nav-map-bottom">
-                            <ul class="nav-map-list">
-                                <li>
-                                    <div class="circlue"></div>
-                                    Overiew
-                                </li>
-                                <li>
-                                    <div class="circlue"></div>
-
-                                    Updates
-                                </li>
-                                <li>
-                                    <div class="circlue"></div>
-                                    Forms
-                                </li>
-                                <li>
-                                    <div class="circlue"></div>
-                                    Pages
-                                </li>
-                                <li>
-                                    <div class="circlue"></div>
-                                    Report
-                                </li>
-                                <li>
-                                    <div class="circlue"></div>
-                                    Special Component
-                                </li>
-                                <li>
-                                    <div class="circlue"></div>
-                                    Needed Apllications
-                                </li>
-                            </ul>
-                            <!--  App details User -->
-                            <div class="app-details-user">
-                                <p class="details-user-name">Ümit Ahmet Şahin</p>
-                                <p class="details-user-date">Setup date: 01.05.2013</p>
-                                <div class="details-star-box">
-                                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                                </div>
-                            </div>
-                            <!-- ? App details Send Message -->
-                            <div class="details-send-mesasage">
-                                <img src="./assets/icons/comment1.svg" alt="" />
-                                <p>Send Message</p>
-                            </div>
-                        </div>
-                    </main>
+                            Support for additional languages
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </article>
-        </main>
+                <!-- ? Table -->
+                <div class="overview-table-box">
+                  <table class="overiew-table">
+                    <tr>
+                      <th>Name</th>
+                      <th>Description</th>
+                      <th>Type</th>
+                    </tr>
+
+                    <tr>
+                      <td>Lorem ipsum</td>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut
+                      </td>
+                      <td>Workflow</td>
+                    </tr>
+                    <tr>
+                      <td>Lorem ipsum</td>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut
+                      </td>
+                      <td>Workflow</td>
+                    </tr>
+                    <tr>
+                      <td>Lorem ipsum</td>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut
+                      </td>
+                      <td>Workflow</td>
+                    </tr>
+                  </table>
+                </div>
+                <!-- ? Needed Applications -->
+                <div class="overview-needed-applications">
+                  <img
+                    src="./assets/icons/play-list-search-black.svg"
+                    alt="overview-needed-applications"
+                  />
+                  <h4>Needed Applications</h4>
+                  <div class="overiew-application-container">
+                    <div class="overiew-application-box">
+                      <img src="./assets/icons/Icons-1.svg" alt="icon" />
+                      <h5>INSTAGRAM BOT</h5>
+                      <button class="application-detal-button">Details</button>
+                    </div>
+                    <div class="overiew-application-box">
+                      <img src="./assets/icons/Icons-1.svg" alt="icon" />
+                      <h5>INSTAGRAM BOT</h5>
+                      <button class="application-detal-button">Details</button>
+                    </div>
+                    <div class="overiew-application-box">
+                      <img src="./assets/icons/Icons-1.svg" alt="icon" />
+                      <h5>INSTAGRAM BOT</h5>
+                      <button class="application-detal-button">Details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--! App Details Nav Map Bottom  -->
+              <div class="app-details-nav-map app-details-nav-map-bottom">
+                <ul class="nav-map-list">
+                  <li>
+                    <div class="circlue"></div>
+                    Overiew
+                  </li>
+                  <li>
+                    <div class="circlue"></div>
+
+                    Updates
+                  </li>
+                  <li>
+                    <div class="circlue"></div>
+                    Forms
+                  </li>
+                  <li>
+                    <div class="circlue"></div>
+                    Pages
+                  </li>
+                  <li>
+                    <div class="circlue"></div>
+                    Report
+                  </li>
+                  <li>
+                    <div class="circlue"></div>
+                    Special Component
+                  </li>
+                  <li>
+                    <div class="circlue"></div>
+                    Needed Apllications
+                  </li>
+                </ul>
+                <!--  App details User -->
+                <div class="app-details-user">
+                  <p class="details-user-name">Ümit Ahmet Şahin</p>
+                  <p class="details-user-date">Setup date: 01.05.2013</p>
+                  <div class="details-star-box">
+                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
+                  </div>
+                </div>
+                <!-- ? App details Send Message -->
+                <div class="details-send-mesasage">
+                  <img src="./assets/icons/comment1.svg" alt="" />
+                  <p>Send Message</p>
+                </div>
+              </div>
+            </main>
+          </div>
+        </article>
+      </main>
     </section>
 
     <!-- JavaScript -->
     <script src="./js/dropdown.js"></script>
     <script src="./js/dashboard.js"></script>
-</body>
-
+  </body>
 </html>
