@@ -11,20 +11,19 @@
 /*! Inbox Sidebar Content  */
 .inbox-sidebar {
     border-right: 1px solid #E4E4E4;
-    padding: 40px 37px 0 0;
-    width: 400px;
+    padding: 25px 20px 0 0;
 }
 
 .inbox-sidebar-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 38px;
+    margin-bottom: 20px;
 }
 
 .inbox-sidebar-top h1 {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 32px;
     color: #000000;
 }
 
@@ -35,6 +34,20 @@
     border-radius: 5px;
     border: 1px solid #BABABA;
     padding: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+.add-user img {
+    transition: all 0.2s ease-in-out;
+}
+
+.add-user:hover {
+    cursor: pointer;
+    background: #BABABA;
+}
+
+.add-user:hover img {
+    filter: invert(1);
 }
 
 /* Sidebar SubMenu */
@@ -42,7 +55,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .inbox-sidebar-submenu input {
@@ -64,11 +77,11 @@
 .inbox-sidebar-submenu img {
     transform: rotate(90deg);
     margin-right: 7px;
+    cursor: pointer;
 }
 
 /*TODO Sidebar Filter Buttons  */
 .inbox-sidebar-filter-btns {
-    width: 355px;
     height: 62px;
     background: #E4FDFF;
     border-radius: 10px;
@@ -76,7 +89,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 22px;
 }
 
@@ -89,7 +102,9 @@
     border: none;
     outline: none;
     background: transparent;
-    padding: 15px 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 150px;
 }
 
 .inbox-sidebar-filter-btns button.btn-active {
@@ -99,19 +114,25 @@
 .inbox-sidebar-filter-btns div.filter-btn-active {
     background: #A6FAFF;
     border-radius: 10px;
-    width: 167px;
+    width: 140px;
     height: 52px;
     position: absolute;
     z-index: 1;
     left: 5px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 /*! Sidebar Users Container  */
 .inbox-sidebar-users {
+    overflow-y: auto;
+    height: 500px;
+}
+
+.inbox-sidebar-users>div {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    margin-right: 5px;
 }
 
 
@@ -123,7 +144,7 @@
     border: none;
     background: #E4FDFF;
     border-radius: 10px;
-    height: 100px;
+    height: 90px;
     transition: background 0.4s ease-in-out;
 }
 
@@ -228,11 +249,17 @@
 /* Inbox Chat Form */
 .inbox-chat-form {
     width: 100%;
-    position: relative;
 }
 
 .inbox-header-user-info {
     background: white;
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 20px 20px;
+    border: none;
+    border-radius: 10px;
+    height: 90px;
+    transition: background 0.4s ease-in-out;
 }
 
 .inbox-header-user-info:hover {
@@ -249,41 +276,46 @@
 
 /*TODO Message Content Styles */
 .message-content {
-    height: 700px;
+    height: 500px;
     overflow-y: scroll;
-    padding: 45px 80px 45px 30px;
+    padding: 25px 30px 15px 30px;
 }
 
 .chat-date p {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 20px;
     line-height: 25px;
     letter-spacing: 0.1px;
     color: #939393;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 /* Host messages styles */
 .host-msg>p,
 .msg-document {
     width: max-content;
-    max-width: 450px;
-    min-height: 67px;
-    font-weight: 700;
-    font-size: 20px;
+    max-width: 50%;
+    min-height: 50px;
+    font-weight: 600;
+    font-size: 18px;
     line-height: 25px;
     letter-spacing: 0.1px;
     color: #000000;
     background: #E9E9E9;
     border-radius: 20px 20px 20px 0px;
-    padding: 20px 20px 22px 33px;
+    padding: 10px 10px 11px 15px;
 }
 
 .host-msg>span {
     display: inline-block;
-    margin-top: 11px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    margin-top: 5px;
     margin-bottom: 22px;
     margin-left: 30px;
+    color: #939393;
 }
 
 .host-msg .msg-document {
@@ -295,7 +327,7 @@
 
 .msg-document .document-content h3 {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 25px;
     letter-spacing: 0.1px;
     color: #009DA7;
@@ -319,28 +351,31 @@
 /* User messages style: */
 .user-msg {
     margin-left: auto;
-    width: 348px;
+    width: max-content;
+    max-width: 50%;
     margin-bottom: 22px;
 }
 
 .user-msg>p {
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 18px;
     line-height: 25px;
     letter-spacing: 0.1px;
     color: #000000;
     background: #FFFFFF;
     border-radius: 20px 20px 0px 20px;
-    padding-top: 20px;
-    padding-bottom: 22px;
-    padding-left: 25px;
+    padding: 10px 10px 12px 15px;
 }
 
 .user-msg>span {
-    text-align: left;
-    display: block;
-    margin-top: 11px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    margin-top: 5px;
+    margin-bottom: 22px;
     margin-left: 30px;
+    color: #939393;
 }
 
 .user-msg-image {
@@ -369,9 +404,8 @@
     display: flex;
     align-items: center;
     border-top: 1px solid #C6C6C6;
-    margin: 0 37px;
-    padding-top: 18px;
-    padding-bottom: 15px;
+    margin: 0 30px;
+    height: 80px;
 }
 
 .message-write .message-input {
@@ -387,6 +421,7 @@
     background: transparent;
     border: none;
     outline: none;
+    padding: 0 20px 0 0;
 }
 
 .message-send {
@@ -395,17 +430,22 @@
 }
 
 .message-send div {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     border-radius: 20px;
+}
+
+.message-send div img {
+    width: 24px;
+    height: 24px;
 }
 
 /* Message send into first div: */
 .message-send div.select-image {
     background: #E9E9E9;
-    padding: 24px;
-    transition: all 0.3s ease-in-out;
+    padding: 18px;
+    transition: all 0.2s ease-in-out;
 }
 
 .message-send div.select-image:hover {
@@ -413,10 +453,8 @@
 }
 
 .message-send div.select-image img {
-    width: 32px;
-    height: 32px;
     opacity: 0.5;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .message-send div.select-image:hover img {
@@ -426,8 +464,8 @@
 /* Message send into second div: */
 .message-send div.select-document {
     background: #E9E9E9;
-    padding: 24px 22px;
-    transition: all 0.3s ease-in-out;
+    padding: 18px;
+    transition: all 0.2s ease-in-out;
 }
 
 .message-send div.select-document:hover {
@@ -435,10 +473,8 @@
 }
 
 .message-send div.select-document img {
-    width: 32px;
-    height: 32px;
     opacity: 0.5;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .message-send div.select-document:hover img {
@@ -448,8 +484,8 @@
 /* Message send into third div: */
 .message-send div.send-message {
     background: #45E8F2;
-    padding: 25px;
-    transition: all 0.3s ease-in-out;
+    padding: 18px;
+    transition: all 0.2s ease-in-out;
 }
 
 .message-send div.send-message:hover {
@@ -458,9 +494,9 @@
 
 /*TODO SOHBET  */
 .contact-message {
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    right: 20px;
+    right: 100px;
     z-index: 3;
     height: 46px;
     transition: height 0.3s ease-in-out;
@@ -468,10 +504,9 @@
 }
 
 .contact-message-select {
-    width: 332px;
+    width: 280px;
     height: 46px;
     background: #E2E8E9;
-    /* ?? */
     display: flex;
     cursor: pointer;
     align-items: center;
@@ -493,21 +528,16 @@
 .contact-message-select img:nth-child(3) {
     margin-right: 15px;
     transform: rotate(90deg);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .contact-message-options {
     display: none;
-    /* opacity: 0;
-    overflow: hidden;
-    visibility: hidden;
-    pointer-events: none;
-    height: 0; */
 }
 
 /*! Contact Message Select active oldukda:  */
 .contact-message.contact-active {
-    height: 392px;
+    height: 350px;
 }
 
 .contact-message-select.active img:nth-child(3) {
@@ -515,10 +545,6 @@
 }
 
 .contact-message.contact-active .contact-message-options {
-    /* opacity: 1;
-    overflow: visible;
-    visibility: visible;
-    pointer-events: all; */
     display: block;
     height: calc(100% - 46px);
 }
@@ -526,6 +552,11 @@
 /* .message-option-online-users */
 .contact-message-options {
     overflow-y: auto;
+}
+
+/*! User Chat active oldukda  */
+.contact-message-options .user-chat.active {
+    background: #E3FAFF;
 }
 
 .status-online {
@@ -540,13 +571,21 @@
     display: inline-block;
 }
 
-.message-option-online-users div,
-.message-option-offline-users div {
+.online-user,
+.online-user-title,
+.offline-user,
+.offline-user-title {
     display: flex;
     align-items: center;
     gap: 13px;
     height: 46px;
     padding: 13px 20px;
+}
+
+.message-option-online-users div:hover,
+.message-option-offline-users div:hover {
+    background: #E3FAFF;
+    cursor: pointer;
 }
 
 .online-user-title .status-online,
@@ -576,26 +615,140 @@
     text-transform: uppercase;
 }
 
+.online-user-name,
+.offline-user-name {
+    font-size: 14px;
+}
 
 
+/* User Chat Message Content */
+.contact-user-chat {
+    width: 0px;
+    height: 0px;
+    background: white;
+    position: fixed;
+    bottom: 0;
+    right: 380px;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-user-chat.user-chat-active {
+    width: 300px;
+    height: 350px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+    pointer-events: all;
+    bottom: 0;
+}
 
 
+.contact-user-chat .user-chat-header {
+    background: #E3FAFF;
+}
+
+.user-chat-header img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.user-chat-header p {
+    flex: 1 1 auto;
+}
+
+.user-chat-messages {
+    height: calc(100% - 100px);
+    overflow-y: auto;
+    background-color: white;
+}
+
+.user-chat-messages li {
+    padding: 2px 10px;
+}
+
+.user-chat-messages li span {
+    margin-left: 5px;
+}
+
+.user-chat-messages li strong {
+    font-weight: 800;
+    font-size: 18px;
+    color: #009DA7;
+}
+
+.user-chat-messages li strong:after {
+    content: " : ";
+}
+
+.user-message-document {
+    color: #2AC7D9;
+}
+
+.user-message-document img {
+    width: 14px;
+    height: 14px;
+    transform: rotate(270deg);
+}
+
+.user-chat-send-group {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.user-chat-send-group textarea {
+    flex: 1 1 auto;
+    border: none;
+    outline: none;
+    padding: 5px;
+    resize: none;
+    overflow: hidden;
+}
+
+.send-image-group img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.send-image-group a:nth-child(1) img {
+    transform: rotate(270deg);
+}
 
 /*! Inbox Message Section == Container , Scrollbar Style */
 .message-content::-webkit-scrollbar-track,
+.inbox-sidebar-users::-webkit-scrollbar-track,
+.user-chat-messages::-webkit-scrollbar-track,
 .contact-message-options::-webkit-scrollbar-track {
     background-color: #B1E9F4;
 }
 
 .message-content::-webkit-scrollbar,
+.inbox-sidebar-users::-webkit-scrollbar,
+.user-chat-messages::-webkit-scrollbar,
 .contact-message-options::-webkit-scrollbar {
     width: 8px;
     background-color: #2CD8FB;
 }
 
 .message-content::-webkit-scrollbar-thumb,
+.inbox-sidebar-users::-webkit-scrollbar-thumb,
+.user-chat-messages::-webkit-scrollbar-thumb,
 .contact-message-options::-webkit-scrollbar-thumb {
     border-radius: 100px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #2CD8FB;
+}
+
+/*TODO Responsive Design Styles */
+@media (max-width: 1200px) {
+    .inbox-container {
+        width: 97%;
+    }
 }
