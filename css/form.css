@@ -244,11 +244,38 @@
     border-radius: 100px;
     display: inline-flex;
     align-items: center;
+    cursor: default;
 }
 
 .filtr-btn img {
     margin-left: 10px;
     font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+.add-filter{
+    border: 1.5px solid #000000;
+    outline: none;
+    width: 40px;
+    height: 23px;
+    border-radius: 100px;
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+}
+.add-filter:hover{
+    background: #DBDBDB;
+}
+.add-filter:hover img{
+    /* filter: invert(0.5); */
+    opacity: 0.4;
+}
+.add-filter img{
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin-left: 10px;
 }
 
 /* * Combobox button */
@@ -494,12 +521,14 @@
 .sub-menu-combobox .menu-select {
     gap: 10px;
     padding: 0 10px;
-    width: 136px;
+    min-width: 136px;
 }
 
 .sub-menu-combobox .menu-options{
-    top: 43px;
-    background-color: #2C2C2C;
+    left: 0 !important;
+    width: 100% !important;
+    top: 43px !important;
+    background-color: #2C2C2C !important;
 }
 
 .head-submenu-left button {

@@ -1,0 +1,213 @@
+.tab-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.info-box {
+    width: 100%;
+    background: #F9FEFF;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 15px 15px;
+    border-top: 3px solid #C3F5FF;
+    padding: 7px 30px;
+}
+
+.info-box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.info-box-header>div {
+    display: flex;
+    align-items: center;
+}
+
+.info-box-header>div>img {
+    margin-right: 10px;
+}
+
+.iinfo-box-header>div>span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #5E5E5E;
+}
+
+.info-box-header>img {
+    transform: rotate(180deg);
+    transition: all ease-in-out 0.5s;
+}
+
+.info-box-body {
+    background: #F9FEFF;
+    border-top: 1px solid #E2E2E2;
+    padding: 20px 70px;
+    margin: 0px -30px;
+    display: none;
+}
+
+.dropdown-box-active~.info-box-body {
+    animation: dropDownBox 0.5s ease-in-out;
+    display: block;
+}
+
+.dropdown-box-active~.info-box-header>img {
+    transform: rotate(0deg);
+}
+
+@keyframes dropDownBox {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+.info-box-content {
+    margin-top: 50px;
+}
+
+/* ! Top Nav */
+.top-nav>ul {
+    display: flex;
+}
+
+.top-nav>ul>li {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    padding: 10px 40px;
+    background: #C0F5FF;
+    border: 1px solid #69E6FF;
+    margin-right: 4px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.top-nav>ul>li>a {
+    color: #5E5E5E;
+}
+
+.top-nav>ul>li.list-active,
+.top-nav>ul>li:hover {
+    background: #EDFCFF;
+    color: #fff;
+}
+
+.top-nav>ul>li.list-active>a,
+.top-nav>ul>li:hover>a {
+    color: black;
+    font-weight: 700;
+}
+
+/* ! Notification */
+.notification-box-header {
+    background: #EDFCFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
+    padding: 15px;
+    cursor: pointer;
+}
+
+.notification-box-header>img {
+    margin-right: 10px;
+    transform: rotate(180deg);
+    transition: all ease-in-out 0.5s;
+}
+
+.dropdown-box-active~.notification-box-header>img {
+    transform: rotate(0deg);
+}
+
+.dropdown-box-active~.notification-box-body {
+    animation: dropDownBox 0.5s ease-in-out;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.notification-box-body {
+    display: none;
+    animation: dropDownBox 0.5s ease-in-out;
+}
+
+/* ! Notifications */
+.notification-box-body {}
+
+.notifications {
+    border: 1px solid #DDDDDD;
+}
+
+.notifications>h2 {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+}
+
+.notification-detail>div {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.notification-detail-name {
+    text-align: end;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+}
+
+.notification-detail>div>div {
+    padding: 15px;
+}
+
+.notification-detail-input {
+    border-left: 1px solid #E6E6E6;
+
+}
+
+.notification-detail-input>input,
+.notification-detail-input>select {
+    border: 1px solid #9AEEFF;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 100%;
+    transition: all ease-in-out 0.3s;
+    margin-bottom: 10px;
+}
+
+.notification-detail-input>input:focus,
+.notification-detail-input>input:hover,
+.notification-detail-input>select:focus,
+.notification-detail-input>select:hover {
+    outline: none;
+    border: 1px solid #69E6FF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.notification-detail-input>div {
+    display: flex;
+    align-items: center;
+}
+
+.notification-detail-input>div>* {
+    margin-right: 10px;
+}

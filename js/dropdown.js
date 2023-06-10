@@ -18,3 +18,21 @@ dropdowns.forEach(menu => {
 
     })
 })
+
+const list = document.querySelectorAll(".folder-explorer-list>li")
+// console.log(list)
+list.forEach((item) => {
+    const li = item.children[1];
+    item.addEventListener("click",()=>{
+        li.classList.toggle("list-active")
+    })
+})
+
+// * Modal Tab
+const modalTab = document.querySelectorAll(".dropdown-box");
+// console.log(modalTab);
+modalTab.forEach(item => {
+    item.addEventListener("click",()=>{
+        item.classList.toggle("dropdown-box-active")
+    })
+})

@@ -1,9 +1,8 @@
-/* Import Form , Colors and Reset CSS */
-@import url("../main.css");
-/* Import Table CSS styles */
-@import url("../dashboard/dashboard-table.css");
-
 /*! ==========  Dashboard Kanban Container ========== */
+.main-lists-container > .kanban-container{
+    width: 95%;
+    margin: 40px auto;
+} 
 .kanban-container {
     width: 80%;
     margin: 70px auto;
@@ -43,11 +42,11 @@
 
 /*! Kanban List Container */
 .kanban-content-section {
+    width: 1400px;
     display: flex;
     border: 1px solid #DEDEDE;
     overflow-x: auto;
     transform: rotateX(180deg);
-    scroll-padding-bottom: 20px;
 }
 
 .kanban-list {
@@ -352,6 +351,24 @@
 }
 
 /*! Responsive Design */
+@media (max-width: 1200px) {
+    .kanban-content-section{
+        width: 98% !important;
+        margin: 0 auto;
+    }
+    .kanban-content-section{
+        max-width: 900px;
+    }
+}
+@media (max-width: 992px) {
+    .kanban-content-section{
+        max-width: 780px;
+    }
+    
+}
+@media (max-width: 768px) {
+    
+}
 
 
 
