@@ -1,6 +1,7 @@
 /*! Dashboard Container */
 .dashboard-container {
     display: flex;
+    width: 100%;
 }
 
 /*! Dashboard Sidebar  */
@@ -11,8 +12,8 @@
 
 /*----Sidebar Open------*/
 .dashboard-sidebar.sidebar-open {
-    width: 266px;
-    transition: all 0.5s ease-in-out;
+    width: 220px;
+    transition: all 0.3s ease-in-out;
 }
 
 /*----Sidebar Close------*/
@@ -163,8 +164,13 @@
 }
 
 /*! Dashboard Main Container  */
+.sidebar-close+.dashboard-main-container {
+    width: calc(100% - 73px);
+}
+
 .dashboard-main-container {
-    width: 100%;
+    transition: all 0.2s ease-in-out;
+    min-width: calc(100% - 220px);
     background: linear-gradient(180deg, #F6F8FC 0%, #EDF1F8 100%);
 }
 
@@ -280,6 +286,12 @@
     gap: 10px;
 }
 
+.dashboard-header-menu>div :where(p, span):hover {
+    cursor: pointer;
+    color: black;
+    font-weight: 800;
+}
+
 .dashboard-header-menu .menu-dot {
     width: 10px;
     height: 1px;
@@ -289,7 +301,8 @@
 .page-link img {
     opacity: 0.3;
 }
-.page-link-data{
+
+.page-link-data {
     width: 180% !important;
 }
 
@@ -322,6 +335,14 @@
 .main-lists-container,
 .main-lists-container>div:first-child {
     display: flex;
+}
+
+.main-lists-container>div.navbar-close+ :where(div, section, aside, article) {
+    width: calc(100% - 40px);
+}
+
+.main-lists-container>div:nth-child(2) {
+    min-width: calc(100% - 250px);
 }
 
 /*! Navbar Container  */
@@ -358,6 +379,9 @@
 
 .navbar-lists .navbar-list-group .list-select:hover {
     background: #E2E2E2;
+}
+.navbar-lists .navbar-list-group .list-select:hover a{
+    font-weight: 700;
 }
 
 .navbar-lists .navbar-list-group .list-select {
@@ -416,7 +440,7 @@
     outline: none;
     border: 1px solid #E8F5FF;
     background-color: #D6EDFE;
-    ;
+    position: relative;
 }
 
 .nav-sidebar-toggle-menu button img.icon-right {
@@ -425,6 +449,9 @@
     color: #5FA5D8;
     transition: all 0.2s ease-in-out;
     transform: rotate(90deg);
+    position: absolute;
+    left: 0;
+    top: 300px;
 }
 
 .navbar-container-close~.nav-sidebar-toggle-menu img.icon-right {
@@ -575,7 +602,7 @@ nav ul::-webkit-scrollbar-thumb {
     position: absolute;
     top: 30px;
     left: -10px;
-    background: #F6F8FC ;
+    background: #F6F8FC;
     border-bottom-left-radius: 10px;
     /* Bug */
     border-bottom-right-radius: 10px;

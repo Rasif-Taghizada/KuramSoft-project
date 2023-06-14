@@ -56,8 +56,8 @@ function createMenuonRightClick(x, y) {
   menuElement.appendChild(menuListElement);
   container.appendChild(menuElement);
   container.style.display = "block";
-  container.style.top = `${y+40}px`;
-  container.style.left = `${x-10}px`;
+  container.style.top = `${y + 40}px`;
+  container.style.left = `${x - 10}px`;
   window.addEventListener("click", () => {
     menuElement.remove();
     container.style.display = "none";

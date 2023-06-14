@@ -14,7 +14,7 @@
 
   <body>
     <!--! File Manager -->
-    <section class="file-manager file-manager-grid3">
+    <section class="file-manager folder-preview-disabled">
       <!-- ! Folder SideBar -->
       <div class="folder-sidebar">
         <header>
@@ -278,7 +278,7 @@
                   <tr class="table-header">
                     <th>
                       <div class="name-select-box">
-                        <input type="checkbox" name="" id="" />
+                        <input type="checkbox" name="" id="" class="selectAllCheckBox" />
                         <span>Name</span>
                         <img src="./assets/icons/zeit.svg" alt="bottom icon" />
                       </div>
@@ -310,7 +310,7 @@
                     <th></th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody class="table-body">
                   <tr>
                     <td>
                       <div class="name-select-box">
@@ -731,7 +731,7 @@
               <img src="./assets/icons/Edit-icon.svg" alt="Edit icon" />
               Edit
             </div>
-            <div>
+            <div class="preview-delete">
               <img src="./assets/icons/delete-icon.svg" alt="Delete icon" />
               Delete
             </div>
@@ -808,5 +808,6 @@
     <script src="./js/upload-modal.js"></script>
     <script src="./js/right-click.js"></script>
     <script src="./js/changeDisplay.js"></script>
+    <script src="./js/fileCheckBox.js"></script>
   </body>
 </html>

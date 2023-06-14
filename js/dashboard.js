@@ -44,6 +44,7 @@ const navbarContainer = document.querySelector(".navbar-container");
 // console.log(navbarBtn);
 navbarBtn?.addEventListener("click", () => {
     navbarContainer.classList.toggle("navbar-container-close");
+    navbarContainer.parentElement.classList.toggle("navbar-close")
 })
 
 

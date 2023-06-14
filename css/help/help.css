@@ -15,11 +15,15 @@
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
     padding: 35px 50px;
     border-bottom: 3px solid #C3F5FF;
+}
 
+.help-container > header>img{
+    cursor: pointer;
 }
 
 .modal-box {
     display: none;
+    margin-bottom: 40px;
 }
 
 /* ! Help Nav */
@@ -44,6 +48,7 @@
     letter-spacing: 0.1px;
     cursor: pointer;
     opacity: 0.5;
+    transition: all ease-in 0.3s;
 }
 
 .help-nav-list li:hover {
@@ -78,29 +83,60 @@
     border-bottom: 1px solid #C9C9C9;
 }
 
-.collapsible-group li {
+.collapsible-group li>div:first-child {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
-.collapsible-group li>a {
+.collapsible-group li>div>p {
     font-weight: 500;
     font-size: 20px;
     line-height: 25px;
     letter-spacing: 0.1px;
     transition: all ease-in 0.3s;
+    user-select: none;
 }
 
-.collapsible-group li>img {
+.collapsible-group li>div>img {
     width: 30px;
     margin-right: 6px;
+    transition: all ease-in 0.3s;
 }
 
-.collapsible-group li>a:hover {
-    color: #00A3FF;
+
+
+.dropdown-box-active>div>img {
+    transform: rotate(180deg);
 }
 
+.dropdown-box-active>.modal-box {
+    animation: dropDownBox 0.5s ease-in-out;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.dropdown-box-active>.modal-box {
+    animation: dropDownBox 0.5s ease-in-out;
+    display: block;
+}
+
+.dropdown-box-active img {
+    transform: rotate(0deg);
+}
+@keyframes dropDownBox {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 
 /* ! Additional Page */
 
