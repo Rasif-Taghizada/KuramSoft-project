@@ -143,7 +143,6 @@
 }
 
 /* ! Notifications */
-.notification-box-body {}
 
 .notifications {
     border: 1px solid #DDDDDD;
@@ -193,10 +192,8 @@
     margin-bottom: 10px;
 }
 
-.notification-detail-input>input:focus,
-.notification-detail-input>input:hover,
-.notification-detail-input>select:focus,
-.notification-detail-input>select:hover {
+.notification-detail-input>input:is(:focus, :hover),
+.notification-detail-input>select:is(:focus, :hover){
     outline: none;
     border: 1px solid #69E6FF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);

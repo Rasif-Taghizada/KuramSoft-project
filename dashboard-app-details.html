@@ -526,38 +526,39 @@
                 APP MANAGER
               </span>
             </div>
+      
             <main class="app-details-main">
               <!-- App details nav map -->
-              <div class="app-details-nav-map app-details-nav-map-top">
+              <div class="app-details-nav-map">
                 <ul class="nav-map-list">
                   <li>
                     <div class="circlue"></div>
-                    Overiew
+                    <a href="#overiew">Overiew</a>
                   </li>
                   <li>
                     <div class="circlue"></div>
-
-                    Updates
+      
+                    <a href="#updates">Updates</a>
                   </li>
                   <li>
                     <div class="circlue"></div>
-                    Forms
+                    <a href="#forms">Forms</a>
                   </li>
                   <li>
                     <div class="circlue"></div>
-                    Pages
+                    <a href="#pages">Pages</a>
                   </li>
                   <li>
                     <div class="circlue"></div>
-                    Report
+                    <a href="#report">Report</a>
                   </li>
                   <li>
                     <div class="circlue"></div>
-                    Special Component
+                    <a href="#specail">Special Component</a>
                   </li>
                   <li>
                     <div class="circlue"></div>
-                    Needed Apllications
+                    <a href="#neededApllications">Needed Apllications</a>
                   </li>
                 </ul>
                 <!-- ! App details User -->
@@ -592,8 +593,8 @@
                 </div>
                 <div class="details-header-rigth">
                   <p>
-                    Compatible Browsers: IE9, IE10, IE11, Firefox, Safari,
-                    Opera, Chrome,
+                    Compatible Browsers: IE9, IE10, IE11, Firefox, Safari, Opera,
+                    Chrome,
                   </p>
                   <p>High Resolution:Yes</p>
                   <p>Compatible With: Bootstrap 3.x,</p>
@@ -610,113 +611,83 @@
                   <button class="app-install-button">Install</button>
                 </div>
                 <div class="state-requared">
-                  <span class="material-symbols-outlined"> close </span>
+                  <img src="./assets/icons/close-red.svg" alt="close icon red" />
                   <span>No software required</span>
                 </div>
               </div>
               <!-- ! App Detals Overview -->
-              <div class="app-details-overview">
+              <div class="app-details-overview" id="overiew">
                 <h3>Overview</h3>
                 <!-- ? Overview Carusel -->
                 <div class="app-overview-carusel">
-                  <div class="app-carusel-content"></div>
+                  <div class="app-carusel-content">aaa</div>
+                  <div class="app-carusel-content">bbb</div>
+                  <div class="app-carusel-content">ccc</div>
                   <div class="app-carusel-circle">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
+                    <div class="circle" onclick="curentSlice(0)"></div>
+                    <div class="circle" onclick="curentSlice(1)"></div>
+                    <div class="circle" onclick="curentSlice(2)"></div>
                   </div>
                 </div>
                 <!-- ? Overview Content -->
                 <div class="app-overview-content">
-                  <img
-                    src="./assets/icons/notifications.svg"
-                    alt="notifications"
-                  />
+                  <img src="./assets/icons/notifications.svg" alt="notifications" />
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Excepturi facere earum quis ipsa vitae qui minima esse
-                    ducimus dolorum iste nisi laborum repellat dolores dolore
-                    debitis adipisci nemo quia autem pariatur a voluptatem
-                    dignissimos maiores accusantium nobis tempora consequatur
-                    cumque quas ea doloribus deleniti. Quibusdam commodi
-                    laboriosam error temporibus iste ipsa soluta distinctio
-                    maiores ad totam beatae incidunt veritatis enim? Reiciendis
-                    voluptate cupiditate asperiores ratione laboriosam alias
-                    mollitia eaque labore aperiam similique reprehenderit
-                    assumenda quidem eos explicabo rerum. Porro at ex magni
-                    aliquam laborum delectus voluptate officia modi nam et
-                    cupiditate culpa asperiores eaque fuga quae. Dolorum commodi
-                    labore neque fuga totam voluptate vitae ea laudantium iure
-                    quos placeat accusamus.
+                    Excepturi facere earum quis ipsa vitae qui minima esse ducimus
+                    dolorum iste nisi laborum repellat dolores dolore debitis adipisci
+                    nemo quia autem pariatur a voluptatem dignissimos maiores
+                    accusantium nobis tempora consequatur cumque quas ea doloribus
+                    deleniti. Quibusdam commodi laboriosam error temporibus iste ipsa
+                    soluta distinctio maiores ad totam beatae incidunt veritatis enim?
+                    Reiciendis voluptate cupiditate asperiores ratione laboriosam
+                    alias mollitia eaque labore aperiam similique reprehenderit
+                    assumenda quidem eos explicabo rerum. Porro at ex magni aliquam
+                    laborum delectus voluptate officia modi nam et cupiditate culpa
+                    asperiores eaque fuga quae. Dolorum commodi labore neque fuga
+                    totam voluptate vitae ea laudantium iure quos placeat accusamus.
                   </p>
                 </div>
                 <!-- ? Updates Box -->
-                <div class="app-overiew-updates">
-                  <img
-                    src="./assets/icons/drop-opacity.svg"
-                    alt="Drop Opacity"
-                  />
+                <div class="app-overiew-updates" id="updates">
+                  <img src="./assets/icons/drop-opacity.svg" alt="Drop Opacity" />
                   <h4 class="overiew-header-text">Updates</h4>
                   <span class="overiew-additional-text">New in 2.4.3</span>
                   <!-- *TODO Overview List -->
                   <ul class="overiew-updates-list">
                     <li>
-                      <img
-                        src="./assets/icons/play-list-check.svg"
-                        alt="check"
-                      />
+                      <img src="./assets/icons/play-list-check.svg" alt="check" />
                       In-app previews of Word, PowerPoint and PDF files
                     </li>
                     <li>
-                      <img
-                        src="./assets/icons/play-list-check.svg"
-                        alt="check"
-                      />
+                      <img src="./assets/icons/play-list-check.svg" alt="check" />
                       New search experience that tracks recent queries and shows
                       typeahead suggestions
                     </li>
                     <li>
-                      <img
-                        src="./assets/icons/play-list-check.svg"
-                        alt="check"
-                      />
+                      <img src="./assets/icons/play-list-check.svg" alt="check" />
                       View-only permissions for shared folders for Dropbox for
                       Business users
                     </li>
                     <li>
-                      <img
-                        src="./assets/icons/play-list-check.svg"
-                        alt="check"
-                      />
+                      <img src="./assets/icons/play-list-check.svg" alt="check" />
                       Cache performance enhancements
                     </li>
                     <li>
-                      <img
-                        src="./assets/icons/play-list-check.svg"
-                        alt="check"
-                      />
+                      <img src="./assets/icons/play-list-check.svg" alt="check" />
                       Lots of bug fixes and improvements New in 2.4.2:
                     </li>
                     <li>
-                      <img
-                        src="./assets/icons/play-list-check.svg"
-                        alt="check"
-                      />
+                      <img src="./assets/icons/play-list-check.svg" alt="check" />
                       Support for additional languages
                     </li>
                     <li>
-                      <img
-                        src="./assets/icons/play-list-check.svg"
-                        alt="check"
-                      />
-                      Danish, Dutch, Swedish and Thai - Bug fixes and
-                      improvements New in 2.4.1
+                      <img src="./assets/icons/play-list-check.svg" alt="check" />
+                      Danish, Dutch, Swedish and Thai - Bug fixes and improvements New
+                      in 2.4.1
                     </li>
                     <li>
-                      <img
-                        src="./assets/icons/play-list-check.svg"
-                        alt="check"
-                      />
+                      <img src="./assets/icons/play-list-check.svg" alt="check" />
                       Bug fixes and performance improvements
                     </li>
                   </ul>
@@ -724,7 +695,7 @@
                 <!-- ? Additional Container -->
                 <div class="app-additiona-container">
                   <!-- *TODO Forms -->
-                  <div class="app-additiona-box">
+                  <div class="app-additiona-box" id="forms">
                     <img src="./assets/icons/view-split.svg" alt="View Slit" />
                     <h4>Forms</h4>
                     <div class="list-box-main">
@@ -752,22 +723,22 @@
                         <ul class="app-additional-list">
                           <li>
                             <div class="square square-blue"></div>
-
+      
                             Lots of bug fixes and improvements
                           </li>
                           <li>
                             <div class="square square-blue"></div>
-
+      
                             Support for additional languages
                           </li>
                           <li>
                             <div class="square square-blue"></div>
-
+      
                             Danish, Dutch, Swedish and Thai
                           </li>
                           <li>
                             <div class="square square-blue"></div>
-
+      
                             Bug fixes and improvements New in 2.4.1
                           </li>
                         </ul>
@@ -775,7 +746,7 @@
                     </div>
                   </div>
                   <!-- *TODO Pages -->
-                  <div class="app-additiona-box additional-box-active">
+                  <div class="app-additiona-box additional-box-active" id="pages">
                     <img src="./assets/icons/album.svg" alt="Albom" />
                     <h4>Pages</h4>
                     <div class="list-box-main">
@@ -814,7 +785,7 @@
                     </div>
                   </div>
                   <!-- *TODO Reports -->
-                  <div class="app-additiona-box">
+                  <div class="app-additiona-box" id="report">
                     <img
                       src="./assets/icons/play-list-search.svg"
                       alt="Search List"
@@ -845,12 +816,12 @@
                         <ul class="app-additional-list">
                           <li>
                             <div class="square square-blue"></div>
-
+      
                             Lots of bug fixes and improvements
                           </li>
                           <li>
                             <div class="square square-blue"></div>
-
+      
                             Support for additional languages
                           </li>
                         </ul>
@@ -859,42 +830,42 @@
                   </div>
                 </div>
                 <!-- ? Table -->
-                <div class="overview-table-box">
+                <div class="overview-table-box" id="specail">
                   <table class="overiew-table">
                     <tr>
                       <th>Name</th>
                       <th>Description</th>
                       <th>Type</th>
                     </tr>
-
+      
                     <tr>
                       <td>Lorem ipsum</td>
                       <td>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt ut
                       </td>
                       <td>Workflow</td>
                     </tr>
                     <tr>
                       <td>Lorem ipsum</td>
                       <td>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt ut
                       </td>
                       <td>Workflow</td>
                     </tr>
                     <tr>
                       <td>Lorem ipsum</td>
                       <td>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt ut
                       </td>
                       <td>Workflow</td>
                     </tr>
                   </table>
                 </div>
                 <!-- ? Needed Applications -->
-                <div class="overview-needed-applications">
+                <div class="overview-needed-applications" id="neededApllications">
                   <img
                     src="./assets/icons/play-list-search-black.svg"
                     alt="overview-needed-applications"
@@ -917,56 +888,6 @@
                       <button class="application-detal-button">Details</button>
                     </div>
                   </div>
-                </div>
-              </div>
-              <!--! App Details Nav Map Bottom  -->
-              <div class="app-details-nav-map app-details-nav-map-bottom">
-                <ul class="nav-map-list">
-                  <li>
-                    <div class="circlue"></div>
-                    Overiew
-                  </li>
-                  <li>
-                    <div class="circlue"></div>
-
-                    Updates
-                  </li>
-                  <li>
-                    <div class="circlue"></div>
-                    Forms
-                  </li>
-                  <li>
-                    <div class="circlue"></div>
-                    Pages
-                  </li>
-                  <li>
-                    <div class="circlue"></div>
-                    Report
-                  </li>
-                  <li>
-                    <div class="circlue"></div>
-                    Special Component
-                  </li>
-                  <li>
-                    <div class="circlue"></div>
-                    Needed Apllications
-                  </li>
-                </ul>
-                <!--  App details User -->
-                <div class="app-details-user">
-                  <p class="details-user-name">Ümit Ahmet Şahin</p>
-                  <p class="details-user-date">Setup date: 01.05.2013</p>
-                  <div class="details-star-box">
-                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                    <img src="./assets/icons/icon-star.svg" alt="star icon" />
-                  </div>
-                </div>
-                <!-- ? App details Send Message -->
-                <div class="details-send-mesasage">
-                  <img src="./assets/icons/comment1.svg" alt="" />
-                  <p>Send Message</p>
                 </div>
               </div>
             </main>

@@ -29,36 +29,36 @@
 
       <main class="app-details-main">
         <!-- App details nav map -->
-        <div class="app-details-nav-map app-details-nav-map-top">
+        <div class="app-details-nav-map">
           <ul class="nav-map-list">
             <li>
               <div class="circlue"></div>
-              Overiew
+              <a href="#overiew">Overiew</a>
             </li>
             <li>
               <div class="circlue"></div>
 
-              Updates
+              <a href="#updates">Updates</a>
             </li>
             <li>
               <div class="circlue"></div>
-              Forms
+              <a href="#forms">Forms</a>
             </li>
             <li>
               <div class="circlue"></div>
-              Pages
+              <a href="#pages">Pages</a>
             </li>
             <li>
               <div class="circlue"></div>
-              Report
+              <a href="#report">Report</a>
             </li>
             <li>
               <div class="circlue"></div>
-              Special Component
+              <a href="#specail">Special Component</a>
             </li>
             <li>
               <div class="circlue"></div>
-              Needed Apllications
+              <a href="#neededApllications">Needed Apllications</a>
             </li>
           </ul>
           <!-- ! App details User -->
@@ -111,20 +111,22 @@
             <button class="app-install-button">Install</button>
           </div>
           <div class="state-requared">
-            <img src="./assets/icons/close-red.svg" alt="close icon red">
+            <img src="./assets/icons/close-red.svg" alt="close icon red" />
             <span>No software required</span>
           </div>
         </div>
         <!-- ! App Detals Overview -->
-        <div class="app-details-overview">
+        <div class="app-details-overview" id="overiew">
           <h3>Overview</h3>
           <!-- ? Overview Carusel -->
           <div class="app-overview-carusel">
-            <div class="app-carusel-content"></div>
+            <div class="app-carusel-content">aaa</div>
+            <div class="app-carusel-content">bbb</div>
+            <div class="app-carusel-content">ccc</div>
             <div class="app-carusel-circle">
-              <div class="circle"></div>
-              <div class="circle"></div>
-              <div class="circle"></div>
+              <div class="circle" onclick="curentSlice(0)"></div>
+              <div class="circle" onclick="curentSlice(1)"></div>
+              <div class="circle" onclick="curentSlice(2)"></div>
             </div>
           </div>
           <!-- ? Overview Content -->
@@ -147,7 +149,7 @@
             </p>
           </div>
           <!-- ? Updates Box -->
-          <div class="app-overiew-updates">
+          <div class="app-overiew-updates" id="updates">
             <img src="./assets/icons/drop-opacity.svg" alt="Drop Opacity" />
             <h4 class="overiew-header-text">Updates</h4>
             <span class="overiew-additional-text">New in 2.4.3</span>
@@ -193,7 +195,7 @@
           <!-- ? Additional Container -->
           <div class="app-additiona-container">
             <!-- *TODO Forms -->
-            <div class="app-additiona-box">
+            <div class="app-additiona-box" id="forms">
               <img src="./assets/icons/view-split.svg" alt="View Slit" />
               <h4>Forms</h4>
               <div class="list-box-main">
@@ -244,7 +246,7 @@
               </div>
             </div>
             <!-- *TODO Pages -->
-            <div class="app-additiona-box additional-box-active">
+            <div class="app-additiona-box additional-box-active" id="pages">
               <img src="./assets/icons/album.svg" alt="Albom" />
               <h4>Pages</h4>
               <div class="list-box-main">
@@ -283,7 +285,7 @@
               </div>
             </div>
             <!-- *TODO Reports -->
-            <div class="app-additiona-box">
+            <div class="app-additiona-box" id="report">
               <img
                 src="./assets/icons/play-list-search.svg"
                 alt="Search List"
@@ -328,7 +330,7 @@
             </div>
           </div>
           <!-- ? Table -->
-          <div class="overview-table-box">
+          <div class="overview-table-box" id="specail">
             <table class="overiew-table">
               <tr>
                 <th>Name</th>
@@ -363,7 +365,7 @@
             </table>
           </div>
           <!-- ? Needed Applications -->
-          <div class="overview-needed-applications">
+          <div class="overview-needed-applications" id="neededApllications">
             <img
               src="./assets/icons/play-list-search-black.svg"
               alt="overview-needed-applications"
@@ -388,57 +390,9 @@
             </div>
           </div>
         </div>
-        <!--! App Details Nav Map Bottom  -->
-        <div class="app-details-nav-map app-details-nav-map-bottom">
-          <ul class="nav-map-list">
-            <li>
-              <div class="circlue"></div>
-              Overiew
-            </li>
-            <li>
-              <div class="circlue"></div>
-
-              Updates
-            </li>
-            <li>
-              <div class="circlue"></div>
-              Forms
-            </li>
-            <li>
-              <div class="circlue"></div>
-              Pages
-            </li>
-            <li>
-              <div class="circlue"></div>
-              Report
-            </li>
-            <li>
-              <div class="circlue"></div>
-              Special Component
-            </li>
-            <li>
-              <div class="circlue"></div>
-              Needed Apllications
-            </li>
-          </ul>
-          <!--  App details User -->
-          <div class="app-details-user">
-            <p class="details-user-name">Ümit Ahmet Şahin</p>
-            <p class="details-user-date">Setup date: 01.05.2013</p>
-            <div class="details-star-box">
-              <img src="./assets/icons/icon-star.svg" alt="star icon" />
-              <img src="./assets/icons/icon-star.svg" alt="star icon" />
-              <img src="./assets/icons/icon-star.svg" alt="star icon" />
-              <img src="./assets/icons/icon-star.svg" alt="star icon" />
-            </div>
-          </div>
-          <!-- ? App details Send Message -->
-          <div class="details-send-mesasage">
-            <img src="./assets/icons/comment1.svg" alt="" />
-            <p>Send Message</p>
-          </div>
-        </div>
       </main>
     </div>
+
+    <script src="./js/appSlideShow.js"></script>
   </body>
 </html>

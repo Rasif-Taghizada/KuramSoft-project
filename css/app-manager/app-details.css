@@ -1,28 +1,26 @@
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48
+html{
+    scroll-behavior: smooth;
 }
-
 .container-app-details {
     width: 100%;
     padding: 50px 220px 50px 50px;
+    /* position: relative; */
 }
 
 /* App details Nav Map */
 .app-details-nav-map {
-    position: absolute;
-    right: -176px;
+    position: fixed;
+    right:44px;
+    top: 40%;
+    /* margin-right: -178px; */
+    width: max-content;
 }
 
-.app-details-nav-map-top {
-    top: 504px;
+.nav-map-list a{
+    transition: all ease 0.1s;
 }
-
-.app-details-nav-map-bottom {
-    bottom: 904px;
+.nav-map-list a:hover{
+    color: #00B2BD;
 }
 
 .nav-map-list>li {
@@ -87,6 +85,14 @@
     font-size: 18px;
     line-height: 23px;
     letter-spacing: 0.1px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.container-app-details>nav>a:hover {
+    opacity: 1;
+}
+.container-app-details>nav>img:first-child:hover {
+    opacity: 1; 
 }
 
 .app-details-name {
@@ -117,7 +123,7 @@
 
 .app-details-main {
     border: 1px solid var(--app-li-border-color);
-    position: relative;
+    /* position: relative;   */
 }
 
 /* App details Header */
@@ -264,6 +270,7 @@
 /* ! App Details Overview */
 .app-details-overview {
     padding: 30px;
+ 
 }
 
 .app-details-overview>h3 {
@@ -273,6 +280,7 @@
 }
 
 .app-overview-carusel {
+    position: relative;
     width: 100%;
     height: 263px;
     background-color: var(--app-overview-bg-color);
@@ -283,6 +291,8 @@
     align-items: center;
     justify-content: flex-end;
     padding: 18px;
+    z-index: 0;
+    overflow: hidden;
 }
 
 .app-carusel-circle {
@@ -295,6 +305,34 @@
     border-radius: 100%;
     background-color: var(--carusel-icon-color);
     margin-right: 12px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.app-carusel-circle>div:hover{
+    opacity: 1;
+}
+
+.app-carusel-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 18px;
+    z-index: -1;
+    display: none;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 /* ? App Overiew Content */
@@ -369,6 +407,7 @@
     border-radius: 30px;
     padding: 27px 40px;
     opacity: 0.4;
+    cursor: no-drop;
 }
 
 .app-additiona-box>h4 {
@@ -409,6 +448,7 @@
 .additional-box-active {
     opacity: 1;
     border-width: 3px;
+    cursor: initial;
 }
 
 /*? Overiew Table */
@@ -482,6 +522,7 @@
     border-radius: 10px;
     padding: 11px 33px 11px 11px;
     position: relative;
+    flex:1 1 auto;
 }
 
 .overiew-application-box>img {

@@ -72,7 +72,7 @@
     line-height: 50px;
     letter-spacing: 0.1px;
     text-align: right;
-    color: #D3D3D3;
+    color: #757575;
     padding: 5px 10px;
     margin-left: 35px;
     background-color: transparent;
@@ -144,6 +144,12 @@
     padding: 20px 25px;
     border: 2px solid #E2ABAB;
     border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.header-red-btn:hover {
+    background-color: #e1baba;
 }
 
 .red-bold-btn {
@@ -184,6 +190,11 @@
     font-size: 14px;
     line-height: 18px;
     margin-top: -5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.manager-user-box>button:hover {
+    background: #7bcfff;
 }
 
 .manager-user-box>button>img {
@@ -198,7 +209,8 @@
     align-items: center;
     margin-top: 35px;
     padding: 0 55px;
-    cursor: pointer;
+
+    margin-bottom: 20px;
 }
 
 .pagination-box>a {
@@ -207,6 +219,7 @@
     line-height: 54px;
     margin-right: 8px;
     color: var(--app-gray-text-color);
+    cursor: pointer;
 }
 
 .pagination-box>a.pagination-active {
@@ -251,12 +264,12 @@
 
 /* ! App Price Container */
 .app-price-container {
-    margin-top: 20px;
+
     padding: 0 50px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 50px 15px;
+    gap: 30px 15px;
 }
 
 /* ! App Price Container => App Price Box*/
@@ -271,7 +284,8 @@
     gap: 15px;
     padding: 20px;
     position: relative;
-
+    flex: 1 1 auto;
+    max-width: 800px;
 }
 
 .customaze-app-price-box .app-price-box {
@@ -329,7 +343,6 @@
     background: #A2F4FF;
     border: 1px solid #00FEFE;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
-    margin-right: 3px;
     text-transform: uppercase;
     display: inline-block;
 }
@@ -527,9 +540,14 @@
     transition: all ease-in-out 0.3s;
 }
 
+.app-update-button:hover {
+    background-color: #fdc4c4;
+}
+
 /* ! Customaze App Price Box */
 .customaze-app-price-box {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     padding: 52px;
@@ -562,10 +580,10 @@
     left: 5px;
 }
 
-.app-second-box .big-mount>span {
+/* .app-second-box .big-mount>span {
     width: 80px;
     text-align: center
-}
+} */
 
 .app-third-box .button-box-left {
     top: -20px;
@@ -809,8 +827,8 @@ input[type="range"]::-webkit-slider-thumb {
 
     .price-box-left>img {
         padding: 15px;
-        height: 80px;
-        width: 80px;
+        height: 95px;
+        width: 95px;
     }
 
     .price-box-right>h2 {
@@ -1100,8 +1118,8 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
     .price-box-left>img {
-        height: 60px;
-        width: 60px;
+        height: 75px;
+        width: 75px;
         border-radius: 10px;
     }
 

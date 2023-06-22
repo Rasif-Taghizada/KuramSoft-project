@@ -4,7 +4,7 @@ const dropdowns = document.querySelectorAll(".dshb-dropdown-menu");
 dropdowns.forEach(menu => {
     menu.addEventListener("click", () => {
         const selectMenu = menu.querySelector(".menu-select"),
-            selectMenuText = selectMenu.querySelector("p"),
+            selectMenuText = selectMenu?.querySelector("p"),
             optionsMenu = menu.querySelectorAll(".menu-option-content");
         //? Select Menu add class
         selectMenu.classList.toggle("dropdown-menu-open");
