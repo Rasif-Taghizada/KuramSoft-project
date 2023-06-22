@@ -1,0 +1,366 @@
+/*! Kuram Portal Container  */
+.kuram-portal-container {
+    position: absolute;
+    z-index: 9999;
+    bottom: 0;
+    left: 10%;
+}
+
+/* Portal Container Header Content */
+.portal-container-top {
+    width: 229px;
+    height: 46px;
+    background: #A6F0FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.portal-container-top:hover {
+    cursor: pointer;
+    background-color: #43d2ef;
+}
+
+.portal-container-top>h2 {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Portal Container Bottom */
+.portal-container-bottom {
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+    transition: all .4s ease-in-out;
+    display: flex;
+    align-items: flex-start;
+}
+
+.portal-bottom-active {
+    opacity: 1;
+    visibility: visible;
+    height: 270px;
+}
+
+.portal-tabs {
+    width: 229px;
+    height: 268px;
+    flex-shrink: 0;
+    background: #C8F6FF;
+}
+
+.portal-tab:hover {
+    cursor: pointer;
+    background-color: #A6F0FF;
+}
+
+.portal-tab a {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    padding: 15px 26px;
+}
+
+.portal-tab img {
+    width: 24px;
+    height: 24px;
+}
+
+.portal-tab span {
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+}
+
+.portal-tab.portal-tab-active span {
+    color: #007A82;
+    font-weight: 700;
+}
+
+
+/*! Portal Tab All content and one content  */
+.portal-tab-content {
+    width: 1000px;
+    display: none;
+}
+
+.portal-tab-content-active {
+    display: block;
+}
+
+.tab-content-header {
+    height: 37px;
+    flex-shrink: 0;
+    background: #C6F5FF;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
+    padding: 6px 36px;
+}
+
+.tab-content-header>h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tab-content-main {
+    display: flex;
+    height: calc(268px - 37px);
+    background-color: #E8FBFF;
+}
+
+/*! Reset Content  */
+.reset-content .content-list {
+    padding: 23px 39px 36px 39px;
+}
+
+.reset-content .content-list:nth-child(2) {
+    border-left: 1px solid #DADADA;
+    border-right: 1px solid #DADADA;
+}
+
+.reset-content .content-list>h1 {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+}
+
+.reset-content .content-list>p {
+    color: #343434;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.reset-content .content-list>.content-list-btn {
+    width: 210px;
+    height: 46px;
+    background: #D1F7FF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.reset-content .content-list>.content-list-btn:hover {
+    cursor: pointer;
+    background-color: #A6F0FF;
+}
+
+.reset-content .content-list>.content-list-btn>span {
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.reset-content .content-list>.content-list-btn.btn-red {
+    color: #FFF;
+    background: #D00000;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.reset-content .content-list>.content-list-btn.btn-red:hover {
+    background-color: #B00000;
+}
+
+
+/*! Authorization Content */
+.checkbox-content {
+    width: 533px;
+}
+
+.checkbox-content .tab-content-main {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 0 0 69px;
+}
+
+.checkbox-content .tab-content-main>p {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.checkbox-content .tab-content-main>button {
+    width: 150px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #D1F7FF;
+    border: none;
+    outline: none;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+.checkbox-content .tab-content-main>button > span{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+/* Custom checkbox */
+.auto-checks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    width: 165px;
+}
+
+.checkbox-wrapper label {
+    cursor: pointer;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    appearance: none;
+    --webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    border: 1px solid #1FDAFF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.checkbox-wrapper input[type="checkbox"]:after {
+    content: "";
+    background: url("../../assets/icons/check-white.svg") no-repeat center center;
+    display: none;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked {
+    background-color: #009DBA;
+    border: 1px solid #009DBA;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked:after {
+    display: block;
+    width: 13px;
+    height: 13px;
+}
+
+/*? Kuram Developer Content */
+.kuram-content {
+    width: 793px;
+}
+
+.kuram-content .tab-content-main {
+    display: flex;
+    align-items: flex-start;
+}
+
+.kuram-content .kuram-content-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border-right: 1px solid #DADADA;
+    padding: 14px 0 24px 69px;
+}
+
+.kuram-content-left h1 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.kuram-content-left form input {
+    width: 230px;
+    height: 38px;
+    border-radius: 20px;
+    border: 1px solid #6CF6FF;
+    background-color: transparent;
+    outline: none;
+    padding-left: 27px;
+    margin-bottom: 8px;
+    color: #04060F;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.kuram-content-left form input:focus {
+    border: 1.5px solid #1FDAFF;
+}
+
+.kuram-content-left form div {
+    position: relative;
+}
+
+.kuram-content-left form div img {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.kuram-content-left form button {
+    width: 230px;
+    height: 40px;
+    border-radius: 100px;
+    background: #5FA5D8;
+    box-shadow: 0px 4px 20px 0px #5FA5D8;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.kuram-content-left form button:hover {
+    background-color: #009DBA;
+    box-shadow: 0px 4px 20px 0px #009DBA;
+}
+
+.kuram-content .kuram-content-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 50px 24px 30px;
+}
+
+.kuram-content-right h1 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.kuram-content-right p {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    color: #343434;
+    margin-bottom: 28px;
+    line-height: 21px;
+}
