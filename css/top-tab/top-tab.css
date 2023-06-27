@@ -1,3 +1,4 @@
+
 .tab-container {
     width: 100%;
     min-height: 100vh;
@@ -143,6 +144,7 @@
 }
 
 /* ! Notifications */
+.notification-box-body {}
 
 .notifications {
     border: 1px solid #DDDDDD;
@@ -182,18 +184,22 @@
 
 }
 
-.notification-detail-input>input,
-.notification-detail-input>select {
+.notification-detail-input>input:not([type=checkbox]),
+.notification-detail-input>select,
+.notification-detail-input>textarea {
     border: 1px solid #9AEEFF;
     border-radius: 5px;
     padding: 10px 20px;
     width: 100%;
     transition: all ease-in-out 0.3s;
     margin-bottom: 10px;
+    resize: none;
 }
 
 .notification-detail-input>input:is(:focus, :hover),
-.notification-detail-input>select:is(:focus, :hover){
+.notification-detail-input>select:is(:focus, :hover),
+.notification-detail-input>textarea:is(:focus, :hover),
+table input:not([type=radio]):not([type=radio]):is(:focus, :hover) {
     outline: none;
     border: 1px solid #69E6FF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -203,8 +209,338 @@
 .notification-detail-input>div {
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
 .notification-detail-input>div>* {
     margin-right: 10px;
+}
+
+.notification-detail-input>input {
+    margin-right: 7px;
+}
+
+/* ! Custom CheckBox */
+
+.check-box {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.check-box>input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #86CEE2;
+    border-radius: 5px;
+}
+
+.check-box:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.check-box input:checked~.checkmark {
+    background-color: #009DBA;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-box input:checked~.checkmark:after {
+    display: block;
+}
+
+.check-box .checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* ---------------------------------------- */
+
+.uploade-file-box {
+    display: flex;
+    align-items: center;
+}
+
+.uploade-file-box>.uploade-file {
+    padding: 10px 10px 10px 20px;
+    border: 1px solid #9AEEFF;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.uploade-file-box>.uploade-file:hover {
+    border: 1px solid #69E6FF;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+}
+
+.uploade-file-box>.uploade-file>img {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.uploade-file-box>span {
+    color: #848484;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+}
+
+/* ! product-container */
+
+.product-container {
+    display: block !important;
+    border-radius: 5px;
+    border: 1px solid #9AEEFF;
+    padding: 10px 20px;
+}
+
+.product-container>div,
+.groups-container>div {
+    display: flex !important;
+    align-items: center;
+    min-height: 30px;
+}
+
+.product-container>h3 {
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.product-container>h3:first-child {
+    margin-top: 0;
+}
+
+.product-container>div>span,
+.groups-container>div>span {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+}
+
+/* ! education-status */
+.education-status>h3 {
+    padding: 10px 40px;
+    background: #A6F0FF;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+}
+
+.education-status>table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.education-status>table>thead {
+    background: #E7FBFF;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
+
+}
+
+.education-status>table>thead>tr>th {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    text-align: start;
+}
+
+.education-status>table>thead>tr>th:first-child {
+    text-align: center;
+}
+
+
+.education-status>table>tbody>tr>td {
+    padding: 20px;
+
+}
+
+.education-status .img-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 70px;
+    margin-right: 19px;
+}
+
+.education-status .img-box>img {
+    margin-right: 10px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.education-status .menu-select {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #9AEEFF;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.education-status tbody td>input {
+    border-radius: 5px;
+    border: 1px solid #9AEEFF;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.display-flex {
+    display: flex;
+    align-items: center;
+}
+
+.education-status .notification-detail>div>.notification-detail-input {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.education-status .notification-detail>div>.notification-detail-input>div {
+    margin-bottom: 10px;
+}
+
+.education-status .notification-detail {
+    border-top: 1px solid #E6E6E6;
+}
+
+/* ! Cusotom RadiBox */
+
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radio-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border-color: #86CEE2;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-container:hover input~.checkmark {
+    /* background-color: #ccc; */
+    border-color: #C2C7D0;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked~.checkmark {
+    background-color: white;
+    border-color: #C2C7D0;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+    top: 3px;
+    left: 2.8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #86CEE2;
+}
+
+.input-disabled {
+    cursor: no-drop;
+    background-color: #F1F1F1;
+}
+
+/* ----------------------------------- */
+.notifcations-tool-box {
+    height: 240px;
+    border-radius: 5px;
+    border: 1px solid #9AEEFF;
+    display: block !important;
+}
+
+.notifcations-tool-box>img {
+    margin-right: 0 !important;
+    width: 100%;
+}
+
+.input-popup {
+    border-radius: 5px;
+    border: 1px solid #9AEEFF;
+    background: #E1FFFF;
+}
+
+.popup-input-box {
+    position: relative;
+}
+
+
+
+.popup-input-box>img {
+    position: absolute;
+    top: 32%;
+    right: 25px;
+    width: 20px;
 }

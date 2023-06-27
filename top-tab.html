@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/form.css" />
-    <link rel="stylesheet" href="./css/colors.css" />
     <link rel="stylesheet" href="./css/top-tab/top-tab.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <section class="tab-container">
@@ -85,13 +83,350 @@
                   <div>
                     <div class="notification-detail-name">Dış Arama</div>
                     <div class="notification-detail-input">
-                      <input type="checkbox" />
+                      <label class="check-box">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <!-- ! VI -->
+                  <div>
+                    <div class="notification-detail-name">İlçe</div>
+                    <div class="notification-detail-input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <!-- ! VII -->
+                  <div>
+                    <div class="notification-detail-name">Ürünler</div>
+                    <div class="notification-detail-input">
+                      <div class="product-container">
+                        <h3>Genel Talepler</h3>
+                        <div>
+                          <label class="check-box">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                          <span>Tabela Montajı</span>
+                        </div>
+                        <div>
+                          <label class="check-box">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                          <span>Totem</span>
+                        </div>
+                        <h3>Tabelaya yazılacak hizmetler</h3>
+                        <div>
+                          <label class="check-box">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                          <span>Sökme-Takma</span>
+                        </div>
+                        <div>
+                          <label class="check-box">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                          <span>Filtre</span>
+                        </div>
+                        <h3>BTR Promosyon</h3>
+                        <div>
+                          <label class="check-box">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                          <span>Açılış Paketi</span>
+                        </div>
+                        <div>
+                          <label class="check-box">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                          <span>Tek katlı raf</span>
+                        </div>
+                        <div>
+                          <label class="check-box">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                          <span>3 Katlı raf</span>
+                        </div>
+                      </div>
+                      <div>
+                        <span>New</span>
+                        <img src="./assets/icons/rhombus.svg" alt="New" />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ! VIII -->
+                  <div>
+                    <div class="notification-detail-name">Dosya</div>
+                    <div class="notification-detail-input uploade-file-box">
+                      <div class="uploade-file">
+                        Dosya Yükle
+                        <img
+                          src="./assets/icons/file-remove.svg"
+                          alt="remove file"
+                        />
+                      </div>
+                      <span>No file chosen</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- ! IX -->
+                <div class="education-status">
+                  <h3>Çalışma Eğitim Durumu</h3>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Okul Türü</th>
+                        <th>Okul Adı</th>
+                        <th>Giriş Tarihi</th>
+                        <th>Mezuniyet Tarihi</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="display-flex">
+                            <div class="img-box">
+                              <img
+                                src="./assets/icons/black-background-close.svg"
+                                alt="close"
+                              />
+                            </div>
+                            <div class="menu-select">
+                              <p>Üniversite</p>
+                              <img
+                                src="./assets/icons/chevron-down.svg"
+                                alt="down"
+                              />
+                            </div>
+                            <div class="menu-options"></div>
+                          </div>
+                        </td>
+                        <td>
+                          <input type="text" value="ANADOLU ÜNİVERSİTESİ" />
+                        </td>
+                        <td>
+                          <input type="text" />
+                        </td>
+                        <td>
+                          <input type="text" value="07.09.2019" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="display-flex">
+                            <div class="img-box">
+                              <img
+                                src="./assets/icons/insert-after-r.svg"
+                                alt="insert"
+                              />
+                              <img
+                                src="./assets/icons/black-background-close.svg"
+                                alt="close"
+                              />
+                            </div>
+                            <div class="menu-select">
+                              <p>Üniversite</p>
+                              <img
+                                src="./assets/icons/chevron-down.svg"
+                                alt="down"
+                              />
+                            </div>
+                            <div class="menu-options"></div>
+                          </div>
+                        </td>
+                        <td>
+                          <input type="text" value="ANADOLU ÜNİVERSİTESİ" />
+                        </td>
+                        <td>
+                          <input type="text" />
+                        </td>
+                        <td>
+                          <input type="text" value="07.09.2019" />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="notification-detail">
+                    <div>
+                      <div class="notification-detail-name">Durum Onay</div>
+                      <div class="notification-detail-input uploade-file-box">
+                        <div>
+                          <label class="radio-container">
+                            <input type="radio" name="radio" />
+                            <span class="checkmark"></span>
+                          </label>
+                          Hepsi
+                        </div>
+                        <div>
+                          <label class="radio-container">
+                            <input type="radio" name="radio" />
+                            <span class="checkmark"></span>
+                          </label>
+                          Mutabıkız
+                        </div>
+                        <div>
+                          <label class="radio-container">
+                            <input type="radio" name="radio" />
+                            <span class="checkmark"></span>
+                          </label>
+                          Mutabık Değiliz
+                        </div>
+                        <div>
+                          <label class="radio-container">
+                            <input type="radio" name="radio" />
+                            <span class="checkmark"></span>
+                          </label>
+                          Cevapsız
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="notification-right">aaa</div>
+            <div class="notification-right">
+              <div class="notifications">
+                <h2>Detay</h2>
+                <div class="notification-detail">
+                  <!-- ! I -->
+                  <div>
+                    <div class="notification-detail-name">Açıklama</div>
+                    <div class="notification-detail-input">
+                      <textarea name="" id="" row="10"></textarea>
+                    </div>
+                  </div>
+                  <!-- ! II -->
+                  <div>
+                    <div class="notification-detail-name">IP</div>
+                    <div class="notification-detail-input">
+                      <input
+                        type="text"
+                        value="127.0.0.1"
+                        class="input-disabled"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                  <!-- ! III -->
+                  <div>
+                    <div class="notification-detail-name">Dosya</div>
+                    <div class="notification-detail-input uploade-file-box">
+                      <div class="uploade-file">
+                        Dosya Yükle
+                        <img
+                          src="./assets/icons/file-remove.svg"
+                          alt="remove file"
+                        />
+                      </div>
+                      <span>No file chosen</span>
+                    </div>
+                  </div>
+                  <!-- ! IV -->
+                  <div>
+                    <div class="notification-detail-name">Kart Numarası</div>
+                    <div class="notification-detail-input uploade-file-box">
+                      <input type="text" />
+                      <input type="text" />
+                      <input type="text" />
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <!-- ! V -->
+                  <div>
+                    <div class="notification-detail-name">Groups</div>
+                    <div class="notification-detail-input groups-container">
+                      <div>
+                        <label class="check-box">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <span>Member User</span>
+                      </div>
+
+                      <div>
+                        <label class="check-box">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <span>Everyone</span>
+                      </div>
+                      <div>
+                        <label class="check-box">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <span>Administrator</span>
+                      </div>
+                      <div>
+                        <label class="check-box">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <span>Company Administrator</span>
+                      </div>
+                      <div>
+                        <label class="check-box">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <span>Company Administrator</span>
+                      </div>
+                      <div>
+                        <label class="check-box">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <span>Admin</span>
+                      </div>
+
+                      <div>
+                        <label class="check-box">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <span>User Specific</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ! VI -->
+                  <div>
+                    <div class="notification-detail-name">İçerik</div>
+                    <div class="notification-detail-input">
+                      <div class="notifcations-tool-box">
+                        <img src="./assets/icons/tool-box.svg" alt="ToolBox" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ! VII -->
+                  <div>
+                    <div class="notification-detail-name">RSM</div>
+                    <div class="notification-detail-input">
+                      <input
+                        type="text"
+                        value="Gözde Alpaslan"
+                        class="input-disabled"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                  <!-- ! VIII -->
+                  <div>
+                    <div class="notification-detail-name">Üst Talep</div>
+                    <div class="notification-detail-input popup-input-box">
+                      <input type="text" value="Pop-up" class="input-popup" />
+                      <img src="./assets/icons/blue-search.svg" alt="serch" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
