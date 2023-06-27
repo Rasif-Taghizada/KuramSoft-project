@@ -201,7 +201,8 @@
     outline: none;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
 }
-.checkbox-content .tab-content-main>button > span{
+
+.checkbox-content .tab-content-main>button>span {
     text-transform: uppercase;
     color: #000;
     font-size: 13px;
