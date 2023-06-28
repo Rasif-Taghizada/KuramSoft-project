@@ -253,9 +253,7 @@
     cursor: pointer;
 }
 
-
-
-.add-filter{
+.add-filter {
     border: 1.5px solid #000000;
     outline: none;
     width: 40px;
@@ -264,14 +262,16 @@
     background: transparent;
     transition: all 0.2s ease-in-out;
 }
-.add-filter:hover{
+
+.add-filter:hover {
     background: #DBDBDB;
 }
-.add-filter:hover img{
-    /* filter: invert(0.5); */
+
+.add-filter:hover img {
     opacity: 0.4;
 }
-.add-filter img{
+
+.add-filter img {
     width: 10px;
     height: 10px;
     float: left;
@@ -319,12 +319,24 @@
     background: #D0EBFF;
 }
 
+.add-btn:hover {
+    background: #add9fd;
+}
+
 .upload-btn {
     background: #D6E6FF;
 }
 
+.upload-btn:hover {
+    background: #c4d6fd;
+}
+
 .export-btn {
     background: #FFE1F8;
+}
+
+.export-btn:hover {
+    background: #fbb8eb;
 }
 
 /* ! Dashboard SubHeader count button */
@@ -339,6 +351,13 @@
     top: 38px;
 }
 
+.count-btn .menu-select img {
+    width: 30px !important;
+    height: 100% !important;
+    padding: 3px !important;
+    background: #E8EAEf;
+}
+
 .count-btn .menu-select div {
     background: #DDDFE1;
     width: 35px;
@@ -349,8 +368,14 @@
     margin-left: 15px;
 }
 
+.count-btn .menu-options {
+    left: 0 !important;
+    width: 100% !important;
+    top: 39px !important;
+}
+
 /* ! Dashboard Table permission buttons */
-.table-btn {
+.table-per-btn {
     font-weight: 600;
     font-size: 12px;
     padding: 6px 17px;
@@ -364,20 +389,40 @@
     background: #55CCFF;
 }
 
+.table-admin-btn:hover {
+    background-color: #4db5e8;
+}
+
 .table-contributor-btn {
     background: #FF9C55;
+}
+
+.table-contributor-btn:hover {
+    background-color: #e88f4d;
 }
 
 .table-viewer-btn {
     background: #FF5555;
 }
 
+.table-viewer-btn:hover {
+    background-color: #e84d4d;
+}
+
 .table-moderator-btn {
     background: #5855FF;
 }
 
+.table-moderator-btn:hover {
+    background-color: #4d4de8;
+}
+
 .table-superAdmin-btn {
     background: #110F6F;
+}
+
+.table-superAdmin-btn:hover {
+    background-color: #363580;
 }
 
 /*!! Dashboard Error Page  */
@@ -525,10 +570,10 @@
     height: 44px !important;
 }
 
-.sub-menu-combobox .menu-options{
+.sub-menu-combobox .menu-options {
     left: 0 !important;
     width: 100% !important;
-    top: 43px !important;
+    top: 45px !important;
     background-color: #2C2C2C !important;
 }
 
@@ -567,30 +612,37 @@
     border: 1px solid #D8D8D8;
     border-radius: 4px;
 }
-.view-btn:hover{
+
+.view-btn:hover {
     background: #9fd3fc;
 }
+
 .import-btn {
     background: #D6E6FF;
     border: 1px solid #D8D8D8;
     border-radius: 4px;
 }
-.import-btn:hover{
+
+.import-btn:hover {
     background: #96b4e4;
 }
+
 .sort-btn {
     background: #FFE1F8;
     border: 1px solid #D8D8D8;
     border-radius: 4px;
 }
-.sort-btn:hover{
+
+.sort-btn:hover {
     background: #eb93d5;
-} 
+}
+
 .group-btn {
     background: #E1FDFF;
     border: 1px solid #D8D8D8;
     border-radius: 4px;
 }
+
 .group-btn:hover {
     background: #aeeaee;
 }

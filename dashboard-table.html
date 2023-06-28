@@ -4,343 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard Table</title>
+    <title>Dashboard List</title>
     <!-- Pure CSS -->
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/form.css" />
     <link rel="stylesheet" href="./css/colors.css" />
-    <link rel="stylesheet" href="./css/dashboard/dashboard-navbar.css" />
-    <link rel="stylesheet" href="./css/app-manager/app-manager.css" />
+    <link rel="stylesheet" href="./css/dashboard.css">
     <link rel="stylesheet" href="./css/dashboard/dashboard-table.css" />
-    <!-- Google Icons -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./css/app-manager/app-manager.css">
   </head>
 
   <body>
-    <!-- Dashboard Header -->
-    <header class="dashboard-navbar">
-      <div class="dashboard-navbar-logo">
-        <!-- Navbar Image -->
-        <div class="navbar-logo-image">
-          <img src="./assets/Images/C-logo.svg" alt="C logo" />
-        </div>
-        <div class="dshb-dropdown-menu header-left-menu">
-          <div class="menu-select">
-            <p>sigorta.square.com</p>
-            <span class="material-icons-round icon-chevron-down">
-              expand_more
-            </span>
-          </div>
-          <div class="menu-options">
-            <div class="menu-option-content">
-              <p>square 1</p>
-            </div>
-            <div class="menu-option-content">
-              <p>square.com 2</p>
-            </div>
-            <div class="menu-option-content">
-              <p>sigorta.square 3</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Navbar Right Content -->
-      <div class="header-right-content">
-        <div class="header-dropdown-search">
-          <div class="dshb-dropdown-menu dropdown-document">
-            <div class="menu-select">
-              <p>Document</p>
-              <span class="material-icons-round icon-chevron-down">
-                expand_more
-              </span>
-            </div>
-            <div class="menu-options"></div>
-          </div>
-          <div class="search-content">
-            <input type="text" name="text" class="" placeholder="Ara" />
-            <span class="material-icons-round icon-search"> search </span>
-          </div>
-        </div>
-        <div class="dshb-dropdown-menu dropdown-lang">
-          <div class="menu-select">
-            <p>ENG</p>
-            <span class="material-icons-round icon-chevron-down">
-              expand_more
-            </span>
-          </div>
-          <div class="menu-options">
-            <div class="menu-option-content">
-              <p>AZE</p>
-            </div>
-            <div class="menu-option-content">
-              <p>RUS</p>
-            </div>
-            <div class="menu-option-content">
-              <p>TUR</p>
-            </div>
-          </div>
-        </div>
-        <div class="dshb-dropdown-menu dshb-user-content">
-          <div class="menu-select">
-            <div class="user-about-img">
-              <div class="user-img">
-                <img
-                  src="./assets/icons/user-ozan-alatli.svg"
-                  alt="ozan-alatli"
-                />
-              </div>
-              <div class="user-about">
-                <p class="user-name">Ozan Alatlı</p>
-                <span class="user-prefer"> Proje Yöneticisi </span>
-              </div>
-            </div>
-            <span class="material-icons-round icon-chevron-down">
-              expand_more
-            </span>
-          </div>
-          <div class="menu-options"></div>
-        </div>
-      </div>
-    </header>
-    <!-- Dashboard Navbar Lists Container -->
-    <nav class="dashboard-navbar-lists">
-      <ul class="dashboard-dropdown-lists">
-        <li class="dropdown-list-item">
-          <div class="list-content">
-            <span class="list-item-text">Security</span>
-            <span class="material-icons-round icon-chevron-down">
-              expand_more
-            </span>
-          </div>
-          <ul class="dropdown-hidden-lists">
-            <li class="hidden-list-item">
-              <div>
-                <span>Gallery</span>
-                <span class="material-icons-round icon-plus"> add </span>
-              </div>
-            </li>
-            <li class="hidden-list-item">
-              <div>
-                <span>Treeview</span>
-                <span class="material-icons-round icon-plus"> add </span>
-              </div>
-            </li>
-            <li class="hidden-list-item">
-              <div>
-                <span>Text Box</span>
-                <span class="material-icons-round icon-plus"> add </span>
-              </div>
-            </li>
-            <li class="hidden-list-item">
-              <div>
-                <span>Security</span>
-                <span class="material-icons-round icon-plus"> add </span>
-              </div>
-              <ul class="dropdown-nested-hidden-list">
-                <li class="nested-hidden-list-item">
-                  <img
-                    src="./assets/icons/corner-down-right.svg"
-                    alt="corner-down-right"
-                  />
-                  <span>Textbox</span>
-                </li>
-                <li class="nested-hidden-list-item">
-                  <img
-                    src="./assets/icons/corner-down-right.svg"
-                    alt="corner-down-right"
-                  />
-                  <span>Gallery</span>
-                </li>
-                <li class="nested-hidden-list-item">
-                  <img
-                    src="./assets/icons/corner-down-right.svg"
-                    alt="corner-down-right"
-                  />
-                  <span>Gallery</span>
-                </li>
-                <li class="nested-hidden-list-item">
-                  <img
-                    src="./assets/icons/corner-down-right.svg"
-                    alt="corner-down-right"
-                  />
-                  <span>Gallery</span>
-                </li>
-                <li class="nested-hidden-list-item">
-                  <img
-                    src="./assets/icons/corner-down-right.svg"
-                    alt="corner-down-right"
-                  />
-                  <span>Gallery</span>
-                </li>
-              </ul>
-            </li>
-            <li class="hidden-list-item">
-              <div>
-                <span>Gallery</span>
-                <span class="material-icons-round icon-plus"> add </span>
-              </div>
-            </li>
-            <li class="hidden-list-item">
-              <div>
-                <span>Files</span>
-                <span class="material-icons-round icon-plus"> add </span>
-              </div>
-            </li>
-            <li class="hidden-list-item">
-              <div>
-                <span>Treeview</span>
-                <span class="material-icons-round icon-plus"> add </span>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li class="dropdown-list-item">
-          <div class="list-content">
-            <span class="list-item-text">Gallery</span>
-            <span class="material-icons-round icon-chevron-down">
-              expand_more
-            </span>
-          </div>
-        </li>
-        <li class="dropdown-list-item">
-          <div class="list-content">
-            <span class="list-item-text">Files</span>
-            <span class="material-icons-round icon-chevron-down">
-              expand_more
-            </span>
-          </div>
-        </li>
-        <li class="dropdown-list-item">
-          <div class="list-content">
-            <span class="list-item-text">Treeview</span>
-            <span class="material-icons-round icon-chevron-down">
-              expand_more
-            </span>
-          </div>
-        </li>
-        <li class="dropdown-list-item">
-          <div class="list-content">
-            <span class="list-item-text">Auto Model</span>
-            <span class="material-icons-round icon-chevron-down">
-              expand_more
-            </span>
-          </div>
-        </li>
-        <li class="dropdown-list-item">
-          <div class="list-content">
-            <span class="list-item-text">Data Model</span>
-            <span class="material-icons-round icon-chevron-down">
-              expand_more
-            </span>
-          </div>
-        </li>
-        <li class="dropdown-list-item">
-          <div class="list-content">
-            <span class="list-item-text">Setting</span>
-            <span class="material-icons-round icon-chevron-down">
-              expand_more
-            </span>
-          </div>
-        </li>
-        <li class="dropdown-list-item">
-          <div class="list-content">
-            <span class="list-item-text">Dashboard</span>
-            <span class="material-icons-round icon-chevron-down">
-              expand_more
-            </span>
-          </div>
-        </li>
-        <li class="dropdown-list-item">
-          <div class="list-content">
-            <span class="list-item-text">Textbox</span>
-            <span class="material-icons-round icon-chevron-down">
-              expand_more
-            </span>
-          </div>
-        </li>
-        <li class="dropdown-list-item">
-          <div class="list-content">
-            <span class="list-item-text">Security</span>
-            <span class="material-icons-round icon-chevron-down">
-              expand_more
-            </span>
-          </div>
-        </li>
-        <li class="dropdown-list-item">
-          <div class="list-content">
-            <span class="list-item-text">Gallery</span>
-            <span class="material-icons-round icon-chevron-down">
-              expand_more
-            </span>
-          </div>
-        </li>
-        <li class="dropdown-list-item">
-          <div class="list-content">
-            <span class="list-item-text">Files</span>
-            <span class="material-icons-round icon-chevron-down">
-              expand_more
-            </span>
-          </div>
-        </li>
-        <li class="dropdown-list-item">
-          <div class="list-content">
-            <span class="list-item-text">Treeview</span>
-            <span class="material-icons-round icon-chevron-down">
-              expand_more
-            </span>
-          </div>
-        </li>
-        <li class="dropdown-list-item">
-          <div class="list-content">
-            <span class="list-item-text">Gallery</span>
-            <span class="material-icons-round icon-chevron-down">
-              expand_more
-            </span>
-          </div>
-        </li>
-        <li class="dropdown-list-item">
-          <div class="list-content">
-            <span class="list-item-text">Files</span>
-            <span class="material-icons-round icon-chevron-down">
-              expand_more
-            </span>
-          </div>
-        </li>
-      </ul>
-    </nav>
-    <!-- Dashboard Header Menu -->
-    <div class="dashboard-header-menu">
-      <div class="menu-left">
-        <img src="./assets/icons/header-menu-home.svg" alt="menu-home" />
-        <p>Home</p>
-      </div>
-      <span class="menu-dot"></span>
-      <div class="dshb-dropdown-menu">
-        <div class="menu-select">
-          <p>SQUARE</p>
-          <span class="material-icons-round icon-chevron-down">
-            expand_more
-          </span>
-        </div>
-        <div class="menu-options"></div>
-      </div>
-      <span class="menu-dot"></span>
-      <div>
-        <span>OverduePaymentsReports.aspx</span>
-      </div>
-    </div>
-
+    <!-- Dashboard Table Container -->
     <section class="dashboard-table-container">
-      <!-- Container Header -->
       <div class="dashboard-table-header">
-        <!-- Header Content Left Section -->
-        <div class="dashboard-table-head-left">
-          <div>
+        <div class="table-header-filtr">
+          <button class="add-filter">
             <img src="./assets/icons/math-plus.svg" alt="" />
-          </div>
+          </button>
           <p>Filtre</p>
           <button class="filtr-btn">
             <span>North American</span>
@@ -355,17 +36,16 @@
             <img src="./assets/icons/icon-close.svg" alt="close icon" />
           </button>
         </div>
-        <!-- Header Section Right Content -->
-        <div class="dashboard-table-head-right">
-          <!-- Right Content Combobox Menu -->
-          <div class="dshb-dropdown-menu combobox-btn">
+        <div class="table-header-buttons">
+          <div class="dshb-dropdown-menu sub-menu-combobox table-combobox">
             <div class="menu-select">
               <p>Combobox</p>
-              <span class="material-icons-round icon-chevron-down">
-                expand_more
-              </span>
+              <img src="./assets/icons/chevron-down.svg" alt="down" />
             </div>
             <div class="menu-options">
+              <div class="menu-option-content">
+                <p>Combobox</p>
+              </div>
               <div class="menu-option-content">
                 <p>Combobox 1</p>
               </div>
@@ -375,665 +55,528 @@
               <div class="menu-option-content">
                 <p>Combobox 3</p>
               </div>
+              <div class="menu-option-content">
+                <p>Combobox 4</p>
+              </div>
             </div>
           </div>
-          <div class="add-upload-export-btns">
-            <button class="add-btn">
-              <span>Add</span>
-              <img
-                src="./assets/icons/insert-after-r.svg"
-                alt="insert-after-r"
-              />
-            </button>
-            <button class="upload-btn">
-              <span>Upload</span>
-              <img src="./assets/icons/insert-before.svg" alt="insert-before" />
-            </button>
-            <button class="export-btn">
-              <span>Export</span>
-              <img src="./assets/icons/export-btn.svg" alt="export-btn" />
-            </button>
-          </div>
+          <button class="table-btn add-btn">
+            <span>Add</span>
+            <img src="./assets/icons/insert-after-r.svg" alt="add icon">
+          </button>
+          <button class="table-btn upload-btn">
+            <span>Upload</span>
+            <img src="./assets/icons/insert-before.svg" alt="Upload icon">
+          </button>
+          <button class="table-btn export-btn">
+            <span>Export</span>
+            <img src="./assets/icons/export-btn.svg" alt="Export icon">
         </div>
       </div>
-      <div class="dashboard-table-sub-header">
-        <div class="dashboard-table-sub-header-left">
-          <span>Show</span>
+      <div class="dashboard-table-menu">
+        <div class="table-menu-left">
+          <p>Show</p>
           <div class="dshb-dropdown-menu count-btn">
             <div class="menu-select">
               <p>10</p>
-              <div>
-                <span class="material-icons-round icon-chevron-down">
-                  expand_more
-                </span>
-              </div>
+              <img src="./assets/icons/chevron-down.svg" alt="down" />
             </div>
             <div class="menu-options">
               <div class="menu-option-content">
-                <p>11</p>
+                <p>10</p>
               </div>
               <div class="menu-option-content">
-                <p>12</p>
+                <p>20</p>
               </div>
               <div class="menu-option-content">
-                <p>13</p>
+                <p>30</p>
               </div>
               <div class="menu-option-content">
-                <p>14</p>
+                <p>40</p>
+              </div>
+              <div class="menu-option-content">
+                <p>50</p>
               </div>
             </div>
           </div>
-          <span>Entries</span>
-          <p>20 recods found</p>
-          <div class="subheader-search">
-            <span class="material-icons-round icon-search"> search </span>
+          <p>Entries</p>
+          <a href="">20 records found</a>
+          <span></span>
+          <div class="table-search">
+            <img src="./assets/icons/search.svg" alt="search icon" />
             <input type="text" placeholder="Search" />
           </div>
+
         </div>
-        <div class="pagination-box dashboard-table-sub-header-right">
-          <a href="#" class="pagination-active">Prev</a>
-          <a href="#" class="pagination-active">01</a>
-          <a href="#">02</a>
-          <a href="#">...</a>
-          <a href="#">05</a>
-          <a href="#" class="pagination-active">Next</a>
+        <div class="table-menu-pagination">
+          <div class="pagination-box">
+            <a href="#" class="pagination-active">Prev</a>
+            <a href="#" class="pagination-active">01</a>
+            <a href="#">02</a>
+            <a href="#">...</a>
+            <a href="#">05</a>
+            <a href="#" class="pagination-active">Next</a>
+          </div>
         </div>
       </div>
       <div class="dashboard-table">
-        <div class="table-row table-head">
-          <div class="table-checkbox-col">
-            <input type="checkbox" name="" id="" />
+        <div class="table-head">
+          <div class="table-check">
+            <input type="checkbox" name="" id="">
           </div>
-          <div>
-            <p>User</p>
-            <img
-              src="./assets/icons/icon-filter-down.svg"
-              alt="icon filter down"
-              class="icon-filter-down"
-            />
+          <div class="table-user">
+            <span>User</span>
+            <img src="./assets/icons/zeit.svg" alt="zeit">
           </div>
-          <div>
-            <p>Ad / Soyad</p>
-            <img
-              src="./assets/icons/icon-filter-down.svg"
-              alt="icon filter down"
-              class="icon-filter-down"
-            />
+          <div class="table-fullname">
+            <span>Ad/Soyad</span>
+            <img src="./assets/icons/zeit.svg" alt="zeit">
           </div>
-          <div>
-            <p>Filtreler</p>
-            <img
-              src="./assets/icons/icon-filter-down.svg"
-              alt="icon filter down"
-              class="icon-filter-down"
-            />
+          <div class="table-filtr">
+            <span>Filtreler</span>
+            <img src="./assets/icons/zeit.svg" alt="zeit">
           </div>
-          <div>
-            <p>Yıldızlar</p>
-            <img
-              src="./assets/icons/icon-filter-down.svg"
-              alt="icon filter down"
-              class="icon-filter-down"
-            />
+          <div class="table-stars">
+            <span>Yıldızlar</span>
+            <img src="./assets/icons/zeit.svg" alt="zeit">
           </div>
-          <div>
-            <p>Permission</p>
-            <img
-              src="./assets/icons/icon-filter-down.svg"
-              alt="icon filter down"
-              class="icon-filter-down"
-            />
+          <div class="table-permission">
+            <span>Permission</span>
+            <img src="./assets/icons/zeit.svg" alt="zeit">
           </div>
-          <div>
-            <p>Yüzde</p>
-            <img
-              src="./assets/icons/icon-filter-down.svg"
-              alt="icon filter down"
-              class="icon-filter-down"
-            />
+          <div class="table-percent">
+            <span>Yüzde</span>
+            <img src="./assets/icons/zeit.svg" alt="zeit">
           </div>
-          <div>
-            <p>Boş Text</p>
-            <img
-              src="./assets/icons/icon-filter-down.svg"
-              alt="icon filter down"
-              class="icon-filter-down"
-            />
+          <div class="table-status">
+            <span>Boş Text</span>
+            <img src="./assets/icons/zeit.svg" alt="zeit">
           </div>
-          <div>
-            <p>Text Link</p>
+          <div class="table-link">
+            <span>Text Link</span>
           </div>
-          <div>
-            <p>Checkbox</p>
-            <img
-              src="./assets/icons/icon-filter-down.svg"
-              alt="icon filter down"
-              class="icon-filter-down"
-            />
+          <div class="table-toggle">
+            <span>Checkbox</span>
+            <img src="./assets/icons/zeit.svg" alt="zeit">
           </div>
         </div>
-        <div class="table-row table-body">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="table-body">
+          <div class="table-head table-row">
+            <div class="table-check">
+              <input type="checkbox" name="" id="" checked="true">
+            </div>
+            <div class="table-user">
+              <img src="./assets/Images/Ozan Alatlı.svg" alt="">
+            </div>
+            <div class="table-fullname">
+              <p>Ozan Alatlı</p>
+            </div>
+            <div class="table-filtr">
+              <button class="filtr-btn">
+                <span>North American</span>
+                <img src="./assets/icons/icon-close.svg" alt="close icon" />
+              </button>
+              <button class="filtr-btn">
+                <span>Canada</span>
+                <img src="./assets/icons/icon-close.svg" alt="close icon" />
+              </button>
+            </div>
+            <div class="table-stars">
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+            </div>
+            <div class="table-permission">
+              <button class="table-admin-btn table-per-btn">
+                <span>Admin</span>
+              </button>
+            </div>
+            <div class="table-percent bg-40">
+              <p>40%</p>
+            </div>
+            <div class="table-status">
+              <p>Low</p>
+            </div>
+            <div class="table-link">
+              <a href="">View</a>
+            </div>
+            <div class="table-toggle">
+              <span>Checkbox</span>
+            </div>
+          </div>
+          <div class="table-head table-row">
+            <div class="table-check">
+              <input type="checkbox" name="" id="">
+            </div>
+            <div class="table-user">
+              <img src="./assets/Images/Eda Taştan.svg" alt="Eda Taştan">
+            </div>
+            <div class="table-fullname">
+              <p>Eda Taştan</p>
+            </div>
+            <div class="table-filtr">
+              <button class="filtr-btn">
+                <span>Agency</span>
+                <img src="./assets/icons/icon-close.svg" alt="close icon" />
+              </button>
+            </div>
+            <div class="table-stars">
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+            </div>
+            <div class="table-permission">
+              <button class="table-contributor-btn table-per-btn">
+                <span>Contributor</span>
+              </button>
+            </div>
+            <div class="table-percent bg-20">
+              <p>20%</p>
+            </div>
+            <div class="table-status">
+              <p>Medium</p>
+            </div>
+            <div class="table-link">
+              <a href="">View</a>
+            </div>
+            <div class="table-toggle">
+              <span>Checkbox</span>
+            </div>
+          </div>
+          <div class="table-head table-row table-row-lightblue">
+            <div class="table-check">
+              <input type="checkbox" name="" id="" checked="true">
+            </div>
+            <div class="table-user">
+              <img src="./assets/Images/Osman Dağ.jpg" alt="Osman Dağ">
+            </div>
+            <div class="table-fullname">
+              <p>Osman Dağ</p>
+            </div>
+            <div class="table-filtr">
+              <button class="filtr-btn">
+                <span>North American</span>
+                <img src="./assets/icons/icon-close.svg" alt="close icon" />
+              </button>
+            </div>
+            <div class="table-stars">
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+            </div>
+            <div class="table-permission">
+              <button class="table-viewer-btn table-per-btn">
+                <span>Viewer</span>
+              </button>
+            </div>
+            <div class="table-percent bg-60">
+              <p>60%</p>
+            </div>
+            <div class="table-status">
+              <p>Medium</p>
+            </div>
+            <div class="table-link">
+              <a href="">View</a>
+            </div>
+            <div class="table-toggle">
+              <span>Checkbox</span>
+            </div>
+          </div>
+          <div class="table-head table-row">
+            <div class="table-check">
+              <input type="checkbox" name="" id="">
+            </div>
+            <div class="table-user">
+              <img src="./assets/Images/Arif Bulut.jpg" alt="Arif Bulut">
+            </div>
+            <div class="table-fullname">
+              <p>Arif Bulut</p>
+            </div>
+            <div class="table-filtr">
+              <button class="filtr-btn">
+                <span>Agency</span>
+                <img src="./assets/icons/icon-close.svg" alt="close icon" />
+              </button>
+              <button class="filtr-btn">
+                <span>Filtrele</span>
+                <img src="./assets/icons/icon-close.svg" alt="close icon" />
+              </button>
+            </div>
+            <div class="table-stars">
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+            </div>
+            <div class="table-permission">
+              <button class="table-moderator-btn table-per-btn">
+                <span>Moderator</span>
+              </button>
+            </div>
+            <div class="table-percent bg-90">
+              <p>90%</p>
+            </div>
+            <div class="table-status">
+              <p>High</p>
+            </div>
+            <div class="table-link">
+              <a href="">View</a>
+            </div>
+            <div class="table-toggle">
+              <span>Checkbox</span>
+            </div>
+          </div>
+          <div class="table-head table-row">
+            <div class="table-check">
+              <input type="checkbox" name="" id="" checked="true">
+            </div>
+            <div class="table-user">
+              <img src="./assets/Images/Kadir Taş.jpg" alt="Kadir Taş">
+            </div>
+            <div class="table-fullname">
+              <p>Kadir Taş</p>
+            </div>
+            <div class="table-filtr">
+              <button class="filtr-btn">
+                <span>North American</span>
+                <img src="./assets/icons/icon-close.svg" alt="close icon" />
+              </button>
+              <button class="filtr-btn">
+                <span>Canada</span>
+                <img src="./assets/icons/icon-close.svg" alt="close icon" />
+              </button>
+            </div>
+            <div class="table-stars">
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+            </div>
+            <div class="table-permission">
+              <button class="table-admin-btn table-per-btn">
+                <span>Admin</span>
+              </button>
+            </div>
+            <div class="table-percent bg-40">
+              <p>40%</p>
+            </div>
+            <div class="table-status">
+              <p>High</p>
+            </div>
+            <div class="table-link">
+              <a href="">View</a>
+            </div>
+            <div class="table-toggle">
+              <span>Checkbox</span>
+            </div>
+          </div>
+          <div class="table-head table-row table-row-orange">
+            <div class="table-check">
+              <input type="checkbox" name="" id="">
+            </div>
+            <div class="table-user">
+              <img src="./assets/Images/Yücel Kabil.jpg" alt="Yücel Kabil">
+            </div>
+            <div class="table-fullname">
+              <p>Yücel Kabil</p>
+            </div>
+            <div class="table-filtr">
+              <button class="filtr-btn">
+                <span>Agency</span>
+                <img src="./assets/icons/icon-close.svg" alt="close icon" />
+              </button>
+            </div>
+            <div class="table-stars">
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+            </div>
+            <div class="table-permission">
+              <button class="table-contributor-btn table-per-btn">
+                <span>Contributor</span>
+              </button>
+            </div>
+            <div class="table-percent bg-20">
+              <p>20%</p>
+            </div>
+            <div class="table-status">
+              <p>Low</p>
+            </div>
+            <div class="table-link">
+              <a href="">View</a>
+            </div>
+            <div class="table-toggle">
+              <span>Checkbox</span>
+            </div>
+          </div>
+          <div class="table-head table-row">
+            <div class="table-check">
+              <input type="checkbox" name="" id="" checked="true">
+            </div>
+            <div class="table-user">
+              <img src="./assets/Images/İpek Seçil.jpg" alt="İpek Seçil">
+            </div>
+            <div class="table-fullname">
+              <p>İpek Seçil</p>
+            </div>
+            <div class="table-filtr">
+              <button class="filtr-btn">
+                <span>North American</span>
+                <img src="./assets/icons/icon-close.svg" alt="close icon" />
+              </button>
+            </div>
+            <div class="table-stars">
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+            </div>
+            <div class="table-permission">
+              <button class="table-viewer-btn table-per-btn">
+                <span>Viewer</span>
+              </button>
+            </div>
+            <div class="table-percent bg-60">
+              <p>60%</p>
+            </div>
+            <div class="table-status">
+              <p>Medium</p>
+            </div>
+            <div class="table-link">
+              <a href="">View</a>
+            </div>
+            <div class="table-toggle">
+              <span>Checkbox</span>
+            </div>
+          </div>
+          <div class="table-head table-row">
+            <div class="table-check">
+              <input type="checkbox" name="" id="">
+            </div>
+            <div class="table-user">
+              <img src="./assets/Images/Onur Barış.jpg" alt="Onur Barış">
+            </div>
+            <div class="table-fullname">
+              <p>Onur Barış</p>
+            </div>
+            <div class="table-filtr">
+              <button class="filtr-btn">
+                <span>Agency</span>
+                <img src="./assets/icons/icon-close.svg" alt="close icon" />
+              </button>
+              <button class="filtr-btn">
+                <span>Filtrele</span>
+                <img src="./assets/icons/icon-close.svg" alt="close icon" />
+              </button>
+            </div>
+            <div class="table-stars">
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+            </div>
+            <div class="table-permission">
+              <button class="table-superAdmin-btn table-per-btn">
+                <span>Super Admin</span>
+              </button>
+            </div>
+            <div class="table-percent bg-90">
+              <p>90%</p>
+            </div>
+            <div class="table-status">
+              <p>Super High</p>
+            </div>
+            <div class="table-link">
+              <a href="">View</a>
+            </div>
+            <div class="table-toggle">
+              <span>Checkbox</span>
+            </div>
+          </div>
+          <div class="table-head table-row">
+            <div class="table-check">
+              <input type="checkbox" name="" id="" checked="true">
+            </div>
+            <div class="table-user">
+              <img src="./assets/Images/Evren Yüce.jpg" alt="Evren Yüce">
+            </div>
+            <div class="table-fullname">
+              <p>Evren Yüce</p>
+            </div>
+            <div class="table-filtr">
+              <button class="filtr-btn">
+                <span>North American</span>
+                <img src="./assets/icons/icon-close.svg" alt="close icon" />
+              </button>
+            </div>
+            <div class="table-stars">
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+            </div>
+            <div class="table-permission">
+              <button class="table-viewer-btn table-per-btn">
+                <span>Viewer</span>
+              </button>
+            </div>
+            <div class="table-percent bg-100">
+              <p>100%</p>
+            </div>
+            <div class="table-status">
+              <p>Low</p>
+            </div>
+            <div class="table-link">
+              <a href="">View</a>
+            </div>
+            <div class="table-toggle">
+              <span>Checkbox</span>
+            </div>
+          </div>
+          <div class="table-head table-row">
+            <div class="table-check">
+              <input type="checkbox" name="" id="">
+            </div>
+            <div class="table-user">
+              <img src="./assets/Images/Ozan Alatlı.svg" alt="Ozan Alatlı">
+            </div>
+            <div class="table-fullname">
+              <p>Coşkun Kaya</p>
+            </div>
+            <div class="table-filtr">
+              <button class="filtr-btn">
+                <span>Agency</span>
+                <img src="./assets/icons/icon-close.svg" alt="close icon" />
+              </button>
+              <button class="filtr-btn">
+                <span>Filtrele</span>
+                <img src="./assets/icons/icon-close.svg" alt="close icon" />
+              </button>
+            </div>
+            <div class="table-stars">
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+              <img src="./assets/icons/icon-star.svg" alt="star" />
+            </div>
+            <div class="table-permission">
+              <button class="table-moderator-btn table-per-btn">
+                <span>Moderator</span>
+              </button>
+            </div>
+            <div class="table-percent bg-90">
+              <p>90%</p>
+            </div>
+            <div class="table-status">
+              <p>Medium</p>
+            </div>
+            <div class="table-link">
+              <a href="">View</a>
+            </div>
+            <div class="table-toggle">
+              <span>Checkbox</span>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- <div class="dashboard-table">
-            <div class="table-head table-row">
-                <div class="table-checkbox">
-                    <input type="checkbox">
-                </div>
-                <div class="table-user-image">
-                    <p>User</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-                <div class="table-username">
-                    <p>Ad / Soyad</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-                <div class="table-filter">
-                    <p>Filtreler</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-                <div class="table-stars">
-                    <p>Yıldızlar</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-                <div class="table-permission">
-                    <p>Permission</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-                <div class="table-percentage">
-                    <p>Yüzde</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-                <div class="table-status">
-                    <p>Boş Text</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-                <div class="table-link">
-                    <p>Text Link</p>
-                </div>
-                <div class="table-toggle">
-                    <p>Checkbox</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-            </div>
-            <div class="table-body table-row">
-                <div class="table-checkbox">
-                    <input type="checkbox">
-                </div>
-                <div class="table-user-image">
-                    <img src="./assets/Images/Ozan Alatlı.jpg" alt="Ozan Alatlı">
-                </div>
-                <div class="table-username">
-                    <p>Ozan Alatlı</p>
-                </div>
-                <div class="table-filter">
-                    <button class="filtr-btn">
-                        <span>North American</span>
-                        <img src="./assets/icons/icon-close.svg" alt="close icon">
-                    </button>
-                    <button class="filtr-btn">
-                        <span>Canada</span>
-                        <img src="./assets/icons/icon-close.svg" alt="close icon">
-                    </button>
-                </div>
-                <div class="table-stars">
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                </div>
-                <div class="table-permission">
-                    <button class="table-admin-btn table-btn">Admin</button>
-                </div>
-                <div class="table-percentage bg-40">
-                    <p>40%</p>
-                </div>
-                <div class="table-status">
-                    <p>Low</p>
-                </div>
-                <div class="table-link">
-                    <a href="#">View</a>
-                </div>
-                <div class="table-toggle">
-                    <p>Checkbox</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-            </div>
-            <div class="table-body table-row ">
-                <div class="table-checkbox">
-                    <input type="checkbox">
-                </div>
-                <div class="table-user-image">
-                    <img src="./assets/Images/Eda Taştan.jpg" alt="Eda Taştan">
-                </div>
-                <div class="table-username">
-                    <p>Eda Taştan</p>
-                </div>
-                <div class="table-filter">
-                    <button class="filtr-btn">
-                        <span>Agency</span>
-                        <img src="./assets/icons/icon-close.svg" alt="close icon">
-                    </button>
-                </div>
-                <div class="table-stars">
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                </div>
-                <div class="table-permission">
-                    <button class="table-contributor-btn table-btn">Contributor</button>
-                </div>
-                <div class="table-percentage bg-20">
-                    <p>20%</p>
-                </div>
-                <div class="table-status">
-                    <p>Medium</p>
-                </div>
-                <div class="table-link">
-                    <a href="#">View</a>
-                </div>
-                <div class="table-toggle">
-                    <p>Checkbox</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-            </div>
-            <div class="table-body table-row table-row-lightblue ">
-                <div class="table-checkbox">
-                    <input type="checkbox">
-                </div>
-                <div class="table-user-image">
-                    <img src="./assets/Images/Osman Dağ.jpg" alt="Osman Dağ">
-                </div>
-                <div class="table-username">
-                    <p>Osman Dağ</p>
-                </div>
-                <div class="table-filter">
-                    <button class="filtr-btn">
-                        <span>North American</span>
-                        <img src="./assets/icons/icon-close.svg" alt="close icon">
-                    </button>
-                </div>
-                <div class="table-stars">
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                </div>
-                <div class="table-permission">
-                    <button class="table-viewer-btn table-btn">Viewer</button>
-                </div>
-                <div class="table-percentage bg-60">
-                    <p>60%</p>
-                </div>
-                <div class="table-status">
-                    <p>Medium</p>
-                </div>
-                <div class="table-link">
-                    <a href="#">View</a>
-                </div>
-                <div class="table-toggle">
-                    <p>Checkbox</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-            </div>
-            <div class="table-body table-row">
-                <div class="table-checkbox">
-                    <input type="checkbox">
-                </div>
-                <div class="table-user-image">
-                    <img src="./assets/Images/Arif Bulut.jpg" alt="Arif Bulut">
-                </div>
-                <div class="table-username">
-                    <p>Arif Bulut</p>
-                </div>
-                <div class="table-filter">
-                    <button class="filtr-btn">
-                        <span>Agency</span>
-                        <img src="./assets/icons/icon-close.svg" alt="close icon">
-                    </button>
-                    <button class="filtr-btn">
-                        <span>Filtrele</span>
-                        <img src="./assets/icons/icon-close.svg" alt="close icon">
-                    </button>
-                </div>
-                <div class="table-stars">
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                </div>
-                <div class="table-permission">
-                    <button class="table-moderator-btn table-btn">Moderator</button>
-                </div>
-                <div class="table-percentage bg-90">
-                    <p>90%</p>
-                </div>
-                <div class="table-status">
-                    <p>High</p>
-                </div>
-                <div class="table-link">
-                    <a href="#">View</a>
-                </div>
-                <div class="table-toggle">
-                    <p>Checkbox</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-            </div>
-            <div class="table-body table-row">
-                <div class="table-checkbox">
-                    <input type="checkbox">
-                </div>
-                <div class="table-user-image">
-                    <img src="./assets/Images/Kadir Taş.jpg" alt="Kadir Taş">
-                </div>
-                <div class="table-username">
-                    <p>Kadir Taş</p>
-                </div>
-                <div class="table-filter">
-                    <button class="filtr-btn">
-                        <span>North American</span>
-                        <img src="./assets/icons/icon-close.svg" alt="close icon">
-                    </button>
-                    <button class="filtr-btn">
-                        <span>Canada</span>
-                        <img src="./assets/icons/icon-close.svg" alt="close icon">
-                    </button>
-                </div>
-                <div class="table-stars">
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                </div>
-                <div class="table-permission">
-                    <button class="table-admin-btn table-btn">Admin</button>
-                </div>
-                <div class="table-percentage bg-40">
-                    <p>40%</p>
-                </div>
-                <div class="table-status">
-                    <p>High</p>
-                </div>
-                <div class="table-link">
-                    <a href="#">View</a>
-                </div>
-                <div class="table-toggle">
-                    <p>Checkbox</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-            </div>
-            <div class="table-body table-row table-row-orange">
-                <div class="table-checkbox">
-                    <input type="checkbox">
-                </div>
-                <div class="table-user-image">
-                    <img src="./assets/Images/Yücel Kabil.jpg" alt="Yücel Kabil">
-                </div>
-                <div class="table-username">
-                    <p>Yücel Kabil</p>
-                </div>
-                <div class="table-filter">
-                    <button class="filtr-btn">
-                        <span>Agency</span>
-                        <img src="./assets/icons/icon-close.svg" alt="close icon">
-                    </button>
-                </div>
-                <div class="table-stars">
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                </div>
-                <div class="table-permission">
-                    <button class="table-contributor-btn table-btn">Contributor</button>
-                </div>
-                <div class="table-percentage bg-20">
-                    <p>20%</p>
-                </div>
-                <div class="table-status">
-                    <p>Low</p>
-                </div>
-                <div class="table-link">
-                    <a href="#">View</a>
-                </div>
-                <div class="table-toggle">
-                    <p>Checkbox</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-            </div>
-            <div class="table-body table-row ">
-                <div class="table-checkbox">
-                    <input type="checkbox">
-                </div>
-                <div class="table-user-image">
-                    <img src="./assets/Images/İpek Seçil.jpg" alt="İpek Seçil">
-                </div>
-                <div class="table-username">
-                    <p>İpek Seçil</p>
-                </div>
-                <div class="table-filter">
-                    <button class="filtr-btn">
-                        <span>North American</span>
-                        <img src="./assets/icons/icon-close.svg" alt="close icon">
-                    </button>
-                </div>
-                <div class="table-stars">
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                </div>
-                <div class="table-permission">
-                    <button class="table-viewer-btn table-btn">Viewer</button>
-                </div>
-                <div class="table-percentage bg-60">
-                    <p>60%</p>
-                </div>
-                <div class="table-status">
-                    <p>Medium</p>
-                </div>
-                <div class="table-link">
-                    <a href="#">View</a>
-                </div>
-                <div class="table-toggle">
-                    <p>Checkbox</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-            </div>
-            <div class="table-body table-row">
-                <div class="table-checkbox">
-                    <input type="checkbox">
-                </div>
-                <div class="table-user-image">
-                    <img src="./assets/Images/Onur Barış.jpg" alt="Onur Barış">
-                </div>
-                <div class="table-username">
-                    <p>Onur Barış</p>
-                </div>
-                <div class="table-filter">
-                    <button class="filtr-btn">
-                        <span>Agency</span>
-                        <img src="./assets/icons/icon-close.svg" alt="close icon">
-                    </button>
-                    <button class="filtr-btn">
-                        <span>Filtrele</span>
-                        <img src="./assets/icons/icon-close.svg" alt="close icon">
-                    </button>
-                </div>
-                <div class="table-stars">
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                </div>
-                <div class="table-permission">
-                    <button class="table-superAdmin-btn table-btn">Super Admin</button>
-                </div>
-                <div class="table-percentage bg-90">
-                    <p>90%</p>
-                </div>
-                <div class="table-status">
-                    <p>Super High</p>
-                </div>
-                <div class="table-link">
-                    <a href="#">View</a>
-                </div>
-                <div class="table-toggle">
-                    <p>Checkbox</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-            </div>
-            <div class="table-body table-row">
-                <div class="table-checkbox">
-                    <input type="checkbox">
-                </div>
-                <div class="table-user-image">
-                    <img src="./assets/Images/Evren Yüce.jpg" alt="Evren Yüce">
-                </div>
-                <div class="table-username">
-                    <p>Evren Yüce</p>
-                </div>
-                <div class="table-filter">
-                    <button class="filtr-btn">
-                        <span>North American</span>
-                        <img src="./assets/icons/icon-close.svg" alt="close icon">
-                    </button>
-                </div>
-                <div class="table-stars">
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                </div>
-                <div class="table-permission">
-                    <button class="table-viewer-btn table-btn">Viewer</button>
-                </div>
-                <div class="table-percentage bg-100">
-                    <p>100%</p>
-                </div>
-                <div class="table-status">
-                    <p>Low</p>
-                </div>
-                <div class="table-link">
-                    <a href="#">View</a>
-                </div>
-                <div class="table-toggle">
-                    <p>Checkbox</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-            </div>
-            <div class="table-body table-row">
-                <div class="table-checkbox">
-                    <input type="checkbox">
-                </div>
-                <div class="table-user-image">
-                    <img src="./assets/Images/Coşkun Kaya.jpg" alt="Coşkun Kaya">
-                </div>
-                <div class="table-username">
-                    <p>Coşkun Kaya</p>
-                </div>
-                <div class="table-filter">
-                    <button class="filtr-btn">
-                        <span>Agency</span>
-                        <img src="./assets/icons/icon-close.svg" alt="close icon">
-                    </button>
-                    <button class="filtr-btn">
-                        <span>Filtrele</span>
-                        <img src="./assets/icons/icon-close.svg" alt="close icon">
-                    </button>
-                </div>
-                <div class="table-stars">
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                    <span class="material-icons-round icon-star">
-                        star
-                    </span>
-                </div>
-                <div class="table-permission">
-                    <button class="table-moderator-btn table-btn">Moderator</button>
-                </div>
-                <div class="table-percentage bg-90">
-                    <p>90%</p>
-                </div>
-                <div class="table-status">
-                    <p>Medium</p>
-                </div>
-                <div class="table-link">
-                    <a href="#">View</a>
-                </div>
-                <div class="table-toggle">
-                    <p>Checkbox</p>
-                    <img src="./assets/icons/icon-filter-down.svg" alt="icon filter down" class="icon-filter-down" />
-                </div>
-            </div> 
-        </div> -->
     </section>
 
     <!-- JavaScript -->
     <script src="./js/dropdown.js"></script>
-    <script src="./js/dashboard-navbar.js"></script>
   </body>
 </html>
