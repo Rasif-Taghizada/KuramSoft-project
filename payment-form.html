@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <!-- Import Pure CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/form/payment-form.css" />
+  </head>
+  <body>
+    <section class="payment-form">
+      <!-- ! Payment About -->
+      <div class="payment-about">
+        <h2>
+          <img src="./assets/icons/payment-shield.svg" alt="Shield" />
+          Ödeme bilgilerini giriniz.
+        </h2>
+        <!-- ? Selected card -->
+        <div class="selected-card">
+          <label for="selected-card">Katr Seçimi</label>
+          <select name="selected-card" id="selected-card">
+            <option value=""></option>
+            <option value="1">Kart 1</option>
+            <option value="2">Kart 2</option>
+            <option value="3">Kart 3</option>
+          </select>
+        </div>
+        <!-- ? Card Name -->
+        <div class="card-name">
+          <label for="card-name">Kart Sahibinin Adı</label>
+          <input type="text" name="card-name" id="card-name" />
+        </div>
+        <!-- ? Card Number -->
+        <div class="card-number">
+          <label for="card-number">Kart Numarası</label>
+          <div>
+            <input type="text" name="card-number" id="first-four" />
+            <input type="text" name="card-number" id="second-four" />
+            <input type="text" name="card-number" id="third-four" />
+            <input type="text" name="card-number" id="fourth-four" />
+          </div>
+        </div>
+        <!-- ? Finished Date -->
+        <div class="finished-date-cvv">
+          <div class="finished-date">
+            <label for="finished-date">Bitiş Tarihi</label>
+            <input type="text" name="finished-date" id="finished-date" />
+          </div>
+
+          <!-- ? CVV -->
+          <div class="cvv">
+            <label for="cvv">CVV</label>
+            <input type="text" name="cvv" id="cvv" />
+          </div>
+        </div>
+        <!-- ? Agree box -->
+        <div class="agree-box">
+          <label class="check-box">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label for="agree"
+            >Ödemeye devam ederek tüm koşul ve şartları kabul ettiğinizi
+            onaylamış olursunuz.</label
+          >
+        </div>
+        <button>
+          Şimdi Öde
+          <img src="./assets/icons/payment-card-icon.svg" alt="payment" />
+        </button>
+      </div>
+      <!-- ! User Details -->
+      <div class="user-details">
+        <h2>
+          <img src="./assets/icons/form-laptop.svg" alt="laptop" />
+          Kullanıcı aytılarını
+        </h2>
+        <!-- ! Paymeny Amount -->
+        <div class="payment-amount">
+          <label for="payment-amount">Ödeme Turarı</label>
+          <input type="text" name="payment-amount" id="payment-amount" />
+        </div>
+        <!-- ! User Information -->
+        <h3>Müşteri Bilgileri</h3>
+        <!-- ? E-posta -->
+        <div class="email">
+          <label for="email">E-posta</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <!-- ? Phone -->
+        <div class="phone">
+          <label for="phone">Telefon</label>
+          <input type="text" name="phone" id="phone" />
+        </div>
+        <!-- ? Select Card -->
+        <div class="select-card">
+          <label for="select-card">Kart Seçimi</label>
+          <select name="select-card" id="select-card">
+            <option value=""></option>
+            <option value="1">Kart 1</option>
+            <option value="2">Kart 2</option>
+            <option value="3">Kart 3</option>
+          </select>
+        </div>
+        <!-- ? Number of Installments -->
+        <div class="number-of-installments">
+          <h3>Taksit Sayısı</h3>
+          <!-- check box -->
+          <div class="checkbox-container">
+            <div>
+              <label class="radio-container">
+                <input type="radio" name="radio" />
+                <span class="checkmark"></span>
+                4 Taksit
+              </label>
+            </div>
+            <div>
+              <label class="radio-container">
+                <input type="radio" name="radio" />
+                <span class="checkmark"></span>
+                5 Taksit
+              </label>
+            </div>
+            <div>
+              <label class="radio-container">
+                <input type="radio" name="radio" />
+                <span class="checkmark"></span>
+                3 Taksit
+              </label>
+            </div>
+            <div>
+              <label class="radio-container">
+                <input type="radio" name="radio" />
+                <span class="checkmark"></span>
+                6 Taksit
+              </label>
+            </div>
+            <div>
+              <label class="radio-container">
+                <input type="radio" name="radio" />
+                <span class="checkmark"></span>
+                10 Taksit
+              </label>
+            </div>
+            <div>
+              <label class="radio-container">
+                <input type="radio" name="radio" />
+                <span class="checkmark"></span>
+                9 Taksit
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ! Payment img -->
+      <div class="payment-img">
+        <img src="./assets/icons/payment-img.svg" alt="payment svg" />
+      </div>
+    </section>
+  </body>
+</html>
