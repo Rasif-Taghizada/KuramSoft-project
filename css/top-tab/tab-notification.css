@@ -1,0 +1,45 @@
+.container>div {
+    border-bottom: 3px solid;
+    margin-bottom: 5px;
+    display: flex;
+    padding: 15px 20px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
+}
+
+.container>div p,
+.container>div h3 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    margin-bottom: 8px;
+}
+
+.container>div img {
+    margin-right: 15px;
+    width: 22px;
+    height: 22px;
+}
+
+
+.incorrect-box {
+    background: #FFF4E3;
+  
+    border-color: #FFD495 !important;
+}
+
+.error-box{
+    background: #FDD;
+    border-color: #FFAEAE !important;
+}
+
+.information-box{
+    background: #C2D9FD;
+    border-color: #8BBAFF !important;
+}
+
+.successful-box{
+    background: #E9FFD3;
+    border-color: #C5FF8A !important;
+}

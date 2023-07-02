@@ -454,37 +454,14 @@
 .icon-warning {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    object-fit: cover;
 }
 
-:where(.icon-error, .icon-warning, .icon-success, .icon-info) span {
+/* :where(.icon-error, .icon-warning, .icon-success, .icon-info) span {
     font-size: 32px !important;
     font-weight: 900;
-}
+} */
 
-.icon-error {
-    border: 3px solid #FF0000;
-    color: #FF0000;
-}
-
-.icon-warning {
-    background: #FF9900;
-    color: white;
-}
-
-.icon-info {
-    border: 3px solid #0168FF;
-    color: #0168FF;
-    font-size: 44px;
-}
-
-.icon-success {
-    background: #83FF06;
-    color: white;
-}
 
 /* * Error Main Content Right */
 .error-main-content-right>h1 {
@@ -538,9 +515,16 @@
     background: #FFFFFF;
 }
 
+.error-footer-btns button:nth-child(1):hover {
+    background: #E8E8E8;
+}
+
 .error-footer-btns button:nth-child(2) {
     background: #21D1F8;
     margin-left: 10px;
+}
+.error-footer-btns button:nth-child(2):hover {
+    background: #1db5d8;
 }
 
 /*! Dashboard Kanban Page */
