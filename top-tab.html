@@ -6,13 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- Import Pure CSS -->
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/form.css">
-    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <link rel="stylesheet" href="./css/colors.css" />
     <link rel="stylesheet" href="./css/top-tab/top-tab.css" />
+    <link rel="stylesheet" href="./css/top-tab/tab-notification.css">
   </head>
   <body>
     <section class="tab-container">
+      <!-- ! Notification Box -->
+      <div class="container-notification">
+        <!-- ! Incorrect box -->
+        <div class="incorrect-box">
+          <div>
+            <img src="./assets/icons/warning-icon.svg" alt="Incorrect" />
+          </div>
+          <div>
+            <h3>Hatalı giriş.!</h3>
+            <p>İlçe girilmedi.!</p>
+            <p>İl girilmedi.!</p>
+          </div>
+        </div>
+        <!-- ! Error box -->
+        <div class="error-box">
+          <div>
+            <img src="./assets/icons/close-red.svg" alt="Error" />
+          </div>
+          <div>
+            <h3>Error!</h3>
+            <p>İlçe girilmedi.!</p>
+            <p>İl girilmedi.!</p>
+          </div>
+        </div>
+        <!-- ! Information box -->
+        <div class="information-box">
+          <div>
+            <img src="./assets/icons/info-icon-blue.svg" alt="Information" />
+          </div>
+          <div>
+            <h3>Information!</h3>
+            <p>İlçe girilmedi.!</p>
+            <p>İl girilmedi.!</p>
+          </div>
+        </div>
+        <!-- ! Successful box-->
+        <div class="successful-box">
+          <div>
+            <img src="./assets/icons/successful-icon.svg" alt="successful" />
+          </div>
+          <div>
+            <h3>Başarılı !</h3>
+            <p>İlçe girilmedi.!</p>
+            <p>İl girilmedi.!</p>
+          </div>
+        </div>
+      </div>
       <!-- ! Info Box -->
       <div class="info-box">
         <div class="info-box-header dropdown-box">
@@ -63,9 +111,14 @@
                   </div>
                   <!-- ! II -->
                   <div>
-                    <div class="notification-detail-name">Adı</div>
-                    <div class="notification-detail-input">
+                    <div class="notification-detail-name">
+                      Adı
+                      <img src="./assets/icons/question-help.svg" alt="help" />
+                    </div>
+                    <div class="notification-detail-input notifcations-incorrect-input">
+                      <span>Hatalı giriş.!</span>
                       <input type="text" />
+                      <p>Eğer Account Manager yetkisinde ise seçilmedi.</p>
                     </div>
                   </div>
                   <!-- ! III -->
@@ -101,7 +154,10 @@
                   </div>
                   <!-- ! VII -->
                   <div>
-                    <div class="notification-detail-name">Ürünler</div>
+                    <div class="notification-detail-name">
+                      Ürünler
+                      <img src="./assets/icons/question-help.svg" alt="help" />
+                    </div>
                     <div class="notification-detail-input">
                       <div class="product-container">
                         <h3>Genel Talepler</h3>

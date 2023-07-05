@@ -6,12 +6,16 @@
 .form-group>input {
     width: 315px;
     height: 50px;
-    background: var(--dshb-fiveth-bg-color);
-    border: 1px solid var(--input-border-second-color);
+    background: #EAEAEA;
+    border: 1px solid #bebebe;
     border-radius: 100px;
     padding: 13px 20px;
     outline: none;
     margin-bottom: 20px;
+}
+
+.form-group>input:focus {
+    border: 1px solid #5fa5d8;
 }
 
 .form-group>label {
@@ -21,7 +25,86 @@
     font-size: 12px;
     top: -8px;
     left: 20px;
-    background: var(--dshb-fiveth-bg-color);
+    background: #EAEAEA;
+}
+
+.form-group>img {
+    position: absolute;
+    z-index: 10;
+    top: 13px;
+    right: 20px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+/* Form Dropdown Menu */
+.form-dropdown-menu {
+    position: relative;
+}
+
+.menu-select {
+    width: 315px;
+    height: 50px;
+    background: #EAEAEA;
+    border: 1px solid #bebebe;
+    border-radius: 100px;
+    padding: 13px 20px;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.menu-select img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.3;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-dropdown-menu .menu-options {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #EAEAEA;
+    border: 1px solid #bebebe;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-options .menu-option-content {
+    padding: 10px 20px;
+    border-bottom: 1px solid #bebebe;
+}
+
+.menu-options .menu-option-content:last-child {
+    border-bottom: none;
+}
+
+.menu-options .menu-option-content:hover {
+    background: #bebebe;
+    cursor: pointer;
+}
+
+.dropdown-menu-open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.dropdown-menu-open~.menu-options {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown-menu-open img {
+    transform: rotate(180deg);
 }
 
 /*! form-actions */
@@ -32,12 +115,13 @@
 }
 
 .form-actions>input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
 }
 
 .form-actions> :where(a, label) {
-    color: var(--dshb-cadetblue-color);
+    color: #5fa5d8;
     cursor: pointer;
 }
 
@@ -53,8 +137,8 @@
 }
 
 .btn-login {
-    background: var(--dshb-cadetblue-color);
-    box-shadow: 0px 4px 20px var(--dshb-cadetblue-color);
+    background: #5fa5d8;
+    box-shadow: 0px 4px 20px #5fa5d8;
     border-radius: 100px;
     padding: 20px 130px;
     outline: none;
@@ -64,6 +148,15 @@
     color: white;
     margin-top: 40px;
     margin-bottom: 30px;
+}
+
+.btn-login:hover {
+    background: #4b8ac9;
+}
+
+.btn-login:focus {
+    background: #4c8ec7;
+    box-shadow: 0px 4px 20px #4c8ec7;
 }
 
 .btn-goggle,
@@ -87,9 +180,17 @@
     border: 0.87px solid #C6C6C6;
 }
 
+.btn-goggle:hover {
+    background: #e5e5e5;
+}
+
 .btn-facebook {
     background: #1877F2;
     color: #FFFFFF;
+}
+
+.btn-facebook:hover {
+    background: #3a66b7;
 }
 
 /*! form-create-account */
@@ -112,10 +213,15 @@
 }
 
 .btn-purple {
-    background: var(--login-purple-button);
+    background: #441E61;
     box-shadow: 0px 4px 20px rgba(68, 30, 97, 0.54);
 }
 
+.btn-purple:hover {
+    background: #641b9c;
+    box-shadow: 0px 4px 20px rgba(68, 30, 97, 0.54);
+
+}
 
 /*! Additional form elements */
 /* form label */
@@ -523,6 +629,7 @@
     background: #21D1F8;
     margin-left: 10px;
 }
+
 .error-footer-btns button:nth-child(2):hover {
     background: #1db5d8;
 }
