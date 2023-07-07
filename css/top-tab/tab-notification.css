@@ -155,7 +155,7 @@
 }
 
 /* ! Notifications */
-.notification-box-body {}
+/* .notification-box-body {} */
 
 .notifications {
     border: 1px solid #DDDDDD;
@@ -249,10 +249,9 @@ table input:not([type=radio]):not([type=radio]):is(:focus, :hover),
 }
 
 
-.notification-detail-name{
-   
-}
-.notification-detail-name>img{
+/* .notification-detail-name {} */
+
+.notification-detail-name>img {
     margin-left: 10px;
 }
 

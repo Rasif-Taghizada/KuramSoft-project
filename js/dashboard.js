@@ -57,3 +57,36 @@ sortIcons.forEach(icon => {
         icon.classList.toggle("thead-desc");
     })
 })
+
+
+//! Dashboard Help Container
+let helpTitle = document.querySelector(".sidebar-help-title");
+let helpContent = document.querySelector(".sidebar-help-content");
+
+helpTitle?.addEventListener("click", () => {
+    helpContent.classList.toggle("open");
+    let helpContentLists = document.querySelectorAll(".sidebar-help-content > li");
+    helpContentLists.forEach(list => {
+        list.addEventListener("click", () => {
+            helpContentLists.forEach(listItem => {
+                if (listItem.classList.contains("active")) {
+                    listItem.classList.remove("active")
+                }
+            })
+            list.classList.add("active")
+            helpContainer(list)
+        })
+    });
+});
+
+
+function helpContainer(listItem) {
+    let helpContainer = document.querySelector(".dashboard-help-container");
+    helpContainer.classList.toggle("open");
+
+    let helpContainerClose = document.querySelector(".dashboard-help-container > header > img")
+    helpContainerClose.addEventListener("click", () => {
+        helpContainer.classList.remove("open");
+        listItem.classList.remove("active")
+    })
+}
