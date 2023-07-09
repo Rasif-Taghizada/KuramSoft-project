@@ -2,7 +2,6 @@
     width: 100%;
     min-height: 100vh;
     padding: 20px;
-
 }
 
 * {
@@ -11,10 +10,10 @@
 
 .info-box {
     width: 100%;
-    background: #F9FEFF;
+    background: #f9feff;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
     border-radius: 0px 0px 15px 15px;
-    border-top: 3px solid #C3F5FF;
+    border-top: 3px solid #c3f5ff;
     padding: 7px 30px;
 }
 
@@ -40,7 +39,7 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.01em;
-    color: #5E5E5E;
+    color: #5e5e5e;
 }
 
 .info-box-header>img {
@@ -49,8 +48,8 @@
 }
 
 .info-box-body {
-    background: #F9FEFF;
-    border-top: 1px solid #E2E2E2;
+    background: #f9feff;
+    border-top: 1px solid #e2e2e2;
     padding: 20px 70px;
     margin: 0px -30px;
     display: none;
@@ -65,7 +64,6 @@
     transform: rotate(0deg) !important;
 }
 
-
 @keyframes dropDownBox {
     0% {
         opacity: 0;
@@ -77,7 +75,6 @@
         transform: translateY(0px);
     }
 }
-
 
 .info-box-content {
     margin-top: 50px;
@@ -95,20 +92,20 @@
     text-align: center;
     letter-spacing: 0.01em;
     padding: 10px 40px;
-    background: #C0F5FF;
-    border: 1px solid #69E6FF;
+    background: #c0f5ff;
+    border: 1px solid #69e6ff;
     margin-right: 4px;
     cursor: pointer;
     transition: all ease-in-out 0.3s;
 }
 
 .top-nav>ul>li>a {
-    color: #5E5E5E;
+    color: #5e5e5e;
 }
 
 .top-nav>ul>li.list-active,
 .top-nav>ul>li:hover {
-    background: #EDFCFF;
+    background: #edfcff;
     color: #fff;
 }
 
@@ -120,16 +117,15 @@
 
 /* ! Notification */
 .notification-box {
-    border: 1px solid #E0E0E0;
+    border: 1px solid #e0e0e0;
     border-bottom: 0;
 }
 
 .notification-box-header {
-    background: #EDFCFF;
+    background: #edfcff;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
     padding: 15px;
     cursor: pointer;
-
 }
 
 .notification-box-header>img {
@@ -158,7 +154,7 @@
 /* .notification-box-body {} */
 
 .notifications {
-    border: 1px solid #DDDDDD;
+    border: 1px solid #dddddd;
 }
 
 .notifications>h2 {
@@ -173,7 +169,7 @@
 .notification-detail>div {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    border-bottom: 1px solid #E6E6E6;
+    border-bottom: 1px solid #e6e6e6;
 }
 
 .notification-detail-name {
@@ -191,17 +187,16 @@
 }
 
 .notification-detail-input {
-    border-left: 1px solid #E6E6E6;
-
+    border-left: 1px solid #e6e6e6;
 }
 
-.notification-detail-input>input:not([type=checkbox]),
+.notification-detail-input>input:not([type="checkbox"]),
 .notification-detail-input>select,
 .notification-detail-input>textarea,
 .multiple-box-name-input>input,
 .multiple-box-name-input>select,
 .multiple-box-name-input>textarea {
-    border: 1px solid #9AEEFF;
+    border: 1px solid #9aeeff;
     border-radius: 5px;
     padding: 10px 20px;
     width: 100%;
@@ -212,42 +207,40 @@
 .notification-detail-input>input:is(:focus, :hover),
 .notification-detail-input>select:is(:focus, :hover),
 .notification-detail-input>textarea:is(:focus, :hover),
-table input:not([type=radio]):not([type=radio]):is(:focus, :hover),
+table input:not([type="radio"]):not([type="radio"]):is(:focus, :hover),
 .multiple-box-name-input>input:is(:focus, :hover),
 .multiple-box-name-input>select:is(:focus, :hover),
 .multiple-box-name-input>textarea:is(:focus, :hover) {
     outline: none;
-    border: 1px solid #69E6FF;
+    border: 1px solid #69e6ff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-
 }
 
 .notifcations-incorrect-input>input {
-    border: 1px solid #FFCF88 !important;
+    border: 1px solid #ffcf88 !important;
     box-shadow: 0px 2px 5px 0px rgba(255, 230, 0, 0.51) !important;
     margin-top: 5px;
 }
 
 .notifcations-incorrect-input>input:is(:focus, :hover) {
     outline: none;
-    border: 1px solid #FFCF88 !important;
+    border: 1px solid #ffcf88 !important;
     box-shadow: 0px 2px 5px 0px rgb(255, 230, 0) !important;
 }
 
 .notifcations-incorrect-input>span {
-    color: #FDAD36;
+    color: #fdad36;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.1px;
 }
 
 .notifcations-incorrect-input>p {
-    color: #2C2C2C;
+    color: #2c2c2c;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.1px;
 }
-
 
 /* .notification-detail-name {} */
 
@@ -269,19 +262,18 @@ textarea {
     margin-right: 10px;
 }
 
-
 .btn-new {
     width: max-content;
     padding: 5px 0px 5px 10px;
     border-radius: 5px;
     transition: all ease-in-out 0.3s;
-    border: 1px solid #16ACCA;
-    background-color: #69E6FF;
+    border: 1px solid #16acca;
+    background-color: #69e6ff;
 }
 
 .btn-new:hover {
     cursor: pointer;
-    background-color: #16ACCA;
+    background-color: #16acca;
     color: #fff;
 }
 
@@ -322,7 +314,7 @@ textarea {
     left: 0;
     height: 25px;
     width: 25px;
-    border: 1px solid #86CEE2;
+    border: 1px solid #86cee2;
     border-radius: 5px;
 }
 
@@ -331,7 +323,7 @@ textarea {
 }
 
 .check-box input:checked~.checkmark {
-    background-color: #009DBA;
+    background-color: #009dba;
 }
 
 .checkmark:after {
@@ -356,7 +348,6 @@ textarea {
     transform: rotate(45deg);
 }
 
-
 /* ---------------------------------------- */
 
 .uploade-file-box {
@@ -366,7 +357,7 @@ textarea {
 
 .uploade-file-box>.uploade-file {
     padding: 10px 10px 10px 20px;
-    border: 1px solid #9AEEFF;
+    border: 1px solid #9aeeff;
     border-radius: 5px;
     margin-right: 10px;
     cursor: pointer;
@@ -374,9 +365,9 @@ textarea {
 }
 
 .uploade-file-box>.uploade-file:hover {
-    border: 1px solid #69E6FF;
+    border: 1px solid #69e6ff;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
-    background-color: #69E6FF;
+    background-color: #69e6ff;
     color: #fff;
 }
 
@@ -397,7 +388,7 @@ textarea {
 .product-container {
     display: block !important;
     border-radius: 5px;
-    border: 1px solid #9AEEFF;
+    border: 1px solid #9aeeff;
     padding: 10px 20px;
 }
 
@@ -430,7 +421,7 @@ textarea {
 /* ! education-status */
 .education-status>h3 {
     padding: 10px 40px;
-    background: #A6F0FF;
+    background: #a6f0ff;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
     font-size: 18px;
     font-weight: 700;
@@ -443,9 +434,8 @@ textarea {
 }
 
 .education-status>table>thead {
-    background: #E7FBFF;
+    background: #e7fbff;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
-
 }
 
 .education-status>table>thead>tr>th {
@@ -459,7 +449,6 @@ textarea {
 .education-status>table>thead>tr>th:first-child {
     text-align: center;
 }
-
 
 .education-status>table>tbody>tr>td {
     padding: 10px;
@@ -484,7 +473,7 @@ textarea {
     display: flex;
     align-items: center;
     border-radius: 5px;
-    border: 1px solid #9AEEFF;
+    border: 1px solid #9aeeff;
     padding: 10px 15px;
     font-size: 14px;
     font-weight: 800;
@@ -492,7 +481,7 @@ textarea {
 
 .education-status tbody td>input {
     border-radius: 5px;
-    border: 1px solid #9AEEFF;
+    border: 1px solid #9aeeff;
     padding: 10px 15px;
     font-size: 12px;
     font-weight: 800;
@@ -514,7 +503,7 @@ textarea {
 }
 
 .education-status .notification-detail {
-    border-top: 1px solid #E6E6E6;
+    border-top: 1px solid #e6e6e6;
 }
 
 /* ! Cusotom RadiBox */
@@ -547,19 +536,19 @@ textarea {
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    border-color: #86CEE2;
+    border-color: #86cee2;
 }
 
 /* On mouse-over, add a grey background color */
 .radio-container:hover input~.checkmark {
     /* background-color: #ccc; */
-    border-color: #C2C7D0;
+    border-color: #c2c7d0;
 }
 
 /* When the radio button is checked, add a blue background */
 .radio-container input:checked~.checkmark {
     background-color: white;
-    border-color: #C2C7D0;
+    border-color: #c2c7d0;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -581,19 +570,19 @@ textarea {
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background: #86CEE2;
+    background: #86cee2;
 }
 
 .input-disabled {
     cursor: no-drop;
-    background-color: #F1F1F1;
+    background-color: #f1f1f1;
 }
 
 /* ----------------------------------- */
 .notifcations-tool-box {
     height: 240px;
     border-radius: 5px;
-    border: 1px solid #9AEEFF;
+    border: 1px solid #9aeeff;
     display: block !important;
 }
 
@@ -604,15 +593,13 @@ textarea {
 
 .input-popup {
     border-radius: 5px;
-    border: 1px solid #9AEEFF;
-    background: #E1FFFF;
+    border: 1px solid #9aeeff;
+    background: #e1ffff;
 }
 
 .popup-input-box {
     position: relative;
 }
-
-
 
 .popup-input-box>img {
     position: absolute;
@@ -624,7 +611,7 @@ textarea {
 /* ! notification-footer */
 .notification-footer {
     display: flex;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #e0e0e0;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
     margin-top: 30px;
 }
@@ -640,17 +627,16 @@ textarea {
 
 .add-new-button>button {
     border-radius: 4px;
-    background: linear-gradient(180deg, #267585 0%, #16ACCA 100%);
+    background: linear-gradient(180deg, #267585 0%, #16acca 100%);
     padding: 13px 15px;
     display: flex;
     align-items: center;
-    color: #FFF;
+    color: #fff;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.1px;
     border: none;
     transition: all ease 0.2s;
-
 }
 
 .add-new-button>button>img {
@@ -658,19 +644,18 @@ textarea {
 }
 
 .add-new-button>button:hover {
-
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.288);
     background: linear-gradient(180deg, #35b1ca 0%, #004857 100%);
 }
 
 /*  ! multiple-container */
 .multiple-container {
-    border: 1px solid #00ACCE;
+    border: 1px solid #00acce;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
 }
 
 .multiple-container>h2 {
-    background: #00ACCE;
+    background: #00acce;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
     font-size: 16px;
     color: white;
@@ -686,10 +671,9 @@ textarea {
     padding-right: 20px;
 }
 
-
 .multiple-box-name {
-    border-right: 1px solid #E6E6E6;
-    border-bottom: 1px solid #E6E6E6;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
 }
 
 .multiple-box-name>h3 {
@@ -703,7 +687,7 @@ textarea {
 
 .multiple-box-name-input {
     padding-left: 20px;
-    border-bottom: 1px solid #E6E6E6;
+    border-bottom: 1px solid #e6e6e6;
     padding-bottom: 5px;
     display: flex;
     align-items: flex-end;
@@ -724,16 +708,15 @@ textarea {
     display: block;
 }
 
-
 .multiple-select-list>li {
     padding: 15px;
-    border: 1px solid #E6E6E6;
+    border: 1px solid #e6e6e6;
     cursor: pointer;
     min-width: 130px;
 }
 
 .multiple-select-list>li:hover {
-    background-color: #F1F1F1;
+    background-color: #f1f1f1;
 }
 
 .multiple-box-name-input>img {
@@ -750,7 +733,7 @@ textarea {
 .multiple-box-name-input>div {
     display: flex;
     width: 100%;
-    border: 1px solid #9AEEFF;
+    border: 1px solid #9aeeff;
     border-radius: 5px;
     padding: 10px 15px;
     width: 100%;
@@ -760,14 +743,9 @@ textarea {
 
 .multiple-box-name-input>div:hover {
     outline: none;
-    border: 1px solid #69E6FF;
+    border: 1px solid #69e6ff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-
-
-
-
-
 
 .dropdown-input {
     width: 100%;
@@ -795,7 +773,7 @@ textarea {
 
 .multiple-sort-box>div {
     border-radius: 5px;
-    border: 1px solid #D3D3D3;
+    border: 1px solid #d3d3d3;
     padding: 5px 10px;
     min-width: 100px;
     margin-right: 5px;
@@ -807,7 +785,7 @@ textarea {
 }
 
 .multiple-sort-box>div:hover {
-    background-color: #F1F1F1;
+    background-color: #f1f1f1;
     cursor: pointer;
 }
 
@@ -817,8 +795,8 @@ textarea {
 
 /* ! Detail Table */
 .detail-table {
-    border: 1px solid #00ACCE;
-    border-bottom: 6px solid #D9F9FF;
+    border: 1px solid #00acce;
+    border-bottom: 6px solid #d9f9ff;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
     margin-top: 30px;
 }
@@ -833,7 +811,7 @@ textarea {
 }
 
 .detail-table>table thead {
-    background: #EDFCFF;
+    background: #edfcff;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
 }
 
@@ -845,13 +823,13 @@ textarea {
 
 .detail-table>table td {
     padding: 15px 0;
-    border-bottom: 1px solid #E6E6E6;
+    border-bottom: 1px solid #e6e6e6;
     font-size: 16px;
     font-weight: 500;
 }
 
 .detail-table>table>tbody tr:hover {
-    background: #F5F5F5;
+    background: #f5f5f5;
     cursor: pointer;
 }
 
@@ -860,18 +838,18 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    border: 1px solid #00ACCE;
+    border: 1px solid #00acce;
     padding: 20px;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
     margin: 15px 0;
 }
 
 .white-container {
-    background: #F8F7F7;
+    background: #f8f7f7;
 }
 
 .blue-container {
-    background: #E6EDEE;
+    background: #e6edee;
 }
 
 .footer-container>button {
@@ -890,14 +868,14 @@ textarea {
 }
 
 .footer-container>button:first-child {
-    border: 1px solid #D8D8D8;
-    background: #F2F2F2;
+    border: 1px solid #d8d8d8;
+    background: #f2f2f2;
     margin-right: 6px;
 }
 
 .white-container>button:last-child {
-    border: 1px solid #D8D8D8;
-    background: #FFA7A7;
+    border: 1px solid #d8d8d8;
+    background: #ffa7a7;
 }
 
 .blue-container>button:last-child {
@@ -906,7 +884,7 @@ textarea {
 }
 
 .blue-container>button:last-child:hover {
-    border: 1px solid #D8D8D8;
+    border: 1px solid #d8d8d8;
     background: #ee7a7a;
 }
 
@@ -914,11 +892,9 @@ textarea {
     background: #eb6969;
 }
 
-
 .footer-container>button:first-child:hover {
     background: #ffffff;
 }
-
 
 /*!  Custom Dropdown Menu Style */
 .dshb-dropdown-menu {
@@ -934,7 +910,7 @@ textarea {
     height: 100%;
     width: 100%;
     border-radius: 5px;
-    border: 1px solid #9AEEFF;
+    border: 1px solid #9aeeff;
     padding: 10px;
 }
 
@@ -955,7 +931,7 @@ textarea {
     position: absolute;
     top: 48px;
     left: -1px;
-    background: #F6F8FC;
+    background: #f6f8fc;
     border-bottom-left-radius: 10px;
     /* Bug */
     border-bottom-right-radius: 10px;
@@ -983,7 +959,7 @@ textarea {
 }
 
 .menu-options .menu-option-content:not(:last-child) {
-    border-bottom: 1px solid #E2E2E2;
+    border-bottom: 1px solid #e2e2e2;
 }
 
 /*! Menu Options Visible  */
@@ -998,7 +974,7 @@ textarea {
 
 .multiple-box-name-input-select {
     padding-left: 20px;
-    border-bottom: 1px solid #E6E6E6;
+    border-bottom: 1px solid #e6e6e6;
     padding-bottom: 15px;
     display: flex;
     align-items: flex-end;
@@ -1011,7 +987,70 @@ textarea {
     width: 100%;
 }
 
-@media screen and (max-width:1200px) {
+.popup-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.24);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.popup-container.active {
+    width: 100%;
+    height: 100vh;
+    visibility: visible;
+    animation: popup 0.3s ease-in-out;
+}
+
+
+@keyframes popup {
+    0% {
+        width: 100%;
+        height: 0;
+    }
+
+    100% {
+
+        height: 100vh;
+    }
+}
+
+
+
+
+
+.popup-box {
+    position: relative;
+    width: max-content;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 100px auto;
+}
+
+.popup-box>span {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 16px;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.popup-box>span:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
     .dropdown-box-active~.notification-box-body {
         grid-template-columns: 1fr;
     }
@@ -1021,13 +1060,118 @@ textarea {
     .detail-table>table td {
         font-size: 14px;
     }
-    .education-status tbody td>input{
+
+    .education-status tbody td>input {
         padding: 10px 5px;
     }
 }
 
 @media screen and (max-width: 576px) {
     .detail-table>table td {
+        font-size: 11px;
+    }
+
+    .education-status tbody td>input {
+        padding: 10px 5px;
+    }
+
+    .notification-detail-name {
+        font-size: 14px;
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-end;
+        text-align: end;
+        justify-content: center;
+    }
+
+    .notification-detail-name>img {
+        margin-left: 0;
+    }
+
+    .education-status>table>tbody>tr>td:first-child .img-box {
+        width: 40px;
+        margin-right: 5px;
+    }
+
+    .education-status>table>tbody>tr>td * {
+        font-size: 10px;
+    }
+
+    .checkmark {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        top: 10px;
+    }
+
+    .check-box .checkmark:after {
+        width: 2px;
+        height: 5px;
+        left: 4px;
+        top: 2px;
+    }
+
+    .product-container>div>label>span:last-child,
+    .groups-container>div>label>span:last-child {
         font-size: 12px;
+    }
+
+    .multiple-box-name {
+        font-size: 12px;
+        width: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .multiple-box-name>h3 {
+        padding: 10px 0;
+        padding-right: 5px;
+    }
+
+    .detail-table>table th {
+        font-size: 12px;
+    }
+
+    .footer-container>button {
+        font-size: 12px;
+    }
+
+    .footer-container>button>img {
+        width: 15px;
+    }
+
+    .multiple-sort-box>div {
+        width: 80px !important;
+        min-width: 0 !important;
+    }
+
+    .multiple-box-name-input-select,
+    .multiple-box-name-input {
+        padding: 5px 20px;
+    }
+
+    .notification-detail-input>input:not([type="checkbox"]),
+    .notification-detail-input>select,
+    .notification-detail-input>textarea,
+    .multiple-box-name-input>input,
+    .multiple-box-name-input>select,
+    .multiple-box-name-input>textarea {
+        margin-bottom: 0;
+    }
+
+    .multiple-box-name-input>img {
+        right: 33px;
+        top: 35%;
+    }
+
+    .menu-select>p {
+        font-size: 12px;
+    }
+
+    .top-nav>ul>li {
+        padding-left: 20px;
+        padding-right: 20px;
+
     }
 }

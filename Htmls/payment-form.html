@@ -36,11 +36,11 @@
         <!-- ? Card Number -->
         <div class="card-number">
           <label for="card-number">Kart Numarası</label>
-          <div>
-            <input type="text" name="card-number" id="first-four" />
-            <input type="text" name="card-number" id="second-four" />
-            <input type="text" name="card-number" id="third-four" />
-            <input type="text" name="card-number" id="fourth-four" />
+          <div class="card-number-input">
+            <input type="tel" name="card-number" id="input1" maxlength="4" onkeyup="moveToNext(this, 'input2')"/>
+            <input type="tel" name="card-number" id="input2" maxlength="4" onkeyup="moveToNext(this, 'input3')"/>
+            <input type="tel" name="card-number" id="input3" maxlength="4" onkeyup="moveToNext(this, 'input4')"/>
+            <input type="tel" name="card-number" id="input4" maxlength="4" />
           </div>
         </div>
         <!-- ? Finished Date -->
@@ -161,5 +161,17 @@
         <img src="../wwwroot/assets/icons/payment-img.svg" alt="payment svg" />
       </div>
     </section>
+    
+    <script>
+      function moveToNext(currentInput, nextInputId) {
+        var inputValue = currentInput.value;
+        var maxLength = parseInt(currentInput.getAttribute("maxlength"));
+
+        if (inputValue.length >= maxLength) {
+          var nextInput = document.getElementById(nextInputId);
+          nextInput.focus();
+        }
+      }
+    </script>
   </body>
 </html>
