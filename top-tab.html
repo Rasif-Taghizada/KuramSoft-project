@@ -10,57 +10,10 @@
     <link rel="stylesheet" href="./css/form.css" />
     <link rel="stylesheet" href="./css/colors.css" />
     <link rel="stylesheet" href="./css/top-tab/top-tab.css" />
-    <link rel="stylesheet" href="./css/top-tab/tab-notification.css">
   </head>
   <body>
     <section class="tab-container">
-      <!-- ! Notification Box -->
-      <div class="container-notification">
-        <!-- ! Incorrect box -->
-        <div class="incorrect-box">
-          <div>
-            <img src="./assets/icons/warning-icon.svg" alt="Incorrect" />
-          </div>
-          <div>
-            <h3>Hatalı giriş.!</h3>
-            <p>İlçe girilmedi.!</p>
-            <p>İl girilmedi.!</p>
-          </div>
-        </div>
-        <!-- ! Error box -->
-        <div class="error-box">
-          <div>
-            <img src="./assets/icons/close-red.svg" alt="Error" />
-          </div>
-          <div>
-            <h3>Error!</h3>
-            <p>İlçe girilmedi.!</p>
-            <p>İl girilmedi.!</p>
-          </div>
-        </div>
-        <!-- ! Information box -->
-        <div class="information-box">
-          <div>
-            <img src="./assets/icons/info-icon-blue.svg" alt="Information" />
-          </div>
-          <div>
-            <h3>Information!</h3>
-            <p>İlçe girilmedi.!</p>
-            <p>İl girilmedi.!</p>
-          </div>
-        </div>
-        <!-- ! Successful box-->
-        <div class="successful-box">
-          <div>
-            <img src="./assets/icons/successful-icon.svg" alt="successful" />
-          </div>
-          <div>
-            <h3>Başarılı !</h3>
-            <p>İlçe girilmedi.!</p>
-            <p>İl girilmedi.!</p>
-          </div>
-        </div>
-      </div>
+   
       <!-- ! Info Box -->
       <div class="info-box">
         <div class="info-box-header dropdown-box">
@@ -102,8 +55,27 @@
                   <div>
                     <div class="notification-detail-name">Geliş Yolu</div>
                     <div class="notification-detail-input">
-                      <select name="" id=""></select>
-                      <div>
+                      <div class="dshb-dropdown-menu header-left-menu">
+                        <div class="menu-select">
+                          <p></p>
+                          <img
+                            src="./assets/icons/chevron-down.svg"
+                            alt="down icon"
+                          />
+                        </div>
+                        <div class="menu-options">
+                          <div class="menu-option-content">
+                            <p>Test1</p>
+                          </div>
+                          <div class="menu-option-content">
+                            <p>Test2</p>
+                          </div>
+                          <div class="menu-option-content">
+                            <p>Test3</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="btn-new"> 
                         <span>New</span>
                         <img src="./assets/icons/rhombus.svg" alt="rhombus" />
                       </div>
@@ -115,7 +87,9 @@
                       Adı
                       <img src="./assets/icons/question-help.svg" alt="help" />
                     </div>
-                    <div class="notification-detail-input notifcations-incorrect-input">
+                    <div
+                      class="notification-detail-input notifcations-incorrect-input"
+                    >
                       <span>Hatalı giriş.!</span>
                       <input type="text" />
                       <p>Eğer Account Manager yetkisinde ise seçilmedi.</p>
@@ -138,7 +112,7 @@
                   <!-- ! V -->
                   <div>
                     <div class="notification-detail-name">Dış Arama</div>
-                    <div class="notification-detail-input">
+                    <div class="notification-detail-input check-box-input">
                       <label class="check-box">
                         <input type="checkbox" />
                         <span class="checkmark"></span>
@@ -213,7 +187,7 @@
                           </label>
                         </div>
                       </div>
-                      <div>
+                      <div class="btn-new">
                         <span>New</span>
                         <img src="./assets/icons/rhombus.svg" alt="New" />
                       </div>
@@ -552,13 +526,27 @@
             <div class="multiple-box-name">
               <h3>Sonuç</h3>
             </div>
-            <div class="multiple-box-name-input">
-              <select name="" id="">
-                <option value="">İş Birimine Ata</option>
-                <option value="">Seçiniz</option>
-                <option value="">Seçiniz</option>
-                <option value="">Seçiniz</option>
-              </select>
+            <div class="multiple-box-name-input-select">
+              <div class="dshb-dropdown-menu header-left-menu">
+                <div class="menu-select">
+                  <p>İş Birimine Ata</p>
+                  <img
+                    src="./assets/icons/chevron-down.svg"
+                    alt="down icon"
+                  />
+                </div>
+                <div class="menu-options">
+                  <div class="menu-option-content">
+                    <p>Seçiniz</p>
+                  </div>
+                  <div class="menu-option-content">
+                    <p>Seçiniz</p>
+                  </div>
+                  <div class="menu-option-content">
+                    <p>Seçiniz</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- ! IV -->

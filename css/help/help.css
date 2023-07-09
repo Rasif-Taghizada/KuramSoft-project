@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
-    padding: 35px 50px;
+    padding: 20px 35px;
     border-bottom: 3px solid #C3F5FF;
 }
 
@@ -23,14 +23,14 @@
 
 .modal-box {
     display: none;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 /* ! Help Nav */
 .help-nav-list {
     padding-left: 50px;
     margin-top: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .help-nav-list ul {
@@ -43,7 +43,7 @@
     align-items: center;
     margin-right: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 23px;
     letter-spacing: 0.1px;
     cursor: pointer;
@@ -67,10 +67,10 @@
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.1px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .help-content h2>img {
@@ -86,13 +86,13 @@
 .collapsible-group li>div:first-child {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     cursor: pointer;
 }
 
 .collapsible-group li>div>p {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 25px;
     letter-spacing: 0.1px;
     transition: all ease-in 0.3s;
@@ -100,7 +100,7 @@
 }
 
 .collapsible-group li>div>img {
-    width: 30px;
+    width: 24px;
     margin-right: 6px;
     transition: all ease-in 0.3s;
 }
@@ -146,11 +146,15 @@
 
 .additional-page div ul>li {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 44px;
     letter-spacing: 0.1px;
     display: flex;
     align-items: center;
+}
+.additional-page div ul>li:hover{
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 .additional-page div ul>li>img {
