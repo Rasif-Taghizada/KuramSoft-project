@@ -429,7 +429,10 @@
                     </div>
                 </div>
 
-                @RenderBody()
+                <div class="ks-page-content" style="width:100%">
+                    @RenderBody()
+                    <partial name="~/Pages/Shared/TempLinks.cshtml" />
+                </div>
             </article>
         </main>
     </section>
