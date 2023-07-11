@@ -1,0 +1,31 @@
+﻿
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,latin-ext);
+
+body{font-family:'Open Sans', sans-serif;font-size:1.333em;}
+html,body{height:100%;}
+h1,h2,h3,h4,h5,h6,.nivo-caption .slide-head,.services .nav-tabs>li>a,.lead{ font-family: 'Open Sans', sans-serif; }
+a,a:hover{text-decoration:none;}
+
+.error-page-wrapper{height:100%;background:#fafafa;padding-top:150px;}
+.error-messages-wrapper{background:#00bcf3;padding:15px;}
+
+.error-messages-header{text-align:center;color:White;margin-bottom: 20px;}
+.error-messages-header h6{font-size:48px;font-weight:bold;}
+.error-messages-header p{font-size:18px;font-weight:300;}
+
+.error-messages-timer{text-align:center;color:White;margin-bottom: 20px;}
+.error-messages-timer p{display:inline-block;font-size:14px;font-weight:600;}
+.error-messages-timer p span{font-size:30px;vertical-align: middle;}
+
+.error-messages-icon{float:left;}
+.error-messages-content{background:#ffffcc;height:100px;margin-left: 20px;-webkit-border-radius: 5px;border-radius: 5px;border:1px solid #a1a13d;padding:10px 6px 6px;overflow:hidden;}
+.em-height-inherit{height:inherit!important;}
+.error-messages-content p{font-size:11px;color:#555;text-align:justify;}
+.error-messages-content p strong{color:#a63333;}
+
+.em-detail-show{display:inline-block;padding:3px 6px;background:#444;color:#fff;-webkit-border-radius: 0 0 3px 3px;border-radius: 0 0 3px 3px;}
+.em-detail-show:hover{background:#555;color:#fff;}
+.error-messages-detail{float: right;margin-right: 15px;}
+
+.error-messages-logo{text-align:center;margin-top:15px;}
+

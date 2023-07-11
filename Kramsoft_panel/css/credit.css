@@ -1,0 +1,111 @@
+﻿
+/****************************
+            Fonts 
+*****************************/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,latin-ext);
+
+/* Global Font */
+body{font-family:'Open Sans', sans-serif;font-size:1.333em;}
+html,body{height:100%;}
+/* Heading */
+h1,h2,h3,h4,h5,h6,.nivo-caption .slide-head,.services .nav-tabs>li>a,.lead{ font-family: 'Open Sans', sans-serif; }
+
+/****************************
+         Generic Classes 
+*****************************/
+.fl { float:left }
+.fr {float:right }
+.inner5 { padding:5px }
+.inner10 { padding:10px }
+.inner15 { padding:15px }
+.inner20{ padding:20px }
+.inner25 { padding:25px }
+.inner30 { padding:30px }
+.mr10 { margin-right:10px}
+.mb10 { margin-bottom:10px }
+.mb15 { margin-bottom:15px }
+.mb20 { margin-bottom:20px }
+.mb30 { margin-bottom:30px }
+.mb40 { margin-bottom:40px }
+.mb50 { margin-bottom:50px }
+.mb60 { margin-bottom:60px !important}
+.inner5:after,.inner10:after,.inner15:after,.inner20:after,.inner25:after,.inner30:after { content:'';display:table;clear:both }
+::selection { background:#555;color:#fff }
+*:focus { outline:none; }
+a,a:link,a:visited {text-decoration:none;}
+a:hover { /* font-weight: 600; */}
+
+/* Transitions */
+
+ul,ol { list-style-position:inside; }
+h1,h2,h3,h4,h5,h6 { font-weight: 400;color:#939498;}
+h1{ font-size:3.5em }
+h2{ font-size:3em}
+h3{ font-size:2.5em }
+h4{ font-size:1.8em }
+h5{ font-size:1.1em } 
+h6{ font-size:0.8em }
+img { display:block;border:0 }
+strong { font-weight:700;color: #555;}
+
+
+
+/****************************
+         
+*****************************/
+
+
+.credit-body-wrapper{background:url("images/squares_gray.png");max-width:1000px;}
+
+.credit-information{}
+.credit-information h5{font-size:18px;color:#34495e;font-weight:600;}
+.credit-information p{font-size:11px;}
+
+.user-information{background: rgba(168, 168, 168, 0.15);}
+.user-information ul{list-style-type:none;margin:0;}
+.user-information ul li{padding:6px 0;}
+.user-information ul li span{color:#323232;font-weight:600;}
+.user-information ul li span:after{content:":";display:inline-block;float: right; }
+
+.credit-card-information{background:url(images/credit_card.png) no-repeat;width:600px;height:360px;}
+.credit-card-form{position:relative;}
+.credit-card-form .front{position: absolute;width: 436px;height: 248px;top: 10px;left: 18px;padding: 20px;z-index: 100;}
+.credit-card-form .back{position: absolute;width: 436px;height: 248px;top: 95px;right: 18px;padding: 20px;z-index: 90;}
+.credit-card-form .back .credit-cvc{float: right;top: 82px;margin: 0;padding: 0;text-align: right;}
+.credit-card-form .form-group label{font-size:14px;color:#707070;font-weight:300;}
+
+.credit-actions{border-top: 1px solid #ccc;margin: 0 -15px;padding: 15px 20px 0;}
+.credit-actions .btn-default{background:#323947;color:#fff;padding-left:50px;padding-right:50px;float:right;}
+.credit-actions .checkbox{font-size:11px;}
+
+.credit-body{padding:20px 0;}
+.credit-footer{background:#fff;border-top:1px solid #ccc;padding:15px 0;text-align:center;}
+
+.security-info{width:530px;display:inline-block;}
+.info-icon{float:left;font-size:40px;color:#888;font-size:35px;}
+.info-text{margin-left: 40px;color: #888;text-align: left;}
+.info-text p{font-size:11px;}
+
+
+@media (max-width: 992px){
+    
+    .credit-card-information{margin:0 auto;}
+}
+
+
+@media (max-width: 700px){
+ 
+.credit-card-information{background:none;width: 100%;}
+.credit-card-form .front{position:inherit;height:auto;padding: 0 15px;width: 100%;left:inherit;}
+.credit-card-form .back{position:inherit;height:auto;padding: 0 15px;top:10px;right:inherit;width: 100%;}
+.credit-card-form .back .credit-cvc{float:inherit;text-align:left;top:0;}
+.security-info{width:90%;}
+ 
+    }
+    
+@media (max-width: 500px){
+    
+    
+    .credit-actions .btn-default{float:inherit;}
+    
+}

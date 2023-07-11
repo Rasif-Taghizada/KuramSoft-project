@@ -1,0 +1,76 @@
+﻿
+.call-management-wrapper{}
+
+.call-management-header{border-bottom:1px solid #e2e2e2;}
+.cm-header-nav{list-style-type: none;margin: 10px 0 0 10px;}
+.cm-header-nav li{float:left;}
+.cm-header-nav li a{padding:3px 12px;display:inline-block;color:#888;font-size:14px;}
+.cm-header-nav li.active a{font-weight:600;color:#444;background:#fff;border:1px solid #efefef;-webkit-border-radius: 3px;border-radius: 3px;-webkit-box-shadow:inset 1px 1px 3px 0 rgba(0,0,0,0.05);box-shadow:inset 1px 1px 3px 0 rgba(0,0,0,0.05);}
+.cm-header-button{border-left:1px solid #e2e2e2;padding:15px 20px;;color:#444;float:right;font-weight:600;}
+
+.call-management-sitemap{background:#fafbfc;border-bottom:1px solid #e2e2e2;}
+.cm-sitemap{list-style-type: none;margin: 0;padding: 9px 5px;float: left;}
+.cm-sitemap > li{float: left;color: #d1d2d4;z-index:0;}
+.cm-sitemap > li:before{content:"\BB";display:inline-block;padding: 2px;float:left;}
+.cm-sitemap > li:first-child:before{content:"";display:table;padding: 2px;}
+.cm-sitemap > li:last-child > a{font-weight:700;color:#555;}
+.cm-sitemap > li > a{color: #d1d2d4;display: block;padding: 2px 6px;float: left;}
+
+.call-management-list{}
+.cm-calls-list{list-style-type:none;margin:0;}
+.cm-call-item{background:#fdfdfd;border-bottom: 1px solid #e2e2e2;}
+.call-status{width: 100px;border-right: 1px solid #e2e2e2;float: left;height: 100px;font-size:3.5em;text-align: center;padding: 25px;}
+.call-status.question{background:#fafafa;}
+.call-status.closed{background:#7fba00;color:White;}
+.call-content{padding: 10px 0 6px;position: relative;margin-left: 100px;}
+.call-img{width: 35px;height: 35px;-webkit-border-radius: 5px;border-radius: 5px;display: inline-block;vertical-align: top;border: 1px solid rgba(0,0,0,0.15);position: absolute;right: auto;left: 15px;}
+.call-container{margin-left: 60px;}
+.call-content-title{}
+.call-content-title a{color: #444;font-weight: 600;font-size: 13px;}
+.call-content-user{font-size: 11px;}
+.call-content-text{padding: 5px 0;}
+.call-content-text p{font-size: 12px;font-weight: 300;margin: 0;padding-right: 80px;text-align: justify;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.call-content-date{font-size: 10px;}
+.call-content-search{background: #fafafa;border: 1px solid #f0f0f0;position: absolute;right: 20px;top: 30px;display: inline-block;font-size: 1.2em;padding: 8px;border-radius: 50%;color: #444;}
+.call-content-search:hover{background:#444;color:White;border-color:#444;}
+
+.call-detail{display:none;}
+.cd-question{background:#fcf8e3;border-bottom:1px solid #dfd5a1;}
+.cd-question .call-content{margin-left:0;}
+.cd-question .call-content-date{position: absolute;right: 20px;top: 30px;font-size: 14px;}
+
+.cd-answers{height: 300px;overflow: auto;border-bottom: 1px solid #e2e2e2;}
+.answers-list{list-style-type:none;margin:0;}
+.answers-list li{display: table;margin: 10px 20px;-webkit-border-radius: 3px;border-radius: 3px;clear:both;}
+.answers-list li.left{background:#edf3db;float:left;}
+.answers-list li.right{background:#deecf5;float:right;}
+.answers-list li .call-content .call-content-text p{padding-right:20px;white-space:inherit;overflow:inherit;}
+.answers-list .call-content{margin-left:0;}
+
+.cd-answers-write{padding:15px;border-bottom:1px solid #e2e2e2;}
+.cd-answers-write .form-group .form-control{width:100%;}
+
+.wizard-info{margin-bottom:20px}
+.wizard-info:after{content:"";display:table;clear:both;}
+.info-icon{float:left;font-size:40px;color:#888;}
+.info-icon.green{color:#7fba00;}
+.info-text{margin-left:50px;color:#888;}
+.info-text h4{font-size:18px;font-weight:bold;color:#6d6e6f;}
+.info-text h4.green{color:#7fba00;}
+
+.call-create{padding:15px;border-bottom:1px solid #e2e2e2;display:none;}
+.call-create .form-control{width:100%;}
+
+.call-ticket{color:#00bcf3;font-weight:600;}
+
+
+.call-management-messages{margin:0;}
+.call-management-messages thead tr th{font-weight:600;color:#444;border-right:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2;}
+.call-management-messages tbody tr td{border-right:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2;font-size:12px;}
+.call-management-messages tbody tr:hover td{background:#fdfdfd;}
+.call-management-messages tfoot tr td{padding:0;}
+.call-management-messages tbody tr td.in-process{font-weight:600;color:#5ccdde;}
+.call-management-messages tbody tr td.complete{font-weight:600;color:#7fba00;}
+.call-management-messages tbody tr td.showed{font-weight:600;color:#dbdd5c;}
+.call-management-messages tbody tr td.failed{font-weight:600;color:#a63333;}
+.call-management-messages tbody tr td.waiting{font-weight:600;color:#444444;}

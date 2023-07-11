@@ -1,0 +1,43 @@
+﻿
+.page-helpful{display:none; width:35%;height: 100%;max-height: 100%;min-width: 300px!important;overflow:auto; position:absolute;background:#fafafa;border-left:1px solid #e2e2e2;border-bottom: 1px solid #e2e2e2;left: inherit!important;top:0;right:0!important;z-index:9999;}
+
+.helpful-header{background:#f0f0f0;}
+.helpful-header h4{color:#1abc9c;padding:15px;font-weight:600;font-size:18px;margin-bottom:0;}
+.helpful-header h4 i{font-size:30px;}
+
+.helpful-sitemap-wrapper{border-bottom:1px solid #e2e2e2;border-bottom:3px solid #f0f0f0;}
+.helpful-sitemap{list-style-type: none;margin: 0;padding: 9px 5px;float: left;}
+.helpful-sitemap > li{float: left;color: #d1d2d4;z-index:0;}
+.helpful-sitemap > li:before{content:"\BB";display:inline-block;padding: 2px;float:left;}
+.helpful-sitemap > li:first-child:before{content:"";display:table;padding: 2px;}
+.helpful-sitemap > li:last-child > a{font-weight:700;color:#555;}
+.helpful-sitemap > li > a{color: #d1d2d4;display: block;padding: 2px 6px;float: left;}
+
+.helpful-content{padding:15px;}
+.helpful-head{font-size:16px;font-weight:600;color:#1abc9c;margin:0 0 15px 0;}
+
+.helpful-acordion{margin-left:10px;margin-bottom:20px;}
+.helpful-acordion .acordion-head{margin-bottom:15px;}
+.helpful-acordion .acordion-head a{color:#323232;font-weight:600;font-size:12px;}
+.helpful-acordion .acordion-head a i{font-size:14px;margin-right:5px;}
+.helpful-acordion .helpful-collapse{font-size:12px;color:#828282;margin-left:10px;}
+.helpful-acordion .helpful-collapse p{text-align:justify;}
+
+.helpful-otherlinks{margin-left:10px;}
+.helpful-otherlinks ul{list-style-type:none;margin:0;}
+.helpful-otherlinks ul li a{color:#828282;padding:5px;display:inline-block;}
+.helpful-otherlinks ul li a i{margin-right:5px;}
+
+
+.ui-resizable-handle {position: absolute;font-size: 0.1px;display: block;-ms-touch-action: none;touch-action: none;}
+.ui-resizable-w {cursor: w-resize;width: 20px;left: -10px;top: 0;height: 100%;}
+
+
+.helpful-closing-button{float: right;margin-top: 15px;margin-right: 20px;font-size: 20px;}
+.helpful-closing-button a{color:#323232;}
+
+@media (max-width: 768px) {
+    
+    .page-helpful{width:50%}
+    
+    }
