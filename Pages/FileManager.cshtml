@@ -1,0 +1,755 @@
+﻿@page
+@model FileManagerModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<link rel="stylesheet" href="../css/file-manager/file-manager.css" />
+
+<!--! File Manager -->
+<section class="file-manager folder-preview-disabled">
+    <!-- ! Folder SideBar -->
+    <div class="folder-sidebar">
+        <header>
+            <div>
+                <img src="../assets/icons/lastpass.svg" alt="Lasspass" />
+                <h5>My Folder</h5>
+            </div>
+            <img src="../assets/icons/elips-vertical.svg"
+                 alt="elips vertical icon" />
+        </header>
+        <main class="folder-explorer">
+            <ul class="folder-explorer-list">
+                <li class="dshb-dropdown-menu">
+                    <div>
+                        <img src="../assets/icons/min-folder.svg" alt="folder icon" />
+                        Backups
+                    </div>
+                    <ul class="folder-explore-list-optionals">
+                        <li>
+                            <img src="../assets/icons/file-icon.svg" alt="file icon" />
+                            File
+                        </li>
+                        <li>
+                            <img src="../assets/icons/file-icon.svg" alt="file icon" />
+                            File
+                        </li>
+                        <li>
+                            <img src="../assets/icons/file-icon.svg" alt="file icon" />
+                            File
+                        </li>
+                        <li>
+                            <img src="../assets/icons/file-icon.svg" alt="file icon" />
+                            File
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div>
+                        <img src="../assets/icons/min-folder.svg" alt="folder icon" />
+                        Documents
+                    </div>
+                    <ul class="folder-explore-list-optionals">
+                        <li>
+                            <img src="../assets/icons/file-icon.svg" alt="file icon" />
+                            File
+                        </li>
+                        <li>
+                            <img src="../assets/icons/file-icon.svg" alt="file icon" />
+                            File
+                        </li>
+                        <li>
+                            <img src="../assets/icons/file-icon.svg" alt="file icon" />
+                            File
+                        </li>
+                        <li>
+                            <img src="../assets/icons/file-icon.svg" alt="file icon" />
+                            File
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div>
+                        <img src="../assets/icons/min-folder.svg" alt="folder icon" />
+                        Music
+                    </div>
+                    <ul class="folder-explore-list-optionals">
+                        <li>
+                            <img src="../assets/icons/file-icon.svg" alt="file icon" />
+                            File
+                        </li>
+                        <li>
+                            <img src="../assets/icons/file-icon.svg" alt="file icon" />
+                            File
+                        </li>
+                        <li>
+                            <img src="../assets/icons/file-icon.svg" alt="file icon" />
+                            File
+                        </li>
+                        <li>
+                            <img src="../assets/icons/file-icon.svg" alt="file icon" />
+                            File
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div>
+                        <img src="../assets/icons/min-folder.svg" alt="folder icon" />
+                        Pictures
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../assets/icons/min-folder.svg" alt="folder icon" />
+                        Downloads
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../assets/icons/min-folder.svg" alt="folder icon" />
+                        Backups
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../assets/icons/min-folder.svg" alt="folder icon" />
+                        Documents
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../assets/icons/min-folder.svg" alt="folder icon" />
+                        Music
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../assets/icons/min-folder.svg" alt="folder icon" />
+                        Pictures
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../assets/icons/min-folder.svg" alt="folder icon" />
+                        Downloads
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../assets/icons/min-folder.svg" alt="folder icon" />
+                        Backups
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../assets/icons/min-folder.svg" alt="folder icon" />
+                        Documents
+                    </div>
+                </li>
+            </ul>
+        </main>
+        <footer>
+            <div>
+                <img src="../assets/icons/trash-folder.svg" alt="" />
+                Trash
+            </div>
+            <img src="../assets/icons/chevron-right1.svg" alt="" />
+        </footer>
+    </div>
+    <!-- ! Folder Content -->
+    <div class="folder-container">
+        <!-- ? Folder Nav -->
+        <nav class="folder-nav">
+            <ul>
+                <li>
+                    <img src="../assets/icons/home-3.svg" alt="home icon" />
+                </li>
+                <li>
+                    <img src="../assets/icons/chevron-right1.svg" alt="right" />
+                    <a href="#">File Manager </a>
+                </li>
+                <li>
+                    <img src="../assets/icons/chevron-right1.svg" alt="right" />
+
+                    <a href="#">Files</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="folder-content-main">
+            <!-- ? Drop Down Box -->
+            <div class="drop-down-box">
+                <img src="../assets/icons/drop-drogan.svg" alt="File" />
+                <h3>Drag and drop files, or <span>Browse</span></h3>
+                <p>Support zip and rar files</p>
+            </div>
+            <!-- ? Input Box -->
+            <div class="folder-input-box">
+                <div>
+                    <div>
+                        <button class="btn-date-interval">
+                            <div>
+                                <img src="../assets/icons/calendar-icon.svg"
+                                     alt="Calendar" />
+                                <span>01.12.18 / 07.12.18</span>
+                            </div>
+                            <img src="../assets/icons/chevron-right.svg"
+                                 alt="bottom icon" />
+                        </button>
+                        <ul class="date-interval-list">
+                            <li>01.12.18 / 07.12.18</li>
+                            <li>01.12.18 / 07.12.18</li>
+                        </ul>
+                    </div>
+                    <button class="folder-type-button">
+                        <span>All Type</span>
+                        <img src="../assets/icons/chevron-right.svg" alt="bottom icon" />
+                    </button>
+                </div>
+                <div>
+                    <input type="search"
+                           name="file-search"
+                           id="file-search"
+                           placeholder="search" />
+                    <img src="../assets/icons/search.svg" alt="Search" />
+                </div>
+            </div>
+            <!-- ? Button Box -->
+            <div class="folder-button-box">
+                <div>
+                    <button class="uplade-button">
+                        Upload
+                        <img src="../assets/icons/insert-before.svg"
+                             alt="Insert Before" />
+                    </button>
+                    <button class="create-folder-button">
+                        Creat Folder
+                        <img src="../assets/icons/calendar-due.svg" alt="calendar-due" />
+                    </button>
+                    <button class="export-button">
+                        Export
+                        <img src="../assets/icons/export-btn.svg" alt="Export" />
+                    </button>
+                    <button class="inactive-files-button">
+                        Inactive Files
+                        <img src="../assets/icons/file.svg" alt="File" />
+                    </button>
+                    <button class="reload-button">
+                        Reload
+                        <img src="../assets/icons/open-collective.svg" alt="" />
+                    </button>
+                </div>
+                <div>
+                    <img src="../assets/icons/display-fullwidth.svg"
+                         alt="Display Fullwidth"
+                         class="display-fullwidth" />
+                    <img src="../assets/icons/display-grid.svg"
+                         alt="Display Grid"
+                         class="display-grid" />
+                </div>
+            </div>
+            <!-- ? Folder Box-->
+            <div class="folder-box-container">
+                <!-- TODO File List Sisitem -->
+                <div class="file-list-sistem">
+                    <table>
+                        <!-- ? Table Header -->
+                        <thead>
+                            <tr class="table-header">
+                                <th>
+                                    <div class="name-select-box">
+                                        <input type="checkbox" name="" id="" class="selectAllCheckBox" />
+                                        <span>Name</span>
+                                        <img src="../assets/icons/zeit.svg" alt="bottom icon" />
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="size-select-box">
+                                        <span>Size</span>
+                                        <img src="../assets/icons/zeit.svg" alt="bottom icon" />
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="type-select-box">
+                                        <span>Type</span>
+                                        <img src="../assets/icons/zeit.svg" alt="bottom icon" />
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="version-select-box">
+                                        <span>Version</span>
+                                        <img src="../assets/icons/zeit.svg" alt="bottom icon" />
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="date-change-select-box">
+                                        <span>Date of Change</span>
+                                        <img src="../assets/icons/zeit.svg" alt="bottom icon" />
+                                    </div>
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+                            <tr>
+                                <td>
+                                    <div class="name-select-box">
+                                        <input type="checkbox" name="" id="" />
+                                        <img src="../assets/icons/min-folder.svg" alt="Folder" />
+                                        <span>Resume.pdf</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="size-select-box">
+                                        <span>178 kb</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="type-select-box">
+                                        <span>File</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="version-select-box">
+                                        <span>1.0</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="date-change-select-box">
+                                        <span>03.10.2023 / 10:00 pm</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="icon-select-box">
+                                        <img src="../assets/icons/elips-vertical.svg"
+                                             alt="vertical" />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="name-select-box">
+                                        <input type="checkbox" name="" id="" />
+                                        <img src="../assets/icons/min-folder.svg" alt="Folder" />
+                                        <span>Resume.pdf</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="size-select-box">
+                                        <span>178 kb</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="type-select-box">
+                                        <span>File</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="version-select-box">
+                                        <span>1.0</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="date-change-select-box">
+                                        <span>03.10.2023 / 10:00 pm</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="icon-select-box">
+                                        <img src="../assets/icons/elips-vertical.svg"
+                                             alt="vertical" />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="name-select-box">
+                                        <input type="checkbox" name="" id="" />
+                                        <img src="../assets/icons/min-folder.svg" alt="Folder" />
+                                        <span>Resume.pdf</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="size-select-box">
+                                        <span>178 kb</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="type-select-box">
+                                        <span>File</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="version-select-box">
+                                        <span>1.0</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="date-change-select-box">
+                                        <span>03.10.2023 / 10:00 pm</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="icon-select-box">
+                                        <img src="../assets/icons/elips-vertical.svg"
+                                             alt="vertical" />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="name-select-box">
+                                        <input type="checkbox" name="" id="" />
+                                        <img src="../assets/icons/min-folder.svg" alt="Folder" />
+                                        <span>Resume.pdf</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="size-select-box">
+                                        <span>178 kb</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="type-select-box">
+                                        <span>File</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="version-select-box">
+                                        <span>1.0</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="date-change-select-box">
+                                        <span>03.10.2023 / 10:00 pm</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="icon-select-box">
+                                        <img src="../assets/icons/elips-vertical.svg"
+                                             alt="vertical" />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="name-select-box">
+                                        <input type="checkbox" name="" id="" />
+                                        <img src="../assets/icons/min-folder.svg" alt="Folder" />
+                                        <span>Resume.pdf</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="size-select-box">
+                                        <span>178 kb</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="type-select-box">
+                                        <span>File</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="version-select-box">
+                                        <span>1.0</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="date-change-select-box">
+                                        <span>03.10.2023 / 10:00 pm</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="icon-select-box">
+                                        <img src="../assets/icons/elips-vertical.svg"
+                                             alt="vertical" />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="name-select-box">
+                                        <input type="checkbox" name="" id="" />
+                                        <img src="../assets/icons/min-folder.svg" alt="Folder" />
+                                        <span>Resume.pdf</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="size-select-box">
+                                        <span>178 kb</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="type-select-box">
+                                        <span>File</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="version-select-box">
+                                        <span>1.0</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="date-change-select-box">
+                                        <span>03.10.2023 / 10:00 pm</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="icon-select-box">
+                                        <img src="../assets/icons/elips-vertical.svg"
+                                             alt="vertical" />
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- ! File Grid Manager -->
+                <div class="file-grid-manager">
+                    <!-- TODO Folder Box -->
+                    <div class="folder-content box-content folder-list">
+                        <div class="folder-box">
+                            <div class="folder-box-header">
+                                <input type="checkbox" name="" id="" />
+                                <img src="../assets/icons/elips-vertical.svg"
+                                     alt="elips vertical icon" />
+                            </div>
+                            <div class="folder-box-main">
+                                <img src="../assets/icons/folder-one.svg" alt="Folder" />
+                                <span>Document</span>
+                            </div>
+                            <div class="folder-box-footer">
+                                <span class="folder-size">178 kb</span>
+                                <span class="folder-date">03.10.2023</span>
+                            </div>
+                        </div>
+                        <div class="folder-box">
+                            <div class="folder-box-header">
+                                <input type="checkbox" name="" id="" />
+                                <img src="../assets/icons/elips-vertical.svg"
+                                     alt="elips vertical icon" />
+                            </div>
+                            <div class="folder-box-main">
+                                <img src="../assets/icons/folder-one.svg" alt="Folder" />
+                                <span>Document</span>
+                            </div>
+                            <div class="folder-box-footer">
+                                <span class="folder-size">178 kb</span>
+                                <span class="folder-date">03.10.2023</span>
+                            </div>
+                        </div>
+                        <div class="folder-box">
+                            <div class="folder-box-header">
+                                <input type="checkbox" name="" id="" />
+                                <img src="../assets/icons/elips-vertical.svg"
+                                     alt="elips vertical icon" />
+                            </div>
+                            <div class="folder-box-main">
+                                <img src="../assets/icons/folder-one.svg" alt="Folder" />
+                                <span>Document</span>
+                            </div>
+                            <div class="folder-box-footer">
+                                <span class="folder-size">178 kb</span>
+                                <span class="folder-date">03.10.2023</span>
+                            </div>
+                        </div>
+                        <div class="folder-box">
+                            <div class="folder-box-header">
+                                <input type="checkbox" name="" id="" />
+                                <img src="../assets/icons/elips-vertical.svg"
+                                     alt="elips vertical icon" />
+                            </div>
+                            <div class="folder-box-main">
+                                <img src="../assets/icons/folder-one.svg" alt="Folder" />
+                                <span>Document</span>
+                            </div>
+                            <div class="folder-box-footer">
+                                <span class="folder-size">178 kb</span>
+                                <span class="folder-date">03.10.2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TODO File Box -->
+                    <div class="file-content box-content file-list">
+                        <div class="file-box">
+                            <div class="file-box-header">
+                                <input type="checkbox" name="" id="" />
+                                <img src="../assets/icons/elips-vertical.svg"
+                                     alt="elips vertical icon" />
+                            </div>
+                            <div class="file-box-main">
+                                <img src="../assets/icons/doc-icon.svg" alt="Folder" />
+                                <span>Document</span>
+                            </div>
+                            <div class="file-box-footer">
+                                <span class="file-size">178 kb</span>
+                                <span class="file-date">03.10.2023</span>
+                            </div>
+                        </div>
+                        <div class="file-box">
+                            <div class="file-box-header">
+                                <input type="checkbox" name="" id="" />
+                                <img src="../assets/icons/elips-vertical.svg"
+                                     alt="elips vertical icon" />
+                            </div>
+                            <div class="file-box-main">
+                                <img src="../assets/icons/doc-icon.svg" alt="Folder" />
+                                <span>Document</span>
+                            </div>
+                            <div class="file-box-footer">
+                                <span class="file-size">178 kb</span>
+                                <span class="file-date">03.10.2023</span>
+                            </div>
+                        </div>
+                        <div class="file-box">
+                            <div class="file-box-header">
+                                <input type="checkbox" name="" id="" />
+                                <img src="../assets/icons/elips-vertical.svg"
+                                     alt="elips vertical icon" />
+                            </div>
+                            <div class="file-box-main">
+                                <img src="../assets/icons/doc-icon.svg" alt="Folder" />
+                                <span>Document</span>
+                            </div>
+                            <div class="file-box-footer">
+                                <span class="file-size">178 kb</span>
+                                <span class="file-date">03.10.2023</span>
+                            </div>
+                        </div>
+                        <div class="file-box">
+                            <div class="file-box-header">
+                                <input type="checkbox" name="" id="" />
+                                <img src="../assets/icons/elips-vertical.svg"
+                                     alt="elips vertical icon" />
+                            </div>
+                            <div class="file-box-main">
+                                <img src="../assets/icons/doc-icon.svg" alt="Folder" />
+                                <span>Document</span>
+                            </div>
+                            <div class="file-box-footer">
+                                <span class="file-size">178 kb</span>
+                                <span class="file-date">03.10.2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- ! Folder Preview -->
+    <div class="folder-preview">
+        <header>
+            <div>
+                <img src="../assets/icons/file-icon.svg" alt="file icon" />
+                <h5>File Preview</h5>
+            </div>
+            <img src="../assets/icons/elips-vertical.svg"
+                 alt="elips vertical icon" />
+        </header>
+        <main class="folder-preview-main">
+            <div class="folder-preview-icon">
+                <img src="../assets/icons/pdf-icon.svg" alt="Pdf Icon" />
+            </div>
+            <div class="folder-preview-content">
+                <div class="folder-preview-header-box">
+                    <h4>Kuramsoft KVKK verileri.pdf</h4>
+                    <span>2.5 GB, 01H:30M:45S</span>
+                </div>
+                <div class="folder-preview-footer-box">
+                    <h5>File Description</h5>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy
+                        text ever since
+                    </p>
+                </div>
+            </div>
+            <div class="folder-preview-user">
+                <h5>File Shared With:</h5>
+                <div>
+                    <img src="../assets/Images/user-image.svg" alt="User Img" />
+                    <span class="file-preview-user-name">Ozan Alatlı</span>
+                </div>
+            </div>
+            <div class="folder-preview-tool-box">
+                <div>
+                    <img src="../assets/icons/share-icon.svg" alt="Share icon" />
+                    Share
+                </div>
+                <div>
+                    <img src="../assets/icons/Edit-icon.svg" alt="Edit icon" />
+                    Edit
+                </div>
+                <div class="preview-delete">
+                    <img src="../assets/icons/delete-icon.svg" alt="Delete icon" />
+                    Delete
+                </div>
+            </div>
+        </main>
+    </div>
+</section>
+<!-- ! Upload File Modal -->
+<div class="upload-file-modal" id="upload-container">
+    <h4>Upload File</h4>
+    <div class="close-modal">
+        <img src="../assets/icons/close.svg" alt="close modal" />
+    </div>
+    <!-- ? Drop Down Box -->
+    <div class="drop-down-box">
+        <img src="../assets/icons/drop-drogan.svg" alt="File" />
+        <h3>Drag and drop files, or <span>Browse</span></h3>
+        <p>Support zip and rar files</p>
+    </div>
+    <!-- ? Uplod File Container -->
+    <div class="upload-file-container">
+        <div class="upload-flie-box">
+            <img src="../assets/icons/file-icon.svg" alt="File icon" />
+            <div>
+                <span>Uploading file.. 15%</span>
+                <input type="range" name="" id="" />
+            </div>
+            <img src="../assets/icons/black-background-close.svg"
+                 alt="close"
+                 class="trash-icon" />
+        </div>
+        <div class="upload-flie-box">
+            <img src="../assets/icons/file-icon.svg" alt="File icon" />
+            <div>
+                <span>03 Project.pdf</span>
+                <span>41 MB</span>
+            </div>
+            <img src="../assets/icons/trash-folder.svg"
+                 alt="trash-icon"
+                 class="trash-icon" />
+        </div>
+        <div class="upload-flie-box">
+            <img src="../assets/icons/file-icon.svg" alt="File icon" />
+            <div>
+                <span>03 Project.pdf</span>
+                <span>4 MB</span>
+            </div>
+            <img src="../assets/icons/trash-folder.svg"
+                 alt="trash-icon"
+                 class="trash-icon" />
+        </div>
+        <div class="uplade-button-box">
+            <button class="uplade-button">
+                Upload
+                <img src="../assets/icons/insert-before.svg" alt="Insert Before" />
+            </button>
+        </div>
+    </div>
+</div>
+<!-- ! More Optionals Box -->
+<div class="more-optionals-box">
+    <img src="../assets/icons/zeit.svg" alt="Zeit" />
+</div>
+
+<!-- JavaScript -->
+<script src="../js/dashboard.js"></script>
+<script src="../js/dropdown.js"></script>
+<script src="../js/upload-modal.js"></script>
+<script src="../js/right-click.js"></script>
+<script src="../js/changeDisplay.js"></script>
+<script src="../js/fileCheckBox.js"></script>

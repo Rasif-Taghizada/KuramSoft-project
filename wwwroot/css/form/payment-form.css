@@ -1,0 +1,356 @@
+.payment-form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    padding: 40px 20px;
+    /* gap: 30px; */
+    box-sizing: border-box;
+}
+
+
+.payment-form h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+
+.payment-form h2>img {
+    margin-right: 5px;
+}
+
+.payment-form>div>div>label,
+.finished-date-cvv label {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+    color: #747474;
+    margin-bottom: 10px;
+}
+
+.finished-date-cvv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cvv>input {
+    max-width: 100px;
+}
+
+.payment-form input {
+    outline: none;
+    transition: all ease-in-out 0.3s;
+}
+
+.payment-form input:not([type="checkbox"]),
+.payment-form select {
+    border: 1px solid #1FDAFF;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.payment-form input:not([type="checkbox"]):is(:focus, :hover),
+.payment-form select:is(:focus, :hover) {
+    border: 1px solid #10c2e5;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-name>input {
+    width: calc(100% - 30px);
+
+}
+
+.payment-form select {
+    width: 100%;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.payment-form select>option {
+    color: #000000;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+}
+
+.payment-form select:focus {
+    outline: 1px solid #1FDAFF;
+}
+
+.finished-date {
+    margin-right: 30px;
+}
+
+
+.selected-card {
+    border-bottom: 1px solid #DEDEDE;
+    margin-bottom: 20px;
+}
+
+.agree-box {
+    display: flex;
+    align-items: center;
+}
+
+.agree-box>label {
+    max-width: 400px;
+    margin-bottom: 0 !important;
+    margin-left: 10px;
+}
+
+.agree-box>input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+}
+
+.payment-about,
+.payment-img {
+    width: 35%;
+}
+
+.payment-img {
+    display: flex;
+    justify-content: center;
+}
+
+.payment-img>img {
+    width: 100%;
+}
+
+.user-details {
+    width: 20%;
+}
+
+.payment-about>button {
+    background: #54CAFD;
+    border: 1px solid #47A8EE;
+    border-radius: 4px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.payment-about>button>img {
+    margin-left: 20px;
+}
+
+.payment-about>button:hover {
+    background-color: #3496c1;
+}
+
+
+
+/* ! Custom CheckBox */
+
+.check-box {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.check-box>input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #86CEE2;
+    border-radius: 5px;
+}
+
+.check-box:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.check-box input:checked~.checkmark {
+    background-color: #009DBA;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-box input:checked~.checkmark:after {
+    display: block;
+}
+
+.check-box .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 3px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* ---------------------------------------- */
+
+
+
+/* ! Cusotom RadiBox */
+
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radio-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border-color: #86CEE2;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-container:hover input~.checkmark {
+    /* background-color: #ccc; */
+    border-color: #C2C7D0;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked~.checkmark {
+    background-color: white;
+    border-color: #C2C7D0;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+    top: 3.3px;
+    left: 3px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #86CEE2;
+}
+
+.input-disabled {
+    cursor: no-drop;
+    background-color: #F1F1F1;
+}
+
+/* ----------------------------------- */
+
+.checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.checkbox-container>div {
+    display: flex;
+    margin-right: 15px;
+    color: #747474;
+
+}
+
+.user-details>div {
+    max-width: 80%;
+}
+
+.user-details>div>input {
+    width: 88%;
+}
+
+.card-number>div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-number>div>input {
+    max-width: 19%;
+}
+
+
+
+@media (max-width:1200px) {
+    .payment-img {
+        position: absolute;
+        top: 25%;
+        left: 30%;
+        z-index: -1;
+        opacity: 0.3;
+        user-select: none;
+        width: 50%;
+    }
+
+    .user-details {
+        width: 30%;
+    }
+
+    .payment-about {
+        width: 60%;
+    }
+}

@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard App Details</title>
+    <!-- Pure CSS -->
+    <link rel="stylesheet" href="../wwwroot/css/main.css">
+    <link rel="stylesheet" href="../wwwroot/css/form.css">
+    <link rel="stylesheet" href="../wwwroot/css/colors.css">
+    <link rel="stylesheet" href="../wwwroot/css/dashboard.css" />
+    <link rel="stylesheet" href="../wwwroot/css/app-manager/app-details.css" />
+  </head>
+
+  <body>
+    <section class="dashboard-container">
+      <!-- Sidebar Content -->
+      <aside class="dashboard-sidebar sidebar-open sidebar-close">
+        <div class="sidebar-top">
+          <img src="../wwwroot/assets/Images/C-logo.svg" alt="Logo" />
+          <span>Createrun</span>
+        </div>
+        <!-- Sidebar List -->
+        <ul class="sidebar-lists">
+          <li class="sidebar-list-group">
+            <div class="sidebar-list-altgroup">
+              <img src="../wwwroot/assets/icons/sidebar-home.svg" alt="sidebar-home" />
+              <a href="#" class="sidebar-list-text">Home Page</a>
+            </div>
+            <img
+              src="../wwwroot/assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+          <li class="sidebar-list-group list-group-active">
+            <div class="sidebar-list-altgroup">
+              <img src="../wwwroot/assets/icons/align-left.svg" alt="align-left" />
+              <a href="#" class="sidebar-list-text">Formlar</a>
+            </div>
+            <img
+              src="../wwwroot/assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+          <li class="sidebar-list-group">
+            <div class="sidebar-list-altgroup">
+              <img
+                src="../wwwroot/assets/icons/sidebar-calendar.svg"
+                alt="sidebar-calendar"
+              />
+              <a href="#" class="sidebar-list-text">Takvim</a>
+            </div>
+            <img
+              src="../wwwroot/assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+          <li class="sidebar-list-group">
+            <div class="sidebar-list-altgroup">
+              <img src="../wwwroot/assets/icons/sidebar-list.svg" alt="sidebar-list" />
+              <a href="#" class="sidebar-list-text">Listeler</a>
+            </div>
+            <img
+              src="../wwwroot/assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+          <li class="sidebar-list-group">
+            <div class="sidebar-list-altgroup">
+              <img
+                src="../wwwroot/assets/icons/sidebar-list-grid.svg"
+                alt="sidebar-grid"
+              />
+              <a href="#" class="sidebar-list-text">Todo List</a>
+            </div>
+            <img
+              src="../wwwroot/assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+          <li class="sidebar-list-group">
+            <div class="sidebar-list-altgroup">
+              <img
+                src="../wwwroot/assets/icons/sidebar-grafik.svg"
+                alt="sidebar-grafik"
+              />
+              <a href="#" class="sidebar-list-text">Grafik</a>
+            </div>
+            <img
+              src="../wwwroot/assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+          <li class="sidebar-list-group">
+            <div class="sidebar-list-altgroup">
+              <img src="../wwwroot/assets/icons/search.svg" alt="search" />
+              <a href="#" class="sidebar-list-text">Search</a>
+            </div>
+            <img
+              src="../wwwroot/assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right-icon"
+            />
+          </li>
+        </ul>
+        <div class="sidebar-user-container">
+          <img src="../wwwroot/assets/icons/chevron-down.svg" alt="" />
+          <div class="user-content">
+            <div class="user-image">
+              <img
+                src="../wwwroot/assets/icons/sidebar-user-image.svg"
+                alt="sidebar user image"
+              />
+            </div>
+            <div class="user-status user-online"></div>
+          </div>
+        </div>
+      </aside>
+      <!-- Sidebar Main Container -->
+      <main class="dashboard-main-container">
+        <header class="dashboard-main-header">
+          <div class="header-left-content">
+            <img
+              src="../wwwroot/assets/icons/menu-icon.svg"
+              alt="menu"
+              class="icon-menu"
+            />
+            <div class="dshb-dropdown-menu header-left-menu">
+              <div class="menu-select">
+                <p>sigorta.square.com</p>
+                <img src="../wwwroot/assets/icons/chevron-down.svg" alt="down icon" />
+              </div>
+              <div class="menu-options">
+                <div class="menu-option-content">
+                  <p>square 1</p>
+                </div>
+                <div class="menu-option-content">
+                  <p>square.com 2</p>
+                </div>
+                <div class="menu-option-content">
+                  <p>sigorta.square 3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-right-content">
+            <div class="header-dropdown-search">
+              <div class="dshb-dropdown-menu dropdown-document">
+                <div class="menu-select">
+                  <p>Document</p>
+                  <img src="../wwwroot/assets/icons/chevron-down.svg" alt="down icon" />
+                </div>
+                <div class="menu-options"></div>
+              </div>
+              <div class="search-content">
+                <input type="text" name="text" class="" placeholder="Ara" />
+                <img src="../wwwroot/assets/icons/chevron-down.svg" alt="down icon" />
+              </div>
+            </div>
+            <div class="dshb-dropdown-menu dropdown-lang">
+              <div class="menu-select">
+                <p>ENG</p>
+                <img src="../wwwroot/assets/icons/chevron-down.svg" alt="down icon" />
+              </div>
+              <div class="menu-options">
+                <div class="menu-option-content">
+                  <p>AZE</p>
+                </div>
+                <div class="menu-option-content">
+                  <p>RUS</p>
+                </div>
+                <div class="menu-option-content">
+                  <p>TUR</p>
+                </div>
+              </div>
+            </div>
+            <div class="dshb-dropdown-menu dshb-user-content">
+              <div class="menu-select">
+                <div class="user-about-img">
+                  <div class="user-img">
+                    <img
+                      src="../wwwroot/assets/icons/user-ozan-alatli.svg"
+                      alt="ozan-alatli"
+                    />
+                  </div>
+                  <div class="user-about">
+                    <p class="user-name">Ozan Alatlı</p>
+                    <span class="user-prefer"> Proje Yöneticisi </span>
+                  </div>
+                </div>
+                <img src="../wwwroot/assets/icons/chevron-down.svg" alt="down icon" />
+              </div>
+              <div class="menu-options"></div>
+            </div>
+          </div>
+        </header>
+        <div class="dashboard-header-menu">
+          <div class="menu-left">
+            <img src="../wwwroot/assets/icons/header-menu-home.svg" alt="menu-home" />
+            <p>Home</p>
+          </div>
+          <span class="menu-dot"></span>
+          <div class="dshb-dropdown-menu">
+            <div class="menu-select page-link">
+              <p>SQUARE</p>
+              <img src="../wwwroot/assets/icons/chevron-down.svg" alt="down icon" />
+            </div>
+            <div class="menu-options page-link-data">
+              <div class="menu-option-content">
+                <p>Setting</p>
+              </div>
+              <div class="menu-option-content">
+                <p>End User</p>
+              </div>
+              <div class="menu-option-content">
+                <p>Account Settings</p>
+              </div>
+              <div class="menu-option-content">
+                <p>Sign Out</p>
+              </div>
+            </div>
+          </div>
+          <span class="menu-dot"></span>
+          <div>
+            <span>OverduePaymentsReports.aspx</span>
+          </div>
+        </div>
+        <div class="dashboard-header-submenu">
+          <a href="#" class="submenu-active">Main Menu</a>
+          <a href="#">Workflow</a>
+          <a href="#">General</a>
+        </div>
+        <article class="main-lists-container">
+          <div>
+            <section class="navbar-container navbar-container-close">
+              <div class="navbar-header-content">
+                <p>FORMLAR</p>
+              </div>
+              <ul class="navbar-lists">
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Dashboard</a>
+                    <img
+                      src="../wwwroot/assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="../wwwroot/assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Dashboard 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="../wwwroot/assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Dashboard 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Text Box</a>
+                    <img
+                      src="../wwwroot/assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="../wwwroot/assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Text Box 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="../wwwroot/assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Text Box 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Security</a>
+                    <img
+                      src="../wwwroot/assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="../wwwroot/assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Security 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="../wwwroot/assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Security 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Gallery</a>
+                    <img
+                      src="../wwwroot/assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="../wwwroot/assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Gallery 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="../wwwroot/assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Gallery 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Files</a>
+                    <img
+                      src="../wwwroot/assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="../wwwroot/assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Files 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="../wwwroot/assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Files 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Treeview</a>
+                    <img
+                      src="../wwwroot/assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="../wwwroot/assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Treeview 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="../wwwroot/assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Treeview 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Auto</a>
+                    <img
+                      src="../wwwroot/assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="../wwwroot/assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Auto 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="../wwwroot/assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Auto 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Data Model</a>
+                    <img
+                      src="../wwwroot/assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="../wwwroot/assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Data Model 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="../wwwroot/assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Data Model 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list-group">
+                  <div class="list-select">
+                    <a href="#" class="list-text">Setting</a>
+                    <img
+                      src="../wwwroot/assets/icons/plus.svg"
+                      alt=""
+                      class="icon-plus"
+                    />
+                  </div>
+                  <ul class="list-options">
+                    <li>
+                      <img
+                        src="../wwwroot/assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Setting 1</a>
+                    </li>
+                    <li>
+                      <img
+                        src="../wwwroot/assets/icons/corner-down-right.svg"
+                        alt="corner down right icon"
+                        class=""
+                      />
+                      <a href="#">Setting 2</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="navbar-search-bar">
+                <img src="../wwwroot/assets/icons/search.svg" alt="search" />
+                <input type="text" placeholder="Search by menu" />
+              </div>
+            </section>
+            <div class="nav-sidebar-toggle-menu">
+              <button>
+                <img
+                  src="../wwwroot/assets/icons/chevron-down.svg"
+                  alt=""
+                  class="icon-right"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="container-app-details">
+            <nav>
+              <img src="../wwwroot/assets/icons/header-menu-home.svg" alt="Home" />
+              <img src="../wwwroot/assets/icons/chevron-right1.svg" alt="Right" />
+              <a href="#">Home</a>
+              <img src="../wwwroot/assets/icons/chevron-right1.svg" alt="Right" />
+              <a href="#">Aplications</a>
+            </nav>
+            <div class="app-details-name">
+              <span>
+                <img src="../wwwroot/assets/Icons/ericsson.svg" alt="Ericsson" />
+                APP MANAGER
+              </span>
+            </div>
+      
+            <main class="app-details-main">
+              <!-- App details nav map -->
+              <div class="app-details-nav-map">
+                <ul class="nav-map-list">
+                  <li>
+                    <div class="circlue"></div>
+                    <a href="#overiew">Overiew</a>
+                  </li>
+                  <li>
+                    <div class="circlue"></div>
+      
+                    <a href="#updates">Updates</a>
+                  </li>
+                  <li>
+                    <div class="circlue"></div>
+                    <a href="#forms">Forms</a>
+                  </li>
+                  <li>
+                    <div class="circlue"></div>
+                    <a href="#pages">Pages</a>
+                  </li>
+                  <li>
+                    <div class="circlue"></div>
+                    <a href="#report">Report</a>
+                  </li>
+                  <li>
+                    <div class="circlue"></div>
+                    <a href="#specail">Special Component</a>
+                  </li>
+                  <li>
+                    <div class="circlue"></div>
+                    <a href="#neededApllications">Needed Apllications</a>
+                  </li>
+                </ul>
+                <!-- ! App details User -->
+                <div class="app-details-user">
+                  <p class="details-user-name">Ümit Ahmet Şahin</p>
+                  <p class="details-user-date">Setup date: 01.05.2013</p>
+                  <div class="details-star-box">
+                    <img src="../wwwroot/assets/icons/icon-star.svg" alt="star icon" />
+                    <img src="../wwwroot/assets/icons/icon-star.svg" alt="star icon" />
+                    <img src="../wwwroot/assets/icons/icon-star.svg" alt="star icon" />
+                    <img src="../wwwroot/assets/icons/icon-star.svg" alt="star icon" />
+                  </div>
+                </div>
+                <!-- ? App details Send Message -->
+                <div class="details-send-mesasage">
+                  <img src="../wwwroot/assets/icons/comment1.svg" alt="" />
+                  <p>Send Message</p>
+                </div>
+              </div>
+              <!-- !App details Header -->
+              <div class="app-details-header">
+                <div class="details-header-left">
+                  <div class="apps-box-left">
+                    <img src="../wwwroot/assets/Icons/Icons-1.svg" alt="Icon" />
+                  </div>
+                  <div class="apps-box-right">
+                    <span class="apps-data"> 12 Ağustos 2014 </span>
+                    <h1>INSTAGRAM BOT</h1>
+                    <p class="apps-users-name">by Ümit Ahmet ŞAHİN</p>
+                    <span>Menu Template / Sidebar / Header</span>
+                  </div>
+                </div>
+                <div class="details-header-rigth">
+                  <p>
+                    Compatible Browsers: IE9, IE10, IE11, Firefox, Safari, Opera,
+                    Chrome,
+                  </p>
+                  <p>High Resolution:Yes</p>
+                  <p>Compatible With: Bootstrap 3.x,</p>
+                  <ul>
+                    <li>License : Portal</li>
+                    <li>License period : 1 year</li>
+                  </ul>
+                </div>
+              </div>
+              <!--! APP Details State -->
+              <div class="app-details-state">
+                <div class="state-button-box">
+                  <button class="app-tested-button">Aplication Tested</button>
+                  <button class="app-install-button">Install</button>
+                </div>
+                <div class="state-requared">
+                  <img src="../wwwroot/assets/icons/close-red.svg" alt="close icon red" />
+                  <span>No software required</span>
+                </div>
+              </div>
+              <!-- ! App Detals Overview -->
+              <div class="app-details-overview" id="overiew">
+                <h3>Overview</h3>
+                <!-- ? Overview Carusel -->
+                <div class="app-overview-carusel">
+                  <div class="app-carusel-content">aaa</div>
+                  <div class="app-carusel-content">bbb</div>
+                  <div class="app-carusel-content">ccc</div>
+                  <div class="app-carusel-circle">
+                    <div class="circle" onclick="curentSlice(0)"></div>
+                    <div class="circle" onclick="curentSlice(1)"></div>
+                    <div class="circle" onclick="curentSlice(2)"></div>
+                  </div>
+                </div>
+                <!-- ? Overview Content -->
+                <div class="app-overview-content">
+                  <img src="../wwwroot/assets/icons/notifications.svg" alt="notifications" />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Excepturi facere earum quis ipsa vitae qui minima esse ducimus
+                    dolorum iste nisi laborum repellat dolores dolore debitis adipisci
+                    nemo quia autem pariatur a voluptatem dignissimos maiores
+                    accusantium nobis tempora consequatur cumque quas ea doloribus
+                    deleniti. Quibusdam commodi laboriosam error temporibus iste ipsa
+                    soluta distinctio maiores ad totam beatae incidunt veritatis enim?
+                    Reiciendis voluptate cupiditate asperiores ratione laboriosam
+                    alias mollitia eaque labore aperiam similique reprehenderit
+                    assumenda quidem eos explicabo rerum. Porro at ex magni aliquam
+                    laborum delectus voluptate officia modi nam et cupiditate culpa
+                    asperiores eaque fuga quae. Dolorum commodi labore neque fuga
+                    totam voluptate vitae ea laudantium iure quos placeat accusamus.
+                  </p>
+                </div>
+                <!-- ? Updates Box -->
+                <div class="app-overiew-updates" id="updates">
+                  <img src="../wwwroot/assets/icons/drop-opacity.svg" alt="Drop Opacity" />
+                  <h4 class="overiew-header-text">Updates</h4>
+                  <span class="overiew-additional-text">New in 2.4.3</span>
+                  <!-- *TODO Overview List -->
+                  <ul class="overiew-updates-list">
+                    <li>
+                      <img src="../wwwroot/assets/icons/play-list-check.svg" alt="check" />
+                      In-app previews of Word, PowerPoint and PDF files
+                    </li>
+                    <li>
+                      <img src="../wwwroot/assets/icons/play-list-check.svg" alt="check" />
+                      New search experience that tracks recent queries and shows
+                      typeahead suggestions
+                    </li>
+                    <li>
+                      <img src="../wwwroot/assets/icons/play-list-check.svg" alt="check" />
+                      View-only permissions for shared folders for Dropbox for
+                      Business users
+                    </li>
+                    <li>
+                      <img src="../wwwroot/assets/icons/play-list-check.svg" alt="check" />
+                      Cache performance enhancements
+                    </li>
+                    <li>
+                      <img src="../wwwroot/assets/icons/play-list-check.svg" alt="check" />
+                      Lots of bug fixes and improvements New in 2.4.2:
+                    </li>
+                    <li>
+                      <img src="../wwwroot/assets/icons/play-list-check.svg" alt="check" />
+                      Support for additional languages
+                    </li>
+                    <li>
+                      <img src="../wwwroot/assets/icons/play-list-check.svg" alt="check" />
+                      Danish, Dutch, Swedish and Thai - Bug fixes and improvements New
+                      in 2.4.1
+                    </li>
+                    <li>
+                      <img src="../wwwroot/assets/icons/play-list-check.svg" alt="check" />
+                      Bug fixes and performance improvements
+                    </li>
+                  </ul>
+                </div>
+                <!-- ? Additional Container -->
+                <div class="app-additiona-container">
+                  <!-- *TODO Forms -->
+                  <div class="app-additiona-box" id="forms">
+                    <img src="../wwwroot/assets/icons/view-split.svg" alt="View Slit" />
+                    <h4>Forms</h4>
+                    <div class="list-box-main">
+                      <div class="list-box-left">
+                        <ul class="app-additional-list">
+                          <li>
+                            <div class="square"></div>
+                            Ut enim ad minim veniam Unt in culpa qui officia
+                          </li>
+                          <li>
+                            <div class="square"></div>
+                            Oluptate velit esse cillum dolore eu fugiat
+                          </li>
+                          <li>
+                            <div class="square"></div>
+                            Ut enim ad minim veniam
+                          </li>
+                          <li>
+                            <div class="square"></div>
+                            Cache performance enhancements
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="list-box-right">
+                        <ul class="app-additional-list">
+                          <li>
+                            <div class="square square-blue"></div>
+      
+                            Lots of bug fixes and improvements
+                          </li>
+                          <li>
+                            <div class="square square-blue"></div>
+      
+                            Support for additional languages
+                          </li>
+                          <li>
+                            <div class="square square-blue"></div>
+      
+                            Danish, Dutch, Swedish and Thai
+                          </li>
+                          <li>
+                            <div class="square square-blue"></div>
+      
+                            Bug fixes and improvements New in 2.4.1
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- *TODO Pages -->
+                  <div class="app-additiona-box additional-box-active" id="pages">
+                    <img src="../wwwroot/assets/icons/album.svg" alt="Albom" />
+                    <h4>Pages</h4>
+                    <div class="list-box-main">
+                      <div class="list-box-left">
+                        <ul class="app-additional-list">
+                          <li>
+                            <div class="square"></div>
+                            Ut enim ad minim veniam Unt in culpa qui officia
+                          </li>
+                          <li>
+                            <div class="square"></div>
+                            Oluptate velit esse cillum dolore eu fugiat
+                          </li>
+                          <li>
+                            <div class="square"></div>
+                            Ut enim ad minim veniam
+                          </li>
+                          <li>
+                            <div class="square"></div>
+                            Cache performance enhancements
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="list-box-right">
+                        <ul class="app-additional-list">
+                          <li>
+                            <div class="square square-blue"></div>
+                            Lots of bug fixes and improvements
+                          </li>
+                          <li>
+                            <div class="square square-blue"></div>
+                            Support for additional languages
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- *TODO Reports -->
+                  <div class="app-additiona-box" id="report">
+                    <img
+                      src="../wwwroot/assets/icons/play-list-search.svg"
+                      alt="Search List"
+                    />
+                    <h4>Reports</h4>
+                    <div class="list-box-main">
+                      <div class="list-box-left">
+                        <ul class="app-additional-list">
+                          <li>
+                            <div class="square"></div>
+                            Ut enim ad minim veniam Unt in culpa qui officia
+                          </li>
+                          <li>
+                            <div class="square"></div>
+                            Oluptate velit esse cillum dolore eu fugiat
+                          </li>
+                          <li>
+                            <div class="square"></div>
+                            Ut enim ad minim veniam
+                          </li>
+                          <li>
+                            <div class="square"></div>
+                            Cache performance enhancements
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="list-box-right">
+                        <ul class="app-additional-list">
+                          <li>
+                            <div class="square square-blue"></div>
+      
+                            Lots of bug fixes and improvements
+                          </li>
+                          <li>
+                            <div class="square square-blue"></div>
+      
+                            Support for additional languages
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ? Table -->
+                <div class="overview-table-box" id="specail">
+                  <table class="overiew-table">
+                    <tr>
+                      <th>Name</th>
+                      <th>Description</th>
+                      <th>Type</th>
+                    </tr>
+      
+                    <tr>
+                      <td>Lorem ipsum</td>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt ut
+                      </td>
+                      <td>Workflow</td>
+                    </tr>
+                    <tr>
+                      <td>Lorem ipsum</td>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt ut
+                      </td>
+                      <td>Workflow</td>
+                    </tr>
+                    <tr>
+                      <td>Lorem ipsum</td>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt ut
+                      </td>
+                      <td>Workflow</td>
+                    </tr>
+                  </table>
+                </div>
+                <!-- ? Needed Applications -->
+                <div class="overview-needed-applications" id="neededApllications">
+                  <img
+                    src="../wwwroot/assets/icons/play-list-search-black.svg"
+                    alt="overview-needed-applications"
+                  />
+                  <h4>Needed Applications</h4>
+                  <div class="overiew-application-container">
+                    <div class="overiew-application-box">
+                      <img src="../wwwroot/assets/icons/Icons-1.svg" alt="icon" />
+                      <h5>INSTAGRAM BOT</h5>
+                      <button class="application-detal-button">Details</button>
+                    </div>
+                    <div class="overiew-application-box">
+                      <img src="../wwwroot/assets/icons/Icons-1.svg" alt="icon" />
+                      <h5>INSTAGRAM BOT</h5>
+                      <button class="application-detal-button">Details</button>
+                    </div>
+                    <div class="overiew-application-box">
+                      <img src="../wwwroot/assets/icons/Icons-1.svg" alt="icon" />
+                      <h5>INSTAGRAM BOT</h5>
+                      <button class="application-detal-button">Details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </article>
+      </main>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="../wwwroot/js/dropdown.js"></script>
+    <script src="../wwwroot/js/dashboard.js"></script>
+  </body>
+</html>
