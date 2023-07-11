@@ -1,991 +1,999 @@
 {
   "Files": [
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\WebApp.bundle.scp.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\WebApp.bundle.scp.css",
       "PackagePath": "staticwebassets\\WebApp.bundle.scp.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Arif Bulut.jpg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Arif Bulut.jpg",
       "PackagePath": "staticwebassets\\assets\\Images\\Arif Bulut.jpg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Ayırma Modu.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Ayırma Modu.svg",
       "PackagePath": "staticwebassets\\assets\\Images\\Ayırma Modu.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Blur.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Blur.svg",
       "PackagePath": "staticwebassets\\assets\\Images\\Blur.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\C-logo.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\C-logo.svg",
       "PackagePath": "staticwebassets\\assets\\Images\\C-logo.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Coşkun Kaya.jpg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Coşkun Kaya.jpg",
       "PackagePath": "staticwebassets\\assets\\Images\\Coşkun Kaya.jpg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Coşkun Kaya.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Coşkun Kaya.svg",
       "PackagePath": "staticwebassets\\assets\\Images\\Coşkun Kaya.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Creativerun logo.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Creativerun logo.svg",
       "PackagePath": "staticwebassets\\assets\\Images\\Creativerun logo.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Eda Taştan.jpg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Eda Taştan.jpg",
       "PackagePath": "staticwebassets\\assets\\Images\\Eda Taştan.jpg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Eda Taştan.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Eda Taştan.svg",
       "PackagePath": "staticwebassets\\assets\\Images\\Eda Taştan.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Ekran arka fon resmi.jpg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Ekran arka fon resmi.jpg",
       "PackagePath": "staticwebassets\\assets\\Images\\Ekran arka fon resmi.jpg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Error404-1.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Error404-1.svg",
       "PackagePath": "staticwebassets\\assets\\Images\\Error404-1.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Error404-2.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Error404-2.svg",
       "PackagePath": "staticwebassets\\assets\\Images\\Error404-2.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Error404-3.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Error404-3.svg",
       "PackagePath": "staticwebassets\\assets\\Images\\Error404-3.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Evren Yüce.jpg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Evren Yüce.jpg",
       "PackagePath": "staticwebassets\\assets\\Images\\Evren Yüce.jpg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Frame.jpg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Frame.jpg",
       "PackagePath": "staticwebassets\\assets\\Images\\Frame.jpg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Kadir Taş.jpg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Kadir Taş.jpg",
       "PackagePath": "staticwebassets\\assets\\Images\\Kadir Taş.jpg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Kuramsoft-logo.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Kuramsoft-logo.svg",
       "PackagePath": "staticwebassets\\assets\\Images\\Kuramsoft-logo.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Layer 1.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Layer 1.svg",
       "PackagePath": "staticwebassets\\assets\\Images\\Layer 1.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Login-comp-1.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Login-comp-1.svg",
       "PackagePath": "staticwebassets\\assets\\Images\\Login-comp-1.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Login-comp.jpg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Login-comp.jpg",
       "PackagePath": "staticwebassets\\assets\\Images\\Login-comp.jpg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Onur Barış.jpg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Onur Barış.jpg",
       "PackagePath": "staticwebassets\\assets\\Images\\Onur Barış.jpg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Osman Dağ.jpg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Osman Dağ.jpg",
       "PackagePath": "staticwebassets\\assets\\Images\\Osman Dağ.jpg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Osman Dağ.png",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Osman Dağ.png",
       "PackagePath": "staticwebassets\\assets\\Images\\Osman Dağ.png"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Osman Dağ.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Osman Dağ.svg",
       "PackagePath": "staticwebassets\\assets\\Images\\Osman Dağ.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Ozan Alatlı.jpg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Ozan Alatlı.jpg",
       "PackagePath": "staticwebassets\\assets\\Images\\Ozan Alatlı.jpg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Ozan Alatlı.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Ozan Alatlı.svg",
       "PackagePath": "staticwebassets\\assets\\Images\\Ozan Alatlı.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\Yücel Kabil.jpg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\Yücel Kabil.jpg",
       "PackagePath": "staticwebassets\\assets\\Images\\Yücel Kabil.jpg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\app-meneger-icon.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\app-meneger-icon.svg",
       "PackagePath": "staticwebassets\\assets\\Images\\app-meneger-icon.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\comment-data-image.jpg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\comment-data-image.jpg",
       "PackagePath": "staticwebassets\\assets\\Images\\comment-data-image.jpg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\login-lock.png",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\login-lock.png",
       "PackagePath": "staticwebassets\\assets\\Images\\login-lock.png"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\user-image.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\modal-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\Images\\modal-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\user-image.svg",
       "PackagePath": "staticwebassets\\assets\\Images\\user-image.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\Images\\İpek Seçil.jpg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\Images\\İpek Seçil.jpg",
       "PackagePath": "staticwebassets\\assets\\Images\\İpek Seçil.jpg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-Bold.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-Bold.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-Bold.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-BoldItalic.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-BoldItalic.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-BoldItalic.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-ExtraLight.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-ExtraLight.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-ExtraLight.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-ExtraLightItalic.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-ExtraLightItalic.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-ExtraLightItalic.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-Italic.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-Italic.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-Italic.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-Light.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-Light.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-Light.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-LightItalic.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-LightItalic.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-LightItalic.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-Medium.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-Medium.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-Medium.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-MediumItalic.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-MediumItalic.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-MediumItalic.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-Regular.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-Regular.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-Regular.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-SemiBold.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-SemiBold.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-SemiBold.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-SemiBoldItalic.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-SemiBoldItalic.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-SemiBoldItalic.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-Thin.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-Thin.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-Thin.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-ThinItalic.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-ThinItalic.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\IBM_Plex_Sans\\IBMPlexSans-ThinItalic.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\OFL.txt",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\IBM_Plex_Sans\\OFL.txt",
       "PackagePath": "staticwebassets\\assets\\fonts\\IBM_Plex_Sans\\OFL.txt"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\OFL.txt",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\OFL.txt",
       "PackagePath": "staticwebassets\\assets\\fonts\\Plus_Jakarta_Sans\\OFL.txt"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\PlusJakartaSans-Italic-VariableFont_wght.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\PlusJakartaSans-Italic-VariableFont_wght.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\Plus_Jakarta_Sans\\PlusJakartaSans-Italic-VariableFont_wght.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\PlusJakartaSans-VariableFont_wght.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\PlusJakartaSans-VariableFont_wght.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\Plus_Jakarta_Sans\\PlusJakartaSans-VariableFont_wght.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\README.txt",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\README.txt",
       "PackagePath": "staticwebassets\\assets\\fonts\\Plus_Jakarta_Sans\\README.txt"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-Bold.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-Bold.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-Bold.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-BoldItalic.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-BoldItalic.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-BoldItalic.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-ExtraBold.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-ExtraBold.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-ExtraBold.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-ExtraBoldItalic.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-ExtraBoldItalic.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-ExtraBoldItalic.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-ExtraLight.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-ExtraLight.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-ExtraLight.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-ExtraLightItalic.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-ExtraLightItalic.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-ExtraLightItalic.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-Italic.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-Italic.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-Italic.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-Light.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-Light.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-Light.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-LightItalic.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-LightItalic.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-LightItalic.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-Medium.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-Medium.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-Medium.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-MediumItalic.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-MediumItalic.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-MediumItalic.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-Regular.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-Regular.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-Regular.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-SemiBold.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-SemiBold.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-SemiBold.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-SemiBoldItalic.ttf",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-SemiBoldItalic.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\Plus_Jakarta_Sans\\static\\PlusJakartaSans-SemiBoldItalic.ttf"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\3-dots.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\3-dots.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\3-dots.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\Edit-icon.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\Edit-icon.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\Edit-icon.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\Icons-1.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\Icons-1.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\Icons-1.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\Icons-2.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\Icons-2.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\Icons-2.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\Icons-3.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\Icons-3.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\Icons-3.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\Icons-4.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\Icons-4.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\Icons-4.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\Icons-5.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\Icons-5.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\Icons-5.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\Icons-6.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\Icons-6.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\Icons-6.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\Icons-7.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\Icons-7.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\Icons-7.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\SquaresFour.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\SquaresFour.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\SquaresFour.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\add-ons.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\add-ons.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\add-ons.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\album.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\album.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\album.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\align-left.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\align-left.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\align-left.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\another-comments.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\another-comments.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\another-comments.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\arrow-back-black.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\arrow-back-black.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\arrow-back-black.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\arrow-right.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\arrow-right.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\arrow-right.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\arrows-expand-up-left.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\arrows-expand-up-left.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\arrows-expand-up-left.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\black-background-close.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\black-background-close.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\black-background-close.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\blue-search.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\blue-search.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\blue-search.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\calendar-due.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\calendar-due.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\calendar-due.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\calendar-icon.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\calendar-icon.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\calendar-icon.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\calendar-next.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\calendar-next.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\calendar-next.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\camera.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\camera.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\camera.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\check-black.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\check-black.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\check-black.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\check-green.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\check-green.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\check-green.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\check-r.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\check-r.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\check-r.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\check-white.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\check-white.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\check-white.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\check.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\check.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\check.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\chevron-down-white.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\chevron-down-white.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\chevron-down-white.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\chevron-down.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\chevron-down.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\chevron-down.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\chevron-left-r.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\chevron-left-r.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\chevron-left-r.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\chevron-right-gray.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\chevron-right-gray.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\chevron-right-gray.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\chevron-right.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\chevron-right.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\chevron-right.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\chevron-right1.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\chevron-right1.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\chevron-right1.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\clear-cache.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\clear-cache.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\clear-cache.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\close-red.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\close-red.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\close-red.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\close.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\close.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\close.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\cold.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\cold.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\cold.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\comment-add.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\comment-add.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\comment-add.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\comment.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\comment.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\comment.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\comment1.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\comment1.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\comment1.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\copy.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\copy.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\copy.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\corner-down-right.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\corner-down-right.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\corner-down-right.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\creat-folder.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\creat-folder.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\creat-folder.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\cut.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\cut.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\cut.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\danger.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\danger.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\danger.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\delete-icon.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\delete-icon.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\delete-icon.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\display-fullwidth.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\display-fullwidth.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\display-fullwidth.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\display-grid.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\display-grid.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\display-grid.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\doc-icon.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\doc-icon.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\doc-icon.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\document.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\document.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\document.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\down-gray.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\down-gray.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\down-gray.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\drop-drogan.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\drop-drogan.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\drop-drogan.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\drop-opacity.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\drop-opacity.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\drop-opacity.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\edit-unmask.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\edit-unmask.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\edit-unmask.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\elips-vertical.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\elips-vertical.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\elips-vertical.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\ericsson.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\ericsson.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\ericsson.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\export-btn.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\export-btn.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\export-btn.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\eye-slash.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\eye-slash.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\eye-slash.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\facebook.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\facebook.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\facebook.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\file-icon.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\file-icon.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\file-icon.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\file-remove.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\file-remove.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\file-remove.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\file.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\file.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\file.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\folder-one.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\folder-one.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\folder-one.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\form-laptop.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\form-laptop.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\form-laptop.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\frozen.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\frozen.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\frozen.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\glasses-ready.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\glasses-ready.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\glasses-ready.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\google.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\google.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\google.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\grouping.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\grouping.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\grouping.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\header-menu-home.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\header-menu-home.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\header-menu-home.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\help-icon.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\help-icon.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\help-icon.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\home-3.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\home-3.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\home-3.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\hot.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\hot.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\hot.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\icon-close.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\icon-close.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\icon-close.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\icon-filter-down.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\icon-filter-down.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\icon-filter-down.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\icon-star.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\icon-star.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\icon-star.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\image-icon.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\image-icon.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\image-icon.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\info-icon 1.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\info-icon 1.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\info-icon 1.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\info-icon-blue.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\info-icon-blue.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\info-icon-blue.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\input-error.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\input-error.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\input-error.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\input-success.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\input-success.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\input-success.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\insert-after-r.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\insert-after-r.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\insert-after-r.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\insert-before.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\insert-before.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\insert-before.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\lastpass.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\lastpass.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\lastpass.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\like.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\like.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\like.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\loadbar.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\loadbar.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\loadbar.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\loading-content.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\loading-content.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\loading-content.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\math-plus.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\math-plus.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\math-plus.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\menu-icon.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\menu-icon.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\menu-icon.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\min-folder.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\min-folder.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\min-folder.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\more-comment.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\more-comment.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\more-comment.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\notifications.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\notifications.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\notifications.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\oculus.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\oculus.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\oculus.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\open-collective.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\open-collective.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\open-collective.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\paste.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\paste.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\paste.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\payment-card-icon.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\payment-card-icon.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\payment-card-icon.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\payment-img.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\payment-img.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\payment-img.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\payment-shield.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\payment-shield.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\payment-shield.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\pdf-icon.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\pdf-icon.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\pdf-icon.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\play-list-check.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\play-list-check.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\play-list-check.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\play-list-search-black.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\play-list-search-black.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\play-list-search-black.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\play-list-search.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\play-list-search.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\play-list-search.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\plus.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\plus.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\plus.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\polaroid.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\polaroid.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\polaroid.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\question-help.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\question-help.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\question-help.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\reload.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\reload.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\reload.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\reply.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\reply.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\reply.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\reset.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\reset.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\reset.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\rhombus.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\rhombus.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\rhombus.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\save.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\save.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\save.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\search.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\search.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\search.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\select.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\select.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\select.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\send-message.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\send-message.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\send-message.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\send.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\send.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\send.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\share-icon.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\share-icon.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\share-icon.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\shortcut.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\shortcut.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\shortcut.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\shut-down-restart.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\shut-down-restart.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\shut-down-restart.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\sidebar-calendar.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\sidebar-calendar.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\sidebar-calendar.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\sidebar-grafik.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\sidebar-grafik.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\sidebar-grafik.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\sidebar-home.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\sidebar-home.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\sidebar-home.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\sidebar-list-grid.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\sidebar-list-grid.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\sidebar-list-grid.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\sidebar-list.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\sidebar-list.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\sidebar-list.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\sidebar-user-image.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\sidebar-user-image.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\sidebar-user-image.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\smile-no-mouth.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\smile-no-mouth.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\smile-no-mouth.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\software-download.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\software-download.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\software-download.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\sort.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\sort.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\sort.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\stopwatch.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\stopwatch.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\stopwatch.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\successful-icon.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\successful-icon.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\successful-icon.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\terminal.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\terminal.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\terminal.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\tikcode.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\tikcode.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\tikcode.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\today.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\today.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\today.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\tool-box.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\tool-box.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\tool-box.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\trash-folder.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\trash-folder.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\trash-folder.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\trash-icons.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\trash-icons.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\trash-icons.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\unavailable.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\unavailable.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\unavailable.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\unsplash.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\unsplash.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\unsplash.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\user-ozan-alatli.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\user-ozan-alatli.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\user-ozan-alatli.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\user.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\user.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\user.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\view-split.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\view-split.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\view-split.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\warm.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\warm.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\warm.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\warning-icon.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\warning-icon.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\warning-icon.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\white-rhombus.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\white-rhombus.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\white-rhombus.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\work-alt.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\work-alt.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\work-alt.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\xmark-black.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\xmark-black.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\xmark-black.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\xmark-red.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\xmark-red.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\xmark-red.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\assets\\icons\\zeit.svg",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\assets\\icons\\zeit.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\zeit.svg"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\app-manager\\app-details.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\app-manager\\app-details.css",
       "PackagePath": "staticwebassets\\css\\app-manager\\app-details.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\app-manager\\app-manager.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\app-manager\\app-manager.css",
       "PackagePath": "staticwebassets\\css\\app-manager\\app-manager.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\chat\\comments.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\chat\\comments.css",
       "PackagePath": "staticwebassets\\css\\chat\\comments.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\colors.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\colors.css",
       "PackagePath": "staticwebassets\\css\\colors.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\dashboard.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\dashboard.css",
       "PackagePath": "staticwebassets\\css\\dashboard.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\dashboard\\dashboard-errors.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\dashboard\\dashboard-errors.css",
       "PackagePath": "staticwebassets\\css\\dashboard\\dashboard-errors.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\dashboard\\dashboard-navbar.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\dashboard\\dashboard-navbar.css",
       "PackagePath": "staticwebassets\\css\\dashboard\\dashboard-navbar.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\dashboard\\dashboard-table.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\dashboard\\dashboard-table.css",
       "PackagePath": "staticwebassets\\css\\dashboard\\dashboard-table.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\error\\error-404.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\error\\error-404.css",
       "PackagePath": "staticwebassets\\css\\error\\error-404.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\file-manager\\file-manager.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\file-manager\\file-manager.css",
       "PackagePath": "staticwebassets\\css\\file-manager\\file-manager.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\form.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\form.css",
       "PackagePath": "staticwebassets\\css\\form.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\form\\details-form.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\form\\details-form.css",
       "PackagePath": "staticwebassets\\css\\form\\details-form.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\form\\payment-form.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\form\\payment-form.css",
       "PackagePath": "staticwebassets\\css\\form\\payment-form.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\help\\help.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\help\\help.css",
       "PackagePath": "staticwebassets\\css\\help\\help.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\inbox\\inbox.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\inbox\\inbox.css",
       "PackagePath": "staticwebassets\\css\\inbox\\inbox.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\kanban\\dashboard-kanban.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\kanban\\dashboard-kanban.css",
       "PackagePath": "staticwebassets\\css\\kanban\\dashboard-kanban.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\login\\login-content.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\login\\login-content.css",
       "PackagePath": "staticwebassets\\css\\login\\login-content.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\login\\login-createrun.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\login\\login-createrun.css",
       "PackagePath": "staticwebassets\\css\\login\\login-createrun.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\login\\login-rules.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\login\\login-rules.css",
       "PackagePath": "staticwebassets\\css\\login\\login-rules.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\main.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\main.css",
       "PackagePath": "staticwebassets\\css\\main.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\portal\\kuramportal.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\portal\\kuramportal.css",
       "PackagePath": "staticwebassets\\css\\portal\\kuramportal.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\top-tab\\tab-notification.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\top-tab\\tab-notification.css",
       "PackagePath": "staticwebassets\\css\\top-tab\\tab-notification.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\css\\top-tab\\top-tab.css",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\css\\top-tab\\top-tab.css",
       "PackagePath": "staticwebassets\\css\\top-tab\\top-tab.css"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\js\\appSlideShow.js",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\js\\appSlideShow.js",
       "PackagePath": "staticwebassets\\js\\appSlideShow.js"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\js\\changeDisplay.js",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\js\\changeDisplay.js",
       "PackagePath": "staticwebassets\\js\\changeDisplay.js"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\js\\dashboard-navbar.js",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\js\\dashboard-navbar.js",
       "PackagePath": "staticwebassets\\js\\dashboard-navbar.js"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\js\\dashboard.js",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\js\\dashboard.js",
       "PackagePath": "staticwebassets\\js\\dashboard.js"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\js\\dropdown.js",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\js\\dropdown.js",
       "PackagePath": "staticwebassets\\js\\dropdown.js"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\js\\fileCheckBox.js",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\js\\fileCheckBox.js",
       "PackagePath": "staticwebassets\\js\\fileCheckBox.js"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\js\\inbox.js",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\js\\inbox.js",
       "PackagePath": "staticwebassets\\js\\inbox.js"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\js\\kanban.js",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\js\\kanban.js",
       "PackagePath": "staticwebassets\\js\\kanban.js"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\js\\kuramportal.js",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\js\\kuramportal.js",
       "PackagePath": "staticwebassets\\js\\kuramportal.js"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\js\\multiple-select.js",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\js\\multiple-select.js",
       "PackagePath": "staticwebassets\\js\\multiple-select.js"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\js\\right-click.js",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\js\\pop-up.js",
+      "PackagePath": "staticwebassets\\js\\pop-up.js"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\js\\right-click.js",
       "PackagePath": "staticwebassets\\js\\right-click.js"
     },
     {
-      "Id": "C:\\Fix\\Project\\Rasif\\CRDashboard\\wwwroot\\js\\upload-modal.js",
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\wwwroot\\js\\upload-modal.js",
       "PackagePath": "staticwebassets\\js\\upload-modal.js"
     },
     {
