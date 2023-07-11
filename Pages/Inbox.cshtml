@@ -1,29 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inbox</title>
-    <!-- Pure CSS -->
-    <link rel="stylesheet" href="../wwwroot/css/main.css">
-    <link rel="stylesheet" href="../wwwroot/css/form.css">
-    <link rel="stylesheet" href="../wwwroot/css/colors.css">
-    <link rel="stylesheet" href="../wwwroot/css/inbox/inbox.css" />
-  </head>
-  <body>
-    <section class="inbox-container">
+﻿@page
+@model KanbanModel
+@{
+    ViewData["Title"] = "Inbox";
+}
+
+<link rel="stylesheet" href="../css/inbox/inbox.css" />
+
+<section class="inbox-container">
       <aside class="inbox-sidebar">
         <header class="inbox-sidebar-top">
           <h1>Inbox</h1>
           <div class="add-user">
-            <img src="../wwwroot/assets/icons/math-plus.svg" alt="plus" />
+            <img src="../assets/icons/math-plus.svg" alt="plus" />
           </div>
         </header>
         <div class="inbox-sidebar-submenu">
           <input type="checkbox" name="" id="onlineUser" />
           <label for="onlineUser">Show only online users</label>
-          <img src="../wwwroot/assets/icons/3-dots.svg" alt="three dots" />
+          <img src="../assets/icons/3-dots.svg" alt="three dots" />
         </div>
         <div class="inbox-sidebar-filter-btns">
           <button class="btn-active" onclick="leftClick()">General</button>
@@ -34,7 +28,7 @@
           <div>
             <div class="inbox-sidebar-user user-online">
               <div class="inbox-sidebar-user-img">
-                <img src="../wwwroot/assets/images/Ozan Alatlı.svg" alt="user" />
+                <img src="../assets/images/Ozan Alatlı.svg" alt="user" />
                 <span class="user-status"></span>
               </div>
               <div class="inbox-sidebar-user-info">
@@ -48,7 +42,7 @@
             </div>
             <div class="inbox-sidebar-user user-active user-online">
               <div class="inbox-sidebar-user-img">
-                <img src="../wwwroot/assets/images/Ozan Alatlı.svg" alt="user" />
+                <img src="../assets/images/Ozan Alatlı.svg" alt="user" />
                 <span class="user-status"></span>
               </div>
               <div class="inbox-sidebar-user-info">
@@ -62,7 +56,7 @@
             </div>
             <div class="inbox-sidebar-user">
               <div class="inbox-sidebar-user-img">
-                <img src="../wwwroot/assets/images/Ozan Alatlı.svg" alt="user" />
+                <img src="../assets/images/Ozan Alatlı.svg" alt="user" />
               </div>
               <div class="inbox-sidebar-user-info">
                 <h3>Ozan Alatlı</h3>
@@ -75,7 +69,7 @@
             </div>
             <div class="inbox-sidebar-user user-online">
               <div class="inbox-sidebar-user-img">
-                <img src="../wwwroot/assets/images/Ozan Alatlı.svg" alt="user" />
+                <img src="../assets/images/Ozan Alatlı.svg" alt="user" />
                 <span class="user-status"></span>
               </div>
               <div class="inbox-sidebar-user-info">
@@ -89,7 +83,7 @@
             </div>
             <div class="inbox-sidebar-user">
               <div class="inbox-sidebar-user-img">
-                <img src="../wwwroot/assets/images/Ozan Alatlı.svg" alt="user" />
+                <img src="../assets/images/Ozan Alatlı.svg" alt="user" />
               </div>
               <div class="inbox-sidebar-user-info">
                 <h3>Ozan Alatlı</h3>
@@ -102,7 +96,7 @@
             </div>
             <div class="inbox-sidebar-user">
               <div class="inbox-sidebar-user-img">
-                <img src="../wwwroot/assets/images/Ozan Alatlı.svg" alt="user" />
+                <img src="../assets/images/Ozan Alatlı.svg" alt="user" />
               </div>
               <div class="inbox-sidebar-user-info">
                 <h3>Ozan Alatlı</h3>
@@ -115,7 +109,7 @@
             </div>
             <div class="inbox-sidebar-user">
               <div class="inbox-sidebar-user-img">
-                <img src="../wwwroot/assets/images/Ozan Alatlı.svg" alt="user" />
+                <img src="../assets/images/Ozan Alatlı.svg" alt="user" />
               </div>
               <div class="inbox-sidebar-user-info">
                 <h3>Ozan Alatlı</h3>
@@ -128,7 +122,7 @@
             </div>
             <div class="inbox-sidebar-user">
               <div class="inbox-sidebar-user-img">
-                <img src="../wwwroot/assets/images/Ozan Alatlı.svg" alt="user" />
+                <img src="../assets/images/Ozan Alatlı.svg" alt="user" />
               </div>
               <div class="inbox-sidebar-user-info">
                 <h3>Ozan Alatlı</h3>
@@ -142,14 +136,14 @@
           </div>
         </div>
         <div class="user-search-bar">
-          <img src="../wwwroot/assets/icons/search.svg" alt="search" />
+          <img src="../assets/icons/search.svg" alt="search" />
           <input type="text" class="user-search" placeholder="Search" />
         </div>
       </aside>
       <article class="inbox-chat-form">
         <header class="inbox-header-user-info">
           <div class="inbox-sidebar-user-img">
-            <img src="../wwwroot/assets/images/Ozan Alatlı.svg" alt="user" />
+            <img src="../assets/images/Ozan Alatlı.svg" alt="user" />
           </div>
           <div class="inbox-sidebar-user-info">
             <h3>Ozan Alatlı</h3>
@@ -183,7 +177,7 @@
             <div class="host-msg">
               <div class="msg-document">
                 <div class="document-img">
-                  <img src="../wwwroot/assets/icons/doc-icon.svg" alt="doc-icon" />
+                  <img src="../assets/icons/doc-icon.svg" alt="doc-icon" />
                 </div>
                 <div class="document-content">
                   <h3>Brief.doc</h3>
@@ -198,7 +192,7 @@
             </div>
             <div class="user-msg">
               <div class="user-msg-image">
-                <img src="../wwwroot/assets/Images/comment-data-image.jpg" alt="" />
+                <img src="../assets/Images/comment-data-image.jpg" alt="" />
                 <p>143 KB</p>
               </div>
             </div>
@@ -227,7 +221,7 @@
             <div class="host-msg">
               <div class="msg-document">
                 <div class="document-img">
-                  <img src="../wwwroot/assets/icons/doc-icon.svg" alt="doc-icon" />
+                  <img src="../assets/icons/doc-icon.svg" alt="doc-icon" />
                 </div>
                 <div class="document-content">
                   <h3>Brief.doc</h3>
@@ -242,7 +236,7 @@
             </div>
             <div class="user-msg">
               <div class="user-msg-image">
-                <img src="../wwwroot/assets/Images/comment-data-image.jpg" alt="" />
+                <img src="../assets/Images/comment-data-image.jpg" alt="" />
                 <p>143 KB</p>
               </div>
             </div>
@@ -253,22 +247,22 @@
             </div>
             <div class="message-send">
               <div class="select-image">
-                <img src="../wwwroot/assets/icons/image-icon.svg" alt="image-icon" />
+                <img src="../assets/icons/image-icon.svg" alt="image-icon" />
               </div>
               <div class="select-document">
-                <img src="../wwwroot/assets/icons/document.svg" alt="document" />
+                <img src="../assets/icons/document.svg" alt="document" />
               </div>
               <div class="send-message">
-                <img src="../wwwroot/assets/icons/send.svg" alt="send" />
+                <img src="../assets/icons/send.svg" alt="send" />
               </div>
             </div>
           </footer>
         </main>
         <div class="contact-message">
           <div class="contact-message-select">
-            <img src="../wwwroot/assets/icons/user.svg" alt="user" />
+            <img src="../assets/icons/user.svg" alt="user" />
             <p>SOHBET</p>
-            <img src="../wwwroot/assets/icons/chevron-right-gray.svg" alt="right arrow" />
+            <img src="/assets/icons/chevron-right-gray.svg" alt="right arrow" />
           </div>
           <div class="contact-message-options">
             <div class="message-option-online-users">
@@ -347,7 +341,7 @@
           <div class="user-chat-header online-user">
             <span class="status-online"></span>
             <p class="online-user-name">Hasan Ali</p>
-            <img src="../wwwroot/assets/icons/xmark-black.svg" alt="xmark">
+            <img src="../assets/icons/xmark-black.svg" alt="xmark">
           </div>
           <ul class="user-chat-messages">
             <li class="user-message">
@@ -369,7 +363,7 @@
             <li class="user-message">
               <strong>Ben</strong>
               <a href="#" class="user-message-document">
-                <img src="../wwwroot/assets/icons/document.svg" alt="document">
+                <img src="../assets/icons/document.svg" alt="document">
                 <span>Kuramsoft_panel.rar</span>
               </a>
             </li>
@@ -392,7 +386,7 @@
             <li class="user-message">
               <strong>Ben</strong>
               <a href="#" class="user-message-document">
-                <img src="../wwwroot/assets/icons/document.svg" alt="document">
+                <img src="../assets/icons/document.svg" alt="document">
                 <span>Kuramsoft_panel.rar</span>
               </a>
             </li>
@@ -415,7 +409,7 @@
             <li class="user-message">
               <strong>Ben</strong>
               <a href="#" class="user-message-document">
-                <img src="../wwwroot/assets/icons/document.svg" alt="document">
+                <img src="../assets/icons/document.svg" alt="document">
                 <span>Kuramsoft_panel.rar</span>
               </a>
             </li>
@@ -423,16 +417,13 @@
           <div class="user-chat-send-group">
             <textarea name="" id="" placeholder="Mesajınız..."></textarea>
             <div class="send-image-group">
-              <a href="#"><img src="../wwwroot/assets/icons/document.svg" alt="document"></a>
-              <a href="#"><img src="../wwwroot/assets/icons/camera.svg" alt="camera"></a>
+              <a href="#"><img src="../assets/icons/document.svg" alt="document"></a>
+              <a href="#"><img src="../assets/icons/camera.svg" alt="camera"></a>
             </div>
           </div>
         </div>
-      </article>
-    </section>
+    </article>
+</section>
 
-    <!-- JavaScript -->
-    <script src="../wwwroot/js/inbox.js"></script>
-    <script src="../wwwroot/js/dropdown.js"></script>
-  </body>
-</html>
+<!-- JavaScript -->
+<script src="../js/inbox.js"></script>

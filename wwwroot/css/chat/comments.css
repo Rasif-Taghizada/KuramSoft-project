@@ -128,16 +128,16 @@
 }
 
 /* User Image */
-.user-img {
+.comments-container .user-img {
     position: relative;
 }
 
-.user-img img {
+.comments-container .user-img img {
     width: 62px;
     height: 63px;
 }
 
-.user-img .user-status {
+.comments-container .user-img .user-status {
     position: absolute;
     background: #6CFF72;
     width: 13px;

@@ -18645,8 +18645,28 @@
   "RootNamespace": "WebApp",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\Pages\\AppDetails.cshtml",
+      "TargetPath": "Pages\\AppDetails.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\Pages\\AppManager.cshtml",
+      "TargetPath": "Pages\\AppManager.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\Pages\\Inbox.cshtml",
+      "TargetPath": "Pages\\Inbox.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\Pages\\Table.cshtml",
+      "TargetPath": "Pages\\Table.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18677,6 +18697,11 @@
     {
       "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\Pages\\Form.cshtml",
       "TargetPath": "Pages\\Form.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\KURAMSOFT\\Pages\\Comments.cshtml",
+      "TargetPath": "Pages\\Comments.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -16,6 +16,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\lenovo\OneDrive\Desktop\KURAMSOFT
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/lenovo/OneDrive/Desktop/KURAMSOFT/Pages/AppDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/OneDrive/Desktop/KURAMSOFT/Pages/AppManager.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwTWFuYWdlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/OneDrive/Desktop/KURAMSOFT/Pages/Comments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tbWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lenovo/OneDrive/Desktop/KURAMSOFT/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -26,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/lenovo/OneDrive/Desktop/KURAMSOFT/Pages/Form.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/OneDrive/Desktop/KURAMSOFT/Pages/Inbox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5ib3guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lenovo/OneDrive/Desktop/KURAMSOFT/Pages/Index.cshtml]
@@ -46,6 +62,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/lenovo/OneDrive/Desktop/KURAMSOFT/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/OneDrive/Desktop/KURAMSOFT/Pages/Table.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFibGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lenovo/OneDrive/Desktop/KURAMSOFT/Pages/_ViewImports.cshtml]
