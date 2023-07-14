@@ -3,6 +3,7 @@
     display: flex;
     width: 90%;
     margin: 40px auto;
+    container-type: inline-size;
 }
 
 /*! Inbox Sidebar Content  */
@@ -743,9 +744,9 @@
 }
 
 /*TODO Responsive Design Styles */
-@media only screen and (max-width:1200px) {
-    .inbox-container {
-        width: 97%;
+@container (max-width: 1200px) {
+    section.inbox-container {
+        width: 97% !important;
     }
 
     .inbox-sidebar-filter-btns button {
@@ -757,7 +758,7 @@
         width: 120px;
     }
 
-    .inbox-sidebar-submenu label{
+    .inbox-sidebar-submenu label {
         font-size: 14px;
     }
 
@@ -901,5 +902,45 @@
     .message-send div img {
         width: 20px;
         height: 20px;
+    }
+}
+
+@container (max-width: 992px) {
+    .inbox-sidebar-top h1 {
+        font-size: 26px;
+    }
+
+    .add-user {
+        width: 28px;
+        height: 28px;
+        padding: 5px;
+    }
+
+    .inbox-sidebar-filter-btns {
+        height: 50px;
+    }
+
+    .inbox-sidebar-filter-btns button {
+        width: 95px;
+        font-size: 13px;
+        /* padding-top: 10px;
+        padding-bottom: 10px; */
+    }
+
+    /* Inbox Sidebar User Box */
+    .inbox-sidebar-user {
+        padding: 5px 10px;
+        height: 80px;
+        border-radius: 15px;
+    }
+
+    .inbox-sidebar-filter-btns div.filter-btn-active {
+        width: 90px;
+        height: 40px;
+    }
+
+    .inbox-sidebar-user-info p,
+    .inbox-sidebar-user-info span {
+        display: none;
     }
 }
