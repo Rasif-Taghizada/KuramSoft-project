@@ -2,20 +2,26 @@ html {
     scroll-behavior: smooth;
 }
 
+.container-app-details-main {
+    width: 100%;
+    container-type: inline-size;
+}
+
 .container-app-details {
     width: 100%;
     padding: 50px 220px 50px 50px;
-    /* position: relative; */
-    container-type: inline-size;
+    position: relative;
 }
 
 /* App details Nav Map */
 .app-details-nav-map {
-    position: fixed;
-    right: 44px;
-    top: 40%;
-    /* margin-right: -178px; */
+    position: sticky;
+    left: 100%;
+    top: 50%;
+    margin-right: -178px;
     width: max-content;
+    z-index: 999;
+    height: 0;
 }
 
 .nav-map-list a {
@@ -128,7 +134,7 @@ html {
 
 .app-details-main {
     border: 1px solid var(--app-li-border-color);
-    /* position: relative;   */
+    position: relative;
 }
 
 /* App details Header */
@@ -570,7 +576,7 @@ html {
 
 @container (max-width: 1200px) {
     .container-app-details {
-        padding: 30px 175px 30px 30px;
+        padding: 50px !important;
     }
 
     .container-app-details>nav {
@@ -597,8 +603,7 @@ html {
     }
 
     .app-details-nav-map {
-        right: 88px;
-        position: fixed;
+        display: none;
     }
 
     .state-button-box>button {
@@ -614,6 +619,14 @@ html {
     .state-requared>span:first-child {
         height: 18px;
         width: 18px;
+    }
+
+    .app-details-overview,
+    .app-overview-content,
+    .app-overiew-updates,
+    .app-additiona-container,
+    .overview-needed-applications {
+        padding: 15px;
     }
 
     .app-details-overview>h3 {
@@ -634,7 +647,7 @@ html {
     .app-overiew-updates,
     .app-additiona-container,
     .overview-needed-applications {
-        padding: 0;
+        padding: 30px;
     }
 
     .app-overiew-updates {
@@ -694,11 +707,11 @@ html {
 
 @container (max-width:992px) {
     .container-app-details {
-        padding: 30px 150px 30px 30px;
+        padding: 30px;
     }
 
     .app-details-nav-map {
-        right: 88px;
+        right: -132px;
     }
 
     .app-details-user {
@@ -711,16 +724,19 @@ html {
 
     .app-details-header {
         gap: 20px;
+
     }
 
     .details-header-left {
         flex-direction: column;
         align-items: center;
         gap: 0;
+        width: 100%;
     }
 
     .apps-box-right {
         margin-right: 0;
+        text-align: center;
     }
 
     .apps-box-left>img {
@@ -804,6 +820,40 @@ html {
     }
 
     .container-app-details {
-        padding: 30px;
+        padding: 10px;
+    }
+
+    .app-details-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apps-box-left>img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .apps-box-right>.apps-data {
+        font-size: 12px;
+    }
+
+    .apps-box-right>h1 {
+        font-size: 18px;
+    }
+
+    .apps-users-name,
+    .apps-box-right>span:not(.apps-data),
+    .details-header-rigth>p,
+    .details-header-rigth>ul>li {
+        font-size: 14px;
+    }
+
+    .app-overview-content>p {
+        font-size: 12px;
+    }
+
+    .list-box-main {
+        flex-direction: column;
+        gap: 10px
     }
 }
