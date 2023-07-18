@@ -359,10 +359,6 @@
     cursor: pointer;
 }
 
-.filtr-btn img:hover .filter-btn{
-    background: #DBDBDB;
-}
-
 .add-filter {
     border: 1.5px solid #000000;
     outline: none;

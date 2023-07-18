@@ -750,7 +750,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 /*! ================App Manager Responsive Design Style===============*/
-@container (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 
     /* ! Manager Main Nav => List */
     .manager-main-nav>ul>li {
@@ -863,7 +863,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 
-@container (max-width: 992px) {
+@media (max-width: 992px) {
     .manager-content-header {
         padding-left: 15px;
         padding-right: 15px;
@@ -979,7 +979,7 @@ input[type="range"]::-webkit-slider-thumb {
     }
 }
 
-@container (max-width: 768px) {
+@media (max-width: 768px) {
 
     /* ! App Manager Header */
     .app-manager>h1 {
