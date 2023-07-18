@@ -657,14 +657,14 @@
 .sub-menu-combobox .menu-select {
     gap: 10px;
     padding: 0 10px;
-    min-width: 136px;
-    height: 44px !important;
+    width: 145px;
+    height: 40px !important;
 }
 
 .sub-menu-combobox .menu-options {
     left: 0 !important;
     width: 100% !important;
-    top: 45px !important;
+    top: 41px !important;
     background-color: #2C2C2C !important;
 }
 

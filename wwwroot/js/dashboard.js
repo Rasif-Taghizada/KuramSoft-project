@@ -6,10 +6,10 @@ burgerMenu?.addEventListener("click", () => {
     sideBar.classList.toggle("sidebar-close");
     if (burgerMenu.className === "icon-menu") {
         burgerMenu.className = "icon-arrow-back";
-        burgerMenu.src = "../wwwroot/assets/icons/arrow-back-black.svg"
+        burgerMenu.src = "/assets/icons/arrow-back-black.svg"
     } else {
         burgerMenu.className = "icon-menu"
-        burgerMenu.src = "../wwwroot/assets/icons/menu-icon.svg"
+        burgerMenu.src = "/assets/icons/menu-icon.svg"
     }
 })
 

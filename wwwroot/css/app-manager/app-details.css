@@ -1,25 +1,34 @@
-html{
+html {
     scroll-behavior: smooth;
 }
+
+.container-app-details-main {
+    width: 100%;
+    container-type: inline-size;
+}
+
 .container-app-details {
     width: 100%;
     padding: 50px 220px 50px 50px;
-    /* position: relative; */
+    position: relative;
 }
 
 /* App details Nav Map */
 .app-details-nav-map {
-    position: fixed;
-    right:44px;
-    top: 40%;
-    /* margin-right: -178px; */
+    position: sticky;
+    left: 100%;
+    top: 50%;
+    margin-right: -178px;
     width: max-content;
+    z-index: 999;
+    height: 0;
 }
 
-.nav-map-list a{
+.nav-map-list a {
     transition: all ease 0.1s;
 }
-.nav-map-list a:hover{
+
+.nav-map-list a:hover {
     color: #00B2BD;
 }
 
@@ -88,11 +97,13 @@ html{
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
+
 .container-app-details>nav>a:hover {
     opacity: 1;
 }
+
 .container-app-details>nav>img:first-child:hover {
-    opacity: 1; 
+    opacity: 1;
 }
 
 .app-details-name {
@@ -123,7 +134,7 @@ html{
 
 .app-details-main {
     border: 1px solid var(--app-li-border-color);
-    /* position: relative;   */
+    position: relative;
 }
 
 /* App details Header */
@@ -270,7 +281,7 @@ html{
 /* ! App Details Overview */
 .app-details-overview {
     padding: 30px;
- 
+
 }
 
 .app-details-overview>h3 {
@@ -309,11 +320,11 @@ html{
     cursor: pointer;
 }
 
-.app-carusel-circle>div:hover{
+.app-carusel-circle>div:hover {
     opacity: 1;
 }
 
-.app-carusel-content{
+.app-carusel-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -324,12 +335,13 @@ html{
     display: none;
 }
 
-@keyframes slide{
-    0%{
+@keyframes slide {
+    0% {
         transform: translateX(-100%);
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateX(0);
     }
@@ -522,7 +534,7 @@ html{
     border-radius: 10px;
     padding: 11px 33px 11px 11px;
     position: relative;
-    flex:1 1 auto;
+    flex: 1 1 auto;
 }
 
 .overiew-application-box>img {
@@ -562,9 +574,9 @@ html{
 
 /*! ================App Details Responsive Design Style===============*/
 
-@media only screen and (max-width: 1200px) {
+@container (max-width: 1200px) {
     .container-app-details {
-        padding: 30px 175px 30px 30px;
+        padding: 50px !important;
     }
 
     .container-app-details>nav {
@@ -591,7 +603,7 @@ html{
     }
 
     .app-details-nav-map {
-        right: -133px;
+        display: none;
     }
 
     .state-button-box>button {
@@ -607,6 +619,14 @@ html{
     .state-requared>span:first-child {
         height: 18px;
         width: 18px;
+    }
+
+    .app-details-overview,
+    .app-overview-content,
+    .app-overiew-updates,
+    .app-additiona-container,
+    .overview-needed-applications {
+        padding: 15px;
     }
 
     .app-details-overview>h3 {
@@ -627,7 +647,7 @@ html{
     .app-overiew-updates,
     .app-additiona-container,
     .overview-needed-applications {
-        padding: 0;
+        padding: 30px;
     }
 
     .app-overiew-updates {
@@ -685,9 +705,9 @@ html{
     }
 }
 
-@media only screen and (max-width:992px) {
+@container (max-width:992px) {
     .container-app-details {
-        padding: 30px 150px 30px 30px;
+        padding: 30px;
     }
 
     .app-details-nav-map {
@@ -710,10 +730,12 @@ html{
         flex-direction: column;
         align-items: center;
         gap: 0;
+        width: 100%;
     }
 
     .apps-box-right {
         margin-right: 0;
+        text-align: center;
     }
 
     .apps-box-left>img {
@@ -791,12 +813,46 @@ html{
     }
 }
 
-@media only screen and (max-width:768px) {
+@container (max-width:768px) {
     .app-details-nav-map {
         display: none;
     }
 
     .container-app-details {
-        padding: 30px;
+        padding: 10px;
+    }
+
+    .app-details-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apps-box-left>img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .apps-box-right>.apps-data {
+        font-size: 12px;
+    }
+
+    .apps-box-right>h1 {
+        font-size: 18px;
+    }
+
+    .apps-users-name,
+    .apps-box-right>span:not(.apps-data),
+    .details-header-rigth>p,
+    .details-header-rigth>ul>li {
+        font-size: 14px;
+    }
+
+    .app-overview-content>p {
+        font-size: 12px;
+    }
+
+    .list-box-main {
+        flex-direction: column;
+        gap: 10px
     }
 }
