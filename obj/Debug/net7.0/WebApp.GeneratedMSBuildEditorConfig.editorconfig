@@ -16,12 +16,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Fix\Project\Rasif\CRDashboard
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Fix/Project/Rasif/CRDashboard/Pages/AppDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Fix/Project/Rasif/CRDashboard/Pages/AppManager.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwTWFuYWdlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Fix/Project/Rasif/CRDashboard/Pages/Comments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tbWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Fix/Project/Rasif/CRDashboard/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Fix/Project/Rasif/CRDashboard/Pages/FileManager.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlsZU1hbmFnZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Fix/Project/Rasif/CRDashboard/Pages/Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Fix/Project/Rasif/CRDashboard/Pages/Inbox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5ib3guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Fix/Project/Rasif/CRDashboard/Pages/Index.cshtml]
@@ -42,6 +62,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Fix/Project/Rasif/CRDashboard/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Fix/Project/Rasif/CRDashboard/Pages/Table.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFibGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Fix/Project/Rasif/CRDashboard/Pages/_ViewImports.cshtml]
