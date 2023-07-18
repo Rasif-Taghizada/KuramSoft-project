@@ -8,7 +8,6 @@
     grid-template-columns: 1fr 4fr;
     padding-right: 30px;
     gap: 20px;
-    overflow: hidden;
 }
 
 .file-manager-grid3 {

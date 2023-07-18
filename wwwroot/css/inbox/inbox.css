@@ -2,8 +2,7 @@
 .inbox-container {
     display: flex;
     width: 90%;
-    margin: 40px auto;
-    container-type: inline-size;
+    margin: 0 auto;
 }
 
 /*! Inbox Sidebar Content  */
@@ -76,7 +75,6 @@
     transform: rotate(90deg);
     margin-right: 7px;
     cursor: pointer;
-    height: 20px;
 }
 
 /*TODO Sidebar Filter Buttons  */
@@ -88,6 +86,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    gap: 30px;
     margin-bottom: 22px;
 }
 
@@ -102,7 +101,7 @@
     background: transparent;
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 165px;
+    width: 150px;
 }
 
 .inbox-sidebar-filter-btns button.btn-active {
@@ -112,7 +111,7 @@
 .inbox-sidebar-filter-btns div.filter-btn-active {
     background: #A6FAFF;
     border-radius: 10px;
-    width: 160px;
+    width: 140px;
     height: 52px;
     position: absolute;
     z-index: 1;
@@ -138,7 +137,7 @@
 .inbox-sidebar-user {
     display: flex;
     align-items: center;
-    padding: 10px 30px 10px 20px;
+    padding: 30px 30px 30px 20px;
     border: none;
     background: #E4FDFF;
     border-radius: 10px;
@@ -250,7 +249,7 @@
 }
 
 .inbox-header-user-info {
-    background: transparent;
+    background: white;
     display: flex;
     align-items: center;
     padding: 20px 0px 20px 20px;
@@ -262,6 +261,7 @@
 
 .inbox-header-user-info:hover {
     cursor: pointer;
+    background: white
 }
 
 /*! ============== Inbox Chat Container =============  */
@@ -538,7 +538,7 @@
 }
 
 .contact-message-select.active img:nth-child(3) {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
 }
 
 .contact-message.contact-active .contact-message-options {
@@ -744,203 +744,8 @@
 }
 
 /*TODO Responsive Design Styles */
-@container (max-width: 1200px) {
-    section.inbox-container {
-        width: 97% !important;
-    }
-
-    .inbox-sidebar-filter-btns button {
-        width: 125px;
-        font-size: 15px;
-    }
-
-    .inbox-sidebar-filter-btns div.filter-btn-active {
-        width: 120px;
-    }
-
-    .inbox-sidebar-submenu label {
-        font-size: 14px;
-    }
-
-    /* Inbox Sidebar Users */
-    .inbox-sidebar-user {
-        padding: 10px;
-    }
-
-    .inbox-sidebar-user-img {
-        margin-right: 10px;
-    }
-
-    .inbox-sidebar-user-img img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .inbox-sidebar-user-img .user-status {
-        top: 30px;
-        left: 25px;
-        width: 10px;
-        height: 10px;
-    }
-
-    /* Sidebar User Info */
-    .inbox-sidebar-user-info h3 {
-        font-size: 14px;
-    }
-
-    .inbox-sidebar-user-info span {
-        font-size: 12px;
-    }
-
-    .inbox-sidebar-user-info p {
-        font-size: 12px;
-    }
-
-    .inbox-sidebar-user-count {
-        width: 20px;
-        height: 20px;
-        padding-top: 2px;
-        padding-left: 5px;
-    }
-
-    .inbox-sidebar-user-count p {
-        font-size: 12px;
-    }
-
-    /* Inbox User Info Header Content */
-    .inbox-header-user-info {
-        height: 60px;
-        padding: 10px 10px 10px 20px;
-    }
-
-    /* Inbox Chat Container */
-    .message-content {
-        padding: 10px;
-    }
-
-    .chat-date p {
-        font-size: 16px;
-        margin-bottom: 25px;
-        margin-top: 25px;
-    }
-
-    .host-msg>p,
-    .msg-document {
-        font-size: 14px;
-        line-height: 1.5;
-        padding: 8px 8px 8px 13px;
-        min-height: 40px;
-    }
-
-    .host-msg>span {
-        font-size: 12px;
-        line-height: 1.5;
-        color: #999;
-        margin-left: 15px;
-        margin-bottom: 15px;
-    }
-
-    .user-msg {
-        margin-bottom: 0px;
-    }
-
-    .user-msg>p {
-        font-size: 14px;
-        line-height: 1.5;
-        padding: 8px 8px 8px 13px;
-        min-height: 40px;
-    }
-
-    .user-msg>span {
-        font-size: 12px;
-        line-height: 1.5;
-        color: #999;
-        margin-bottom: 15px;
-    }
-
-    .msg-document {
-        gap: 8px !important;
-    }
-
-    .document-img {
-        width: 25px;
-        height: 38px;
-    }
-
-    .document-img img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .msg-document .document-content h3 {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-
-    .msg-document .document-content p {
-        font-size: 10px;
-        line-height: 1.5;
-    }
-
-    .user-msg-image img {
-        width: 240px;
-        height: 80px;
-    }
-
-    /* Inbox Footer Content */
-    .message-write {
-        height: 60px;
-    }
-
-    .message-send div {
-        width: 40px;
-        height: 40px;
-        border-radius: 10px;
-        padding: 10px !important;
-    }
-
-    .message-send div img {
-        width: 20px;
-        height: 20px;
-    }
-}
-
-@container (max-width: 992px) {
-    .inbox-sidebar-top h1 {
-        font-size: 26px;
-    }
-
-    .add-user {
-        width: 28px;
-        height: 28px;
-        padding: 5px;
-    }
-
-    .inbox-sidebar-filter-btns {
-        height: 50px;
-    }
-
-    .inbox-sidebar-filter-btns button {
-        width: 95px;
-        font-size: 13px;
-        /* padding-top: 10px;
-        padding-bottom: 10px; */
-    }
-
-    /* Inbox Sidebar User Box */
-    .inbox-sidebar-user {
-        padding: 5px 10px;
-        height: 80px;
-        border-radius: 15px;
-    }
-
-    .inbox-sidebar-filter-btns div.filter-btn-active {
-        width: 90px;
-        height: 40px;
-    }
-
-    .inbox-sidebar-user-info p,
-    .inbox-sidebar-user-info span {
-        display: none;
+@media (max-width: 1200px) {
+    .inbox-container {
+        width: 97%;
     }
 }

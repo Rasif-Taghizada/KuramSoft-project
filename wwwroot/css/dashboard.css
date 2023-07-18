@@ -683,8 +683,8 @@ nav ul::-webkit-scrollbar-thumb {
 }
 
 .dshb-dropdown-menu>.menu-select>img {
-    width: 23px;
-    height: 23px;
+    width: 26px;
+    height: 26px;
     padding: 2px;
 }
 
@@ -704,7 +704,7 @@ nav ul::-webkit-scrollbar-thumb {
     transition: all 0.2s ease-in-out;
 }
 
-.dshb-dropdown-menu img{
+.dshb-dropdown-menu img.icon-chevron-down {
     transform: rotate(0);
     transition: all 0.4s ease-in-out;
 }
@@ -733,6 +733,6 @@ nav ul::-webkit-scrollbar-thumb {
     opacity: 1;
 }
 
-.dropdown-menu-open > img{
+.dropdown-menu-open img.icon-chevron-down {
     transform: rotate(180deg);
 }

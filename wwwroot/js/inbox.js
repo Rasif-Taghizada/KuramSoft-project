@@ -1,7 +1,6 @@
 //! Inbox btn active class:
-const inboxBtns = document.querySelectorAll('button');
+const inboxBtns = document.querySelectorAll('.inbox-sidebar-filter-btns > button');
 const btn = document.querySelector('.filter-btn-active');
-
 inboxBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         inboxBtns.forEach(btn => btn.classList.remove('btn-active'))
@@ -12,9 +11,8 @@ inboxBtns.forEach(btn => {
 function leftClick() {
     btn.style.left = "5px";
 }
-
 function rightClick() {
-    btn.style.left = "50%";
+    btn.style.left = "185px";
 }
 
 
