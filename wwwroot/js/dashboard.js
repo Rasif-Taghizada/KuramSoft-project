@@ -2,8 +2,10 @@
 //* Burger Menu
 const burgerMenu = document.querySelector(".icon-menu")
 const sideBar = document.querySelector(".dashboard-sidebar");
+
 burgerMenu?.addEventListener("click", () => {
     sideBar.classList.toggle("sidebar-close");
+    // burgerMenu class change
     if (burgerMenu.className === "icon-menu") {
         burgerMenu.className = "icon-arrow-back";
         burgerMenu.src = "/assets/icons/arrow-back-black.svg"
@@ -12,6 +14,13 @@ burgerMenu?.addEventListener("click", () => {
         burgerMenu.src = "/assets/icons/menu-icon.svg"
     }
 })
+
+let sidebarToggleMenu = document.querySelector(".sidebar-toggle-menu");
+sidebarToggleMenu?.addEventListener("click", () => {
+    sideBar.classList.toggle("sidebar-close");
+    burgerMenu.src = "/assets/icons/menu-icon.svg"
+})
+
 
 //* Sidebar Lists add class
 const sidebarUl = document.querySelector(".sidebar-lists");

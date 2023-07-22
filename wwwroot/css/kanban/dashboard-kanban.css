@@ -5,7 +5,7 @@
 }  */
 .kanban-container {
     margin: auto;
-    padding: 50px;
+    padding: 15px 10px 15px 25px;
     container-type: inline-size;
 }
 
@@ -463,12 +463,41 @@
         display: none;
     }
 
-    .filter-dropdown-btns{
+    .filter-dropdown-btns {
         display: inline;
     }
+
 }
 
+@container (max-width: 576px) {
+    .kanban-head-left-side button {
+        gap: 5px;
+    }
 
+    .kanban-head-right-side {
+        gap: 10px;
+    }
+
+    .kanban-head-right-side>p {
+        font-size: 12px;
+    }
+
+    .sub-menu-combobox .menu-select {
+        width: 120px;
+        overflow: hidden;
+        gap: 5px;
+        padding: 0 7px;
+    }
+
+    .dshb-dropdown-menu p{
+        height: 20px;
+        overflow: hidden;
+    }
+
+    .head-submenu-left .dropdown-btns-select {
+        width: 110px;
+    }
+}
 
 
 

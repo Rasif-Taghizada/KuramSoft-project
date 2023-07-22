@@ -705,7 +705,7 @@ html {
     }
 }
 
-@container (max-width:992px) {
+@container (max-width: 992px) {
     .container-app-details {
         padding: 30px;
     }
@@ -813,13 +813,13 @@ html {
     }
 }
 
-@container (max-width:768px) {
+@container (max-width: 768px) {
     .app-details-nav-map {
         display: none;
     }
 
     .container-app-details {
-        padding: 10px;
+        padding: 15px 10px 15px 25px !important;
     }
 
     .app-details-header {
@@ -827,9 +827,18 @@ html {
         align-items: center;
     }
 
+    .details-header-left {
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+
     .apps-box-left>img {
         height: 90px;
         width: 90px;
+    }
+
+    .apps-box-right {
+        text-align: left;
     }
 
     .apps-box-right>.apps-data {
@@ -856,3 +865,5 @@ html {
         gap: 10px
     }
 }
+
+@container (max-width: 576px) {}

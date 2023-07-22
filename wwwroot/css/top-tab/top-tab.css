@@ -1057,12 +1057,40 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
-    .detail-table>table td {
-        font-size: 14px;
+    .info-box-body{
+        padding: 20px 10px;
     }
-
-    .education-status tbody td>input {
-        padding: 10px 5px;
+    .top-nav>ul{
+        flex-direction: column;
+    }
+    .top-nav>ul>li{
+        margin-right: 0 !important;
+    }    
+    .notification-detail>div{
+        grid-template-columns: 1fr;
+    }
+    .dropdown-box-active~.notification-box-body{
+        display: block;
+    }
+    .custom{
+        top: -20px;
+    }
+    .notification-detail-name{
+        justify-content: flex-start;
+    }
+    .detail-table > table td {
+        font-size: 11px;
+    }
+    .footer-container>button{
+        padding: 5px;
+        font-size: 12px;
+    }
+    .multiple-box>div{
+        grid-template-columns: 1fr 4fr;
+    }
+    .multiple-box-name>h3{
+        padding: 10px 0;
+        padding-right: 5px;
     }
 }
 
