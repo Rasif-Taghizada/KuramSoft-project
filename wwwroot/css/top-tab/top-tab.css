@@ -2,6 +2,7 @@
     width: 100%;
     min-height: 100vh;
     padding: 20px;
+    container-type: inline-size;
 }
 
 * {
@@ -914,6 +915,11 @@ textarea {
     padding: 10px;
 }
 
+.tab-container .dshb-dropdown-menu>.menu-select.dropdown-menu-open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
 .tab-container .dshb-dropdown-menu>.menu-select>img {
     width: 26px;
     height: 26px;
@@ -933,10 +939,10 @@ textarea {
     left: -1px;
     background: #f6f8fc;
     border-bottom-left-radius: 10px;
-    /* Bug */
     border-bottom-right-radius: 10px;
-    /* Bug */
     transition: all 0.2s ease-in-out;
+    border: 1px solid #9aeeff;
+    border-top: none;
 }
 
 .tab-container .dropdown-menu-open img {
@@ -1050,51 +1056,91 @@ textarea {
     opacity: 1;
 }
 
-@media screen and (max-width: 1200px) {
+@container (max-width: 1200px) {
     .dropdown-box-active~.notification-box-body {
         grid-template-columns: 1fr;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .info-box-body{
+@container (max-width: 768px) {
+    .info-box-body {
         padding: 20px 10px;
     }
-    .top-nav>ul{
-        flex-direction: column;
-    }
-    .top-nav>ul>li{
+
+    .top-nav>ul>li {
         margin-right: 0 !important;
-    }    
-    .notification-detail>div{
+    }
+
+    .notification-detail>div {
         grid-template-columns: 1fr;
     }
-    .dropdown-box-active~.notification-box-body{
+
+    .notifcations-incorrect-input>p{
+        margin-top: 10px;
+    }
+
+    .notification-detail>div:nth-child(3),
+    .notification-detail>div:nth-child(4),
+    .notification-detail>div:nth-child(5),
+    .notification-detail>div:nth-child(6) {
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .notification-detail>div>div:nth-of-type(1) {
+        font-size: 16px;
+        padding-bottom: 0;
+    }
+
+    .notification-detail>div>div:nth-of-type(2) {
+        padding: 0 10px 10px 10px !important;
+    }
+
+    .notification-detail-input>input:not([type="checkbox"]),
+    .notification-detail-input>select,
+    .notification-detail-input>textarea,
+    .multiple-box-name-input>input,
+    .multiple-box-name-input>select,
+    .multiple-box-name-input>textarea {
+        padding: 7px 10px;
+        margin: 0;
+    }
+
+    .check-box {
+        height: 30px;
+    }
+
+    .dropdown-box-active~.notification-box-body {
         display: block;
     }
-    .custom{
+
+    .custom {
         top: -20px;
     }
-    .notification-detail-name{
+
+    .notification-detail-name {
         justify-content: flex-start;
     }
-    .detail-table > table td {
+
+    .detail-table>table td {
         font-size: 11px;
     }
-    .footer-container>button{
+
+    .footer-container>button {
         padding: 5px;
         font-size: 12px;
     }
-    .multiple-box>div{
+
+    .multiple-box>div {
         grid-template-columns: 1fr 4fr;
     }
-    .multiple-box-name>h3{
+
+    .multiple-box-name>h3 {
         padding: 10px 0;
         padding-right: 5px;
     }
 }
 
-@media screen and (max-width: 576px) {
+@container (max-width: 576px) {
     .detail-table>table td {
         font-size: 11px;
     }

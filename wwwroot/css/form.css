@@ -685,7 +685,7 @@
 }
 
 .kanban-settings-btn {
-    background: #0066FF;
+    background-color: #70a9ff;
     border: 1px solid #0054D1;
     border-radius: 4px;
     padding: 11px 20px;
@@ -694,7 +694,7 @@
 
 .kanban-settings-btn:hover {
     color: white;
-    background-color: #70a9ff;
+    background: #0066FF;
 }
 
 /*! Dashboard Kanban subheader buttons design code */

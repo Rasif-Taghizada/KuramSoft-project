@@ -38,7 +38,7 @@
 .kanban-head-left-side,
 .dashboard-table-head-left {
     display: flex;
-    gap: 10px;
+    gap: 5px 10px;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -127,6 +127,14 @@
     border: 1px solid #DEDEDE;
     overflow-x: scroll;
     transform: rotateX(180deg);
+}
+
+.kanban-content-section:hover{
+    cursor: grabbing;
+}
+
+.kanban-content-section.active {
+    cursor: grabbing; 
 }
 
 .kanban-list {
@@ -452,6 +460,11 @@
     .head-submenu-left .kanban-dropdown-btns {
         display: inline-block;
     }
+
+    .kanban-dropdown-btns .kanban-new-btn,
+    .kanban-dropdown-btns .kanban-settings-btn {
+        display: none;
+    }
 }
 
 @container (max-width: 860px) {
@@ -489,13 +502,22 @@
         padding: 0 7px;
     }
 
-    .dshb-dropdown-menu p{
+    .dshb-dropdown-menu p {
         height: 20px;
         overflow: hidden;
     }
 
     .head-submenu-left .dropdown-btns-select {
         width: 110px;
+    }
+
+    .dashboard-kanban-head {
+        display: none;
+    }
+
+    .kanban-dropdown-btns .kanban-new-btn,
+    .kanban-dropdown-btns .kanban-settings-btn {
+        display: flex;
     }
 }
 

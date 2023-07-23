@@ -235,6 +235,7 @@
 .pagination-sort-box {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
@@ -261,6 +262,12 @@
 .pagination-sort-box:hover {
     background: rgba(106, 112, 126, 0.1);
 
+}
+
+.pagination-sort-box+.menu-options {
+    width: 100%;
+    left: 0;
+    top: 39px;
 }
 
 /* ! App Price Container */
@@ -805,9 +812,15 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
     .pagination-sort-box>div {
-        right: -35px;
+        right: -20px;
         height: 34px;
         padding: 0px 5px;
+    }
+
+    .pagination-sort-box+.menu-options {
+        width: 100%;
+        left: 0;
+        top: 36px;
     }
 
     .app-price-container {
@@ -920,9 +933,13 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
     .pagination-sort-box>div {
-        right: -22px;
+        right: -15px;
         height: 30px;
         padding: 0px 5px;
+    }
+
+    .pagination-sort-box+.menu-options {
+        top: 30px;
     }
 
     .bottom-box>span,
@@ -1077,14 +1094,18 @@ input[type="range"]::-webkit-slider-thumb {
     .pagination-sort-box {
         font-size: 8px;
         line-height: 10px;
-        padding: 4px 10px;
+        padding: 5px 10px;
         min-width: 100px;
     }
 
     .pagination-sort-box>div {
-        right: -22px;
+        right: -10px;
         height: 20px;
         padding: 0px 3px;
+    }
+
+    .pagination-sort-box + .menu-options{
+        top: 21px;
     }
 
     /* .app-update-main  */
