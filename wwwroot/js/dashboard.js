@@ -7,7 +7,7 @@ burgerMenu?.addEventListener("click", () => {
     sideBar.classList.toggle("sidebar-close");
     // burgerMenu class change
     if (burgerMenu.className === "icon-menu") {
-        burgerMenu.className = "icon-arrow-back";
+        burgerMenu.className = "icon-menu icon-arrow-back";
         burgerMenu.src = "/assets/icons/arrow-back-black.svg"
     } else {
         burgerMenu.className = "icon-menu"
@@ -20,6 +20,14 @@ sidebarToggleMenu?.addEventListener("click", () => {
     sideBar.classList.toggle("sidebar-close");
     burgerMenu.src = "/assets/icons/menu-icon.svg"
 })
+
+document.addEventListener("click", (e) => {
+    let target = e.target;
+    if(target !== burgerMenu) {
+        sideBar?.classList.add("sidebar-close");
+    }
+});
+
 
 
 //* Sidebar Lists add class
@@ -56,6 +64,12 @@ navbarBtn?.addEventListener("click", () => {
     navbarContainer.parentElement.classList.toggle("navbar-close")
 })
 
+document.addEventListener("click", (e) => {
+    let target = e.target;
+    if (target !== navbarBtn) {
+        navbarContainer?.parentElement.classList.remove("navbar-close")
+    }
+});
 
 //! Table Container
 //* Table heade content sort

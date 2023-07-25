@@ -1,12 +1,12 @@
 .file-manager {
-    /* width: 1440px; */
+    /* container-type:inline-size; */
     padding: 10px;
 }
 
 .folder-preview-disabled {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    padding-right: 30px;
+    padding-left: 30px;
     gap: 20px;
     overflow: hidden;
 }
@@ -141,6 +141,7 @@
 .folder-sidebar>footer img {
     width: 20px;
     margin-right: 13px;
+    cursor: pointer;
 }
 
 .folder-sidebar>footer>div {
@@ -150,6 +151,7 @@
     color: #676767;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .folder-sidebar>footer>i {
@@ -210,6 +212,11 @@
     margin-right: 14px;
     margin-left: 14px;
     cursor: pointer;
+}
+
+.folder-nav>ul>li:first-child>img {
+    margin-right: 0;
+    width: 20px;
 }
 
 .folder-nav>ul li:hover {
@@ -368,8 +375,12 @@
     margin-bottom: 25px;
 }
 
-.folder-button-box>div {
+.folder-button-box>div:first-child {
     display: flex;
+}
+
+.file-dropdown {
+    display: none;
 }
 
 .folder-button-box>div>button,
@@ -382,7 +393,6 @@
     padding: 10px 15px;
     transition: all ease-in-out 0.25s;
     cursor: pointer;
-
 }
 
 .folder-button-box>div>button img,
@@ -625,7 +635,9 @@
     flex-wrap: wrap;
 }
 
-.folder-box-footer>span {
+.folder-box-footer>span,
+.file-size,
+.file-date {
     font-size: 12px;
 }
 
@@ -909,7 +921,45 @@ main.folder-preview-main {
     background-color: #EDFCFF;
 }
 
+.file-dropdown .dropdown-btns-select {
+    width: 143px;
+    background-color: #D0EBFF;
+    border-radius: 5px;
+    border: 1px solid #D8D8D8;
+    padding: 10px;
+    height: 40px;
+}
 
+.file-dropdown.dshb-dropdown-menu .menu-options {
+    width: 100% !important;
+    left: 0 !important;
+    top: 45px !important;
+}
+
+.file-dropdown .dropdown-btns-select:hover {
+    background-color: #C4F5FF;
+}
+
+
+.file-dropdown .dropdown-btns-options {
+    width: 100%;
+    left: 0;
+    top: 40px;
+}
+
+.dropdown-btns-options div {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1px;
+}
+
+.dropdown-btns-options div img {
+    width: 18px;
+    height: 18px;
+}
 
 @keyframes slideOut {
     0% {
@@ -933,4 +983,176 @@ main.folder-preview-main {
         border-width: 0;
         overflow: hidden;
     }
+}
+
+@media screen and (max-width: 1200px) {
+    .folder-explorer-list {
+        padding-left: 10px;
+    }
+
+    .file-manager-grid3 .folder-button-box>div>button,
+    .file-manager-grid3 .uplade-button,
+    .file-manager-grid3 .folder-box,
+    .file-manager-grid3 .file-box {
+        padding: 10px 5px;
+    }
+
+    .file-manager-grid3 .folder-box-main>img,
+    .file-manager-grid3 .file-box-main>img {
+        width: 45px;
+    }
+
+    .file-manager-grid3 .folder-button-box>div>button img,
+    .file-manager-grid3 .uplade-button img {
+        width: 20px;
+    }
+
+    .folder-sidebar>header,
+    .folder-preview>header {
+        padding: 10px;
+    }
+
+    .main.folder-preview-main {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width:996px) {
+
+    .folder-input-box,
+    .folder-input-box>div {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .folder-input-box>div button,
+    .folder-input-box input[type=search] {
+        width: 100%;
+        height: 40px;
+    }
+
+    .folder-input-box>div button {
+        padding: 10px;
+    }
+
+    .folder-input-box>div button img:first-child,
+    .folder-input-box>div:last-child>img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .folder-button-box>div:first-child {
+        display: none;
+    }
+
+    .file-dropdown {
+        display: block;
+    }
+
+    .folder-preview-disabled {
+        grid-template-columns: 1fr;
+    }
+
+    .folder-explorer-list {
+        display: flex;
+        align-items: center;
+    }
+
+    .folder-sidebar {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 15px;
+        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    .folder-explorer-list {
+        width: 100%;
+        overflow-x: auto;
+    }
+/* 
+    .folder-explorer-list>li {
+        border-right: 1px solid #D8D8D8;
+    } */
+
+    .drop-down-box {
+        display: none;
+    }
+
+    main.folder-preview-main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .folder-preview-icon {
+        justify-content: center;
+    }
+
+    .folder-preview-user {
+        margin-top: 50px;
+        padding-bottom: 0;
+    }
+
+    .folder-preview-tool-box {
+        margin-top: 20px;
+    }
+
+    .folder-explore-list-optionals {
+        position: absolute;
+        z-index: 999;
+        background-color: white;
+        /* padding: 20px; */
+    }
+
+    .folder-explore-list-optionals.list-active>li {
+        width: 100%;
+        margin-left: 0 !important;
+        padding: 10px 20px;
+        border: 1px solid #8B9AB1;
+        border-bottom: 0;
+    }
+
+    .folder-explore-list-optionals.list-active>li:last-child {
+        border-bottom: 1px solid #8B9AB1;
+    }
+
+    .folder-sidebar>footer {
+        padding-left: 20px;
+    }
+}
+
+
+
+@media screen and (max-width:576px) {
+
+    .folder-box,
+    .file-box {
+        width: calc(50% - 13px);
+        margin-bottom: 20px;
+    }
+
+    .folder-preview-disabled {
+        padding-right: 5px;
+    }
+
+    main.folder-preview-main {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/*! Kanban Content Section == Container , Scrollbar Style */
+.folder-explorer-list::-webkit-scrollbar-track {
+    background-color: #B1E9F4;
+}
+
+.folder-explorer-list::-webkit-scrollbar {
+    height: 5px;
+    background-color: #2CD8FB;
+}
+
+.folder-explorer-list::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #2CD8FB;
 }

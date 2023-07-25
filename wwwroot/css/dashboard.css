@@ -794,7 +794,7 @@ nav ul::-webkit-scrollbar-thumb {
 .dshb-dropdown-menu .menu-options {
     opacity: 0;
     visibility: hidden;
-    z-index: 2;
+    z-index: 2000;
     width: 110%;
     position: absolute;
     top: 30px;

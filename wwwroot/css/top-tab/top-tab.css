@@ -1,12 +1,31 @@
 .tab-container {
     width: 100%;
     min-height: 100vh;
-    padding: 20px;
+    padding: 20px 10px 20px 30px;
     container-type: inline-size;
+    transition: all ease-in-out 0.5s;
 }
 
 * {
     box-sizing: border-box;
+}
+
+.error-container {
+    width: 50%;
+    position: fixed;
+    top: -1000%;
+    left: 20%;
+    z-index: 999;
+}
+
+.container-active {
+    top: 30%;
+    transition: all ease-in-out 0.5s;
+}
+
+.container-active~.tab-container {
+    transition: all ease-in-out 0.5s;
+    filter: blur(5px);
 }
 
 .info-box {
@@ -153,6 +172,9 @@
 
 /* ! Notifications */
 /* .notification-box-body {} */
+label.check-box {
+    width: max-content;
+}
 
 .notifications {
     border: 1px solid #dddddd;
@@ -259,13 +281,10 @@ textarea {
     margin-top: 10px;
 }
 
-.notification-detail-input>div>* {
-    margin-right: 10px;
-}
-
 .btn-new {
     width: max-content;
-    padding: 5px 0px 5px 10px;
+    gap: 10px;
+    padding: 5px 5px 5px 10px;
     border-radius: 5px;
     transition: all ease-in-out 0.3s;
     border: 1px solid #16acca;
@@ -429,17 +448,17 @@ textarea {
     letter-spacing: 0.1px;
 }
 
-.education-status>table {
+.education-status table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.education-status>table>thead {
+.education-status table>thead {
     background: #e7fbff;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
 }
 
-.education-status>table>thead>tr>th {
+.education-status table>thead>tr>th {
     padding: 10px;
     font-size: 15px;
     font-weight: 700;
@@ -447,11 +466,11 @@ textarea {
     text-align: start;
 }
 
-.education-status>table>thead>tr>th:first-child {
+.education-status table>thead>tr>th:first-child {
     text-align: center;
 }
 
-.education-status>table>tbody>tr>td {
+.education-status table>tbody>tr>td {
     padding: 10px;
     width: 25%;
 }
@@ -486,7 +505,7 @@ textarea {
     padding: 10px 15px;
     font-size: 12px;
     font-weight: 800;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .display-flex {
@@ -669,7 +688,6 @@ textarea {
 .multiple-box>div {
     display: grid;
     grid-template-columns: 1fr 6fr;
-    padding-right: 20px;
 }
 
 .multiple-box-name {
@@ -688,8 +706,9 @@ textarea {
 
 .multiple-box-name-input {
     padding-left: 20px;
-    border-bottom: 1px solid #e6e6e6;
     padding-bottom: 5px;
+    padding-right: 20px;
+    border-bottom: 1px solid #e6e6e6;
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -722,7 +741,7 @@ textarea {
 
 .multiple-box-name-input>img {
     position: absolute;
-    right: 10px;
+    right: 30px;
     top: 44%;
 }
 
@@ -933,10 +952,9 @@ textarea {
     opacity: 0;
     visibility: hidden;
     z-index: 2;
-    width: 99%;
+    width: 100%;
     position: absolute;
     top: 48px;
-    left: -1px;
     background: #f6f8fc;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -980,8 +998,9 @@ textarea {
 
 .multiple-box-name-input-select {
     padding-left: 20px;
-    border-bottom: 1px solid #e6e6e6;
     padding-bottom: 15px;
+    padding-right: 20px;
+    border-bottom: 1px solid #e6e6e6;
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -995,16 +1014,15 @@ textarea {
 
 .popup-container {
     position: fixed;
-    left: 0;
-    top: 0;
     z-index: 9999;
     background-color: rgba(0, 0, 0, 0.24);
     width: 0;
     height: 0;
+    top: -100%;
+    z-index: 99999;
     overflow: hidden;
     visibility: hidden;
     transition: all 0.3s ease-in-out;
-
 }
 
 .popup-container.active {
@@ -1012,8 +1030,17 @@ textarea {
     height: 100vh;
     visibility: visible;
     animation: popup 0.3s ease-in-out;
+    top: 0%;
+    left: 0%;
 }
 
+.popup-box {
+    width: 100% !important;
+}
+
+.popup-box>img {
+    width: 100%;
+}
 
 @keyframes popup {
     0% {
@@ -1022,14 +1049,9 @@ textarea {
     }
 
     100% {
-
         height: 100vh;
     }
 }
-
-
-
-
 
 .popup-box {
     position: relative;
@@ -1050,10 +1072,24 @@ textarea {
     transition: all 0.2s ease-in-out;
 }
 
-
-
 .popup-box>span:hover {
     opacity: 1;
+}
+
+.card-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card-numbers>input {
+    margin-right: 10px !important;
+}
+
+.table-box {
+    overflow-y: hidden;
+    overflow-x: auto;
 }
 
 @container (max-width: 1200px) {
@@ -1061,6 +1097,7 @@ textarea {
         grid-template-columns: 1fr;
     }
 }
+
 
 @container (max-width: 768px) {
     .info-box-body {
@@ -1075,7 +1112,7 @@ textarea {
         grid-template-columns: 1fr;
     }
 
-    .notifcations-incorrect-input>p{
+    .notifcations-incorrect-input>p {
         margin-top: 10px;
     }
 
@@ -1083,12 +1120,13 @@ textarea {
     .notification-detail>div:nth-child(4),
     .notification-detail>div:nth-child(5),
     .notification-detail>div:nth-child(6) {
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 
     .notification-detail>div>div:nth-of-type(1) {
         font-size: 16px;
         padding-bottom: 0;
+        margin-bottom: 10px;
     }
 
     .notification-detail>div>div:nth-of-type(2) {
@@ -1121,13 +1159,17 @@ textarea {
         justify-content: flex-start;
     }
 
-    .detail-table>table td {
-        font-size: 11px;
+    .popup-input-box>img {
+        top: 17%
     }
 
+    /* .detail-table > table td {
+    font-size: 11px;
+  } */
+
     .footer-container>button {
-        padding: 5px;
-        font-size: 12px;
+        padding: 10px;
+        font-size: 14px;
     }
 
     .multiple-box>div {
@@ -1138,11 +1180,55 @@ textarea {
         padding: 10px 0;
         padding-right: 5px;
     }
+
+    .multiple-box-name-input>img {
+        top: 37%;
+    }
+
+    .multiple-box-name-input>div {
+        padding: 7px 10px;
+    }
+
+    .multiple-box-name-input-select .menu-select {
+        padding: 5px 10px !important;
+        font-size: 14px !important;
+    }
+
+    .tab-container .dshb-dropdown-menu>.menu-select>img{
+        width: 23px;
+        height: 23px;
+    }
+
+    .multiple-box-name-input-select .menu-options {
+        top: 38px !important;
+    }
+
+    .multiple-box-name-input,
+    .multiple-box-name-input-select {
+        padding-top: 10px;
+    }
+
+    .notifications,
+    .notification-detail-input {
+        border: 0;
+    }
+
+    .radio-container {
+        font-size: 15px;
+    }
+
+    .radio-container .checkmark {
+        top: 3px;
+    }
+
+    .card-numbers>input {
+        margin-right: 5px !important;
+    }
 }
 
 @container (max-width: 576px) {
     .detail-table>table td {
-        font-size: 11px;
+        font-size: 14.5px;
     }
 
     .education-status tbody td>input {
@@ -1151,48 +1237,43 @@ textarea {
 
     .notification-detail-name {
         font-size: 14px;
-        flex-direction: column;
         gap: 5px;
-        align-items: flex-end;
+        align-items: center;
         text-align: end;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .notification-detail-name>img {
         margin-left: 0;
     }
 
-    .education-status>table>tbody>tr>td:first-child .img-box {
+    .education-status table>tbody>tr>td:first-child .img-box {
         width: 40px;
         margin-right: 5px;
     }
 
-    .education-status>table>tbody>tr>td * {
-        font-size: 10px;
-    }
 
     .checkmark {
-        width: 15px;
-        height: 15px;
+        width: 25px;
+        height: 25px;
         margin-right: 10px;
-        top: 10px;
+        top: 6px;
     }
 
     .check-box .checkmark:after {
-        width: 2px;
-        height: 5px;
-        left: 4px;
-        top: 2px;
+        width: 5px;
+        height: 10px;
+        left: 7px;
+        top: 3px;
     }
 
-    .product-container>div>label>span:last-child,
+    /* .product-container>div>label>span:last-child,
     .groups-container>div>label>span:last-child {
         font-size: 12px;
-    }
+    } */
 
     .multiple-box-name {
         font-size: 12px;
-        width: 65px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -1208,7 +1289,7 @@ textarea {
     }
 
     .footer-container>button {
-        font-size: 12px;
+        /* font-size: 12px; */
     }
 
     .footer-container>button>img {
@@ -1222,7 +1303,7 @@ textarea {
 
     .multiple-box-name-input-select,
     .multiple-box-name-input {
-        padding: 5px 20px;
+        padding: 10px 20px;
     }
 
     .notification-detail-input>input:not([type="checkbox"]),
@@ -1236,16 +1317,62 @@ textarea {
 
     .multiple-box-name-input>img {
         right: 33px;
-        top: 35%;
-    }
-
-    .menu-select>p {
-        font-size: 12px;
+        top: 30%;
     }
 
     .top-nav>ul>li {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 10px !important;
+        width: calc(100% / 3);
+        font-size: 15px;
+    }
 
+    .notification-detail>div>div {
+        margin-bottom: 10px;
+    }
+
+    .uploade-file-box>.uploade-file {
+        font-size: 12px;
+    }
+
+    .uploade-file-box>span {
+        font-size: 12px;
+    }
+
+    .uploade-file-box>.uploade-file {
+        padding: 5px 10px;
+    }
+
+    .uploade-file-box>.uploade-file>img {
+        margin-left: 10px;
+        margin-right: 0;
+        width: 20px;
+    }
+
+    .popup-input-box>img {
+        top: 16%;
+        right: 20px;
+        width: 17px;
+    }
+
+    .notification-detail-input>input:not([type="checkbox"]),
+    .notification-detail-input>select,
+    .notification-detail-input>textarea,
+    .multiple-box-name-input>input,
+    .multiple-box-name-input>select,
+    .multiple-box-name-input>textarea {
+        padding: 5px;
+    }
+
+    .header-left-menu .menu-select {
+        padding: 5px !important;
+        font-size: 12px !important;
+    }
+
+    .header-left-menu .menu-options {
+        top: 35px !important;
+    }
+
+    .menu-options .menu-option-content {
+        font-size: 12px !important;
     }
 }

@@ -10,8 +10,38 @@
     <link rel="stylesheet" href="../wwwroot/css/form.css" />
     <link rel="stylesheet" href="../wwwroot/css/colors.css" />
     <link rel="stylesheet" href="../wwwroot/css/top-tab/top-tab.css" />
+    <link
+      rel="stylesheet"
+      href="../wwwroot/css/dashboard/dashboard-errors.css"
+    />
   </head>
   <body>
+    <div class="error-container">
+      <div class="error-header-area success-header"></div>
+      <div class="error-main-content">
+        <div class="error-main-content-left">
+          <div class="success-icon">
+            <img
+              src="../wwwroot/assets/icons/successful-icon.svg"
+              alt=""
+              class="icon-success"
+            />
+          </div>
+        </div>
+        <div class="error-main-content-right">
+          <h1>You are about to leave this page</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the
+          </p>
+        </div>
+      </div>
+      <div class="error-footer-btns">
+        <button class="close-container">LEAVE</button>
+        <button>STAY</button>
+      </div>
+    </div>
     <section class="tab-container">
       <!-- ! Info Box -->
       <div class="info-box">
@@ -222,110 +252,112 @@
                 <!-- ! IX -->
                 <div class="education-status">
                   <h3>Çalışma Eğitim Durumu</h3>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Okul Türü</th>
-                        <th>Okul Adı</th>
-                        <th>Giriş Tarihi</th>
-                        <th>Mezuniyet Tarihi</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div class="display-flex">
-                            <div class="img-box">
-                              <img
-                                src="../wwwroot/assets/icons/black-background-close.svg"
-                                alt="close"
-                              />
-                            </div>
-                            <div class="dshb-dropdown-menu">
-                              <div class="menu-select">
-                                <p>Üniversite</p>
+                  <div class="table-box">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Okul Türü</th>
+                          <th>Okul Adı</th>
+                          <th>Giriş Tarihi</th>
+                          <th>Mezuniyet Tarihi</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="display-flex">
+                              <div class="img-box">
                                 <img
-                                  src="../wwwroot/assets/icons/chevron-down.svg"
-                                  alt="down"
+                                  src="../wwwroot/assets/icons/black-background-close.svg"
+                                  alt="close"
                                 />
                               </div>
-                              <div class="menu-options">
-                                <div class="menu-option-content">
-                                  <p>Okul</p>
-                                </div>
-                                <div class="menu-option-content">
+                              <div class="dshb-dropdown-menu">
+                                <div class="menu-select">
                                   <p>Üniversite</p>
+                                  <img
+                                    src="../wwwroot/assets/icons/chevron-down.svg"
+                                    alt="down"
+                                  />
                                 </div>
-                                <div class="menu-option-content">
-                                  <p>Okul</p>
-                                </div>
-                                <div class="menu-option-content">
-                                  <p>Üniversite</p>
+                                <div class="menu-options">
+                                  <div class="menu-option-content">
+                                    <p>Okul</p>
+                                  </div>
+                                  <div class="menu-option-content">
+                                    <p>Üniversite</p>
+                                  </div>
+                                  <div class="menu-option-content">
+                                    <p>Okul</p>
+                                  </div>
+                                  <div class="menu-option-content">
+                                    <p>Üniversite</p>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </td>
-                        <td>
-                          <input type="text" value="ANADOLU ÜNİVERSİTESİ" />
-                        </td>
-                        <td>
-                          <input type="date" />
-                        </td>
-                        <td>
-                          <input type="text" value="07.09.2019" />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="display-flex">
-                            <div class="img-box">
-                              <img
-                                src="../wwwroot/assets/icons/insert-after-r.svg"
-                                alt="insert"
-                              />
-                              <img
-                                src="../wwwroot/assets/icons/black-background-close.svg"
-                                alt="close"
-                              />
-                            </div>
-                            <div class="dshb-dropdown-menu">
-                              <div class="menu-select">
-                                <p>Üniversite</p>
+                          </td>
+                          <td>
+                            <input type="text" value="ANADOLU ÜNİVERSİTESİ" />
+                          </td>
+                          <td>
+                            <input type="date" />
+                          </td>
+                          <td>
+                            <input type="text" value="07.09.2019" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="display-flex">
+                              <div class="img-box">
                                 <img
-                                  src="../wwwroot/assets/icons/chevron-down.svg"
-                                  alt="down"
+                                  src="../wwwroot/assets/icons/insert-after-r.svg"
+                                  alt="insert"
+                                />
+                                <img
+                                  src="../wwwroot/assets/icons/black-background-close.svg"
+                                  alt="close"
                                 />
                               </div>
-                              <div class="menu-options">
-                                <div class="menu-option-content">
-                                  <p>Okul</p>
-                                </div>
-                                <div class="menu-option-content">
+                              <div class="dshb-dropdown-menu">
+                                <div class="menu-select">
                                   <p>Üniversite</p>
+                                  <img
+                                    src="../wwwroot/assets/icons/chevron-down.svg"
+                                    alt="down"
+                                  />
                                 </div>
-                                <div class="menu-option-content">
-                                  <p>Okul</p>
-                                </div>
-                                <div class="menu-option-content">
-                                  <p>Üniversite</p>
+                                <div class="menu-options">
+                                  <div class="menu-option-content">
+                                    <p>Okul</p>
+                                  </div>
+                                  <div class="menu-option-content">
+                                    <p>Üniversite</p>
+                                  </div>
+                                  <div class="menu-option-content">
+                                    <p>Okul</p>
+                                  </div>
+                                  <div class="menu-option-content">
+                                    <p>Üniversite</p>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </td>
-                        <td>
-                          <input type="text" value="ANADOLU ÜNİVERSİTESİ" />
-                        </td>
-                        <td>
-                          <input type="date">
-                        </td>
-                        <td>
-                          <input type="text" value="07.09.2019" />
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                          </td>
+                          <td>
+                            <input type="text" value="ANADOLU ÜNİVERSİTESİ" />
+                          </td>
+                          <td>
+                            <input type="date" />
+                          </td>
+                          <td>
+                            <input type="text" value="07.09.2019" />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                   <div class="notification-detail">
                     <div>
                       <div class="notification-detail-name">Durum Onay</div>
@@ -404,7 +436,7 @@
                   <!-- ! IV -->
                   <div>
                     <div class="notification-detail-name">Kart Numarası</div>
-                    <div class="notification-detail-input uploade-file-box">
+                    <div class="notification-detail-input card-numbers">
                       <input type="text" />
                       <input type="text" />
                       <input type="text" />
@@ -503,15 +535,7 @@
                         alt="serch"
                       />
                     </div>
-                    <div class="popup-container">
-                      <div class="popup-box">
-                        <img
-                          src="../wwwroot/assets/Images/modal-img.jpg"
-                          alt="img"
-                        />
-                        <span id="popup-close">x</span>
-                      </div>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -692,6 +716,15 @@
         </button>
       </div>
     </section>
+    <div class="popup-container">
+      <div class="popup-box">
+        <img
+          src="../wwwroot/assets/Images/modal-img.jpg"
+          alt="img"
+        />
+        <span id="popup-close">x</span>
+      </div>
+    </div>
 
     <script src="../wwwroot/js/dropdown.js"></script>
     <script src="../wwwroot/js/multiple-select.js"></script>
