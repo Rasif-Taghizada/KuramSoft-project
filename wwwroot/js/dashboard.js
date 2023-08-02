@@ -17,14 +17,18 @@ burgerMenu?.addEventListener("click", () => {
 
 let sidebarToggleMenu = document.querySelector(".sidebar-toggle-menu");
 sidebarToggleMenu?.addEventListener("click", () => {
-    sideBar.classList.toggle("sidebar-close");
     burgerMenu.src = "/assets/icons/menu-icon.svg"
+    sideBar.classList.toggle("sidebar-close");
 })
 
 document.addEventListener("click", (e) => {
     let target = e.target;
-    if(target !== burgerMenu) {
-        sideBar?.classList.add("sidebar-close");
+    if (window.innerWidth <= 992) {
+        if (target !== burgerMenu) {
+            console.log(target)
+            sideBar?.classList.add("sidebar-close");
+            burgerMenu.src = "/assets/icons/menu-icon.svg"
+        }
     }
 });
 
@@ -66,8 +70,11 @@ navbarBtn?.addEventListener("click", () => {
 
 document.addEventListener("click", (e) => {
     let target = e.target;
-    if (target !== navbarBtn) {
-        navbarContainer?.parentElement.classList.remove("navbar-close")
+    if (window.innerWidth <= 992) {
+        if (target !== navbarBtn && !navbarContainer.contains(target)) {
+            console.log(target)
+            navbarContainer?.parentElement.classList.remove("navbar-close")
+        }
     }
 });
 

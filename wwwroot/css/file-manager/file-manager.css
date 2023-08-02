@@ -122,8 +122,7 @@
 .folder-explorer-list>li>div>img,
 .folder-explore-list-optionals>li>img {
     width: 20px;
-    margin-right: 20px;
-
+    margin-right: 10px;
 }
 
 .folder-explorer-list>li>div:hover {
@@ -275,7 +274,8 @@
     display: flex;
 }
 
-.folder-input-box>div button {
+.folder-input-box>div .btn-date-interval,
+.folder-input-box>div .folder-type-button {
     padding: 12px 17px;
     margin-right: 10px;
     display: flex;
@@ -288,11 +288,12 @@
     cursor: pointer;
 }
 
-.folder-input-box>div button img:first-child {
+.folder-input-box>div .btn-date-interval img:first-child {
     margin-right: 15px;
 }
 
-.folder-input-box>div button img:last-child {
+.folder-input-box>div .folder-type-button img:last-child,
+.folder-input-box>div .btn-date-interval img:last-child {
     margin-left: 10px;
 }
 
@@ -307,6 +308,29 @@
     letter-spacing: 0.1px;
     display: flex;
     align-items: center;
+}
+
+.folder-input-box .dshb-dropdown-menu .menu-options {
+    width: 100% !important;
+    left: 0 !important;
+    top: 45px !important;
+}
+
+.btn-date-interval .menu-options,
+.folder-type-button .menu-options {
+    top: 48px !important;
+    border: 1px solid #D8D8D8;
+}
+
+.btn-date-interval .menu-options>li,
+.folder-type-button .menu-options>li {
+    padding: 10px 20px;
+    border-top: 1px solid #D8D8D8;
+}
+
+.btn-date-interval .menu-options>li:hover,
+.folder-type-button .menu-options>li:hover {
+    background-color: rgba(0, 0, 0, 0.03);
 }
 
 .folder-input-box>div button>div {
@@ -405,8 +429,6 @@
     background-color: rgba(0, 0, 0, 0.03) !important;
 } */
 
-
-
 .uplade-button {
     background: #D6E6FF;
 }
@@ -454,7 +476,6 @@
 
 .folder-button-box>div>img:first-child {
     margin-right: 10px;
-
 }
 
 
@@ -577,10 +598,7 @@
 
 .folder-content {
     border-bottom: 1px solid #DEDEDE;
-
 }
-
-
 
 .folder-box,
 .file-box {
@@ -591,7 +609,6 @@
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
     cursor: pointer;
-
     border: 1px solid transparent;
 }
 
@@ -744,7 +761,6 @@ main.folder-preview-main {
     margin-top: 30px;
 }
 
-
 .folder-preview-tool-box>div {
     display: flex;
     align-items: center;
@@ -764,7 +780,6 @@ main.folder-preview-main {
 }
 
 /* Uploda File Moda */
-
 .upload-file-modal {
     position: absolute;
     left: calc(50% - 200px);
@@ -799,15 +814,12 @@ main.folder-preview-main {
 .upload-file-modal>.drop-down-box {
     margin-top: 30px;
     border: 1.5px dashed #2F80ED;
-
 }
 
 .drop-down-box:hover {
-
     border: 1.5px dashed #2F80ED;
     background-color: rgba(47, 128, 237, 0.1);
 }
-
 
 .upload-file-container {
     overflow: hidden;
@@ -820,7 +832,6 @@ main.folder-preview-main {
     padding: 10px 20px;
     display: flex;
     position: relative;
-
 }
 
 .upload-flie-box>div>span {
@@ -883,7 +894,6 @@ main.folder-preview-main {
 }
 
 /* ! More Optonals Box */
-
 .more-optionals-box {
     background: linear-gradient(180deg, #EAEAEA 0%, rgba(217, 217, 217, 0.71) 100%);
     border: 1px solid #FFFFFF;
@@ -900,7 +910,6 @@ main.folder-preview-main {
     top: -10px;
     cursor: pointer;
 }
-
 
 .more-optionals-box li>a {
     display: flex;
@@ -933,13 +942,14 @@ main.folder-preview-main {
 .file-dropdown.dshb-dropdown-menu .menu-options {
     width: 100% !important;
     left: 0 !important;
-    top: 45px !important;
+    top: 40px !important;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
 }
 
 .file-dropdown .dropdown-btns-select:hover {
     background-color: #C4F5FF;
 }
-
 
 .file-dropdown .dropdown-btns-options {
     width: 100%;
@@ -954,6 +964,7 @@ main.folder-preview-main {
     justify-content: space-between;
     width: 100%;
     margin-bottom: 1px;
+    border: none;
 }
 
 .dropdown-btns-options div img {
@@ -1028,12 +1039,12 @@ main.folder-preview-main {
     .folder-input-box>div button,
     .folder-input-box input[type=search] {
         width: 100%;
-        height: 40px;
+        height: 35px;
     }
 
-    .folder-input-box>div button {
+    /* .folder-input-box>div button {
         padding: 10px;
-    }
+    } */
 
     .folder-input-box>div button img:first-child,
     .folder-input-box>div:last-child>img {
@@ -1069,7 +1080,8 @@ main.folder-preview-main {
         width: 100%;
         overflow-x: auto;
     }
-/* 
+
+    /* 
     .folder-explorer-list>li {
         border-right: 1px solid #D8D8D8;
     } */
@@ -1118,6 +1130,21 @@ main.folder-preview-main {
     .folder-sidebar>footer {
         padding-left: 20px;
     }
+
+    .folder-input-box .btn-date-interval .menu-select,
+    .folder-input-box .folder-type-button .menu-select {
+        width: 100%;
+    }
+
+    .folder-explorer-list>li>div,
+    .folder-explore-list-optionals>li {
+        transition: none;
+    }
+
+    .folder-input-box>div .btn-date-interval,
+    .folder-input-box>div .folder-type-button {
+        margin-right: 0;
+    }
 }
 
 
@@ -1136,6 +1163,35 @@ main.folder-preview-main {
 
     main.folder-preview-main {
         grid-template-columns: 1fr;
+    }
+
+    .folder-input-box>div .btn-date-interval,
+    .folder-input-box>div .folder-type-button {
+        padding: 7px 10px;
+    }
+
+    .folder-input-box .dshb-dropdown-menu img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .folder-input-box .dshb-dropdown-menu .menu-select span {
+        font-size: 14px;
+    }
+
+    .folder-input-box .dshb-dropdown-menu .menu-options {
+        top: 35px !important;
+    }
+
+    .btn-date-interval .menu-options>li,
+    .folder-type-button .menu-options>li {
+        padding: 7px 10px;
+        font-size: 14px;
+    }
+
+    .folder-input-box>div:last-child>img {
+        width: 16px;
+        height: 18px;
     }
 }
 

@@ -209,6 +209,32 @@
     color: #000000;
 }
 
+/* Sidebar Toggle Menu */
+.sidebar-toggle {
+    width: 10px;
+    background-color: #60d3ff;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar-toggle-btn {
+    width: 20px;
+    height: 40px;
+    background-color: #60d3ff;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    cursor: pointer;
+    left: 0;
+    z-index: 2;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar-toggle:hover,
+.sidebar-toggle:hover .sidebar-toggle-btn {
+    background-color: #008496;
+}
+
 /*! ============= User Search bar =========== */
 .user-search-bar {
     margin-top: 20px;
@@ -274,6 +300,7 @@
 /*TODO Message Content Styles */
 .message-content {
     height: 500px;
+    overflow-x: hidden;
     overflow-y: scroll;
     padding: 25px 30px 15px 30px;
 }
@@ -811,6 +838,8 @@
     .inbox-header-user-info {
         height: 60px;
         padding: 10px 10px 10px 20px;
+        border: 1px solid #DEDEDE;
+        border-radius: 0;
     }
 
     /* Inbox Chat Container */
@@ -906,41 +935,63 @@
 }
 
 @container (max-width: 992px) {
-    .inbox-sidebar-top h1 {
-        font-size: 26px;
-    }
-
     .add-user {
         width: 28px;
         height: 28px;
         padding: 5px;
     }
 
-    .inbox-sidebar-filter-btns {
-        height: 50px;
+    aside.inbox-sidebar {
+        position: absolute;
+        z-index: 9999;
+        background-color: #f6f8fc;
+        top: 0;
+        transform: translateX(-100%);
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        overflow: hidden;
+        pointer-events: none;
     }
 
-    .inbox-sidebar-filter-btns button {
-        width: 95px;
-        font-size: 13px;
-        /* padding-top: 10px;
-        padding-bottom: 10px; */
+    aside.inbox-sidebar.active {
+        transform: translateX(0);
+        opacity: 1;
+        overflow: visible;
+        padding: 25px 20px 0 10px;
+        pointer-events: all;
     }
 
-    /* Inbox Sidebar User Box */
-    .inbox-sidebar-user {
-        padding: 5px 10px;
-        height: 80px;
-        border-radius: 15px;
+    aside.inbox-sidebar.active+.sidebar-toggle {
+        transform: translateX(280px)
     }
 
-    .inbox-sidebar-filter-btns div.filter-btn-active {
-        width: 90px;
-        height: 40px;
+    /* Sidebar Toggle Menu */
+    .sidebar-toggle {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 10;
     }
 
-    .inbox-sidebar-user-info p,
-    .inbox-sidebar-user-info span {
-        display: none;
+    .inbox-sidebar-users {
+        height: 310px;
+    }
+}
+
+@container (max-width: 576px) {
+
+    .contact-message,
+    .contact-user-chat {
+        display: none !important; 
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .contact-message,
+    .contact-user-chat {
+        display: none !important; 
     }
 }

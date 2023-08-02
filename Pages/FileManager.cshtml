@@ -1,7 +1,7 @@
 ﻿@page
 @model FileManagerModel
 @{
-    ViewData["Title"] = "Home page";
+  ViewData["Title"] = "Home page";
 }
 
 
@@ -250,7 +250,7 @@
           <img
             src="../assets/icons/chevron-right1.svg"
             alt="right"
-          />
+          /
           <a href="#">Files</a>
         </li>
       </ul>
@@ -265,32 +265,40 @@
       <!-- ? Input Box -->
       <div class="folder-input-box">
         <div>
-          <div>
-            <button class="btn-date-interval">
-              <div>
-                <img
-                  src="../assets/icons/calendar-icon.svg"
-                  alt="Calendar"
-                />
-                <span>01.12.18 / 07.12.18</span>
-              </div>
+          <div class="dshb-dropdown-menu btn-date-interval">
+            <img
+              src="../assets/icons/calendar-icon.svg"
+              alt="Calendar"
+            />
+            <div class="menu-select">
+              <span>01.12.18 / 07.12.18</span>
               <img
                 src="../assets/icons/chevron-right.svg"
                 alt="bottom icon"
               />
-            </button>
-            <ul class="date-interval-list">
+            </div>
+            <div class="menu-options">
               <li>01.12.18 / 07.12.18</li>
               <li>01.12.18 / 07.12.18</li>
+              <li>01.12.18 / 07.12.18</li>
+              <li>01.12.18 / 07.12.18</li>
+            </div>
+          </div>
+          <div class="folder-type-button dshb-dropdown-menu">
+            <div class="menu-select">
+              <span>All Type</span>
+              <img
+                src="../assets/icons/chevron-right.svg"
+                alt="bottom icon"
+              />
+            </div>
+            <ul class="menu-options">
+              <li>All Type</li>
+              <li>All Type</li>
+              <li>All Type</li>
+              <li>All Type</li>
             </ul>
           </div>
-          <button class="folder-type-button">
-            <span>All Type</span>
-            <img
-              src="../assets/icons/chevron-right.svg"
-              alt="bottom icon"
-            />
-          </button>
         </div>
         <div>
           <input
@@ -782,7 +790,7 @@
                 <span class="folder-date">03.10.2023</span>
               </div>
             </div>
-          </div>
+          </div
           <!-- TODO File Box -->
           <div class="file-content box-content file-list">
             <div class="file-box">

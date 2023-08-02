@@ -17,9 +17,15 @@ function rightClick() {
 }
 
 
+// Toggle Sidebar:
+let toggleMenu = document.querySelector('.sidebar-toggle');
+let inboxSidebar = document.querySelector('.inbox-sidebar')
+toggleMenu.addEventListener('click', () => {
+    inboxSidebar.classList.toggle('active')
+})
+
 //! User add or remove active class:
 const users = document.querySelectorAll('.inbox-sidebar-user');
-
 users.forEach(user => {
     user.addEventListener('click', () => {
         users.forEach(user => user.classList.remove('user-active'))
