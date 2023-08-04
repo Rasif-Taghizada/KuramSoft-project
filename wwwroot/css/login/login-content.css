@@ -109,9 +109,7 @@ section {
     align-items: center;
     height: 100vh;
 }
-.rules-container .contact{
-    bottom: -50px;
-}
+
 /*? Container Left Section  */
 .rules-container-left {
     width: 50%;
@@ -150,10 +148,13 @@ section {
     max-width: 70%;
     margin: 0 auto;
 }
-.rules-content>p{
+
+.rules-content>p {
     margin-bottom: 30px;
 }
-.rules-content>h3,.rules-content>p {
+
+.rules-content>h3,
+.rules-content>p {
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -189,4 +190,58 @@ section {
     border-radius: 100px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #2CD8FB;
+}
+
+@media screen and (max-width: 992px){
+    .contact{
+        flex-wrap: wrap;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    header{
+        padding: 10px;
+    }
+    header p {
+        font-size: 12px;
+    }
+
+    .contact>p {
+        font-size: 12px;
+    }
+
+    .rules-container.rules .container-right-bottom .contact{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .rules-container.rules .container-right-bottom{
+        flex-wrap: wrap;
+    }
+
+
+    /* Login Content Rules */
+    .rules-container{
+        flex-direction: column;
+    }
+
+    .rules-container-left{
+        width: 100%;
+    }
+    .rules-container-right{
+        width: 100%;
+        height: auto;
+    }
+
+    /* Login Content Page */
+    .left-section{
+        display: none;
+    }
+    .right-section{
+        width: 100%;
+        height: calc(100vh - 83px);
+    }
+    .contact{
+        bottom: -20px
+    }
 }

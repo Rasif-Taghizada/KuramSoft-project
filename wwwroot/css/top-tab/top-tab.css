@@ -721,6 +721,8 @@ textarea {
     z-index: 999;
     background-color: white;
     width: max-content;
+    width: 100%;
+    height: 150px;
     display: none;
 }
 
@@ -729,7 +731,7 @@ textarea {
 }
 
 .multiple-select-list>li {
-    padding: 15px;
+    padding: 5px 10px;
     border: 1px solid #e6e6e6;
     cursor: pointer;
     min-width: 130px;
@@ -793,6 +795,7 @@ textarea {
 
 .multiple-sort-box {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     overflow-x: hidden;
     max-width: 80% !important;

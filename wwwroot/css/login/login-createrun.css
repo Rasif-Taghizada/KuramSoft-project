@@ -163,3 +163,61 @@ main.login-left-section-main {
         transform: rotate(360deg);
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .login-right-section {
+        display: none;
+    }
+
+    .login-left-section {
+        width: 100%;
+    }
+
+    main.login-left-section-main h1 {
+        font-size: 25px;
+    }
+
+    main.login-left-section-main p {
+        font-size: 14px !important;
+    }
+
+    .login-error-xmark,
+    .login-success-checked {
+        width: 80px;
+        height: 80px;
+        border-radius: 30px;
+    }
+
+    .login-error-xmark img,
+    .login-success-checked img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .login-success>h2 {
+        font-size: 28px;
+    }
+
+    .form-actions>input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+    }
+
+    .form-group>input {
+        height: 40px;
+    }
+
+    .form-group>img {
+        width: 20px;
+        height: 20px;
+        top: 10px;
+    }
+
+    .btn-login {
+        padding: 15px 130px;
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
