@@ -1,0 +1,232 @@
+.setting-container {
+    container-type: inline-size;
+    padding-top: 20px;
+}
+
+.setting-container header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.setting-container header>h1 {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.setting-container header>h1>img {
+    margin-right: 10px;
+}
+
+.header-left{
+    margin-top: 25px;
+}
+
+.header-left>p {
+    color: #545454;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.14px;
+}
+
+.setting-container header input {
+    border: 1px solid #9aeeff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    padding-left: 40px;
+    width: 100%;
+    transition: all ease-in-out 0.3s;
+    width: 450px;
+}
+
+.setting-container header input:is(:focus, :hover) {
+    outline: none;
+    border: 1px solid #69e6ff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.setting-container header input::placeholder {
+    color: #9D9D9D;
+    font-family: Plus Jakarta Sans;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+
+.forms-search-box {
+    position: relative;
+    margin-top: 10px;
+}
+
+.forms-search-box>img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 18px;
+    opacity: 0.3;
+}
+
+
+.setting-container main {
+    display: flex;
+}
+
+/* ! SETTING NAV */
+
+.setting-nav {
+    min-width: 230px;
+    border-radius: 20px 0px 0px 20px;
+    background: #F5F5F5;
+}
+
+.setting-nav li {
+    border-bottom: 1px solid #DBDBDB;
+    transition: all ease-in-out 0.3s;
+}
+
+.setting-nav li:hover {
+    background: #FCFEFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.setting-nav li>a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    transition: all ease-in-out 0.3s;
+    color: #545454;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.14px;
+}
+
+.setting-nav>ul>li.list-active {
+    transition: all ease-in-out 0.3s;
+    background: #FCFEFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.setting-nav li>a>img:last-child {
+    transition: all ease-in-out 0.3s;
+    width: 24px;
+    transform: rotate(-90deg);
+    opacity: 0.5;
+}
+
+.setting-nav li.list-active>a {
+    color: #040404;
+}
+
+.setting-nav li.list-active>a>img:last-child {
+    transition: all ease-in-out 0.3s;
+    opacity: 1;
+}
+
+.setting-nav li:last-child {
+    border-bottom: 0;
+}
+
+/* ! SETTING CONTENT NAV */
+.setting-content-nav {
+    display: flex;
+    align-items: center;
+}
+
+.setting-content-nav>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.setting-content-nav>ul>li {
+    width: 180px;
+    text-align: center;
+    padding: 10px 0px;
+    background: #c0f5ff;
+    border: 1px solid #69e6ff;
+    margin-right: 4px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.setting-content-nav>ul>li>a {
+    color: #5e5e5e;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    font-weight: 500;
+}
+
+.setting-content-nav>ul>li.list-active,
+.setting-content-nav>ul>li:hover {
+    background: #D8F0F4;
+    color: #fff;
+    border-color: transparent;
+
+}
+
+.setting-content-nav>ul>li.list-active>a,
+.setting-content-nav>ul>li:hover>a {
+    color: black;
+    font-weight: 700;
+}
+
+
+.setting-content-nav li>a>img {
+    display: none !important;
+}
+
+.setting-content-nav li>a {
+    padding: 0;
+    justify-content: center;
+}
+
+/* ! Buttons */
+.header-right>button {
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+    letter-spacing: 0.1px;
+    font-size: 14px;
+    transition: all ease-in-out 0.3s;
+}
+
+
+.header-right>button:first-child {
+    background: #F2F2F2;
+    font-weight: 500;
+    padding: 10px 30px;
+}
+
+.header-right>button:first-child:hover {
+    background: #ffffff;
+}
+
+.header-right>button:nth-child(2),
+.header-right>button:nth-child(3) {
+    background: #FFF1CD;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+
+.header-right>button:nth-child(2):hover,
+.header-right>button:nth-child(3):hover {
+    background: #f2dba3;
+}
+
+.header-right>button:nth-child(3)>img {
+    width: 20px;
+    margin-bottom: -5px;
+    transform: rotate(90deg);
+    margin-left: 15px;
+}

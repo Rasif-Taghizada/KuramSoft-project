@@ -3,13 +3,13 @@ const lists = document.querySelector(".multiple-select-list");
 const listItems = document.querySelectorAll(".multiple-select-list>li");
 const multipleAdd = document.querySelector(".multiple-sort-box");
 const dropdown = document.querySelector(".dropdown-input")
-window.addEventListener("click", (event) => {
-  lists.classList.forEach((item) => {
-    if (item === "multiple-select-list-active" && event.target !== input) {
-      lists.classList.remove("multiple-select-list-active");
-    }
-  });
-});
+// window.addEventListener("click", (event) => {
+//   lists.classList.forEach((item) => {
+//     if (item.className === "dropdown-input active" && event.target !== dropdown) {
+//       dropdown.classList.remove("active");
+//     }
+//   });
+// });
 
 input.addEventListener("click", () => {
   lists.classList.toggle("multiple-select-list-active");
@@ -34,12 +34,15 @@ listItems.forEach((item) => {
     div.classList.add("multiple-sort-item");
     multipleAdd.appendChild(div);
     input.value = "";
-    lists.classList.remove("multiple-select-list-active");
+    dropdown.classList.remove("active");
   });
 })
 
 
 multipleAdd.addEventListener("click", (e) => {
+  dropdown.classList.toggle("active");
+  dropdown.style.top = `${multipleAdd.offsetHeight + 20}px`;
+
   let target = e.target.className;
   if (target === "delete-icon") {
     e.target.parentElement.remove();

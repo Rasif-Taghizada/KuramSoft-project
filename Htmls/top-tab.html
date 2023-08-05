@@ -63,11 +63,85 @@
         <!-- ! Top Nav -->
         <nav class="top-nav">
           <ul>
-            <li class="list-active"><a href="#">Generals</a></li>
-            <li><a href="#">Details</a></li>
-            <li><a href="#">Options</a></li>
+            <li class="list-active" onclick="toogleActive()">
+              <a href="#">
+                <img
+                  src="../wwwroot/assets/icons/toggle-square-off.svg"
+                  alt="active"
+                  class="active-img"
+                />
+                <img
+                  src="../wwwroot/assets/icons/toggle-square.svg"
+                  alt="disabled"
+                  class="disabled-img"
+                />
+                Generals
+                <img
+                  src="../wwwroot/assets/icons/chevron-down.svg"
+                  alt="right"
+                />
+              </a>
+            </li>
+            <li onclick="toogleActive()">
+              <a href="#">
+                <img
+                  src="../wwwroot/assets/icons/toggle-square-off.svg"
+                  alt="active"
+                  class="active-img"
+                />
+                <img
+                  src="../wwwroot/assets/icons/toggle-square.svg"
+                  alt="disabled"
+                  class="disabled-img"
+                />
+                Options
+                <img
+                  src="../wwwroot/assets/icons/chevron-down.svg"
+                  alt="right"
+                />
+              </a>
+            </li>
+            <li onclick="toogleActive()">
+              <a href="#">
+                <img
+                  src="../wwwroot/assets/icons/toggle-square-off.svg"
+                  alt="active"
+                  class="active-img"
+                />
+                <img
+                  src="../wwwroot/assets/icons/toggle-square.svg"
+                  alt="disabled"
+                  class="disabled-img"
+                />
+                Details
+                <img
+                  src="../wwwroot/assets/icons/chevron-down.svg"
+                  alt="right"
+                />
+              </a>
+            </li>
+            <li onclick="toogleActive()">
+              <a href="#">
+                <img
+                  src="../wwwroot/assets/icons/toggle-square-off.svg"
+                  alt="active"
+                  class="active-img"
+                />
+                <img
+                  src="../wwwroot/assets/icons/toggle-square.svg"
+                  alt="disabled"
+                  class="disabled-img"
+                />
+                Options 2
+                <img
+                  src="../wwwroot/assets/icons/chevron-down.svg"
+                  alt="right"
+                />
+              </a>
+            </li>
           </ul>
         </nav>
+        <div>
         <!-- ! Notification Box -->
         <div class="notification-box">
           <div class="notification-box-header dropdown-box dropdown-box-active">
@@ -576,9 +650,15 @@
                   </div>
                 </div>
                 <div class="dropdown-input">
-                  <input type="text" id="multiple-select" />
+                  <input
+                    type="text"
+                    id="multiple-select"
+                    placeholder="Filter..."
+                  />
                   <ul class="multiple-select-list">
                     <li>Query</li>
+                    <li>KuramSoft</li>
+                    <li>CreativeRun</li>
                     <li>Query</li>
                     <li>Query</li>
                     <li>Query</li>
@@ -725,5 +805,18 @@
     <script src="../wwwroot/js/dropdown.js"></script>
     <script src="../wwwroot/js/multiple-select.js"></script>
     <script src="../wwwroot/js/pop-up.js"></script>
+    <script>
+      function toogleActive() {
+        const li = document.querySelectorAll(".top-nav ul>li");
+        li.forEach((item) => {
+          item.addEventListener("click", () => {
+            li.forEach((item) => {
+              item.classList.remove("list-active");
+            });
+            item.classList.add("list-active");
+          });
+        });
+      }
+    </script>
   </body>
 </html>

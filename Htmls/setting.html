@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../wwwroot/css/main.css" />
+    <link rel="stylesheet" href="../wwwroot/css/form.css" />
+    <link rel="stylesheet" href="../wwwroot/css/colors.css" />
+    <link rel="stylesheet" href="../wwwroot/css/setting/setting.css" />
+  </head>
+  <body>
+    <div class="setting-container">
+      <header>
+        <div class="header-left">
+          <h1>
+            <img src="../wwwroot/assets/icons/ericsson.svg" alt="forms" />
+            SETTING
+          </h1>
+          <p>Manage your account settings and prefences.</p>
+        </div>
+        <div class="header-right">
+          <button>Kaydet</button>
+          <button>Kaydet</button>
+          <button>
+            Kaydet
+            <img src="../wwwroot/assets/icons/calendar-next.svg" alt="next" />
+          </button>
+          <div class="forms-search-box">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Arıyorum"
+            />
+            <img src="../wwwroot/assets/icons/search.svg" alt="search" />
+          </div>
+        </div>
+      </header>
+      <main>
+        <nav class="setting-nav">
+          <ul>
+            <li class="list-active" onclick="toogleActive()">
+              <a href="#">
+                <img
+                  src="../wwwroot/assets/icons/extension-remove.svg"
+                  alt="active"
+                  class="active-img"
+                />
+                My Details
+                <img
+                  src="../wwwroot/assets/icons/chevron-down.svg"
+                  alt="right"
+                />
+              </a>
+            </li>
+            <li onclick="toogleActive()">
+              <a href="#">
+                <img
+                  src="../wwwroot/assets/icons/extension-remove.svg"
+                  alt="active"
+                  class="active-img"
+                />
+                Profile
+                <img
+                  src="../wwwroot/assets/icons/chevron-down.svg"
+                  alt="right"
+                />
+              </a>
+            </li>
+            <li onclick="toogleActive()">
+              <a href="#">
+                <img
+                  src="../wwwroot/assets/icons/extension-remove.svg "
+                  alt="active"
+                  class="active-img"
+                />
+                Password
+                <img
+                  src="../wwwroot/assets/icons/chevron-down.svg"
+                  alt="right"
+                />
+              </a>
+            </li>
+            <li onclick="toogleActive()">
+              <a href="#">
+                <img
+                  src="../wwwroot/assets/icons/extension-remove.svg"
+                  alt="active"
+                  class="active-img"
+                />
+                Team
+                <img
+                  src="../wwwroot/assets/icons/chevron-down.svg"
+                  alt="right"
+                />
+              </a>
+            </li>
+            <li onclick="toogleActive()">
+              <a href="#">
+                <img
+                  src="../wwwroot/assets/icons/extension-remove.svg"
+                  alt="active"
+                  class="active-img"
+                />
+                Plan
+                <img
+                  src="../wwwroot/assets/icons/chevron-down.svg"
+                  alt="right"
+                />
+              </a>
+            </li>
+            <li onclick="toogleActive()">
+              <a href="#">
+                <img
+                  src="../wwwroot/assets/icons/extension-remove.svg"
+                  alt="active"
+                  class="active-img"
+                />
+                Billing
+                <img
+                  src="../wwwroot/assets/icons/chevron-down.svg"
+                  alt="right"
+                />
+              </a>
+            </li>
+            <li onclick="toogleActive()">
+              <a href="#">
+                <img
+                  src="../wwwroot/assets/icons/extension-remove.svg"
+                  alt="active"
+                  class="active-img"
+                />
+                Email
+                <img
+                  src="../wwwroot/assets/icons/chevron-down.svg"
+                  alt="right"
+                />
+              </a>
+            </li>
+            <li onclick="toogleActive()">
+              <a href="#">
+                <img
+                  src="../wwwroot/assets/icons/extension-remove.svg"
+                  alt="active"
+                  class="active-img"
+                />
+                Notifications
+                <img
+                  src="../wwwroot/assets/icons/chevron-down.svg"
+                  alt="right"
+                />
+              </a>
+            </li>
+            <li onclick="toogleActive()">
+              <a href="#">
+                <img
+                  src="../wwwroot/assets/icons/extension-remove.svg"
+                  alt="active"
+                  class="active-img"
+                />
+                Integration
+                <img
+                  src="../wwwroot/assets/icons/chevron-down.svg"
+                  alt="right"
+                />
+              </a>
+            </li>
+            <li onclick="toogleActive()">
+              <a href="#">
+                <img
+                  src="../wwwroot/assets/icons/extension-remove.svg"
+                  alt="active"
+                  class="active-img"
+                />
+                API
+                <img
+                  src="../wwwroot/assets/icons/chevron-down.svg"
+                  alt="right"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="setting-content">
+          <nav class="setting-content-nav">
+            <ul>
+              <li onclick="toogleActive()">
+                <a href="#">Apps</a>
+              </li>
+              <li onclick="toogleActive()">
+                <a href="#">Profile</a>
+              </li>
+              <li onclick="toogleActive()">
+                <a href="#">Log</a>
+              </li>
+              <li onclick="toogleActive()">
+                <a href="#">Auth</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      function toogleActive() {
+        const li = document.querySelectorAll(".setting-content-nav ul>li");
+        const li2 = document.querySelectorAll(".setting-nav ul>li");
+        li.forEach((item) => {
+          item.addEventListener("click", () => {
+            li.forEach((item) => {
+              item.classList.remove("list-active");
+            });
+            item.classList.add("list-active");
+          });
+        });
+        li2.forEach((item) => {
+          item.addEventListener("click", () => {
+            li2.forEach((item) => {
+              item.classList.remove("list-active");
+            });
+            item.classList.add("list-active");
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
