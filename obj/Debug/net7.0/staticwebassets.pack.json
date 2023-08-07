@@ -329,6 +329,10 @@
       "PackagePath": "staticwebassets\\assets\\icons\\arrow-back-black.svg"
     },
     {
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\arrow-right-black.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\arrow-right-black.svg"
+    },
+    {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\arrow-right.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\arrow-right.svg"
     },
@@ -343,6 +347,10 @@
     {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\blue-search.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\blue-search.svg"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\briefcase.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\briefcase.svg"
     },
     {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\calendar-due.svg",
@@ -391,6 +399,10 @@
     {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\chevron-left-r.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\chevron-left-r.svg"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\chevron-right-blue.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\chevron-right-blue.svg"
     },
     {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\chevron-right-gray.svg",
@@ -501,6 +513,10 @@
       "PackagePath": "staticwebassets\\assets\\icons\\export-btn.svg"
     },
     {
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\extension-remove.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\extension-remove.svg"
+    },
+    {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\eye-slash.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\eye-slash.svg"
     },
@@ -527,6 +543,10 @@
     {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\form-laptop.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\form-laptop.svg"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\framer.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\framer.svg"
     },
     {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\frozen.svg",
@@ -761,6 +781,10 @@
       "PackagePath": "staticwebassets\\assets\\icons\\sidebar-user-image.svg"
     },
     {
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\slack.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\slack.svg"
+    },
+    {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\smile-no-mouth.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\smile-no-mouth.svg"
     },
@@ -791,6 +815,14 @@
     {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\today.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\today.svg"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\toggle-square-off.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\toggle-square-off.svg"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\toggle-square.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\toggle-square.svg"
     },
     {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\tool-box.svg",
@@ -897,12 +929,8 @@
       "PackagePath": "staticwebassets\\css\\form.css"
     },
     {
-      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\css\\form\\details-form.css",
-      "PackagePath": "staticwebassets\\css\\form\\details-form.css"
-    },
-    {
-      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\css\\form\\payment-form.css",
-      "PackagePath": "staticwebassets\\css\\form\\payment-form.css"
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\css\\forms\\forms.css",
+      "PackagePath": "staticwebassets\\css\\forms\\forms.css"
     },
     {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\css\\help\\help.css",
@@ -933,8 +961,16 @@
       "PackagePath": "staticwebassets\\css\\main.css"
     },
     {
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\css\\payment\\payment-form.css",
+      "PackagePath": "staticwebassets\\css\\payment\\payment-form.css"
+    },
+    {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\css\\portal\\kuramportal.css",
       "PackagePath": "staticwebassets\\css\\portal\\kuramportal.css"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\css\\setting\\setting.css",
+      "PackagePath": "staticwebassets\\css\\setting\\setting.css"
     },
     {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\css\\top-tab\\tab-notification.css",
@@ -983,6 +1019,10 @@
     {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\js\\multiple-select.js",
       "PackagePath": "staticwebassets\\js\\multiple-select.js"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\js\\navbarSlideShow.js",
+      "PackagePath": "staticwebassets\\js\\navbarSlideShow.js"
     },
     {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\js\\pop-up.js",

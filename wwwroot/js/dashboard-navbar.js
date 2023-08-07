@@ -30,9 +30,6 @@ function nestedListAddIndex(allNestedItems) {
     })
 }
 
-
-
-
 //* Tab Boxs Container 
 const tabs = document.querySelectorAll(".system-container-tab-boxs > li");
 const allContent = document.querySelectorAll(".system-container-content-boxs > ul");
@@ -46,3 +43,38 @@ tabs.forEach((tab, index) => {
         allContent[index].classList.add("tab-content-active");
     })
 })
+
+// Navbar list hover effect
+let listContainer = document.querySelector(".dashboard-dropdown-lists");
+let listItems = document.querySelectorAll(".dropdown-list-item");
+listItems.forEach((item, index) => {
+    item.addEventListener("mouseover", (e) => {
+        let hiddenList = item?.querySelector(".dropdown-hidden-lists");
+        if (hiddenList) {
+            hiddenList.style.left = `${item.offsetLeft}px`;
+        }
+        else {
+            return false;
+        }
+    })
+})
+
+// Navbar slider
+const arrowIcons = document.querySelectorAll(".navbar-icon > img")
+const navbar = document.querySelector(".dashboard-dropdown-lists"),
+    { scrollWidth, clientWidth } = navbar;
+
+arrowIcons.forEach((icon) => {
+    icon.addEventListener("click", () => {
+        navbar.scrollLeft += icon.classList.contains("dashboard-nav-right") ? 100 : -100;
+    })
+})
+
+navbar.addEventListener("scroll", (e) => {
+    updateIcons(e.target.scrollLeft)
+});
+
+function updateIcons(scrolledLeft) {
+    arrowIcons[0].parentElement.classList.toggle("hide", scrolledLeft <= 1);
+    arrowIcons[1].parentElement.classList.toggle("hide", scrollWidth - (clientWidth + scrolledLeft) <= 1);
+}

@@ -8,6 +8,10 @@ header.dashboard-navbar {
     background: linear-gradient(180deg, #F6F8FC 0%, #EDF1F8 100%);
 }
 
+header .search-content img {
+    transform: rotate(90deg);
+    width: 16px;
+}
 
 /*=============Dashboard Navbar Logo Content================  */
 .dashboard-navbar-logo {
@@ -20,22 +24,78 @@ header.dashboard-navbar {
 /*! ========== Dashboard Navbar Lists Container ============== */
 .dashboard-navbar-lists {
     background: #D6EDFE;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 68px;
 }
+
+.navbar-icon {
+    position: absolute;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.navbar-icon.hide {
+    display: none;
+}
+
+.navbar-icon:first-child {
+    left: 0;
+    background: linear-gradient(to left, #D6EDFE 100%, transparent);
+}
+
+.navbar-icon:last-child {
+    right: 13%;
+    justify-content: flex-end;
+    background: linear-gradient(to right, #D6EDFE 100%, transparent);
+}
+
+.navbar-icon>img {
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 13px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-icon>img:hover {
+    background-color: #B0DEFF;
+}
+
+.dashboard-navbar-lists .dashboard-nav-left {
+    transform: rotate(180deg);
+}
+
 
 /** Dropdown Lists Container ==> ul  */
 .dashboard-dropdown-lists {
     display: flex;
-    box-shadow: 0px 4px 40px rgba(141, 199, 241, 0.49);
-    padding: 0 40px;
+    width: 87%;
+    box-shadow: 0px 0px 40px rgba(141, 199, 241, 0.49);
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.dashboard-dropdown-lists::-webkit-scrollbar {
+    display: none;
 }
 
 /** Dropdown List Item ==> li  */
 .dashboard-dropdown-lists .dropdown-list-item {
-    padding: 20px 10px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-    position: relative;
+    padding: 20px;
     width: max-content;
 }
 
@@ -48,26 +108,21 @@ header.dashboard-navbar {
 .dropdown-list-item .list-content {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 5px;
     height: 28px;
-    min-width: 106px;
+    white-space: nowrap;
 }
 
 /** List Content into icon  */
-.list-content span.icon-chevron-down {
+.list-content>img {
     transform: rotate(-90deg);
     transition: all 0.4s ease-in-out;
     font-size: 16px;
 }
 
-.dropdown-list-item:hover .list-content span.icon-chevron-down {
+.dropdown-list-item:hover .list-content>img {
     transform: rotate(0);
-}
-
-/** List Item into text  */
-.list-content span.list-item-text {
-    /* display: inline-block;
-    overflow: hidden; */
-    /* min-width: 90px; */
 }
 
 /*! Dropdown hidden lists  */
@@ -83,7 +138,7 @@ header.dashboard-navbar {
     width: 252px;
     position: absolute;
     pointer-events: none;
-    z-index: 2;
+    z-index: 200;
     visibility: hidden;
     opacity: 0;
     background: linear-gradient(180deg, #B1DFFF 0%, rgba(158, 215, 255, 0.86) 100%);
@@ -105,11 +160,11 @@ header.dashboard-navbar {
     justify-content: space-between;
 }
 
-.hidden-list-item div span.icon-plus {
+.hidden-list-item div img.icon-plus {
     transition: all 0.4s ease-in-out;
 }
 
-.hidden-list-item.hidden-list-active div span.icon-plus {
+.hidden-list-item.hidden-list-active div img.icon-plus {
     transform: rotate(135deg);
 }
 
@@ -155,33 +210,102 @@ header.dashboard-navbar {
     pointer-events: initial;
 }
 
-/*! Dashboard Header Menu Bottom Container  */
-.menu-bottom-container {
+/* ===================Navbar Search Content=====================*/
+.navbar-search {
+    width: 13%;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 0 15px;
+    box-shadow: 0px 0px 40px rgba(141, 199, 241, 0.49);
+    height: 100%;
+}
+
+.navbar-search img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.5;
+}
+
+.navbar-search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #8C8C8C;
+    font-weight: 600;
+    line-height: 24px;
+    width: 100%;
+}
+
+/*! Dashboard Header InfoBox Container  */
+.info-box {
     width: 80%;
-    margin: 0 auto;
-    min-height: 38px;
-    padding: 5px 30px;
-    background: #F9FEFF;
+    background: #f9feff;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
     border-radius: 0px 0px 15px 15px;
-    margin-bottom: 45px;
+    border-top: 3px solid #c3f5ff;
+    padding: 7px 30px;
+    margin: 0 auto 30px auto;
 }
 
-.menu-bottom-container .menu-select div {
+.info-box-header {
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    cursor: pointer;
 }
 
-.menu-bottom-container .menu-select div p {
-    color: #5E5E5E;
+.info-box-header>div {
+    display: flex;
+    align-items: center;
+}
+
+.info-box-header>div>img {
+    margin-right: 10px;
+}
+
+.info-box-header>div>span {
     font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #5e5e5e;
 }
 
-.menu-select div span.header-menu-circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 1px solid #000000;
+.info-box-header>img {
+    transform: rotate(180deg);
+    transition: all ease-in-out 0.5s;
+}
+
+.info-box-body {
+    background: #f9feff;
+    border-top: 1px solid #e2e2e2;
+    padding: 20px 70px;
+    margin: 0px -30px;
+    display: none;
+}
+
+.dropdown-box-active~.info-box-body {
+    animation: dropDownBox 0.5s ease-in-out;
+    display: block;
+}
+
+@keyframes dropDownBox {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.info-box-content {
+    margin-top: 50px;
 }
 
 /*!================ App System Container ========================  */
@@ -198,6 +322,7 @@ header.dashboard-navbar {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px 10px 0px 0px;
     height: 77px;
+    overflow: hidden;
 }
 
 /*! Tabs into all boxs  */
@@ -219,6 +344,7 @@ header.dashboard-navbar {
     justify-content: center;
     border-right: 1px solid #DFDFDF;
     transition: all 0.2s ease-in-out;
+    white-space: nowrap;
 }
 
 .tab-box-list:hover {
@@ -254,11 +380,12 @@ header.dashboard-navbar {
 }
 
 @keyframes moving {
-    from{
+    from {
         transform: translateY(50px);
         opacity: 0;
     }
-    to{
+
+    to {
         transform: translateY(0px);
         opacity: 1;
     }
@@ -280,4 +407,98 @@ header.dashboard-navbar {
     font-weight: 500;
     color: #1A1A1A;
     text-shadow: 0px 4px 40px rgba(0, 0, 0, 0.13);
+}
+
+@media screen and (max-width: 992px) {
+    .app-system-container {
+        width: 90%;
+    }
+
+    .dashboard-dropdown-lists {
+        width: 80%;
+    }
+
+    .navbar-search {
+        width: 20%;
+    }
+
+    .navbar-icon:last-child {
+        right: 20%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header.dashboard-navbar {
+        padding: 0 10px;
+    }
+
+    .dashboard-navbar-logo {
+        gap: 15px;
+    }
+
+    .dashboard-dropdown-lists .dropdown-list-item {
+        padding: 10px 25px;
+    }
+
+    .dropdown-hidden-lists {
+        top: 48px
+    }
+
+    .dashboard-navbar-lists {
+        height: 48px;
+    }
+
+    .navbar-icon>img {
+        height: 2rem;
+        width: 2rem;
+        padding: 7px;
+    }
+
+    .dashboard-dropdown-lists {
+        width: 70%;
+    }
+
+    .navbar-search {
+        width: 30%;
+    }
+
+    .navbar-icon:last-child {
+        right: 30%;
+    }
+
+    .app-system-container,
+    .info-box,
+    .system-container-tab-boxs,
+    .system-container-content-boxs {
+        width: 100%;
+    }
+
+    .system-container-tabs {
+        height: 60px;
+    }
+
+    .tab-box-list a,
+    .content-lists li a {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .content-lists li {
+        padding: 16px 20px !important;
+    }
+
+    .dashboard-dropdown-lists {
+        width: 60%;
+    }
+
+    .navbar-search {
+        width: 40%;
+    }
+
+    .navbar-icon:last-child {
+        right: 40%;
+    }
 }

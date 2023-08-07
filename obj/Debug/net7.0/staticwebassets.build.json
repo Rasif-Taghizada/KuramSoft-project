@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jTVu6I36aAPIG+TpWyWjknpf/Fppp7X2FE+OfUV+FBk=",
+  "Hash": "Hr5P2SfsmgTKvtigpuvhYLLd6+m3Ki/3KWoTNNWmFO0=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -1275,6 +1275,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\arrow-back-black.svg"
     },
     {
+      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\arrow-right-black.svg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "assets/icons/arrow-right-black.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons\\arrow-right-black.svg"
+    },
+    {
       "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\arrow-right.svg",
       "SourceId": "WebApp",
       "SourceType": "Discovered",
@@ -1341,6 +1358,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\icons\\blue-search.svg"
+    },
+    {
+      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\briefcase.svg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "assets/icons/briefcase.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons\\briefcase.svg"
     },
     {
       "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\calendar-due.svg",
@@ -1545,6 +1579,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\icons\\chevron-left-r.svg"
+    },
+    {
+      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\chevron-right-blue.svg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "assets/icons/chevron-right-blue.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons\\chevron-right-blue.svg"
     },
     {
       "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\chevron-right-gray.svg",
@@ -1989,6 +2040,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\export-btn.svg"
     },
     {
+      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\extension-remove.svg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "assets/icons/extension-remove.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons\\extension-remove.svg"
+    },
+    {
       "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\elips-vertical.svg",
       "SourceId": "WebApp",
       "SourceType": "Discovered",
@@ -2140,6 +2208,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\icons\\form-laptop.svg"
+    },
+    {
+      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\framer.svg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "assets/icons/framer.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons\\framer.svg"
     },
     {
       "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\frozen.svg",
@@ -3298,6 +3383,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\SquaresFour.svg"
     },
     {
+      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\slack.svg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "assets/icons/slack.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons\\slack.svg"
+    },
+    {
       "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\smile-no-mouth.svg",
       "SourceId": "WebApp",
       "SourceType": "Discovered",
@@ -3432,6 +3534,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\icons\\today.svg"
+    },
+    {
+      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\toggle-square-off.svg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "assets/icons/toggle-square-off.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons\\toggle-square-off.svg"
+    },
+    {
+      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\toggle-square.svg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "assets/icons/toggle-square.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons\\toggle-square.svg"
     },
     {
       "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\tool-box.svg",
@@ -3842,12 +3978,12 @@
       "OriginalItemSpec": "wwwroot\\css\\form.css"
     },
     {
-      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\css\\form\\details-form.css",
+      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\css\\forms\\forms.css",
       "SourceId": "WebApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\",
       "BasePath": "_content/WebApp",
-      "RelativePath": "css/form/details-form.css",
+      "RelativePath": "css/forms/forms.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3856,24 +3992,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\form\\details-form.css"
-    },
-    {
-      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\css\\form\\payment-form.css",
-      "SourceId": "WebApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\",
-      "BasePath": "_content/WebApp",
-      "RelativePath": "css/form/payment-form.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\form\\payment-form.css"
+      "OriginalItemSpec": "wwwroot\\css\\forms\\forms.css"
     },
     {
       "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\css\\help\\help.css",
@@ -3995,6 +4114,23 @@
       "OriginalItemSpec": "wwwroot\\css\\main.css"
     },
     {
+      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\css\\payment\\payment-form.css",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "css/payment/payment-form.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\payment\\payment-form.css"
+    },
+    {
       "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\css\\portal\\kuramportal.css",
       "SourceId": "WebApp",
       "SourceType": "Discovered",
@@ -4010,6 +4146,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\portal\\kuramportal.css"
+    },
+    {
+      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\css\\setting\\setting.css",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "css/setting/setting.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\setting\\setting.css"
     },
     {
       "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\css\\top-tab\\tab-notification.css",
@@ -4214,6 +4367,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\multiple-select.js"
+    },
+    {
+      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\js\\navbarSlideShow.js",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "js/navbarSlideShow.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\navbarSlideShow.js"
     },
     {
       "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\js\\pop-up.js",
