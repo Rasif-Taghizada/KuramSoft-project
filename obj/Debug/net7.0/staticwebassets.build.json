@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Hr5P2SfsmgTKvtigpuvhYLLd6+m3Ki/3KWoTNNWmFO0=",
+  "Hash": "jvjc48YaAiMHpOAcrWQV1/G2t+yMobfXGiFRu8XzMDM=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -1224,6 +1224,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\album.svg"
     },
     {
+      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\align-center.svg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "assets/icons/align-center.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons\\align-center.svg"
+    },
+    {
       "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\align-left.svg",
       "SourceId": "WebApp",
       "SourceType": "Discovered",
@@ -2072,6 +2089,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\icons\\elips-vertical.svg"
+    },
+    {
+      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\erase.svg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "assets/icons/erase.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons\\erase.svg"
     },
     {
       "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\ericsson.svg",
@@ -3211,6 +3245,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\icons\\send.svg"
+    },
+    {
+      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\shape-hexagon.svg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "assets/icons/shape-hexagon.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons\\shape-hexagon.svg"
     },
     {
       "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\share-icon.svg",

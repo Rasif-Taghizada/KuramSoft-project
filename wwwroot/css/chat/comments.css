@@ -4,10 +4,6 @@
     border: 1px solid #D6D6D6;
 }
 
-.comment-area {
-    height: 300px;
-}
-
 .comment-form textarea {
     height: 213px;
     width: 100%;
@@ -94,9 +90,15 @@
     gap: 20px;
 }
 
+.sent-option .menu-select:hover {
+    background-color: #E9E9E9;
+}
+
 .sent-option .menu-options {
     top: 60px;
     background-color: #F2F2F2;
+    width: 100%;
+    left: 0;
 }
 
 .sent-option .menu-options .menu-option-content {
@@ -104,6 +106,9 @@
     justify-content: center;
 }
 
+.menu-options .menu-option-content:hover {
+    background-color: #E9E9E9;
+}
 
 /*! Users Comments Area  */
 .user-comment {
@@ -196,7 +201,7 @@
     display: flex;
     align-items: center;
     gap: 13px;
-    width: 217px;
+    width: max-content;
     height: 45px;
     background: #E9E9E9;
     border-radius: 10px;
@@ -227,6 +232,7 @@
     height: 98px;
     background: url("../../assets/Images/comment-data-image.jpg") no-repeat center;
     border-radius: 20px 20px 0px 20px;
+    background-size: cover;
 }
 
 .user-comment-data-image p {
@@ -309,43 +315,206 @@
         height: 50px;
         width: 120px;
     }
-    .sent-option .menu-select{
+
+    .sent-option .menu-select {
         width: 150px;
         height: 50px;
         gap: 10px;
     }
-    .user-comment{
+
+    .user-comment {
         padding-left: 50px
     }
-    .users-reply-comments{
+
+    .users-reply-comments {
         padding: 20px 50px 20px 120px;
+    }
+
+    .sent-option .menu-options {
+        top: 50px;
+    }
+
+    .user-img img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .user-img .user-status {
+        top: 35px;
+        left: 35px;
     }
 }
 
 @media screen and (max-width: 768px) {
+
+    /**============= write comment area ===============**/
     .comments-container {
         margin: 50px auto 0 auto;
         width: 100%;
     }
-    .users-reply-comments{
+
+    .users-reply-comments {
         padding: 20px 30px 20px 100px;
+    }
+
+    .add-document img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .send-buttons .send-btn {
+        width: 110px;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    /**============= user's comment area ===============**/
+    .user-comment {
+        gap: 25px;
+    }
+
+    .user-comment-content {
+        gap: 5px;
+    }
+
+    .users-reply-comments .user-comment {
+        margin-bottom: 25px;
+    }
+
+    .user-comment-text {
+        font-size: 14px;
+    }
+
+    .users-reply-comments>img {
+        width: 25px;
+    }
+
+    .user-comment-header .user-comment-date p {
+        font-size: 12px;
+    }
+
+    .user-comment-header .user-comment-name p {
+        font-size: 16px;
+    }
+
+    .user-comment-options>div img {
+        width: 18px;
+    }
+
+    /**============= write comment area ===============**/
+    .more-comments img {
+        width: 25px;
+    }
+
+    .comment-docs {
+        gap: 10px;
+        padding: 5px 15px;
+    }
+
+    .document-about p {
+        font-size: 13px;
+    }
+
+    .document-about span {
+        font-size: 10px;
+    }
+
+    .users-reply-comments .other-comments {
+        font-size: 14px;
+    }
+
+    .users-reply-comments .other-comments img {
+        width: 22px;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .comment-send > div {
-        gap: 15px !important;
+    .comment-form textarea {
+        padding: 15px;
+        height: 150px;
+        font-size: 14px;
+        font-weight: 600;
     }
-    .user-comment-options{
-        gap: 7px;
+
+    /**============= write comment area ===============**/
+    .comment-send {
+        height: 70px;
     }
-    .user-comment{
-        padding: 10px;
+
+    .add-document img {
+        width: 25px !important;
+        height: 25px !important;
     }
-    .user-comment-options div p{
+
+    .sent-option .menu-select {
+        width: 120px;
+        height: 40px;
+        gap: 5px;
+    }
+
+    .sent-option .menu-options {
+        top: 40px;
+    }
+
+    .sent-option .menu-options .menu-option-content {
+        padding: 12px 20px;
+    }
+
+    /**============= dropdown menu styles ===============**/
+    .dshb-dropdown-menu>.menu-select>img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .dshb-dropdown-menu p {
         font-size: 12px;
     }
-    .users-reply-comments{
-        
+
+    .comment-send>div {
+        gap: 15px !important;
+    }
+
+    .user-comment-options {
+        gap: 7px;
+    }
+
+    .user-comment {
+        padding: 10px;
+    }
+
+    .user-comment-options div p {
+        font-size: 12px;
+    }
+
+    .send-buttons .send-btn {
+        height: 40px;
+        width: 100px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    /**============= user's comment area ===============**/
+    .user-comment-text {
+        font-size: 12px;
+    }
+
+    .users-reply-comments {
+        padding: 15px 20px 15px 70px;
+    }
+
+    .user-comment-data-image div {
+        width: 250px;
+        height: 70px;
+    }
+
+    .user-comment .icon-chevron-down {
+        right: 10px;
+        top: 5px;
+    }
+
+    .user-comment .icon-chevron-down img {
+        width: 15px;
     }
 }

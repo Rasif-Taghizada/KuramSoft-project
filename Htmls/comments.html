@@ -1,358 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comment Chat</title>
     <!-- Pure CSS -->
-    <link rel="stylesheet" href="../wwwroot/css/main.css">
-    <link rel="stylesheet" href="../wwwroot/css/form.css">
-    <link rel="stylesheet" href="../wwwroot/css/colors.css">
-    <link rel="stylesheet" href="../wwwroot/css/dashboard.css">
-    <link rel="stylesheet" href="../wwwroot/css/chat/comments.css">
-</head>
+    <link rel="stylesheet" href="../wwwroot/css/main.css" />
+    <link rel="stylesheet" href="../wwwroot/css/form.css" />
+    <link rel="stylesheet" href="../wwwroot/css/colors.css" />
+    <link rel="stylesheet" href="../wwwroot/css/dashboard.css" />
+    <link rel="stylesheet" href="../wwwroot/css/chat/comments.css" />
+  </head>
 
-<body>
+  <body>
     <div class="comments-container">
-        <div class="comment-area">
-            <form action="" class="comment-form">
-                <textarea name="comment" id="comment" cols="100" rows="10" placeholder="Write a comment..."></textarea>
-            </form>
-            <div class="comment-send">
-                <div class="add-document">
-                    <img src="../wwwroot/assets/icons/document.svg" alt="document">
-                    <img src="../wwwroot/assets/icons/camera.svg" alt="camera">
+      <div class="comment-area">
+        <form action="" class="comment-form">
+          <textarea
+            name="comment"
+            id="comment"
+            cols="100"
+            rows="10"
+            placeholder="Write a comment..."
+          ></textarea>
+        </form>
+        <div class="comment-send">
+          <div class="add-document">
+            <img src="../wwwroot/assets/icons/document.svg" alt="document" />
+            <img src="../wwwroot/assets/icons/camera.svg" alt="camera" />
+          </div>
+          <div class="send-buttons">
+            <div class="dshb-dropdown-menu sent-option">
+              <div class="menu-select">
+                <img
+                  src="../wwwroot/assets/icons/down-gray.svg"
+                  alt="down"
+                  class="icon-chevron-down"
+                />
+                <p>Herkese Açık</p>
+              </div>
+              <div class="menu-options">
+                <div class="menu-option-content">
+                  <p>Yalnızca Ben</p>
                 </div>
-                <div class="send-buttons">
-                    <div class="dshb-dropdown-menu sent-option">
-                        <div class="menu-select">
-                            <img src="../wwwroot/assets/icons/down-gray.svg" alt="down" class="icon-chevron-down">
-                            <p>Herkese Açık</p>
-                        </div>
-                        <div class="menu-options">
-                            <div class="menu-option-content">
-                                <p>Yalnızca Ben</p>
-                            </div>
-                            <div class="menu-option-content">
-                                <p>Arkadaşlar</p>
-                            </div>
-                            <div class="menu-option-content">
-                                <p>Hiç kimse</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="send-btn">Gönder</button>
+                <div class="menu-option-content">
+                  <p>Arkadaşlar</p>
                 </div>
+                <div class="menu-option-content">
+                  <p>Hiç kimse</p>
+                </div>
+              </div>
             </div>
+            <button class="send-btn">Gönder</button>
+          </div>
         </div>
-        <section class="comments-section">
-            <div class="user-comment">
-                <div class="user-img">
-                    <img src="../wwwroot/assets/images/Ozan Alatlı.svg" alt="Ozan Alatlı.jpg">
-                    <div class="user-status"></div>
-                </div>
-                <div class="user-comment-content">
-                    <div class="user-comment-header">
-                        <div class="user-comment-name">
-                            <p>Ozan Alatlı</p>
-                        </div>
-                        <div class="user-comment-date">
-                            <p>Tem 2014, 21:39</p>
-                        </div>
-                    </div>
-                    <div class="user-comment-text">
-                        <p>Perşembe günkü toplantımız iptal edilmiştir.</p>
-                    </div>
-                    <div class="user-comment-options">
-                        <div class="user-comment-like">
-                            <img src="../wwwroot/assets/icons/like.svg" alt="like">
-                            <p>Beğen</p>
-                        </div>
-                        <div class="user-comment-reply">
-                            <img src="../wwwroot/assets/icons/reply.svg" alt="reply">
-                            <p>Yorum yaz</p>
-                        </div>
-                        <div class="user-comment-send">
-                            <img src="../wwwroot/assets/icons/send-message.svg" alt="send message">
-                            <p>Mesaj Gönder</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="icon-chevron-down">
-                    <img src="../wwwroot/assets/icons/down-gray.svg" alt="down">
-                </div>
+      </div>
+      <section class="comments-section">
+        <div class="user-comment">
+          <div class="user-img">
+            <img
+              src="../wwwroot/assets/images/Ozan Alatlı.svg"
+              alt="Ozan Alatlı.jpg"
+            />
+            <div class="user-status"></div>
+          </div>
+          <div class="user-comment-content">
+            <div class="user-comment-header">
+              <div class="user-comment-name">
+                <p>Ozan Alatlı</p>
+              </div>
+              <div class="user-comment-date">
+                <p>Tem 2014, 21:39</p>
+              </div>
             </div>
-            <div class="users-reply-comments">
-                <div class="user-comment">
-                    <div class="user-img">
-                        <img src="../wwwroot/assets/images/Ozan Alatlı.svg" alt="Ozan Alatlı.jpg">
-                        <div class="user-status"></div>
-                    </div>
-                    <div class="user-comment-content">
-                        <div class="user-comment-header">
-                            <div class="user-comment-name">
-                                <p>Ozan Alatlı</p>
-                            </div>
-                            <div class="user-comment-date">
-                                <p>Tem 2014, 21:39</p>
-                            </div>
-                        </div>
-                        <div class="user-comment-text">
-                            <p>Perşembe günkü toplantımız iptal edilmiştir.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="user-comment">
-                    <div class="user-img">
-                        <img src="../wwwroot/assets/images/Ozan Alatlı.svg" alt="Ozan Alatlı.jpg">
-                        <div class="user-status"></div>
-                    </div>
-                    <div class="user-comment-content">
-                        <div class="user-comment-header">
-                            <div class="user-comment-name">
-                                <p>Ozan Alatlı</p>
-                            </div>
-                            <div class="user-comment-date">
-                                <p>Tem 2014, 21:39</p>
-                            </div>
-                        </div>
-                        <div class="user-comment-text">
-                            <p>Perşembe günkü toplantımız iptal edilmiştir.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="user-comment">
-                    <div class="user-img">
-                        <img src="../wwwroot/assets/images/Ozan Alatlı.svg" alt="Ozan Alatlı.jpg">
-                        <div class="user-status"></div>
-                    </div>
-                    <div class="user-comment-content">
-                        <div class="user-comment-header">
-                            <div class="user-comment-name">
-                                <p>Ozan Alatlı</p>
-                            </div>
-                            <div class="user-comment-date">
-                                <p>Tem 2014, 21:39</p>
-                            </div>
-                        </div>
-                        <div class="user-comment-text">
-                            <p>Perşembe günkü toplantımız iptal edilmiştir.Perşembe günkü toplantımız iptal
-                                edilmiştir.Perşembe günkü toplantımız iptal edilmiştir.Perşembe günkü toplantımız iptal
-                                edilmiştir.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="other-comments">
-                    <img src="../wwwroot/assets/icons/another-comments.svg" alt="">
-                    <a href="#">Diğer yorumları Gör</a>
-                </div>
-                <img src="../wwwroot/assets/icons/comment-add.svg" alt="add comment">
+            <div class="user-comment-text">
+              <p>Perşembe günkü toplantımız iptal edilmiştir.</p>
             </div>
-            <div class="user-comment">
-                <div class="user-img">
-                    <img src="../wwwroot/assets/images/Ozan Alatlı.svg" alt="Ozan Alatlı.jpg">
-                    <div class="user-status"></div>
-                </div>
-                <div class="user-comment-content">
-                    <div class="user-comment-header">
-                        <div class="user-comment-name">
-                            <p>Ozan Alatlı</p>
-                        </div>
-                        <div class="user-comment-date">
-                            <p>Tem 2014, 21:39</p>
-                        </div>
-                    </div>
-                    <div class="user-comment-text">
-                        <p>Perşembe günkü toplantımız iptal edilmiştir.</p>
-                    </div>
-                    <div class="user-comment-options">
-                        <div class="user-comment-like">
-                            <img src="../wwwroot/assets/icons/like.svg" alt="like">
-                            <p>Beğen</p>
-                        </div>
-                        <div class="user-comment-reply">
-                            <img src="../wwwroot/assets/icons/reply.svg" alt="reply">
-                            <p>Yorum yaz</p>
-                        </div>
-                        <div class="user-comment-send">
-                            <img src="../wwwroot/assets/icons/send-message.svg" alt="send message">
-                            <p>Mesaj Gönder</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="icon-chevron-down">
-                    <img src="../wwwroot/assets/icons/down-gray.svg" alt="down">
-                </div>
+            <div class="user-comment-options">
+              <div class="user-comment-like">
+                <img src="../wwwroot/assets/icons/like.svg" alt="like" />
+                <p>Beğen</p>
+              </div>
+              <div class="user-comment-reply">
+                <img src="../wwwroot/assets/icons/reply.svg" alt="reply" />
+                <p>Yorum yaz</p>
+              </div>
+              <div class="user-comment-send">
+                <img
+                  src="../wwwroot/assets/icons/send-message.svg"
+                  alt="send message"
+                />
+                <p>Mesaj Gönder</p>
+              </div>
             </div>
-            <div class="user-comment">
-                <div class="user-img">
-                    <img src="../wwwroot/assets/images/Ozan Alatlı.svg" alt="Ozan Alatlı.jpg">
-                    <div class="user-status"></div>
-                </div>
-                <div class="user-comment-content">
-                    <div class="user-comment-header">
-                        <div class="user-comment-name">
-                            <p>Ozan Alatlı</p>
-                        </div>
-                        <div class="user-comment-date">
-                            <p>Tem 2014, 21:39</p>
-                        </div>
-                    </div>
-                    <div class="user-comment-text">
-                        <p>Perşembe günkü toplantımız iptal edilmiştir.</p>
-                    </div>
-                    <div class="user-comment-options">
-                        <div class="user-comment-like">
-                            <img src="../wwwroot/assets/icons/like.svg" alt="like">
-                            <p>Beğen</p>
-                        </div>
-                        <div class="user-comment-reply">
-                            <img src="../wwwroot/assets/icons/reply.svg" alt="reply">
-                            <p>Yorum yaz</p>
-                        </div>
-                        <div class="user-comment-send">
-                            <img src="../wwwroot/assets/icons/send-message.svg" alt="send message">
-                            <p>Mesaj Gönder</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="icon-chevron-down">
-                    <img src="../wwwroot/assets/icons/down-gray.svg" alt="down">
-                </div>
+          </div>
+          <div class="icon-chevron-down">
+            <img src="../wwwroot/assets/icons/down-gray.svg" alt="down" />
+          </div>
+        </div>
+        <div class="users-reply-comments">
+          <div class="user-comment">
+            <div class="user-img">
+              <img
+                src="../wwwroot/assets/images/Ozan Alatlı.svg"
+                alt="Ozan Alatlı.jpg"
+              />
+              <div class="user-status"></div>
             </div>
-            <div class="user-comment">
-                <div class="user-img">
-                    <img src="../wwwroot/assets/images/Ozan Alatlı.svg" alt="Ozan Alatlı.jpg">
-                    <div class="user-status"></div>
+            <div class="user-comment-content">
+              <div class="user-comment-header">
+                <div class="user-comment-name">
+                  <p>Ozan Alatlı</p>
                 </div>
-                <div class="user-comment-content">
-                    <div class="user-comment-header">
-                        <div class="user-comment-name">
-                            <p>Ozan Alatlı</p>
-                        </div>
-                        <div class="user-comment-date">
-                            <p>Tem 2014, 21:39</p>
-                        </div>
-                    </div>
-                    <div class="user-comment-text">
-                        <p>Perşembe günkü toplantımız iptal edilmiştir.</p>
-                    </div>
-                    <div class="comment-docs">
-                        <div class="document-img">
-                            <img src="../wwwroot/assets/icons/doc-icon.svg" alt="doc">
-                        </div>
-                        <div class="document-about">
-                            <p>Yemek_listesi.rar</p>
-                            <span>143 KB</span>
-                        </div>
-                    </div>
-                    <div class="user-comment-options">
-                        <div class="user-comment-like">
-                            <img src="../wwwroot/assets/icons/like.svg" alt="like">
-                            <p>Beğen</p>
-                        </div>
-                        <div class="user-comment-reply">
-                            <img src="../wwwroot/assets/icons/reply.svg" alt="reply">
-                            <p>Yorum yaz</p>
-                        </div>
-                        <div class="user-comment-send">
-                            <img src="../wwwroot/assets/icons/send-message.svg" alt="send message">
-                            <p>Mesaj Gönder</p>
-                        </div>
-                    </div>
+                <div class="user-comment-date">
+                  <p>Tem 2014, 21:39</p>
                 </div>
-                <div class="icon-chevron-down">
-                    <img src="../wwwroot/assets/icons/down-gray.svg" alt="down">
-                </div>
+              </div>
+              <div class="user-comment-text">
+                <p>Perşembe günkü toplantımız iptal edilmiştir.</p>
+              </div>
             </div>
-            <div class="user-comment">
-                <div class="user-img">
-                    <img src="../wwwroot/assets/images/Ozan Alatlı.svg" alt="Ozan Alatlı.jpg">
-                    <div class="user-status"></div>
-                </div>
-                <div class="user-comment-content">
-                    <div class="user-comment-header">
-                        <div class="user-comment-name">
-                            <p>Ozan Alatlı</p>
-                        </div>
-                        <div class="user-comment-date">
-                            <p>Tem 2014, 21:39</p>
-                        </div>
-                    </div>
-                    <div class="user-comment-text">
-                        <p>Perşembe günkü toplantımız iptal edilmiştir.</p>
-                    </div>
-                    <div class="user-comment-data-image">
-                        <div>
-                        </div>
-                        <p>143 KB</p>
-                    </div>
-                    <div class="user-comment-options">
-                        <div class="user-comment-like">
-                            <img src="../wwwroot/assets/icons/like.svg" alt="like">
-                            <p>Beğen</p>
-                        </div>
-                        <div class="user-comment-reply">
-                            <img src="../wwwroot/assets/icons/reply.svg" alt="reply">
-                            <p>Yorum yaz</p>
-                        </div>
-                        <div class="user-comment-send">
-                            <img src="../wwwroot/assets/icons/send-message.svg" alt="send message">
-                            <p>Mesaj Gönder</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="icon-chevron-down">
-                    <img src="../wwwroot/assets/icons/down-gray.svg" alt="down">
-                </div>
+          </div>
+          <div class="user-comment">
+            <div class="user-img">
+              <img
+                src="../wwwroot/assets/images/Ozan Alatlı.svg"
+                alt="Ozan Alatlı.jpg"
+              />
+              <div class="user-status"></div>
             </div>
-            <div class="user-comment">
-                <div class="user-img">
-                    <img src="../wwwroot/assets/images/Ozan Alatlı.svg" alt="Ozan Alatlı.jpg">
-                    <div class="user-status"></div>
+            <div class="user-comment-content">
+              <div class="user-comment-header">
+                <div class="user-comment-name">
+                  <p>Ozan Alatlı</p>
                 </div>
-                <div class="user-comment-content">
-                    <div class="user-comment-header">
-                        <div class="user-comment-name">
-                            <p>Ozan Alatlı</p>
-                        </div>
-                        <div class="user-comment-date">
-                            <p>Tem 2014, 21:39</p>
-                        </div>
-                    </div>
-                    <div class="user-comment-text">
-                        <p>Perşembe günkü toplantımız iptal edilmiştir.</p>
-                    </div>
-                    <div class="user-comment-options">
-                        <div class="user-comment-like">
-                            <img src="../wwwroot/assets/icons/like.svg" alt="like">
-                            <p>Beğen</p>
-                        </div>
-                        <div class="user-comment-reply">
-                            <img src="../wwwroot/assets/icons/reply.svg" alt="reply">
-                            <p>Yorum yaz</p>
-                        </div>
-                        <div class="user-comment-send">
-                            <img src="../wwwroot/assets/icons/send-message.svg" alt="send message">
-                            <p>Mesaj Gönder</p>
-                        </div>
-                    </div>
+                <div class="user-comment-date">
+                  <p>Tem 2014, 21:39</p>
                 </div>
-                <div class="icon-chevron-down">
-                    <img src="../wwwroot/assets/icons/down-gray.svg" alt="down">
-                </div>
+              </div>
+              <div class="user-comment-text">
+                <p>Perşembe günkü toplantımız iptal edilmiştir.</p>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="user-comment">
+            <div class="user-img">
+              <img
+                src="../wwwroot/assets/images/Ozan Alatlı.svg"
+                alt="Ozan Alatlı.jpg"
+              />
+              <div class="user-status"></div>
+            </div>
+            <div class="user-comment-content">
+              <div class="user-comment-header">
+                <div class="user-comment-name">
+                  <p>Ozan Alatlı</p>
+                </div>
+                <div class="user-comment-date">
+                  <p>Tem 2014, 21:39</p>
+                </div>
+              </div>
+              <div class="user-comment-text">
+                <p>
+                  Perşembe günkü toplantımız iptal edilmiştir.Perşembe günkü
+                  toplantımız iptal edilmiştir.Perşembe günkü toplantımız iptal
+                  edilmiştir.Perşembe günkü toplantımız iptal edilmiştir.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="other-comments">
+            <img src="../wwwroot/assets/icons/another-comments.svg" alt="" />
+            <a href="#">Diğer yorumları Gör</a>
+          </div>
+          <img
+            src="../wwwroot/assets/icons/comment-add.svg"
+            alt="add comment"
+          />
+        </div>
+        <div class="user-comment">
+          <div class="user-img">
+            <img
+              src="../wwwroot/assets/images/Ozan Alatlı.svg"
+              alt="Ozan Alatlı.jpg"
+            />
+            <div class="user-status"></div>
+          </div>
+          <div class="user-comment-content">
+            <div class="user-comment-header">
+              <div class="user-comment-name">
+                <p>Ozan Alatlı</p>
+              </div>
+              <div class="user-comment-date">
+                <p>Tem 2014, 21:39</p>
+              </div>
+            </div>
+            <div class="user-comment-text">
+              <p>Perşembe günkü toplantımız iptal edilmiştir.</p>
+            </div>
+            <div class="user-comment-options">
+              <div class="user-comment-like">
+                <img src="../wwwroot/assets/icons/like.svg" alt="like" />
+                <p>Beğen</p>
+              </div>
+              <div class="user-comment-reply">
+                <img src="../wwwroot/assets/icons/reply.svg" alt="reply" />
+                <p>Yorum yaz</p>
+              </div>
+              <div class="user-comment-send">
+                <img
+                  src="../wwwroot/assets/icons/send-message.svg"
+                  alt="send message"
+                />
+                <p>Mesaj Gönder</p>
+              </div>
+            </div>
+          </div>
+          <div class="icon-chevron-down">
+            <img src="../wwwroot/assets/icons/down-gray.svg" alt="down" />
+          </div>
+        </div>
+        <div class="user-comment">
+          <div class="user-img">
+            <img
+              src="../wwwroot/assets/images/Ozan Alatlı.svg"
+              alt="Ozan Alatlı.jpg"
+            />
+            <div class="user-status"></div>
+          </div>
+          <div class="user-comment-content">
+            <div class="user-comment-header">
+              <div class="user-comment-name">
+                <p>Ozan Alatlı</p>
+              </div>
+              <div class="user-comment-date">
+                <p>Tem 2014, 21:39</p>
+              </div>
+            </div>
+            <div class="user-comment-text">
+              <p>Perşembe günkü toplantımız iptal edilmiştir.</p>
+            </div>
+            <div class="user-comment-options">
+              <div class="user-comment-like">
+                <img src="../wwwroot/assets/icons/like.svg" alt="like" />
+                <p>Beğen</p>
+              </div>
+              <div class="user-comment-reply">
+                <img src="../wwwroot/assets/icons/reply.svg" alt="reply" />
+                <p>Yorum yaz</p>
+              </div>
+              <div class="user-comment-send">
+                <img
+                  src="../wwwroot/assets/icons/send-message.svg"
+                  alt="send message"
+                />
+                <p>Mesaj Gönder</p>
+              </div>
+            </div>
+          </div>
+          <div class="icon-chevron-down">
+            <img src="../wwwroot/assets/icons/down-gray.svg" alt="down" />
+          </div>
+        </div>
+        <div class="user-comment">
+          <div class="user-img">
+            <img
+              src="../wwwroot/assets/images/Ozan Alatlı.svg"
+              alt="Ozan Alatlı.jpg"
+            />
+            <div class="user-status"></div>
+          </div>
+          <div class="user-comment-content">
+            <div class="user-comment-header">
+              <div class="user-comment-name">
+                <p>Ozan Alatlı</p>
+              </div>
+              <div class="user-comment-date">
+                <p>Tem 2014, 21:39</p>
+              </div>
+            </div>
+            <div class="user-comment-text">
+              <p>Perşembe günkü toplantımız iptal edilmiştir.</p>
+            </div>
+            <div class="comment-docs">
+              <div class="document-img">
+                <img src="../wwwroot/assets/icons/doc-icon.svg" alt="doc" />
+              </div>
+              <div class="document-about">
+                <p>Yemek_listesi.rar</p>
+                <span>143 KB</span>
+              </div>
+            </div>
+            <div class="user-comment-options">
+              <div class="user-comment-like">
+                <img src="../wwwroot/assets/icons/like.svg" alt="like" />
+                <p>Beğen</p>
+              </div>
+              <div class="user-comment-reply">
+                <img src="../wwwroot/assets/icons/reply.svg" alt="reply" />
+                <p>Yorum yaz</p>
+              </div>
+              <div class="user-comment-send">
+                <img
+                  src="../wwwroot/assets/icons/send-message.svg"
+                  alt="send message"
+                />
+                <p>Mesaj Gönder</p>
+              </div>
+            </div>
+          </div>
+          <div class="icon-chevron-down">
+            <img src="../wwwroot/assets/icons/down-gray.svg" alt="down" />
+          </div>
+        </div>
+        <div class="user-comment">
+          <div class="user-img">
+            <img
+              src="../wwwroot/assets/images/Ozan Alatlı.svg"
+              alt="Ozan Alatlı.jpg"
+            />
+            <div class="user-status"></div>
+          </div>
+          <div class="user-comment-content">
+            <div class="user-comment-header">
+              <div class="user-comment-name">
+                <p>Ozan Alatlı</p>
+              </div>
+              <div class="user-comment-date">
+                <p>Tem 2014, 21:39</p>
+              </div>
+            </div>
+            <div class="user-comment-text">
+              <p>Perşembe günkü toplantımız iptal edilmiştir.</p>
+            </div>
+            <div class="user-comment-data-image">
+              <div></div>
+              <p>143 KB</p>
+            </div>
+            <div class="user-comment-options">
+              <div class="user-comment-like">
+                <img src="../wwwroot/assets/icons/like.svg" alt="like" />
+                <p>Beğen</p>
+              </div>
+              <div class="user-comment-reply">
+                <img src="../wwwroot/assets/icons/reply.svg" alt="reply" />
+                <p>Yorum yaz</p>
+              </div>
+              <div class="user-comment-send">
+                <img
+                  src="../wwwroot/assets/icons/send-message.svg"
+                  alt="send message"
+                />
+                <p>Mesaj Gönder</p>
+              </div>
+            </div>
+          </div>
+          <div class="icon-chevron-down">
+            <img src="../wwwroot/assets/icons/down-gray.svg" alt="down" />
+          </div>
+        </div>
+        <div class="user-comment">
+          <div class="user-img">
+            <img
+              src="../wwwroot/assets/images/Ozan Alatlı.svg"
+              alt="Ozan Alatlı.jpg"
+            />
+            <div class="user-status"></div>
+          </div>
+          <div class="user-comment-content">
+            <div class="user-comment-header">
+              <div class="user-comment-name">
+                <p>Ozan Alatlı</p>
+              </div>
+              <div class="user-comment-date">
+                <p>Tem 2014, 21:39</p>
+              </div>
+            </div>
+            <div class="user-comment-text">
+              <p>Perşembe günkü toplantımız iptal edilmiştir.</p>
+            </div>
+            <div class="user-comment-options">
+              <div class="user-comment-like">
+                <img src="../wwwroot/assets/icons/like.svg" alt="like" />
+                <p>Beğen</p>
+              </div>
+              <div class="user-comment-reply">
+                <img src="../wwwroot/assets/icons/reply.svg" alt="reply" />
+                <p>Yorum yaz</p>
+              </div>
+              <div class="user-comment-send">
+                <img
+                  src="../wwwroot/assets/icons/send-message.svg"
+                  alt="send message"
+                />
+                <p>Mesaj Gönder</p>
+              </div>
+            </div>
+          </div>
+          <div class="icon-chevron-down">
+            <img src="../wwwroot/assets/icons/down-gray.svg" alt="down" />
+          </div>
+        </div>
+      </section>
     </div>
     <footer class="more-comments">
-        <img src="../wwwroot/assets/icons/more-comment.svg" alt="more-comment">
-        <a href="#">Devamını Gör.</a>
+      <img src="../wwwroot/assets/icons/more-comment.svg" alt="more-comment" />
+      <a href="#">Devamını Gör.</a>
     </footer>
 
-
     <script src="../wwwroot/js/dropdown.js"></script>
-</body>
-
+  </body>
 </html>

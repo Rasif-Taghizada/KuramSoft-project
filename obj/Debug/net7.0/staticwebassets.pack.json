@@ -317,6 +317,10 @@
       "PackagePath": "staticwebassets\\assets\\icons\\album.svg"
     },
     {
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\align-center.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\align-center.svg"
+    },
+    {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\align-left.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\align-left.svg"
     },
@@ -503,6 +507,10 @@
     {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\elips-vertical.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\elips-vertical.svg"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\erase.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\erase.svg"
     },
     {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\ericsson.svg",
@@ -743,6 +751,10 @@
     {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\send.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\send.svg"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\shape-hexagon.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\shape-hexagon.svg"
     },
     {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\share-icon.svg",
