@@ -298,11 +298,15 @@
     .secondary-header-row {
         grid-template-columns: repeat(2, 1fr)
     }
+
+    .forms-container {
+        padding: 20px 10px 20px 30px !important;
+    }
 }
 
 @container (max-width:768px) {
     .forms-nav>ul>li {
-        width: 32% !important;
+        width: 31% !important;
     }
 
     .forms-nav>ul>li>a {
@@ -342,6 +346,11 @@
 
     .forms-nav>ul>li>a {
         font-size: 14px;
+    }
+
+    .forms-nav-left img {
+        width: 30px !important;
+        height: 30px !important;
     }
 
     .first-header-row,

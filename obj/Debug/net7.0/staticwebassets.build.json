@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jvjc48YaAiMHpOAcrWQV1/G2t+yMobfXGiFRu8XzMDM=",
+  "Hash": "2FmNeJzbvhCMo4VOnAUSesPJtzkOve9K5i596lfWit0=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -2040,6 +2040,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\edit-unmask.svg"
     },
     {
+      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\edit.svg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "assets/icons/edit.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons\\edit.svg"
+    },
+    {
       "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\export-btn.svg",
       "SourceId": "WebApp",
       "SourceType": "Discovered",
@@ -3094,6 +3111,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\polaroid.svg"
     },
     {
+      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\power.svg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "assets/icons/power.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons\\power.svg"
+    },
+    {
       "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\reload.svg",
       "SourceId": "WebApp",
       "SourceType": "Discovered",
@@ -3245,6 +3279,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\icons\\send.svg"
+    },
+    {
+      "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\settings.svg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "assets/icons/settings.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons\\settings.svg"
     },
     {
       "Identity": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\shape-hexagon.svg",

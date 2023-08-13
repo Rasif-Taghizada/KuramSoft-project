@@ -27,7 +27,7 @@ document.addEventListener("click", (e) => {
         if (target !== burgerMenu) {
             console.log(target)
             sideBar?.classList.add("sidebar-close");
-            burgerMenu.src = "/assets/icons/menu-icon.svg"
+            burgerMenu ? burgerMenu.src = "../assets/icons/menu-icon.svg" : null;
         }
     }
 });
@@ -71,7 +71,7 @@ navbarBtn?.addEventListener("click", () => {
 document.addEventListener("click", (e) => {
     let target = e.target;
     if (window.innerWidth <= 992) {
-        if (target !== navbarBtn && !navbarContainer.contains(target)) {
+        if (target !== navbarBtn && !navbarContainer?.contains(target)) {
             console.log(target)
             navbarContainer?.parentElement.classList.remove("navbar-close")
         }

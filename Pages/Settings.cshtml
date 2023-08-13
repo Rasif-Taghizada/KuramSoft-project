@@ -1,0 +1,902 @@
+@page
+@model SettingsModel
+@{
+    ViewData["Title"] = "Settings";
+}
+
+<!-- Styles -->
+<link rel="stylesheet" href="../css/setting/setting.css" />
+<link rel="stylesheet" href="../css/dashboard/dashboard-table.css"/>
+
+<!-- HTMLs -->
+
+<div class="setting-container">
+  <header>
+    <div class="header-left">
+      <h1>
+        <img src="../assets/icons/ericsson.svg" alt="forms" />
+        SETTING
+      </h1>
+      <p>Manage your account settings and prefences.</p>
+    </div>
+    <div class="header-right">
+      <button>Kaydet</button>
+      <button>Kaydet</button>
+      <button>
+        Kaydet
+        <img src="../assets/icons/calendar-next.svg" alt="next" />
+      </button>
+      <div class="forms-search-box">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Arıyorum"
+        />
+        <img src="../assets/icons/search.svg" alt="search" />
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- ! Setting NAV -->
+    <nav class="setting-nav">
+      <ul>
+        <li class="list-active" onclick="toogleActive()">
+          <a href="#">
+            <img
+              src="../assets/icons/extension-remove.svg"
+              alt="active"
+              class="active-img"
+            />
+            My Details
+            <img
+              src="../assets/icons/chevron-down.svg"
+              alt="right"
+            />
+          </a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">
+            <img
+              src="../assets/icons/extension-remove.svg"
+              alt="active"
+              class="active-img"
+            />
+            Profile
+            <img
+              src="../assets/icons/chevron-down.svg"
+              alt="right"
+            />
+          </a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">
+            <img
+              src="../assets/icons/extension-remove.svg "
+              alt="active"
+              class="active-img"
+            />
+            Password
+            <img
+              src="../assets/icons/chevron-down.svg"
+              alt="right"
+            />
+          </a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">
+            <img
+              src="../assets/icons/extension-remove.svg"
+              alt="active"
+              class="active-img"
+            />
+            Team
+            <img
+              src="../assets/icons/chevron-down.svg"
+              alt="right"
+            />
+          </a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">
+            <img
+              src="../assets/icons/extension-remove.svg"
+              alt="active"
+              class="active-img"
+            />
+            Plan
+            <img
+              src="../assets/icons/chevron-down.svg"
+              alt="right"
+            />
+          </a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">
+            <img
+              src="../assets/icons/extension-remove.svg"
+              alt="active"
+              class="active-img"
+            />
+            Billing
+            <img
+              src="../assets/icons/chevron-down.svg"
+              alt="right"
+            />
+          </a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">
+            <img
+              src="../assets/icons/extension-remove.svg"
+              alt="active"
+              class="active-img"
+            />
+            Email
+            <img
+              src="../assets/icons/chevron-down.svg"
+              alt="right"
+            />
+          </a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">
+            <img
+              src="../assets/icons/extension-remove.svg"
+              alt="active"
+              class="active-img"
+            />
+            Notifications
+            <img
+              src="../assets/icons/chevron-down.svg"
+              alt="right"
+            />
+          </a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">
+            <img
+              src="../assets/icons/extension-remove.svg"
+              alt="active"
+              class="active-img"
+            />
+            Integration
+            <img
+              src="../assets/icons/chevron-down.svg"
+              alt="right"
+            />
+          </a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">
+            <img
+              src="../assets/icons/extension-remove.svg"
+              alt="active"
+              class="active-img"
+            />
+            API
+            <img
+              src="../assets/icons/chevron-down.svg"
+              alt="right"
+            />
+          </a>
+        </li>
+      </ul>
+      <button class="open-nav">
+        <img src="../assets/icons/chevron-down.svg" alt="" />
+      </button>
+    </nav>
+    <!-- ! Settin Content -->
+    <div class="setting-content">
+      <nav class="setting-content-nav">
+        <ul>
+          <li onclick="toogleActive()">
+            <a href="#">Apps</a>
+          </li>
+          <li onclick="toogleActive()">
+            <a href="#">Profile</a>
+          </li>
+          <li onclick="toogleActive()">
+            <a href="#">Log</a>
+          </li>
+          <li onclick="toogleActive()">
+            <a href="#">Auth</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- ! Connections Apps -->
+      <div class="connections-apps">
+        <h3>Connections apps</h3>
+        <p>Superchange your workflow + connect tools you use.</p>
+        <div class="connections-content">
+          <ul>
+            <li>
+              <div class="list-item-left">
+                <img
+                  src="../assets/icons/shape-hexagon.svg"
+                  alt="linear"
+                />
+                <div>
+                  <h4>Linear</h4>
+                  <p>Superchange your workflow + connect tools you use.</p>
+                </div>
+              </div>
+              <div class="list-item-right">
+                <label for="checkbox">Learn More</label>
+                <label class="switch">
+                  <input type="checkbox" id="checkbox" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-left">
+                <img src="../assets/icons/erase.svg" alt="Github" />
+                <div>
+                  <h4>Github</h4>
+                  <p>Superchange your workflow + connect tools you use.</p>
+                </div>
+              </div>
+              <div class="list-item-right">
+                <label for="checkbox1">Learn More</label>
+                <label class="switch">
+                  <input type="checkbox" id="checkbox1" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-left">
+                <img
+                  src="../assets/icons/briefcase.svg"
+                  alt="figma"
+                />
+                <div>
+                  <h4>Figma</h4>
+                  <p>Superchange your workflow + connect tools you use.</p>
+                </div>
+              </div>
+              <div class="list-item-right">
+                <label for="checkbox2">Learn More</label>
+                <label class="switch">
+                  <input type="checkbox" id="checkbox2" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-left">
+                <img src="../assets/icons/slack.svg" alt="Zapier" />
+                <div>
+                  <h4>Zapier</h4>
+                  <p>Superchange your workflow + connect tools you use.</p>
+                </div>
+              </div>
+              <div class="list-item-right">
+                <label for="checkbox3">Learn More</label>
+                <label class="switch">
+                  <input type="checkbox" id="checkbox3" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-left">
+                <img
+                  src="../assets/icons/framer.svg"
+                  alt="linear"
+                />
+                <div>
+                  <h4>Notion</h4>
+                  <p>Superchange your workflow + connect tools you use.</p>
+                </div>
+              </div>
+              <div class="list-item-right">
+                <label for="checkbox4">Learn More</label>
+                <label class="switch">
+                  <input type="checkbox" id="checkbox4" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- ! Notification Setting -->
+      <div class="notification-setting">
+        <h3>Notification Setting</h3>
+        <p>Superchange your workflow + connect tools you use.</p>
+        <div class="email-notification">
+          <div>
+            <h4>E-mail Notification</h4>
+            <p>Superchange your workflow + connect tools you use.</p>
+          </div>
+          <!-- !  -->
+          <div class="email-notification-left">
+            <ul>
+              <li>
+                <div class="list-item-left">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider"></span>
+                  </label>
+                  <div>
+                    <h5>New and Updates</h5>
+                    <p>
+                      Superchange your workflow + connect tools you use.
+                    </p>
+                  </div>
+                </div>
+                <div class="dshb-dropdown-menu">
+                  <div class="menu-select">
+                    <p>All Type</p>
+                    <img
+                      src="../assets/icons/chevron-down.svg"
+                      alt="down"
+                    />
+                  </div>
+                  <div class="menu-options">
+                    <div class="menu-option-content"><p>All Type</p></div>
+                    <div class="menu-option-content"><p>All Type</p></div>
+                    <div class="menu-option-content"><p>All Type</p></div>
+                    <div class="menu-option-content"><p>All Type</p></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="list-item-left">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider"></span>
+                  </label>
+                  <div>
+                    <h5>New and Updates</h5>
+                    <p>
+                      Superchange your workflow + connect tools you use.
+                    </p>
+                  </div>
+                </div>
+                <div class="dshb-dropdown-menu">
+                  <div class="menu-select">
+                    <p>All Type</p>
+                    <img
+                      src="../assets/icons/chevron-down.svg"
+                      alt="down"
+                    />
+                  </div>
+                  <div class="menu-options">
+                    <div class="menu-option-content"><p>All Type</p></div>
+                    <div class="menu-option-content"><p>All Type</p></div>
+                    <div class="menu-option-content"><p>All Type</p></div>
+                    <div class="menu-option-content"><p>All Type</p></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="list-item-left">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider"></span>
+                  </label>
+                  <div>
+                    <h5>New and Updates</h5>
+                    <p>
+                      Superchange your workflow + connect tools you use.
+                    </p>
+                  </div>
+                </div>
+                <div class="dshb-dropdown-menu">
+                  <div class="menu-select">
+                    <p>All Type</p>
+                    <img
+                      src="../assets/icons/chevron-down.svg"
+                      alt="down"
+                    />
+                  </div>
+                  <div class="menu-options">
+                    <div class="menu-option-content"><p>All Type</p></div>
+                    <div class="menu-option-content"><p>All Type</p></div>
+                    <div class="menu-option-content"><p>All Type</p></div>
+                    <div class="menu-option-content"><p>All Type</p></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="email-notification">
+          <div>
+            <h4>Push Notification</h4>
+            <p>Superchange your workflow + connect tools you use.</p>
+          </div>
+          <!-- !  -->
+          <div class="email-notification-left">
+            <ul>
+              <li>
+                <div class="list-item-left">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider"></span>
+                  </label>
+                  <div>
+                    <h5>New and Updates</h5>
+                    <p>
+                      Superchange your workflow + connect tools you use.
+                    </p>
+                  </div>
+                </div>
+                <div class="dshb-dropdown-menu">
+                  <div class="menu-select">
+                    <p>All Type</p>
+                    <img
+                      src="../assets/icons/chevron-down.svg"
+                      alt="down"
+                    />
+                  </div>
+                  <div class="menu-options">
+                    <div class="menu-option-content"><p>All Type</p></div>
+                    <div class="menu-option-content"><p>All Type</p></div>
+                    <div class="menu-option-content"><p>All Type</p></div>
+                    <div class="menu-option-content"><p>All Type</p></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="list-item-left">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider"></span>
+                  </label>
+                  <div>
+                    <h5>New and Updates</h5>
+                    <p>
+                      Superchange your workflow + connect tools you use.
+                    </p>
+                  </div>
+                </div>
+                <div class="dshb-dropdown-menu">
+                  <div class="menu-select">
+                    <p>All Type</p>
+                    <img
+                      src="../assets/icons/chevron-down.svg"
+                      alt="down"
+                    />
+                  </div>
+                  <div class="menu-options">
+                    <div class="menu-option-content"><p>All Type</p></div>
+                    <div class="menu-option-content"><p>All Type</p></div>
+                    <div class="menu-option-content"><p>All Type</p></div>
+                    <div class="menu-option-content"><p>All Type</p></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="list-item-left">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider"></span>
+                  </label>
+                  <div>
+                    <h5>New and Updates</h5>
+                    <p>
+                      Superchange your workflow + connect tools you use.
+                    </p>
+                  </div>
+                </div>
+                <div class="dshb-dropdown-menu">
+                  <div class="menu-select">
+                    <p>All Type</p>
+                    <img
+                      src="../assets/icons/chevron-down.svg"
+                      alt="down"
+                    />
+                  </div>
+                  <div class="menu-options">
+                    <div class="menu-option-content"><p>All Type</p></div>
+                    <div class="menu-option-content"><p>All Type</p></div>
+                    <div class="menu-option-content"><p>All Type</p></div>
+                    <div class="menu-option-content"><p>All Type</p></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- ! Filter box -->
+      <div class="filter-box">
+        <div>
+          <img src="../assets/icons/align-center.svg" alt="img" />
+          <div>
+            <h4>Filter</h4>
+            <p>Superchange your workflow + connect tools you use.</p>
+          </div>
+        </div>
+        <button>Set up filters</button>
+      </div>
+      <!-- ! Table -->
+      <div class="dashboard-table">
+        <div class="table-body">
+          <div class="table-head table-row">
+            <div class="table-check">
+              <input type="checkbox" name="" id="" checked="true" />
+            </div>
+            <div class="table-user">
+              <img src="../assets/Images/Ozan Alatlı.svg" alt="" />
+            </div>
+            <div class="table-fullname">
+              <p>Ozan Alatlı</p>
+            </div>
+            <div class="table-filtr">
+              <button class="filtr-btn">
+                <span>North American</span>
+                <img
+                  src="../assets/icons/icon-close.svg"
+                  alt="close icon"
+                />
+              </button>
+              <button class="filtr-btn">
+                <span>Canada</span>
+                <img
+                  src="../assets/icons/icon-close.svg"
+                  alt="close icon"
+                />
+              </button>
+            </div>
+            <div class="table-stars">
+              <img src="../assets/icons/icon-star.svg" alt="star" />
+              <img src="../assets/icons/icon-star.svg" alt="star" />
+              <img src="../assets/icons/icon-star.svg" alt="star" />
+              <img src="../assets/icons/icon-star.svg" alt="star" />
+            </div>
+            <div class="table-permission">
+              <button class="table-admin-btn table-per-btn">
+                <span>Admin</span>
+              </button>
+            </div>
+            <div class="table-percent bg-40">
+              <p>40%</p>
+            </div>
+            <div class="table-status">
+              <p>Low</p>
+            </div>
+            <div class="table-link">
+              <a href="">View</a>
+            </div>
+            <div class="table-toggle">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="table-head table-row">
+            <div class="table-check">
+              <input type="checkbox" name="" id="" />
+            </div>
+            <div class="table-user">
+              <img
+                src="../assets/Images/Eda Taştan.svg"
+                alt="Eda Taştan"
+              />
+            </div>
+            <div class="table-fullname">
+              <p>Eda Taştan</p>
+            </div>
+            <div class="table-filtr">
+              <button class="filtr-btn">
+                <span>Agency</span>
+                <img
+                  src="../assets/icons/icon-close.svg"
+                  alt="close icon"
+                />
+              </button>
+            </div>
+            <div class="table-stars">
+              <img src="../assets/icons/icon-star.svg" alt="star" />
+              <img src="../assets/icons/icon-star.svg" alt="star" />
+              <img src="../assets/icons/icon-star.svg" alt="star" />
+            </div>
+            <div class="table-permission">
+              <button class="table-contributor-btn table-per-btn">
+                <span>Contributor</span>
+              </button>
+            </div>
+            <div class="table-percent bg-20">
+              <p>20%</p>
+            </div>
+            <div class="table-status">
+              <p>Medium</p>
+            </div>
+            <div class="table-link">
+              <a href="">View</a>
+            </div>
+            <div class="table-toggle">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="table-head table-row">
+            <div class="table-check">
+              <input type="checkbox" name="" id="" />
+            </div>
+            <div class="table-user">
+              <img
+                src="../assets/Images/Arif Bulut.jpg"
+                alt="Arif Bulut"
+              />
+            </div>
+            <div class="table-fullname">
+              <p>Arif Bulut</p>
+            </div>
+            <div class="table-filtr">
+              <button class="filtr-btn">
+                <span>Agency</span>
+                <img
+                  src="../assets/icons/icon-close.svg"
+                  alt="close icon"
+                />
+              </button>
+              <button class="filtr-btn">
+                <span>Filtrele</span>
+                <img
+                  src="../assets/icons/icon-close.svg"
+                  alt="close icon"
+                />
+              </button>
+            </div>
+            <div class="table-stars">
+              <img src="../assets/icons/icon-star.svg" alt="star" />
+              <img src="../assets/icons/icon-star.svg" alt="star" />
+              <img src="../assets/icons/icon-star.svg" alt="star" />
+            </div>
+            <div class="table-permission">
+              <button class="table-moderator-btn table-per-btn">
+                <span>Moderator</span>
+              </button>
+            </div>
+            <div class="table-percent bg-90">
+              <p>90%</p>
+            </div>
+            <div class="table-status">
+              <p>High</p>
+            </div>
+            <div class="table-link">
+              <a href="">View</a>
+            </div>
+            <div class="table-toggle">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="table-head table-row">
+            <div class="table-check">
+              <input type="checkbox" name="" id="" checked="true" />
+            </div>
+            <div class="table-user">
+              <img
+                src="../assets/Images/Kadir Taş.jpg"
+                alt="Kadir Taş"
+              />
+            </div>
+            <div class="table-fullname">
+              <p>Kadir Taş</p>
+            </div>
+            <div class="table-filtr">
+              <button class="filtr-btn">
+                <span>North American</span>
+                <img
+                  src="../assets/icons/icon-close.svg"
+                  alt="close icon"
+                />
+              </button>
+              <button class="filtr-btn">
+                <span>Canada</span>
+                <img
+                  src="../assets/icons/icon-close.svg"
+                  alt="close icon"
+                />
+              </button>
+            </div>
+            <div class="table-stars">
+              <img src="../assets/icons/icon-star.svg" alt="star" />
+              <img src="../assets/icons/icon-star.svg" alt="star" />
+              <img src="../assets/icons/icon-star.svg" alt="star" />
+              <img src="../assets/icons/icon-star.svg" alt="star" />
+            </div>
+            <div class="table-permission">
+              <button class="table-admin-btn table-per-btn">
+                <span>Admin</span>
+              </button>
+            </div>
+            <div class="table-percent bg-40">
+              <p>40%</p>
+            </div>
+            <div class="table-status">
+              <p>High</p>
+            </div>
+            <div class="table-link">
+              <a href="">View</a>
+            </div>
+            <div class="table-toggle">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="table-head table-row">
+            <div class="table-check">
+              <input type="checkbox" name="" id="" checked="true" />
+            </div>
+            <div class="table-user">
+              <img
+                src="../assets/Images/İpek Seçil.jpg"
+                alt="İpek Seçil"
+              />
+            </div>
+            <div class="table-fullname">
+              <p>İpek Seçil</p>
+            </div>
+            <div class="table-filtr">
+              <button class="filtr-btn">
+                <span>North American</span>
+                <img
+                  src="../assets/icons/icon-close.svg"
+                  alt="close icon"
+                />
+              </button>
+            </div>
+            <div class="table-stars">
+              <img src="../assets/icons/icon-star.svg" alt="star" />
+            </div>
+            <div class="table-permission">
+              <button class="table-viewer-btn table-per-btn">
+                <span>Viewer</span>
+              </button>
+            </div>
+            <div class="table-percent bg-60">
+              <p>60%</p>
+            </div>
+            <div class="table-status">
+              <p>Medium</p>
+            </div>
+            <div class="table-link">
+              <a href="">View</a>
+            </div>
+            <div class="table-toggle">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ! Profile -->
+      <div class="profile-box">
+        <div class="company-profile">
+          <h4>Company Profile</h4>
+          <p>Superchange your workflow + connect tools you use.</p>
+        </div>
+        <!-- ! Public Profile -->
+        <div class="public-profile">
+          <div>
+            <h4>Public profile</h4>
+            <p>Superchange your workflow + connect tools you use.</p>
+          </div>
+          <div>
+            <div class="profile-line">
+              <input type="range" max="100" min="0" />
+            </div>
+            <div class="profile-line">
+              <input type="range" max="100" min="0" />
+            </div>
+          </div>
+        </div>
+        <!-- ! Tag Line -->
+        <div class="tag-line">
+          <div>
+            <h4>Tag line</h4>
+            <p>Superchange your workflow + connect tools you use.</p>
+          </div>
+          <div>
+            <textarea name="tag" id="tag" cols="30" rows="10"></textarea>
+            <span>40 characters left</span>
+          </div>
+        </div>
+        <!-- ! Company Logo -->
+        <div class="company-logo">
+          <div>
+            <div>
+              <h4>Company Logo</h4>
+              <p>Superchange your workflow + connect tools you use.</p>
+            </div>
+            <div class="logo-box">
+              <img src="../assets/icons/framer.svg" alt="icon" />
+              <p class="text-logo"><span>LOGO.</span><span>PNG</span></p>
+            </div>
+          </div>
+          <div class="drop-down-container">
+            <div class="drop-down-box">
+              <img
+                src="../assets/icons/drop-drogan.svg"
+                alt="file"
+              />
+              <h3>Drag and drop files, or <span>Browse</span></h3>
+              <p>Support zip and rar files</p>
+            </div>
+          </div>
+        </div>
+        <!-- ! Branding -->
+        <div class="branding-box">
+          <div>
+            <ul>
+              <li>
+                <h4>Branding</h4>
+                <input type="checkbox" />
+              </li>
+              <li>
+                <p>Superchange your workflow + connect tools you use.</p>
+                <input type="checkbox" />
+              </li>
+            </ul>
+          </div>
+          <div class="social-profiles">
+            <div>
+              <h4>Social Profiles</h4>
+              <p>Superchange your workflow + connect tools you use.</p>
+            </div>
+            <div>
+              <div class="profile-line">
+                <input type="range" max="100" min="0" />
+              </div>
+              <div class="profile-line">
+                <input type="range" max="100" min="0" />
+              </div>
+              <div class="profile-line">
+                <input type="range" max="100" min="0" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <button>Kaydet</button>
+    <button>Kaydet</button>
+    <button>
+      Kaydet
+      <img src="../assets/icons/calendar-next.svg" alt="next" />
+    </button>
+  </footer>
+</div>
+
+<!-- Scripts -->
+<script>
+  function toogleActive() {
+    const li = document.querySelectorAll(".setting-content-nav ul>li");
+    const li2 = document.querySelectorAll(".setting-nav ul>li");
+    li.forEach((item) => {
+      item.addEventListener("click", () => {
+        li.forEach((item) => {
+          item.classList.remove("list-active");
+        });
+        item.classList.add("list-active");
+      });
+    });
+    li2.forEach((item) => {
+      item.addEventListener("click", () => {
+        li2.forEach((item) => {
+          item.classList.remove("list-active");
+        });
+        item.classList.add("list-active");
+      });
+    });
+  }
+</script>

@@ -241,7 +241,11 @@ div.table-check>input[type="checkbox"]:checked:after {
     text-transform: uppercase;
 }
 
-
+/*? Table Checkbox */
+.table-row > div:last-child{
+    justify-content: center !important;
+    padding-left: 0px;
+}
 
 
 

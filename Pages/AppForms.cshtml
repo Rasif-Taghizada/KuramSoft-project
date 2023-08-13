@@ -1,0 +1,441 @@
+@page
+@model AppFormsModel
+@{
+    ViewData["Title"] = "AppForms";
+}
+
+<!-- Styles -->
+<link rel="stylesheet" href="../css/forms/forms.css" />
+
+
+<!-- HTML -->
+
+<div class="forms-container">
+  <header>
+    <h1>
+      <img src="../assets/icons/ericsson.svg" alt="forms" />
+      Forms
+    </h1>
+    <div class="forms-search-box">
+      <input type="text" name="search" id="search" placeholder="Arıyorum" />
+      <img src="../assets/icons/search.svg" alt="search" />
+    </div>
+  </header>
+  <main>
+    <!-- ! NAV -->
+    <nav class="forms-nav">
+      <img
+      src="../assets/icons/chevron-right-blue.svg"
+      alt="right"
+      class="forms-nav-left"
+    />
+      <ul>
+        <li onclick="toogleActive()">
+          <a href="#">Application</a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">Bim</a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">Bim Egypt</a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">File Market</a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">Morocco</a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">Morocco AR</a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">Application</a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">Bim</a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">Bim Egypt</a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">File Market</a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">Morocco</a>
+        </li>
+        <li onclick="toogleActive()">
+          <a href="#">Morocco AR</a>
+        </li>
+      </ul>
+      <img
+        src="../assets/icons/chevron-right-blue.svg"
+        alt="right"
+        class="forms-nav-right"
+      />
+    </nav>
+    <div class="forms-content">
+      <!-- ! FIRST HEADER -->
+      <div class="first-header">
+        <h2>BAŞLIK 1</h2>
+        <div>
+          <div class="first-header-row">
+            <div class="first-header-box">
+              <img
+                src="../assets/icons/briefcase.svg"
+                alt="briefcase"
+              />
+              <div>
+                <h3>Genel Muhasebe Giderleri Kontrol Akışı</h3>
+                <img
+                  src="../assets/icons/arrow-right-black.svg"
+                  alt="right"
+                />
+                <div class="blue-rectangle"></div>
+              </div>
+            </div>
+            <div class="first-header-box">
+              <img src="../assets/icons/framer.svg" alt="framer" />
+              <div>
+                <h3>Genel Muhasebe Giderleri Kontrol Akışı</h3>
+                <img
+                  src="../assets/icons/arrow-right-black.svg"
+                  alt="right"
+                />
+                <div class="blue-rectangle"></div>
+              </div>
+            </div>
+            <div class="first-header-box">
+              <img src="../assets/icons/slack.svg" alt="slack" />
+              <div>
+                <h3>Genel Muhasebe Giderleri Kontrol Akışı</h3>
+                <img
+                  src="../assets/icons/arrow-right-black.svg"
+                  alt="right"
+                />
+                <div class="blue-rectangle"></div>
+              </div>
+            </div>
+            <div class="first-header-box">
+              <img
+                src="../assets/icons/briefcase.svg"
+                alt="briefcase"
+              />
+              <div>
+                <h3>Genel Muhasebe Giderleri Kontrol Akışı</h3>
+                <img
+                  src="../assets/icons/arrow-right-black.svg"
+                  alt="right"
+                />
+                <div class="blue-rectangle"></div>
+              </div>
+            </div>
+            <div class="first-header-box">
+              <img src="../assets/icons/framer.svg" alt="framer" />
+              <div>
+                <h3>Genel Muhasebe Giderleri Kontrol Akışı</h3>
+                <img
+                  src="../assets/icons/arrow-right-black.svg"
+                  alt="right"
+                />
+                <div class="blue-rectangle"></div>
+              </div>
+            </div>
+            <div class="first-header-box">
+              <img src="../assets/icons/slack.svg" alt="slack" />
+              <div>
+                <h3>Genel Muhasebe Giderleri Kontrol Akışı</h3>
+                <img
+                  src="../assets/icons/arrow-right-black.svg"
+                  alt="right"
+                />
+                <div class="blue-rectangle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ! SECONDARY HEADER -->
+      <div class="secondary-header">
+        <h2>BAŞLIK 2</h2>
+        <div>
+          <div class="secondary-header-row">
+            <div class="secondary-header-box">
+              <img src="../assets/icons/slack.svg" alt="slack" />
+              <div>
+                <h3>PL Rapor</h3>
+                <a href="#">
+                  Detay
+                  <img
+                    src="../assets/icons/arrow-right-black.svg"
+                    alt="right"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="secondary-header-box">
+              <img src="../assets/icons/framer.svg" alt="framer" />
+              <div>
+                <h3>PL Rapor</h3>
+                <a href="#">
+                  Detay
+                  <img
+                    src="../assets/icons/arrow-right-black.svg"
+                    alt="right"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="secondary-header-box">
+              <img
+                src="../assets/icons/briefcase.svg"
+                alt="briefcase"
+              />
+              <div>
+                <h3>PL Rapor</h3>
+                <a href="#">
+                  Detay
+                  <img
+                    src="../assets/icons/arrow-right-black.svg"
+                    alt="right"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="secondary-header-box">
+              <img src="../assets/icons/slack.svg" alt="slack" />
+              <div>
+                <h3>PL Rapor</h3>
+                <a href="#">
+                  Detay
+                  <img
+                    src="../assets/icons/arrow-right-black.svg"
+                    alt="right"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="secondary-header-box">
+              <img src="../assets/icons/framer.svg" alt="framer" />
+              <div>
+                <h3>PL Rapor</h3>
+                <a href="#">
+                  Detay
+                  <img
+                    src="../assets/icons/arrow-right-black.svg"
+                    alt="right"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="secondary-header-box">
+              <img
+                src="../assets/icons/briefcase.svg"
+                alt="briefcase"
+              />
+              <div>
+                <h3>PL Rapor</h3>
+                <a href="#">
+                  Detay
+                  <img
+                    src="../assets/icons/arrow-right-black.svg"
+                    alt="right"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ! THIRD HEADER -->
+      <div class="third-header">
+        <h2>BAŞLIK 3</h2>
+        <div>
+          <div class="secondary-header-row">
+            <div class="secondary-header-box">
+              <img src="../assets/icons/slack.svg" alt="slack" />
+              <div>
+                <h3>PL Rapor</h3>
+                <a href="#">
+                  Detay
+                  <img
+                    src="../assets/icons/arrow-right-black.svg"
+                    alt="right"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="secondary-header-box">
+              <img src="../assets/icons/framer.svg" alt="framer" />
+              <div>
+                <h3>PL Rapor</h3>
+                <a href="#">
+                  Detay
+                  <img
+                    src="../assets/icons/arrow-right-black.svg"
+                    alt="right"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="secondary-header-box">
+              <img
+                src="../assets/icons/briefcase.svg"
+                alt="briefcase"
+              />
+              <div>
+                <h3>PL Rapor</h3>
+                <a href="#">
+                  Detay
+                  <img
+                    src="../assets/icons/arrow-right-black.svg"
+                    alt="right"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="secondary-header-box">
+              <img src="../assets/icons/slack.svg" alt="slack" />
+              <div>
+                <h3>PL Rapor</h3>
+                <a href="#">
+                  Detay
+                  <img
+                    src="../assets/icons/arrow-right-black.svg"
+                    alt="right"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="secondary-header-box">
+              <img src="../assets/icons/framer.svg" alt="framer" />
+              <div>
+                <h3>PL Rapor</h3>
+                <a href="#">
+                  Detay
+                  <img
+                    src="../assets/icons/arrow-right-black.svg"
+                    alt="right"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="secondary-header-box">
+              <img
+                src="../assets/icons/briefcase.svg"
+                alt="briefcase"
+              />
+              <div>
+                <h3>PL Rapor</h3>
+                <a href="#">
+                  Detay
+                  <img
+                    src="../assets/icons/arrow-right-black.svg"
+                    alt="right"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="secondary-header-box">
+              <img src="../assets/icons/slack.svg" alt="slack" />
+              <div>
+                <h3>PL Rapor</h3>
+                <a href="#">
+                  Detay
+                  <img
+                    src="../assets/icons/arrow-right-black.svg"
+                    alt="right"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="secondary-header-box">
+              <img src="../assets/icons/framer.svg" alt="framer" />
+              <div>
+                <h3>PL Rapor</h3>
+                <a href="#">
+                  Detay
+                  <img
+                    src="../assets/icons/arrow-right-black.svg"
+                    alt="right"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="secondary-header-box">
+              <img
+                src="../assets/icons/briefcase.svg"
+                alt="briefcase"
+              />
+              <div>
+                <h3>PL Rapor</h3>
+                <a href="#">
+                  Detay
+                  <img
+                    src="../assets/icons/arrow-right-black.svg"
+                    alt="right"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="secondary-header-box">
+              <img src="../assets/icons/slack.svg" alt="slack" />
+              <div>
+                <h3>PL Rapor</h3>
+                <a href="#">
+                  Detay
+                  <img
+                    src="../assets/icons/arrow-right-black.svg"
+                    alt="right"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="secondary-header-box">
+              <img src="../assets/icons/framer.svg" alt="framer" />
+              <div>
+                <h3>PL Rapor</h3>
+                <a href="#">
+                  Detay
+                  <img
+                    src="../assets/icons/arrow-right-black.svg"
+                    alt="right"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="secondary-header-box">
+              <img
+                src="../assets/icons/briefcase.svg"
+                alt="briefcase"
+              />
+              <div>
+                <h3>PL Rapor</h3>
+                <a href="#">
+                  Detay
+                  <img
+                    src="../assets/icons/arrow-right-black.svg"
+                    alt="right"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script>
+  function toogleActive() {
+    const li = document.querySelectorAll(".forms-nav ul>li");
+    li.forEach((item) => {
+      item.addEventListener("click", () => {
+        li.forEach((item) => {
+          item.classList.remove("list-active");
+        });
+        item.classList.add("list-active");
+      });
+    });
+  }
+</script>
+<script src="../js/navbarSlideShow.js"></script>

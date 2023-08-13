@@ -481,21 +481,23 @@
 
 /* ! File List style */
 .file-list-sistem {
-    min-width: 570px;
-    max-width: 100%;
-    overflow-x: auto;
+    width: 98%;
     overflow-y: hidden;
+    overflow-x: auto;
 }
 
 .file-list-sistem>table {
     width: 100%;
     border-collapse: collapse;
+    overflow: scroll;
     display: none;
     user-select: none;
 }
 
 .file-list-sistem>table :where(td, th) {
     min-width: 25px;
+    white-space: nowrap;
+    text-align: left;
 }
 
 .file-list-sistem>table>* {

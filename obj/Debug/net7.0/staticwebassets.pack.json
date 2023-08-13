@@ -505,6 +505,10 @@
       "PackagePath": "staticwebassets\\assets\\icons\\edit-unmask.svg"
     },
     {
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\edit.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\edit.svg"
+    },
+    {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\elips-vertical.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\elips-vertical.svg"
     },
@@ -713,6 +717,10 @@
       "PackagePath": "staticwebassets\\assets\\icons\\polaroid.svg"
     },
     {
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\power.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\power.svg"
+    },
+    {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\question-help.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\question-help.svg"
     },
@@ -751,6 +759,10 @@
     {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\send.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\send.svg"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\settings.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\settings.svg"
     },
     {
       "Id": "C:\\Users\\lenovo\\OneDrive\\Desktop\\KuramSoft-project\\wwwroot\\assets\\icons\\shape-hexagon.svg",
